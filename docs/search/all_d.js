@@ -66,7 +66,7 @@ var searchData=
   ['oc_5fconnectivity_5fget_5fendpoints_190',['oc_connectivity_get_endpoints',['../oc__connectivity_8h.html#a1d559666b450aef41dd704952e4a7e96',1,'oc_connectivity.h']]],
   ['oc_5fconnectivity_5finit_191',['oc_connectivity_init',['../oc__connectivity_8h.html#ab2d899d0971e0b47c21a02b818dc4696',1,'oc_connectivity.h']]],
   ['oc_5fconnectivity_5fshutdown_192',['oc_connectivity_shutdown',['../oc__connectivity_8h.html#aa737faed9576af48ccf1ae2fc51f655f',1,'oc_connectivity.h']]],
-  ['oc_5fconnectivity_5fsubscribe_5fmcast_5fipv6_193',['oc_connectivity_subscribe_mcast_ipv6',['../oc__connectivity_8h.html#ac6b272e3ec6d4e9643412ca238c54a4e',1,'oc_connectivity.h']]],
+  ['oc_5fconnectivity_5fsubscribe_5fmcast_5fipv6_193',['oc_connectivity_subscribe_mcast_ipv6',['../oc__connectivity_8h.html#ae9abad7d8d5757ef595f829c4da6586a',1,'oc_connectivity.h']]],
   ['oc_5fcontent_5fformat_5ft_194',['oc_content_format_t',['../oc__ri_8h.html#a83161604a805e3a951254864d16a714f',1,'oc_ri.h']]],
   ['oc_5fcontinue_5fdiscovery_195',['OC_CONTINUE_DISCOVERY',['../oc__client__state_8h.html#a983b138b2c42a68570ba23e19deb19b3ad575f4d1acb5465a5f08bf236cf6eb5b',1,'oc_client_state.h']]],
   ['oc_5fconv_5fbyte_5farray_5fto_5fhex_5fstring_196',['oc_conv_byte_array_to_hex_string',['../oc__helpers_8h.html#af96ddf66b54df49a985fdb6c52d9bf31',1,'oc_helpers.h']]],

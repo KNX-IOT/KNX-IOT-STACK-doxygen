@@ -141,9 +141,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa737faed9576af48ccf1ae2fc51f655f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#aa737faed9576af48ccf1ae2fc51f655f">oc_connectivity_shutdown</a> (size_t device)</td></tr>
 <tr class="memdesc:aa737faed9576af48ccf1ae2fc51f655f"><td class="mdescLeft">&#160;</td><td class="mdescRight">shut down the connectivity for device at device index  <a href="oc__connectivity_8h.html#aa737faed9576af48ccf1ae2fc51f655f">More...</a><br /></td></tr>
 <tr class="separator:aa737faed9576af48ccf1ae2fc51f655f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6b272e3ec6d4e9643412ca238c54a4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#ac6b272e3ec6d4e9643412ca238c54a4e">oc_connectivity_subscribe_mcast_ipv6</a> (size_t device, const uint8_t *address)</td></tr>
-<tr class="memdesc:ac6b272e3ec6d4e9643412ca238c54a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to a multicast address.  <a href="oc__connectivity_8h.html#ac6b272e3ec6d4e9643412ca238c54a4e">More...</a><br /></td></tr>
-<tr class="separator:ac6b272e3ec6d4e9643412ca238c54a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9abad7d8d5757ef595f829c4da6586a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#ae9abad7d8d5757ef595f829c4da6586a">oc_connectivity_subscribe_mcast_ipv6</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *address)</td></tr>
+<tr class="memdesc:ae9abad7d8d5757ef595f829c4da6586a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to a multicast address.  <a href="oc__connectivity_8h.html#ae9abad7d8d5757ef595f829c4da6586a">More...</a><br /></td></tr>
+<tr class="separator:ae9abad7d8d5757ef595f829c4da6586a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4ab8e017f16ef084b24d1f8431e4baa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#af4ab8e017f16ef084b24d1f8431e4baa">oc_dns_lookup</a> (const char *domain, oc_string_t *addr, enum <a class="el" href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78">transport_flags</a> flags)</td></tr>
 <tr class="memdesc:af4ab8e017f16ef084b24d1f8431e4baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">DNS look up.  <a href="oc__connectivity_8h.html#af4ab8e017f16ef084b24d1f8431e4baa">More...</a><br /></td></tr>
 <tr class="separator:af4ab8e017f16ef084b24d1f8431e4baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -358,8 +358,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac6b272e3ec6d4e9643412ca238c54a4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6b272e3ec6d4e9643412ca238c54a4e">&#9670;&nbsp;</a></span>oc_connectivity_subscribe_mcast_ipv6()</h2>
+<a id="ae9abad7d8d5757ef595f829c4da6586a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9abad7d8d5757ef595f829c4da6586a">&#9670;&nbsp;</a></span>oc_connectivity_subscribe_mcast_ipv6()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -367,19 +367,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void oc_connectivity_subscribe_mcast_ipv6 </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
+          <td class="paramname"><em>address</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>address</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -387,8 +377,7 @@ Functions</h2></td></tr>
 <p>Subscribe to a multicast address. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">device</td><td>ID of device to subscribe </td></tr>
-    <tr><td class="paramname">address</td><td>16-byte array containing multicast address </td></tr>
+    <tr><td class="paramname">address</td><td>endpoint describing the address to subscribe to. The device &amp; addr.ipv6.address members must be set for the function call to be valid. </td></tr>
   </table>
   </dd>
 </dl>
@@ -564,7 +553,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="oc__connectivity_8h.html">oc_connectivity.h</a></li>
-    <li class="footer">Generated on Mon Mar 7 2022 16:55:22 for KNX-IOT by
+    <li class="footer">Generated on Wed Mar 9 2022 14:03:40 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

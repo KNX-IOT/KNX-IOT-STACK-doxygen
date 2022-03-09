@@ -39,7 +39,7 @@ var searchData=
   ['oc_5fconnectivity_5fget_5fendpoints_851',['oc_connectivity_get_endpoints',['../oc__connectivity_8h.html#a1d559666b450aef41dd704952e4a7e96',1,'oc_connectivity.h']]],
   ['oc_5fconnectivity_5finit_852',['oc_connectivity_init',['../oc__connectivity_8h.html#ab2d899d0971e0b47c21a02b818dc4696',1,'oc_connectivity.h']]],
   ['oc_5fconnectivity_5fshutdown_853',['oc_connectivity_shutdown',['../oc__connectivity_8h.html#aa737faed9576af48ccf1ae2fc51f655f',1,'oc_connectivity.h']]],
-  ['oc_5fconnectivity_5fsubscribe_5fmcast_5fipv6_854',['oc_connectivity_subscribe_mcast_ipv6',['../oc__connectivity_8h.html#ac6b272e3ec6d4e9643412ca238c54a4e',1,'oc_connectivity.h']]],
+  ['oc_5fconnectivity_5fsubscribe_5fmcast_5fipv6_854',['oc_connectivity_subscribe_mcast_ipv6',['../oc__connectivity_8h.html#ae9abad7d8d5757ef595f829c4da6586a',1,'oc_connectivity.h']]],
   ['oc_5fconv_5fbyte_5farray_5fto_5fhex_5fstring_855',['oc_conv_byte_array_to_hex_string',['../oc__helpers_8h.html#af96ddf66b54df49a985fdb6c52d9bf31',1,'oc_helpers.h']]],
   ['oc_5fconv_5fhex_5fstring_5fto_5fbyte_5farray_856',['oc_conv_hex_string_to_byte_array',['../oc__helpers_8h.html#a16bbf1dbd390650087470ff8efb79638',1,'oc_helpers.h']]],
   ['oc_5fcore_5fadd_5fdevice_857',['oc_core_add_device',['../oc__core__res_8h.html#a6d5c24f4029dda6d0385ed3a138c9893',1,'oc_core_res.h']]],
