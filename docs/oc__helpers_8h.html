@@ -263,8 +263,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_concat_strings</b>
 <tr class="memitem:a9170160c3afc735c8adf574d00d20c8c"><td class="memItemLeft" align="right" valign="top"><a id="a9170160c3afc735c8adf574d00d20c8c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array</b> (oc_string_array_t *ocstringarray, oc_string_t *ocstring)</td></tr>
 <tr class="separator:a9170160c3afc735c8adf574d00d20c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a008ee98555abe100fe9683a71f603e2e"><td class="memItemLeft" align="right" valign="top"><a id="a008ee98555abe100fe9683a71f603e2e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_cmp</b> (oc_string_t string1, oc_string_t string2)</td></tr>
+<tr class="memitem:a008ee98555abe100fe9683a71f603e2e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a008ee98555abe100fe9683a71f603e2e">oc_string_cmp</a> (oc_string_t string1, oc_string_t string2)</td></tr>
+<tr class="memdesc:a008ee98555abe100fe9683a71f603e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">oc_string compare  <a href="oc__helpers_8h.html#a008ee98555abe100fe9683a71f603e2e">More...</a><br /></td></tr>
 <tr class="separator:a008ee98555abe100fe9683a71f603e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6915e9a2fe196de3d470336bace809d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a6915e9a2fe196de3d470336bace809d0">oc_uri_contains_wildcard</a> (const char *uri)</td></tr>
 <tr class="memdesc:a6915e9a2fe196de3d470336bace809d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the uri contains a wildcard (e.g.  <a href="oc__helpers_8h.html#a6915e9a2fe196de3d470336bace809d0">More...</a><br /></td></tr>
@@ -281,6 +281,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_cmp</b> (oc_
 <tr class="memitem:a596b6f650b8fe5833f840704d7fa7eed"><td class="memItemLeft" align="right" valign="top"><a id="a596b6f650b8fe5833f840704d7fa7eed"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_uri_get_wildcard_value_as_string</b> (const char *uri_resource, size_t uri_len, const char *uri_invoked, size_t invoked_len, const char **value)</td></tr>
 <tr class="separator:a596b6f650b8fe5833f840704d7fa7eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a567a4ac8afc4a2aeccbc8d0e01f710c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a567a4ac8afc4a2aeccbc8d0e01f710c8">oc_url_cmp</a> (oc_string_t string1, oc_string_t string2)</td></tr>
+<tr class="memdesc:a567a4ac8afc4a2aeccbc8d0e01f710c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">url compare same as string compare but ignores the leading / of the urls  <a href="oc__helpers_8h.html#a567a4ac8afc4a2aeccbc8d0e01f710c8">More...</a><br /></td></tr>
+<tr class="separator:a567a4ac8afc4a2aeccbc8d0e01f710c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aa5ab461e92a3e8f7ea5c8bec61a00776"></a>
@@ -920,6 +923,44 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_uri_get_wildcard_va
 
 </div>
 </div>
+<a id="a008ee98555abe100fe9683a71f603e2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a008ee98555abe100fe9683a71f603e2e">&#9670;&nbsp;</a></span>oc_string_cmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_string_cmp </td>
+          <td>(</td>
+          <td class="paramtype">oc_string_t&#160;</td>
+          <td class="paramname"><em>string1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_string_t&#160;</td>
+          <td class="paramname"><em>string2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>oc_string compare </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string1</td><td>string 1 to be compared </td></tr>
+    <tr><td class="paramname">string2</td><td>string 2 to be compared </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 == equal </dd></dl>
+
+</div>
+</div>
 <a id="a6915e9a2fe196de3d470336bace809d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6915e9a2fe196de3d470336bace809d0">&#9670;&nbsp;</a></span>oc_uri_contains_wildcard()</h2>
 
@@ -1109,13 +1150,51 @@ false </dd></dl>
 
 </div>
 </div>
+<a id="a567a4ac8afc4a2aeccbc8d0e01f710c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a567a4ac8afc4a2aeccbc8d0e01f710c8">&#9670;&nbsp;</a></span>oc_url_cmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_url_cmp </td>
+          <td>(</td>
+          <td class="paramtype">oc_string_t&#160;</td>
+          <td class="paramname"><em>string1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_string_t&#160;</td>
+          <td class="paramname"><em>string2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>url compare same as string compare but ignores the leading / of the urls </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string1</td><td>url to be compared </td></tr>
+    <tr><td class="paramname">string2</td><td>url to be compared </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 == equal </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 14:03:40 for KNX-IOT by
+    <li class="footer">Generated on Thu Mar 10 2022 09:42:14 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

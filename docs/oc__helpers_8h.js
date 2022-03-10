@@ -58,5 +58,6 @@ var oc__helpers_8h =
     [ "oc_uri_contains_wildcard_value_underscore", "oc__helpers_8h.html#a1574713df4f59c0ac059f2cc1154ffeb", null ],
     [ "oc_uri_get_wildcard_value_as_int", "oc__helpers_8h.html#a629d63730eb1ad4ac87ef9bd481c0223", null ],
     [ "oc_uri_get_wildcard_value_as_int_after_underscore", "oc__helpers_8h.html#ad83ae755906cdc4c45d4c97ec13b9b7a", null ],
-    [ "oc_uri_get_wildcard_value_as_string", "oc__helpers_8h.html#a596b6f650b8fe5833f840704d7fa7eed", null ]
+    [ "oc_uri_get_wildcard_value_as_string", "oc__helpers_8h.html#a596b6f650b8fe5833f840704d7fa7eed", null ],
+    [ "oc_url_cmp", "oc__helpers_8h.html#a567a4ac8afc4a2aeccbc8d0e01f710c8", null ]
 ];
