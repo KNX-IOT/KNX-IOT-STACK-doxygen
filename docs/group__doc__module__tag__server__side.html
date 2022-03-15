@@ -175,9 +175,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf8ac0f8a7d9fc45bab26b132cc9346e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6">oc_resource_set_request_handler</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26">oc_method_t</a> method, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> callback, void *user_data)</td></tr>
 <tr class="memdesc:gaf8ac0f8a7d9fc45bab26b132cc9346e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify a request_callback for GET, PUT, POST, and DELETE methods.  <a href="group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6">More...</a><br /></td></tr>
 <tr class="separator:gaf8ac0f8a7d9fc45bab26b132cc9346e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad8d0f3f531d72f5d5cce12c1fbad92fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gad8d0f3f531d72f5d5cce12c1fbad92fe">oc_resource_set_secure_mcast</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, bool supported)</td></tr>
-<tr class="memdesc:gad8d0f3f531d72f5d5cce12c1fbad92fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the support of the secure multicast feature  <a href="group__doc__module__tag__server__side.html#gad8d0f3f531d72f5d5cce12c1fbad92fe">More...</a><br /></td></tr>
-<tr class="separator:gad8d0f3f531d72f5d5cce12c1fbad92fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaab81b44a949c8689bf23179d18a626ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaab81b44a949c8689bf23179d18a626ba">oc_send_cbor_response</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code)</td></tr>
 <tr class="memdesc:gaab81b44a949c8689bf23179d18a626ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.  <a href="group__doc__module__tag__server__side.html#gaab81b44a949c8689bf23179d18a626ba">More...</a><br /></td></tr>
 <tr class="separator:gaab81b44a949c8689bf23179d18a626ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1331,43 +1328,6 @@ oc_device_bind_resource_type </dd></dl>
 
 </div>
 </div>
-<a id="gad8d0f3f531d72f5d5cce12c1fbad92fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad8d0f3f531d72f5d5cce12c1fbad92fe">&#9670;&nbsp;</a></span>oc_resource_set_secure_mcast()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void oc_resource_set_secure_mcast </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
-          <td class="paramname"><em>resource</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>supported</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>sets the support of the secure multicast feature </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">resource</td><td>the resource </td></tr>
-    <tr><td class="paramname">supported</td><td>true: supported </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="gaab81b44a949c8689bf23179d18a626ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaab81b44a949c8689bf23179d18a626ba">&#9670;&nbsp;</a></span>oc_send_cbor_response()</h2>
 
@@ -1755,7 +1715,7 @@ oc_device_bind_resource_type </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 14 2022 16:20:12 for KNX-IOT by
+    <li class="footer">Generated on Tue Mar 15 2022 11:19:03 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

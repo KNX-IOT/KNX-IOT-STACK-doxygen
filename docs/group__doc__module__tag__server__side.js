@@ -26,7 +26,6 @@ var group__doc__module__tag__server__side =
     [ "oc_resource_set_periodic_observable", "group__doc__module__tag__server__side.html#gac8cdb7e511c08982d790c323d8db7c6e", null ],
     [ "oc_resource_set_properties_cbs", "group__doc__module__tag__server__side.html#gaf9028094981175854c699f6da4a34131", null ],
     [ "oc_resource_set_request_handler", "group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6", null ],
-    [ "oc_resource_set_secure_mcast", "group__doc__module__tag__server__side.html#gad8d0f3f531d72f5d5cce12c1fbad92fe", null ],
     [ "oc_send_cbor_response", "group__doc__module__tag__server__side.html#gaab81b44a949c8689bf23179d18a626ba", null ],
     [ "oc_send_diagnostic_message", "group__doc__module__tag__server__side.html#gadcfcce0aa1c740c40c85905b5f1e561a", null ],
     [ "oc_send_json_response", "group__doc__module__tag__server__side.html#gafffb523de9c9dc8f3a996b48e4ff47ed", null ],
