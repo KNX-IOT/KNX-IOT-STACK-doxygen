@@ -1,6 +1,5 @@
 var group__doc__module__tag__server__side =
 [
-    [ "Collection Support", "group__doc__module__tag__collections.html", null ],
     [ "oc_add_resource", "group__doc__module__tag__server__side.html#ga8cef7c8b4cfdde5cbd79aace72172d41", null ],
     [ "oc_delayed_delete_resource", "group__doc__module__tag__server__side.html#gabb337e93d0191bd886fb66c872d80f2c", null ],
     [ "oc_delete_resource", "group__doc__module__tag__server__side.html#ga8be722cad423befa951a60f518e6f3b2", null ],
