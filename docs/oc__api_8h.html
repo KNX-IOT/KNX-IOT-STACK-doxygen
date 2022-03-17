@@ -94,16 +94,18 @@ $(document).ready(function(){initNavTree('oc__api_8h.html',''); initResizable();
 <p>Main API of the stack for client and server.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;messaging/coap/oc_coap.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="oc__buffer__settings_8h.html">oc_buffer_settings.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="oc__rep_8h.html">oc_rep.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="oc__ri_8h.html">oc_ri.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="oc__client__state_8h.html">oc_client_state.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="oc__signal__event__loop_8h.html">oc_signal_event_loop.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="oc__storage_8h.html">port/oc_storage.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__buffer__settings_8h_source.html">oc_buffer_settings.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__rep_8h_source.html">oc_rep.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__ri_8h_source.html">oc_ri.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__client__state_8h_source.html">oc_client_state.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__signal__event__loop_8h_source.html">oc_signal_event_loop.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__storage_8h_source.html">port/oc_storage.h</a>&quot;</code><br />
 <code>#include &quot;api/oc_knx_client.h&quot;</code><br />
 <code>#include &quot;api/oc_knx_swu.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="oc__programming__mode_8h.html">oc_programming_mode.h</a>&quot;</code><br />
-</div><table class="memberdecls">
+<code>#include &quot;<a class="el" href="oc__programming__mode_8h_source.html">oc_programming_mode.h</a>&quot;</code><br />
+</div>
+<p><a href="oc__api_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__handler__t.html">oc_handler_t</a></td></tr>
@@ -118,8 +120,8 @@ Macros</h2></td></tr>
 <tr class="memitem:gaeb1bc0db28fff85367807c1319d12312"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#gaeb1bc0db28fff85367807c1319d12312">oc_define_interrupt_handler</a>(name)</td></tr>
 <tr class="memdesc:gaeb1bc0db28fff85367807c1319d12312"><td class="mdescLeft">&#160;</td><td class="mdescRight">define the interrupt handler  <a href="group__doc__module__tag__common__operations.html#gaeb1bc0db28fff85367807c1319d12312">More...</a><br /></td></tr>
 <tr class="separator:gaeb1bc0db28fff85367807c1319d12312"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf0c94eb1b0e41eb07dd32df6ae405b9"><td class="memItemLeft" align="right" valign="top"><a id="abf0c94eb1b0e41eb07dd32df6ae405b9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_MAX_URL_LENGTH</b>&#160;&#160;&#160;(30)</td></tr>
+<tr class="memitem:abf0c94eb1b0e41eb07dd32df6ae405b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#abf0c94eb1b0e41eb07dd32df6ae405b9">OC_MAX_URL_LENGTH</a>&#160;&#160;&#160;(30)</td></tr>
+<tr class="memdesc:abf0c94eb1b0e41eb07dd32df6ae405b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum URL length (as specified by KNX)  <a href="oc__api_8h.html#abf0c94eb1b0e41eb07dd32df6ae405b9">More...</a><br /></td></tr>
 <tr class="separator:abf0c94eb1b0e41eb07dd32df6ae405b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07db38d877a6ecbeb92ba881925f09c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#a07db38d877a6ecbeb92ba881925f09c3">oc_set_custom_device_property</a>(prop,  value)&#160;&#160;&#160;<a class="el" href="oc__rep_8h.html#a0d03ba29dc294529f479e75e82f4eb78">oc_rep_set_text_string</a>(root, prop, value)</td></tr>
 <tr class="memdesc:a07db38d877a6ecbeb92ba881925f09c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set custom device property.  <a href="oc__api_8h.html#a07db38d877a6ecbeb92ba881925f09c3">More...</a><br /></td></tr>
@@ -352,7 +354,27 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main API of the stack for client and server. </p>
+
+<p class="definition">Definition in file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="abf0c94eb1b0e41eb07dd32df6ae405b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf0c94eb1b0e41eb07dd32df6ae405b9">&#9670;&nbsp;</a></span>OC_MAX_URL_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OC_MAX_URL_LENGTH&#160;&#160;&#160;(30)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>maximum URL length (as specified by KNX) </p>
+
+<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l00053">53</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
+
+</div>
+</div>
 <a id="a07db38d877a6ecbeb92ba881925f09c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a07db38d877a6ecbeb92ba881925f09c3">&#9670;&nbsp;</a></span>oc_set_custom_device_property</h2>
 
@@ -391,6 +413,8 @@ Functions</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__api_8h.html#a57a741fa2165d561ffc7faf0f084cd69" title="Callback invoked during oc_add_device().">oc_add_device_cb_t</a> for example code using this function </dd>
 <dd>
 <a class="el" href="oc__api_8h.html#a1fc277c86baf3db65614c271bc7cbcf6" title="Add an a device to the stack.">oc_add_device</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l00411">411</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
 
 </div>
 </div>
@@ -433,6 +457,8 @@ Functions</h2></td></tr>
 <dd>
 <a class="el" href="oc__api_8h.html#abc05e63942a1093f807213220841c54b" title="Initialize the platform.">oc_init_platform</a> </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l00450">450</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -472,6 +498,8 @@ Functions</h2></td></tr>
 <dd>
 <a class="el" href="oc__api_8h.html#a07db38d877a6ecbeb92ba881925f09c3" title="Set custom device property.">oc_set_custom_device_property</a> </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l00210">210</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
+
 </div>
 </div>
 <a id="af0b944acc98a497365efbc1d1c9aa32e"></a>
@@ -487,6 +515,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Callback invoked by the stack initialization to perform any "factory settings", e.g., this may be used to load a manufacturer certificate. </p>
+
+<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l00261">261</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
 
 </div>
 </div>
@@ -511,6 +541,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l00336">336</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
 
 </div>
 </div>
@@ -544,6 +576,8 @@ Functions</h2></td></tr>
 <dd>
 <a class="el" href="oc__api_8h.html#a07db38d877a6ecbeb92ba881925f09c3" title="Set custom device property.">oc_set_custom_device_property</a> </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l00182">182</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
+
 </div>
 </div>
 <a id="af0942ca6eb6162a2f3761c0cf106ae0b"></a>
@@ -568,6 +602,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l00287">287</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
+
 </div>
 </div>
 <a id="acd068517ebfa8db691b461168ce035c3"></a>
@@ -590,6 +626,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l00311">311</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
 
 </div>
 </div>
@@ -983,14 +1021,14 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aoc__api_8h_html_abc05e63942a1093f807213220841c54b"><div class="ttname"><a href="oc__api_8h.html#abc05e63942a1093f807213220841c54b">oc_init_platform</a></div><div class="ttdeci">int oc_init_platform(const char *mfg_name, oc_init_platform_cb_t init_platform_cb, void *data)</div><div class="ttdoc">Initialize the platform.</div></div>
-<div class="ttc" id="aoc__api_8h_html_a07db38d877a6ecbeb92ba881925f09c3"><div class="ttname"><a href="oc__api_8h.html#a07db38d877a6ecbeb92ba881925f09c3">oc_set_custom_device_property</a></div><div class="ttdeci">#define oc_set_custom_device_property(prop, value)</div><div class="ttdoc">Set custom device property.</div><div class="ttdef"><b>Definition:</b> oc_api.h:407</div></div>
-<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a2e2efabbeb1c8c68790bb90ce01c4578"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a2e2efabbeb1c8c68790bb90ce01c4578">app_init</a></div><div class="ttdeci">int app_init(void)</div><div class="ttdoc">function to set up the device.</div><div class="ttdef"><b>Definition:</b> LSAB_minimal_all.c:129</div></div>
+<div class="ttc" id="aoc__api_8h_html_a07db38d877a6ecbeb92ba881925f09c3"><div class="ttname"><a href="oc__api_8h.html#a07db38d877a6ecbeb92ba881925f09c3">oc_set_custom_device_property</a></div><div class="ttdeci">#define oc_set_custom_device_property(prop, value)</div><div class="ttdoc">Set custom device property.</div><div class="ttdef"><b>Definition:</b> <a href="oc__api_8h_source.html#l00411">oc_api.h:411</a></div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a2e2efabbeb1c8c68790bb90ce01c4578"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a2e2efabbeb1c8c68790bb90ce01c4578">app_init</a></div><div class="ttdeci">int app_init(void)</div><div class="ttdoc">function to set up the device.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00129">LSAB_minimal_all.c:129</a></div></div>
 <div class="ttc" id="aoc__api_8h_html_a1fc277c86baf3db65614c271bc7cbcf6"><div class="ttname"><a href="oc__api_8h.html#a1fc277c86baf3db65614c271bc7cbcf6">oc_add_device</a></div><div class="ttdeci">int oc_add_device(const char *name, const char *version, const char *base, const char *serial_number, oc_add_device_cb_t add_device_cb, void *data)</div><div class="ttdoc">Add an a device to the stack.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__api_8h.html">oc_api.h</a></li>
-    <li class="footer">Generated on Thu Mar 17 2022 09:27:11 for KNX-IOT by
+    <li class="footer">Generated on Thu Mar 17 2022 09:49:27 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

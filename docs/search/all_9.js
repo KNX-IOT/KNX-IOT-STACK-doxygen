@@ -16,6 +16,5 @@ var searchData=
   ['interface_5findex_122',['interface_index',['../structoc__endpoint__t.html#ae86afaa4df8c3f253d0f526b9540e1e8',1,'oc_endpoint_t']]],
   ['interfaces_123',['interfaces',['../structoc__resource__s.html#a68c97e7ff73ecf882e2b4a126a5c6faa',1,'oc_resource_s']]],
   ['ipv4_124',['IPV4',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78acfc4c1053c60b6cc2a7776c60969f31f',1,'oc_endpoint.h']]],
-  ['ipv6_125',['IPV6',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78aff712168361fe68b2bb6193df4977d3c',1,'oc_endpoint.h']]],
-  ['is_5fdevice_5fin_5fprogramming_5fmode_126',['is_device_in_programming_mode',['../oc__device__mode_8h.html#a8e4bdc5e91c0ff937d43d7d7c751d29e',1,'oc_device_mode.h']]]
+  ['ipv6_125',['IPV6',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78aff712168361fe68b2bb6193df4977d3c',1,'oc_endpoint.h']]]
 ];
