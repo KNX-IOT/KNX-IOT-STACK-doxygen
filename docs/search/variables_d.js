@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['observe_5foption_1142',['observe_option',['../structoc__client__response__t.html#a0f0c20001c3f64521f922235b6b602b5',1,'oc_client_response_t']]],
-  ['observe_5fperiod_5fseconds_1143',['observe_period_seconds',['../structoc__resource__s.html#aa753b0d40e8c4a8743483bb335d1f3d9',1,'oc_resource_s']]],
-  ['observe_5fseq_1144',['observe_seq',['../structoc__blockwise__response__state__s.html#a942fc9dfe209acb57f85dcb1fb3303ba',1,'oc_blockwise_response_state_s::observe_seq()'],['../structoc__client__cb__t.html#a942fc9dfe209acb57f85dcb1fb3303ba',1,'oc_client_cb_t::observe_seq()']]],
-  ['origin_1145',['origin',['../structoc__request__t.html#a237e6d8df119a6b041a0af6c11f4b651',1,'oc_request_t']]],
-  ['owner_5fcred_1146',['owner_cred',['../structoc__sec__cred__t.html#a5eeec0a7ccd94fc7c7f1f929685ba463',1,'oc_sec_cred_t']]]
+  ['name_1226',['name',['../structoc__device__info__t.html#a166cce7286659ef193d310d9efd8c1ad',1,'oc_device_info_t::name()'],['../structoc__rep__s.html#a166cce7286659ef193d310d9efd8c1ad',1,'oc_rep_s::name()'],['../structoc__resource__s.html#a166cce7286659ef193d310d9efd8c1ad',1,'oc_resource_s::name()']]],
+  ['nbf_1227',['nbf',['../structoc__auth__at__t.html#a67aa9022f2863feea2cd44ee25018822',1,'oc_auth_at_t']]],
+  ['next_1228',['next',['../structoc__client__cb__t.html#a77f36d1042f5310f0be4de3e87959ff6',1,'oc_client_cb_t::next()'],['../structoc__sec__cred__t.html#a88bc8fa6bc08f78c023e96f86caa7d45',1,'oc_sec_cred_t::next()'],['../structoc__endpoint__t.html#ab649dfd671bd7ffa4accef34548fc893',1,'oc_endpoint_t::next()'],['../structoc__network__interface__cb.html#afe2087116afffdb635282fea83aa32c7',1,'oc_network_interface_cb::next()'],['../structoc__rep__s.html#aab699da307b1549136301bafbfe8da4e',1,'oc_rep_s::next()'],['../structoc__resource__s.html#a13c431b95bb7fd7f66fec2f69a7025a3',1,'oc_resource_s::next()'],['../structoc__event__callback__s.html#a3815ba1a8133ced2806062ef9c2e422a',1,'oc_event_callback_s::next()']]],
+  ['num_5fobservers_1229',['num_observers',['../structoc__resource__s.html#ac176b517f265d964fd85f5c7fb00c6d5',1,'oc_resource_s']]]
 ];

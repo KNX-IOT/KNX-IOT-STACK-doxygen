@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['name_1139',['name',['../structoc__device__info__t.html#a166cce7286659ef193d310d9efd8c1ad',1,'oc_device_info_t::name()'],['../structoc__rep__s.html#a166cce7286659ef193d310d9efd8c1ad',1,'oc_rep_s::name()'],['../structoc__resource__s.html#a166cce7286659ef193d310d9efd8c1ad',1,'oc_resource_s::name()']]],
-  ['next_1140',['next',['../structoc__client__cb__t.html#a77f36d1042f5310f0be4de3e87959ff6',1,'oc_client_cb_t::next()'],['../structoc__sec__cred__t.html#a88bc8fa6bc08f78c023e96f86caa7d45',1,'oc_sec_cred_t::next()'],['../structoc__endpoint__t.html#ab649dfd671bd7ffa4accef34548fc893',1,'oc_endpoint_t::next()'],['../structoc__network__interface__cb.html#afe2087116afffdb635282fea83aa32c7',1,'oc_network_interface_cb::next()'],['../structoc__rep__s.html#aab699da307b1549136301bafbfe8da4e',1,'oc_rep_s::next()'],['../structoc__resource__s.html#a13c431b95bb7fd7f66fec2f69a7025a3',1,'oc_resource_s::next()'],['../structoc__event__callback__s.html#a3815ba1a8133ced2806062ef9c2e422a',1,'oc_event_callback_s::next()']]],
-  ['num_5fobservers_1141',['num_observers',['../structoc__resource__s.html#ac176b517f265d964fd85f5c7fb00c6d5',1,'oc_resource_s']]]
+  ['major_1219',['major',['../structoc__knx__version__info__t.html#ac8947941479c38403a09c14a60b03f01',1,'oc_knx_version_info_t']]],
+  ['method_1220',['method',['../structoc__client__cb__t.html#aa2da7267834a20a523fd77fba7164d97',1,'oc_client_cb_t']]],
+  ['mfg_5fname_1221',['mfg_name',['../structoc__platform__info__t.html#a36a79f70b8fc2377193e9fbdedcea6c9',1,'oc_platform_info_t']]],
+  ['mid_1222',['mid',['../structoc__client__cb__t.html#aa217e155b3f8d951b61a7396ecd20239',1,'oc_client_cb_t']]],
+  ['minor_1223',['minor',['../structoc__knx__version__info__t.html#aec7b96885baf2e6f10efbdef9d935a0b',1,'oc_knx_version_info_t']]],
+  ['model_1224',['model',['../structoc__device__info__t.html#a9cf2e3b9ba0024e462ec37839d48c0d3',1,'oc_device_info_t']]],
+  ['multicast_1225',['multicast',['../structoc__client__cb__t.html#a437b7dcdbc445dd475f956de509e6d55',1,'oc_client_cb_t']]]
 ];

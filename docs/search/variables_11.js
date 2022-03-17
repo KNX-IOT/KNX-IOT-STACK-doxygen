@@ -1,15 +1,13 @@
 var searchData=
 [
-  ['salt_1172',['salt',['../structoc__pase__t.html#a6b23f85d2cde801e59952ac889dc592a',1,'oc_pase_t']]],
-  ['scope_1173',['scope',['../structoc__ipv6__addr__t.html#aad9c61920b7ad19972cb4d83d1180eea',1,'oc_ipv6_addr_t']]],
-  ['separate_1174',['separate',['../structoc__client__cb__t.html#a8c910d948d2fec973c324abdf2e8efa2',1,'oc_client_cb_t']]],
-  ['separate_5fresponse_1175',['separate_response',['../structoc__response__t.html#ab00097d13ea4163cb18b264035e7a7c5',1,'oc_response_t']]],
-  ['serial_5fnumber_1176',['serial_number',['../structoc__endpoint__t.html#aa804b0bb630be1df2c9c652dca6d7965',1,'oc_endpoint_t']]],
-  ['serialnumber_1177',['serialnumber',['../structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09',1,'oc_device_info_t']]],
-  ['set_5fproperties_1178',['set_properties',['../structoc__resource__s.html#a6d8fb9d13071b21ec29abe9b9eed7556',1,'oc_resource_s']]],
-  ['sia_1179',['sia',['../structoc__group__object__notification__t.html#a61cd41def2fb07634a2fb0049bf5c104',1,'oc_group_object_notification_t']]],
-  ['signal_5fevent_5floop_1180',['signal_event_loop',['../structoc__handler__t.html#a701b761aa4dddf3a41d25ddc87e821b0',1,'oc_handler_t']]],
-  ['st_1181',['st',['../structoc__group__object__notification__t.html#ac33eb457eb31def51a3c40abcf60f884',1,'oc_group_object_notification_t']]],
-  ['stop_5fmulticast_5freceive_1182',['stop_multicast_receive',['../structoc__client__cb__t.html#abb6c979f460a5d392ad05aa6ea93a799',1,'oc_client_cb_t']]],
-  ['subjectuuid_1183',['subjectuuid',['../structoc__sec__cred__t.html#a992cf7b399b7823c23c871ffecd67225',1,'oc_sec_cred_t']]]
+  ['ref_5fcount_1260',['ref_count',['../structoc__client__cb__t.html#a8d212098cbfe18fbd9bec648cc0eebb7',1,'oc_client_cb_t']]],
+  ['register_5fresources_1261',['register_resources',['../structoc__handler__t.html#af5d55603be647f6281ab5e09ff0dafa0',1,'oc_handler_t']]],
+  ['request_5fpayload_1262',['request_payload',['../structoc__request__t.html#ac4751776b29000ba3603ef3392bc64d8',1,'oc_request_t']]],
+  ['requests_5fentry_1263',['requests_entry',['../structoc__handler__t.html#ac979523755d1f597b646bff4a70b08cc',1,'oc_handler_t']]],
+  ['resource_1264',['resource',['../structoc__request__t.html#ac51d2fe369d26905a4c6c3f409aa014c',1,'oc_request_t']]],
+  ['response_1265',['response',['../structoc__client__handler__t.html#aa296ddbb003b2b9adac674bd112cb414',1,'oc_client_handler_t::response()'],['../structoc__request__t.html#a26fe19251a9e8be9067a3e0cd6a09270',1,'oc_request_t::response()']]],
+  ['response_5fbuffer_1266',['response_buffer',['../structoc__response__t.html#adcab288d073d8108bfbc11ef81438535',1,'oc_response_t']]],
+  ['rnd_1267',['rnd',['../structoc__pase__t.html#a2ed4ea52d3db13289932750d87e25cae',1,'oc_pase_t']]],
+  ['role_1268',['role',['../structoc__sec__cred__t.html#a30e7e74b551dbcb6cc31bafc4659d245',1,'oc_sec_cred_t']]],
+  ['rowneruuid_1269',['rowneruuid',['../structoc__sec__creds__t.html#af0de68e95004851d0c429f7d528a218c',1,'oc_sec_creds_t']]]
 ];

@@ -1,18 +1,15 @@
 var searchData=
 [
-  ['server_20side_711',['Server side',['../group__doc__module__tag__server__side.html',1,'']]],
-  ['salt_712',['salt',['../structoc__pase__t.html#a6b23f85d2cde801e59952ac889dc592a',1,'oc_pase_t']]],
-  ['scope_713',['scope',['../structoc__ipv6__addr__t.html#aad9c61920b7ad19972cb4d83d1180eea',1,'oc_ipv6_addr_t']]],
-  ['secured_714',['SECURED',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a4233d0336b2b5b9922cc2a448052c137',1,'oc_endpoint.h']]],
-  ['separate_715',['separate',['../structoc__client__cb__t.html#a8c910d948d2fec973c324abdf2e8efa2',1,'oc_client_cb_t']]],
-  ['separate_5fresponse_716',['separate_response',['../structoc__response__t.html#ab00097d13ea4163cb18b264035e7a7c5',1,'oc_response_t']]],
-  ['serial_5fnumber_717',['serial_number',['../structoc__endpoint__t.html#aa804b0bb630be1df2c9c652dca6d7965',1,'oc_endpoint_t']]],
-  ['serialnumber_718',['serialnumber',['../structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09',1,'oc_device_info_t']]],
-  ['session_5fevent_5fhandler_5ft_719',['session_event_handler_t',['../oc__session__events_8h.html#a8ae3215775705d84e55a1a623c8267c9',1,'oc_session_events.h']]],
-  ['set_5fproperties_720',['set_properties',['../structoc__resource__s.html#a6d8fb9d13071b21ec29abe9b9eed7556',1,'oc_resource_s']]],
-  ['sia_721',['sia',['../structoc__group__object__notification__t.html#a61cd41def2fb07634a2fb0049bf5c104',1,'oc_group_object_notification_t']]],
-  ['signal_5fevent_5floop_722',['signal_event_loop',['../structoc__handler__t.html#a701b761aa4dddf3a41d25ddc87e821b0',1,'oc_handler_t']]],
-  ['st_723',['st',['../structoc__group__object__notification__t.html#ac33eb457eb31def51a3c40abcf60f884',1,'oc_group_object_notification_t']]],
-  ['stop_5fmulticast_5freceive_724',['stop_multicast_receive',['../structoc__client__cb__t.html#abb6c979f460a5d392ad05aa6ea93a799',1,'oc_client_cb_t']]],
-  ['subjectuuid_725',['subjectuuid',['../structoc__sec__cred__t.html#a992cf7b399b7823c23c871ffecd67225',1,'oc_sec_cred_t']]]
+  ['ref_5fcount_747',['ref_count',['../structoc__client__cb__t.html#a8d212098cbfe18fbd9bec648cc0eebb7',1,'oc_client_cb_t']]],
+  ['register_5fresources_748',['register_resources',['../structoc__handler__t.html#af5d55603be647f6281ab5e09ff0dafa0',1,'oc_handler_t::register_resources()'],['../_l_s_a_b__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd',1,'register_resources(void):&#160;LSAB_minimal_all.c'],['../_l_s_s_b__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd',1,'register_resources(void):&#160;LSSB_minimal_all.c']]],
+  ['request_5fpayload_749',['request_payload',['../structoc__request__t.html#ac4751776b29000ba3603ef3392bc64d8',1,'oc_request_t']]],
+  ['requests_5fentry_750',['requests_entry',['../structoc__handler__t.html#ac979523755d1f597b646bff4a70b08cc',1,'oc_handler_t']]],
+  ['reset_5fcb_751',['reset_cb',['../_l_s_a_b__minimal__all_8c.html#a8e0cc947f6c738517f2c341af66bc059',1,'reset_cb(size_t device_index, int reset_value, void *data):&#160;LSAB_minimal_all.c'],['../_l_s_s_b__minimal__all_8c.html#a8e0cc947f6c738517f2c341af66bc059',1,'reset_cb(size_t device_index, int reset_value, void *data):&#160;LSSB_minimal_all.c']]],
+  ['resource_752',['resource',['../structoc__request__t.html#ac51d2fe369d26905a4c6c3f409aa014c',1,'oc_request_t']]],
+  ['response_753',['response',['../structoc__client__handler__t.html#aa296ddbb003b2b9adac674bd112cb414',1,'oc_client_handler_t::response()'],['../structoc__request__t.html#a26fe19251a9e8be9067a3e0cd6a09270',1,'oc_request_t::response()']]],
+  ['response_5fbuffer_754',['response_buffer',['../structoc__response__t.html#adcab288d073d8108bfbc11ef81438535',1,'oc_response_t']]],
+  ['restart_5fcb_755',['restart_cb',['../_l_s_a_b__minimal__all_8c.html#af93312bf44b52864350ef193f6245b34',1,'restart_cb(size_t device_index, void *data):&#160;LSAB_minimal_all.c'],['../_l_s_s_b__minimal__all_8c.html#af93312bf44b52864350ef193f6245b34',1,'restart_cb(size_t device_index, void *data):&#160;LSSB_minimal_all.c']]],
+  ['rnd_756',['rnd',['../structoc__pase__t.html#a2ed4ea52d3db13289932750d87e25cae',1,'oc_pase_t']]],
+  ['role_757',['role',['../structoc__sec__cred__t.html#a30e7e74b551dbcb6cc31bafc4659d245',1,'oc_sec_cred_t']]],
+  ['rowneruuid_758',['rowneruuid',['../structoc__sec__creds__t.html#af0de68e95004851d0c429f7d528a218c',1,'oc_sec_creds_t']]]
 ];

@@ -1,5 +1,7 @@
 var files_dup =
 [
+    [ "LSAB_minimal_all.c", "_l_s_a_b__minimal__all_8c.html", "_l_s_a_b__minimal__all_8c" ],
+    [ "LSSB_minimal_all.c", "_l_s_s_b__minimal__all_8c.html", "_l_s_s_b__minimal__all_8c" ],
     [ "oc_api.h", "oc__api_8h.html", "oc__api_8h" ],
     [ "oc_assert.h", "oc__assert_8h.html", "oc__assert_8h" ],
     [ "oc_base64.h", "oc__base64_8h.html", "oc__base64_8h" ],

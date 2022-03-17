@@ -799,7 +799,7 @@ false </dd></dl>
 <p>The resource is populated with a default interface OC_IF_BASELINE.</p>
 <p>Many properties associated with a resource are set or modified after the new resource has been created.</p>
 <p>The resource is not added to the device till <a class="el" href="group__doc__module__tag__server__side.html#ga8cef7c8b4cfdde5cbd79aace72172d41" title="Add a resource to the stack.">oc_add_resource()</a> is called.</p>
-<p>Example: </p><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> register_resources(<span class="keywordtype">void</span>)</div>
+<p>Example: </p><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="_l_s_a_b__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd">register_resources</a>(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
 <div class="line">  <a class="code" href="structoc__resource__s.html">oc_resource_t</a> *bswitch = <a class="code" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc">oc_new_resource</a>(<span class="stringliteral">&quot;light switch&quot;</span>, <span class="stringliteral">&quot;/switch&quot;</span>, 1, 0);</div>
 <div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a">oc_resource_bind_resource_type</a>(bswitch, <span class="stringliteral">&quot;dpt.0.5&quot;</span>);</div>
@@ -1694,6 +1694,7 @@ oc_device_bind_resource_type </dd></dl>
 <div class="ttc" id="aoc__ri_8h_html_a95fa27c60f90b8e3b976f4ca5f04aab2a5e082b6f36e0a90aa92fcd0c2c1af871"><div class="ttname"><a href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a5e082b6f36e0a90aa92fcd0c2c1af871">OC_IF_A</a></div><div class="ttdeci">@ OC_IF_A</div><div class="ttdoc">if.a</div><div class="ttdef"><b>Definition:</b> oc_ri.h:176</div></div>
 <div class="ttc" id="aoc__rep_8h_html_aef1a23bf7d770f5d304ff07b15ef65ce"><div class="ttname"><a href="oc__rep_8h.html#aef1a23bf7d770f5d304ff07b15ef65ce">oc_rep_set_int</a></div><div class="ttdeci">#define oc_rep_set_int(object, key, value)</div><div class="ttdoc">Add an integer value to the cbor object under the key name Example:</div><div class="ttdef"><b>Definition:</b> oc_rep.h:200</div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_ga8cef7c8b4cfdde5cbd79aace72172d41"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga8cef7c8b4cfdde5cbd79aace72172d41">oc_add_resource</a></div><div class="ttdeci">bool oc_add_resource(oc_resource_t *resource)</div><div class="ttdoc">Add a resource to the stack.</div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_aee7bd515d06c5a767aa6d0f37820b0bd"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd">register_resources</a></div><div class="ttdeci">void register_resources(void)</div><div class="ttdoc">register all the resources to the stack this function registers all application level resources:</div><div class="ttdef"><b>Definition:</b> LSAB_minimal_all.c:265</div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_ga5f33d43ecb0adf38a04d499ecf6b8ea3"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga5f33d43ecb0adf38a04d499ecf6b8ea3">oc_init_query_iterator</a></div><div class="ttdeci">void oc_init_query_iterator(void)</div><div class="ttdoc">This resets the query iterator to the start of the URI query parameter.</div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_gab8e08bb0d0476a29ecd562f02e7ec61e"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gab8e08bb0d0476a29ecd562f02e7ec61e">oc_send_separate_response</a></div><div class="ttdeci">void oc_send_separate_response(oc_separate_response_t *handle, oc_status_t response_code)</div><div class="ttdoc">Called to send the deferred response to a GET, PUT, POST or DELETE request.</div></div>
 <div class="ttc" id="aoc__ri_8h_html_a068a1c38013c32d65427aeed54503a38a483d03ac6df269eb49b2ca709372889b"><div class="ttname"><a href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a483d03ac6df269eb49b2ca709372889b">OC_STATUS_OK</a></div><div class="ttdeci">@ OC_STATUS_OK</div><div class="ttdoc">OK.</div><div class="ttdef"><b>Definition:</b> oc_ri.h:62</div></div>
@@ -1715,7 +1716,7 @@ oc_device_bind_resource_type </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Mar 16 2022 18:51:46 for KNX-IOT by
+    <li class="footer">Generated on Thu Mar 17 2022 09:03:21 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

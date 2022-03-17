@@ -1,8 +1,12 @@
 var searchData=
 [
-  ['name_122',['name',['../structoc__device__info__t.html#a166cce7286659ef193d310d9efd8c1ad',1,'oc_device_info_t::name()'],['../structoc__rep__s.html#a166cce7286659ef193d310d9efd8c1ad',1,'oc_rep_s::name()'],['../structoc__resource__s.html#a166cce7286659ef193d310d9efd8c1ad',1,'oc_resource_s::name()']]],
-  ['network_5finterface_5fdown_123',['NETWORK_INTERFACE_DOWN',['../oc__network__events_8h.html#abdd165be6caa5026d18f49473b31aa2da122b034cb4a6bb20b5f1770c2095793d',1,'oc_network_events.h']]],
-  ['network_5finterface_5fup_124',['NETWORK_INTERFACE_UP',['../oc__network__events_8h.html#abdd165be6caa5026d18f49473b31aa2dadd6d38b84666ccf8cc15615199773d77',1,'oc_network_events.h']]],
-  ['next_125',['next',['../structoc__client__cb__t.html#a77f36d1042f5310f0be4de3e87959ff6',1,'oc_client_cb_t::next()'],['../structoc__sec__cred__t.html#a88bc8fa6bc08f78c023e96f86caa7d45',1,'oc_sec_cred_t::next()'],['../structoc__endpoint__t.html#ab649dfd671bd7ffa4accef34548fc893',1,'oc_endpoint_t::next()'],['../structoc__network__interface__cb.html#afe2087116afffdb635282fea83aa32c7',1,'oc_network_interface_cb::next()'],['../structoc__rep__s.html#aab699da307b1549136301bafbfe8da4e',1,'oc_rep_s::next()'],['../structoc__resource__s.html#a13c431b95bb7fd7f66fec2f69a7025a3',1,'oc_resource_s::next()'],['../structoc__event__callback__s.html#a3815ba1a8133ced2806062ef9c2e422a',1,'oc_event_callback_s::next()']]],
-  ['num_5fobservers_126',['num_observers',['../structoc__resource__s.html#ac176b517f265d964fd85f5c7fb00c6d5',1,'oc_resource_s']]]
+  ['main_134',['main',['../_l_s_a_b__minimal__all_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;LSAB_minimal_all.c'],['../_l_s_s_b__minimal__all_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;LSSB_minimal_all.c']]],
+  ['major_135',['major',['../structoc__knx__version__info__t.html#ac8947941479c38403a09c14a60b03f01',1,'oc_knx_version_info_t']]],
+  ['method_136',['method',['../structoc__client__cb__t.html#aa2da7267834a20a523fd77fba7164d97',1,'oc_client_cb_t']]],
+  ['mfg_5fname_137',['mfg_name',['../structoc__platform__info__t.html#a36a79f70b8fc2377193e9fbdedcea6c9',1,'oc_platform_info_t']]],
+  ['mid_138',['mid',['../structoc__client__cb__t.html#aa217e155b3f8d951b61a7396ecd20239',1,'oc_client_cb_t']]],
+  ['minor_139',['minor',['../structoc__knx__version__info__t.html#aec7b96885baf2e6f10efbdef9d935a0b',1,'oc_knx_version_info_t']]],
+  ['model_140',['model',['../structoc__device__info__t.html#a9cf2e3b9ba0024e462ec37839d48c0d3',1,'oc_device_info_t']]],
+  ['multicast_141',['multicast',['../structoc__client__cb__t.html#a437b7dcdbc445dd475f956de509e6d55',1,'oc_client_cb_t::multicast()'],['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a607d700b2c0a01c54bdadde074a7cb12',1,'MULTICAST():&#160;oc_endpoint.h']]],
+  ['my_5fname_142',['MY_NAME',['../_l_s_a_b__minimal__all_8c.html#a56e0ef88d0d230547f678b84ed8ad00a',1,'MY_NAME():&#160;LSAB_minimal_all.c'],['../_l_s_s_b__minimal__all_8c.html#a56e0ef88d0d230547f678b84ed8ad00a',1,'MY_NAME():&#160;LSSB_minimal_all.c']]]
 ];
