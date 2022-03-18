@@ -158,15 +158,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a20fecb30aeba81ace5a974de61d40c1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__platform__info__t.html">oc_platform_info_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a20fecb30aeba81ace5a974de61d40c1d">oc_core_init_platform</a> (const char *mfg_name, <a class="el" href="oc__core__res_8h.html#a598ef30def45a7b6d1a961604e9b28cc">oc_core_init_platform_cb_t</a> init_cb, void *data)</td></tr>
 <tr class="memdesc:a20fecb30aeba81ace5a974de61d40c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize the platform  <a href="oc__core__res_8h.html#a20fecb30aeba81ace5a974de61d40c1d">More...</a><br /></td></tr>
 <tr class="separator:a20fecb30aeba81ace5a974de61d40c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fade990cfc7a6fb1f24f8c3832808a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a2fade990cfc7a6fb1f24f8c3832808a5">oc_core_is_DCR</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, size_t device)</td></tr>
-<tr class="memdesc:a2fade990cfc7a6fb1f24f8c3832808a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">determine if a resource is a Device Configuration Resource  <a href="oc__core__res_8h.html#a2fade990cfc7a6fb1f24f8c3832808a5">More...</a><br /></td></tr>
-<tr class="separator:a2fade990cfc7a6fb1f24f8c3832808a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3cd5e15ed65a998a6ff9534defb4b90"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#ae3cd5e15ed65a998a6ff9534defb4b90">oc_core_is_SVR</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, size_t device)</td></tr>
-<tr class="memdesc:ae3cd5e15ed65a998a6ff9534defb4b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">determine if a resource is Security Vertical Resource  <a href="oc__core__res_8h.html#ae3cd5e15ed65a998a6ff9534defb4b90">More...</a><br /></td></tr>
-<tr class="separator:ae3cd5e15ed65a998a6ff9534defb4b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7fdfcd8dd120c3079bdc1ea919ad8e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#ab7fdfcd8dd120c3079bdc1ea919ad8e3">oc_core_is_vertical_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, size_t device)</td></tr>
-<tr class="memdesc:ab7fdfcd8dd120c3079bdc1ea919ad8e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">determine if a resource is a vertical resource  <a href="oc__core__res_8h.html#ab7fdfcd8dd120c3079bdc1ea919ad8e3">More...</a><br /></td></tr>
-<tr class="separator:ab7fdfcd8dd120c3079bdc1ea919ad8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8d75ae504ef81d109e46c65d0365729"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#ae8d75ae504ef81d109e46c65d0365729">oc_core_populate_resource</a> (int core_resource, size_t device_index, const char *uri, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> content_format, int properties, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> get_cb, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> put_cb, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> post_cb, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> delete_cb, int num_resource_types,...)</td></tr>
 <tr class="memdesc:ae8d75ae504ef81d109e46c65d0365729"><td class="mdescLeft">&#160;</td><td class="mdescRight">populate resource for link-format responses mainly used for creation of core resources  <a href="oc__core__res_8h.html#ae8d75ae504ef81d109e46c65d0365729">More...</a><br /></td></tr>
 <tr class="separator:ae8d75ae504ef81d109e46c65d0365729"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -455,8 +446,6 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>oc_device_info_t* the device info </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_l_s_a_b__minimal__all_8c.html#a2e2efabbeb1c8c68790bb90ce01c4578">app_init()</a>.</p>
-
 </div>
 </div>
 <a id="aa7dc2c2f7072ae6c305e404ddd8b204f"></a>
@@ -640,126 +629,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>oc_platform_info_t* the platform information </dd></dl>
-
-</div>
-</div>
-<a id="a2fade990cfc7a6fb1f24f8c3832808a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fade990cfc7a6fb1f24f8c3832808a5">&#9670;&nbsp;</a></span>oc_core_is_DCR()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool oc_core_is_DCR </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
-          <td class="paramname"><em>resource</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>device</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>determine if a resource is a Device Configuration Resource </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">resource</td><td>the resource </td></tr>
-    <tr><td class="paramname">device</td><td>the device index to which the resource belongs too </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true is DCR resource </dd>
-<dd>
-false is not DCR resource </dd></dl>
-
-</div>
-</div>
-<a id="ae3cd5e15ed65a998a6ff9534defb4b90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3cd5e15ed65a998a6ff9534defb4b90">&#9670;&nbsp;</a></span>oc_core_is_SVR()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool oc_core_is_SVR </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
-          <td class="paramname"><em>resource</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>device</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>determine if a resource is Security Vertical Resource </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">resource</td><td>the resource </td></tr>
-    <tr><td class="paramname">device</td><td>the device index to which the resource belongs too </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true is SRV resource </dd>
-<dd>
-false is not SVR resource </dd></dl>
-
-</div>
-</div>
-<a id="ab7fdfcd8dd120c3079bdc1ea919ad8e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7fdfcd8dd120c3079bdc1ea919ad8e3">&#9670;&nbsp;</a></span>oc_core_is_vertical_resource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool oc_core_is_vertical_resource </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
-          <td class="paramname"><em>resource</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>device</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>determine if a resource is a vertical resource </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">resource</td><td>the resource </td></tr>
-    <tr><td class="paramname">device</td><td>the device index to which the resource belongs too </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true : is vertical resource </dd>
-<dd>
-false : is not a vertical resource </dd></dl>
 
 </div>
 </div>
@@ -1392,7 +1261,7 @@ false resource type is not in the request </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__core__res_8h.html">oc_core_res.h</a></li>
-    <li class="footer">Generated on Thu Mar 17 2022 18:01:15 for KNX-IOT by
+    <li class="footer">Generated on Fri Mar 18 2022 08:55:17 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
