@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('oc__knx__fp_8h.html',''); initResizabl
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__group__object__table__t.html">oc_group_object_table_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Group Object Table Resource (/fp/g)  <a href="structoc__group__object__table__t.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Group Object Table Resource (/fp/g) The payload is an array of objects.  <a href="structoc__group__object__table__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__group__rp__table__t.html">oc_group_rp_table_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function point Recipient - Publisher Table Resource (/fp/r) (/fp/p)  <a href="structoc__group__rp__table__t.html#details">More...</a><br /></td></tr>
@@ -108,7 +108,7 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a18ba0acc39745546d474e585ee82431b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__group__object__table__t.html">oc_group_object_table_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a18ba0acc39745546d474e585ee82431b">oc_group_object_table_t</a></td></tr>
-<tr class="memdesc:a18ba0acc39745546d474e585ee82431b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Group Object Table Resource (/fp/g)  <a href="oc__knx__fp_8h.html#a18ba0acc39745546d474e585ee82431b">More...</a><br /></td></tr>
+<tr class="memdesc:a18ba0acc39745546d474e585ee82431b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Group Object Table Resource (/fp/g) The payload is an array of objects.  <a href="oc__knx__fp_8h.html#a18ba0acc39745546d474e585ee82431b">More...</a><br /></td></tr>
 <tr class="separator:a18ba0acc39745546d474e585ee82431b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a214dbf9a3cb40b85e8e9a357cfca482a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__group__rp__table__t.html">oc_group_rp_table_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a214dbf9a3cb40b85e8e9a357cfca482a">oc_group_rp_table_t</a></td></tr>
 <tr class="memdesc:a214dbf9a3cb40b85e8e9a357cfca482a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function point Recipient - Publisher Table Resource (/fp/r) (/fp/p)  <a href="oc__knx__fp_8h.html#a214dbf9a3cb40b85e8e9a357cfca482a">More...</a><br /></td></tr>
@@ -233,9 +233,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Group Object Table Resource (/fp/g) </p>
-<p>Example: </p><div class="fragment"><div class="line">the will be an array of objects (as json):</div>
-<div class="line">[</div>
+<p>Group Object Table Resource (/fp/g) The payload is an array of objects. </p>
+<p>Example (JSON): </p><div class="fragment"><div class="line">[</div>
 <div class="line">   {</div>
 <div class="line">       <span class="stringliteral">&quot;id&quot;</span>: <span class="stringliteral">&quot;1&quot;</span>,</div>
 <div class="line">       <span class="stringliteral">&quot;href&quot;</span>:<span class="stringliteral">&quot;/LDSB1/SOO&quot;</span>,</div>
@@ -300,10 +299,20 @@ Functions</h2></td></tr>
 
 <p>Function point Recipient - Publisher Table Resource (/fp/r) (/fp/p) </p>
 <p>the same table is used for recipient and publisher. the only difference is the confirmable/not confirmable flag. There will be 2 arrays of the structure to store the /fp/r or /fp/p data</p>
-<p>array of objects (as json) [ { "id": "1", ia": 5,
-       "ga":[2305, 2401],
-       "path": ".knx", }, { "id": "2", "url": "coap://&lt;IP multicast, unicast address or fqdn&gt;/&lt;path&gt;", "ga": [2305, 2306, 2307, 2308] } ]</p>
-<p>Key translation </p><table class="markdownTable">
+<p>Example (JSON): array of objects </p><div class="fragment"><div class="line">[</div>
+<div class="line">   {</div>
+<div class="line">       <span class="stringliteral">&quot;id&quot;</span>: <span class="stringliteral">&quot;1&quot;</span>,</div>
+<div class="line">        ia<span class="stringliteral">&quot;: 5,</span></div>
+<div class="line"><span class="stringliteral">       &quot;</span>ga<span class="stringliteral">&quot;:[2305, 2401],</span></div>
+<div class="line"><span class="stringliteral">       &quot;</span>path<span class="stringliteral">&quot;: &quot;</span>.knx<span class="stringliteral">&quot;,</span></div>
+<div class="line"><span class="stringliteral">   },</span></div>
+<div class="line"><span class="stringliteral">   {</span></div>
+<div class="line"><span class="stringliteral">       &quot;</span><span class="keywordtype">id</span><span class="stringliteral">&quot;: &quot;</span>2<span class="stringliteral">&quot;,</span></div>
+<div class="line"><span class="stringliteral">       &quot;</span>url<span class="stringliteral">&quot;: &quot;</span>coap:<span class="comment">//&lt;IP multicast, unicast address or fqdn&gt;/&lt;path&gt;&quot;,</span></div>
+<div class="line">       <span class="stringliteral">&quot;ga&quot;</span>: [2305, 2306, 2307, 2308]</div>
+<div class="line">    }</div>
+<div class="line">]</div>
+</div><!-- fragment --><p>Key translation </p><table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Json Key </th><th class="markdownTableHeadNone">Integer Value  </th></tr>
 <tr class="markdownTableRowOdd">
@@ -1254,7 +1263,7 @@ false is not part of the recipient entry </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__fp_8h.html">oc_knx_fp.h</a></li>
-    <li class="footer">Generated on Fri Mar 18 2022 12:18:02 for KNX-IOT by
+    <li class="footer">Generated on Fri Mar 18 2022 13:40:38 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

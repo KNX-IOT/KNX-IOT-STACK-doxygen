@@ -198,9 +198,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Group Object Notification Can be used for receiving messages or sending messages. </p>
-<p>generic structures: { 5: { 6: "st value" , 7: "ga value", 1: "value" } }</p>
-<p>{ 4: "sia", 5: { 6: "st", 7: "ga", 1: "value" } }</p>
-<p>Key translation </p><table class="markdownTable">
+<p>generic structures: </p><div class="fragment"><div class="line">{ 5: { 6: <span class="stringliteral">&quot;st value&quot;</span> , 7: <span class="stringliteral">&quot;ga value&quot;</span>, 1: <span class="stringliteral">&quot;value&quot;</span> } }</div>
+<div class="line"> </div>
+<div class="line">{ 4: <span class="stringliteral">&quot;sia&quot;</span>, 5: { 6: <span class="stringliteral">&quot;st&quot;</span>, 7: <span class="stringliteral">&quot;ga&quot;</span>, 1: <span class="stringliteral">&quot;value&quot;</span> } }</div>
+</div><!-- fragment --><p>Key translation </p><table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Json Key </th><th class="markdownTableHeadNone">Integer Value </th><th class="markdownTableHeadNone">type  </th></tr>
 <tr class="markdownTableRowOdd">
@@ -280,14 +281,14 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx_8h_source.html#l00106">106</a> of file <a class="el" href="oc__knx_8h_source.html">oc_knx.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;             {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189eaa24340fdbf7c9fa10d1d5d4c11312d5de">LSM_E_NOP</a> = 0, </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <a class="code" href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189eaa3326a1f5508abde0b628c7e7319ba297">LSM_E_STARTLOADING</a> =</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    1, </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189eaabd734328883ba4416471943fccc5a9f5">LSM_E_LOADCOMPLETE</a> = 2, </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <a class="code" href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189eaab109c6232555649f8dfc37eac7ec4f5b">LSM_E_UNLOAD</a> = 4        </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;} <a class="code" href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189ea">oc_lsm_event_t</a>;</div>
+<p class="definition">Definition at line <a class="el" href="oc__knx_8h_source.html#l00108">108</a> of file <a class="el" href="oc__knx_8h_source.html">oc_knx.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;             {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <a class="code" href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189eaa24340fdbf7c9fa10d1d5d4c11312d5de">LSM_E_NOP</a> = 0, </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189eaa3326a1f5508abde0b628c7e7319ba297">LSM_E_STARTLOADING</a> =</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    1, </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="code" href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189eaabd734328883ba4416471943fccc5a9f5">LSM_E_LOADCOMPLETE</a> = 2, </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <a class="code" href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189eaab109c6232555649f8dfc37eac7ec4f5b">LSM_E_UNLOAD</a> = 4        </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;} <a class="code" href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189ea">oc_lsm_event_t</a>;</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -319,14 +320,14 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx_8h_source.html#l00094">94</a> of file <a class="el" href="oc__knx_8h_source.html">oc_knx.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;             {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1a70c0354c456a3b27862184e20078f2b2">LSM_S_UNLOADED</a> = 0,      </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1af42c8a1513a9f9450bda11d77549f79b">LSM_S_LOADED</a> = 1,        </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1abf35ccc1bef7a591fd04e4a113b52f9e">LSM_S_LOADING</a> = 2,       </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1ad073832b410357c35bcba475db0b1631">LSM_S_UNLOADING</a> = 4,     </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1a81bec9427aa4759c2b1c123b3af1ebbf">LSM_S_LOADCOMPLETING</a> = 5 </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;} <a class="code" href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1">oc_lsm_state_t</a>;</div>
+<p class="definition">Definition at line <a class="el" href="oc__knx_8h_source.html#l00096">96</a> of file <a class="el" href="oc__knx_8h_source.html">oc_knx.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;             {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1a70c0354c456a3b27862184e20078f2b2">LSM_S_UNLOADED</a> = 0,      </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1af42c8a1513a9f9450bda11d77549f79b">LSM_S_LOADED</a> = 1,        </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1abf35ccc1bef7a591fd04e4a113b52f9e">LSM_S_LOADING</a> = 2,       </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1ad073832b410357c35bcba475db0b1631">LSM_S_UNLOADING</a> = 4,     </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <a class="code" href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1a81bec9427aa4759c2b1c123b3af1ebbf">LSM_S_LOADCOMPLETING</a> = 5 </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;} <a class="code" href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1">oc_lsm_state_t</a>;</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -762,22 +763,22 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aoc__knx_8h_html_a1bfbf8704e4ab56c438615080a3189ea"><div class="ttname"><a href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189ea">oc_lsm_event_t</a></div><div class="ttdeci">oc_lsm_event_t</div><div class="ttdoc">LSM event values.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00106">oc_knx.h:106</a></div></div>
-<div class="ttc" id="aoc__knx_8h_html_a645ed20462382898f3d658066ff552f1"><div class="ttname"><a href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1">oc_lsm_state_t</a></div><div class="ttdeci">oc_lsm_state_t</div><div class="ttdoc">LSM state machine values.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00094">oc_knx.h:94</a></div></div>
-<div class="ttc" id="aoc__knx_8h_html_a645ed20462382898f3d658066ff552f1a70c0354c456a3b27862184e20078f2b2"><div class="ttname"><a href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1a70c0354c456a3b27862184e20078f2b2">LSM_S_UNLOADED</a></div><div class="ttdeci">@ LSM_S_UNLOADED</div><div class="ttdoc">(0) state is unloaded, e.g.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00095">oc_knx.h:95</a></div></div>
-<div class="ttc" id="aoc__knx_8h_html_a1bfbf8704e4ab56c438615080a3189eaab109c6232555649f8dfc37eac7ec4f5b"><div class="ttname"><a href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189eaab109c6232555649f8dfc37eac7ec4f5b">LSM_E_UNLOAD</a></div><div class="ttdeci">@ LSM_E_UNLOAD</div><div class="ttdoc">(4) cmd unload: state will be UNLOADED</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00111">oc_knx.h:111</a></div></div>
-<div class="ttc" id="aoc__knx_8h_html_a1bfbf8704e4ab56c438615080a3189eaa24340fdbf7c9fa10d1d5d4c11312d5de"><div class="ttname"><a href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189eaa24340fdbf7c9fa10d1d5d4c11312d5de">LSM_E_NOP</a></div><div class="ttdeci">@ LSM_E_NOP</div><div class="ttdoc">(0) No operation</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00107">oc_knx.h:107</a></div></div>
-<div class="ttc" id="aoc__knx_8h_html_a1bfbf8704e4ab56c438615080a3189eaabd734328883ba4416471943fccc5a9f5"><div class="ttname"><a href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189eaabd734328883ba4416471943fccc5a9f5">LSM_E_LOADCOMPLETE</a></div><div class="ttdeci">@ LSM_E_LOADCOMPLETE</div><div class="ttdoc">(2) cmd loading complete, state will be LOADED</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00110">oc_knx.h:110</a></div></div>
-<div class="ttc" id="aoc__knx_8h_html_a645ed20462382898f3d658066ff552f1af42c8a1513a9f9450bda11d77549f79b"><div class="ttname"><a href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1af42c8a1513a9f9450bda11d77549f79b">LSM_S_LOADED</a></div><div class="ttdeci">@ LSM_S_LOADED</div><div class="ttdoc">(1) state is LOADED, e.g.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00096">oc_knx.h:96</a></div></div>
-<div class="ttc" id="aoc__knx_8h_html_a645ed20462382898f3d658066ff552f1abf35ccc1bef7a591fd04e4a113b52f9e"><div class="ttname"><a href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1abf35ccc1bef7a591fd04e4a113b52f9e">LSM_S_LOADING</a></div><div class="ttdeci">@ LSM_S_LOADING</div><div class="ttdoc">(2) state loading.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00097">oc_knx.h:97</a></div></div>
-<div class="ttc" id="aoc__knx_8h_html_a1bfbf8704e4ab56c438615080a3189eaa3326a1f5508abde0b628c7e7319ba297"><div class="ttname"><a href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189eaa3326a1f5508abde0b628c7e7319ba297">LSM_E_STARTLOADING</a></div><div class="ttdeci">@ LSM_E_STARTLOADING</div><div class="ttdoc">(1) Request to start the loading of the loadable part</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00108">oc_knx.h:108</a></div></div>
-<div class="ttc" id="aoc__knx_8h_html_a645ed20462382898f3d658066ff552f1ad073832b410357c35bcba475db0b1631"><div class="ttname"><a href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1ad073832b410357c35bcba475db0b1631">LSM_S_UNLOADING</a></div><div class="ttdeci">@ LSM_S_UNLOADING</div><div class="ttdoc">(4) state unloading loading.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00098">oc_knx.h:98</a></div></div>
-<div class="ttc" id="aoc__knx_8h_html_a645ed20462382898f3d658066ff552f1a81bec9427aa4759c2b1c123b3af1ebbf"><div class="ttname"><a href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1a81bec9427aa4759c2b1c123b3af1ebbf">LSM_S_LOADCOMPLETING</a></div><div class="ttdeci">@ LSM_S_LOADCOMPLETING</div><div class="ttdoc">(5) cmd unload: state will be UNLOADED</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00099">oc_knx.h:99</a></div></div>
+<div class="ttc" id="aoc__knx_8h_html_a1bfbf8704e4ab56c438615080a3189ea"><div class="ttname"><a href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189ea">oc_lsm_event_t</a></div><div class="ttdeci">oc_lsm_event_t</div><div class="ttdoc">LSM event values.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00108">oc_knx.h:108</a></div></div>
+<div class="ttc" id="aoc__knx_8h_html_a645ed20462382898f3d658066ff552f1"><div class="ttname"><a href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1">oc_lsm_state_t</a></div><div class="ttdeci">oc_lsm_state_t</div><div class="ttdoc">LSM state machine values.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00096">oc_knx.h:96</a></div></div>
+<div class="ttc" id="aoc__knx_8h_html_a645ed20462382898f3d658066ff552f1a70c0354c456a3b27862184e20078f2b2"><div class="ttname"><a href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1a70c0354c456a3b27862184e20078f2b2">LSM_S_UNLOADED</a></div><div class="ttdeci">@ LSM_S_UNLOADED</div><div class="ttdoc">(0) state is unloaded, e.g.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00097">oc_knx.h:97</a></div></div>
+<div class="ttc" id="aoc__knx_8h_html_a1bfbf8704e4ab56c438615080a3189eaab109c6232555649f8dfc37eac7ec4f5b"><div class="ttname"><a href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189eaab109c6232555649f8dfc37eac7ec4f5b">LSM_E_UNLOAD</a></div><div class="ttdeci">@ LSM_E_UNLOAD</div><div class="ttdoc">(4) cmd unload: state will be UNLOADED</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00113">oc_knx.h:113</a></div></div>
+<div class="ttc" id="aoc__knx_8h_html_a1bfbf8704e4ab56c438615080a3189eaa24340fdbf7c9fa10d1d5d4c11312d5de"><div class="ttname"><a href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189eaa24340fdbf7c9fa10d1d5d4c11312d5de">LSM_E_NOP</a></div><div class="ttdeci">@ LSM_E_NOP</div><div class="ttdoc">(0) No operation</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00109">oc_knx.h:109</a></div></div>
+<div class="ttc" id="aoc__knx_8h_html_a1bfbf8704e4ab56c438615080a3189eaabd734328883ba4416471943fccc5a9f5"><div class="ttname"><a href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189eaabd734328883ba4416471943fccc5a9f5">LSM_E_LOADCOMPLETE</a></div><div class="ttdeci">@ LSM_E_LOADCOMPLETE</div><div class="ttdoc">(2) cmd loading complete, state will be LOADED</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00112">oc_knx.h:112</a></div></div>
+<div class="ttc" id="aoc__knx_8h_html_a645ed20462382898f3d658066ff552f1af42c8a1513a9f9450bda11d77549f79b"><div class="ttname"><a href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1af42c8a1513a9f9450bda11d77549f79b">LSM_S_LOADED</a></div><div class="ttdeci">@ LSM_S_LOADED</div><div class="ttdoc">(1) state is LOADED, e.g.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00098">oc_knx.h:98</a></div></div>
+<div class="ttc" id="aoc__knx_8h_html_a645ed20462382898f3d658066ff552f1abf35ccc1bef7a591fd04e4a113b52f9e"><div class="ttname"><a href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1abf35ccc1bef7a591fd04e4a113b52f9e">LSM_S_LOADING</a></div><div class="ttdeci">@ LSM_S_LOADING</div><div class="ttdoc">(2) state loading.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00099">oc_knx.h:99</a></div></div>
+<div class="ttc" id="aoc__knx_8h_html_a1bfbf8704e4ab56c438615080a3189eaa3326a1f5508abde0b628c7e7319ba297"><div class="ttname"><a href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189eaa3326a1f5508abde0b628c7e7319ba297">LSM_E_STARTLOADING</a></div><div class="ttdeci">@ LSM_E_STARTLOADING</div><div class="ttdoc">(1) Request to start the loading of the loadable part</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00110">oc_knx.h:110</a></div></div>
+<div class="ttc" id="aoc__knx_8h_html_a645ed20462382898f3d658066ff552f1ad073832b410357c35bcba475db0b1631"><div class="ttname"><a href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1ad073832b410357c35bcba475db0b1631">LSM_S_UNLOADING</a></div><div class="ttdeci">@ LSM_S_UNLOADING</div><div class="ttdoc">(4) state unloading loading.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00100">oc_knx.h:100</a></div></div>
+<div class="ttc" id="aoc__knx_8h_html_a645ed20462382898f3d658066ff552f1a81bec9427aa4759c2b1c123b3af1ebbf"><div class="ttname"><a href="oc__knx_8h.html#a645ed20462382898f3d658066ff552f1a81bec9427aa4759c2b1c123b3af1ebbf">LSM_S_LOADCOMPLETING</a></div><div class="ttdeci">@ LSM_S_LOADCOMPLETING</div><div class="ttdoc">(5) cmd unload: state will be UNLOADED</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00101">oc_knx.h:101</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__knx_8h.html">oc_knx.h</a></li>
-    <li class="footer">Generated on Fri Mar 18 2022 12:18:02 for KNX-IOT by
+    <li class="footer">Generated on Fri Mar 18 2022 13:40:38 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

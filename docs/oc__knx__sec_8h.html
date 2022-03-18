@@ -99,13 +99,13 @@ $(document).ready(function(){initNavTree('oc__knx__sec_8h.html',''); initResizab
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__auth__at__t.html">oc_auth_at_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access Token (at) Information.  <a href="structoc__auth__at__t.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access Token (at) Information payload for a unicast message Example(JSON):  <a href="structoc__auth__at__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ac794c3bf74dc9db261273aee5e97d1b6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__auth__at__t.html">oc_auth_at_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#ac794c3bf74dc9db261273aee5e97d1b6">oc_auth_at_t</a></td></tr>
-<tr class="memdesc:ac794c3bf74dc9db261273aee5e97d1b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access Token (at) Information.  <a href="oc__knx__sec_8h.html#ac794c3bf74dc9db261273aee5e97d1b6">More...</a><br /></td></tr>
+<tr class="memdesc:ac794c3bf74dc9db261273aee5e97d1b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access Token (at) Information payload for a unicast message Example(JSON):  <a href="oc__knx__sec_8h.html#ac794c3bf74dc9db261273aee5e97d1b6">More...</a><br /></td></tr>
 <tr class="separator:ac794c3bf74dc9db261273aee5e97d1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -169,10 +169,29 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>oc_knx_contains_inter
       </table>
 </div><div class="memdoc">
 
-<p>Access Token (at) Information. </p>
-<p>example of (json) payload for a unicast message: { "id": "OC5BLLhkAG ...", "profile": "coap_oscore", "aud" : "&lt;iid&gt;.&lt;ia&gt;" "scope": ["if.sec", "if.b"], "cnf": { "osc": { "alg": "AES-CCM-16-64-128", "id": "&lt;kid&gt;", "ms": "f9af8s.6bd94e6f" }}}</p>
-<p>second example of (json) payload for a group address: { "id": "OC5BLLhkAG ...", "profile": "coap_oscore", "scope": [0, 1, 2], "cnf": { "osc": { "alg": "AES-CCM-16-64-128", "id": "&lt;kid&gt;", "ms": "f9af8s.6bd94e6f" }}}</p>
-<p>scope : "coap_oscore" [OSCORE] or "coap_dtls"</p>
+<p>Access Token (at) Information payload for a unicast message Example(JSON): </p>
+<div class="fragment"><div class="line">*{</div>
+<div class="line">  <span class="stringliteral">&quot;id&quot;</span>: <span class="stringliteral">&quot;OC5BLLhkAG ...&quot;</span>,</div>
+<div class="line">  <span class="stringliteral">&quot;profile&quot;</span>: <span class="stringliteral">&quot;coap_oscore&quot;</span>,</div>
+<div class="line">  <span class="stringliteral">&quot;aud&quot;</span> : <span class="stringliteral">&quot;&lt;iid&gt;.&lt;ia&gt;&quot;</span></div>
+<div class="line">  <span class="stringliteral">&quot;scope&quot;</span>: [<span class="stringliteral">&quot;if.sec&quot;</span>, <span class="stringliteral">&quot;if.b&quot;</span>],</div>
+<div class="line">  <span class="stringliteral">&quot;cnf&quot;</span>: {</div>
+<div class="line">  <span class="stringliteral">&quot;osc&quot;</span>: {</div>
+<div class="line">  <span class="stringliteral">&quot;alg&quot;</span>: <span class="stringliteral">&quot;AES-CCM-16-64-128&quot;</span>,</div>
+<div class="line">  <span class="stringliteral">&quot;id&quot;</span>: <span class="stringliteral">&quot;&lt;kid&gt;&quot;</span>,</div>
+<div class="line">  <span class="stringliteral">&quot;ms&quot;</span>: <span class="stringliteral">&quot;f9af8s.6bd94e6f&quot;</span></div>
+<div class="line">  }}}</div>
+</div><!-- fragment --><p>second example of (json) payload for a group address: </p><div class="fragment"><div class="line">*{</div>
+<div class="line">  <span class="stringliteral">&quot;id&quot;</span>: <span class="stringliteral">&quot;OC5BLLhkAG ...&quot;</span>,</div>
+<div class="line">  <span class="stringliteral">&quot;profile&quot;</span>: <span class="stringliteral">&quot;coap_oscore&quot;</span>,</div>
+<div class="line">  <span class="stringliteral">&quot;scope&quot;</span>: [0, 1, 2],</div>
+<div class="line">  <span class="stringliteral">&quot;cnf&quot;</span>: {</div>
+<div class="line">  <span class="stringliteral">&quot;osc&quot;</span>: {</div>
+<div class="line">  <span class="stringliteral">&quot;alg&quot;</span>: <span class="stringliteral">&quot;AES-CCM-16-64-128&quot;</span>,</div>
+<div class="line">  <span class="stringliteral">&quot;id&quot;</span>: <span class="stringliteral">&quot;&lt;kid&gt;&quot;</span>,</div>
+<div class="line">  <span class="stringliteral">&quot;ms&quot;</span>: <span class="stringliteral">&quot;f9af8s.6bd94e6f&quot;</span></div>
+<div class="line">  }}}</div>
+</div><!-- fragment --><p>scope : "coap_oscore" [OSCORE] or "coap_dtls"</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">name </th><th class="markdownTableHeadNone">CBOR key </th><th class="markdownTableHeadNone">CBOR type </th><th class="markdownTableHeadNone">mandatory  </th></tr>
@@ -209,11 +228,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>oc_knx_contains_inter
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">alg </td><td class="markdownTableBodyNone">4 </td><td class="markdownTableBodyNone">text string / integer </td><td class="markdownTableBodyNone">AEAD Algorithm </td><td class="markdownTableBodyNone">AES-CCM-16-64-128 (10)  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">salt </td><td class="markdownTableBodyNone">5 </td><td class="markdownTableBodyNone">byte string </td><td class="markdownTableBodyNone">Master Salt </td><td class="markdownTableBodyNone">Default SHALL be an empty byte  </td></tr>
+<td class="markdownTableBodyNone">salt </td><td class="markdownTableBodyNone">5 </td><td class="markdownTableBodyNone">byte string </td><td class="markdownTableBodyNone">Master Salt </td><td class="markdownTableBodyNone">Default empty byte string  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">contextId </td><td class="markdownTableBodyNone">6 </td><td class="markdownTableBodyNone">byte string </td><td class="markdownTableBodyNone">OSCORE ID Context value </td><td class="markdownTableBodyNone">omit  </td></tr>
 </table>
-<p>string | | contextId | 6 | byte string | OSCORE ID Context value | omit |</p>
-<p>{ "alg" : "AES-CCM-16-64-128", "id" : b64'AQ==' "ms" : b64'+a+Dg2jjU+eIiOFCa9lObw' } </p><pre class="fragment">Note: maps are not stored.
-</pre> 
+<p>Example payload: </p><div class="fragment"><div class="line">{</div>
+<div class="line">  <span class="stringliteral">&quot;alg&quot;</span> : <span class="stringliteral">&quot;AES-CCM-16-64-128&quot;</span>,</div>
+<div class="line">  <span class="stringliteral">&quot;id&quot;</span> : b64<span class="stringliteral">&#39;AQ==&#39;</span></div>
+<div class="line">  <span class="stringliteral">&quot;ms&quot;</span> : b64<span class="stringliteral">&#39;+a+Dg2jjU+eIiOFCa9lObw&#39;</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Note: maps are not stored. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -553,7 +578,7 @@ false does not have access </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__sec_8h.html">oc_knx_sec.h</a></li>
-    <li class="footer">Generated on Fri Mar 18 2022 12:18:02 for KNX-IOT by
+    <li class="footer">Generated on Fri Mar 18 2022 13:40:38 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -122,10 +122,20 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Function point Recipient - Publisher Table Resource (/fp/r) (/fp/p) </p>
 <p>the same table is used for recipient and publisher. the only difference is the confirmable/not confirmable flag. There will be 2 arrays of the structure to store the /fp/r or /fp/p data</p>
-<p>array of objects (as json) [ { "id": "1", ia": 5,
-       "ga":[2305, 2401],
-       "path": ".knx", }, { "id": "2", "url": "coap://&lt;IP multicast, unicast address or fqdn&gt;/&lt;path&gt;", "ga": [2305, 2306, 2307, 2308] } ]</p>
-<p>Key translation </p><table class="markdownTable">
+<p>Example (JSON): array of objects </p><div class="fragment"><div class="line">[</div>
+<div class="line">   {</div>
+<div class="line">       <span class="stringliteral">&quot;id&quot;</span>: <span class="stringliteral">&quot;1&quot;</span>,</div>
+<div class="line">        <a class="code" href="structoc__group__rp__table__t.html#a2c924fc0836c91dc1e9f1c4c443f53a9">ia</a><span class="stringliteral">&quot;: 5,</span></div>
+<div class="line"><span class="stringliteral">       &quot;</span><a class="code" href="structoc__group__rp__table__t.html#a38b2e720236d2816ad7d4f7d5d59d7c8">ga</a><span class="stringliteral">&quot;:[2305, 2401],</span></div>
+<div class="line"><span class="stringliteral">       &quot;</span><a class="code" href="structoc__group__rp__table__t.html#a8ad46d7f749c3019406d61357741b894">path</a><span class="stringliteral">&quot;: &quot;</span>.knx<span class="stringliteral">&quot;,</span></div>
+<div class="line"><span class="stringliteral">   },</span></div>
+<div class="line"><span class="stringliteral">   {</span></div>
+<div class="line"><span class="stringliteral">       &quot;</span><span class="keywordtype">id</span><span class="stringliteral">&quot;: &quot;</span>2<span class="stringliteral">&quot;,</span></div>
+<div class="line"><span class="stringliteral">       &quot;</span><a class="code" href="structoc__group__rp__table__t.html#a2289112fbf6cc1c66e41165d20ae60b5">url</a><span class="stringliteral">&quot;: &quot;</span>coap:<span class="comment">//&lt;IP multicast, unicast address or fqdn&gt;/&lt;path&gt;&quot;,</span></div>
+<div class="line">       <span class="stringliteral">&quot;ga&quot;</span>: [2305, 2306, 2307, 2308]</div>
+<div class="line">    }</div>
+<div class="line">]</div>
+</div><!-- fragment --><p>Key translation </p><table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Json Key </th><th class="markdownTableHeadNone">Integer Value  </th></tr>
 <tr class="markdownTableRowOdd">
@@ -148,7 +158,7 @@ Data Fields</h2></td></tr>
 <li>make the entry persistent </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00164">164</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00165">165</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a74d229484bff7a1739d19e69c38b2d02"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74d229484bff7a1739d19e69c38b2d02">&#9670;&nbsp;</a></span>con</h2>
@@ -164,7 +174,7 @@ Data Fields</h2></td></tr>
 
 <p>confirmed message, default = false </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00170">170</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00171">171</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
 
 </div>
 </div>
@@ -182,7 +192,7 @@ Data Fields</h2></td></tr>
 
 <p>array of integers </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00171">171</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00172">172</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
 
 </div>
 </div>
@@ -200,7 +210,7 @@ Data Fields</h2></td></tr>
 
 <p>length of the array of ga identifiers </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00172">172</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00173">173</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
 
 </div>
 </div>
@@ -218,7 +228,7 @@ Data Fields</h2></td></tr>
 
 <p>contents of ia (internal address) </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00167">167</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00168">168</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
 
 </div>
 </div>
@@ -236,7 +246,7 @@ Data Fields</h2></td></tr>
 
 <p>contents of id </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00166">166</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00167">167</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
 
 </div>
 </div>
@@ -254,7 +264,7 @@ Data Fields</h2></td></tr>
 
 <p>contents of path, default path = ".knx" </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00168">168</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00169">169</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
 
 </div>
 </div>
@@ -272,7 +282,7 @@ Data Fields</h2></td></tr>
 
 <p>contents of url </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00169">169</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00170">170</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
 
 </div>
 </div>
@@ -281,11 +291,15 @@ Data Fields</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="astructoc__group__rp__table__t_html_a38b2e720236d2816ad7d4f7d5d59d7c8"><div class="ttname"><a href="structoc__group__rp__table__t.html#a38b2e720236d2816ad7d4f7d5d59d7c8">oc_group_rp_table_t::ga</a></div><div class="ttdeci">int * ga</div><div class="ttdoc">array of integers</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00172">oc_knx_fp.h:172</a></div></div>
+<div class="ttc" id="astructoc__group__rp__table__t_html_a2c924fc0836c91dc1e9f1c4c443f53a9"><div class="ttname"><a href="structoc__group__rp__table__t.html#a2c924fc0836c91dc1e9f1c4c443f53a9">oc_group_rp_table_t::ia</a></div><div class="ttdeci">int ia</div><div class="ttdoc">contents of ia (internal address)</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00168">oc_knx_fp.h:168</a></div></div>
+<div class="ttc" id="astructoc__group__rp__table__t_html_a2289112fbf6cc1c66e41165d20ae60b5"><div class="ttname"><a href="structoc__group__rp__table__t.html#a2289112fbf6cc1c66e41165d20ae60b5">oc_group_rp_table_t::url</a></div><div class="ttdeci">oc_string_t url</div><div class="ttdoc">contents of url</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00170">oc_knx_fp.h:170</a></div></div>
+<div class="ttc" id="astructoc__group__rp__table__t_html_a8ad46d7f749c3019406d61357741b894"><div class="ttname"><a href="structoc__group__rp__table__t.html#a8ad46d7f749c3019406d61357741b894">oc_group_rp_table_t::path</a></div><div class="ttdeci">oc_string_t path</div><div class="ttdoc">contents of path, default path = &quot;.knx&quot;</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00169">oc_knx_fp.h:169</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structoc__group__rp__table__t.html">oc_group_rp_table_t</a></li>
-    <li class="footer">Generated on Fri Mar 18 2022 12:18:02 for KNX-IOT by
+    <li class="footer">Generated on Fri Mar 18 2022 13:40:38 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
