@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['server_20side_1562',['Server side',['../group__doc__module__tag__server__side.html',1,'']]]
+  ['gateway_1862',['Gateway',['../group__doc__module__tag__gateway.html',1,'']]]
 ];

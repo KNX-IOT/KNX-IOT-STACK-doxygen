@@ -7,5 +7,6 @@ var searchData=
   ['di_76',['di',['../structoc__device__info__t.html#ae3979db93606a2e12065d0407f78e4b0',1,'oc_device_info_t']]],
   ['discovery_77',['discovery',['../structoc__client__handler__t.html#a5ece4b8c8e58db1221d42a6ebb5ed9ed',1,'oc_client_handler_t::discovery()'],['../structoc__client__cb__t.html#a1f18cb20f318c3205270ae8361ccf5e7',1,'oc_client_cb_t::discovery()'],['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a05eb094889c0adc67ccc19ea72284315',1,'DISCOVERY():&#160;oc_endpoint.h']]],
   ['discovery_5fall_78',['discovery_all',['../structoc__client__handler__t.html#ae13bf5ea66a212e9b085f17d748c7b98',1,'oc_client_handler_t']]],
-  ['dmv_79',['dmv',['../structoc__device__info__t.html#ab2958b7679083addc7c720cc3877bc47',1,'oc_device_info_t']]]
+  ['dmv_79',['dmv',['../structoc__device__info__t.html#ab2958b7679083addc7c720cc3877bc47',1,'oc_device_info_t']]],
+  ['dll_80',['DLL',['../group__doc__module__tag__dll.html',1,'']]]
 ];
