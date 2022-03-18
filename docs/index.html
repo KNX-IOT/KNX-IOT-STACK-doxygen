@@ -94,21 +94,27 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <li><a class="el" href="group__doc__module__tag__server__side.html">Server side</a> Server exposing data points</li>
 <li><a class="el" href="group__doc__module__tag__client__state.html">Client side</a> Client sending s-mode commands</li>
 </ul>
-<p>The Stack implements:</p>
+<p>The Stack implements functionality like:</p>
 <ul>
 <li>the CoAP client and server</li>
 <li>OSCORE security</li>
-<li>wellknown/core discovery</li>
+<li>.well-known/core discovery</li>
+<li>Table implementation:<ul>
+<li>Group object table</li>
+<li>Credential table (e.g. auth/at entries)</li>
+<li>Recipient table</li>
 </ul>
-<p>Hence an KNX_IOT application exist of:</p>
+</li>
+</ul>
+<p>Therefore an KNX_IOT application exist of:</p>
 <ul>
-<li>code for each specific data points (handling GET/POST)</li>
+<li>Code for each specific data points (handling GET/POST)</li>
 <li>own code to talk to hardware</li>
-<li>device specific (functional specific) callbacks<ul>
-<li>reset mechanism</li>
+<li>Device specific (functional specific) callbacks<ul>
+<li>reset <a class="el" href="structoc__reset__t.html">oc_reset_t</a></li>
+<li>restart <a class="el" href="structoc__restart__t.html">oc_restart_t</a></li>
 <li>software update</li>
-<li>setting domain names</li>
-<li>..</li>
+<li>setting host name <a class="el" href="structoc__hostname__t.html">oc_hostname_t</a></li>
 </ul>
 </li>
 <li>main loop</li>
@@ -123,7 +129,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 18 2022 11:42:30 for KNX-IOT by
+    <li class="footer">Generated on Fri Mar 18 2022 12:18:02 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
