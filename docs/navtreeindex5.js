@@ -1,5 +1,10 @@
 var NAVTREEINDEX5 =
 {
+"structoc__group__object__notification__t.html":[2,0,12],
+"structoc__group__object__notification__t.html#a61cd41def2fb07634a2fb0049bf5c104":[2,0,12,1],
+"structoc__group__object__notification__t.html#ac33eb457eb31def51a3c40abcf60f884":[2,0,12,2],
+"structoc__group__object__notification__t.html#ae20335a9b5c8e36a127e172788928e61":[2,0,12,3],
+"structoc__group__object__notification__t.html#affee04641198fb655ede4e4b77099b2b":[2,0,12,0],
 "structoc__group__object__table__t.html":[2,0,13],
 "structoc__group__object__table__t.html#a22a183c30157b0a15e7f07811feadf79":[2,0,13,0],
 "structoc__group__object__table__t.html#a22b3ba4f6d50d70d36c5107bd0a8050f":[2,0,13,2],

@@ -113,8 +113,11 @@ var menudata={children:[
 {text:"s",url:"globals_func_s.html#index_s"}]},
 {text:"Variables",url:"globals_vars.html"},
 {text:"Typedefs",url:"globals_type.html",children:[
+{text:"c",url:"globals_type.html#index_c"},
+{text:"d",url:"globals_type.html#index_d"},
 {text:"i",url:"globals_type.html#index_i"},
 {text:"o",url:"globals_type.html#index_o"},
+{text:"r",url:"globals_type.html#index_r"},
 {text:"s",url:"globals_type.html#index_s"}]},
 {text:"Enumerations",url:"globals_enum.html"},
 {text:"Enumerator",url:"globals_eval.html",children:[
