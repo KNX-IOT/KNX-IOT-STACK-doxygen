@@ -20,6 +20,7 @@ var oc__knx_8h =
     [ "oc_core_get_lsm_event_as_string", "oc__knx_8h.html#a0b6035c708c8b35d010d0d069d57ed75", null ],
     [ "oc_core_get_lsm_state_as_string", "oc__knx_8h.html#a8d39fd8c9d8c145363c5795285ed016b", null ],
     [ "oc_create_knx_resources", "oc__knx_8h.html#a2cb5879a5f4a2a018fce52f68fb566eb", null ],
+    [ "oc_is_device_in_runtime", "oc__knx_8h.html#a91b656cda6a8062eca36363df0a79e62", null ],
     [ "oc_knx_dump_fingerprint", "oc__knx_8h.html#a05fe9021ca0d46cbbcdf4fdfc9de7e1e", null ],
     [ "oc_knx_get_osn", "oc__knx_8h.html#acea533f06f05b22ed15e4046efcb2c09", null ],
     [ "oc_knx_increase_fingerprint", "oc__knx_8h.html#ae624ea1f5239dbe2406e3dab6815573a", null ],
@@ -28,7 +29,7 @@ var oc__knx_8h =
     [ "oc_knx_lsm_set_state", "oc__knx_8h.html#a28e9cdeaf3c18a8b3994925ef77e2382", null ],
     [ "oc_knx_lsm_state", "oc__knx_8h.html#a6467855e24520e60e0481550cb443807", null ],
     [ "oc_knx_set_fingerprint", "oc__knx_8h.html#ac9e6902400778ff25622eefd38ab9300", null ],
-    [ "oc_knx_set_idevid", "oc__knx_8h.html#a86d3245cb1fe93ac0f60c97c9c2615cd", null ],
+    [ "oc_knx_set_idevid", "oc__knx_8h.html#ab5820e5ccf6e9904d6b9b640f564468f", null ],
     [ "oc_knx_set_ldevid", "oc__knx_8h.html#a9382247baeb3f915c87373c2b8bbe757", null ],
     [ "oc_knx_set_osn", "oc__knx_8h.html#af380d54466e0771b47289e588e62abf0", null ],
     [ "oc_reset_device", "oc__knx_8h.html#a718a9bcb83e4b1e7d0dfcc6bf24efb9e", null ]

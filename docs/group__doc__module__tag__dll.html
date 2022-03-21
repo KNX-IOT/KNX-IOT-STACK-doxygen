@@ -165,9 +165,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga70b310832be539ed3445bd9455253b68"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#ga70b310832be539ed3445bd9455253b68">py_install_spakeCB</a> (spakeCB spakeCB)</td></tr>
 <tr class="memdesc:ga70b310832be539ed3445bd9455253b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">install the spake callback This function is called when the spake handshake is finished (or failed)  <a href="group__doc__module__tag__dll.html#ga70b310832be539ed3445bd9455253b68">More...</a><br /></td></tr>
 <tr class="separator:ga70b310832be539ed3445bd9455253b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2bf0de1f015a7f9cc93401d65bf75a49"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#ga2bf0de1f015a7f9cc93401d65bf75a49">py_issue_requests_s_mode</a> (int scope, int sia, int ga, char *st, int value_type, char *value)</td></tr>
-<tr class="memdesc:ga2bf0de1f015a7f9cc93401d65bf75a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends an s-mode message  <a href="group__doc__module__tag__dll.html#ga2bf0de1f015a7f9cc93401d65bf75a49">More...</a><br /></td></tr>
-<tr class="separator:ga2bf0de1f015a7f9cc93401d65bf75a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3078305b5b998695977435041bf8c639"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#ga3078305b5b998695977435041bf8c639">py_issue_requests_s_mode</a> (int scope, int sia, int ga, int iid, char *st, int value_type, char *value)</td></tr>
+<tr class="memdesc:ga3078305b5b998695977435041bf8c639"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends an s-mode message  <a href="group__doc__module__tag__dll.html#ga3078305b5b998695977435041bf8c639">More...</a><br /></td></tr>
+<tr class="separator:ga3078305b5b998695977435041bf8c639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafc117102448e181c49a5c814200451fb"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#gafc117102448e181c49a5c814200451fb">py_linkformat_get</a> (char *sn, char *uri, char *query, char *r_id)</td></tr>
 <tr class="memdesc:gafc117102448e181c49a5c814200451fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">issue a GET request with expected content type LINK-FORMAT  <a href="group__doc__module__tag__dll.html#gafc117102448e181c49a5c814200451fb">More...</a><br /></td></tr>
 <tr class="separator:gafc117102448e181c49a5c814200451fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -802,8 +802,8 @@ kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><b>py_linkf
 
 </div>
 </div>
-<a id="ga2bf0de1f015a7f9cc93401d65bf75a49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2bf0de1f015a7f9cc93401d65bf75a49">&#9670;&nbsp;</a></span>py_issue_requests_s_mode()</h2>
+<a id="ga3078305b5b998695977435041bf8c639"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3078305b5b998695977435041bf8c639">&#9670;&nbsp;</a></span>py_issue_requests_s_mode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -825,6 +825,12 @@ kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><b>py_linkf
           <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>ga</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -858,6 +864,7 @@ kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><b>py_linkf
     <tr><td class="paramname">scope</td><td>the multicast scope, [2,3,5] </td></tr>
     <tr><td class="paramname">sia</td><td>the sender address </td></tr>
     <tr><td class="paramname">ga</td><td>the group address </td></tr>
+    <tr><td class="paramname">iid</td><td>the installation id </td></tr>
     <tr><td class="paramname">st</td><td>the service type ["r","w","rp"] </td></tr>
     <tr><td class="paramname">value_type</td><td>the value type [0=boolean, 1=integer, 2=float] </td></tr>
     <tr><td class="paramname">value</td><td>the value (as string) </td></tr>
@@ -970,7 +977,7 @@ kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><b>py_linkf
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 18 2022 13:40:38 for KNX-IOT by
+    <li class="footer">Generated on Mon Mar 21 2022 09:35:58 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

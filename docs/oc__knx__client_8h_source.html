@@ -130,18 +130,19 @@ $(document).ready(function(){initNavTree('oc__knx__client_8h_source.html',''); i
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__client_8h.html#a8cdcbc774e271ee4a6ee3aca44dca6e0">oc_do_s_mode</a>(<span class="keywordtype">char</span> *resource_url, <span class="keywordtype">char</span> *rp);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">void</span> oc_do_s_mode_read(<span class="keywordtype">size_t</span> group_address);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__client_8h.html#a5839771a2dba67320b0f4d427bea2721">oc_do_s_mode_with_scope</a>(<span class="keywordtype">int</span> scope, <span class="keywordtype">char</span> *resource_url, <span class="keywordtype">char</span> *rp);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_KNX_CLIENT_INTERNAL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__client_8h.html#a5d201d7c21ccede1727b6cf24a68ed78">oc_do_s_mode_read</a>(<span class="keywordtype">size_t</span> group_address);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__client_8h.html#a5839771a2dba67320b0f4d427bea2721">oc_do_s_mode_with_scope</a>(<span class="keywordtype">int</span> scope, <span class="keywordtype">char</span> *resource_url, <span class="keywordtype">char</span> *rp);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_KNX_CLIENT_INTERNAL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aoc__knx__client_8h_html_a7e6988052b41090e52b610c3f23a17ac"><div class="ttname"><a href="oc__knx__client_8h.html#a7e6988052b41090e52b610c3f23a17ac">oc_is_s_mode_request</a></div><div class="ttdeci">bool oc_is_s_mode_request(oc_request_t *request)</div><div class="ttdoc">checks if the request is a redirected request from .knx all messages to .knx are s-mode messages with...</div></div>
+<div class="ttc" id="aoc__knx__client_8h_html_a5d201d7c21ccede1727b6cf24a68ed78"><div class="ttname"><a href="oc__knx__client_8h.html#a5d201d7c21ccede1727b6cf24a68ed78">oc_do_s_mode_read</a></div><div class="ttdeci">void oc_do_s_mode_read(size_t group_address)</div><div class="ttdoc">sends out an s-mode read request.</div></div>
 <div class="ttc" id="aoc__knx__client_8h_html_aab408203d7105c215bd068c047a09562"><div class="ttname"><a href="oc__knx__client_8h.html#aab408203d7105c215bd068c047a09562">oc_s_mode_get_value</a></div><div class="ttdeci">oc_rep_t * oc_s_mode_get_value(oc_request_t *request)</div><div class="ttdoc">parses out the value of the s-mode request.</div></div>
 <div class="ttc" id="aoc__knx__client_8h_html_aa7f0b28c63b1b539dab013e7b1095cc1"><div class="ttname"><a href="oc__knx__client_8h.html#aa7f0b28c63b1b539dab013e7b1095cc1">oc_set_s_mode_response_cb</a></div><div class="ttdeci">bool oc_set_s_mode_response_cb(oc_s_mode_response_cb_t my_func)</div><div class="ttdoc">set the s-mode response callback e.g.</div></div>
 <div class="ttc" id="astructoc__request__t_html"><div class="ttname"><a href="structoc__request__t.html">oc_request_t</a></div><div class="ttdoc">request information structure</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00295">oc_ri.h:295</a></div></div>
@@ -156,7 +157,7 @@ $(document).ready(function(){initNavTree('oc__knx__client_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__client_8h.html">oc_knx_client.h</a></li>
-    <li class="footer">Generated on Fri Mar 18 2022 13:40:38 for KNX-IOT by
+    <li class="footer">Generated on Mon Mar 21 2022 09:35:58 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

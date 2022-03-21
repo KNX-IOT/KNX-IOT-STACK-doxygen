@@ -17,7 +17,7 @@ var group__doc__module__tag__dll =
     [ "py_install_discoveryCB", "group__doc__module__tag__dll.html#gaf7c6bce0e98986a2a0132ff1fcae0de6", null ],
     [ "py_install_resourceCB", "group__doc__module__tag__dll.html#ga4e1de4afc0a7c1b75729e9f6f94e31a8", null ],
     [ "py_install_spakeCB", "group__doc__module__tag__dll.html#ga70b310832be539ed3445bd9455253b68", null ],
-    [ "py_issue_requests_s_mode", "group__doc__module__tag__dll.html#ga2bf0de1f015a7f9cc93401d65bf75a49", null ],
+    [ "py_issue_requests_s_mode", "group__doc__module__tag__dll.html#ga3078305b5b998695977435041bf8c639", null ],
     [ "py_linkformat_get", "group__doc__module__tag__dll.html#gafc117102448e181c49a5c814200451fb", null ],
     [ "py_main", "group__doc__module__tag__dll.html#gaa4167ac9655cf3022ec293e340f70db1", null ],
     [ "py_set_max_app_data_size", "group__doc__module__tag__dll.html#ga5a5f42d6190d6e5d77cb2d2fb36613e5", null ]
