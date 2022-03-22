@@ -99,7 +99,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a8fc3969260aa04b35d75552222c7fd44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creation of the KNX device resources.  <a href="oc__knx__dev_8h.html#a8fc3969260aa04b35d75552222c7fd44">More...</a><br /></td></tr>
 <tr class="separator:a8fc3969260aa04b35d75552222c7fd44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8727713b0c7cf2b6798851987f20e9ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__dev_8h.html#a8727713b0c7cf2b6798851987f20e9ad">oc_knx_device_in_programming_mode</a> (size_t device_index)</td></tr>
-<tr class="memdesc:a8727713b0c7cf2b6798851987f20e9ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">function checks if the device is in programming mode the following resources can be changed when in programming mode  <a href="oc__knx__dev_8h.html#a8727713b0c7cf2b6798851987f20e9ad">More...</a><br /></td></tr>
+<tr class="memdesc:a8727713b0c7cf2b6798851987f20e9ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">function checks if the device is in programming mode  <a href="oc__knx__dev_8h.html#a8727713b0c7cf2b6798851987f20e9ad">More...</a><br /></td></tr>
 <tr class="separator:a8727713b0c7cf2b6798851987f20e9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a348e6109ca9903bfe71449ad5920e012"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__dev_8h.html#a348e6109ca9903bfe71449ad5920e012">oc_knx_device_storage_read</a> (size_t device)</td></tr>
 <tr class="memdesc:a348e6109ca9903bfe71449ad5920e012"><td class="mdescLeft">&#160;</td><td class="mdescRight">read the contents from disk during start up for the resources implemented / dev / *  <a href="oc__knx__dev_8h.html#a348e6109ca9903bfe71449ad5920e012">More...</a><br /></td></tr>
@@ -126,7 +126,20 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creation of the KNX device resources. </p>
-<p>e.g. the / dev / * resources</p>
+<p>e.g. the dev resources:</p><ul>
+<li>sn (serial number)</li>
+<li>hwv (hardware version)</li>
+<li>fwv (firmware version)</li>
+<li>hwt (hardware type)</li>
+<li>model (device model)</li>
+<li>sa (sub address)</li>
+<li>da (device address)</li>
+<li>ipv6 (ipv6 address)</li>
+<li>hname (host name)</li>
+<li>ia (internal address)</li>
+<li>iid (installation identifier)</li>
+<li>port (port address)</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td>index of the device to which the resource is to be created </td></tr>
@@ -152,12 +165,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>function checks if the device is in programming mode the following resources can be changed when in programming mode </p>
-<ul>
-<li>ia</li>
-<li>hostname</li>
-<li>idd</li>
-</ul>
+<p>function checks if the device is in programming mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device_index</td><td>the device index </td></tr>
@@ -228,6 +236,8 @@ false not in programming mode </dd></dl>
 <li>host name (hname)</li>
 <li>Installation ID (iid)</li>
 <li>programming mode (pm)</li>
+<li>device address (da)</li>
+<li>sub address (sa)</li>
 <li>group object table</li>
 <li>recipient object table</li>
 <li><p class="startli">publisher object table</p>
@@ -253,7 +263,7 @@ false not in programming mode </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__dev_8h.html">oc_knx_dev.h</a></li>
-    <li class="footer">Generated on Tue Mar 22 2022 11:16:23 for KNX-IOT by
+    <li class="footer">Generated on Tue Mar 22 2022 11:58:17 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

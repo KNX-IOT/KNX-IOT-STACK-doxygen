@@ -1,6 +1,7 @@
 var structoc__device__info__t =
 [
     [ "add_device_cb", "structoc__device__info__t.html#aa7e71d0ef5bb9848723bd81d7414ceaa", null ],
+    [ "da", "structoc__device__info__t.html#a4665043d0d55c776a1499ad195d0efe8", null ],
     [ "data", "structoc__device__info__t.html#a735984d41155bc1032e09bece8f8d66d", null ],
     [ "device_mode", "structoc__device__info__t.html#a1380312a742802970de35277947e67fb", null ],
     [ "di", "structoc__device__info__t.html#ae3979db93606a2e12065d0407f78e4b0", null ],
@@ -17,5 +18,7 @@ var structoc__device__info__t =
     [ "name", "structoc__device__info__t.html#a166cce7286659ef193d310d9efd8c1ad", null ],
     [ "piid", "structoc__device__info__t.html#afce58c82d138d2ed2d62dcbd3b3f02eb", null ],
     [ "pm", "structoc__device__info__t.html#af2261d52ec95bfac52b4cdd759575da4", null ],
+    [ "port", "structoc__device__info__t.html#a83a04ad582de2b7d36b96f9db429c2c6", null ],
+    [ "sa", "structoc__device__info__t.html#a33751b24973c1f5badbdc19c44db4206", null ],
     [ "serialnumber", "structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09", null ]
 ];
