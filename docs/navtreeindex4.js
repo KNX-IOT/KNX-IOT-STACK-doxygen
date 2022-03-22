@@ -1,5 +1,14 @@
 var NAVTREEINDEX4 =
 {
+"oc__ri_8h.html#a830f565772c7fb4c14e1d8a737b8ff70":[3,0,36,38],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714f":[3,0,36,22],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa01abe8b1134f6dcd8a242afa0522ed20":[3,0,36,22,0],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa055593d7ec51c4b91b7c9c000d56b76e":[3,0,36,22,40],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa071adccc564ca4e02b58bca2a2fc6956":[3,0,36,22,19],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa0ae498716a4a369246c762674e6ae68f":[3,0,36,22,13],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa1bb340e9e188cf6694bc2828453518dc":[3,0,36,22,34],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa21d8199d9c33c195bbaaf0ae2daf4b78":[3,0,36,22,32],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa252083752bec883e8a18da49c4b0a64b":[3,0,36,22,18],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa266c47aec5d84f84943411f9e27be878":[3,0,36,22,12],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa28a93b9a2126ecec7a5ec6c434298ab3":[3,0,36,22,26],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa2bad92425c2ebbccd9821c76dcc0681e":[3,0,36,22,41],
@@ -240,14 +249,5 @@ var NAVTREEINDEX4 =
 "structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c":[2,0,8,6],
 "structoc__endpoint__t.html#a18be4bf9ba594ce74ae1f3a4c75dbbe0":[2,0,8,0],
 "structoc__endpoint__t.html#a7b41eb7427f5ee6375dfbddf8e699acb":[2,0,8,1],
-"structoc__endpoint__t.html#a945038b8b9ca9558905bebfa24b4130e":[2,0,8,3],
-"structoc__endpoint__t.html#a94c514bd73ebe068bc95f3c0b33dceda":[2,0,8,2],
-"structoc__endpoint__t.html#aa804b0bb630be1df2c9c652dca6d7965":[2,0,8,7],
-"structoc__endpoint__t.html#ab649dfd671bd7ffa4accef34548fc893":[2,0,8,5],
-"structoc__endpoint__t.html#ae86afaa4df8c3f253d0f526b9540e1e8":[2,0,8,4],
-"structoc__event__callback__s.html":[2,0,9],
-"structoc__event__callback__s.html#a3815ba1a8133ced2806062ef9c2e422a":[2,0,9,2],
-"structoc__event__callback__s.html#a735984d41155bc1032e09bece8f8d66d":[2,0,9,1],
-"structoc__event__callback__s.html#a809520e8cffa4e0238a226f1fb0cb079":[2,0,9,0],
-"structoc__event__callback__s.html#acfd7db168b82b26393490d4db04538f3":[2,0,9,3]
+"structoc__endpoint__t.html#a945038b8b9ca9558905bebfa24b4130e":[2,0,8,3]
 };

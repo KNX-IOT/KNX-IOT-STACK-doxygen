@@ -105,168 +105,35 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>oc_spake_cb
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8cdcbc774e271ee4a6ee3aca44dca6e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__client_8h.html#a8cdcbc774e271ee4a6ee3aca44dca6e0">oc_do_s_mode</a> (char *resource_url, char *rp)</td></tr>
-<tr class="memdesc:a8cdcbc774e271ee4a6ee3aca44dca6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends an s-mode message the value comes from the GET of the resource indicated by the resource_url The uri the multicast address with group id and installation id incorporated the path is ".knx" the sia (sender individual address) is taken from the device the ga is coming from the group address table that is listing the resource url (path) if more than one entry in the group object table, then all group address are used to send the POST request too.  <a href="oc__knx__client_8h.html#a8cdcbc774e271ee4a6ee3aca44dca6e0">More...</a><br /></td></tr>
-<tr class="separator:a8cdcbc774e271ee4a6ee3aca44dca6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d201d7c21ccede1727b6cf24a68ed78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__client_8h.html#a5d201d7c21ccede1727b6cf24a68ed78">oc_do_s_mode_read</a> (size_t group_address)</td></tr>
-<tr class="memdesc:a5d201d7c21ccede1727b6cf24a68ed78"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends out an s-mode read request.  <a href="oc__knx__client_8h.html#a5d201d7c21ccede1727b6cf24a68ed78">More...</a><br /></td></tr>
-<tr class="separator:a5d201d7c21ccede1727b6cf24a68ed78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5839771a2dba67320b0f4d427bea2721"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__client_8h.html#a5839771a2dba67320b0f4d427bea2721">oc_do_s_mode_with_scope</a> (int scope, char *resource_url, char *rp)</td></tr>
-<tr class="memdesc:a5839771a2dba67320b0f4d427bea2721"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends (transmits) an s-mode message the value comes from the GET of the resource indicated by the resource_url The uri is hard coded to use ALL CoAP nodes (TODO).  <a href="oc__knx__client_8h.html#a5839771a2dba67320b0f4d427bea2721">More...</a><br /></td></tr>
-<tr class="separator:a5839771a2dba67320b0f4d427bea2721"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36b03e4719edd7bc3ea330c995caaff0"><td class="memItemLeft" align="right" valign="top">oc_s_mode_response_cb_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__client_8h.html#a36b03e4719edd7bc3ea330c995caaff0">oc_get_s_mode_response_cb</a> ()</td></tr>
-<tr class="memdesc:a36b03e4719edd7bc3ea330c995caaff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the callback function  <a href="oc__knx__client_8h.html#a36b03e4719edd7bc3ea330c995caaff0">More...</a><br /></td></tr>
-<tr class="separator:a36b03e4719edd7bc3ea330c995caaff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8cdcbc774e271ee4a6ee3aca44dca6e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga8cdcbc774e271ee4a6ee3aca44dca6e0">oc_do_s_mode</a> (char *resource_url, char *rp)</td></tr>
+<tr class="memdesc:ga8cdcbc774e271ee4a6ee3aca44dca6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends an s-mode message the value comes from the GET of the resource indicated by the resource_url The uri the multicast address with group id and installation id incorporated the path is ".knx" the sia (sender individual address) is taken from the device the ga is coming from the group address table that is listing the resource url (path) if more than one entry in the group object table, then all group address are used to send the POST request too.  <a href="group__doc__module__tag__s__mode__server.html#ga8cdcbc774e271ee4a6ee3aca44dca6e0">More...</a><br /></td></tr>
+<tr class="separator:ga8cdcbc774e271ee4a6ee3aca44dca6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d201d7c21ccede1727b6cf24a68ed78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga5d201d7c21ccede1727b6cf24a68ed78">oc_do_s_mode_read</a> (size_t group_address)</td></tr>
+<tr class="memdesc:ga5d201d7c21ccede1727b6cf24a68ed78"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends out an s-mode read request.  <a href="group__doc__module__tag__s__mode__server.html#ga5d201d7c21ccede1727b6cf24a68ed78">More...</a><br /></td></tr>
+<tr class="separator:ga5d201d7c21ccede1727b6cf24a68ed78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5839771a2dba67320b0f4d427bea2721"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga5839771a2dba67320b0f4d427bea2721">oc_do_s_mode_with_scope</a> (int scope, char *resource_url, char *rp)</td></tr>
+<tr class="memdesc:ga5839771a2dba67320b0f4d427bea2721"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends (transmits) an s-mode message the value comes from the GET of the resource indicated by the resource_url The uri is hard coded to use ALL CoAP nodes (TODO).  <a href="group__doc__module__tag__s__mode__server.html#ga5839771a2dba67320b0f4d427bea2721">More...</a><br /></td></tr>
+<tr class="separator:ga5839771a2dba67320b0f4d427bea2721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36b03e4719edd7bc3ea330c995caaff0"><td class="memItemLeft" align="right" valign="top">oc_s_mode_response_cb_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga36b03e4719edd7bc3ea330c995caaff0">oc_get_s_mode_response_cb</a> ()</td></tr>
+<tr class="memdesc:ga36b03e4719edd7bc3ea330c995caaff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the callback function  <a href="group__doc__module__tag__s__mode__server.html#ga36b03e4719edd7bc3ea330c995caaff0">More...</a><br /></td></tr>
+<tr class="separator:ga36b03e4719edd7bc3ea330c995caaff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a479f57e9d41817b49f7738cda30d7f93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__client_8h.html#a479f57e9d41817b49f7738cda30d7f93">oc_initiate_spake</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, char *password)</td></tr>
 <tr class="memdesc:a479f57e9d41817b49f7738cda30d7f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">initiate the spake handshake  <a href="oc__knx__client_8h.html#a479f57e9d41817b49f7738cda30d7f93">More...</a><br /></td></tr>
 <tr class="separator:a479f57e9d41817b49f7738cda30d7f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e6988052b41090e52b610c3f23a17ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__client_8h.html#a7e6988052b41090e52b610c3f23a17ac">oc_is_s_mode_request</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
-<tr class="memdesc:a7e6988052b41090e52b610c3f23a17ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the request is a redirected request from .knx all messages to .knx are s-mode messages with an encapsulating payload  <a href="oc__knx__client_8h.html#a7e6988052b41090e52b610c3f23a17ac">More...</a><br /></td></tr>
-<tr class="separator:a7e6988052b41090e52b610c3f23a17ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab408203d7105c215bd068c047a09562"><td class="memItemLeft" align="right" valign="top"><a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__client_8h.html#aab408203d7105c215bd068c047a09562">oc_s_mode_get_value</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
-<tr class="memdesc:aab408203d7105c215bd068c047a09562"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses out the value of the s-mode request.  <a href="oc__knx__client_8h.html#aab408203d7105c215bd068c047a09562">More...</a><br /></td></tr>
-<tr class="separator:aab408203d7105c215bd068c047a09562"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7f0b28c63b1b539dab013e7b1095cc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__client_8h.html#aa7f0b28c63b1b539dab013e7b1095cc1">oc_set_s_mode_response_cb</a> (oc_s_mode_response_cb_t my_func)</td></tr>
-<tr class="memdesc:aa7f0b28c63b1b539dab013e7b1095cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the s-mode response callback e.g.  <a href="oc__knx__client_8h.html#aa7f0b28c63b1b539dab013e7b1095cc1">More...</a><br /></td></tr>
-<tr class="separator:aa7f0b28c63b1b539dab013e7b1095cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e6988052b41090e52b610c3f23a17ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga7e6988052b41090e52b610c3f23a17ac">oc_is_s_mode_request</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
+<tr class="memdesc:ga7e6988052b41090e52b610c3f23a17ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the request is a redirected request from .knx all messages to .knx are s-mode messages with an encapsulating payload  <a href="group__doc__module__tag__s__mode__server.html#ga7e6988052b41090e52b610c3f23a17ac">More...</a><br /></td></tr>
+<tr class="separator:ga7e6988052b41090e52b610c3f23a17ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab408203d7105c215bd068c047a09562"><td class="memItemLeft" align="right" valign="top"><a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__client.html#gaab408203d7105c215bd068c047a09562">oc_s_mode_get_value</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
+<tr class="memdesc:gaab408203d7105c215bd068c047a09562"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses out the value of the s-mode request.  <a href="group__doc__module__tag__s__mode__client.html#gaab408203d7105c215bd068c047a09562">More...</a><br /></td></tr>
+<tr class="separator:gaab408203d7105c215bd068c047a09562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7f0b28c63b1b539dab013e7b1095cc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#gaa7f0b28c63b1b539dab013e7b1095cc1">oc_set_s_mode_response_cb</a> (oc_s_mode_response_cb_t my_func)</td></tr>
+<tr class="memdesc:gaa7f0b28c63b1b539dab013e7b1095cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the s-mode response callback e.g.  <a href="group__doc__module__tag__s__mode__server.html#gaa7f0b28c63b1b539dab013e7b1095cc1">More...</a><br /></td></tr>
+<tr class="separator:gaa7f0b28c63b1b539dab013e7b1095cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ababd1ddd7462ba619c18dec946c26af1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__client_8h.html#ababd1ddd7462ba619c18dec946c26af1">oc_set_spake_response_cb</a> (oc_spake_cb_t my_func)</td></tr>
 <tr class="memdesc:ababd1ddd7462ba619c18dec946c26af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the spake response callback e.g.  <a href="oc__knx__client_8h.html#ababd1ddd7462ba619c18dec946c26af1">More...</a><br /></td></tr>
 <tr class="separator:ababd1ddd7462ba619c18dec946c26af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a8cdcbc774e271ee4a6ee3aca44dca6e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cdcbc774e271ee4a6ee3aca44dca6e0">&#9670;&nbsp;</a></span>oc_do_s_mode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void oc_do_s_mode </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>resource_url</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>rp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>sends an s-mode message the value comes from the GET of the resource indicated by the resource_url The uri the multicast address with group id and installation id incorporated the path is ".knx" the sia (sender individual address) is taken from the device the ga is coming from the group address table that is listing the resource url (path) if more than one entry in the group object table, then all group address are used to send the POST request too. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">resource_url</td><td>URI of the resource (e.g. implemented on the device that is calling this function) </td></tr>
-    <tr><td class="paramname">rp</td><td>the "st" value to send e.g. "w" | "rp" | "r" </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a5d201d7c21ccede1727b6cf24a68ed78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d201d7c21ccede1727b6cf24a68ed78">&#9670;&nbsp;</a></span>oc_do_s_mode_read()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void oc_do_s_mode_read </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>group_address</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>sends out an s-mode read request. </p>
-<p>The read request has no data value </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">group_address</td><td>the group address to invoke a read on </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a5839771a2dba67320b0f4d427bea2721"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5839771a2dba67320b0f4d427bea2721">&#9670;&nbsp;</a></span>oc_do_s_mode_with_scope()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void oc_do_s_mode_with_scope </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>scope</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>resource_url</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>rp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>sends (transmits) an s-mode message the value comes from the GET of the resource indicated by the resource_url The uri is hard coded to use ALL CoAP nodes (TODO). </p>
-<p>the path is ".knx" the sia (sender individual address) is taken from the device the ga is coming from the group address table that is listing the resource url (path) if more than one entry in the group object table, then all group address are used to send the POST request too.</p>
-<p>The function adheres to the Group object table entries, only sends messages when</p><ul>
-<li>Read flag is set OR</li>
-<li>Init flag is set OR</li>
-<li>Transmission flag is set</li>
-</ul>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">scope</td><td>the multi-cast scope </td></tr>
-    <tr><td class="paramname">resource_url</td><td>URI of the resource (e.g. implemented on the device that is calling this function) </td></tr>
-    <tr><td class="paramname">rp</td><td>the "st" value to send e.g. "w" | "rp" | "r" </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a36b03e4719edd7bc3ea330c995caaff0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36b03e4719edd7bc3ea330c995caaff0">&#9670;&nbsp;</a></span>oc_get_s_mode_response_cb()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">oc_s_mode_response_cb_t oc_get_s_mode_response_cb </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>retrieve the callback function </p>
-<dl class="section return"><dt>Returns</dt><dd>oc_s_mode_response_cb_t the callback function that has been set </dd></dl>
-
-</div>
-</div>
 <a id="a479f57e9d41817b49f7738cda30d7f93"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a479f57e9d41817b49f7738cda30d7f93">&#9670;&nbsp;</a></span>oc_initiate_spake()</h2>
 
@@ -302,92 +169,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int success full start up of the handshake </dd></dl>
-
-</div>
-</div>
-<a id="a7e6988052b41090e52b610c3f23a17ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e6988052b41090e52b610c3f23a17ac">&#9670;&nbsp;</a></span>oc_is_s_mode_request()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool oc_is_s_mode_request </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
-          <td class="paramname"><em>request</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>checks if the request is a redirected request from .knx all messages to .knx are s-mode messages with an encapsulating payload </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">request</td><td>the request to be checked </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true </dd>
-<dd>
-false </dd></dl>
-
-</div>
-</div>
-<a id="aab408203d7105c215bd068c047a09562"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab408203d7105c215bd068c047a09562">&#9670;&nbsp;</a></span>oc_s_mode_get_value()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a>* oc_s_mode_get_value </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
-          <td class="paramname"><em>request</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>parses out the value of the s-mode request. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">request</td><td>the request </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>oc_rep_t* the rep </dd></dl>
-
-</div>
-</div>
-<a id="aa7f0b28c63b1b539dab013e7b1095cc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7f0b28c63b1b539dab013e7b1095cc1">&#9670;&nbsp;</a></span>oc_set_s_mode_response_cb()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool oc_set_s_mode_response_cb </td>
-          <td>(</td>
-          <td class="paramtype">oc_s_mode_response_cb_t&#160;</td>
-          <td class="paramname"><em>my_func</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>set the s-mode response callback e.g. </p>
-<p>function is called when a s-mode response is coming back</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">my_func</td><td>the callback function </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true function set </dd>
-<dd>
-false function set failed </dd></dl>
 
 </div>
 </div>
@@ -427,7 +208,7 @@ false function set failed </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__client_8h.html">oc_knx_client.h</a></li>
-    <li class="footer">Generated on Tue Mar 22 2022 14:12:16 for KNX-IOT by
+    <li class="footer">Generated on Tue Mar 22 2022 14:34:36 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
