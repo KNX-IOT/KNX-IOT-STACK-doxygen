@@ -197,7 +197,17 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Group of server support functions. </p>
-<p>Functions to create resources and expose them through well-known/core. </p>
+<h1>standardized data points</h1>
+<p>The standardized functions are implemented. The following groups are implemented:</p><ul>
+<li>/ dev / x</li>
+<li>/ .well-known / core</li>
+<li>/ fp / x</li>
+<li>/ fb / x</li>
+</ul>
+<p>all functions generate the core-link or CBOR formatted responses.</p>
+<h1>application specific data points</h1>
+<p>Applications have to define the functions (GET and PUT) for the application level data points. Applications have to define for each instance these functions. The functions are registered with the device and will be called when the other devices are interacting with it.</p>
+<p>see for more details the examples. </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga8cef7c8b4cfdde5cbd79aace72172d41"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga8cef7c8b4cfdde5cbd79aace72172d41">&#9670;&nbsp;</a></span>oc_add_resource()</h2>
@@ -1712,7 +1722,7 @@ oc_device_bind_resource_type </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Mar 22 2022 13:32:09 for KNX-IOT by
+    <li class="footer">Generated on Tue Mar 22 2022 14:12:17 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
