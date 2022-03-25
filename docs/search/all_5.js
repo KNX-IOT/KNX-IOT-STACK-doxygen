@@ -23,6 +23,9 @@ var searchData=
   ['ets_5fissue_5frequests_5fs_5fmode_105',['ets_issue_requests_s_mode',['../group__doc__module__tag__dll.html#ga66bcdf945d8ce37938ccce803e0abcd2',1,'oc_python.h']]],
   ['ets_5flinkformat_5fget_106',['ets_linkformat_get',['../group__doc__module__tag__dll.html#gabefc11f3ffe10508de16163136255fb8',1,'oc_python.h']]],
   ['ets_5fmain_107',['ets_main',['../group__doc__module__tag__dll.html#gaebcd5dbc03a972b942719459d9037631',1,'oc_python.h']]],
-  ['ets_5fset_5fmax_5fapp_5fdata_5fsize_108',['ets_set_max_app_data_size',['../group__doc__module__tag__dll.html#ga151f57f396eb86b871aab7775125e615',1,'oc_python.h']]],
-  ['exit_5fimpl_109',['exit_impl',['../oc__assert_8h.html#a1bce540d44065a67fd8136c1033bee82',1,'oc_assert.h']]]
+  ['ets_5fpoll_108',['ets_poll',['../group__doc__module__tag__dll.html#gad9b021409f0222487e959c9dd489cfe1',1,'oc_python.h']]],
+  ['ets_5fset_5fmax_5fapp_5fdata_5fsize_109',['ets_set_max_app_data_size',['../group__doc__module__tag__dll.html#ga151f57f396eb86b871aab7775125e615',1,'oc_python.h']]],
+  ['ets_5fstart_110',['ets_start',['../group__doc__module__tag__dll.html#gab6ecbe3630c9d99de7dd1212cd848c0b',1,'oc_python.h']]],
+  ['ets_5fstop_111',['ets_stop',['../group__doc__module__tag__dll.html#gad707ff1d62967c9447da28e3f1600837',1,'oc_python.h']]],
+  ['exit_5fimpl_112',['exit_impl',['../oc__assert_8h.html#a1bce540d44065a67fd8136c1033bee82',1,'oc_assert.h']]]
 ];

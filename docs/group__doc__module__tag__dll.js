@@ -25,5 +25,8 @@ var group__doc__module__tag__dll =
     [ "ets_issue_requests_s_mode", "group__doc__module__tag__dll.html#ga66bcdf945d8ce37938ccce803e0abcd2", null ],
     [ "ets_linkformat_get", "group__doc__module__tag__dll.html#gabefc11f3ffe10508de16163136255fb8", null ],
     [ "ets_main", "group__doc__module__tag__dll.html#gaebcd5dbc03a972b942719459d9037631", null ],
-    [ "ets_set_max_app_data_size", "group__doc__module__tag__dll.html#ga151f57f396eb86b871aab7775125e615", null ]
+    [ "ets_poll", "group__doc__module__tag__dll.html#gad9b021409f0222487e959c9dd489cfe1", null ],
+    [ "ets_set_max_app_data_size", "group__doc__module__tag__dll.html#ga151f57f396eb86b871aab7775125e615", null ],
+    [ "ets_start", "group__doc__module__tag__dll.html#gab6ecbe3630c9d99de7dd1212cd848c0b", null ],
+    [ "ets_stop", "group__doc__module__tag__dll.html#gad707ff1d62967c9447da28e3f1600837", null ]
 ];
