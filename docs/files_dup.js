@@ -1,5 +1,6 @@
 var files_dup =
 [
+    [ "dns-sd.h", "dns-sd_8h_source.html", null ],
     [ "LSAB_minimal_all.c", "_l_s_a_b__minimal__all_8c.html", "_l_s_a_b__minimal__all_8c" ],
     [ "LSSB_minimal_all.c", "_l_s_s_b__minimal__all_8c.html", "_l_s_s_b__minimal__all_8c" ],
     [ "oc_api.h", "oc__api_8h.html", "oc__api_8h" ],
