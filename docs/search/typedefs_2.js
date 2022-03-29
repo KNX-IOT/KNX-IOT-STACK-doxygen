@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['interface_5fevent_5fhandler_5ft_1581',['interface_event_handler_t',['../oc__network__events_8h.html#acf84b55c3b10e0a5a7cfff4329008b90',1,'oc_network_events.h']]]
+  ['gatewaycb_1584',['gatewayCB',['../group__doc__module__tag__dll.html#ga27b3ca23ddd607cb0b30975220a70c1f',1,'oc_python.h']]]
 ];

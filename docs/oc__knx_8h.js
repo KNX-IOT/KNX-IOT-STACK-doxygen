@@ -17,6 +17,7 @@ var oc__knx_8h =
       [ "LSM_S_UNLOADING", "oc__knx_8h.html#a645ed20462382898f3d658066ff552f1ad073832b410357c35bcba475db0b1631", null ],
       [ "LSM_S_LOADCOMPLETING", "oc__knx_8h.html#a645ed20462382898f3d658066ff552f1a81bec9427aa4759c2b1c123b3af1ebbf", null ]
     ] ],
+    [ "gob_notification_to_json", "oc__knx_8h.html#a4f2e167aaf950592d1864f9da9d7ec3f", null ],
     [ "oc_core_get_lsm_event_as_string", "oc__knx_8h.html#a0b6035c708c8b35d010d0d069d57ed75", null ],
     [ "oc_core_get_lsm_state_as_string", "oc__knx_8h.html#a8d39fd8c9d8c145363c5795285ed016b", null ],
     [ "oc_create_knx_resources", "oc__knx_8h.html#a2cb5879a5f4a2a018fce52f68fb566eb", null ],
@@ -32,5 +33,6 @@ var oc__knx_8h =
     [ "oc_knx_set_idevid", "oc__knx_8h.html#ab5820e5ccf6e9904d6b9b640f564468f", null ],
     [ "oc_knx_set_ldevid", "oc__knx_8h.html#a9382247baeb3f915c87373c2b8bbe757", null ],
     [ "oc_knx_set_osn", "oc__knx_8h.html#af380d54466e0771b47289e588e62abf0", null ],
-    [ "oc_reset_device", "oc__knx_8h.html#a718a9bcb83e4b1e7d0dfcc6bf24efb9e", null ]
+    [ "oc_reset_device", "oc__knx_8h.html#a718a9bcb83e4b1e7d0dfcc6bf24efb9e", null ],
+    [ "oc_s_mode_notification_to_json", "oc__knx_8h.html#ab43f80f4aa46e8d1e49f4e4c10a6b57e", null ]
 ];

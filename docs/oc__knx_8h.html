@@ -138,6 +138,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a4f2e167aaf950592d1864f9da9d7ec3f"><td class="memItemLeft" align="right" valign="top"><a id="a4f2e167aaf950592d1864f9da9d7ec3f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>gob_notification_to_json</b> (char *buffer, int buffer_size, <a class="el" href="structoc__group__object__notification__t.html">oc_group_object_notification_t</a> notification)</td></tr>
+<tr class="separator:a4f2e167aaf950592d1864f9da9d7ec3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b6035c708c8b35d010d0d069d57ed75"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx_8h.html#a0b6035c708c8b35d010d0d069d57ed75">oc_core_get_lsm_event_as_string</a> (<a class="el" href="oc__knx_8h.html#a1bfbf8704e4ab56c438615080a3189ea">oc_lsm_event_t</a> lsm_e)</td></tr>
 <tr class="memdesc:a0b6035c708c8b35d010d0d069d57ed75"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert the load state machine (lsm) event to string  <a href="oc__knx_8h.html#a0b6035c708c8b35d010d0d069d57ed75">More...</a><br /></td></tr>
 <tr class="separator:a0b6035c708c8b35d010d0d069d57ed75"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,6 +189,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a718a9bcb83e4b1e7d0dfcc6bf24efb9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx_8h.html#a718a9bcb83e4b1e7d0dfcc6bf24efb9e">oc_reset_device</a> (size_t device_index, int reset_value)</td></tr>
 <tr class="memdesc:a718a9bcb83e4b1e7d0dfcc6bf24efb9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset the device the reset value according to the specification  <a href="oc__knx_8h.html#a718a9bcb83e4b1e7d0dfcc6bf24efb9e">More...</a><br /></td></tr>
 <tr class="separator:a718a9bcb83e4b1e7d0dfcc6bf24efb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab43f80f4aa46e8d1e49f4e4c10a6b57e"><td class="memItemLeft" align="right" valign="top"><a id="ab43f80f4aa46e8d1e49f4e4c10a6b57e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>oc_s_mode_notification_to_json</b> (char *buffer, size_t buffer_size, <a class="el" href="structoc__group__object__notification__t.html">oc_group_object_notification_t</a> notification)</td></tr>
+<tr class="separator:ab43f80f4aa46e8d1e49f4e4c10a6b57e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="abc6a279c1e4e2f2313f862de3d7b2c79"></a>
@@ -448,8 +454,8 @@ Functions</h2></td></tr>
 <p>checks if the device is in "run-time" mode run-time is: </p>
 <ul>
 <li>ia initialized (e.g. larger than 0)</li>
-<li>iid initalized (e.g. larger than 0)</li>
-<li>load statemachine (lsm) == loaded</li>
+<li>iid initialized (e.g. larger than 0)</li>
+<li>load state machine (lsm) == loaded</li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -819,7 +825,7 @@ false not in run time </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__knx_8h.html">oc_knx.h</a></li>
-    <li class="footer">Generated on Mon Mar 28 2022 10:19:28 for KNX-IOT by
+    <li class="footer">Generated on Tue Mar 29 2022 08:31:11 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

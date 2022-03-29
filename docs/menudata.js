@@ -115,6 +115,7 @@ var menudata={children:[
 {text:"Typedefs",url:"globals_type.html",children:[
 {text:"c",url:"globals_type.html#index_c"},
 {text:"d",url:"globals_type.html#index_d"},
+{text:"g",url:"globals_type.html#index_g"},
 {text:"i",url:"globals_type.html#index_i"},
 {text:"o",url:"globals_type.html#index_o"},
 {text:"r",url:"globals_type.html#index_r"},

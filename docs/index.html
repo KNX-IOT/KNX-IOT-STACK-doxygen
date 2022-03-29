@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <li>Group object table</li>
 <li>Credential table (e.g. auth/at entries)</li>
 <li>Recipient table</li>
+<li>functionality to handle the s-mode objects &amp; transmission flags.</li>
 </ul>
 </li>
 </ul>
@@ -121,7 +122,22 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </ul>
 <p>Examples of functional devices :</p><ul>
 <li><a class="el" href="_l_s_a_b__minimal__all_8c.html">LSAB_minimal_all.c</a> an example that implements Functional Block LSAB</li>
-<li><a class="el" href="_l_s_s_b__minimal__all_8c.html">LSSB_minimal_all.c</a> an example that implements Functional Block LSSB </li>
+<li><a class="el" href="_l_s_s_b__minimal__all_8c.html">LSSB_minimal_all.c</a> an example that implements Functional Block LSSB</li>
+</ul>
+<h1>handling of transmission flags</h1>
+<p>Case 1 (write data):</p><ul>
+<li>Received from bus: -st w, any ga</li>
+<li>receiver does: c flags = w -&gt; overwrite object value Case 2 (update data):</li>
+<li>Received from bus: -st rp, any ga</li>
+<li>receiver does: c flags = u -&gt; overwrite object value Case 3 (inform change):</li>
+<li>sender: updated object value + cflags = t</li>
+<li>Sent: -st w, sending association (1st assigned ga) Note: this will be done when Case 1 &amp; Case 2 have updated a value. Case 4 (request &amp; respond):</li>
+<li>sender: c flags = r</li>
+<li>Received from bus: -st r</li>
+<li>Sent: -st rp, sending association (1st assigned ga) Case 5 (update at start up):</li>
+<li>sender: c flags = i</li>
+<li>After device restart (power up)</li>
+<li>Sent: -st r, sending association (1st assigned ga) </li>
 </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
@@ -129,7 +145,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 28 2022 10:19:28 for KNX-IOT by
+    <li class="footer">Generated on Tue Mar 29 2022 08:31:11 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

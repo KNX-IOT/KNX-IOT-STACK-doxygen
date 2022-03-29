@@ -105,6 +105,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga760263a85a1ac287af2e953ce47f8c5a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#ga760263a85a1ac287af2e953ce47f8c5a">discoveryCB</a>) (int payload_size, char *payload)</td></tr>
 <tr class="memdesc:ga760263a85a1ac287af2e953ce47f8c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The discovery callback function type.  <a href="group__doc__module__tag__dll.html#ga760263a85a1ac287af2e953ce47f8c5a">More...</a><br /></td></tr>
 <tr class="separator:ga760263a85a1ac287af2e953ce47f8c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27b3ca23ddd607cb0b30975220a70c1f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#ga27b3ca23ddd607cb0b30975220a70c1f">gatewayCB</a>) (int payload_size, char *payload)</td></tr>
+<tr class="memdesc:ga27b3ca23ddd607cb0b30975220a70c1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The gateway callback function type.  <a href="group__doc__module__tag__dll.html#ga27b3ca23ddd607cb0b30975220a70c1f">More...</a><br /></td></tr>
+<tr class="separator:ga27b3ca23ddd607cb0b30975220a70c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaa5b192b5c89efc0e745983b41350e52"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#gaaa5b192b5c89efc0e745983b41350e52">resourceCB</a>) (char *anchor, char *uri, char *types, char *interfaces)</td></tr>
 <tr class="memdesc:gaaa5b192b5c89efc0e745983b41350e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">the resource callback function type NOT USED  <a href="group__doc__module__tag__dll.html#gaaa5b192b5c89efc0e745983b41350e52">More...</a><br /></td></tr>
 <tr class="separator:gaaa5b192b5c89efc0e745983b41350e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,6 +162,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gacad7669574f0e66097dbcd64748d1236"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#gacad7669574f0e66097dbcd64748d1236">ets_install_discoveryCB</a> (<a class="el" href="group__doc__module__tag__dll.html#ga760263a85a1ac287af2e953ce47f8c5a">discoveryCB</a> <a class="el" href="group__doc__module__tag__dll.html#ga760263a85a1ac287af2e953ce47f8c5a">discoveryCB</a>)</td></tr>
 <tr class="memdesc:gacad7669574f0e66097dbcd64748d1236"><td class="mdescLeft">&#160;</td><td class="mdescRight">install the discovery callback This function is called for a response on a discovery request.  <a href="group__doc__module__tag__dll.html#gacad7669574f0e66097dbcd64748d1236">More...</a><br /></td></tr>
 <tr class="separator:gacad7669574f0e66097dbcd64748d1236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad681741b4070c300c2cfe55f5ca42e04"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#gad681741b4070c300c2cfe55f5ca42e04">ets_install_gatewayCB</a> (<a class="el" href="group__doc__module__tag__dll.html#ga27b3ca23ddd607cb0b30975220a70c1f">gatewayCB</a> <a class="el" href="group__doc__module__tag__dll.html#ga27b3ca23ddd607cb0b30975220a70c1f">gatewayCB</a>)</td></tr>
+<tr class="memdesc:gad681741b4070c300c2cfe55f5ca42e04"><td class="mdescLeft">&#160;</td><td class="mdescRight">install the gateway callback This function is called when an s-mode message is received.  <a href="group__doc__module__tag__dll.html#gad681741b4070c300c2cfe55f5ca42e04">More...</a><br /></td></tr>
+<tr class="separator:gad681741b4070c300c2cfe55f5ca42e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafd58460ce5ae2a29693879418721e554"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#gafd58460ce5ae2a29693879418721e554">ets_install_resourceCB</a> (<a class="el" href="group__doc__module__tag__dll.html#gaaa5b192b5c89efc0e745983b41350e52">resourceCB</a> <a class="el" href="group__doc__module__tag__dll.html#gaaa5b192b5c89efc0e745983b41350e52">resourceCB</a>)</td></tr>
 <tr class="memdesc:gafd58460ce5ae2a29693879418721e554"><td class="mdescLeft">&#160;</td><td class="mdescRight">install the resource callback (not yet used)  <a href="group__doc__module__tag__dll.html#gafd58460ce5ae2a29693879418721e554">More...</a><br /></td></tr>
 <tr class="separator:gafd58460ce5ae2a29693879418721e554"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,7 +202,7 @@ kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><b>ets_link
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5462973b9b94e283ec2828ef36617363.html">pythonbinding</a></li><li class="navelem"><a class="el" href="oc__python_8h.html">oc_python.h</a></li>
-    <li class="footer">Generated on Mon Mar 28 2022 10:19:28 for KNX-IOT by
+    <li class="footer">Generated on Tue Mar 29 2022 08:31:11 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
