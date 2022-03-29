@@ -130,9 +130,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6d5c24f4029dda6d0385ed3a138c9893"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__device__info__t.html">oc_device_info_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a6d5c24f4029dda6d0385ed3a138c9893">oc_core_add_device</a> (const char *name, const char *version, const char *base, const char *serialnumber, <a class="el" href="oc__core__res_8h.html#aaef8fad58f22d24cd42a6e6b07d22e37">oc_core_add_device_cb_t</a> add_device_cb, void *data)</td></tr>
-<tr class="memdesc:a6d5c24f4029dda6d0385ed3a138c9893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add device to the platform.  <a href="oc__core__res_8h.html#a6d5c24f4029dda6d0385ed3a138c9893">More...</a><br /></td></tr>
-<tr class="separator:a6d5c24f4029dda6d0385ed3a138c9893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d2b06130a317287cc9b4097b7f06551"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__device__info__t.html">oc_device_info_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a3d2b06130a317287cc9b4097b7f06551">oc_core_add_device</a> (const char *name, const char *version, const char *base, const char *serial_number, <a class="el" href="oc__core__res_8h.html#aaef8fad58f22d24cd42a6e6b07d22e37">oc_core_add_device_cb_t</a> add_device_cb, void *data)</td></tr>
+<tr class="memdesc:a3d2b06130a317287cc9b4097b7f06551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add device to the platform.  <a href="oc__core__res_8h.html#a3d2b06130a317287cc9b4097b7f06551">More...</a><br /></td></tr>
+<tr class="separator:a3d2b06130a317287cc9b4097b7f06551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae05775044d062a575fc789756f776d27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#ae05775044d062a575fc789756f776d27">oc_core_encode_interfaces_mask</a> (CborEncoder *parent, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask)</td></tr>
 <tr class="memdesc:ae05775044d062a575fc789756f776d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">encode the interfaces with the cbor (payload) encoder  <a href="oc__core__res_8h.html#ae05775044d062a575fc789756f776d27">More...</a><br /></td></tr>
 <tr class="separator:ae05775044d062a575fc789756f776d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,18 +163,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ae8d75ae504ef81d109e46c65d0365729"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#ae8d75ae504ef81d109e46c65d0365729">oc_core_populate_resource</a> (int core_resource, size_t device_index, const char *uri, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> content_format, int properties, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> get_cb, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> put_cb, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> post_cb, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> delete_cb, int num_resource_types,...)</td></tr>
 <tr class="memdesc:ae8d75ae504ef81d109e46c65d0365729"><td class="mdescLeft">&#160;</td><td class="mdescRight">populate resource for link-format responses mainly used for creation of core resources  <a href="oc__core__res_8h.html#ae8d75ae504ef81d109e46c65d0365729">More...</a><br /></td></tr>
 <tr class="separator:ae8d75ae504ef81d109e46c65d0365729"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b9eef4d2a181355e1166768746d99f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a8b9eef4d2a181355e1166768746d99f3">oc_core_set_device_fwv</a> (size_t device_index, int major, int minor, int minor2)</td></tr>
-<tr class="memdesc:a8b9eef4d2a181355e1166768746d99f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the firmware version  <a href="oc__core__res_8h.html#a8b9eef4d2a181355e1166768746d99f3">More...</a><br /></td></tr>
-<tr class="separator:a8b9eef4d2a181355e1166768746d99f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01721573029f39dc7cbf7a60d7ca6c9f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a01721573029f39dc7cbf7a60d7ca6c9f">oc_core_set_device_fwv</a> (size_t device_index, int major, int minor, int patch)</td></tr>
+<tr class="memdesc:a01721573029f39dc7cbf7a60d7ca6c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the firmware version  <a href="oc__core__res_8h.html#a01721573029f39dc7cbf7a60d7ca6c9f">More...</a><br /></td></tr>
+<tr class="separator:a01721573029f39dc7cbf7a60d7ca6c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b9d4816b8c74e76248d2fa6ad7687f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a5b9d4816b8c74e76248d2fa6ad7687f3">oc_core_set_device_hostname</a> (size_t device_index, const char *hostname)</td></tr>
 <tr class="memdesc:a5b9d4816b8c74e76248d2fa6ad7687f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the host name (string)  <a href="oc__core__res_8h.html#a5b9d4816b8c74e76248d2fa6ad7687f3">More...</a><br /></td></tr>
 <tr class="separator:a5b9d4816b8c74e76248d2fa6ad7687f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afae124e6801f059dda61c8c38f2cbf83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#afae124e6801f059dda61c8c38f2cbf83">oc_core_set_device_hwt</a> (size_t device_index, const char *hardwaretype)</td></tr>
-<tr class="memdesc:afae124e6801f059dda61c8c38f2cbf83"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the hardware type (string)  <a href="oc__core__res_8h.html#afae124e6801f059dda61c8c38f2cbf83">More...</a><br /></td></tr>
-<tr class="separator:afae124e6801f059dda61c8c38f2cbf83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc018f909d31e3422ce6ded4b9e8f687"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#adc018f909d31e3422ce6ded4b9e8f687">oc_core_set_device_hwv</a> (size_t device_index, int major, int minor, int minor2)</td></tr>
-<tr class="memdesc:adc018f909d31e3422ce6ded4b9e8f687"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the hardware version number  <a href="oc__core__res_8h.html#adc018f909d31e3422ce6ded4b9e8f687">More...</a><br /></td></tr>
-<tr class="separator:adc018f909d31e3422ce6ded4b9e8f687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e18a4a6f44ec07797afab554499d60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a03e18a4a6f44ec07797afab554499d60">oc_core_set_device_hwt</a> (size_t device_index, const char *hardware_type)</td></tr>
+<tr class="memdesc:a03e18a4a6f44ec07797afab554499d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the hardware type (string)  <a href="oc__core__res_8h.html#a03e18a4a6f44ec07797afab554499d60">More...</a><br /></td></tr>
+<tr class="separator:a03e18a4a6f44ec07797afab554499d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a12888f2b9f5d866cf3193e79b5c85a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a3a12888f2b9f5d866cf3193e79b5c85a">oc_core_set_device_hwv</a> (size_t device_index, int major, int minor, int patch)</td></tr>
+<tr class="memdesc:a3a12888f2b9f5d866cf3193e79b5c85a"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the hardware version number  <a href="oc__core__res_8h.html#a3a12888f2b9f5d866cf3193e79b5c85a">More...</a><br /></td></tr>
+<tr class="separator:a3a12888f2b9f5d866cf3193e79b5c85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accebcefc05fbc46457603656f4acf40b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#accebcefc05fbc46457603656f4acf40b">oc_core_set_device_ia</a> (size_t device_index, int ia)</td></tr>
 <tr class="memdesc:accebcefc05fbc46457603656f4acf40b"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the internal address  <a href="oc__core__res_8h.html#accebcefc05fbc46457603656f4acf40b">More...</a><br /></td></tr>
 <tr class="separator:accebcefc05fbc46457603656f4acf40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,8 +293,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a6d5c24f4029dda6d0385ed3a138c9893"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d5c24f4029dda6d0385ed3a138c9893">&#9670;&nbsp;</a></span>oc_core_add_device()</h2>
+<a id="a3d2b06130a317287cc9b4097b7f06551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d2b06130a317287cc9b4097b7f06551">&#9670;&nbsp;</a></span>oc_core_add_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -321,7 +321,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>serialnumber</em>, </td>
+          <td class="paramname"><em>serial_number</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -349,7 +349,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">name</td><td>the name of the device </td></tr>
     <tr><td class="paramname">version</td><td>the version of the KNX spec </td></tr>
     <tr><td class="paramname">base</td><td>the base url </td></tr>
-    <tr><td class="paramname">serialnumber</td><td>the serial number of the device </td></tr>
+    <tr><td class="paramname">serial_number</td><td>the serial number of the device </td></tr>
     <tr><td class="paramname">add_device_cb</td><td>device callback </td></tr>
     <tr><td class="paramname">data</td><td>the supplied user data </td></tr>
   </table>
@@ -743,8 +743,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8b9eef4d2a181355e1166768746d99f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b9eef4d2a181355e1166768746d99f3">&#9670;&nbsp;</a></span>oc_core_set_device_fwv()</h2>
+<a id="a01721573029f39dc7cbf7a60d7ca6c9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01721573029f39dc7cbf7a60d7ca6c9f">&#9670;&nbsp;</a></span>oc_core_set_device_fwv()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -771,7 +771,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minor2</em>&#160;</td>
+          <td class="paramname"><em>patch</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -787,7 +787,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">device_index</td><td>the device index </td></tr>
     <tr><td class="paramname">major</td><td>the xxx number of xxx.yyy.zzz </td></tr>
     <tr><td class="paramname">minor</td><td>the yyy number of xxx.yyy.zz </td></tr>
-    <tr><td class="paramname">minor2</td><td>the zzz number of xxx.yyy.zzz </td></tr>
+    <tr><td class="paramname">patch</td><td>the zzz number of xxx.yyy.zzz </td></tr>
   </table>
   </dd>
 </dl>
@@ -833,8 +833,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afae124e6801f059dda61c8c38f2cbf83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afae124e6801f059dda61c8c38f2cbf83">&#9670;&nbsp;</a></span>oc_core_set_device_hwt()</h2>
+<a id="a03e18a4a6f44ec07797afab554499d60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e18a4a6f44ec07797afab554499d60">&#9670;&nbsp;</a></span>oc_core_set_device_hwt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -849,7 +849,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>hardwaretype</em>&#160;</td>
+          <td class="paramname"><em>hardware_type</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -863,7 +863,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device_index</td><td>the device index </td></tr>
-    <tr><td class="paramname">hardwaretype</td><td>the hardware type </td></tr>
+    <tr><td class="paramname">hardware_type</td><td>the hardware type </td></tr>
   </table>
   </dd>
 </dl>
@@ -871,8 +871,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adc018f909d31e3422ce6ded4b9e8f687"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc018f909d31e3422ce6ded4b9e8f687">&#9670;&nbsp;</a></span>oc_core_set_device_hwv()</h2>
+<a id="a3a12888f2b9f5d866cf3193e79b5c85a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a12888f2b9f5d866cf3193e79b5c85a">&#9670;&nbsp;</a></span>oc_core_set_device_hwv()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -899,7 +899,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minor2</em>&#160;</td>
+          <td class="paramname"><em>patch</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -915,7 +915,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">device_index</td><td>the device index </td></tr>
     <tr><td class="paramname">major</td><td>the xxx number of xxx.yyy.zzz </td></tr>
     <tr><td class="paramname">minor</td><td>the yyy number of xxx.yyy.zz </td></tr>
-    <tr><td class="paramname">minor2</td><td>the zzz number of xxx.yyy.zzz </td></tr>
+    <tr><td class="paramname">patch</td><td>the zzz number of xxx.yyy.zzz </td></tr>
   </table>
   </dd>
 </dl>
@@ -1265,7 +1265,7 @@ false resource type is not in the request </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__core__res_8h.html">oc_core_res.h</a></li>
-    <li class="footer">Generated on Tue Mar 29 2022 15:35:40 for KNX-IOT by
+    <li class="footer">Generated on Tue Mar 29 2022 16:14:44 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
