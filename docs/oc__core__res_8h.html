@@ -136,9 +136,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ae05775044d062a575fc789756f776d27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#ae05775044d062a575fc789756f776d27">oc_core_encode_interfaces_mask</a> (CborEncoder *parent, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask)</td></tr>
 <tr class="memdesc:ae05775044d062a575fc789756f776d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">encode the interfaces with the cbor (payload) encoder  <a href="oc__core__res_8h.html#ae05775044d062a575fc789756f776d27">More...</a><br /></td></tr>
 <tr class="separator:ae05775044d062a575fc789756f776d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d69c4b7ffa0fd988862fa0426cd8329"><td class="memItemLeft" align="right" valign="top">oc_uuid_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a3d69c4b7ffa0fd988862fa0426cd8329">oc_core_get_device_id</a> (size_t device)</td></tr>
-<tr class="memdesc:a3d69c4b7ffa0fd988862fa0426cd8329"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the id (uuid) of the device  <a href="oc__core__res_8h.html#a3d69c4b7ffa0fd988862fa0426cd8329">More...</a><br /></td></tr>
-<tr class="separator:a3d69c4b7ffa0fd988862fa0426cd8329"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abce7a2d1e8d98a3f4c0b8585121e2771"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__device__info__t.html">oc_device_info_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#abce7a2d1e8d98a3f4c0b8585121e2771">oc_core_get_device_info</a> (size_t device)</td></tr>
 <tr class="memdesc:abce7a2d1e8d98a3f4c0b8585121e2771"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the device info from the device index  <a href="oc__core__res_8h.html#abce7a2d1e8d98a3f4c0b8585121e2771">More...</a><br /></td></tr>
 <tr class="separator:abce7a2d1e8d98a3f4c0b8585121e2771"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,12 +160,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ae8d75ae504ef81d109e46c65d0365729"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#ae8d75ae504ef81d109e46c65d0365729">oc_core_populate_resource</a> (int core_resource, size_t device_index, const char *uri, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> content_format, int properties, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> get_cb, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> put_cb, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> post_cb, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> delete_cb, int num_resource_types,...)</td></tr>
 <tr class="memdesc:ae8d75ae504ef81d109e46c65d0365729"><td class="mdescLeft">&#160;</td><td class="mdescRight">populate resource for link-format responses mainly used for creation of core resources  <a href="oc__core__res_8h.html#ae8d75ae504ef81d109e46c65d0365729">More...</a><br /></td></tr>
 <tr class="separator:ae8d75ae504ef81d109e46c65d0365729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa6f0e8661fd6ed444fd1520c0d2794"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#abfa6f0e8661fd6ed444fd1520c0d2794">oc_core_set_device_fid</a> (size_t device_index, uint32_t fid)</td></tr>
+<tr class="memdesc:abfa6f0e8661fd6ed444fd1520c0d2794"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the fabric identifier (fid) (unsigned int)  <a href="oc__core__res_8h.html#abfa6f0e8661fd6ed444fd1520c0d2794">More...</a><br /></td></tr>
+<tr class="separator:abfa6f0e8661fd6ed444fd1520c0d2794"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01721573029f39dc7cbf7a60d7ca6c9f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a01721573029f39dc7cbf7a60d7ca6c9f">oc_core_set_device_fwv</a> (size_t device_index, int major, int minor, int patch)</td></tr>
 <tr class="memdesc:a01721573029f39dc7cbf7a60d7ca6c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the firmware version  <a href="oc__core__res_8h.html#a01721573029f39dc7cbf7a60d7ca6c9f">More...</a><br /></td></tr>
 <tr class="separator:a01721573029f39dc7cbf7a60d7ca6c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b9d4816b8c74e76248d2fa6ad7687f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a5b9d4816b8c74e76248d2fa6ad7687f3">oc_core_set_device_hostname</a> (size_t device_index, const char *hostname)</td></tr>
-<tr class="memdesc:a5b9d4816b8c74e76248d2fa6ad7687f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the host name (string)  <a href="oc__core__res_8h.html#a5b9d4816b8c74e76248d2fa6ad7687f3">More...</a><br /></td></tr>
-<tr class="separator:a5b9d4816b8c74e76248d2fa6ad7687f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e0d912843a8aac5c7c7da62f608971"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#ab7e0d912843a8aac5c7c7da62f608971">oc_core_set_device_hostname</a> (size_t device_index, const char *host_name)</td></tr>
+<tr class="memdesc:ab7e0d912843a8aac5c7c7da62f608971"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the host name (string)  <a href="oc__core__res_8h.html#ab7e0d912843a8aac5c7c7da62f608971">More...</a><br /></td></tr>
+<tr class="separator:ab7e0d912843a8aac5c7c7da62f608971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03e18a4a6f44ec07797afab554499d60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a03e18a4a6f44ec07797afab554499d60">oc_core_set_device_hwt</a> (size_t device_index, const char *hardware_type)</td></tr>
 <tr class="memdesc:a03e18a4a6f44ec07797afab554499d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the hardware type (string)  <a href="oc__core__res_8h.html#a03e18a4a6f44ec07797afab554499d60">More...</a><br /></td></tr>
 <tr class="separator:a03e18a4a6f44ec07797afab554499d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,7 +179,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:accebcefc05fbc46457603656f4acf40b"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the internal address  <a href="oc__core__res_8h.html#accebcefc05fbc46457603656f4acf40b">More...</a><br /></td></tr>
 <tr class="separator:accebcefc05fbc46457603656f4acf40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e29a663dbdfee3b12c08de573139a67"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a9e29a663dbdfee3b12c08de573139a67">oc_core_set_device_iid</a> (size_t device_index, uint32_t iid)</td></tr>
-<tr class="memdesc:a9e29a663dbdfee3b12c08de573139a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the iid (unsigned int)  <a href="oc__core__res_8h.html#a9e29a663dbdfee3b12c08de573139a67">More...</a><br /></td></tr>
+<tr class="memdesc:a9e29a663dbdfee3b12c08de573139a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the installation identifier (iid) (unsigned int)  <a href="oc__core__res_8h.html#a9e29a663dbdfee3b12c08de573139a67">More...</a><br /></td></tr>
 <tr class="separator:a9e29a663dbdfee3b12c08de573139a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a208356e6cc65d92ce5b5a11e0f365fe6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a208356e6cc65d92ce5b5a11e0f365fe6">oc_core_set_device_model</a> (size_t device_index, const char *model)</td></tr>
 <tr class="memdesc:a208356e6cc65d92ce5b5a11e0f365fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the model (string)  <a href="oc__core__res_8h.html#a208356e6cc65d92ce5b5a11e0f365fe6">More...</a><br /></td></tr>
@@ -199,9 +199,6 @@ Functions</h2></td></tr>
 <tr class="memitem:aa2b277fdad7d7953ce202abee706853f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#aa2b277fdad7d7953ce202abee706853f">oc_frame_interfaces_mask_in_response</a> (<a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask)</td></tr>
 <tr class="memdesc:aa2b277fdad7d7953ce202abee706853f"><td class="mdescLeft">&#160;</td><td class="mdescRight">frame the interface mask in the response, as string in the uri  <a href="oc__core__res_8h.html#aa2b277fdad7d7953ce202abee706853f">More...</a><br /></td></tr>
 <tr class="separator:aa2b277fdad7d7953ce202abee706853f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78d443a06ff356a564c7273fd882b6cb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a78d443a06ff356a564c7273fd882b6cb">oc_number_of_devices</a> ()</td></tr>
-<tr class="memdesc:a78d443a06ff356a564c7273fd882b6cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the number of registered devices  <a href="oc__core__res_8h.html#a78d443a06ff356a564c7273fd882b6cb">More...</a><br /></td></tr>
-<tr class="separator:a78d443a06ff356a564c7273fd882b6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd7bb7ba0fc48f2cf65610f28db19b18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#afd7bb7ba0fc48f2cf65610f28db19b18">oc_store_uri</a> (const char *s_uri, oc_string_t *d_uri)</td></tr>
 <tr class="memdesc:afd7bb7ba0fc48f2cf65610f28db19b18"><td class="mdescLeft">&#160;</td><td class="mdescRight">store the URI as a string  <a href="oc__core__res_8h.html#afd7bb7ba0fc48f2cf65610f28db19b18">More...</a><br /></td></tr>
 <tr class="separator:afd7bb7ba0fc48f2cf65610f28db19b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,6 +253,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>device information </p>
+<p>This structure contains </p>
 
 </div>
 </div>
@@ -393,33 +391,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a3d69c4b7ffa0fd988862fa0426cd8329"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d69c4b7ffa0fd988862fa0426cd8329">&#9670;&nbsp;</a></span>oc_core_get_device_id()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">oc_uuid_t* oc_core_get_device_id </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>retrieve the id (uuid) of the device </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">device</td><td>the device index </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>oc_uuid_t* the device id </dd></dl>
 
 </div>
 </div>
@@ -743,6 +714,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="abfa6f0e8661fd6ed444fd1520c0d2794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfa6f0e8661fd6ed444fd1520c0d2794">&#9670;&nbsp;</a></span>oc_core_set_device_fid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_core_set_device_fid </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>fid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets the fabric identifier (fid) (unsigned int) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device_index</td><td>the device index </td></tr>
+    <tr><td class="paramname">fid</td><td>the fabric id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int error status, 0 = OK </dd></dl>
+
+</div>
+</div>
 <a id="a01721573029f39dc7cbf7a60d7ca6c9f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a01721573029f39dc7cbf7a60d7ca6c9f">&#9670;&nbsp;</a></span>oc_core_set_device_fwv()</h2>
 
@@ -795,8 +804,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5b9d4816b8c74e76248d2fa6ad7687f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b9d4816b8c74e76248d2fa6ad7687f3">&#9670;&nbsp;</a></span>oc_core_set_device_hostname()</h2>
+<a id="ab7e0d912843a8aac5c7c7da62f608971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7e0d912843a8aac5c7c7da62f608971">&#9670;&nbsp;</a></span>oc_core_set_device_hostname()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -811,7 +820,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>hostname</em>&#160;</td>
+          <td class="paramname"><em>host_name</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -825,7 +834,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device_index</td><td>the device index </td></tr>
-    <tr><td class="paramname">hostname</td><td>the host name </td></tr>
+    <tr><td class="paramname">host_name</td><td>the host name </td></tr>
   </table>
   </dd>
 </dl>
@@ -987,7 +996,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>sets the iid (unsigned int) </p>
+<p>sets the installation identifier (iid) (unsigned int) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device_index</td><td>the device index </td></tr>
@@ -1202,26 +1211,6 @@ false resource type is not in the request </dd></dl>
 
 </div>
 </div>
-<a id="a78d443a06ff356a564c7273fd882b6cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78d443a06ff356a564c7273fd882b6cb">&#9670;&nbsp;</a></span>oc_number_of_devices()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t oc_number_of_devices </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>return the number of registered devices </p>
-<dl class="section return"><dt>Returns</dt><dd>size_t The number of registered devices </dd></dl>
-
-</div>
-</div>
 <a id="afd7bb7ba0fc48f2cf65610f28db19b18"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd7bb7ba0fc48f2cf65610f28db19b18">&#9670;&nbsp;</a></span>oc_store_uri()</h2>
 
@@ -1265,7 +1254,7 @@ false resource type is not in the request </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__core__res_8h.html">oc_core_res.h</a></li>
-    <li class="footer">Generated on Tue Mar 29 2022 16:14:44 for KNX-IOT by
+    <li class="footer">Generated on Wed Mar 30 2022 12:58:30 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

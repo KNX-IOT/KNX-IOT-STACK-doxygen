@@ -10,7 +10,6 @@ var oc__core__res_8h =
     [ "oc_platform_info_t", "oc__core__res_8h.html#a7b8a0731c685aac21e221e0ddeba75c0", null ],
     [ "oc_core_add_device", "oc__core__res_8h.html#a3d2b06130a317287cc9b4097b7f06551", null ],
     [ "oc_core_encode_interfaces_mask", "oc__core__res_8h.html#ae05775044d062a575fc789756f776d27", null ],
-    [ "oc_core_get_device_id", "oc__core__res_8h.html#a3d69c4b7ffa0fd988862fa0426cd8329", null ],
     [ "oc_core_get_device_info", "oc__core__res_8h.html#abce7a2d1e8d98a3f4c0b8585121e2771", null ],
     [ "oc_core_get_num_devices", "oc__core__res_8h.html#aa7dc2c2f7072ae6c305e404ddd8b204f", null ],
     [ "oc_core_get_platform_info", "oc__core__res_8h.html#adaf7f631c7ddea5e0e6e8bd50495a160", null ],
@@ -19,8 +18,9 @@ var oc__core__res_8h =
     [ "oc_core_init", "oc__core__res_8h.html#ae047207ba3bd0e6109eb5516e2557412", null ],
     [ "oc_core_init_platform", "oc__core__res_8h.html#a20fecb30aeba81ace5a974de61d40c1d", null ],
     [ "oc_core_populate_resource", "oc__core__res_8h.html#ae8d75ae504ef81d109e46c65d0365729", null ],
+    [ "oc_core_set_device_fid", "oc__core__res_8h.html#abfa6f0e8661fd6ed444fd1520c0d2794", null ],
     [ "oc_core_set_device_fwv", "oc__core__res_8h.html#a01721573029f39dc7cbf7a60d7ca6c9f", null ],
-    [ "oc_core_set_device_hostname", "oc__core__res_8h.html#a5b9d4816b8c74e76248d2fa6ad7687f3", null ],
+    [ "oc_core_set_device_hostname", "oc__core__res_8h.html#ab7e0d912843a8aac5c7c7da62f608971", null ],
     [ "oc_core_set_device_hwt", "oc__core__res_8h.html#a03e18a4a6f44ec07797afab554499d60", null ],
     [ "oc_core_set_device_hwv", "oc__core__res_8h.html#a3a12888f2b9f5d866cf3193e79b5c85a", null ],
     [ "oc_core_set_device_ia", "oc__core__res_8h.html#accebcefc05fbc46457603656f4acf40b", null ],
@@ -31,6 +31,5 @@ var oc__core__res_8h =
     [ "oc_filter_resource_by_if", "oc__core__res_8h.html#a54f086305df0e501d8bcb805037667f5", null ],
     [ "oc_filter_resource_by_rt", "oc__core__res_8h.html#ac90407354ec43f8e8603d86e3dd22698", null ],
     [ "oc_frame_interfaces_mask_in_response", "oc__core__res_8h.html#aa2b277fdad7d7953ce202abee706853f", null ],
-    [ "oc_number_of_devices", "oc__core__res_8h.html#a78d443a06ff356a564c7273fd882b6cb", null ],
     [ "oc_store_uri", "oc__core__res_8h.html#afd7bb7ba0fc48f2cf65610f28db19b18", null ]
 ];

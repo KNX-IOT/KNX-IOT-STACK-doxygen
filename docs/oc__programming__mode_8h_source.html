@@ -111,39 +111,21 @@ $(document).ready(function(){initNavTree('oc__programming__mode_8h_source.html',
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="oc__programming__mode_8h.html#a788efe4addce7e305d62231a701dd363">   38</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="oc__programming__mode_8h.html#a788efe4addce7e305d62231a701dd363">oc_device_mode_t</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="oc__programming__mode_8h.html#a8ed0cebc175e15014ce33cf254c03515">oc_is_device_mode_in_programming</a>(<span class="keywordtype">size_t</span> device_index);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="oc__programming__mode_8h.html#a788efe4addce7e305d62231a701dd363a37f0f96a8b577b3fcd6a039d5de77ff3">   40</a></span>&#160;  <a class="code" href="oc__programming__mode_8h.html#a788efe4addce7e305d62231a701dd363a37f0f96a8b577b3fcd6a039d5de77ff3">OC_PROGRAMMING_MODE</a> = 0, </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="oc__programming__mode_8h.html#a788efe4addce7e305d62231a701dd363af95d46eaa3c41c80ac4db284bd577526">   41</a></span>&#160;  <a class="code" href="oc__programming__mode_8h.html#a788efe4addce7e305d62231a701dd363af95d46eaa3c41c80ac4db284bd577526">OC_NORMAL_OPERATION</a>      </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <a class="code" href="oc__programming__mode_8h.html#a788efe4addce7e305d62231a701dd363">oc_device_mode_t</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="oc__programming__mode_8h.html#a8ed0cebc175e15014ce33cf254c03515">oc_is_device_mode_in_programming</a>(<span class="keywordtype">size_t</span> device_index);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="oc__programming__mode_8h.html#ad94a2366bd22b317f66124f50781078b">oc_is_device_mode_in_normal</a>(<span class="keywordtype">size_t</span> device_index);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oc__programming__mode_8h.html#a30d3c34e4752884f79790b50e4da5b47">oc_device_mode_set_mode</a>(<span class="keywordtype">size_t</span> device_index, <a class="code" href="oc__programming__mode_8h.html#a788efe4addce7e305d62231a701dd363">oc_device_mode_t</a> mode);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oc__programming__mode_8h.html#a4dbf5839fba7c02b2366ed0b2ed07d23">oc_device_mode_display</a>(<span class="keywordtype">size_t</span> device_index);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_DEVICE_MODE_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_DEVICE_MODE_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aoc__programming__mode_8h_html_a30d3c34e4752884f79790b50e4da5b47"><div class="ttname"><a href="oc__programming__mode_8h.html#a30d3c34e4752884f79790b50e4da5b47">oc_device_mode_set_mode</a></div><div class="ttdeci">int oc_device_mode_set_mode(size_t device_index, oc_device_mode_t mode)</div><div class="ttdoc">set the device in a specific mode</div></div>
-<div class="ttc" id="aoc__programming__mode_8h_html_a788efe4addce7e305d62231a701dd363"><div class="ttname"><a href="oc__programming__mode_8h.html#a788efe4addce7e305d62231a701dd363">oc_device_mode_t</a></div><div class="ttdeci">oc_device_mode_t</div><div class="ttdoc">the device modes the device needs to be in programming mode to set:</div><div class="ttdef"><b>Definition:</b> <a href="oc__programming__mode_8h_source.html#l00038">oc_programming_mode.h:38</a></div></div>
-<div class="ttc" id="aoc__programming__mode_8h_html_a4dbf5839fba7c02b2366ed0b2ed07d23"><div class="ttname"><a href="oc__programming__mode_8h.html#a4dbf5839fba7c02b2366ed0b2ed07d23">oc_device_mode_display</a></div><div class="ttdeci">int oc_device_mode_display(size_t device_index)</div><div class="ttdoc">prints the mode to standard out</div></div>
-<div class="ttc" id="aoc__programming__mode_8h_html_a788efe4addce7e305d62231a701dd363af95d46eaa3c41c80ac4db284bd577526"><div class="ttname"><a href="oc__programming__mode_8h.html#a788efe4addce7e305d62231a701dd363af95d46eaa3c41c80ac4db284bd577526">OC_NORMAL_OPERATION</a></div><div class="ttdeci">@ OC_NORMAL_OPERATION</div><div class="ttdoc">device is in normal operation</div><div class="ttdef"><b>Definition:</b> <a href="oc__programming__mode_8h_source.html#l00041">oc_programming_mode.h:41</a></div></div>
 <div class="ttc" id="aoc__programming__mode_8h_html_a8ed0cebc175e15014ce33cf254c03515"><div class="ttname"><a href="oc__programming__mode_8h.html#a8ed0cebc175e15014ce33cf254c03515">oc_is_device_mode_in_programming</a></div><div class="ttdeci">bool oc_is_device_mode_in_programming(size_t device_index)</div><div class="ttdoc">checks if the device is in programming mode</div></div>
-<div class="ttc" id="aoc__programming__mode_8h_html_a788efe4addce7e305d62231a701dd363a37f0f96a8b577b3fcd6a039d5de77ff3"><div class="ttname"><a href="oc__programming__mode_8h.html#a788efe4addce7e305d62231a701dd363a37f0f96a8b577b3fcd6a039d5de77ff3">OC_PROGRAMMING_MODE</a></div><div class="ttdeci">@ OC_PROGRAMMING_MODE</div><div class="ttdoc">device is in programming mode</div><div class="ttdef"><b>Definition:</b> <a href="oc__programming__mode_8h_source.html#l00040">oc_programming_mode.h:40</a></div></div>
-<div class="ttc" id="aoc__programming__mode_8h_html_ad94a2366bd22b317f66124f50781078b"><div class="ttname"><a href="oc__programming__mode_8h.html#ad94a2366bd22b317f66124f50781078b">oc_is_device_mode_in_normal</a></div><div class="ttdeci">bool oc_is_device_mode_in_normal(size_t device_index)</div><div class="ttdoc">is the device in normal mode (e.g.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__programming__mode_8h.html">oc_programming_mode.h</a></li>
-    <li class="footer">Generated on Tue Mar 29 2022 16:14:43 for KNX-IOT by
+    <li class="footer">Generated on Wed Mar 30 2022 12:58:30 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
