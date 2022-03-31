@@ -281,7 +281,7 @@ var searchData=
   ['oc_5finit_5fpost_462',['oc_init_post',['../group__doc__module__tag__client__state.html#gabf90f15053fa1cc8e9003a2da0408a55',1,'oc_api.h']]],
   ['oc_5finit_5fput_463',['oc_init_put',['../group__doc__module__tag__client__state.html#gab5bea04b5899e9ac014d11fa0fcaf464',1,'oc_api.h']]],
   ['oc_5finit_5fquery_5fiterator_464',['oc_init_query_iterator',['../group__doc__module__tag__server__side.html#ga5f33d43ecb0adf38a04d499ecf6b8ea3',1,'oc_api.h']]],
-  ['oc_5finitiate_5fspake_465',['oc_initiate_spake',['../oc__knx__client_8h.html#a479f57e9d41817b49f7738cda30d7f93',1,'oc_knx_client.h']]],
+  ['oc_5finitiate_5fspake_465',['oc_initiate_spake',['../oc__knx__client_8h.html#adf789b4717d5d7d66cc666ab849c9aa8',1,'oc_knx_client.h']]],
   ['oc_5finterface_5fevent_5ft_466',['oc_interface_event_t',['../oc__network__events_8h.html#abdd165be6caa5026d18f49473b31aa2d',1,'oc_network_events.h']]],
   ['oc_5finterface_5fmask_5ft_467',['oc_interface_mask_t',['../oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2',1,'oc_ri.h']]],
   ['oc_5finternal_5fallocate_5foutgoing_5fmessage_468',['oc_internal_allocate_outgoing_message',['../oc__buffer_8h.html#ad063099ce73e72a42fd8f49d4d4acc65',1,'oc_buffer.h']]],

@@ -17,7 +17,7 @@ var group__doc__module__tag__dll =
     [ "ets_get_max_app_data_size", "group__doc__module__tag__dll.html#ga53b79eb76de2728d3e09cbd6c6c60919", null ],
     [ "ets_get_nr_devices", "group__doc__module__tag__dll.html#ga62ecc8ade7263bd86bd09dcb02f050cf", null ],
     [ "ets_get_sn", "group__doc__module__tag__dll.html#ga783fce26b4c6a26893a95d39b5c1fe99", null ],
-    [ "ets_initiate_spake", "group__doc__module__tag__dll.html#ga463be3825a99c12654e93c9d0120db8a", null ],
+    [ "ets_initiate_spake", "group__doc__module__tag__dll.html#gab60590724239c722c5a10662ebbd75da", null ],
     [ "ets_install_changedCB", "group__doc__module__tag__dll.html#ga6db43c4448a369294533194c00f20d6e", null ],
     [ "ets_install_clientCB", "group__doc__module__tag__dll.html#ga3fab42af9fd38d12ca6b461cc68002b4", null ],
     [ "ets_install_discoveryCB", "group__doc__module__tag__dll.html#gacad7669574f0e66097dbcd64748d1236", null ],

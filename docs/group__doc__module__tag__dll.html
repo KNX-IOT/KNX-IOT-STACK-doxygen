@@ -150,9 +150,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga783fce26b4c6a26893a95d39b5c1fe99"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#ga783fce26b4c6a26893a95d39b5c1fe99">ets_get_sn</a> (int index)</td></tr>
 <tr class="memdesc:ga783fce26b4c6a26893a95d39b5c1fe99"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the serial number of the device  <a href="group__doc__module__tag__dll.html#ga783fce26b4c6a26893a95d39b5c1fe99">More...</a><br /></td></tr>
 <tr class="separator:ga783fce26b4c6a26893a95d39b5c1fe99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga463be3825a99c12654e93c9d0120db8a"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#ga463be3825a99c12654e93c9d0120db8a">ets_initiate_spake</a> (char *sn, char *password)</td></tr>
-<tr class="memdesc:ga463be3825a99c12654e93c9d0120db8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">initiate the spake handshake the result of the handshake will be returned via the spa  <a href="group__doc__module__tag__dll.html#ga463be3825a99c12654e93c9d0120db8a">More...</a><br /></td></tr>
-<tr class="separator:ga463be3825a99c12654e93c9d0120db8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab60590724239c722c5a10662ebbd75da"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#gab60590724239c722c5a10662ebbd75da">ets_initiate_spake</a> (char *sn, char *password, char *oscore_id)</td></tr>
+<tr class="memdesc:gab60590724239c722c5a10662ebbd75da"><td class="mdescLeft">&#160;</td><td class="mdescRight">initiate the spake handshake the result of the handshake will be returned via the spa  <a href="group__doc__module__tag__dll.html#gab60590724239c722c5a10662ebbd75da">More...</a><br /></td></tr>
+<tr class="separator:gab60590724239c722c5a10662ebbd75da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6db43c4448a369294533194c00f20d6e"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#ga6db43c4448a369294533194c00f20d6e">ets_install_changedCB</a> (<a class="el" href="group__doc__module__tag__dll.html#ga3c244fe48d26a6d0f9e9471f9cfd54de">changedCB</a> <a class="el" href="group__doc__module__tag__dll.html#ga3c244fe48d26a6d0f9e9471f9cfd54de">changedCB</a>)</td></tr>
 <tr class="memdesc:ga6db43c4448a369294533194c00f20d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">install the changed callback  <a href="group__doc__module__tag__dll.html#ga6db43c4448a369294533194c00f20d6e">More...</a><br /></td></tr>
 <tr class="separator:ga6db43c4448a369294533194c00f20d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -818,8 +818,8 @@ ets_linkformat_get_unsecured </dd>
 
 </div>
 </div>
-<a id="ga463be3825a99c12654e93c9d0120db8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga463be3825a99c12654e93c9d0120db8a">&#9670;&nbsp;</a></span>ets_initiate_spake()</h2>
+<a id="gab60590724239c722c5a10662ebbd75da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab60590724239c722c5a10662ebbd75da">&#9670;&nbsp;</a></span>ets_initiate_spake()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -834,7 +834,13 @@ ets_linkformat_get_unsecured </dd>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>password</em>&#160;</td>
+          <td class="paramname"><em>password</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>oscore_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -849,6 +855,7 @@ ets_linkformat_get_unsecured </dd>
   <table class="params">
     <tr><td class="paramname">sn</td><td>the serial number of the device </td></tr>
     <tr><td class="paramname">password</td><td>the password of the device </td></tr>
+    <tr><td class="paramname">oscore_id</td><td>the oscore id for the spake handshake </td></tr>
   </table>
   </dd>
 </dl>
@@ -1274,7 +1281,7 @@ ets_linkformat_get_unsecured </dd>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Mar 30 2022 13:32:21 for KNX-IOT by
+    <li class="footer">Generated on Thu Mar 31 2022 11:03:37 for KNX-IOT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
