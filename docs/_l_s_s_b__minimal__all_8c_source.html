@@ -468,7 +468,7 @@ $(document).ready(function(){initNavTree('_l_s_s_b__minimal__all_8c_source.html'
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160; </div>
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;  <a class="code" href="structoc__device__info__t.html">oc_device_info_t</a> *device = <a class="code" href="oc__core__res_8h.html#abce7a2d1e8d98a3f4c0b8585121e2771">oc_core_get_device_info</a>(0);</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;  PRINT(<span class="stringliteral">&quot;serial number: %s\n&quot;</span>, <a class="code" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(device-&gt;<a class="code" href="structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09">serialnumber</a>));</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;  knx_publish_service(<a class="code" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(device-&gt;<a class="code" href="structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09">serialnumber</a>));</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;  knx_publish_service(<a class="code" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(device-&gt;<a class="code" href="structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09">serialnumber</a>), 0, 0);</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160; </div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;  <a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> *my_ep = <a class="code" href="oc__connectivity_8h.html#a1d559666b450aef41dd704952e4a7e96">oc_connectivity_get_endpoints</a>(0);</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;  <span class="keywordflow">if</span> (my_ep != NULL) {</div>
@@ -595,7 +595,7 @@ $(document).ready(function(){initNavTree('_l_s_s_b__minimal__all_8c_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_9654b8d08f4bba4e84b362c5fd320bee.html">apps</a></li><li class="navelem"><a class="el" href="_l_s_s_b__minimal__all_8c.html">LSSB_minimal_all.c</a></li>
-    <li class="footer">Generated on Fri Apr 1 2022 16:25:26 for KNX IoT by
+    <li class="footer">Generated on Fri Apr 1 2022 16:29:49 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
