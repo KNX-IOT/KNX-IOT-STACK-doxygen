@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>KNX-IOT: oc_knx_fp.h File Reference</title>
+<title>KNXIoT: oc_knx_fp.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="knx-logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">KNX-IOT
+   <div id="projectname">KNXIoT
    </div>
-   <div id="projectbrief">KNX-IOT stack implementation</div>
+   <div id="projectbrief">KNX IoT Point API stack implementation</div>
   </td>
  </tr>
  </tbody>
@@ -135,6 +135,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a2c0e340b6ac53e847bfc34cadd477545"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a2c0e340b6ac53e847bfc34cadd477545">oc_add_points_in_group_object_table_to_response</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, size_t device_index, int group_address, size_t *response_length, int matches)</td></tr>
 <tr class="memdesc:a2c0e340b6ac53e847bfc34cadd477545"><td class="mdescLeft">&#160;</td><td class="mdescRight">add points to the well-known core discovery response when the request has query option .well-known/core?d=urn:knx:g.s.  <a href="oc__knx__fp_8h.html#a2c0e340b6ac53e847bfc34cadd477545">More...</a><br /></td></tr>
 <tr class="separator:a2c0e340b6ac53e847bfc34cadd477545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e219d26c720ffc5e443ff551ae0646"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a99e219d26c720ffc5e443ff551ae0646">oc_belongs_href_to_resource</a> (oc_string_t href, size_t device_index)</td></tr>
+<tr class="memdesc:a99e219d26c720ffc5e443ff551ae0646"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the href (url) belongs to the device  <a href="oc__knx__fp_8h.html#a99e219d26c720ffc5e443ff551ae0646">More...</a><br /></td></tr>
+<tr class="separator:a99e219d26c720ffc5e443ff551ae0646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a211407a1c5b33b12124fd1990532f3a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a211407a1c5b33b12124fd1990532f3a7">oc_cflags_as_string</a> (char *buffer, <a class="el" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5ba">oc_cflag_mask_t</a> cflags)</td></tr>
 <tr class="memdesc:a211407a1c5b33b12124fd1990532f3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds the cflags a preallocated buffer  <a href="oc__knx__fp_8h.html#a211407a1c5b33b12124fd1990532f3a7">More...</a><br /></td></tr>
 <tr class="separator:a211407a1c5b33b12124fd1990532f3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -447,6 +450,46 @@ Functions</h2></td></tr>
     <tr><td class="paramname">group_address</td><td>the parsed group address from the query option </td></tr>
     <tr><td class="paramname">response_length</td><td>the response length </td></tr>
     <tr><td class="paramname">matches</td><td>if there are matches </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
+
+</div>
+</div>
+<a id="a99e219d26c720ffc5e443ff551ae0646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e219d26c720ffc5e443ff551ae0646">&#9670;&nbsp;</a></span>oc_belongs_href_to_resource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_belongs_href_to_resource </td>
+          <td>(</td>
+          <td class="paramtype">oc_string_t&#160;</td>
+          <td class="paramname"><em>href</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>checks if the href (url) belongs to the device </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">href</td><td>the url to be checked if it belongs to the device </td></tr>
+    <tr><td class="paramname">device_index</td><td>The device index</td></tr>
   </table>
   </dd>
 </dl>
@@ -1318,7 +1361,7 @@ false is not part of the recipient entry </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__fp_8h.html">oc_knx_fp.h</a></li>
-    <li class="footer">Generated on Thu Mar 31 2022 11:07:43 for KNX-IOT by
+    <li class="footer">Generated on Fri Apr 1 2022 13:25:35 for KNXIoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
