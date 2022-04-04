@@ -114,9 +114,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga36b03e4719edd7bc3ea330c995caaff0"><td class="memItemLeft" align="right" valign="top">oc_s_mode_response_cb_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga36b03e4719edd7bc3ea330c995caaff0">oc_get_s_mode_response_cb</a> ()</td></tr>
 <tr class="memdesc:ga36b03e4719edd7bc3ea330c995caaff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the callback function  <a href="group__doc__module__tag__s__mode__server.html#ga36b03e4719edd7bc3ea330c995caaff0">More...</a><br /></td></tr>
 <tr class="separator:ga36b03e4719edd7bc3ea330c995caaff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7e6988052b41090e52b610c3f23a17ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga7e6988052b41090e52b610c3f23a17ac">oc_is_s_mode_request</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
-<tr class="memdesc:ga7e6988052b41090e52b610c3f23a17ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the request is a redirected request from .knx all messages to .knx are s-mode messages with an encapsulating payload  <a href="group__doc__module__tag__s__mode__server.html#ga7e6988052b41090e52b610c3f23a17ac">More...</a><br /></td></tr>
-<tr class="separator:ga7e6988052b41090e52b610c3f23a17ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4fc3569049c381a19a80022ac1439675"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675">oc_is_redirected_request</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
+<tr class="memdesc:ga4fc3569049c381a19a80022ac1439675"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the request is a redirected request from /.knx or /p when that happend, extra information can be in the CBOR object  <a href="group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675">More...</a><br /></td></tr>
+<tr class="separator:ga4fc3569049c381a19a80022ac1439675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa7f0b28c63b1b539dab013e7b1095cc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#gaa7f0b28c63b1b539dab013e7b1095cc1">oc_set_s_mode_response_cb</a> (oc_s_mode_response_cb_t my_func)</td></tr>
 <tr class="memdesc:gaa7f0b28c63b1b539dab013e7b1095cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the s-mode response callback e.g.  <a href="group__doc__module__tag__s__mode__server.html#gaa7f0b28c63b1b539dab013e7b1095cc1">More...</a><br /></td></tr>
 <tr class="separator:gaa7f0b28c63b1b539dab013e7b1095cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,14 +257,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga7e6988052b41090e52b610c3f23a17ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7e6988052b41090e52b610c3f23a17ac">&#9670;&nbsp;</a></span>oc_is_s_mode_request()</h2>
+<a id="ga4fc3569049c381a19a80022ac1439675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4fc3569049c381a19a80022ac1439675">&#9670;&nbsp;</a></span>oc_is_redirected_request()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool oc_is_s_mode_request </td>
+          <td class="memname">bool oc_is_redirected_request </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
           <td class="paramname"><em>request</em></td><td>)</td>
@@ -273,7 +273,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>checks if the request is a redirected request from .knx all messages to .knx are s-mode messages with an encapsulating payload </p>
+<p>checks if the request is a redirected request from /.knx or /p when that happend, extra information can be in the CBOR object </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">request</td><td>the request to be checked </td></tr>
@@ -321,7 +321,7 @@ false function set failed </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Apr 1 2022 16:29:49 for KNX IoT by
+    <li class="footer">Generated on Mon Apr 4 2022 09:53:19 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

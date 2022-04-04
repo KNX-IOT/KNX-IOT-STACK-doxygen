@@ -120,9 +120,9 @@ Functions</h2></td></tr>
 <tr class="memitem:adf789b4717d5d7d66cc666ab849c9aa8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__client_8h.html#adf789b4717d5d7d66cc666ab849c9aa8">oc_initiate_spake</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, char *password, char *oscore_id)</td></tr>
 <tr class="memdesc:adf789b4717d5d7d66cc666ab849c9aa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">initiate the spake handshake  <a href="oc__knx__client_8h.html#adf789b4717d5d7d66cc666ab849c9aa8">More...</a><br /></td></tr>
 <tr class="separator:adf789b4717d5d7d66cc666ab849c9aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7e6988052b41090e52b610c3f23a17ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga7e6988052b41090e52b610c3f23a17ac">oc_is_s_mode_request</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
-<tr class="memdesc:ga7e6988052b41090e52b610c3f23a17ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the request is a redirected request from .knx all messages to .knx are s-mode messages with an encapsulating payload  <a href="group__doc__module__tag__s__mode__server.html#ga7e6988052b41090e52b610c3f23a17ac">More...</a><br /></td></tr>
-<tr class="separator:ga7e6988052b41090e52b610c3f23a17ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4fc3569049c381a19a80022ac1439675"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675">oc_is_redirected_request</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
+<tr class="memdesc:ga4fc3569049c381a19a80022ac1439675"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the request is a redirected request from /.knx or /p when that happend, extra information can be in the CBOR object  <a href="group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675">More...</a><br /></td></tr>
+<tr class="separator:ga4fc3569049c381a19a80022ac1439675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaab408203d7105c215bd068c047a09562"><td class="memItemLeft" align="right" valign="top"><a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__client.html#gaab408203d7105c215bd068c047a09562">oc_s_mode_get_value</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
 <tr class="memdesc:gaab408203d7105c215bd068c047a09562"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses out the value of the s-mode request.  <a href="group__doc__module__tag__s__mode__client.html#gaab408203d7105c215bd068c047a09562">More...</a><br /></td></tr>
 <tr class="separator:gaab408203d7105c215bd068c047a09562"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,7 +215,7 @@ false function set failed </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__client_8h.html">oc_knx_client.h</a></li>
-    <li class="footer">Generated on Fri Apr 1 2022 16:29:49 for KNX IoT by
+    <li class="footer">Generated on Mon Apr 4 2022 09:53:19 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

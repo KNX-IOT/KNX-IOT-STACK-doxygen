@@ -442,11 +442,16 @@ $(document).ready(function(){initNavTree('oc__ri_8h_source.html',''); initResiza
 <div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160; </div>
 <div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="oc__ri_8h.html#a6ba1538fa8a8430eb27bc5fa34e1a34c">oc_ri_is_app_resource_valid</a>(<a class="code" href="structoc__resource__s.html">oc_resource_t</a> *resource);</div>
 <div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160; </div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;}</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160; </div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_RI_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="oc__ri_8h.html#a112d2b700398a487ef806346ea4673d7">oc_ri_new_request_from_request</a>(<a class="code" href="structoc__request__t.html">oc_request_t</a> new_request,</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;                                    <a class="code" href="structoc__request__t.html">oc_request_t</a> request,</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;                                    <a class="code" href="oc__ri_8h.html#a1381ff2ccb2f2212c438a31414dbe5be">oc_response_buffer_t</a> response_buffer,</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;                                    <a class="code" href="structoc__response__t.html">oc_response_t</a> response_obj);</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160; </div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;}</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160; </div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_RI_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aoc__ri_8h_html_a068a1c38013c32d65427aeed54503a38af6d37d546750261e14e771141c6cdbe4"><div class="ttname"><a href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38af6d37d546750261e14e771141c6cdbe4">OC_STATUS_FORBIDDEN</a></div><div class="ttdeci">@ OC_STATUS_FORBIDDEN</div><div class="ttdoc">Forbidden.</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00070">oc_ri.h:70</a></div></div>
@@ -561,6 +566,7 @@ $(document).ready(function(){initNavTree('oc__ri_8h_source.html',''); initResiza
 <div class="ttc" id="aoc__ri_8h_html_a068a1c38013c32d65427aeed54503a38a483d03ac6df269eb49b2ca709372889b"><div class="ttname"><a href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a483d03ac6df269eb49b2ca709372889b">OC_STATUS_OK</a></div><div class="ttdeci">@ OC_STATUS_OK</div><div class="ttdoc">OK.</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00062">oc_ri.h:62</a></div></div>
 <div class="ttc" id="aoc__ri_8h_html_aab06afb6391b17826f3af7d1a6227a4bab360b38f69a2f8b6374bff0398642c9d"><div class="ttname"><a href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bab360b38f69a2f8b6374bff0398642c9d">OC_DISCOVERABLE</a></div><div class="ttdeci">@ OC_DISCOVERABLE</div><div class="ttdoc">discoverable</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00050">oc_ri.h:50</a></div></div>
 <div class="ttc" id="aoc__ri_8h_html_a95fa27c60f90b8e3b976f4ca5f04aab2"><div class="ttname"><a href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a></div><div class="ttdeci">oc_interface_mask_t</div><div class="ttdoc">interface masks</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00168">oc_ri.h:168</a></div></div>
+<div class="ttc" id="aoc__ri_8h_html_a112d2b700398a487ef806346ea4673d7"><div class="ttname"><a href="oc__ri_8h.html#a112d2b700398a487ef806346ea4673d7">oc_ri_new_request_from_request</a></div><div class="ttdeci">bool oc_ri_new_request_from_request(oc_request_t new_request, oc_request_t request, oc_response_buffer_t response_buffer, oc_response_t response_obj)</div><div class="ttdoc">create a new request from the old request is used internally only for redirection of:</div></div>
 <div class="ttc" id="aoc__ri_8h_html_a83161604a805e3a951254864d16a714fa75057ddd8df3415419de12a3404d1002"><div class="ttname"><a href="oc__ri_8h.html#a83161604a805e3a951254864d16a714fa75057ddd8df3415419de12a3404d1002">APPLICATION_VND_OCF_CBOR</a></div><div class="ttdeci">@ APPLICATION_VND_OCF_CBOR</div><div class="ttdoc">application/vnd.ocf+cbor</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00135">oc_ri.h:135</a></div></div>
 <div class="ttc" id="aoc__ri_8h_html_ad38ea7c0a6833931d8bfe8094c5100e4"><div class="ttname"><a href="oc__ri_8h.html#ad38ea7c0a6833931d8bfe8094c5100e4">oc_set_properties_cb_t</a></div><div class="ttdeci">bool(* oc_set_properties_cb_t)(oc_resource_t *, oc_rep_t *, void *)</div><div class="ttdoc">set properties callback</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00337">oc_ri.h:337</a></div></div>
 <div class="ttc" id="aoc__ri_8h_html_a068a1c38013c32d65427aeed54503a38ab39105cb8408decb6c258c5d289759fe"><div class="ttname"><a href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38ab39105cb8408decb6c258c5d289759fe">OC_STATUS_CHANGED</a></div><div class="ttdeci">@ OC_STATUS_CHANGED</div><div class="ttdoc">Changed.</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00064">oc_ri.h:64</a></div></div>
@@ -682,7 +688,7 @@ $(document).ready(function(){initNavTree('oc__ri_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__ri_8h.html">oc_ri.h</a></li>
-    <li class="footer">Generated on Fri Apr 1 2022 16:29:49 for KNX IoT by
+    <li class="footer">Generated on Mon Apr 4 2022 09:53:18 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
