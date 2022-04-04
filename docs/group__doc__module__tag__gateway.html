@@ -103,9 +103,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga320f08a42f3df13e88f21f3c3cc8b4b9"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__gateway.html#ga320f08a42f3df13e88f21f3c3cc8b4b9">oc_gateway_s_mode_cb_t</a>) (size_t device_index, <a class="el" href="structoc__group__object__notification__t.html">oc_group_object_notification_t</a> *s_mode_message, void *data)</td></tr>
-<tr class="memdesc:ga320f08a42f3df13e88f21f3c3cc8b4b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked for all s-mode communication e.g.  <a href="group__doc__module__tag__gateway.html#ga320f08a42f3df13e88f21f3c3cc8b4b9">More...</a><br /></td></tr>
-<tr class="separator:ga320f08a42f3df13e88f21f3c3cc8b4b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4035e7b2f5087dcf0bd8714666c2897d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__gateway.html#ga4035e7b2f5087dcf0bd8714666c2897d">oc_gateway_s_mode_cb_t</a>) (size_t device_index, char *sender_ip_address, <a class="el" href="structoc__group__object__notification__t.html">oc_group_object_notification_t</a> *s_mode_message, void *data)</td></tr>
+<tr class="memdesc:ga4035e7b2f5087dcf0bd8714666c2897d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked for all s-mode communication e.g.  <a href="group__doc__module__tag__gateway.html#ga4035e7b2f5087dcf0bd8714666c2897d">More...</a><br /></td></tr>
+<tr class="separator:ga4035e7b2f5087dcf0bd8714666c2897d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5c034e30d28246eda6141637350bd614"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__gateway__t.html">oc_gateway_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__gateway.html#ga5c034e30d28246eda6141637350bd614">oc_gateway_t</a></td></tr>
 <tr class="memdesc:ga5c034e30d28246eda6141637350bd614"><td class="mdescLeft">&#160;</td><td class="mdescRight">The gateway info.  <a href="group__doc__module__tag__gateway.html#ga5c034e30d28246eda6141637350bd614">More...</a><br /></td></tr>
 <tr class="separator:ga5c034e30d28246eda6141637350bd614"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,7 +115,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa764be41483ebbd7200f80077ae5ae30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__gateway__t.html">oc_gateway_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__gateway.html#gaa764be41483ebbd7200f80077ae5ae30">oc_get_gateway_cb</a> (void)</td></tr>
 <tr class="memdesc:gaa764be41483ebbd7200f80077ae5ae30"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the gateway info, e.g.  <a href="group__doc__module__tag__gateway.html#gaa764be41483ebbd7200f80077ae5ae30">More...</a><br /></td></tr>
 <tr class="separator:gaa764be41483ebbd7200f80077ae5ae30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga303c7c43ae61837097326701cad11567"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__gateway.html#ga303c7c43ae61837097326701cad11567">oc_set_gateway_cb</a> (<a class="el" href="group__doc__module__tag__gateway.html#ga320f08a42f3df13e88f21f3c3cc8b4b9">oc_gateway_s_mode_cb_t</a> <a class="el" href="group__doc__module__tag__gateway.html#ga320f08a42f3df13e88f21f3c3cc8b4b9">oc_gateway_s_mode_cb_t</a>, void *data)</td></tr>
+<tr class="memitem:ga303c7c43ae61837097326701cad11567"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__gateway.html#ga303c7c43ae61837097326701cad11567">oc_set_gateway_cb</a> (<a class="el" href="group__doc__module__tag__gateway.html#ga4035e7b2f5087dcf0bd8714666c2897d">oc_gateway_s_mode_cb_t</a> <a class="el" href="group__doc__module__tag__gateway.html#ga4035e7b2f5087dcf0bd8714666c2897d">oc_gateway_s_mode_cb_t</a>, void *data)</td></tr>
 <tr class="memdesc:ga303c7c43ae61837097326701cad11567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the gateway callbacks.  <a href="group__doc__module__tag__gateway.html#ga303c7c43ae61837097326701cad11567">More...</a><br /></td></tr>
 <tr class="separator:ga303c7c43ae61837097326701cad11567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -123,14 +123,14 @@ Functions</h2></td></tr>
 <p>Optional group of KNX-IOT to Classic gateway functions. </p>
 <p>Currently implemented: register a generic call back to route all s-mode messages </p>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga320f08a42f3df13e88f21f3c3cc8b4b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga320f08a42f3df13e88f21f3c3cc8b4b9">&#9670;&nbsp;</a></span>oc_gateway_s_mode_cb_t</h2>
+<a id="ga4035e7b2f5087dcf0bd8714666c2897d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4035e7b2f5087dcf0bd8714666c2897d">&#9670;&nbsp;</a></span>oc_gateway_s_mode_cb_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* oc_gateway_s_mode_cb_t) (size_t device_index, <a class="el" href="structoc__group__object__notification__t.html">oc_group_object_notification_t</a> *s_mode_message, void *data)</td>
+          <td class="memname">typedef void(* oc_gateway_s_mode_cb_t) (size_t device_index, char *sender_ip_address, <a class="el" href="structoc__group__object__notification__t.html">oc_group_object_notification_t</a> *s_mode_message, void *data)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -190,7 +190,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int oc_set_gateway_cb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__doc__module__tag__gateway.html#ga320f08a42f3df13e88f21f3c3cc8b4b9">oc_gateway_s_mode_cb_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__doc__module__tag__gateway.html#ga4035e7b2f5087dcf0bd8714666c2897d">oc_gateway_s_mode_cb_t</a>&#160;</td>
           <td class="paramname"><em>oc_gateway_s_mode_cb_t</em>, </td>
         </tr>
         <tr>
@@ -223,7 +223,7 @@ Functions</h2></td></tr>
 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>init </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__gateway.html#ga320f08a42f3df13e88f21f3c3cc8b4b9" title="Callback invoked for all s-mode communication e.g.">oc_gateway_s_mode_cb_t</a> </dd></dl>
+<a class="el" href="group__doc__module__tag__gateway.html#ga4035e7b2f5087dcf0bd8714666c2897d" title="Callback invoked for all s-mode communication e.g.">oc_gateway_s_mode_cb_t</a> </dd></dl>
 
 </div>
 </div>
@@ -232,7 +232,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Apr 4 2022 09:53:19 for KNX IoT by
+    <li class="footer">Generated on Mon Apr 4 2022 13:19:21 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

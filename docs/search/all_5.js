@@ -23,10 +23,11 @@ var searchData=
   ['ets_5finstall_5fspakecb_102',['ets_install_spakeCB',['../group__doc__module__tag__dll.html#ga011c06c01f923e1244ba18081fd7d26c',1,'oc_python.h']]],
   ['ets_5fissue_5frequests_5fs_5fmode_103',['ets_issue_requests_s_mode',['../group__doc__module__tag__dll.html#ga66bcdf945d8ce37938ccce803e0abcd2',1,'oc_python.h']]],
   ['ets_5flinkformat_5fget_104',['ets_linkformat_get',['../group__doc__module__tag__dll.html#gabefc11f3ffe10508de16163136255fb8',1,'oc_python.h']]],
-  ['ets_5fmain_105',['ets_main',['../group__doc__module__tag__dll.html#gaebcd5dbc03a972b942719459d9037631',1,'oc_python.h']]],
-  ['ets_5fpoll_106',['ets_poll',['../group__doc__module__tag__dll.html#gad9b021409f0222487e959c9dd489cfe1',1,'oc_python.h']]],
-  ['ets_5fset_5fmax_5fapp_5fdata_5fsize_107',['ets_set_max_app_data_size',['../group__doc__module__tag__dll.html#ga151f57f396eb86b871aab7775125e615',1,'oc_python.h']]],
-  ['ets_5fstart_108',['ets_start',['../group__doc__module__tag__dll.html#gab6ecbe3630c9d99de7dd1212cd848c0b',1,'oc_python.h']]],
-  ['ets_5fstop_109',['ets_stop',['../group__doc__module__tag__dll.html#gad707ff1d62967c9447da28e3f1600837',1,'oc_python.h']]],
-  ['exit_5fimpl_110',['exit_impl',['../oc__assert_8h.html#a1bce540d44065a67fd8136c1033bee82',1,'oc_assert.h']]]
+  ['ets_5flisten_5fs_5fmode_105',['ets_listen_s_mode',['../group__doc__module__tag__dll.html#gacbfefc90ee1048a6d87c8970dc7de783',1,'oc_python.h']]],
+  ['ets_5fmain_106',['ets_main',['../group__doc__module__tag__dll.html#gaebcd5dbc03a972b942719459d9037631',1,'oc_python.h']]],
+  ['ets_5fpoll_107',['ets_poll',['../group__doc__module__tag__dll.html#gad9b021409f0222487e959c9dd489cfe1',1,'oc_python.h']]],
+  ['ets_5fset_5fmax_5fapp_5fdata_5fsize_108',['ets_set_max_app_data_size',['../group__doc__module__tag__dll.html#ga151f57f396eb86b871aab7775125e615',1,'oc_python.h']]],
+  ['ets_5fstart_109',['ets_start',['../group__doc__module__tag__dll.html#gab6ecbe3630c9d99de7dd1212cd848c0b',1,'oc_python.h']]],
+  ['ets_5fstop_110',['ets_stop',['../group__doc__module__tag__dll.html#gad707ff1d62967c9447da28e3f1600837',1,'oc_python.h']]],
+  ['exit_5fimpl_111',['exit_impl',['../oc__assert_8h.html#a1bce540d44065a67fd8136c1033bee82',1,'oc_assert.h']]]
 ];

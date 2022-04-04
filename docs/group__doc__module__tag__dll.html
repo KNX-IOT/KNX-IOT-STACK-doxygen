@@ -105,9 +105,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga760263a85a1ac287af2e953ce47f8c5a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#ga760263a85a1ac287af2e953ce47f8c5a">discoveryCB</a>) (int payload_size, char *payload)</td></tr>
 <tr class="memdesc:ga760263a85a1ac287af2e953ce47f8c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The discovery callback function type.  <a href="group__doc__module__tag__dll.html#ga760263a85a1ac287af2e953ce47f8c5a">More...</a><br /></td></tr>
 <tr class="separator:ga760263a85a1ac287af2e953ce47f8c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga27b3ca23ddd607cb0b30975220a70c1f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#ga27b3ca23ddd607cb0b30975220a70c1f">gatewayCB</a>) (int payload_size, char *payload)</td></tr>
-<tr class="memdesc:ga27b3ca23ddd607cb0b30975220a70c1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The gateway callback function type.  <a href="group__doc__module__tag__dll.html#ga27b3ca23ddd607cb0b30975220a70c1f">More...</a><br /></td></tr>
-<tr class="separator:ga27b3ca23ddd607cb0b30975220a70c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22efcb49b1c4f82c3f0c7694b0267ad9"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#ga22efcb49b1c4f82c3f0c7694b0267ad9">gatewayCB</a>) (char *sender_ip_address, int payload_size, char *payload)</td></tr>
+<tr class="memdesc:ga22efcb49b1c4f82c3f0c7694b0267ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The gateway callback function type.  <a href="group__doc__module__tag__dll.html#ga22efcb49b1c4f82c3f0c7694b0267ad9">More...</a><br /></td></tr>
+<tr class="separator:ga22efcb49b1c4f82c3f0c7694b0267ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaa5b192b5c89efc0e745983b41350e52"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#gaaa5b192b5c89efc0e745983b41350e52">resourceCB</a>) (char *anchor, char *uri, char *types, char *interfaces)</td></tr>
 <tr class="memdesc:gaaa5b192b5c89efc0e745983b41350e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">the resource callback function type NOT USED  <a href="group__doc__module__tag__dll.html#gaaa5b192b5c89efc0e745983b41350e52">More...</a><br /></td></tr>
 <tr class="separator:gaaa5b192b5c89efc0e745983b41350e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,7 +162,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gacad7669574f0e66097dbcd64748d1236"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#gacad7669574f0e66097dbcd64748d1236">ets_install_discoveryCB</a> (<a class="el" href="group__doc__module__tag__dll.html#ga760263a85a1ac287af2e953ce47f8c5a">discoveryCB</a> <a class="el" href="group__doc__module__tag__dll.html#ga760263a85a1ac287af2e953ce47f8c5a">discoveryCB</a>)</td></tr>
 <tr class="memdesc:gacad7669574f0e66097dbcd64748d1236"><td class="mdescLeft">&#160;</td><td class="mdescRight">install the discovery callback This function is called for a response on a discovery request.  <a href="group__doc__module__tag__dll.html#gacad7669574f0e66097dbcd64748d1236">More...</a><br /></td></tr>
 <tr class="separator:gacad7669574f0e66097dbcd64748d1236"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad681741b4070c300c2cfe55f5ca42e04"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#gad681741b4070c300c2cfe55f5ca42e04">ets_install_gatewayCB</a> (<a class="el" href="group__doc__module__tag__dll.html#ga27b3ca23ddd607cb0b30975220a70c1f">gatewayCB</a> <a class="el" href="group__doc__module__tag__dll.html#ga27b3ca23ddd607cb0b30975220a70c1f">gatewayCB</a>)</td></tr>
+<tr class="memitem:gad681741b4070c300c2cfe55f5ca42e04"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#gad681741b4070c300c2cfe55f5ca42e04">ets_install_gatewayCB</a> (<a class="el" href="group__doc__module__tag__dll.html#ga22efcb49b1c4f82c3f0c7694b0267ad9">gatewayCB</a> <a class="el" href="group__doc__module__tag__dll.html#ga22efcb49b1c4f82c3f0c7694b0267ad9">gatewayCB</a>)</td></tr>
 <tr class="memdesc:gad681741b4070c300c2cfe55f5ca42e04"><td class="mdescLeft">&#160;</td><td class="mdescRight">install the gateway callback This function is called when an s-mode message is received.  <a href="group__doc__module__tag__dll.html#gad681741b4070c300c2cfe55f5ca42e04">More...</a><br /></td></tr>
 <tr class="separator:gad681741b4070c300c2cfe55f5ca42e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafd58460ce5ae2a29693879418721e554"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#gafd58460ce5ae2a29693879418721e554">ets_install_resourceCB</a> (<a class="el" href="group__doc__module__tag__dll.html#gaaa5b192b5c89efc0e745983b41350e52">resourceCB</a> <a class="el" href="group__doc__module__tag__dll.html#gaaa5b192b5c89efc0e745983b41350e52">resourceCB</a>)</td></tr>
@@ -180,6 +180,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gad23bd82043a71e937d28b4478e8808cd"><td class="memItemLeft" align="right" valign="top"><a id="gad23bd82043a71e937d28b4478e8808cd"></a>
 kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><b>ets_linkformat_get_unsecured</b> (char *sn, char *uri, char *query, char *r_id)</td></tr>
 <tr class="separator:gad23bd82043a71e937d28b4478e8808cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacbfefc90ee1048a6d87c8970dc7de783"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#gacbfefc90ee1048a6d87c8970dc7de783">ets_listen_s_mode</a> (int scope, int ga_max, int iid)</td></tr>
+<tr class="memdesc:gacbfefc90ee1048a6d87c8970dc7de783"><td class="mdescLeft">&#160;</td><td class="mdescRight">configure the stack to listen to group addresses.  <a href="group__doc__module__tag__dll.html#gacbfefc90ee1048a6d87c8970dc7de783">More...</a><br /></td></tr>
+<tr class="separator:gacbfefc90ee1048a6d87c8970dc7de783"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaebcd5dbc03a972b942719459d9037631"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#gaebcd5dbc03a972b942719459d9037631">ets_main</a> (void)</td></tr>
 <tr class="memdesc:gaebcd5dbc03a972b942719459d9037631"><td class="mdescLeft">&#160;</td><td class="mdescRight">starts the C library.  <a href="group__doc__module__tag__dll.html#gaebcd5dbc03a972b942719459d9037631">More...</a><br /></td></tr>
 <tr class="separator:gaebcd5dbc03a972b942719459d9037631"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,7 +265,7 @@ ets_linkformat_get_unsecured </dd>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="oc__python_8h_source.html#l00121">121</a> of file <a class="el" href="oc__python_8h_source.html">oc_python.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__python_8h_source.html#l00123">123</a> of file <a class="el" href="oc__python_8h_source.html">oc_python.h</a>.</p>
 
 </div>
 </div>
@@ -291,14 +294,14 @@ ets_linkformat_get_unsecured </dd>
 
 </div>
 </div>
-<a id="ga27b3ca23ddd607cb0b30975220a70c1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga27b3ca23ddd607cb0b30975220a70c1f">&#9670;&nbsp;</a></span>gatewayCB</h2>
+<a id="ga22efcb49b1c4f82c3f0c7694b0267ad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22efcb49b1c4f82c3f0c7694b0267ad9">&#9670;&nbsp;</a></span>gatewayCB</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* gatewayCB) (int payload_size, char *payload)</td>
+          <td class="memname">typedef void(* gatewayCB) (char *sender_ip_address, int payload_size, char *payload)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -306,13 +309,14 @@ ets_linkformat_get_unsecured </dd>
 <p>The gateway callback function type. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">sender_ip_address</td><td>the sender address </td></tr>
     <tr><td class="paramname">payload_size</td><td>the size of the payload in bytes </td></tr>
     <tr><td class="paramname">payload</td><td>the ascii payload json </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="oc__python_8h_source.html#l00099">99</a> of file <a class="el" href="oc__python_8h_source.html">oc_python.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__python_8h_source.html#l00100">100</a> of file <a class="el" href="oc__python_8h_source.html">oc_python.h</a>.</p>
 
 </div>
 </div>
@@ -949,7 +953,7 @@ ets_linkformat_get_unsecured </dd>
         <tr>
           <td class="memname">kisCS_EXPORT void ets_install_gatewayCB </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__doc__module__tag__dll.html#ga27b3ca23ddd607cb0b30975220a70c1f">gatewayCB</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__doc__module__tag__dll.html#ga22efcb49b1c4f82c3f0c7694b0267ad9">gatewayCB</a>&#160;</td>
           <td class="paramname"><em>gatewayCB</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1142,6 +1146,56 @@ ets_linkformat_get_unsecured </dd>
 
 </div>
 </div>
+<a id="gacbfefc90ee1048a6d87c8970dc7de783"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacbfefc90ee1048a6d87c8970dc7de783">&#9670;&nbsp;</a></span>ets_listen_s_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kisCS_EXPORT void ets_listen_s_mode </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scope</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ga_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>configure the stack to listen to group addresses. </p>
+<p>the group addresses for s-mode commands are defined per:</p><ul>
+<li>scope (2 local, 5 site local)</li>
+<li>ga_max, starting from group address 1.</li>
+<li>iid, installation id</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scope</td><td>the multicast scope </td></tr>
+    <tr><td class="paramname">ga_max</td><td>the group address maximum, e.g. all values between 1 and ga_max will be registered </td></tr>
+    <tr><td class="paramname">iid</td><td>the installation identifier </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>kisCS_EXPORT </dd></dl>
+
+</div>
+</div>
 <a id="gaebcd5dbc03a972b942719459d9037631"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaebcd5dbc03a972b942719459d9037631">&#9670;&nbsp;</a></span>ets_main()</h2>
 
@@ -1281,7 +1335,7 @@ ets_linkformat_get_unsecured </dd>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Apr 4 2022 09:53:19 for KNX IoT by
+    <li class="footer">Generated on Mon Apr 4 2022 13:19:21 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
