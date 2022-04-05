@@ -2,9 +2,9 @@ var oc__knx__client_8h =
 [
     [ "oc_s_mode_response_cb_t", "oc__knx__client_8h.html#a5279b21aca5fa82ec32fcd07b1c6bfe6", null ],
     [ "oc_spake_cb_t", "oc__knx__client_8h.html#a0645fb91207eb3441ba895bcd96cdf9c", null ],
-    [ "oc_do_s_mode", "group__doc__module__tag__s__mode__server.html#ga8cdcbc774e271ee4a6ee3aca44dca6e0", null ],
     [ "oc_do_s_mode_read", "group__doc__module__tag__s__mode__server.html#ga5d201d7c21ccede1727b6cf24a68ed78", null ],
     [ "oc_do_s_mode_with_scope", "group__doc__module__tag__s__mode__server.html#ga5839771a2dba67320b0f4d427bea2721", null ],
+    [ "oc_do_s_mode_with_scope_no_check", "group__doc__module__tag__s__mode__server.html#gacbd18ddd22fdad00ff84934dc5ee6942", null ],
     [ "oc_get_s_mode_response_cb", "group__doc__module__tag__s__mode__server.html#ga36b03e4719edd7bc3ea330c995caaff0", null ],
     [ "oc_initiate_spake", "oc__knx__client_8h.html#adf789b4717d5d7d66cc666ab849c9aa8", null ],
     [ "oc_is_redirected_request", "group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675", null ],

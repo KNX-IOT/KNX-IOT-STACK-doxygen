@@ -105,15 +105,15 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>oc_spake_cb
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga8cdcbc774e271ee4a6ee3aca44dca6e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga8cdcbc774e271ee4a6ee3aca44dca6e0">oc_do_s_mode</a> (char *resource_url, char *rp)</td></tr>
-<tr class="memdesc:ga8cdcbc774e271ee4a6ee3aca44dca6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends an s-mode message the value comes from the GET of the resource indicated by the resource_url The uri the multicast address with group id and installation id incorporated the path is ".knx" the sia (sender individual address) is taken from the device the ga is coming from the group address table that is listing the resource url (path) if more than one entry in the group object table, then all group address are used to send the POST request too.  <a href="group__doc__module__tag__s__mode__server.html#ga8cdcbc774e271ee4a6ee3aca44dca6e0">More...</a><br /></td></tr>
-<tr class="separator:ga8cdcbc774e271ee4a6ee3aca44dca6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5d201d7c21ccede1727b6cf24a68ed78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga5d201d7c21ccede1727b6cf24a68ed78">oc_do_s_mode_read</a> (size_t group_address)</td></tr>
 <tr class="memdesc:ga5d201d7c21ccede1727b6cf24a68ed78"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends out an s-mode read request.  <a href="group__doc__module__tag__s__mode__server.html#ga5d201d7c21ccede1727b6cf24a68ed78">More...</a><br /></td></tr>
 <tr class="separator:ga5d201d7c21ccede1727b6cf24a68ed78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5839771a2dba67320b0f4d427bea2721"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga5839771a2dba67320b0f4d427bea2721">oc_do_s_mode_with_scope</a> (int scope, char *resource_url, char *rp)</td></tr>
 <tr class="memdesc:ga5839771a2dba67320b0f4d427bea2721"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends (transmits) an s-mode message the value comes from the GET of the resource indicated by the resource_url the path is ".knx" the sia (sender individual address) is taken from the device the ga is coming from the group address table that is listing the resource url (path) the url of the resource to obtain the value from.  <a href="group__doc__module__tag__s__mode__server.html#ga5839771a2dba67320b0f4d427bea2721">More...</a><br /></td></tr>
 <tr class="separator:ga5839771a2dba67320b0f4d427bea2721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacbd18ddd22fdad00ff84934dc5ee6942"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#gacbd18ddd22fdad00ff84934dc5ee6942">oc_do_s_mode_with_scope_no_check</a> (int scope, char *resource_url, char *rp)</td></tr>
+<tr class="memdesc:gacbd18ddd22fdad00ff84934dc5ee6942"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends (transmits) an s-mode message the value comes from the GET of the resource indicated by the resource_url the path is ".knx" the sia (sender individual address) is taken from the device the ga is coming from the group address table that is listing the resource url (path) the url of the resource to obtain the value from.  <a href="group__doc__module__tag__s__mode__server.html#gacbd18ddd22fdad00ff84934dc5ee6942">More...</a><br /></td></tr>
+<tr class="separator:gacbd18ddd22fdad00ff84934dc5ee6942"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga36b03e4719edd7bc3ea330c995caaff0"><td class="memItemLeft" align="right" valign="top">oc_s_mode_response_cb_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga36b03e4719edd7bc3ea330c995caaff0">oc_get_s_mode_response_cb</a> ()</td></tr>
 <tr class="memdesc:ga36b03e4719edd7bc3ea330c995caaff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the callback function  <a href="group__doc__module__tag__s__mode__server.html#ga36b03e4719edd7bc3ea330c995caaff0">More...</a><br /></td></tr>
 <tr class="separator:ga36b03e4719edd7bc3ea330c995caaff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,7 +215,7 @@ false function set failed </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__client_8h.html">oc_knx_client.h</a></li>
-    <li class="footer">Generated on Tue Apr 5 2022 16:04:03 for KNX IoT by
+    <li class="footer">Generated on Tue Apr 5 2022 16:36:37 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
