@@ -6,7 +6,7 @@ var oc__python_8h =
     [ "discoveryCB", "group__doc__module__tag__dll.html#ga760263a85a1ac287af2e953ce47f8c5a", null ],
     [ "gatewayCB", "group__doc__module__tag__dll.html#ga22efcb49b1c4f82c3f0c7694b0267ad9", null ],
     [ "resourceCB", "group__doc__module__tag__dll.html#gaaa5b192b5c89efc0e745983b41350e52", null ],
-    [ "spakeCB", "group__doc__module__tag__dll.html#ga9e9bc9b481df3c3a98580fb4fe45fb64", null ],
+    [ "spakeCB", "group__doc__module__tag__dll.html#ga4e6b2f79f678b8013ec7ad8a37bd2102", null ],
     [ "ets_cbor_delete", "group__doc__module__tag__dll.html#ga44f7473e62d8deb8271e36e038ff0278", null ],
     [ "ets_cbor_get", "group__doc__module__tag__dll.html#ga0ed01f839e72423fe1d10a52259bf278", null ],
     [ "ets_cbor_get_unsecured", "group__doc__module__tag__dll.html#ga47612f4a79190b04d131e58a5e56952d", null ],

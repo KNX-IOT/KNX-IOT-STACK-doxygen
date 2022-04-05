@@ -109,6 +109,9 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memitem:a945038b8b9ca9558905bebfa24b4130e"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78">transport_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#a945038b8b9ca9558905bebfa24b4130e">flags</a></td></tr>
 <tr class="memdesc:a945038b8b9ca9558905bebfa24b4130e"><td class="mdescLeft">&#160;</td><td class="mdescRight">the transport flags  <a href="structoc__endpoint__t.html#a945038b8b9ca9558905bebfa24b4130e">More...</a><br /></td></tr>
 <tr class="separator:a945038b8b9ca9558905bebfa24b4130e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad803d60c93177bb1ed9133d86d9dc378"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#ad803d60c93177bb1ed9133d86d9dc378">group_id</a></td></tr>
+<tr class="memdesc:ad803d60c93177bb1ed9133d86d9dc378"><td class="mdescLeft">&#160;</td><td class="mdescRight">group_id identifier  <a href="structoc__endpoint__t.html#ad803d60c93177bb1ed9133d86d9dc378">More...</a><br /></td></tr>
+<tr class="separator:ad803d60c93177bb1ed9133d86d9dc378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae86afaa4df8c3f253d0f526b9540e1e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#ae86afaa4df8c3f253d0f526b9540e1e8">interface_index</a></td></tr>
 <tr class="memdesc:ae86afaa4df8c3f253d0f526b9540e1e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface index  <a href="structoc__endpoint__t.html#ae86afaa4df8c3f253d0f526b9540e1e8">More...</a><br /></td></tr>
 <tr class="separator:ae86afaa4df8c3f253d0f526b9540e1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,7 +122,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memdesc:a0ad043071ccc7a261d79a759dc9c6f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">priority  <a href="structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c">More...</a><br /></td></tr>
 <tr class="separator:a0ad043071ccc7a261d79a759dc9c6f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa804b0bb630be1df2c9c652dca6d7965"><td class="memItemLeft" align="right" valign="top">oc_string_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#aa804b0bb630be1df2c9c652dca6d7965">serial_number</a></td></tr>
-<tr class="memdesc:aa804b0bb630be1df2c9c652dca6d7965"><td class="mdescLeft">&#160;</td><td class="mdescRight">serial number  <a href="structoc__endpoint__t.html#aa804b0bb630be1df2c9c652dca6d7965">More...</a><br /></td></tr>
+<tr class="memdesc:aa804b0bb630be1df2c9c652dca6d7965"><td class="mdescLeft">&#160;</td><td class="mdescRight">serial number of the device to talk to  <a href="structoc__endpoint__t.html#aa804b0bb630be1df2c9c652dca6d7965">More...</a><br /></td></tr>
 <tr class="separator:aa804b0bb630be1df2c9c652dca6d7965"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -160,6 +163,24 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <p>the transport flags </p>
 
 <p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00076">76</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+
+</div>
+</div>
+<a id="ad803d60c93177bb1ed9133d86d9dc378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad803d60c93177bb1ed9133d86d9dc378">&#9670;&nbsp;</a></span>group_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int group_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>group_id identifier </p>
+
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00084">84</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 
 </div>
 </div>
@@ -229,7 +250,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
       </table>
 </div><div class="memdoc">
 
-<p>serial number </p>
+<p>serial number of the device to talk to </p>
 
 <p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00077">77</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 
@@ -244,7 +265,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a></li>
-    <li class="footer">Generated on Tue Apr 5 2022 14:31:27 for KNX IoT by
+    <li class="footer">Generated on Tue Apr 5 2022 16:04:03 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

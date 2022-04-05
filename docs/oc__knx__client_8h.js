@@ -1,7 +1,7 @@
 var oc__knx__client_8h =
 [
     [ "oc_s_mode_response_cb_t", "oc__knx__client_8h.html#a5279b21aca5fa82ec32fcd07b1c6bfe6", null ],
-    [ "oc_spake_cb_t", "oc__knx__client_8h.html#a78e20c6e72479bc49fe79dcac7c98ae2", null ],
+    [ "oc_spake_cb_t", "oc__knx__client_8h.html#a0645fb91207eb3441ba895bcd96cdf9c", null ],
     [ "oc_do_s_mode", "group__doc__module__tag__s__mode__server.html#ga8cdcbc774e271ee4a6ee3aca44dca6e0", null ],
     [ "oc_do_s_mode_read", "group__doc__module__tag__s__mode__server.html#ga5d201d7c21ccede1727b6cf24a68ed78", null ],
     [ "oc_do_s_mode_with_scope", "group__doc__module__tag__s__mode__server.html#ga5839771a2dba67320b0f4d427bea2721", null ],

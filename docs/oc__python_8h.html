@@ -111,9 +111,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gaaa5b192b5c89efc0e745983b41350e52"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#gaaa5b192b5c89efc0e745983b41350e52">resourceCB</a>) (char *anchor, char *uri, char *types, char *interfaces)</td></tr>
 <tr class="memdesc:gaaa5b192b5c89efc0e745983b41350e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">the resource callback function type NOT USED  <a href="group__doc__module__tag__dll.html#gaaa5b192b5c89efc0e745983b41350e52">More...</a><br /></td></tr>
 <tr class="separator:gaaa5b192b5c89efc0e745983b41350e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9e9bc9b481df3c3a98580fb4fe45fb64"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#ga9e9bc9b481df3c3a98580fb4fe45fb64">spakeCB</a>) (char *sn, int state, char *secret, int secret_size)</td></tr>
-<tr class="memdesc:ga9e9bc9b481df3c3a98580fb4fe45fb64"><td class="mdescLeft">&#160;</td><td class="mdescRight">the spake callback function type  <a href="group__doc__module__tag__dll.html#ga9e9bc9b481df3c3a98580fb4fe45fb64">More...</a><br /></td></tr>
-<tr class="separator:ga9e9bc9b481df3c3a98580fb4fe45fb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e6b2f79f678b8013ec7ad8a37bd2102"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#ga4e6b2f79f678b8013ec7ad8a37bd2102">spakeCB</a>) (char *sn, int state, char *secret, int secret_size, char *oscore_id)</td></tr>
+<tr class="memdesc:ga4e6b2f79f678b8013ec7ad8a37bd2102"><td class="mdescLeft">&#160;</td><td class="mdescRight">the spake callback function type  <a href="group__doc__module__tag__dll.html#ga4e6b2f79f678b8013ec7ad8a37bd2102">More...</a><br /></td></tr>
+<tr class="separator:ga4e6b2f79f678b8013ec7ad8a37bd2102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -168,7 +168,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gafd58460ce5ae2a29693879418721e554"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#gafd58460ce5ae2a29693879418721e554">ets_install_resourceCB</a> (<a class="el" href="group__doc__module__tag__dll.html#gaaa5b192b5c89efc0e745983b41350e52">resourceCB</a> <a class="el" href="group__doc__module__tag__dll.html#gaaa5b192b5c89efc0e745983b41350e52">resourceCB</a>)</td></tr>
 <tr class="memdesc:gafd58460ce5ae2a29693879418721e554"><td class="mdescLeft">&#160;</td><td class="mdescRight">install the resource callback (not yet used)  <a href="group__doc__module__tag__dll.html#gafd58460ce5ae2a29693879418721e554">More...</a><br /></td></tr>
 <tr class="separator:gafd58460ce5ae2a29693879418721e554"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga011c06c01f923e1244ba18081fd7d26c"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#ga011c06c01f923e1244ba18081fd7d26c">ets_install_spakeCB</a> (<a class="el" href="group__doc__module__tag__dll.html#ga9e9bc9b481df3c3a98580fb4fe45fb64">spakeCB</a> <a class="el" href="group__doc__module__tag__dll.html#ga9e9bc9b481df3c3a98580fb4fe45fb64">spakeCB</a>)</td></tr>
+<tr class="memitem:ga011c06c01f923e1244ba18081fd7d26c"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#ga011c06c01f923e1244ba18081fd7d26c">ets_install_spakeCB</a> (<a class="el" href="group__doc__module__tag__dll.html#ga4e6b2f79f678b8013ec7ad8a37bd2102">spakeCB</a> <a class="el" href="group__doc__module__tag__dll.html#ga4e6b2f79f678b8013ec7ad8a37bd2102">spakeCB</a>)</td></tr>
 <tr class="memdesc:ga011c06c01f923e1244ba18081fd7d26c"><td class="mdescLeft">&#160;</td><td class="mdescRight">install the spake callback This function is called when the spake handshake is finished (or failed)  <a href="group__doc__module__tag__dll.html#ga011c06c01f923e1244ba18081fd7d26c">More...</a><br /></td></tr>
 <tr class="separator:ga011c06c01f923e1244ba18081fd7d26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga66bcdf945d8ce37938ccce803e0abcd2"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#ga66bcdf945d8ce37938ccce803e0abcd2">ets_issue_requests_s_mode</a> (int scope, int sia, int ga, int iid, char *st, int value_type, char *value)</td></tr>
@@ -205,7 +205,7 @@ kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><b>ets_link
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5462973b9b94e283ec2828ef36617363.html">pythonbinding</a></li><li class="navelem"><a class="el" href="oc__python_8h.html">oc_python.h</a></li>
-    <li class="footer">Generated on Tue Apr 5 2022 14:31:27 for KNX IoT by
+    <li class="footer">Generated on Tue Apr 5 2022 16:04:03 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
