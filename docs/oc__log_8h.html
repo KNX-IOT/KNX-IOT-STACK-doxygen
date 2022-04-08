@@ -139,6 +139,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a013f76c40c9e6392dc45593b9012a5c9"><td class="memItemLeft" align="right" valign="top"><a id="a013f76c40c9e6392dc45593b9012a5c9"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>PRINTipaddr</b>(endpoint)</td></tr>
 <tr class="separator:a013f76c40c9e6392dc45593b9012a5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2ba51a7c90722d9e3d88e9356e1ec6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>PRINTipaddr_flags</b>(endpoint)</td></tr>
+<tr class="separator:ae2ba51a7c90722d9e3d88e9356e1ec6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e518f99bb71a46757899f401b28ecbc"><td class="memItemLeft" align="right" valign="top"><a id="a5e518f99bb71a46757899f401b28ecbc"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>PRINTipaddr_local</b>(endpoint)</td></tr>
 <tr class="separator:a5e518f99bb71a46757899f401b28ecbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,7 +202,7 @@ Macros</h2></td></tr>
 <div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00194">194</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00220">220</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
 
 </div>
 </div>
@@ -237,7 +239,7 @@ Macros</h2></td></tr>
 <div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00244">244</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00270">270</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
 
 </div>
 </div>
@@ -279,7 +281,7 @@ Macros</h2></td></tr>
 <div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00210">210</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00236">236</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
 
 </div>
 </div>
@@ -322,7 +324,7 @@ Macros</h2></td></tr>
 <div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00201">201</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00227">227</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
 
 </div>
 </div>
@@ -347,7 +349,51 @@ Macros</h2></td></tr>
 <div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00236">236</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00262">262</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
+
+</div>
+</div>
+<a id="ae2ba51a7c90722d9e3d88e9356e1ec6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2ba51a7c90722d9e3d88e9356e1ec6f">&#9670;&nbsp;</a></span>PRINTipaddr_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PRINTipaddr_flags</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">endpoint</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
+<div class="line">    if ((endpoint).flags &amp; <a class="code" href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a4233d0336b2b5b9922cc2a448052c137">SECURED</a>) {                                          \</div>
+<div class="line">      PRINT(<span class="stringliteral">&quot; Secured &quot;</span>);                                                      \</div>
+<div class="line">    };                                                                         \</div>
+<div class="line">    if ((endpoint).flags &amp; <a class="code" href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a607d700b2c0a01c54bdadde074a7cb12">MULTICAST</a>) {                                        \</div>
+<div class="line">      PRINT(<span class="stringliteral">&quot; MULTICAST &quot;</span>);                                                    \</div>
+<div class="line">    };                                                                         \</div>
+<div class="line">    if ((endpoint).flags &amp; <a class="code" href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78aa040cd7feeb588104634cdadf35abf1c">TCP</a>) {                                              \</div>
+<div class="line">      PRINT(<span class="stringliteral">&quot; TCP &quot;</span>);                                                          \</div>
+<div class="line">    };                                                                         \</div>
+<div class="line">    if ((endpoint).flags &amp; <a class="code" href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78acfc4c1053c60b6cc2a7776c60969f31f">IPV4</a>) {                                             \</div>
+<div class="line">      PRINT(<span class="stringliteral">&quot; IPV4 &quot;</span>);                                                         \</div>
+<div class="line">    };                                                                         \</div>
+<div class="line">    if ((endpoint).flags &amp; <a class="code" href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78aff712168361fe68b2bb6193df4977d3c">IPV6</a>) {                                             \</div>
+<div class="line">      PRINT(<span class="stringliteral">&quot; IPV6 &quot;</span>);                                                         \</div>
+<div class="line">    };                                                                         \</div>
+<div class="line">    if ((endpoint).flags &amp; <a class="code" href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78ab0f4a07a137af05e4eb5d3a6874cfe88">OSCORE</a>) {                                           \</div>
+<div class="line">      PRINT(<span class="stringliteral">&quot; OSCORE &quot;</span>);                                                       \</div>
+<div class="line">    };                                                                         \</div>
+<div class="line">    if ((endpoint).flags &amp; <a class="code" href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a69c37229a15f9a89e188ad210f31c647">ACCEPTED</a>) {                                         \</div>
+<div class="line">      PRINT(<span class="stringliteral">&quot; ACCEPTED &quot;</span>);                                                     \</div>
+<div class="line">    };                                                                         \</div>
+<div class="line">    PRINT(<span class="stringliteral">&quot; \n&quot;</span>);                                                              \</div>
+<div class="line">  } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00104">104</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
 
 </div>
 </div>
@@ -397,17 +443,24 @@ Macros</h2></td></tr>
 <div class="line">    }                                                                          \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00184">184</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00210">210</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aoc__endpoint_8h_html_acbafbf0eebae1e60a53d50301fa1ab78a607d700b2c0a01c54bdadde074a7cb12"><div class="ttname"><a href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a607d700b2c0a01c54bdadde074a7cb12">MULTICAST</a></div><div class="ttdeci">@ MULTICAST</div><div class="ttdoc">multicast enabled</div><div class="ttdef"><b>Definition:</b> <a href="oc__endpoint_8h_source.html#l00064">oc_endpoint.h:64</a></div></div>
+<div class="ttc" id="aoc__endpoint_8h_html_acbafbf0eebae1e60a53d50301fa1ab78a69c37229a15f9a89e188ad210f31c647"><div class="ttname"><a href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a69c37229a15f9a89e188ad210f31c647">ACCEPTED</a></div><div class="ttdeci">@ ACCEPTED</div><div class="ttdoc">accepted</div><div class="ttdef"><b>Definition:</b> <a href="oc__endpoint_8h_source.html#l00065">oc_endpoint.h:65</a></div></div>
+<div class="ttc" id="aoc__endpoint_8h_html_acbafbf0eebae1e60a53d50301fa1ab78aa040cd7feeb588104634cdadf35abf1c"><div class="ttname"><a href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78aa040cd7feeb588104634cdadf35abf1c">TCP</a></div><div class="ttdeci">@ TCP</div><div class="ttdoc">tcp communication</div><div class="ttdef"><b>Definition:</b> <a href="oc__endpoint_8h_source.html#l00062">oc_endpoint.h:62</a></div></div>
+<div class="ttc" id="aoc__endpoint_8h_html_acbafbf0eebae1e60a53d50301fa1ab78acfc4c1053c60b6cc2a7776c60969f31f"><div class="ttname"><a href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78acfc4c1053c60b6cc2a7776c60969f31f">IPV4</a></div><div class="ttdeci">@ IPV4</div><div class="ttdoc">ipv4 communication</div><div class="ttdef"><b>Definition:</b> <a href="oc__endpoint_8h_source.html#l00060">oc_endpoint.h:60</a></div></div>
+<div class="ttc" id="aoc__endpoint_8h_html_acbafbf0eebae1e60a53d50301fa1ab78aff712168361fe68b2bb6193df4977d3c"><div class="ttname"><a href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78aff712168361fe68b2bb6193df4977d3c">IPV6</a></div><div class="ttdeci">@ IPV6</div><div class="ttdoc">ipv6 communication</div><div class="ttdef"><b>Definition:</b> <a href="oc__endpoint_8h_source.html#l00061">oc_endpoint.h:61</a></div></div>
+<div class="ttc" id="aoc__endpoint_8h_html_acbafbf0eebae1e60a53d50301fa1ab78a4233d0336b2b5b9922cc2a448052c137"><div class="ttname"><a href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a4233d0336b2b5b9922cc2a448052c137">SECURED</a></div><div class="ttdeci">@ SECURED</div><div class="ttdoc">secure communication</div><div class="ttdef"><b>Definition:</b> <a href="oc__endpoint_8h_source.html#l00059">oc_endpoint.h:59</a></div></div>
+<div class="ttc" id="aoc__endpoint_8h_html_acbafbf0eebae1e60a53d50301fa1ab78ab0f4a07a137af05e4eb5d3a6874cfe88"><div class="ttname"><a href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78ab0f4a07a137af05e4eb5d3a6874cfe88">OSCORE</a></div><div class="ttdeci">@ OSCORE</div><div class="ttdoc">OSCORE communication.</div><div class="ttdef"><b>Definition:</b> <a href="oc__endpoint_8h_source.html#l00063">oc_endpoint.h:63</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="oc__log_8h.html">oc_log.h</a></li>
-    <li class="footer">Generated on Fri Apr 8 2022 17:00:47 for KNX IoT by
+    <li class="footer">Generated on Fri Apr 8 2022 17:01:02 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
