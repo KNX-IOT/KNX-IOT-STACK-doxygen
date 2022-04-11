@@ -699,5 +699,6 @@ var searchData=
   ['osc_5fsalt_882',['osc_salt',['../structoc__auth__at__t.html#a10f5e8996f4c66166e13ce6c63757c1d',1,'oc_auth_at_t']]],
   ['osc_5fversion_883',['osc_version',['../structoc__auth__at__t.html#ac872e1ca92bd925c0ce19800a9e59cac',1,'oc_auth_at_t']]],
   ['oscore_884',['OSCORE',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78ab0f4a07a137af05e4eb5d3a6874cfe88',1,'oc_endpoint.h']]],
-  ['owner_5fcred_885',['owner_cred',['../structoc__sec__cred__t.html#a5eeec0a7ccd94fc7c7f1f929685ba463',1,'oc_sec_cred_t']]]
+  ['oscore_5fdecrypted_885',['OSCORE_DECRYPTED',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a9c408493a1300b98eee738385aa6859a',1,'oc_endpoint.h']]],
+  ['owner_5fcred_886',['owner_cred',['../structoc__sec__cred__t.html#a5eeec0a7ccd94fc7c7f1f929685ba463',1,'oc_sec_cred_t']]]
 ];

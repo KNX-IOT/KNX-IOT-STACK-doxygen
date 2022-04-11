@@ -14,7 +14,8 @@ var oc__endpoint_8h =
       [ "TCP", "oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78aa040cd7feeb588104634cdadf35abf1c", null ],
       [ "OSCORE", "oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78ab0f4a07a137af05e4eb5d3a6874cfe88", null ],
       [ "MULTICAST", "oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a607d700b2c0a01c54bdadde074a7cb12", null ],
-      [ "ACCEPTED", "oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a69c37229a15f9a89e188ad210f31c647", null ]
+      [ "ACCEPTED", "oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a69c37229a15f9a89e188ad210f31c647", null ],
+      [ "OSCORE_DECRYPTED", "oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a9c408493a1300b98eee738385aa6859a", null ]
     ] ],
     [ "oc_endpoint_compare", "oc__endpoint_8h.html#a1c6943a2da63833fffceb42845d039a8", null ],
     [ "oc_endpoint_compare_address", "oc__endpoint_8h.html#ad601b8db3b9dbbae80f5f308a20d7e55", null ],

@@ -202,7 +202,7 @@ Macros</h2></td></tr>
 <div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00220">220</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00223">223</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
 
 </div>
 </div>
@@ -239,7 +239,7 @@ Macros</h2></td></tr>
 <div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00270">270</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00273">273</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
 
 </div>
 </div>
@@ -281,7 +281,7 @@ Macros</h2></td></tr>
 <div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00236">236</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00239">239</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
 
 </div>
 </div>
@@ -324,7 +324,7 @@ Macros</h2></td></tr>
 <div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00227">227</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00230">230</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
 
 </div>
 </div>
@@ -349,7 +349,7 @@ Macros</h2></td></tr>
 <div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00262">262</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00265">265</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
 
 </div>
 </div>
@@ -389,6 +389,9 @@ Macros</h2></td></tr>
 <div class="line">    };                                                                         \</div>
 <div class="line">    if ((endpoint).flags &amp; <a class="code" href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a69c37229a15f9a89e188ad210f31c647">ACCEPTED</a>) {                                         \</div>
 <div class="line">      PRINT(<span class="stringliteral">&quot; ACCEPTED &quot;</span>);                                                     \</div>
+<div class="line">    };                                                                         \</div>
+<div class="line">    if ((endpoint).flags &amp; <a class="code" href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a9c408493a1300b98eee738385aa6859a">OSCORE_DECRYPTED</a>) {                                 \</div>
+<div class="line">      PRINT(<span class="stringliteral">&quot; OSCORE_DECRYPTED &quot;</span>);                                             \</div>
 <div class="line">    };                                                                         \</div>
 <div class="line">    PRINT(<span class="stringliteral">&quot; \n&quot;</span>);                                                              \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
@@ -443,13 +446,14 @@ Macros</h2></td></tr>
 <div class="line">    }                                                                          \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00210">210</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__log_8h_source.html#l00213">213</a> of file <a class="el" href="oc__log_8h_source.html">oc_log.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aoc__endpoint_8h_html_acbafbf0eebae1e60a53d50301fa1ab78a607d700b2c0a01c54bdadde074a7cb12"><div class="ttname"><a href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a607d700b2c0a01c54bdadde074a7cb12">MULTICAST</a></div><div class="ttdeci">@ MULTICAST</div><div class="ttdoc">multicast enabled</div><div class="ttdef"><b>Definition:</b> <a href="oc__endpoint_8h_source.html#l00064">oc_endpoint.h:64</a></div></div>
+<div class="ttc" id="aoc__endpoint_8h_html_acbafbf0eebae1e60a53d50301fa1ab78a9c408493a1300b98eee738385aa6859a"><div class="ttname"><a href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a9c408493a1300b98eee738385aa6859a">OSCORE_DECRYPTED</a></div><div class="ttdeci">@ OSCORE_DECRYPTED</div><div class="ttdoc">OSCORE decrypted message.</div><div class="ttdef"><b>Definition:</b> <a href="oc__endpoint_8h_source.html#l00066">oc_endpoint.h:66</a></div></div>
 <div class="ttc" id="aoc__endpoint_8h_html_acbafbf0eebae1e60a53d50301fa1ab78a69c37229a15f9a89e188ad210f31c647"><div class="ttname"><a href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a69c37229a15f9a89e188ad210f31c647">ACCEPTED</a></div><div class="ttdeci">@ ACCEPTED</div><div class="ttdoc">accepted</div><div class="ttdef"><b>Definition:</b> <a href="oc__endpoint_8h_source.html#l00065">oc_endpoint.h:65</a></div></div>
 <div class="ttc" id="aoc__endpoint_8h_html_acbafbf0eebae1e60a53d50301fa1ab78aa040cd7feeb588104634cdadf35abf1c"><div class="ttname"><a href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78aa040cd7feeb588104634cdadf35abf1c">TCP</a></div><div class="ttdeci">@ TCP</div><div class="ttdoc">tcp communication</div><div class="ttdef"><b>Definition:</b> <a href="oc__endpoint_8h_source.html#l00062">oc_endpoint.h:62</a></div></div>
 <div class="ttc" id="aoc__endpoint_8h_html_acbafbf0eebae1e60a53d50301fa1ab78acfc4c1053c60b6cc2a7776c60969f31f"><div class="ttname"><a href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78acfc4c1053c60b6cc2a7776c60969f31f">IPV4</a></div><div class="ttdeci">@ IPV4</div><div class="ttdoc">ipv4 communication</div><div class="ttdef"><b>Definition:</b> <a href="oc__endpoint_8h_source.html#l00060">oc_endpoint.h:60</a></div></div>
@@ -460,7 +464,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="oc__log_8h.html">oc_log.h</a></li>
-    <li class="footer">Generated on Fri Apr 8 2022 17:01:02 for KNX IoT by
+    <li class="footer">Generated on Mon Apr 11 2022 08:05:15 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
