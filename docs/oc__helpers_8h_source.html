@@ -307,19 +307,19 @@ $(document).ready(function(){initNavTree('oc__helpers_8h_source.html',''); initR
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                                        <span class="keywordtype">size_t</span> uri_len, <span class="keyword">const</span> <span class="keywordtype">char</span> *uri_invoked,</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                                        <span class="keywordtype">size_t</span> invoked_len, <span class="keyword">const</span> <span class="keywordtype">char</span> **value);</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="keywordtype">int</span> oc_string_copy_from_char(oc_string_t *string1, <span class="keywordtype">char</span> *string2);</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="keywordtype">int</span> oc_string_copy(oc_string_t *string1, oc_string_t string2);</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oc__helpers_8h.html#a008ee98555abe100fe9683a71f603e2e">oc_string_cmp</a>(oc_string_t string1, oc_string_t string2);</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160; </div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oc__helpers_8h.html#a567a4ac8afc4a2aeccbc8d0e01f710c8">oc_url_cmp</a>(oc_string_t string1, oc_string_t string2);</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; </div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;}</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oc__helpers_8h.html#ab67319853eec861184071dbe526232b3">oc_string_copy_from_char</a>(oc_string_t *string1, <span class="keywordtype">char</span> *string2);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oc__helpers_8h.html#aee2b79864fdd3d2477c39589a35314c0">oc_string_copy</a>(oc_string_t *string1, oc_string_t string2);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oc__helpers_8h.html#a008ee98555abe100fe9683a71f603e2e">oc_string_cmp</a>(oc_string_t string1, oc_string_t string2);</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_HELPERS_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oc__helpers_8h.html#a567a4ac8afc4a2aeccbc8d0e01f710c8">oc_url_cmp</a>(oc_string_t string1, oc_string_t string2);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; </div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;}</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160; </div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_HELPERS_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aoc__helpers_8h_html_a1574713df4f59c0ac059f2cc1154ffeb"><div class="ttname"><a href="oc__helpers_8h.html#a1574713df4f59c0ac059f2cc1154ffeb">oc_uri_contains_wildcard_value_underscore</a></div><div class="ttdeci">bool oc_uri_contains_wildcard_value_underscore(const char *uri_resource, size_t uri_len, const char *uri_invoked, size_t invoked_len)</div><div class="ttdoc">function to check if in the wild card section is a &quot;_&quot; (underscore) underscores can be used in functi...</div></div>
@@ -330,7 +330,9 @@ $(document).ready(function(){initNavTree('oc__helpers_8h_source.html',''); initR
 <div class="ttc" id="aoc__helpers_8h_html_a629d63730eb1ad4ac87ef9bd481c0223"><div class="ttname"><a href="oc__helpers_8h.html#a629d63730eb1ad4ac87ef9bd481c0223">oc_uri_get_wildcard_value_as_int</a></div><div class="ttdeci">int oc_uri_get_wildcard_value_as_int(const char *uri_resource, size_t uri_len, const char *uri_invoked, size_t invoked_len)</div><div class="ttdoc">retrieve the wild card value as integer The invoked URI is checked against the URI of a resource that...</div></div>
 <div class="ttc" id="aoc__helpers_8h_html_ad83ae755906cdc4c45d4c97ec13b9b7a"><div class="ttname"><a href="oc__helpers_8h.html#ad83ae755906cdc4c45d4c97ec13b9b7a">oc_uri_get_wildcard_value_as_int_after_underscore</a></div><div class="ttdeci">int oc_uri_get_wildcard_value_as_int_after_underscore(const char *uri_resource, size_t uri_len, const char *uri_invoked, size_t invoked_len)</div><div class="ttdoc">retrieve the integer after the &quot;_&quot; (underscore) e.g.</div></div>
 <div class="ttc" id="aoc__helpers_8h_html_a9d4cd17d4100263b9f2be309d0bee2a3"><div class="ttname"><a href="oc__helpers_8h.html#a9d4cd17d4100263b9f2be309d0bee2a3">_oc_alloc_string</a></div><div class="ttdeci">void _oc_alloc_string(oc_string_t *ocstring, size_t size)</div><div class="ttdoc">allocate oc_string</div></div>
+<div class="ttc" id="aoc__helpers_8h_html_aee2b79864fdd3d2477c39589a35314c0"><div class="ttname"><a href="oc__helpers_8h.html#aee2b79864fdd3d2477c39589a35314c0">oc_string_copy</a></div><div class="ttdeci">int oc_string_copy(oc_string_t *string1, oc_string_t string2)</div><div class="ttdoc">copy oc_string</div></div>
 <div class="ttc" id="aoc__helpers_8h_html_aa5f521249e3d1f1731e1babe64b75148"><div class="ttname"><a href="oc__helpers_8h.html#aa5f521249e3d1f1731e1babe64b75148">_oc_free_array</a></div><div class="ttdeci">void _oc_free_array(oc_array_t *ocarray, pool type)</div><div class="ttdoc">free array</div></div>
+<div class="ttc" id="aoc__helpers_8h_html_ab67319853eec861184071dbe526232b3"><div class="ttname"><a href="oc__helpers_8h.html#ab67319853eec861184071dbe526232b3">oc_string_copy_from_char</a></div><div class="ttdeci">int oc_string_copy_from_char(oc_string_t *string1, char *string2)</div><div class="ttdoc">copy string from char*</div></div>
 <div class="ttc" id="aoc__helpers_8h_html_ad6f4842dfa2cf7629690abff5054f3a9"><div class="ttname"><a href="oc__helpers_8h.html#ad6f4842dfa2cf7629690abff5054f3a9">_oc_new_string</a></div><div class="ttdeci">void _oc_new_string(oc_string_t *ocstring, const char *str, size_t str_len)</div><div class="ttdoc">new oc_string from string</div></div>
 <div class="ttc" id="aoc__helpers_8h_html_a79bd60028e1af917dc8f05239e2f23bc"><div class="ttname"><a href="oc__helpers_8h.html#a79bd60028e1af917dc8f05239e2f23bc">_oc_alloc_string_array</a></div><div class="ttdeci">void _oc_alloc_string_array(oc_string_array_t *ocstringarray, size_t size)</div><div class="ttdoc">allocate string array</div></div>
 <div class="ttc" id="aoc__helpers_8h_html_af96ddf66b54df49a985fdb6c52d9bf31"><div class="ttname"><a href="oc__helpers_8h.html#af96ddf66b54df49a985fdb6c52d9bf31">oc_conv_byte_array_to_hex_string</a></div><div class="ttdeci">int oc_conv_byte_array_to_hex_string(const uint8_t *array, size_t array_len, char *hex_str, size_t *hex_str_len)</div><div class="ttdoc">Conversions between hex encoded strings and byte arrays.</div></div>
@@ -341,7 +343,7 @@ $(document).ready(function(){initNavTree('oc__helpers_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Mon Apr 11 2022 13:26:41 for KNX IoT by
+    <li class="footer">Generated on Mon Apr 11 2022 13:37:25 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
