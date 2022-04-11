@@ -702,5 +702,6 @@ var searchData=
   ['osc_5fversion_887',['osc_version',['../structoc__auth__at__t.html#ac872e1ca92bd925c0ce19800a9e59cac',1,'oc_auth_at_t']]],
   ['oscore_888',['OSCORE',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78ab0f4a07a137af05e4eb5d3a6874cfe88',1,'oc_endpoint.h']]],
   ['oscore_5fdecrypted_889',['OSCORE_DECRYPTED',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a9c408493a1300b98eee738385aa6859a',1,'oc_endpoint.h']]],
-  ['owner_5fcred_890',['owner_cred',['../structoc__sec__cred__t.html#a5eeec0a7ccd94fc7c7f1f929685ba463',1,'oc_sec_cred_t']]]
+  ['oscore_5fencrypted_890',['OSCORE_ENCRYPTED',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a9fa9c68d72c81a94822b948e9b6385b9',1,'oc_endpoint.h']]],
+  ['owner_5fcred_891',['owner_cred',['../structoc__sec__cred__t.html#a5eeec0a7ccd94fc7c7f1f929685ba463',1,'oc_sec_cred_t']]]
 ];

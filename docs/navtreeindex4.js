@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"oc__ri_8h.html#a2ba4762ae0434f521a5e73e0a63dc8d8":[3,0,38,36],
 "oc__ri_8h.html#a2e13ec2b32452084c1edb7c74a384ccb":[3,0,38,30],
 "oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26":[3,0,38,26],
 "oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26a2a3c53df3082c04b8e49ebaca236529b":[3,0,38,26,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "structoc__device__info__t.html#a1a7f5ecb1d5af92b0c88ac9ac4f7b675":[2,0,7,4],
 "structoc__device__info__t.html#a1ab2364042f5d40039fa068b06a92312":[2,0,7,10],
 "structoc__device__info__t.html#a258978ef26d3bdba7d02a0a59200d0ad":[2,0,7,6],
-"structoc__device__info__t.html#a33751b24973c1f5badbdc19c44db4206":[2,0,7,14],
-"structoc__device__info__t.html#a3d679621f60aa0336a4776af18511167":[2,0,7,8]
+"structoc__device__info__t.html#a33751b24973c1f5badbdc19c44db4206":[2,0,7,14]
 };
