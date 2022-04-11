@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"structoc__device__info__t.html#a83a04ad582de2b7d36b96f9db429c2c6":[2,0,7,13],
+"structoc__device__info__t.html#a9cf2e3b9ba0024e462ec37839d48c0d3":[2,0,7,11],
 "structoc__device__info__t.html#aa7e71d0ef5bb9848723bd81d7414ceaa":[2,0,7,0],
 "structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09":[2,0,7,15],
 "structoc__device__info__t.html#aef2430dc172df7477bb0c16e17ffcdd7":[2,0,7,9],

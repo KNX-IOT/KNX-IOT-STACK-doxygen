@@ -206,7 +206,7 @@ var searchData=
   ['oc_5fnotify_5fobservers_1287',['oc_notify_observers',['../group__doc__module__tag__server__side.html#ga43ac6a6fc039b94df00768d69577a9ed',1,'oc_api.h']]],
   ['oc_5foscore_5fget_5fosndelay_1288',['oc_oscore_get_osndelay',['../oc__knx__sec_8h.html#ab0ef8b2933a13d55f75165af73c872a3',1,'oc_knx_sec.h']]],
   ['oc_5foscore_5fget_5frplwdo_1289',['oc_oscore_get_rplwdo',['../oc__knx__sec_8h.html#abffee6b23a4b6efe2466a6476dd31da3',1,'oc_knx_sec.h']]],
-  ['oc_5foscore_5fset_5fauth_1290',['oc_oscore_set_auth',['../oc__knx__sec_8h.html#a8e71ff3eee1a2c8deede64ed7ab874d1',1,'oc_knx_sec.h']]],
+  ['oc_5foscore_5fset_5fauth_1290',['oc_oscore_set_auth',['../oc__knx__sec_8h.html#ad5c6ab3d5c41303a0758ff0de59d2fe5',1,'oc_knx_sec.h']]],
   ['oc_5fpki_5fadd_5fmfg_5fcert_1291',['oc_pki_add_mfg_cert',['../oc__pki_8h.html#aaf8beabe04b2a3393783dea0c72b3c71',1,'oc_pki.h']]],
   ['oc_5fpki_5fadd_5fmfg_5fintermediate_5fcert_1292',['oc_pki_add_mfg_intermediate_cert',['../oc__pki_8h.html#ac433de092d318760639c905791c2a5d0',1,'oc_pki.h']]],
   ['oc_5fpki_5fadd_5fmfg_5ftrust_5fanchor_1293',['oc_pki_add_mfg_trust_anchor',['../oc__pki_8h.html#ab429d36577356b5b821e919d43320110',1,'oc_pki.h']]],

@@ -115,7 +115,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga36b03e4719edd7bc3ea330c995caaff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the callback function  <a href="group__doc__module__tag__s__mode__server.html#ga36b03e4719edd7bc3ea330c995caaff0">More...</a><br /></td></tr>
 <tr class="separator:ga36b03e4719edd7bc3ea330c995caaff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4fc3569049c381a19a80022ac1439675"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675">oc_is_redirected_request</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
-<tr class="memdesc:ga4fc3569049c381a19a80022ac1439675"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the request is a redirected request from /.knx or /p when that happend, extra information can be in the CBOR object  <a href="group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675">More...</a><br /></td></tr>
+<tr class="memdesc:ga4fc3569049c381a19a80022ac1439675"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the request is a redirected request from /.knx or /p when that happened, extra information can be in the CBOR object  <a href="group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675">More...</a><br /></td></tr>
 <tr class="separator:ga4fc3569049c381a19a80022ac1439675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa7f0b28c63b1b539dab013e7b1095cc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#gaa7f0b28c63b1b539dab013e7b1095cc1">oc_set_s_mode_response_cb</a> (oc_s_mode_response_cb_t my_func)</td></tr>
 <tr class="memdesc:gaa7f0b28c63b1b539dab013e7b1095cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the s-mode response callback e.g.  <a href="group__doc__module__tag__s__mode__server.html#gaa7f0b28c63b1b539dab013e7b1095cc1">More...</a><br /></td></tr>
@@ -123,7 +123,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>S-mode server side support functions. </p>
-<p>This module contains the receiving side of the s-mode functionality. The received s-mode messages are routed to the appropriate POST methods of the data point. However since not all data is in the s-mode message the POST method needs to retrieve the data from the s-mode messsage differently than for an normal CoAP post message (the message payload is constructed differently). </p>
+<p>This module contains the receiving side of the s-mode functionality. The received s-mode messages are routed to the appropriate POST methods of the data point. However since not all data is in the s-mode message the POST method needs to retrieve the data from the s-mode message differently than for an normal CoAP post message (the message payload is constructed differently). </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga5d201d7c21ccede1727b6cf24a68ed78"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5d201d7c21ccede1727b6cf24a68ed78">&#9670;&nbsp;</a></span>oc_do_s_mode_read()</h2>
@@ -282,7 +282,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>checks if the request is a redirected request from /.knx or /p when that happend, extra information can be in the CBOR object </p>
+<p>checks if the request is a redirected request from /.knx or /p when that happened, extra information can be in the CBOR object </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">request</td><td>the request to be checked </td></tr>
@@ -330,7 +330,7 @@ false function set failed </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Apr 11 2022 08:05:15 for KNX IoT by
+    <li class="footer">Generated on Mon Apr 11 2022 09:35:11 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

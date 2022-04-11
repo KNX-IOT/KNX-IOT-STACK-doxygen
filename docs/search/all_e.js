@@ -399,7 +399,7 @@ var searchData=
   ['oc_5fobservable_582',['OC_OBSERVABLE',['../oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4ba8d5c243825d19b745cc4920d1acc1708',1,'oc_ri.h']]],
   ['oc_5foscore_5fget_5fosndelay_583',['oc_oscore_get_osndelay',['../oc__knx__sec_8h.html#ab0ef8b2933a13d55f75165af73c872a3',1,'oc_knx_sec.h']]],
   ['oc_5foscore_5fget_5frplwdo_584',['oc_oscore_get_rplwdo',['../oc__knx__sec_8h.html#abffee6b23a4b6efe2466a6476dd31da3',1,'oc_knx_sec.h']]],
-  ['oc_5foscore_5fset_5fauth_585',['oc_oscore_set_auth',['../oc__knx__sec_8h.html#a8e71ff3eee1a2c8deede64ed7ab874d1',1,'oc_knx_sec.h']]],
+  ['oc_5foscore_5fset_5fauth_585',['oc_oscore_set_auth',['../oc__knx__sec_8h.html#ad5c6ab3d5c41303a0758ff0de59d2fe5',1,'oc_knx_sec.h']]],
   ['oc_5fpase_5ft_586',['oc_pase_t',['../structoc__pase__t.html',1,'oc_pase_t'],['../oc__knx_8h.html#acd61823fce932bf563c5cd3da8d135b8',1,'oc_pase_t():&#160;oc_knx.h']]],
   ['oc_5fperiodic_587',['OC_PERIODIC',['../oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bad391b47ebac21f7ee0cb4efea50c5d28',1,'oc_ri.h']]],
   ['oc_5fping_5ftimeout_588',['OC_PING_TIMEOUT',['../oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38ada6a9cd6b2ff47d615b04c0a0dfcfc88',1,'oc_ri.h']]],

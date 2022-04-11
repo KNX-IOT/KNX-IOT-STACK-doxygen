@@ -14,6 +14,7 @@ var oc__python_8h =
     [ "ets_cbor_put", "group__doc__module__tag__dll.html#ga4064df8a62a492576e87cd100326663a", null ],
     [ "ets_discover_devices", "group__doc__module__tag__dll.html#gac8234f1a5d782edd27d36d529ed4c7d4", null ],
     [ "ets_discover_devices_with_query", "group__doc__module__tag__dll.html#ga544c3a750d160049921937bf8893c67a", null ],
+    [ "ets_error_to_string", "group__doc__module__tag__dll.html#ga9bc152ae3bc55bfb4e8cb29c8c218097", null ],
     [ "ets_exit", "group__doc__module__tag__dll.html#ga94457f61b1ed3d7a39011f255e5e2628", null ],
     [ "ets_get_max_app_data_size", "group__doc__module__tag__dll.html#ga53b79eb76de2728d3e09cbd6c6c60919", null ],
     [ "ets_get_nr_devices", "group__doc__module__tag__dll.html#ga62ecc8ade7263bd86bd09dcb02f050cf", null ],
@@ -31,6 +32,7 @@ var oc__python_8h =
     [ "ets_listen_s_mode", "group__doc__module__tag__dll.html#gacbfefc90ee1048a6d87c8970dc7de783", null ],
     [ "ets_main", "group__doc__module__tag__dll.html#gaebcd5dbc03a972b942719459d9037631", null ],
     [ "ets_poll", "group__doc__module__tag__dll.html#gad9b021409f0222487e959c9dd489cfe1", null ],
+    [ "ets_reset_ets", "group__doc__module__tag__dll.html#gadac5cde6e869f3ed995f7fe7e72cd5e7", null ],
     [ "ets_set_max_app_data_size", "group__doc__module__tag__dll.html#ga151f57f396eb86b871aab7775125e615", null ],
     [ "ets_start", "group__doc__module__tag__dll.html#gab6ecbe3630c9d99de7dd1212cd848c0b", null ],
     [ "ets_stop", "group__doc__module__tag__dll.html#gad707ff1d62967c9447da28e3f1600837", null ]

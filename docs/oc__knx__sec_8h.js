@@ -17,6 +17,6 @@ var oc__knx__sec_8h =
     [ "oc_knx_sec_check_acl", "oc__knx__sec_8h.html#ae9bf9c46721c4b5c90c013e7e85c9491", null ],
     [ "oc_oscore_get_osndelay", "oc__knx__sec_8h.html#ab0ef8b2933a13d55f75165af73c872a3", null ],
     [ "oc_oscore_get_rplwdo", "oc__knx__sec_8h.html#abffee6b23a4b6efe2466a6476dd31da3", null ],
-    [ "oc_oscore_set_auth", "oc__knx__sec_8h.html#a8e71ff3eee1a2c8deede64ed7ab874d1", null ],
+    [ "oc_oscore_set_auth", "oc__knx__sec_8h.html#ad5c6ab3d5c41303a0758ff0de59d2fe5", null ],
     [ "oc_string_to_at_profile", "oc__knx__sec_8h.html#ad840b16fdfd76aaafb0abdb20c4488fa", null ]
 ];

@@ -99,9 +99,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a5279b21aca5fa82ec32fcd07b1c6bfe6"><td class="memItemLeft" align="right" valign="top"><a id="a5279b21aca5fa82ec32fcd07b1c6bfe6"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>oc_s_mode_response_cb_t</b>) (char *url, <a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *rep, <a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *rep_value)</td></tr>
 <tr class="separator:a5279b21aca5fa82ec32fcd07b1c6bfe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0645fb91207eb3441ba895bcd96cdf9c"><td class="memItemLeft" align="right" valign="top"><a id="a0645fb91207eb3441ba895bcd96cdf9c"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>oc_spake_cb_t</b>) (int error, char *oscore_id, uint8_t *secret, int secret_size)</td></tr>
-<tr class="separator:a0645fb91207eb3441ba895bcd96cdf9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d9dd70011b34fb9627c7b2355da0cf1"><td class="memItemLeft" align="right" valign="top"><a id="a0d9dd70011b34fb9627c7b2355da0cf1"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>oc_spake_cb_t</b>) (int error, char *serial_number, char *oscore_id, uint8_t *secret, int secret_size)</td></tr>
+<tr class="separator:a0d9dd70011b34fb9627c7b2355da0cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -121,7 +121,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:adf789b4717d5d7d66cc666ab849c9aa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">initiate the spake handshake  <a href="oc__knx__client_8h.html#adf789b4717d5d7d66cc666ab849c9aa8">More...</a><br /></td></tr>
 <tr class="separator:adf789b4717d5d7d66cc666ab849c9aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4fc3569049c381a19a80022ac1439675"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675">oc_is_redirected_request</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
-<tr class="memdesc:ga4fc3569049c381a19a80022ac1439675"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the request is a redirected request from /.knx or /p when that happend, extra information can be in the CBOR object  <a href="group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675">More...</a><br /></td></tr>
+<tr class="memdesc:ga4fc3569049c381a19a80022ac1439675"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the request is a redirected request from /.knx or /p when that happened, extra information can be in the CBOR object  <a href="group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675">More...</a><br /></td></tr>
 <tr class="separator:ga4fc3569049c381a19a80022ac1439675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaab408203d7105c215bd068c047a09562"><td class="memItemLeft" align="right" valign="top"><a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__client.html#gaab408203d7105c215bd068c047a09562">oc_s_mode_get_value</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
 <tr class="memdesc:gaab408203d7105c215bd068c047a09562"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses out the value of the s-mode request.  <a href="group__doc__module__tag__s__mode__client.html#gaab408203d7105c215bd068c047a09562">More...</a><br /></td></tr>
@@ -215,7 +215,7 @@ false function set failed </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__client_8h.html">oc_knx_client.h</a></li>
-    <li class="footer">Generated on Mon Apr 11 2022 08:05:15 for KNX IoT by
+    <li class="footer">Generated on Mon Apr 11 2022 09:35:11 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

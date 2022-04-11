@@ -183,7 +183,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gab0b31aed875163073a4af1cbb3f8f3c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.  <a href="group__doc__module__tag__server__side.html#gab0b31aed875163073a4af1cbb3f8f3c2">More...</a><br /></td></tr>
 <tr class="separator:gab0b31aed875163073a4af1cbb3f8f3c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga64b2ca53e56b0878149faff19c24c21f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f">oc_send_response</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code)</td></tr>
-<tr class="memdesc:ga64b2ca53e56b0878149faff19c24c21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.  <a href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f">More...</a><br /></td></tr>
+<tr class="memdesc:ga64b2ca53e56b0878149faff19c24c21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after the response to a GET, PUT, POST or DELETE call has been prepared completed, will respond with CBOR.  <a href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f">More...</a><br /></td></tr>
 <tr class="separator:ga64b2ca53e56b0878149faff19c24c21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab8b2f6fcf1ccbe750079af98f167a834"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gab8b2f6fcf1ccbe750079af98f167a834">oc_send_response_raw</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const uint8_t *payload, size_t size, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> content_format, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code)</td></tr>
 <tr class="memdesc:gab8b2f6fcf1ccbe750079af98f167a834"><td class="mdescLeft">&#160;</td><td class="mdescRight">send the request, no processing  <a href="group__doc__module__tag__server__side.html#gab8b2f6fcf1ccbe750079af98f167a834">More...</a><br /></td></tr>
@@ -532,7 +532,7 @@ false </dd></dl>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe" title="request callback">oc_request_callback_t</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f" title="Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.">oc_send_response</a> </dd></dl>
+<a class="el" href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f" title="Called after the response to a GET, PUT, POST or DELETE call has been prepared completed,...">oc_send_response</a> </dd></dl>
 
 </div>
 </div>
@@ -1537,7 +1537,7 @@ oc_device_bind_resource_type </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Called after the response to a GET, PUT, POST or DELETE call has been prepared completed. </p>
+<p>Called after the response to a GET, PUT, POST or DELETE call has been prepared completed, will respond with CBOR. </p>
 <p>The function oc_send_response is called at the end of a oc_request_callback_t to inform the caller about the status of the requested action.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1651,7 +1651,7 @@ oc_device_bind_resource_type </dd></dl>
 <dd>
 <a class="el" href="group__doc__module__tag__server__side.html#gab8e08bb0d0476a29ecd562f02e7ec61e" title="Called to send the deferred response to a GET, PUT, POST or DELETE request.">oc_send_separate_response</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f" title="Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.">oc_send_response</a> </dd>
+<a class="el" href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f" title="Called after the response to a GET, PUT, POST or DELETE call has been prepared completed,...">oc_send_response</a> </dd>
 <dd>
 <a class="el" href="group__doc__module__tag__server__side.html#gabbee24e2e7b99e6e657c0fd07ceb1db9" title="Ignore the request.">oc_ignore_request</a> </dd></dl>
 
@@ -1722,7 +1722,7 @@ oc_device_bind_resource_type </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Apr 11 2022 08:05:15 for KNX IoT by
+    <li class="footer">Generated on Mon Apr 11 2022 09:35:11 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
