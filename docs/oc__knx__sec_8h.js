@@ -8,6 +8,8 @@ var oc__knx__sec_8h =
       [ "OC_PROFILE_COAP_OSCORE", "oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baa59d809c61c6d5cfab4a805a622401e6", null ]
     ] ],
     [ "oc_at_profile_to_string", "oc__knx__sec_8h.html#a6f653943da2ac07d749b2d1a76e6da37", null ],
+    [ "oc_core_find_at_entry_empty_slot", "oc__knx__sec_8h.html#aab01c868cfc9d5a6af84d9308e0debfd", null ],
+    [ "oc_core_find_at_entry_with_context_id", "oc__knx__sec_8h.html#a6efbbab99c96f259e24a60847d513cc8", null ],
     [ "oc_core_set_at_table", "oc__knx__sec_8h.html#aa73ce55713251b47ec6ba80abfe1361f", null ],
     [ "oc_create_knx_sec_resources", "oc__knx__sec_8h.html#a7132b91e1bc8ff48c4c1dbd7d66b84d8", null ],
     [ "oc_delete_at_table", "oc__knx__sec_8h.html#afaf7c65ba5a0900511303629bfe41582", null ],

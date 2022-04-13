@@ -115,411 +115,419 @@ $(document).ready(function(){initNavTree('_l_s_a_b__minimal__all_8c_source.html'
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#include &lt;signal.h&gt;</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">// test purpose only</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="oc__knx__dev_8h.html">api/oc_knx_dev.h</a>&quot;</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#ifdef INCLUDE_EXTERNAL</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">/* import external definitions from header file*/</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">/* this file should be externally supplied */</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#include &quot;external_header.h&quot;</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#ifdef __linux__</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#ifdef OC_SPAKE</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#include &quot;security/oc_spake2plus.h&quot;</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#ifdef INCLUDE_EXTERNAL</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">/* import external definitions from header file*/</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">/* this file should be externally supplied */</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#include &quot;external_header.h&quot;</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#include &lt;pthread.h&gt;</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#ifndef NO_MAIN</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">static</span> pthread_mutex_t mutex;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">static</span> pthread_cond_t cv;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span>timespec ts;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NO_MAIN */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span> <span class="comment">/* defines FILENAME_MAX */</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#ifdef __linux__</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#include &lt;pthread.h&gt;</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#ifndef NO_MAIN</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">static</span> pthread_mutex_t mutex;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">static</span> pthread_cond_t cv;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span>timespec ts;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NO_MAIN */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a56e0ef88d0d230547f678b84ed8ad00a">   94</a></span>&#160;<span class="preprocessor">#define MY_NAME &quot;Actuator (LSAB) 417&quot; </span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;STATIC CONDITION_VARIABLE cv; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;STATIC CRITICAL_SECTION cs;   </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#include &lt;direct.h&gt;</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#define GetCurrentDir _getcwd</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#define GetCurrentDir getcwd</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#define btoa(x) ((x) ? &quot;true&quot; : &quot;false&quot;)</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span> <span class="comment">/* defines FILENAME_MAX */</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a56e0ef88d0d230547f678b84ed8ad00a">   96</a></span>&#160;<span class="preprocessor">#define MY_NAME &quot;Actuator (LSAB) 417&quot; </span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;STATIC CONDITION_VARIABLE cv; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;STATIC CRITICAL_SECTION cs;   </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#include &lt;direct.h&gt;</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#define GetCurrentDir _getcwd</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#define GetCurrentDir getcwd</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a8f0729e9e8c0e049c59956badd0905a0">  110</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_l_s_a_b__minimal__all_8c.html#a8f0729e9e8c0e049c59956badd0905a0">g_mystate</a> = <span class="keyword">false</span>; </div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a17a853a5bf8ca8d7285dad963558eb9a">  111</a></span>&#160;<span class="keyword">volatile</span> <span class="keywordtype">int</span> <a class="code" href="_l_s_a_b__minimal__all_8c.html#a17a853a5bf8ca8d7285dad963558eb9a">quit</a> = 0;  </div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#aa85bfb832e03afe53eea89cfa6bb8ec5">  112</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_l_s_a_b__minimal__all_8c.html#aa85bfb832e03afe53eea89cfa6bb8ec5">g_reset</a> = <span class="keyword">false</span>;   </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keywordtype">int</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a2e2efabbeb1c8c68790bb90ce01c4578">  128</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#a2e2efabbeb1c8c68790bb90ce01c4578">app_init</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="comment">/* set the manufacturer name */</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">int</span> ret = <a class="code" href="oc__api_8h.html#abc05e63942a1093f807213220841c54b">oc_init_platform</a>(<span class="stringliteral">&quot;Cascoda&quot;</span>, NULL, NULL);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="comment">/* set the application name, version, base url, device serial number */</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  ret |= <a class="code" href="oc__api_8h.html#a1fc277c86baf3db65614c271bc7cbcf6">oc_add_device</a>(<a class="code" href="_l_s_a_b__minimal__all_8c.html#a56e0ef88d0d230547f678b84ed8ad00a">MY_NAME</a>, <span class="stringliteral">&quot;1.0.0&quot;</span>, <span class="stringliteral">&quot;//&quot;</span>, <span class="stringliteral">&quot;000001&quot;</span>, NULL, NULL);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <a class="code" href="structoc__device__info__t.html">oc_device_info_t</a> *device = <a class="code" href="oc__core__res_8h.html#abce7a2d1e8d98a3f4c0b8585121e2771">oc_core_get_device_info</a>(0);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  PRINT(<span class="stringliteral">&quot;Serial Number: %s\n&quot;</span>, <a class="code" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(device-&gt;<a class="code" href="structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09">serialnumber</a>));</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="comment">/* set the hardware version 1.0.0 */</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <a class="code" href="oc__core__res_8h.html#a3a12888f2b9f5d866cf3193e79b5c85a">oc_core_set_device_hwv</a>(0, 1, 0, 0);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="comment">/* set the firmware version 1.0.0 */</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <a class="code" href="oc__core__res_8h.html#a01721573029f39dc7cbf7a60d7ca6c9f">oc_core_set_device_fwv</a>(0, 1, 0, 0);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="comment">/* set the hardware type*/</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <a class="code" href="oc__core__res_8h.html#a03e18a4a6f44ec07797afab554499d60">oc_core_set_device_hwt</a>(0, <span class="stringliteral">&quot;Pi&quot;</span>);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="comment">/* set the model */</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <a class="code" href="oc__core__res_8h.html#a208356e6cc65d92ce5b5a11e0f365fe6">oc_core_set_device_model</a>(0, <span class="stringliteral">&quot;Cascoda Actuator&quot;</span>);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;STATIC <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a5068ad533dc16b37e94d9373c644ad8b">  167</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#a5068ad533dc16b37e94d9373c644ad8b">get_dpa_417_61</a>(<a class="code" href="structoc__request__t.html">oc_request_t</a> *request, <a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> interfaces,</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;               <span class="keywordtype">void</span> *user_data)</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;{</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  (void)user_data; <span class="comment">/* variable not used */</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="comment">/* TODO: SENSOR add here the code to talk to the HW if one implements a</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">     sensor. the call to the HW needs to fill in the global variable before it</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">     returns to this function here. alternative is to have a callback from the</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">     hardware that sets the global variables.</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">  */</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordtype">bool</span> error_state = <span class="keyword">false</span>; <span class="comment">/* the error state, the generated code */</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="oc__ri_8h.html#a8bc80a7833566d791556f311e514e722">oc_status_code</a> = <a class="code" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a483d03ac6df269eb49b2ca709372889b">OC_STATUS_OK</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#define btoa(x) ((x) ? &quot;true&quot; : &quot;false&quot;)</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a8f0729e9e8c0e049c59956badd0905a0">  112</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_l_s_a_b__minimal__all_8c.html#a8f0729e9e8c0e049c59956badd0905a0">g_mystate</a> = <span class="keyword">false</span>; </div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a17a853a5bf8ca8d7285dad963558eb9a">  113</a></span>&#160;<span class="keyword">volatile</span> <span class="keywordtype">int</span> <a class="code" href="_l_s_a_b__minimal__all_8c.html#a17a853a5bf8ca8d7285dad963558eb9a">quit</a> = 0;  </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#aa85bfb832e03afe53eea89cfa6bb8ec5">  114</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_l_s_a_b__minimal__all_8c.html#aa85bfb832e03afe53eea89cfa6bb8ec5">g_reset</a> = <span class="keyword">false</span>;   </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a2e2efabbeb1c8c68790bb90ce01c4578">  130</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#a2e2efabbeb1c8c68790bb90ce01c4578">app_init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;{</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="comment">/* set the manufacturer name */</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">int</span> ret = <a class="code" href="oc__api_8h.html#abc05e63942a1093f807213220841c54b">oc_init_platform</a>(<span class="stringliteral">&quot;Cascoda&quot;</span>, NULL, NULL);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="comment">/* set the application name, version, base url, device serial number */</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  ret |= <a class="code" href="oc__api_8h.html#a1fc277c86baf3db65614c271bc7cbcf6">oc_add_device</a>(<a class="code" href="_l_s_a_b__minimal__all_8c.html#a56e0ef88d0d230547f678b84ed8ad00a">MY_NAME</a>, <span class="stringliteral">&quot;1.0.0&quot;</span>, <span class="stringliteral">&quot;//&quot;</span>, <span class="stringliteral">&quot;000001&quot;</span>, NULL, NULL);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <a class="code" href="structoc__device__info__t.html">oc_device_info_t</a> *device = <a class="code" href="oc__core__res_8h.html#abce7a2d1e8d98a3f4c0b8585121e2771">oc_core_get_device_info</a>(0);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  PRINT(<span class="stringliteral">&quot;Serial Number: %s\n&quot;</span>, <a class="code" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(device-&gt;<a class="code" href="structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09">serialnumber</a>));</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="comment">/* set the hardware version 1.0.0 */</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <a class="code" href="oc__core__res_8h.html#a3a12888f2b9f5d866cf3193e79b5c85a">oc_core_set_device_hwv</a>(0, 1, 0, 0);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="comment">/* set the firmware version 1.0.0 */</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <a class="code" href="oc__core__res_8h.html#a01721573029f39dc7cbf7a60d7ca6c9f">oc_core_set_device_fwv</a>(0, 1, 0, 0);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="comment">/* set the hardware type*/</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <a class="code" href="oc__core__res_8h.html#a03e18a4a6f44ec07797afab554499d60">oc_core_set_device_hwt</a>(0, <span class="stringliteral">&quot;Pi&quot;</span>);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="comment">/* set the model */</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <a class="code" href="oc__core__res_8h.html#a208356e6cc65d92ce5b5a11e0f365fe6">oc_core_set_device_model</a>(0, <span class="stringliteral">&quot;Cascoda Actuator&quot;</span>);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#ifdef OC_SPAKE</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#define PASSWORD &quot;LETTUCE&quot;</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  oc_spake_set_password(PASSWORD);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  PRINT(<span class="stringliteral">&quot; SPAKE password %s\n&quot;</span>, PASSWORD);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;STATIC <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a5068ad533dc16b37e94d9373c644ad8b">  175</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#a5068ad533dc16b37e94d9373c644ad8b">get_dpa_417_61</a>(<a class="code" href="structoc__request__t.html">oc_request_t</a> *request, <a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> interfaces,</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;               <span class="keywordtype">void</span> *user_data)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;{</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  (void)user_data; <span class="comment">/* variable not used */</span></div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  PRINT(<span class="stringliteral">&quot;-- Begin get_dpa_417_61: interface %d\n&quot;</span>, interfaces);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="comment">/* check if the accept header is CBOR */</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordflow">if</span> (request-&gt;<a class="code" href="structoc__request__t.html#aa521094fc45d93804f83e0e00281e5dc">accept</a> != <a class="code" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714fa6563ce58a5ccb28f4c84c8eaa1bbf110">APPLICATION_CBOR</a>) {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <a class="code" href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f">oc_send_response</a>(request, <a class="code" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38abec447dcd7b17d6c66d8a668b30632d4">OC_STATUS_BAD_OPTION</a>);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  }</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  CborError error;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <a class="code" href="oc__rep_8h.html#ac0fa5f5a963bc4a00bd9dd1e050064d7">oc_rep_begin_root_object</a>();</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <a class="code" href="oc__rep_8h.html#a4682d25ed7cef4a2831e1eadaef18e2e">oc_rep_i_set_boolean</a>(root, 1, <a class="code" href="_l_s_a_b__minimal__all_8c.html#a8f0729e9e8c0e049c59956badd0905a0">g_mystate</a>);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  error = g_err;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keywordflow">if</span> (error) {</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <a class="code" href="oc__ri_8h.html#a8bc80a7833566d791556f311e514e722">oc_status_code</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  }</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  PRINT(<span class="stringliteral">&quot;CBOR encoder size %d\n&quot;</span>, <a class="code" href="oc__rep_8h.html#acc472350fc7fefff703ba225791d5333">oc_rep_get_encoded_payload_size</a>());</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordflow">if</span> (error_state == <span class="keyword">false</span>) {</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="group__doc__module__tag__server__side.html#gaab81b44a949c8689bf23179d18a626ba">oc_send_cbor_response</a>(request, <a class="code" href="oc__ri_8h.html#a8bc80a7833566d791556f311e514e722">oc_status_code</a>);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <a class="code" href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f">oc_send_response</a>(request, <a class="code" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38abec447dcd7b17d6c66d8a668b30632d4">OC_STATUS_BAD_OPTION</a>);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  }</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  PRINT(<span class="stringliteral">&quot;-- End get_dpa_417_61\n&quot;</span>);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="comment">/* TODO: SENSOR add here the code to talk to the HW if one implements a</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">     sensor. the call to the HW needs to fill in the global variable before it</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">     returns to this function here. alternative is to have a callback from the</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">     hardware that sets the global variables.</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">  */</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordtype">bool</span> error_state = <span class="keyword">false</span>; <span class="comment">/* the error state, the generated code */</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="oc__ri_8h.html#a8bc80a7833566d791556f311e514e722">oc_status_code</a> = <a class="code" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a483d03ac6df269eb49b2ca709372889b">OC_STATUS_OK</a>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  PRINT(<span class="stringliteral">&quot;-- Begin get_dpa_417_61: interface %d\n&quot;</span>, interfaces);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="comment">/* check if the accept header is CBOR */</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordflow">if</span> (request-&gt;<a class="code" href="structoc__request__t.html#aa521094fc45d93804f83e0e00281e5dc">accept</a> != <a class="code" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714fa6563ce58a5ccb28f4c84c8eaa1bbf110">APPLICATION_CBOR</a>) {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f">oc_send_response</a>(request, <a class="code" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38abec447dcd7b17d6c66d8a668b30632d4">OC_STATUS_BAD_OPTION</a>);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  CborError error;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <a class="code" href="oc__rep_8h.html#ac0fa5f5a963bc4a00bd9dd1e050064d7">oc_rep_begin_root_object</a>();</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <a class="code" href="oc__rep_8h.html#a4682d25ed7cef4a2831e1eadaef18e2e">oc_rep_i_set_boolean</a>(root, 1, <a class="code" href="_l_s_a_b__minimal__all_8c.html#a8f0729e9e8c0e049c59956badd0905a0">g_mystate</a>);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  error = g_err;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keywordflow">if</span> (error) {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="oc__ri_8h.html#a8bc80a7833566d791556f311e514e722">oc_status_code</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  PRINT(<span class="stringliteral">&quot;CBOR encoder size %d\n&quot;</span>, <a class="code" href="oc__rep_8h.html#acc472350fc7fefff703ba225791d5333">oc_rep_get_encoded_payload_size</a>());</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;STATIC <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a49fa8413a491328a617618eb9e5d8a76">  219</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#a49fa8413a491328a617618eb9e5d8a76">post_dpa_417_61</a>(<a class="code" href="structoc__request__t.html">oc_request_t</a> *request, <a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> interfaces,</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                <span class="keywordtype">void</span> *user_data)</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;{</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  (void)interfaces;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  (void)user_data;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordtype">bool</span> error_state = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  PRINT(<span class="stringliteral">&quot;-- Begin post_dpa_417_61:\n&quot;</span>);</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <a class="code" href="structoc__rep__s.html">oc_rep_t</a> *rep = NULL;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="comment">// handle the different requests</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675">oc_is_redirected_request</a>(request)) {</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    PRINT(<span class="stringliteral">&quot; S-MODE or /P\n&quot;</span>);</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  }</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  rep = request-&gt;<a class="code" href="structoc__request__t.html#ac4751776b29000ba3603ef3392bc64d8">request_payload</a>;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordflow">while</span> (rep != NULL) {</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">if</span> (rep-&gt;<a class="code" href="structoc__rep__s.html#a0b9aa324e5d6b7bff8aec217936f0a38">type</a> == OC_REP_BOOL) {</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      <span class="keywordflow">if</span> (rep-&gt;<a class="code" href="structoc__rep__s.html#ac378f8f831f837adfa12d9e3bc02dc3d">iname</a> == 1) {</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        PRINT(<span class="stringliteral">&quot;  post_dpa_417_61 received : %d\n&quot;</span>, rep-&gt;<a class="code" href="structoc__rep__s.html#a319aa6eb149c104d57fae3b739d59209">value</a>.boolean);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <a class="code" href="_l_s_a_b__minimal__all_8c.html#a8f0729e9e8c0e049c59956badd0905a0">g_mystate</a> = rep-&gt;<a class="code" href="structoc__rep__s.html#a319aa6eb149c104d57fae3b739d59209">value</a>.boolean;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <a class="code" href="group__doc__module__tag__server__side.html#gaab81b44a949c8689bf23179d18a626ba">oc_send_cbor_response</a>(request, <a class="code" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38ab39105cb8408decb6c258c5d289759fe">OC_STATUS_CHANGED</a>);</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        PRINT(<span class="stringliteral">&quot;-- End post_dpa_417_61\n&quot;</span>);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      }</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    }</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    rep = rep-&gt;<a class="code" href="structoc__rep__s.html#aab699da307b1549136301bafbfe8da4e">next</a>;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  }</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f">oc_send_response</a>(request, <a class="code" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a216e5bc4a49d3c51c53a961a9eed76ab">OC_STATUS_BAD_REQUEST</a>);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  PRINT(<span class="stringliteral">&quot;-- End post_dpa_417_61\n&quot;</span>);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;}</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd">  264</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd">register_resources</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;{</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  PRINT(<span class="stringliteral">&quot;Register Resource with local path \&quot;/p/1\&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  PRINT(<span class="stringliteral">&quot;Light Switching actuator 417 (LSAB) : SwitchOnOff \n&quot;</span>);</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  PRINT(<span class="stringliteral">&quot;Data point 417.61 (DPT_Switch) \n&quot;</span>);</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <a class="code" href="structoc__resource__s.html">oc_resource_t</a> *res_light = <a class="code" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc">oc_new_resource</a>(<span class="stringliteral">&quot;light actuation&quot;</span>, <span class="stringliteral">&quot;p/1&quot;</span>, 2, 0);</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a">oc_resource_bind_resource_type</a>(res_light, <span class="stringliteral">&quot;urn:knx:dpa.417.61&quot;</span>);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a">oc_resource_bind_resource_type</a>(res_light, <span class="stringliteral">&quot;DPT_Switch&quot;</span>);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#ga73d7d06b063156e5eb3abb2a202a8976">oc_resource_bind_content_type</a>(res_light, <a class="code" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714fa6563ce58a5ccb28f4c84c8eaa1bbf110">APPLICATION_CBOR</a>);</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c">oc_resource_bind_resource_interface</a>(res_light, <a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a5e082b6f36e0a90aa92fcd0c2c1af871">OC_IF_A</a>); <span class="comment">/* if.a */</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#ga4c3f04fa5089c82be3e9eb7339ae8f58">oc_resource_set_discoverable</a>(res_light, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="comment">/* periodic observable</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment">     to be used when one wants to send an event per time slice</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment">     period is 1 second */</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#gac8cdb7e511c08982d790c323d8db7c6e">oc_resource_set_periodic_observable</a>(res_light, 1);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="comment">/* set observable</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment">     events are send when oc_notify_observers(oc_resource_t *resource) is</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="comment">    called. this function must be called when the value changes, preferable on</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="comment">    an interrupt when something is read from the hardware. */</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="comment">// oc_resource_set_observable(res_352, true);</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <span class="comment">// set the GET handler</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6">oc_resource_set_request_handler</a>(res_light, <a class="code" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26ad4da05d28f48b07625a227c6dcf33071">OC_GET</a>, <a class="code" href="_l_s_a_b__minimal__all_8c.html#a5068ad533dc16b37e94d9373c644ad8b">get_dpa_417_61</a>, NULL);</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="comment">// set the POST handler</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6">oc_resource_set_request_handler</a>(res_light, <a class="code" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26a2a3c53df3082c04b8e49ebaca236529b">OC_POST</a>, <a class="code" href="_l_s_a_b__minimal__all_8c.html#a49fa8413a491328a617618eb9e5d8a76">post_dpa_417_61</a>, NULL);</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  <span class="comment">// register this resource,</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="comment">// this means that the resource will be listed in /.well-known/core</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#ga8cef7c8b4cfdde5cbd79aace72172d41">oc_add_resource</a>(res_light);</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;}</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#ab67c84a48add1e84fb78df8aeecfa8f1">  300</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#ab67c84a48add1e84fb78df8aeecfa8f1">factory_presets_cb</a>(<span class="keywordtype">size_t</span> device, <span class="keywordtype">void</span> *data)</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;{</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  (void)device;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  (void)data;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="_l_s_a_b__minimal__all_8c.html#aa85bfb832e03afe53eea89cfa6bb8ec5">g_reset</a>) {</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    PRINT(<span class="stringliteral">&quot;factory_presets_cb: resetting device\n&quot;</span>);</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <a class="code" href="oc__knx__dev_8h.html#ad5870712fe9b484e2816b4b0fc4dfea5">oc_knx_device_storage_reset</a>(0, 2);</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  }</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;}</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a8e0cc947f6c738517f2c341af66bc059">  319</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#a8e0cc947f6c738517f2c341af66bc059">reset_cb</a>(<span class="keywordtype">size_t</span> device_index, <span class="keywordtype">int</span> reset_value, <span class="keywordtype">void</span> *data)</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;{</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  (void)device_index;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  (void)data;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  PRINT(<span class="stringliteral">&quot;reset_cb %d\n&quot;</span>, reset_value);</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;}</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#af93312bf44b52864350ef193f6245b34">  334</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#af93312bf44b52864350ef193f6245b34">restart_cb</a>(<span class="keywordtype">size_t</span> device_index, <span class="keywordtype">void</span> *data)</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;{</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  (void)device_index;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  (void)data;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  PRINT(<span class="stringliteral">&quot;-----restart_cb -------\n&quot;</span>);</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  exit(0);</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;}</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#afad3146eb28ba36e69a105b33d70eda0">  351</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#afad3146eb28ba36e69a105b33d70eda0">hostname_cb</a>(<span class="keywordtype">size_t</span> device_index, oc_string_t host_name, <span class="keywordtype">void</span> *data)</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;{</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  (void)device_index;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  (void)data;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  PRINT(<span class="stringliteral">&quot;-----host name ------- %s\n&quot;</span>, <a class="code" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(host_name));</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;}</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a9597b9475fbb418556b2d89b22ba95c1">  369</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#a9597b9475fbb418556b2d89b22ba95c1">swu_cb</a>(<span class="keywordtype">size_t</span> device_index, <span class="keywordtype">size_t</span> offset, uint8_t *payload, <span class="keywordtype">size_t</span> len,</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;       <span class="keywordtype">void</span> *data)</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;{</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  (void)device_index;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  <span class="keywordtype">char</span> *fname = (<span class="keywordtype">char</span> *)data;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  PRINT(<span class="stringliteral">&quot; swu_cb %s block=%d size=%d \n&quot;</span>, fname, (<span class="keywordtype">int</span>)offset, (<span class="keywordtype">int</span>)len);</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; </div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  FILE *fp = fopen(fname, <span class="stringliteral">&quot;rw&quot;</span>);</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  fseek(fp, offset, SEEK_SET);</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  <span class="keywordtype">size_t</span> written = fwrite(payload, len, 1, fp);</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <span class="keywordflow">if</span> (written != len) {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    PRINT(<span class="stringliteral">&quot; swu_cb returned %d != %d (expected)\n&quot;</span>, (<span class="keywordtype">int</span>)written, (<span class="keywordtype">int</span>)len);</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  }</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  fclose(fp);</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;}</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a0e5a86f649d1ffc0f49c60204fb78888">  390</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#a0e5a86f649d1ffc0f49c60204fb78888">initialize_variables</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;{</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  <span class="comment">/* initialize global variables for resources */</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;}</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="preprocessor">#ifndef NO_MAIN</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;STATIC <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;signal_event_loop(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;{</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  WakeConditionVariable(&amp;cv);</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;}</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* WIN32 */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="preprocessor">#ifdef __linux__</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;STATIC <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;signal_event_loop(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;{</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  pthread_mutex_lock(&amp;mutex);</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  pthread_cond_signal(&amp;cv);</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  pthread_mutex_unlock(&amp;mutex);</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;}</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __linux__ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00427"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#adb1a37faa77219e1add3c026597c3dec">  427</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#adb1a37faa77219e1add3c026597c3dec">handle_signal</a>(<span class="keywordtype">int</span> signal)</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;{</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  (void)signal;</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  signal_event_loop();</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  <a class="code" href="_l_s_a_b__minimal__all_8c.html#a17a853a5bf8ca8d7285dad963558eb9a">quit</a> = 1;</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;}</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00439"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#ae5ad5cbeccaedc03a48d3c7eaa803e79">  439</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#ae5ad5cbeccaedc03a48d3c7eaa803e79">print_usage</a>()</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;{</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  PRINT(<span class="stringliteral">&quot;Usage:\n&quot;</span>);</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  PRINT(<span class="stringliteral">&quot;no arguments : starts the server\n&quot;</span>);</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  PRINT(<span class="stringliteral">&quot;-help  : this message\n&quot;</span>);</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  PRINT(<span class="stringliteral">&quot;reset : does an full reset of the device\n&quot;</span>);</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  exit(0);</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;}</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160; </div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="keywordtype">int</span></div>
-<div class="line"><a name="l00456"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a0ddf1224851353fc92bfbff6f499fa97">  456</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;{</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;  <span class="keywordtype">int</span> init;</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;  oc_clock_time_t next_event;</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;  <span class="keywordtype">char</span> *fname = <span class="stringliteral">&quot;my_software_image&quot;</span>;</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160; </div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <span class="comment">/* windows specific */</span></div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  InitializeCriticalSection(&amp;cs);</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;  InitializeConditionVariable(&amp;cv);</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;  <span class="comment">/* install Ctrl-C */</span></div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  signal(SIGINT, <a class="code" href="_l_s_a_b__minimal__all_8c.html#adb1a37faa77219e1add3c026597c3dec">handle_signal</a>);</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="preprocessor">#ifdef __linux__</span></div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;  <span class="comment">/* Linux specific */</span></div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;  <span class="keyword">struct </span>sigaction sa;</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  sigfillset(&amp;sa.sa_mask);</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;  sa.sa_flags = 0;</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;  sa.sa_handler = <a class="code" href="_l_s_a_b__minimal__all_8c.html#adb1a37faa77219e1add3c026597c3dec">handle_signal</a>;</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;  <span class="comment">/* install Ctrl-C */</span></div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;  sigaction(SIGINT, &amp;sa, NULL);</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160; </div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; argc; i++) {</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    printf(<span class="stringliteral">&quot;argv[%d] = %s\n&quot;</span>, i, argv[i]);</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;  }</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;  <span class="keywordflow">if</span> (argc &gt; 1) {</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    <span class="keywordflow">if</span> (strcmp(argv[1], <span class="stringliteral">&quot;reset&quot;</span>) == 0) {</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;      PRINT(<span class="stringliteral">&quot; internal reset\n&quot;</span>);</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;      <a class="code" href="_l_s_a_b__minimal__all_8c.html#aa85bfb832e03afe53eea89cfa6bb8ec5">g_reset</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    }</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <span class="keywordflow">if</span> (strcmp(argv[1], <span class="stringliteral">&quot;-help&quot;</span>) == 0) {</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;      <a class="code" href="_l_s_a_b__minimal__all_8c.html#ae5ad5cbeccaedc03a48d3c7eaa803e79">print_usage</a>();</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    }</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;  }</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160; </div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  PRINT(<span class="stringliteral">&quot;KNX-IOT Server name : \&quot;%s\&quot;\n&quot;</span>, <a class="code" href="_l_s_a_b__minimal__all_8c.html#a56e0ef88d0d230547f678b84ed8ad00a">MY_NAME</a>);</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160; </div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  <span class="keywordtype">char</span> buff[FILENAME_MAX];</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  <span class="keywordtype">char</span> *retbuf = NULL;</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  retbuf = GetCurrentDir(buff, FILENAME_MAX);</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  <span class="keywordflow">if</span> (retbuf != NULL) {</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    PRINT(<span class="stringliteral">&quot;Current working dir: %s\n&quot;</span>, buff);</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;  }</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160; </div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;  <span class="comment">/*</span></div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;<span class="comment">   The storage folder depends on the build system</span></div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;<span class="comment">   the folder is created in the makefile, with $target as name with _cred as</span></div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;<span class="comment">   post fix.</span></div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;<span class="comment">  */</span></div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;  PRINT(<span class="stringliteral">&quot;\tstorage at &#39;./LSAB_minimal_creds&#39; \n&quot;</span>);</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;  <a class="code" href="oc__storage_8h.html#ae529493bca3a501922f23e3d7701ff05">oc_storage_config</a>(<span class="stringliteral">&quot;./LSAB_minimal_creds&quot;</span>);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordflow">if</span> (error_state == <span class="keyword">false</span>) {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="group__doc__module__tag__server__side.html#gaab81b44a949c8689bf23179d18a626ba">oc_send_cbor_response</a>(request, <a class="code" href="oc__ri_8h.html#a8bc80a7833566d791556f311e514e722">oc_status_code</a>);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f">oc_send_response</a>(request, <a class="code" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38abec447dcd7b17d6c66d8a668b30632d4">OC_STATUS_BAD_OPTION</a>);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  PRINT(<span class="stringliteral">&quot;-- End get_dpa_417_61\n&quot;</span>);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;}</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;STATIC <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a49fa8413a491328a617618eb9e5d8a76">  227</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#a49fa8413a491328a617618eb9e5d8a76">post_dpa_417_61</a>(<a class="code" href="structoc__request__t.html">oc_request_t</a> *request, <a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> interfaces,</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                <span class="keywordtype">void</span> *user_data)</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;{</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  (void)interfaces;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  (void)user_data;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordtype">bool</span> error_state = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  PRINT(<span class="stringliteral">&quot;-- Begin post_dpa_417_61:\n&quot;</span>);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <a class="code" href="structoc__rep__s.html">oc_rep_t</a> *rep = NULL;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="comment">// handle the different requests</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675">oc_is_redirected_request</a>(request)) {</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    PRINT(<span class="stringliteral">&quot; S-MODE or /P\n&quot;</span>);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  rep = request-&gt;<a class="code" href="structoc__request__t.html#ac4751776b29000ba3603ef3392bc64d8">request_payload</a>;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keywordflow">while</span> (rep != NULL) {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordflow">if</span> (rep-&gt;<a class="code" href="structoc__rep__s.html#a0b9aa324e5d6b7bff8aec217936f0a38">type</a> == OC_REP_BOOL) {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      <span class="keywordflow">if</span> (rep-&gt;<a class="code" href="structoc__rep__s.html#ac378f8f831f837adfa12d9e3bc02dc3d">iname</a> == 1) {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        PRINT(<span class="stringliteral">&quot;  post_dpa_417_61 received : %d\n&quot;</span>, rep-&gt;<a class="code" href="structoc__rep__s.html#a319aa6eb149c104d57fae3b739d59209">value</a>.boolean);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <a class="code" href="_l_s_a_b__minimal__all_8c.html#a8f0729e9e8c0e049c59956badd0905a0">g_mystate</a> = rep-&gt;<a class="code" href="structoc__rep__s.html#a319aa6eb149c104d57fae3b739d59209">value</a>.boolean;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <a class="code" href="group__doc__module__tag__server__side.html#gaab81b44a949c8689bf23179d18a626ba">oc_send_cbor_response</a>(request, <a class="code" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38ab39105cb8408decb6c258c5d289759fe">OC_STATUS_CHANGED</a>);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        PRINT(<span class="stringliteral">&quot;-- End post_dpa_417_61\n&quot;</span>);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    rep = rep-&gt;<a class="code" href="structoc__rep__s.html#aab699da307b1549136301bafbfe8da4e">next</a>;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f">oc_send_response</a>(request, <a class="code" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a216e5bc4a49d3c51c53a961a9eed76ab">OC_STATUS_BAD_REQUEST</a>);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  PRINT(<span class="stringliteral">&quot;-- End post_dpa_417_61\n&quot;</span>);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd">  272</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd">register_resources</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;{</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  PRINT(<span class="stringliteral">&quot;Register Resource with local path \&quot;/p/1\&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  PRINT(<span class="stringliteral">&quot;Light Switching actuator 417 (LSAB) : SwitchOnOff \n&quot;</span>);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  PRINT(<span class="stringliteral">&quot;Data point 417.61 (DPT_Switch) \n&quot;</span>);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <a class="code" href="structoc__resource__s.html">oc_resource_t</a> *res_light = <a class="code" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc">oc_new_resource</a>(<span class="stringliteral">&quot;light actuation&quot;</span>, <span class="stringliteral">&quot;p/1&quot;</span>, 2, 0);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a">oc_resource_bind_resource_type</a>(res_light, <span class="stringliteral">&quot;urn:knx:dpa.417.61&quot;</span>);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a">oc_resource_bind_resource_type</a>(res_light, <span class="stringliteral">&quot;DPT_Switch&quot;</span>);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#ga73d7d06b063156e5eb3abb2a202a8976">oc_resource_bind_content_type</a>(res_light, <a class="code" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714fa6563ce58a5ccb28f4c84c8eaa1bbf110">APPLICATION_CBOR</a>);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c">oc_resource_bind_resource_interface</a>(res_light, <a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a5e082b6f36e0a90aa92fcd0c2c1af871">OC_IF_A</a>); <span class="comment">/* if.a */</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#ga4c3f04fa5089c82be3e9eb7339ae8f58">oc_resource_set_discoverable</a>(res_light, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="comment">/* periodic observable</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="comment">     to be used when one wants to send an event per time slice</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment">     period is 1 second */</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#gac8cdb7e511c08982d790c323d8db7c6e">oc_resource_set_periodic_observable</a>(res_light, 1);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="comment">/* set observable</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">     events are send when oc_notify_observers(oc_resource_t *resource) is</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">    called. this function must be called when the value changes, preferable on</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment">    an interrupt when something is read from the hardware. */</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="comment">// oc_resource_set_observable(res_352, true);</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="comment">// set the GET handler</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6">oc_resource_set_request_handler</a>(res_light, <a class="code" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26ad4da05d28f48b07625a227c6dcf33071">OC_GET</a>, <a class="code" href="_l_s_a_b__minimal__all_8c.html#a5068ad533dc16b37e94d9373c644ad8b">get_dpa_417_61</a>, NULL);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  <span class="comment">// set the POST handler</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6">oc_resource_set_request_handler</a>(res_light, <a class="code" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26a2a3c53df3082c04b8e49ebaca236529b">OC_POST</a>, <a class="code" href="_l_s_a_b__minimal__all_8c.html#a49fa8413a491328a617618eb9e5d8a76">post_dpa_417_61</a>, NULL);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  <span class="comment">// register this resource,</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="comment">// this means that the resource will be listed in /.well-known/core</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <a class="code" href="group__doc__module__tag__server__side.html#ga8cef7c8b4cfdde5cbd79aace72172d41">oc_add_resource</a>(res_light);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;}</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#ab67c84a48add1e84fb78df8aeecfa8f1">  308</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#ab67c84a48add1e84fb78df8aeecfa8f1">factory_presets_cb</a>(<span class="keywordtype">size_t</span> device, <span class="keywordtype">void</span> *data)</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;{</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  (void)device;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  (void)data;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="_l_s_a_b__minimal__all_8c.html#aa85bfb832e03afe53eea89cfa6bb8ec5">g_reset</a>) {</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    PRINT(<span class="stringliteral">&quot;factory_presets_cb: resetting device\n&quot;</span>);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <a class="code" href="oc__knx__dev_8h.html#ad5870712fe9b484e2816b4b0fc4dfea5">oc_knx_device_storage_reset</a>(0, 2);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  }</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;}</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a8e0cc947f6c738517f2c341af66bc059">  327</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#a8e0cc947f6c738517f2c341af66bc059">reset_cb</a>(<span class="keywordtype">size_t</span> device_index, <span class="keywordtype">int</span> reset_value, <span class="keywordtype">void</span> *data)</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;{</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  (void)device_index;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  (void)data;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  PRINT(<span class="stringliteral">&quot;reset_cb %d\n&quot;</span>, reset_value);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;}</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#af93312bf44b52864350ef193f6245b34">  342</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#af93312bf44b52864350ef193f6245b34">restart_cb</a>(<span class="keywordtype">size_t</span> device_index, <span class="keywordtype">void</span> *data)</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;{</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  (void)device_index;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  (void)data;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  PRINT(<span class="stringliteral">&quot;-----restart_cb -------\n&quot;</span>);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  exit(0);</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#afad3146eb28ba36e69a105b33d70eda0">  359</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#afad3146eb28ba36e69a105b33d70eda0">hostname_cb</a>(<span class="keywordtype">size_t</span> device_index, oc_string_t host_name, <span class="keywordtype">void</span> *data)</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;{</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  (void)device_index;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  (void)data;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  PRINT(<span class="stringliteral">&quot;-----host name ------- %s\n&quot;</span>, <a class="code" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(host_name));</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;}</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a9597b9475fbb418556b2d89b22ba95c1">  377</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#a9597b9475fbb418556b2d89b22ba95c1">swu_cb</a>(<span class="keywordtype">size_t</span> device_index, <span class="keywordtype">size_t</span> offset, uint8_t *payload, <span class="keywordtype">size_t</span> len,</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;       <span class="keywordtype">void</span> *data)</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;{</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  (void)device_index;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <span class="keywordtype">char</span> *fname = (<span class="keywordtype">char</span> *)data;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  PRINT(<span class="stringliteral">&quot; swu_cb %s block=%d size=%d \n&quot;</span>, fname, (<span class="keywordtype">int</span>)offset, (<span class="keywordtype">int</span>)len);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  FILE *fp = fopen(fname, <span class="stringliteral">&quot;rw&quot;</span>);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  fseek(fp, offset, SEEK_SET);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  <span class="keywordtype">size_t</span> written = fwrite(payload, len, 1, fp);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  <span class="keywordflow">if</span> (written != len) {</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    PRINT(<span class="stringliteral">&quot; swu_cb returned %d != %d (expected)\n&quot;</span>, (<span class="keywordtype">int</span>)written, (<span class="keywordtype">int</span>)len);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  }</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  fclose(fp);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;}</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a0e5a86f649d1ffc0f49c60204fb78888">  398</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#a0e5a86f649d1ffc0f49c60204fb78888">initialize_variables</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;{</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  <span class="comment">/* initialize global variables for resources */</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;}</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="preprocessor">#ifndef NO_MAIN</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160; </div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;STATIC <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;signal_event_loop(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;{</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;  WakeConditionVariable(&amp;cv);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;}</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* WIN32 */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160; </div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="preprocessor">#ifdef __linux__</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;STATIC <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;signal_event_loop(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;{</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  pthread_mutex_lock(&amp;mutex);</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  pthread_cond_signal(&amp;cv);</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  pthread_mutex_unlock(&amp;mutex);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;}</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __linux__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160; </div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00435"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#adb1a37faa77219e1add3c026597c3dec">  435</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#adb1a37faa77219e1add3c026597c3dec">handle_signal</a>(<span class="keywordtype">int</span> signal)</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;{</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  (void)signal;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  signal_event_loop();</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  <a class="code" href="_l_s_a_b__minimal__all_8c.html#a17a853a5bf8ca8d7285dad963558eb9a">quit</a> = 1;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;}</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160; </div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00447"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#ae5ad5cbeccaedc03a48d3c7eaa803e79">  447</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#ae5ad5cbeccaedc03a48d3c7eaa803e79">print_usage</a>()</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;{</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;  PRINT(<span class="stringliteral">&quot;Usage:\n&quot;</span>);</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  PRINT(<span class="stringliteral">&quot;no arguments : starts the server\n&quot;</span>);</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;  PRINT(<span class="stringliteral">&quot;-help  : this message\n&quot;</span>);</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;  PRINT(<span class="stringliteral">&quot;reset : does an full reset of the device\n&quot;</span>);</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;  exit(0);</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;}</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160; </div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00464"></a><span class="lineno"><a class="line" href="_l_s_a_b__minimal__all_8c.html#a0ddf1224851353fc92bfbff6f499fa97">  464</a></span>&#160;<a class="code" href="_l_s_a_b__minimal__all_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;{</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;  <span class="keywordtype">int</span> init;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  oc_clock_time_t next_event;</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;  <span class="keywordtype">char</span> *fname = <span class="stringliteral">&quot;my_software_image&quot;</span>;</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160; </div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;  <span class="comment">/* windows specific */</span></div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  InitializeCriticalSection(&amp;cs);</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;  InitializeConditionVariable(&amp;cv);</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;  <span class="comment">/* install Ctrl-C */</span></div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;  signal(SIGINT, <a class="code" href="_l_s_a_b__minimal__all_8c.html#adb1a37faa77219e1add3c026597c3dec">handle_signal</a>);</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;<span class="preprocessor">#ifdef __linux__</span></div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;  <span class="comment">/* Linux specific */</span></div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;  <span class="keyword">struct </span>sigaction sa;</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;  sigfillset(&amp;sa.sa_mask);</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;  sa.sa_flags = 0;</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;  sa.sa_handler = <a class="code" href="_l_s_a_b__minimal__all_8c.html#adb1a37faa77219e1add3c026597c3dec">handle_signal</a>;</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;  <span class="comment">/* install Ctrl-C */</span></div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;  sigaction(SIGINT, &amp;sa, NULL);</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160; </div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; argc; i++) {</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    printf(<span class="stringliteral">&quot;argv[%d] = %s\n&quot;</span>, i, argv[i]);</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;  }</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;  <span class="keywordflow">if</span> (argc &gt; 1) {</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    <span class="keywordflow">if</span> (strcmp(argv[1], <span class="stringliteral">&quot;reset&quot;</span>) == 0) {</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;      PRINT(<span class="stringliteral">&quot; internal reset\n&quot;</span>);</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;      <a class="code" href="_l_s_a_b__minimal__all_8c.html#aa85bfb832e03afe53eea89cfa6bb8ec5">g_reset</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    }</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <span class="keywordflow">if</span> (strcmp(argv[1], <span class="stringliteral">&quot;-help&quot;</span>) == 0) {</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;      <a class="code" href="_l_s_a_b__minimal__all_8c.html#ae5ad5cbeccaedc03a48d3c7eaa803e79">print_usage</a>();</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    }</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;  }</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160; </div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;  PRINT(<span class="stringliteral">&quot;KNX-IOT Server name : \&quot;%s\&quot;\n&quot;</span>, <a class="code" href="_l_s_a_b__minimal__all_8c.html#a56e0ef88d0d230547f678b84ed8ad00a">MY_NAME</a>);</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160; </div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  <span class="keywordtype">char</span> buff[FILENAME_MAX];</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  <span class="keywordtype">char</span> *retbuf = NULL;</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  retbuf = GetCurrentDir(buff, FILENAME_MAX);</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  <span class="keywordflow">if</span> (retbuf != NULL) {</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    PRINT(<span class="stringliteral">&quot;Current working dir: %s\n&quot;</span>, buff);</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;  }</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160; </div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;  <span class="comment">/*initialize the variables */</span></div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  <a class="code" href="_l_s_a_b__minimal__all_8c.html#a0e5a86f649d1ffc0f49c60204fb78888">initialize_variables</a>();</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160; </div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;  <span class="comment">/* initializes the handlers structure */</span></div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;  STATIC <span class="keyword">const</span> <a class="code" href="structoc__handler__t.html">oc_handler_t</a> handler = { .<a class="code" href="structoc__handler__t.html#a3a1a54a7e7cc1c40235dfb2b6a44b875">init</a> = <a class="code" href="_l_s_a_b__minimal__all_8c.html#a2e2efabbeb1c8c68790bb90ce01c4578">app_init</a>,</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;                                        .signal_event_loop = signal_event_loop,</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;                                        .register_resources = <a class="code" href="_l_s_a_b__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd">register_resources</a></div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;<span class="preprocessor">#ifdef OC_CLIENT</span></div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;                                        ,</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;                                        .requests_entry = 0</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;  };</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160; </div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;  <span class="comment">/* set the application callbacks */</span></div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;  <a class="code" href="oc__api_8h.html#af1c16d006192d36caa043957114698ac">oc_set_hostname_cb</a>(<a class="code" href="_l_s_a_b__minimal__all_8c.html#afad3146eb28ba36e69a105b33d70eda0">hostname_cb</a>, NULL);</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;  <a class="code" href="oc__api_8h.html#a248d5b7e7122aa4a06b77c1bb9f3dbae">oc_set_reset_cb</a>(<a class="code" href="_l_s_a_b__minimal__all_8c.html#a8e0cc947f6c738517f2c341af66bc059">reset_cb</a>, NULL);</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;  <a class="code" href="oc__api_8h.html#a51e4f70eb54edfe9e8509367125b662e">oc_set_restart_cb</a>(<a class="code" href="_l_s_a_b__minimal__all_8c.html#af93312bf44b52864350ef193f6245b34">restart_cb</a>, NULL);</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;  <a class="code" href="oc__api_8h.html#a5fabaaadaf2e0dccbb1d906f73f9d953">oc_set_factory_presets_cb</a>(<a class="code" href="_l_s_a_b__minimal__all_8c.html#ab67c84a48add1e84fb78df8aeecfa8f1">factory_presets_cb</a>, NULL);</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;  <a class="code" href="oc__knx__swu_8h.html#aa307e6c43afc6bc0a39ede72f48305a1">oc_set_swu_cb</a>(<a class="code" href="_l_s_a_b__minimal__all_8c.html#a9597b9475fbb418556b2d89b22ba95c1">swu_cb</a>, (<span class="keywordtype">void</span> *)fname);</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160; </div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  <span class="comment">/* start the stack */</span></div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;  init = <a class="code" href="oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c">oc_main_init</a>(&amp;handler);</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160; </div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  <span class="keywordflow">if</span> (init &lt; 0) {</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    PRINT(<span class="stringliteral">&quot;oc_main_init failed %d, exiting.\n&quot;</span>, init);</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    <span class="keywordflow">return</span> init;</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;  }</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;<span class="preprocessor">#ifdef OC_OSCORE</span></div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;  PRINT(<span class="stringliteral">&quot;OSCORE - Enabled\n&quot;</span>);</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;  PRINT(<span class="stringliteral">&quot;OSCORE - Disabled\n&quot;</span>);</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_OSCORE */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160; </div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;  <a class="code" href="structoc__device__info__t.html">oc_device_info_t</a> *device = <a class="code" href="oc__core__res_8h.html#abce7a2d1e8d98a3f4c0b8585121e2771">oc_core_get_device_info</a>(0);</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;  PRINT(<span class="stringliteral">&quot;serial number: %s&quot;</span>, <a class="code" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(device-&gt;<a class="code" href="structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09">serialnumber</a>));</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160; </div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;  <a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> *my_ep = <a class="code" href="oc__connectivity_8h.html#a1d559666b450aef41dd704952e4a7e96">oc_connectivity_get_endpoints</a>(0);</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;  <span class="keywordflow">if</span> (my_ep != NULL) {</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    PRINTipaddr(*my_ep);</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;  }</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;  PRINT(<span class="stringliteral">&quot;Server \&quot;%s\&quot; running, waiting on incoming &quot;</span></div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        <span class="stringliteral">&quot;connections.\n&quot;</span>,</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        <a class="code" href="_l_s_a_b__minimal__all_8c.html#a56e0ef88d0d230547f678b84ed8ad00a">MY_NAME</a>);</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160; </div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;  <span class="comment">/* windows specific loop */</span></div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="_l_s_a_b__minimal__all_8c.html#a17a853a5bf8ca8d7285dad963558eb9a">quit</a> != 1) {</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    next_event = <a class="code" href="oc__api_8h.html#ad146ae2ebe285109e6c3a7fdc193bd6e">oc_main_poll</a>();</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    <span class="keywordflow">if</span> (next_event == 0) {</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;      SleepConditionVariableCS(&amp;cv, &amp;cs, INFINITE);</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;      oc_clock_time_t now = <a class="code" href="oc__clock_8h.html#a5518eafc90948c3b95c2fe6630fa392a">oc_clock_time</a>();</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;      <span class="keywordflow">if</span> (now &lt; next_event) {</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;        SleepConditionVariableCS(</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;          &amp;cv, &amp;cs, (DWORD)((next_event - now) * 1000 / OC_CLOCK_SECOND));</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;      }</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    }</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;  }</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160; </div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;<span class="preprocessor">#ifdef __linux__</span></div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;  <span class="comment">/* Linux specific loop */</span></div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="_l_s_a_b__minimal__all_8c.html#a17a853a5bf8ca8d7285dad963558eb9a">quit</a> != 1) {</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    next_event = <a class="code" href="oc__api_8h.html#ad146ae2ebe285109e6c3a7fdc193bd6e">oc_main_poll</a>();</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    pthread_mutex_lock(&amp;mutex);</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    <span class="keywordflow">if</span> (next_event == 0) {</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;      pthread_cond_wait(&amp;cv, &amp;mutex);</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;      ts.tv_sec = (next_event / OC_CLOCK_SECOND);</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;      ts.tv_nsec = (next_event % OC_CLOCK_SECOND) * 1.e09 / OC_CLOCK_SECOND;</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;      pthread_cond_timedwait(&amp;cv, &amp;mutex, &amp;ts);</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    }</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    pthread_mutex_unlock(&amp;mutex);</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;  }</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160; </div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;  <span class="comment">/* shut down the stack */</span></div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160; </div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;  <a class="code" href="oc__api_8h.html#a6cf429db1849423722bad55d93f753c6">oc_main_shutdown</a>();</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;}</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NO_MAIN */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;  <span class="comment">/*</span></div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="comment">   The storage folder depends on the build system</span></div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;<span class="comment">   the folder is created in the makefile, with $target as name with _cred as</span></div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;<span class="comment">   post fix.</span></div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;<span class="comment">  */</span></div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;  PRINT(<span class="stringliteral">&quot;\tstorage at &#39;./LSAB_minimal_creds&#39; \n&quot;</span>);</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;  <a class="code" href="oc__storage_8h.html#ae529493bca3a501922f23e3d7701ff05">oc_storage_config</a>(<span class="stringliteral">&quot;./LSAB_minimal_creds&quot;</span>);</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160; </div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  <span class="comment">/*initialize the variables */</span></div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;  <a class="code" href="_l_s_a_b__minimal__all_8c.html#a0e5a86f649d1ffc0f49c60204fb78888">initialize_variables</a>();</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160; </div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;  <span class="comment">/* initializes the handlers structure */</span></div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;  STATIC <span class="keyword">const</span> <a class="code" href="structoc__handler__t.html">oc_handler_t</a> handler = { .<a class="code" href="structoc__handler__t.html#a3a1a54a7e7cc1c40235dfb2b6a44b875">init</a> = <a class="code" href="_l_s_a_b__minimal__all_8c.html#a2e2efabbeb1c8c68790bb90ce01c4578">app_init</a>,</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                                        .signal_event_loop = signal_event_loop,</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;                                        .register_resources = <a class="code" href="_l_s_a_b__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd">register_resources</a></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;<span class="preprocessor">#ifdef OC_CLIENT</span></div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;                                        ,</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;                                        .requests_entry = 0</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  };</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160; </div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;  <span class="comment">/* set the application callbacks */</span></div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;  <a class="code" href="oc__api_8h.html#af1c16d006192d36caa043957114698ac">oc_set_hostname_cb</a>(<a class="code" href="_l_s_a_b__minimal__all_8c.html#afad3146eb28ba36e69a105b33d70eda0">hostname_cb</a>, NULL);</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  <a class="code" href="oc__api_8h.html#a248d5b7e7122aa4a06b77c1bb9f3dbae">oc_set_reset_cb</a>(<a class="code" href="_l_s_a_b__minimal__all_8c.html#a8e0cc947f6c738517f2c341af66bc059">reset_cb</a>, NULL);</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;  <a class="code" href="oc__api_8h.html#a51e4f70eb54edfe9e8509367125b662e">oc_set_restart_cb</a>(<a class="code" href="_l_s_a_b__minimal__all_8c.html#af93312bf44b52864350ef193f6245b34">restart_cb</a>, NULL);</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;  <a class="code" href="oc__api_8h.html#a5fabaaadaf2e0dccbb1d906f73f9d953">oc_set_factory_presets_cb</a>(<a class="code" href="_l_s_a_b__minimal__all_8c.html#ab67c84a48add1e84fb78df8aeecfa8f1">factory_presets_cb</a>, NULL);</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;  <a class="code" href="oc__knx__swu_8h.html#aa307e6c43afc6bc0a39ede72f48305a1">oc_set_swu_cb</a>(<a class="code" href="_l_s_a_b__minimal__all_8c.html#a9597b9475fbb418556b2d89b22ba95c1">swu_cb</a>, (<span class="keywordtype">void</span> *)fname);</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160; </div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;  <span class="comment">/* start the stack */</span></div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;  init = <a class="code" href="oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c">oc_main_init</a>(&amp;handler);</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160; </div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;  <span class="keywordflow">if</span> (init &lt; 0) {</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    PRINT(<span class="stringliteral">&quot;oc_main_init failed %d, exiting.\n&quot;</span>, init);</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <span class="keywordflow">return</span> init;</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;  }</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;<span class="preprocessor">#ifdef OC_OSCORE</span></div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;  PRINT(<span class="stringliteral">&quot;OSCORE - Enabled\n&quot;</span>);</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;  PRINT(<span class="stringliteral">&quot;OSCORE - Disabled\n&quot;</span>);</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_OSCORE */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160; </div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;  <a class="code" href="structoc__device__info__t.html">oc_device_info_t</a> *device = <a class="code" href="oc__core__res_8h.html#abce7a2d1e8d98a3f4c0b8585121e2771">oc_core_get_device_info</a>(0);</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;  PRINT(<span class="stringliteral">&quot;serial number: %s&quot;</span>, <a class="code" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(device-&gt;<a class="code" href="structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09">serialnumber</a>));</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160; </div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;  <a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> *my_ep = <a class="code" href="oc__connectivity_8h.html#a1d559666b450aef41dd704952e4a7e96">oc_connectivity_get_endpoints</a>(0);</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;  <span class="keywordflow">if</span> (my_ep != NULL) {</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    PRINTipaddr(*my_ep);</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;  }</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;  PRINT(<span class="stringliteral">&quot;Server \&quot;%s\&quot; running, waiting on incoming &quot;</span></div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        <span class="stringliteral">&quot;connections.\n&quot;</span>,</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;        <a class="code" href="_l_s_a_b__minimal__all_8c.html#a56e0ef88d0d230547f678b84ed8ad00a">MY_NAME</a>);</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160; </div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;  <span class="comment">/* windows specific loop */</span></div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="_l_s_a_b__minimal__all_8c.html#a17a853a5bf8ca8d7285dad963558eb9a">quit</a> != 1) {</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    next_event = <a class="code" href="oc__api_8h.html#ad146ae2ebe285109e6c3a7fdc193bd6e">oc_main_poll</a>();</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    <span class="keywordflow">if</span> (next_event == 0) {</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;      SleepConditionVariableCS(&amp;cv, &amp;cs, INFINITE);</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;      oc_clock_time_t now = <a class="code" href="oc__clock_8h.html#a5518eafc90948c3b95c2fe6630fa392a">oc_clock_time</a>();</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;      <span class="keywordflow">if</span> (now &lt; next_event) {</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        SleepConditionVariableCS(</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;          &amp;cv, &amp;cs, (DWORD)((next_event - now) * 1000 / OC_CLOCK_SECOND));</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;      }</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    }</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;  }</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160; </div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;<span class="preprocessor">#ifdef __linux__</span></div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;  <span class="comment">/* Linux specific loop */</span></div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="_l_s_a_b__minimal__all_8c.html#a17a853a5bf8ca8d7285dad963558eb9a">quit</a> != 1) {</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    next_event = <a class="code" href="oc__api_8h.html#ad146ae2ebe285109e6c3a7fdc193bd6e">oc_main_poll</a>();</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    pthread_mutex_lock(&amp;mutex);</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    <span class="keywordflow">if</span> (next_event == 0) {</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;      pthread_cond_wait(&amp;cv, &amp;mutex);</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;      ts.tv_sec = (next_event / OC_CLOCK_SECOND);</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;      ts.tv_nsec = (next_event % OC_CLOCK_SECOND) * 1.e09 / OC_CLOCK_SECOND;</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;      pthread_cond_timedwait(&amp;cv, &amp;mutex, &amp;ts);</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    }</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    pthread_mutex_unlock(&amp;mutex);</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;  }</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160; </div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;  <span class="comment">/* shut down the stack */</span></div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160; </div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;  <a class="code" href="oc__api_8h.html#a6cf429db1849423722bad55d93f753c6">oc_main_shutdown</a>();</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;}</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NO_MAIN */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_ga73d7d06b063156e5eb3abb2a202a8976"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga73d7d06b063156e5eb3abb2a202a8976">oc_resource_bind_content_type</a></div><div class="ttdeci">void oc_resource_bind_content_type(oc_resource_t *resource, oc_content_format_t content_type)</div><div class="ttdoc">set the content type on the resource</div></div>
@@ -528,9 +536,9 @@ $(document).ready(function(){initNavTree('_l_s_a_b__minimal__all_8c_source.html'
 <div class="ttc" id="aoc__ri_8h_html_a39c56d2b01f08f13d65daaf3354b6b26a2a3c53df3082c04b8e49ebaca236529b"><div class="ttname"><a href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26a2a3c53df3082c04b8e49ebaca236529b">OC_POST</a></div><div class="ttdeci">@ OC_POST</div><div class="ttdoc">POST.</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00039">oc_ri.h:39</a></div></div>
 <div class="ttc" id="astructoc__rep__s_html_a0b9aa324e5d6b7bff8aec217936f0a38"><div class="ttname"><a href="structoc__rep__s.html#a0b9aa324e5d6b7bff8aec217936f0a38">oc_rep_s::type</a></div><div class="ttdeci">oc_rep_value_type_t type</div><div class="ttdoc">type of the data</div><div class="ttdef"><b>Definition:</b> <a href="oc__rep_8h_source.html#l01387">oc_rep.h:1387</a></div></div>
 <div class="ttc" id="aoc__ri_8h_html_a068a1c38013c32d65427aeed54503a38a216e5bc4a49d3c51c53a961a9eed76ab"><div class="ttname"><a href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a216e5bc4a49d3c51c53a961a9eed76ab">OC_STATUS_BAD_REQUEST</a></div><div class="ttdeci">@ OC_STATUS_BAD_REQUEST</div><div class="ttdoc">Bad Request.</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00067">oc_ri.h:67</a></div></div>
-<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdoc">main application.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00456">LSAB_minimal_all.c:456</a></div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdoc">main application.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00464">LSAB_minimal_all.c:464</a></div></div>
 <div class="ttc" id="aoc__helpers_8h_html_a5bd70ca9b1f0250da0e76740ce99f7b4"><div class="ttname"><a href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a></div><div class="ttdeci">#define oc_string(ocstring)</div><div class="ttdoc">cast oc_string to string</div><div class="ttdef"><b>Definition:</b> <a href="oc__helpers_8h_source.html#l00042">oc_helpers.h:42</a></div></div>
-<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a5068ad533dc16b37e94d9373c644ad8b"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a5068ad533dc16b37e94d9373c644ad8b">get_dpa_417_61</a></div><div class="ttdeci">STATIC void get_dpa_417_61(oc_request_t *request, oc_interface_mask_t interfaces, void *user_data)</div><div class="ttdoc">get method for &quot;p/light&quot; resource.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00167">LSAB_minimal_all.c:167</a></div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a5068ad533dc16b37e94d9373c644ad8b"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a5068ad533dc16b37e94d9373c644ad8b">get_dpa_417_61</a></div><div class="ttdeci">STATIC void get_dpa_417_61(oc_request_t *request, oc_interface_mask_t interfaces, void *user_data)</div><div class="ttdoc">get method for &quot;p/light&quot; resource.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00175">LSAB_minimal_all.c:175</a></div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_ga64b2ca53e56b0878149faff19c24c21f"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f">oc_send_response</a></div><div class="ttdeci">void oc_send_response(oc_request_t *request, oc_status_t response_code)</div><div class="ttdoc">Called after the response to a GET, PUT, POST or DELETE call has been prepared completed,...</div></div>
 <div class="ttc" id="aoc__api_8h_html_ad146ae2ebe285109e6c3a7fdc193bd6e"><div class="ttname"><a href="oc__api_8h.html#ad146ae2ebe285109e6c3a7fdc193bd6e">oc_main_poll</a></div><div class="ttdeci">oc_clock_time_t oc_main_poll(void)</div><div class="ttdoc">poll to process tasks</div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_gab17128fac474655e423d58b7e008e95a"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a">oc_resource_bind_resource_type</a></div><div class="ttdeci">void oc_resource_bind_resource_type(oc_resource_t *resource, const char *type)</div><div class="ttdoc">Add a Resource Type &quot;rt&quot; property to the resource.</div></div>
@@ -539,63 +547,63 @@ $(document).ready(function(){initNavTree('_l_s_a_b__minimal__all_8c_source.html'
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_gaab81b44a949c8689bf23179d18a626ba"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gaab81b44a949c8689bf23179d18a626ba">oc_send_cbor_response</a></div><div class="ttdeci">void oc_send_cbor_response(oc_request_t *request, oc_status_t response_code)</div><div class="ttdoc">Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.</div></div>
 <div class="ttc" id="aoc__api_8h_html_a6cf429db1849423722bad55d93f753c6"><div class="ttname"><a href="oc__api_8h.html#a6cf429db1849423722bad55d93f753c6">oc_main_shutdown</a></div><div class="ttdeci">void oc_main_shutdown(void)</div><div class="ttdoc">Shutdown and free all stack related resources.</div></div>
 <div class="ttc" id="astructoc__rep__s_html_a319aa6eb149c104d57fae3b739d59209"><div class="ttname"><a href="structoc__rep__s.html#a319aa6eb149c104d57fae3b739d59209">oc_rep_s::value</a></div><div class="ttdeci">union oc_rep_s::oc_rep_value value</div><div class="ttdoc">the value as union</div></div>
-<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a0e5a86f649d1ffc0f49c60204fb78888"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a0e5a86f649d1ffc0f49c60204fb78888">initialize_variables</a></div><div class="ttdeci">void initialize_variables(void)</div><div class="ttdoc">initializes the global variables registers and starts the handler</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00390">LSAB_minimal_all.c:390</a></div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a0e5a86f649d1ffc0f49c60204fb78888"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a0e5a86f649d1ffc0f49c60204fb78888">initialize_variables</a></div><div class="ttdeci">void initialize_variables(void)</div><div class="ttdoc">initializes the global variables registers and starts the handler</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00398">LSAB_minimal_all.c:398</a></div></div>
 <div class="ttc" id="astructoc__handler__t_html"><div class="ttname"><a href="structoc__handler__t.html">oc_handler_t</a></div><div class="ttdoc">Call back handlers that are invoked in response to oc_main_init()</div><div class="ttdef"><b>Definition:</b> <a href="oc__api_8h_source.html#l00114">oc_api.h:114</a></div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_ga4c3f04fa5089c82be3e9eb7339ae8f58"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga4c3f04fa5089c82be3e9eb7339ae8f58">oc_resource_set_discoverable</a></div><div class="ttdeci">void oc_resource_set_discoverable(oc_resource_t *resource, bool state)</div><div class="ttdoc">Specify if a resource can be found using .well-known/core discover mechanisms.</div></div>
 <div class="ttc" id="aoc__api_8h_html_a248d5b7e7122aa4a06b77c1bb9f3dbae"><div class="ttname"><a href="oc__api_8h.html#a248d5b7e7122aa4a06b77c1bb9f3dbae">oc_set_reset_cb</a></div><div class="ttdeci">void oc_set_reset_cb(oc_reset_cb_t cb, void *data)</div><div class="ttdoc">Set the reset callback.</div></div>
 <div class="ttc" id="astructoc__rep__s_html_ac378f8f831f837adfa12d9e3bc02dc3d"><div class="ttname"><a href="structoc__rep__s.html#ac378f8f831f837adfa12d9e3bc02dc3d">oc_rep_s::iname</a></div><div class="ttdeci">int iname</div><div class="ttdoc">integer (identifier) as tag name</div><div class="ttdef"><b>Definition:</b> <a href="oc__rep_8h_source.html#l01390">oc_rep.h:1390</a></div></div>
 <div class="ttc" id="aoc__ri_8h_html_a8bc80a7833566d791556f311e514e722"><div class="ttname"><a href="oc__ri_8h.html#a8bc80a7833566d791556f311e514e722">oc_status_code</a></div><div class="ttdeci">int oc_status_code(oc_status_t key)</div><div class="ttdoc">convert the status code to integer</div></div>
 <div class="ttc" id="aoc__rep_8h_html_ab3a74cd8010eb2b4798b6f38cea3c487"><div class="ttname"><a href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a></div><div class="ttdeci">#define oc_rep_end_root_object()</div><div class="ttdoc">End the root object.</div><div class="ttdef"><b>Definition:</b> <a href="oc__rep_8h_source.html#l00574">oc_rep.h:574</a></div></div>
-<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_afad3146eb28ba36e69a105b33d70eda0"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#afad3146eb28ba36e69a105b33d70eda0">hostname_cb</a></div><div class="ttdeci">void hostname_cb(size_t device_index, oc_string_t host_name, void *data)</div><div class="ttdoc">set the host name on the device (application depended)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00351">LSAB_minimal_all.c:351</a></div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_afad3146eb28ba36e69a105b33d70eda0"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#afad3146eb28ba36e69a105b33d70eda0">hostname_cb</a></div><div class="ttdeci">void hostname_cb(size_t device_index, oc_string_t host_name, void *data)</div><div class="ttdoc">set the host name on the device (application depended)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00359">LSAB_minimal_all.c:359</a></div></div>
 <div class="ttc" id="astructoc__request__t_html_aa521094fc45d93804f83e0e00281e5dc"><div class="ttname"><a href="structoc__request__t.html#aa521094fc45d93804f83e0e00281e5dc">oc_request_t::accept</a></div><div class="ttdeci">oc_content_format_t accept</div><div class="ttdoc">accept header, e.g the format to be returned on the request</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00312">oc_ri.h:312</a></div></div>
 <div class="ttc" id="aoc__ri_8h_html_a068a1c38013c32d65427aeed54503a38abec447dcd7b17d6c66d8a668b30632d4"><div class="ttname"><a href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38abec447dcd7b17d6c66d8a668b30632d4">OC_STATUS_BAD_OPTION</a></div><div class="ttdeci">@ OC_STATUS_BAD_OPTION</div><div class="ttdoc">Bad Option.</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00069">oc_ri.h:69</a></div></div>
 <div class="ttc" id="astructoc__request__t_html"><div class="ttname"><a href="structoc__request__t.html">oc_request_t</a></div><div class="ttdoc">request information structure</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00298">oc_ri.h:298</a></div></div>
 <div class="ttc" id="aoc__ri_8h_html_a95fa27c60f90b8e3b976f4ca5f04aab2a5e082b6f36e0a90aa92fcd0c2c1af871"><div class="ttname"><a href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a5e082b6f36e0a90aa92fcd0c2c1af871">OC_IF_A</a></div><div class="ttdeci">@ OC_IF_A</div><div class="ttdoc">if.a</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00176">oc_ri.h:176</a></div></div>
-<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a56e0ef88d0d230547f678b84ed8ad00a"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a56e0ef88d0d230547f678b84ed8ad00a">MY_NAME</a></div><div class="ttdeci">#define MY_NAME</div><div class="ttdoc">The name of the application.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00094">LSAB_minimal_all.c:94</a></div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a56e0ef88d0d230547f678b84ed8ad00a"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a56e0ef88d0d230547f678b84ed8ad00a">MY_NAME</a></div><div class="ttdeci">#define MY_NAME</div><div class="ttdoc">The name of the application.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00096">LSAB_minimal_all.c:96</a></div></div>
 <div class="ttc" id="aoc__core__res_8h_html"><div class="ttname"><a href="oc__core__res_8h.html">oc_core_res.h</a></div></div>
 <div class="ttc" id="aoc__clock_8h_html_a5518eafc90948c3b95c2fe6630fa392a"><div class="ttname"><a href="oc__clock_8h.html#a5518eafc90948c3b95c2fe6630fa392a">oc_clock_time</a></div><div class="ttdeci">oc_clock_time_t oc_clock_time(void)</div><div class="ttdoc">Get the current clock time.</div></div>
-<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_ab67c84a48add1e84fb78df8aeecfa8f1"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#ab67c84a48add1e84fb78df8aeecfa8f1">factory_presets_cb</a></div><div class="ttdeci">void factory_presets_cb(size_t device, void *data)</div><div class="ttdoc">initiate preset for device current implementation: device reset as command line argument</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00300">LSAB_minimal_all.c:300</a></div></div>
-<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_ae5ad5cbeccaedc03a48d3c7eaa803e79"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#ae5ad5cbeccaedc03a48d3c7eaa803e79">print_usage</a></div><div class="ttdeci">void print_usage()</div><div class="ttdoc">print usage and quits</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00439">LSAB_minimal_all.c:439</a></div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_ab67c84a48add1e84fb78df8aeecfa8f1"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#ab67c84a48add1e84fb78df8aeecfa8f1">factory_presets_cb</a></div><div class="ttdeci">void factory_presets_cb(size_t device, void *data)</div><div class="ttdoc">initiate preset for device current implementation: device reset as command line argument</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00308">LSAB_minimal_all.c:308</a></div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_ae5ad5cbeccaedc03a48d3c7eaa803e79"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#ae5ad5cbeccaedc03a48d3c7eaa803e79">print_usage</a></div><div class="ttdeci">void print_usage()</div><div class="ttdoc">print usage and quits</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00447">LSAB_minimal_all.c:447</a></div></div>
 <div class="ttc" id="aoc__api_8h_html_abc05e63942a1093f807213220841c54b"><div class="ttname"><a href="oc__api_8h.html#abc05e63942a1093f807213220841c54b">oc_init_platform</a></div><div class="ttdeci">int oc_init_platform(const char *mfg_name, oc_init_platform_cb_t init_platform_cb, void *data)</div><div class="ttdoc">Initialize the platform.</div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_ga8cef7c8b4cfdde5cbd79aace72172d41"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga8cef7c8b4cfdde5cbd79aace72172d41">oc_add_resource</a></div><div class="ttdeci">bool oc_add_resource(oc_resource_t *resource)</div><div class="ttdoc">Add a resource to the stack.</div></div>
-<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_aee7bd515d06c5a767aa6d0f37820b0bd"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd">register_resources</a></div><div class="ttdeci">void register_resources(void)</div><div class="ttdoc">register all the resources to the stack this function registers all application level resources:</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00264">LSAB_minimal_all.c:264</a></div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_aee7bd515d06c5a767aa6d0f37820b0bd"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd">register_resources</a></div><div class="ttdeci">void register_resources(void)</div><div class="ttdoc">register all the resources to the stack this function registers all application level resources:</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00272">LSAB_minimal_all.c:272</a></div></div>
 <div class="ttc" id="astructoc__device__info__t_html"><div class="ttname"><a href="structoc__device__info__t.html">oc_device_info_t</a></div><div class="ttdoc">device information</div><div class="ttdef"><b>Definition:</b> <a href="oc__core__res_8h_source.html#l00071">oc_core_res.h:71</a></div></div>
 <div class="ttc" id="aoc__ri_8h_html_a068a1c38013c32d65427aeed54503a38a483d03ac6df269eb49b2ca709372889b"><div class="ttname"><a href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a483d03ac6df269eb49b2ca709372889b">OC_STATUS_OK</a></div><div class="ttdeci">@ OC_STATUS_OK</div><div class="ttdoc">OK.</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00062">oc_ri.h:62</a></div></div>
 <div class="ttc" id="astructoc__handler__t_html_a3a1a54a7e7cc1c40235dfb2b6a44b875"><div class="ttname"><a href="structoc__handler__t.html#a3a1a54a7e7cc1c40235dfb2b6a44b875">oc_handler_t::init</a></div><div class="ttdeci">int(* init)(void)</div><div class="ttdoc">Device initialization callback that is invoked to initialize the platform and device(s).</div><div class="ttdef"><b>Definition:</b> <a href="oc__api_8h_source.html#l00140">oc_api.h:140</a></div></div>
 <div class="ttc" id="aoc__ri_8h_html_a95fa27c60f90b8e3b976f4ca5f04aab2"><div class="ttname"><a href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a></div><div class="ttdeci">oc_interface_mask_t</div><div class="ttdoc">interface masks</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00168">oc_ri.h:168</a></div></div>
 <div class="ttc" id="aoc__api_8h_html_ae6522fdfeed62a92193214ee99dfc47c"><div class="ttname"><a href="oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c">oc_main_init</a></div><div class="ttdeci">int oc_main_init(const oc_handler_t *handler)</div><div class="ttdoc">Register and call handler functions responsible for controlling the stack.</div></div>
 <div class="ttc" id="aoc__ri_8h_html_a068a1c38013c32d65427aeed54503a38ab39105cb8408decb6c258c5d289759fe"><div class="ttname"><a href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38ab39105cb8408decb6c258c5d289759fe">OC_STATUS_CHANGED</a></div><div class="ttdeci">@ OC_STATUS_CHANGED</div><div class="ttdoc">Changed.</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00064">oc_ri.h:64</a></div></div>
-<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a49fa8413a491328a617618eb9e5d8a76"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a49fa8413a491328a617618eb9e5d8a76">post_dpa_417_61</a></div><div class="ttdeci">STATIC void post_dpa_417_61(oc_request_t *request, oc_interface_mask_t interfaces, void *user_data)</div><div class="ttdoc">post method for &quot;p/light&quot; resource.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00219">LSAB_minimal_all.c:219</a></div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a49fa8413a491328a617618eb9e5d8a76"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a49fa8413a491328a617618eb9e5d8a76">post_dpa_417_61</a></div><div class="ttdeci">STATIC void post_dpa_417_61(oc_request_t *request, oc_interface_mask_t interfaces, void *user_data)</div><div class="ttdoc">post method for &quot;p/light&quot; resource.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00227">LSAB_minimal_all.c:227</a></div></div>
 <div class="ttc" id="aoc__core__res_8h_html_abce7a2d1e8d98a3f4c0b8585121e2771"><div class="ttname"><a href="oc__core__res_8h.html#abce7a2d1e8d98a3f4c0b8585121e2771">oc_core_get_device_info</a></div><div class="ttdeci">oc_device_info_t * oc_core_get_device_info(size_t device)</div><div class="ttdoc">retrieve the device info from the device index</div></div>
-<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_adb1a37faa77219e1add3c026597c3dec"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#adb1a37faa77219e1add3c026597c3dec">handle_signal</a></div><div class="ttdeci">void handle_signal(int signal)</div><div class="ttdoc">handle Ctrl-C</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00427">LSAB_minimal_all.c:427</a></div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_adb1a37faa77219e1add3c026597c3dec"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#adb1a37faa77219e1add3c026597c3dec">handle_signal</a></div><div class="ttdeci">void handle_signal(int signal)</div><div class="ttdoc">handle Ctrl-C</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00435">LSAB_minimal_all.c:435</a></div></div>
 <div class="ttc" id="aoc__core__res_8h_html_a3a12888f2b9f5d866cf3193e79b5c85a"><div class="ttname"><a href="oc__core__res_8h.html#a3a12888f2b9f5d866cf3193e79b5c85a">oc_core_set_device_hwv</a></div><div class="ttdeci">int oc_core_set_device_hwv(size_t device_index, int major, int minor, int patch)</div><div class="ttdoc">sets the hardware version number</div></div>
 <div class="ttc" id="agroup__doc__module__tag__s__mode__server_html_ga4fc3569049c381a19a80022ac1439675"><div class="ttname"><a href="group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675">oc_is_redirected_request</a></div><div class="ttdeci">bool oc_is_redirected_request(oc_request_t *request)</div><div class="ttdoc">checks if the request is a redirected request from /.knx or /p when that happened,...</div></div>
-<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a8f0729e9e8c0e049c59956badd0905a0"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a8f0729e9e8c0e049c59956badd0905a0">g_mystate</a></div><div class="ttdeci">bool g_mystate</div><div class="ttdoc">the state of the dpa 417.61</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00110">LSAB_minimal_all.c:110</a></div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a8f0729e9e8c0e049c59956badd0905a0"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a8f0729e9e8c0e049c59956badd0905a0">g_mystate</a></div><div class="ttdeci">bool g_mystate</div><div class="ttdoc">the state of the dpa 417.61</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00112">LSAB_minimal_all.c:112</a></div></div>
 <div class="ttc" id="aoc__core__res_8h_html_a01721573029f39dc7cbf7a60d7ca6c9f"><div class="ttname"><a href="oc__core__res_8h.html#a01721573029f39dc7cbf7a60d7ca6c9f">oc_core_set_device_fwv</a></div><div class="ttdeci">int oc_core_set_device_fwv(size_t device_index, int major, int minor, int patch)</div><div class="ttdoc">set the firmware version</div></div>
-<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a8e0cc947f6c738517f2c341af66bc059"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a8e0cc947f6c738517f2c341af66bc059">reset_cb</a></div><div class="ttdeci">void reset_cb(size_t device_index, int reset_value, void *data)</div><div class="ttdoc">application reset</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00319">LSAB_minimal_all.c:319</a></div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a8e0cc947f6c738517f2c341af66bc059"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a8e0cc947f6c738517f2c341af66bc059">reset_cb</a></div><div class="ttdeci">void reset_cb(size_t device_index, int reset_value, void *data)</div><div class="ttdoc">application reset</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00327">LSAB_minimal_all.c:327</a></div></div>
 <div class="ttc" id="aoc__knx__swu_8h_html_aa307e6c43afc6bc0a39ede72f48305a1"><div class="ttname"><a href="oc__knx__swu_8h.html#aa307e6c43afc6bc0a39ede72f48305a1">oc_set_swu_cb</a></div><div class="ttdeci">void oc_set_swu_cb(oc_swu_cb_t cb, void *data)</div><div class="ttdoc">Set the software update callback.</div></div>
 <div class="ttc" id="astructoc__rep__s_html"><div class="ttname"><a href="structoc__rep__s.html">oc_rep_s</a></div><div class="ttdoc">parsed entry of a cbor object This represents a link list of response values one can iterate over the...</div><div class="ttdef"><b>Definition:</b> <a href="oc__rep_8h_source.html#l01385">oc_rep.h:1385</a></div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_gacc374cc9a8acc977db8f9f27dc3c593c"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c">oc_resource_bind_resource_interface</a></div><div class="ttdeci">void oc_resource_bind_resource_interface(oc_resource_t *resource, oc_interface_mask_t iface_mask)</div><div class="ttdoc">Add the supported interface(s) to the resource.</div></div>
 <div class="ttc" id="astructoc__device__info__t_html_accf30e08da6a6d6a1c58b7884bd04b09"><div class="ttname"><a href="structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09">oc_device_info_t::serialnumber</a></div><div class="ttdeci">oc_string_t serialnumber</div><div class="ttdoc">knx serial number</div><div class="ttdef"><b>Definition:</b> <a href="oc__core__res_8h_source.html#l00073">oc_core_res.h:73</a></div></div>
-<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a9597b9475fbb418556b2d89b22ba95c1"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a9597b9475fbb418556b2d89b22ba95c1">swu_cb</a></div><div class="ttdeci">void swu_cb(size_t device_index, size_t offset, uint8_t *payload, size_t len, void *data)</div><div class="ttdoc">software update callback</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00369">LSAB_minimal_all.c:369</a></div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a9597b9475fbb418556b2d89b22ba95c1"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a9597b9475fbb418556b2d89b22ba95c1">swu_cb</a></div><div class="ttdeci">void swu_cb(size_t device_index, size_t offset, uint8_t *payload, size_t len, void *data)</div><div class="ttdoc">software update callback</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00377">LSAB_minimal_all.c:377</a></div></div>
 <div class="ttc" id="aoc__rep_8h_html_acc472350fc7fefff703ba225791d5333"><div class="ttname"><a href="oc__rep_8h.html#acc472350fc7fefff703ba225791d5333">oc_rep_get_encoded_payload_size</a></div><div class="ttdeci">int oc_rep_get_encoded_payload_size(void)</div><div class="ttdoc">Get the size of the cbor encoded data.</div></div>
 <div class="ttc" id="aoc__api_8h_html"><div class="ttname"><a href="oc__api_8h.html">oc_api.h</a></div><div class="ttdoc">Main API of the stack for client and server.</div></div>
 <div class="ttc" id="aoc__rep_8h_html_ac0fa5f5a963bc4a00bd9dd1e050064d7"><div class="ttname"><a href="oc__rep_8h.html#ac0fa5f5a963bc4a00bd9dd1e050064d7">oc_rep_begin_root_object</a></div><div class="ttdeci">#define oc_rep_begin_root_object()</div><div class="ttdoc">Begin the root object.</div><div class="ttdef"><b>Definition:</b> <a href="oc__rep_8h_source.html#l00557">oc_rep.h:557</a></div></div>
-<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_af93312bf44b52864350ef193f6245b34"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#af93312bf44b52864350ef193f6245b34">restart_cb</a></div><div class="ttdeci">void restart_cb(size_t device_index, void *data)</div><div class="ttdoc">restart the device (application depended)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00334">LSAB_minimal_all.c:334</a></div></div>
-<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_aa85bfb832e03afe53eea89cfa6bb8ec5"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#aa85bfb832e03afe53eea89cfa6bb8ec5">g_reset</a></div><div class="ttdeci">bool g_reset</div><div class="ttdoc">reset the device (from startup)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00112">LSAB_minimal_all.c:112</a></div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_af93312bf44b52864350ef193f6245b34"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#af93312bf44b52864350ef193f6245b34">restart_cb</a></div><div class="ttdeci">void restart_cb(size_t device_index, void *data)</div><div class="ttdoc">restart the device (application depended)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00342">LSAB_minimal_all.c:342</a></div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_aa85bfb832e03afe53eea89cfa6bb8ec5"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#aa85bfb832e03afe53eea89cfa6bb8ec5">g_reset</a></div><div class="ttdeci">bool g_reset</div><div class="ttdoc">reset the device (from startup)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00114">LSAB_minimal_all.c:114</a></div></div>
 <div class="ttc" id="astructoc__rep__s_html_aab699da307b1549136301bafbfe8da4e"><div class="ttname"><a href="structoc__rep__s.html#aab699da307b1549136301bafbfe8da4e">oc_rep_s::next</a></div><div class="ttdeci">struct oc_rep_s * next</div><div class="ttdoc">next in list</div><div class="ttdef"><b>Definition:</b> <a href="oc__rep_8h_source.html#l01388">oc_rep.h:1388</a></div></div>
 <div class="ttc" id="aoc__knx__dev_8h_html"><div class="ttname"><a href="oc__knx__dev_8h.html">oc_knx_dev.h</a></div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_gac8cdb7e511c08982d790c323d8db7c6e"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gac8cdb7e511c08982d790c323d8db7c6e">oc_resource_set_periodic_observable</a></div><div class="ttdeci">void oc_resource_set_periodic_observable(oc_resource_t *resource, uint16_t seconds)</div><div class="ttdoc">The resource will periodically notify observing clients of is property values.</div></div>
 <div class="ttc" id="aoc__core__res_8h_html_a208356e6cc65d92ce5b5a11e0f365fe6"><div class="ttname"><a href="oc__core__res_8h.html#a208356e6cc65d92ce5b5a11e0f365fe6">oc_core_set_device_model</a></div><div class="ttdeci">int oc_core_set_device_model(size_t device_index, const char *model)</div><div class="ttdoc">sets the model (string)</div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_gaf8ac0f8a7d9fc45bab26b132cc9346e6"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6">oc_resource_set_request_handler</a></div><div class="ttdeci">void oc_resource_set_request_handler(oc_resource_t *resource, oc_method_t method, oc_request_callback_t callback, void *user_data)</div><div class="ttdoc">Specify a request_callback for GET, PUT, POST, and DELETE methods.</div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_ga617ddc7eec68117e14bb4e1bf9f867cc"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc">oc_new_resource</a></div><div class="ttdeci">oc_resource_t * oc_new_resource(const char *name, const char *uri, uint8_t num_resource_types, size_t device)</div><div class="ttdoc">Allocate and populate a new oc_resource_t.</div></div>
-<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a17a853a5bf8ca8d7285dad963558eb9a"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a17a853a5bf8ca8d7285dad963558eb9a">quit</a></div><div class="ttdeci">volatile int quit</div><div class="ttdoc">stop variable, used by handle_signal</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00111">LSAB_minimal_all.c:111</a></div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a17a853a5bf8ca8d7285dad963558eb9a"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a17a853a5bf8ca8d7285dad963558eb9a">quit</a></div><div class="ttdeci">volatile int quit</div><div class="ttdoc">stop variable, used by handle_signal</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00113">LSAB_minimal_all.c:113</a></div></div>
 <div class="ttc" id="aoc__connectivity_8h_html_a1d559666b450aef41dd704952e4a7e96"><div class="ttname"><a href="oc__connectivity_8h.html#a1d559666b450aef41dd704952e4a7e96">oc_connectivity_get_endpoints</a></div><div class="ttdeci">oc_endpoint_t * oc_connectivity_get_endpoints(size_t device)</div><div class="ttdoc">retrieve list of endpoints for the device</div></div>
 <div class="ttc" id="astructoc__endpoint__t_html"><div class="ttname"><a href="structoc__endpoint__t.html">oc_endpoint_t</a></div><div class="ttdoc">the endpoint information</div><div class="ttdef"><b>Definition:</b> <a href="oc__endpoint_8h_source.html#l00074">oc_endpoint.h:74</a></div></div>
 <div class="ttc" id="aoc__api_8h_html_a5fabaaadaf2e0dccbb1d906f73f9d953"><div class="ttname"><a href="oc__api_8h.html#a5fabaaadaf2e0dccbb1d906f73f9d953">oc_set_factory_presets_cb</a></div><div class="ttdeci">void oc_set_factory_presets_cb(oc_factory_presets_cb_t cb, void *data)</div><div class="ttdoc">Set the factory presets callback.</div></div>
 <div class="ttc" id="aoc__knx__dev_8h_html_ad5870712fe9b484e2816b4b0fc4dfea5"><div class="ttname"><a href="oc__knx__dev_8h.html#ad5870712fe9b484e2816b4b0fc4dfea5">oc_knx_device_storage_reset</a></div><div class="ttdeci">void oc_knx_device_storage_reset(size_t device_index, int reset_mode)</div><div class="ttdoc">clear the persistent storage reset = 2 (reset all) :</div></div>
 <div class="ttc" id="aoc__ri_8h_html_a83161604a805e3a951254864d16a714fa6563ce58a5ccb28f4c84c8eaa1bbf110"><div class="ttname"><a href="oc__ri_8h.html#a83161604a805e3a951254864d16a714fa6563ce58a5ccb28f4c84c8eaa1bbf110">APPLICATION_CBOR</a></div><div class="ttdeci">@ APPLICATION_CBOR</div><div class="ttdoc">application/cbor</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00116">oc_ri.h:116</a></div></div>
-<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a2e2efabbeb1c8c68790bb90ce01c4578"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a2e2efabbeb1c8c68790bb90ce01c4578">app_init</a></div><div class="ttdeci">int app_init(void)</div><div class="ttdoc">function to set up the device.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00128">LSAB_minimal_all.c:128</a></div></div>
+<div class="ttc" id="a_l_s_a_b__minimal__all_8c_html_a2e2efabbeb1c8c68790bb90ce01c4578"><div class="ttname"><a href="_l_s_a_b__minimal__all_8c.html#a2e2efabbeb1c8c68790bb90ce01c4578">app_init</a></div><div class="ttdeci">int app_init(void)</div><div class="ttdoc">function to set up the device.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_a_b__minimal__all_8c_source.html#l00130">LSAB_minimal_all.c:130</a></div></div>
 <div class="ttc" id="aoc__api_8h_html_a51e4f70eb54edfe9e8509367125b662e"><div class="ttname"><a href="oc__api_8h.html#a51e4f70eb54edfe9e8509367125b662e">oc_set_restart_cb</a></div><div class="ttdeci">void oc_set_restart_cb(oc_restart_cb_t cb, void *data)</div><div class="ttdoc">Set the restart callback.</div></div>
 <div class="ttc" id="aoc__api_8h_html_a1fc277c86baf3db65614c271bc7cbcf6"><div class="ttname"><a href="oc__api_8h.html#a1fc277c86baf3db65614c271bc7cbcf6">oc_add_device</a></div><div class="ttdeci">int oc_add_device(const char *name, const char *version, const char *base, const char *serial_number, oc_add_device_cb_t add_device_cb, void *data)</div><div class="ttdoc">Add an a device to the stack.</div></div>
 <div class="ttc" id="aoc__rep_8h_html_a4682d25ed7cef4a2831e1eadaef18e2e"><div class="ttname"><a href="oc__rep_8h.html#a4682d25ed7cef4a2831e1eadaef18e2e">oc_rep_i_set_boolean</a></div><div class="ttdeci">#define oc_rep_i_set_boolean(object, key, value)</div><div class="ttdoc">Add an boolean value to the cbor object under the integer key name Example:</div><div class="ttdef"><b>Definition:</b> <a href="oc__rep_8h_source.html#l00329">oc_rep.h:329</a></div></div>
@@ -606,7 +614,7 @@ $(document).ready(function(){initNavTree('_l_s_a_b__minimal__all_8c_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_9654b8d08f4bba4e84b362c5fd320bee.html">apps</a></li><li class="navelem"><a class="el" href="_l_s_a_b__minimal__all_8c.html">LSAB_minimal_all.c</a></li>
-    <li class="footer">Generated on Wed Apr 13 2022 13:57:53 for KNX IoT by
+    <li class="footer">Generated on Wed Apr 13 2022 15:10:38 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
