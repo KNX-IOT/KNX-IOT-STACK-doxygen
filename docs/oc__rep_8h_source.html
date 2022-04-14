@@ -578,18 +578,21 @@ $(document).ready(function(){initNavTree('oc__rep_8h_source.html',''); initResiz
 <div class="line"><a name="l02115"></a><span class="lineno"> 2115</span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="oc__rep_8h.html#ac86fcaf1a613c24f0ec005d2e08c9d46">oc_rep_to_json</a>(<a class="code" href="structoc__rep__s.html">oc_rep_t</a> *rep, <span class="keywordtype">char</span> *buf, <span class="keywordtype">size_t</span> buf_size,</div>
 <div class="line"><a name="l02116"></a><span class="lineno"> 2116</span>&#160;                      <span class="keywordtype">bool</span> pretty_print);</div>
 <div class="line"><a name="l02117"></a><span class="lineno"> 2117</span>&#160; </div>
-<div class="line"><a name="l02118"></a><span class="lineno"> 2118</span>&#160;<span class="keywordtype">size_t</span> py_oc_rep_to_json(<a class="code" href="structoc__rep__s.html">oc_rep_t</a> *rep, <span class="keywordtype">char</span> *buf, <span class="keywordtype">size_t</span> buf_size,</div>
-<div class="line"><a name="l02119"></a><span class="lineno"> 2119</span>&#160;                         <span class="keywordtype">bool</span> pretty_print);</div>
-<div class="line"><a name="l02120"></a><span class="lineno"> 2120</span>&#160; </div>
-<div class="line"><a name="l02121"></a><span class="lineno"> 2121</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l02122"></a><span class="lineno"> 2122</span>&#160;}</div>
-<div class="line"><a name="l02123"></a><span class="lineno"> 2123</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l02124"></a><span class="lineno"> 2124</span>&#160; </div>
-<div class="line"><a name="l02125"></a><span class="lineno"> 2125</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_REP_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l02126"></a><span class="lineno"> 2126</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__rep_8h.html#a47354caa23a134520d9ffee0818d67e6">oc_print_rep_as_json</a>(<a class="code" href="structoc__rep__s.html">oc_rep_t</a> *rep, <span class="keywordtype">bool</span> pretty_print);</div>
+<div class="line"><a name="l02127"></a><span class="lineno"> 2127</span>&#160; </div>
+<div class="line"><a name="l02128"></a><span class="lineno"> 2128</span>&#160;<span class="keywordtype">size_t</span> py_oc_rep_to_json(<a class="code" href="structoc__rep__s.html">oc_rep_t</a> *rep, <span class="keywordtype">char</span> *buf, <span class="keywordtype">size_t</span> buf_size,</div>
+<div class="line"><a name="l02129"></a><span class="lineno"> 2129</span>&#160;                         <span class="keywordtype">bool</span> pretty_print);</div>
+<div class="line"><a name="l02130"></a><span class="lineno"> 2130</span>&#160; </div>
+<div class="line"><a name="l02131"></a><span class="lineno"> 2131</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l02132"></a><span class="lineno"> 2132</span>&#160;}</div>
+<div class="line"><a name="l02133"></a><span class="lineno"> 2133</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l02134"></a><span class="lineno"> 2134</span>&#160; </div>
+<div class="line"><a name="l02135"></a><span class="lineno"> 2135</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_REP_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aoc__rep_8h_html_a9043245aa5981b86f4c371ecfb1755da"><div class="ttname"><a href="oc__rep_8h.html#a9043245aa5981b86f4c371ecfb1755da">oc_rep_get_int_array</a></div><div class="ttdeci">bool oc_rep_get_int_array(oc_rep_t *rep, const char *key, int64_t **value, size_t *size)</div><div class="ttdoc">Read an integer array value from an oc_rep_t</div></div>
 <div class="ttc" id="astructoc__rep__s_html_a0b9aa324e5d6b7bff8aec217936f0a38"><div class="ttname"><a href="structoc__rep__s.html#a0b9aa324e5d6b7bff8aec217936f0a38">oc_rep_s::type</a></div><div class="ttdeci">oc_rep_value_type_t type</div><div class="ttdoc">type of the data</div><div class="ttdef"><b>Definition:</b> <a href="oc__rep_8h_source.html#l01387">oc_rep.h:1387</a></div></div>
+<div class="ttc" id="aoc__rep_8h_html_a47354caa23a134520d9ffee0818d67e6"><div class="ttname"><a href="oc__rep_8h.html#a47354caa23a134520d9ffee0818d67e6">oc_print_rep_as_json</a></div><div class="ttdeci">void oc_print_rep_as_json(oc_rep_t *rep, bool pretty_print)</div><div class="ttdoc">prints the response tree as JSON to the output pretty_print: true: nicely formatted JSON on multiple ...</div></div>
 <div class="ttc" id="aoc__rep_8h_html_acd633419c3a6cbf5b8ab636242e0861f"><div class="ttname"><a href="oc__rep_8h.html#acd633419c3a6cbf5b8ab636242e0861f">oc_rep_get_cbor_errno</a></div><div class="ttdeci">CborError oc_rep_get_cbor_errno(void)</div><div class="ttdoc">Called after any oc_rep_set_*, oc_rep_start_*, oc_rep_begin_*, oc_rep_end_*, oc_rep_add_*,...</div></div>
 <div class="ttc" id="aoc__rep_8h_html_a33423ce92e2bed568f2bb1941b9fd474"><div class="ttname"><a href="oc__rep_8h.html#a33423ce92e2bed568f2bb1941b9fd474">oc_rep_get_object</a></div><div class="ttdeci">bool oc_rep_get_object(oc_rep_t *rep, const char *key, oc_rep_t **value)</div><div class="ttdoc">Read a object value from an oc_rep_t</div></div>
 <div class="ttc" id="aoc__rep_8h_html_a33b78cc942981950b6b4a9d214631705"><div class="ttname"><a href="oc__rep_8h.html#a33b78cc942981950b6b4a9d214631705">oc_rep_add_line_to_buffer</a></div><div class="ttdeci">int oc_rep_add_line_to_buffer(const char *line)</div><div class="ttdoc">add a line to the response buffer note updates the occupied size in the response buffer</div></div>
@@ -633,7 +636,7 @@ $(document).ready(function(){initNavTree('oc__rep_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__rep_8h.html">oc_rep.h</a></li>
-    <li class="footer">Generated on Thu Apr 14 2022 08:08:43 for KNX IoT by
+    <li class="footer">Generated on Thu Apr 14 2022 13:05:06 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

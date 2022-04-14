@@ -318,6 +318,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_free_rep</b> (<a c
 <tr class="memitem:a163396b11297bd4956e1cfbc4e0ea88e"><td class="memItemLeft" align="right" valign="top"><a id="a163396b11297bd4956e1cfbc4e0ea88e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_parse_rep</b> (const uint8_t *payload, int payload_size, <a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> **value_list)</td></tr>
 <tr class="separator:a163396b11297bd4956e1cfbc4e0ea88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47354caa23a134520d9ffee0818d67e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a47354caa23a134520d9ffee0818d67e6">oc_print_rep_as_json</a> (<a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *rep, bool pretty_print)</td></tr>
+<tr class="memdesc:a47354caa23a134520d9ffee0818d67e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints the response tree as JSON to the output pretty_print: true: nicely formatted JSON on multiple lines false: JSON formatted on a single line  <a href="oc__rep_8h.html#a47354caa23a134520d9ffee0818d67e6">More...</a><br /></td></tr>
+<tr class="separator:a47354caa23a134520d9ffee0818d67e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3684bb1ad9a08da4ecba5cc64c122447"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a3684bb1ad9a08da4ecba5cc64c122447">oc_rep_add_line_size_to_buffer</a> (const char *line, int len)</td></tr>
 <tr class="memdesc:a3684bb1ad9a08da4ecba5cc64c122447"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a line to the response buffer note updates the occupied size in the response buffer  <a href="oc__rep_8h.html#a3684bb1ad9a08da4ecba5cc64c122447">More...</a><br /></td></tr>
 <tr class="separator:a3684bb1ad9a08da4ecba5cc64c122447"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2835,6 +2838,43 @@ oc_string_array_add_item </dd></dl>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a47354caa23a134520d9ffee0818d67e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47354caa23a134520d9ffee0818d67e6">&#9670;&nbsp;</a></span>oc_print_rep_as_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_print_rep_as_json </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *&#160;</td>
+          <td class="paramname"><em>rep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pretty_print</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>prints the response tree as JSON to the output pretty_print: true: nicely formatted JSON on multiple lines false: JSON formatted on a single line </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rep</td><td>the response tree </td></tr>
+    <tr><td class="paramname">pretty_print</td><td>true: nicely formatted json </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a3684bb1ad9a08da4ecba5cc64c122447"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3684bb1ad9a08da4ecba5cc64c122447">&#9670;&nbsp;</a></span>oc_rep_add_line_size_to_buffer()</h2>
 
@@ -4652,7 +4692,7 @@ oc_string_array_get_item_size </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__rep_8h.html">oc_rep.h</a></li>
-    <li class="footer">Generated on Thu Apr 14 2022 08:08:43 for KNX IoT by
+    <li class="footer">Generated on Thu Apr 14 2022 13:05:07 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

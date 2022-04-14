@@ -77,6 +77,7 @@ var oc__rep_8h =
     ] ],
     [ "oc_free_rep", "oc__rep_8h.html#ac436f2afde99d2f44f14e666fd318b39", null ],
     [ "oc_parse_rep", "oc__rep_8h.html#a163396b11297bd4956e1cfbc4e0ea88e", null ],
+    [ "oc_print_rep_as_json", "oc__rep_8h.html#a47354caa23a134520d9ffee0818d67e6", null ],
     [ "oc_rep_add_line_size_to_buffer", "oc__rep_8h.html#a3684bb1ad9a08da4ecba5cc64c122447", null ],
     [ "oc_rep_add_line_to_buffer", "oc__rep_8h.html#a33b78cc942981950b6b4a9d214631705", null ],
     [ "oc_rep_encode_raw", "oc__rep_8h.html#a9c612fc4c4cd2ca886f535cad577720f", null ],

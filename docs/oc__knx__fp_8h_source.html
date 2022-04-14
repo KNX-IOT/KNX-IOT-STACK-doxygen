@@ -216,11 +216,13 @@ $(document).ready(function(){initNavTree('oc__knx__fp_8h_source.html',''); initR
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> <a class="code" href="oc__knx__fp_8h.html#a60e665e1b7ec44a4288d66e026b3cd2e">oc_create_multicast_group_address</a>(<a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> in, <span class="keywordtype">int</span> group_nr,</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                                                <span class="keywordtype">int</span> iid, <span class="keywordtype">int</span> scope);</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;}</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160; </div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_KNX_FP_INTERNAL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="keywordtype">void</span> subscribe_group_to_multicast(<span class="keywordtype">int</span> group_nr, <span class="keywordtype">int</span> iid, <span class="keywordtype">int</span> scope);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160; </div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;}</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160; </div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_KNX_FP_INTERNAL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aoc__knx__fp_8h_html_a2c0e340b6ac53e847bfc34cadd477545"><div class="ttname"><a href="oc__knx__fp_8h.html#a2c0e340b6ac53e847bfc34cadd477545">oc_add_points_in_group_object_table_to_response</a></div><div class="ttdeci">bool oc_add_points_in_group_object_table_to_response(oc_request_t *request, size_t device_index, int group_address, size_t *response_length, int matches)</div><div class="ttdoc">add points to the well-known core discovery response when the request has query option ....</div></div>
@@ -285,7 +287,7 @@ $(document).ready(function(){initNavTree('oc__knx__fp_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__fp_8h.html">oc_knx_fp.h</a></li>
-    <li class="footer">Generated on Thu Apr 14 2022 08:08:43 for KNX IoT by
+    <li class="footer">Generated on Thu Apr 14 2022 13:05:06 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
