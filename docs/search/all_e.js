@@ -211,7 +211,7 @@ var searchData=
   ['oc_5fendpoint_5flist_5fcopy_396',['oc_endpoint_list_copy',['../oc__endpoint_8h.html#a409c05a4d843f01454a5d2bd38303350',1,'oc_endpoint.h']]],
   ['oc_5fendpoint_5fprint_397',['oc_endpoint_print',['../oc__endpoint_8h.html#a508abed5fae364d457008b576ae123d6',1,'oc_endpoint.h']]],
   ['oc_5fendpoint_5fset_5flocal_5faddress_398',['oc_endpoint_set_local_address',['../oc__endpoint_8h.html#af055cc72d372ead0c5b58f60896c064f',1,'oc_endpoint.h']]],
-  ['oc_5fendpoint_5fset_5fserial_5fnumber_399',['oc_endpoint_set_serial_number',['../oc__endpoint_8h.html#a88ff12af4cc7c54eaf13a75f031de92e',1,'oc_endpoint.h']]],
+  ['oc_5fendpoint_5fset_5fserial_5fnumber_399',['oc_endpoint_set_serial_number',['../oc__endpoint_8h.html#a3042654568b8a96e5113f697b52da5e9',1,'oc_endpoint.h']]],
   ['oc_5fendpoint_5fstring_5fparse_5fpath_400',['oc_endpoint_string_parse_path',['../oc__endpoint_8h.html#a4b1ba00a5e0834a3bda665259a31e609',1,'oc_endpoint.h']]],
   ['oc_5fendpoint_5ft_401',['oc_endpoint_t',['../structoc__endpoint__t.html',1,'oc_endpoint_t'],['../oc__endpoint_8h.html#a0b37d95d6d4c2ae5b243e8fdba19daa1',1,'oc_endpoint_t():&#160;oc_endpoint.h']]],
   ['oc_5fendpoint_5fto_5fstring_402',['oc_endpoint_to_string',['../oc__endpoint_8h.html#ad9e390c2515206b065b414aee3ed272d',1,'oc_endpoint.h']]],

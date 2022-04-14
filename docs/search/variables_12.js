@@ -5,7 +5,7 @@ var searchData=
   ['scope_1566',['scope',['../structoc__ipv6__addr__t.html#aad9c61920b7ad19972cb4d83d1180eea',1,'oc_ipv6_addr_t::scope()'],['../structoc__auth__at__t.html#a9756abb686def5c1aed4c7cd7247b161',1,'oc_auth_at_t::scope()']]],
   ['separate_1567',['separate',['../structoc__client__cb__t.html#a8c910d948d2fec973c324abdf2e8efa2',1,'oc_client_cb_t']]],
   ['separate_5fresponse_1568',['separate_response',['../structoc__response__t.html#ab00097d13ea4163cb18b264035e7a7c5',1,'oc_response_t']]],
-  ['serial_5fnumber_1569',['serial_number',['../structoc__endpoint__t.html#aa804b0bb630be1df2c9c652dca6d7965',1,'oc_endpoint_t']]],
+  ['serial_5fnumber_1569',['serial_number',['../structoc__endpoint__t.html#ad726260e3c8fa3f12aa8d91258957db0',1,'oc_endpoint_t']]],
   ['serialnumber_1570',['serialnumber',['../structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09',1,'oc_device_info_t']]],
   ['set_5fproperties_1571',['set_properties',['../structoc__resource__s.html#a6d8fb9d13071b21ec29abe9b9eed7556',1,'oc_resource_s']]],
   ['sia_1572',['sia',['../structoc__group__object__notification__t.html#a61cd41def2fb07634a2fb0049bf5c104',1,'oc_group_object_notification_t']]],

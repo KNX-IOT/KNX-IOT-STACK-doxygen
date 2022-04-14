@@ -8,5 +8,5 @@ var structoc__endpoint__t =
     [ "interface_index", "structoc__endpoint__t.html#ae86afaa4df8c3f253d0f526b9540e1e8", null ],
     [ "next", "structoc__endpoint__t.html#ab649dfd671bd7ffa4accef34548fc893", null ],
     [ "priority", "structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c", null ],
-    [ "serial_number", "structoc__endpoint__t.html#aa804b0bb630be1df2c9c652dca6d7965", null ]
+    [ "serial_number", "structoc__endpoint__t.html#ad726260e3c8fa3f12aa8d91258957db0", null ]
 ];

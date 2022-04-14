@@ -9,7 +9,7 @@ var searchData=
   ['secured_934',['SECURED',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a4233d0336b2b5b9922cc2a448052c137',1,'oc_endpoint.h']]],
   ['separate_935',['separate',['../structoc__client__cb__t.html#a8c910d948d2fec973c324abdf2e8efa2',1,'oc_client_cb_t']]],
   ['separate_5fresponse_936',['separate_response',['../structoc__response__t.html#ab00097d13ea4163cb18b264035e7a7c5',1,'oc_response_t']]],
-  ['serial_5fnumber_937',['serial_number',['../structoc__endpoint__t.html#aa804b0bb630be1df2c9c652dca6d7965',1,'oc_endpoint_t']]],
+  ['serial_5fnumber_937',['serial_number',['../structoc__endpoint__t.html#ad726260e3c8fa3f12aa8d91258957db0',1,'oc_endpoint_t']]],
   ['serialnumber_938',['serialnumber',['../structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09',1,'oc_device_info_t']]],
   ['session_5fevent_5fhandler_5ft_939',['session_event_handler_t',['../oc__session__events_8h.html#a8ae3215775705d84e55a1a623c8267c9',1,'oc_session_events.h']]],
   ['set_5fproperties_940',['set_properties',['../structoc__resource__s.html#a6d8fb9d13071b21ec29abe9b9eed7556',1,'oc_resource_s']]],

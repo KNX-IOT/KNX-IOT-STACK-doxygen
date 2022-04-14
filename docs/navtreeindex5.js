@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"structoc__device__info__t.html#a06a0378e8f3fe57a07583564992c34f6":[2,0,7,3],
 "structoc__device__info__t.html#a1a7f5ecb1d5af92b0c88ac9ac4f7b675":[2,0,7,4],
 "structoc__device__info__t.html#a1ab2364042f5d40039fa068b06a92312":[2,0,7,10],
 "structoc__device__info__t.html#a258978ef26d3bdba7d02a0a59200d0ad":[2,0,7,6],
@@ -21,8 +22,8 @@ var NAVTREEINDEX5 =
 "structoc__endpoint__t.html#a7b41eb7427f5ee6375dfbddf8e699acb":[2,0,8,1],
 "structoc__endpoint__t.html#a945038b8b9ca9558905bebfa24b4130e":[2,0,8,3],
 "structoc__endpoint__t.html#a94c514bd73ebe068bc95f3c0b33dceda":[2,0,8,2],
-"structoc__endpoint__t.html#aa804b0bb630be1df2c9c652dca6d7965":[2,0,8,8],
 "structoc__endpoint__t.html#ab649dfd671bd7ffa4accef34548fc893":[2,0,8,6],
+"structoc__endpoint__t.html#ad726260e3c8fa3f12aa8d91258957db0":[2,0,8,8],
 "structoc__endpoint__t.html#ad803d60c93177bb1ed9133d86d9dc378":[2,0,8,4],
 "structoc__endpoint__t.html#ae86afaa4df8c3f253d0f526b9540e1e8":[2,0,8,5],
 "structoc__event__callback__s.html":[2,0,9],

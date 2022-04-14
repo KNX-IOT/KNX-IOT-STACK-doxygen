@@ -5,6 +5,7 @@ var oc__endpoint_8h =
     [ "oc_ipv6_addr_t", "structoc__ipv6__addr__t.html", "structoc__ipv6__addr__t" ],
     [ "oc_make_ipv4_endpoint", "oc__endpoint_8h.html#a6341e17218eff01b49aa2f8ae27e068b", null ],
     [ "oc_make_ipv6_endpoint", "oc__endpoint_8h.html#ac8b9dd8487a08a52bd54676fc297c342", null ],
+    [ "SERIAL_NUM_SIZE", "oc__endpoint_8h.html#a076a0100c28c0dd6423c3bb8d9f3d3f6", null ],
     [ "oc_endpoint_t", "oc__endpoint_8h.html#a0b37d95d6d4c2ae5b243e8fdba19daa1", null ],
     [ "transport_flags", "oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78", [
       [ "DISCOVERY", "oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a05eb094889c0adc67ccc19ea72284315", null ],
@@ -24,7 +25,7 @@ var oc__endpoint_8h =
     [ "oc_endpoint_list_copy", "oc__endpoint_8h.html#a409c05a4d843f01454a5d2bd38303350", null ],
     [ "oc_endpoint_print", "oc__endpoint_8h.html#a508abed5fae364d457008b576ae123d6", null ],
     [ "oc_endpoint_set_local_address", "oc__endpoint_8h.html#af055cc72d372ead0c5b58f60896c064f", null ],
-    [ "oc_endpoint_set_serial_number", "oc__endpoint_8h.html#a88ff12af4cc7c54eaf13a75f031de92e", null ],
+    [ "oc_endpoint_set_serial_number", "oc__endpoint_8h.html#a3042654568b8a96e5113f697b52da5e9", null ],
     [ "oc_endpoint_string_parse_path", "oc__endpoint_8h.html#a4b1ba00a5e0834a3bda665259a31e609", null ],
     [ "oc_endpoint_to_string", "oc__endpoint_8h.html#ad9e390c2515206b065b414aee3ed272d", null ],
     [ "oc_free_endpoint", "oc__endpoint_8h.html#aef7806ac74d70ffd0e986dd08b66a3e7", null ],
