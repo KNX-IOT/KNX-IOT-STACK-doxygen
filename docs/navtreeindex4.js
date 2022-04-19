@@ -1,5 +1,15 @@
 var NAVTREEINDEX4 =
 {
+"oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38ab39105cb8408decb6c258c5d289759fe":[3,0,38,28,2],
+"oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38abec447dcd7b17d6c66d8a668b30632d4":[3,0,38,28,7],
+"oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38acae80e8bf554d2c3ce055d275ae7e960":[3,0,38,28,6],
+"oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38acafcdbbd4c2e00ca2f982954b339885f":[3,0,38,28,13],
+"oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38ada6a9cd6b2ff47d615b04c0a0dfcfc88":[3,0,38,28,22],
+"oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38ae7b616f240b564c8608b57e006f0bc23":[3,0,38,28,16],
+"oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38aea878d61eb79e3bd9a337d9146fcc9ab":[3,0,38,28,17],
+"oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38af6d37d546750261e14e771141c6cdbe4":[3,0,38,28,8],
+"oc__ri_8h.html#a0c0cf4983494ee97927016dcd4af1d79":[3,0,38,11],
+"oc__ri_8h.html#a0d6859298de1d6033ec3d91f5d6e9be9":[3,0,38,45],
 "oc__ri_8h.html#a112d2b700398a487ef806346ea4673d7":[3,0,38,44],
 "oc__ri_8h.html#a12324b7f65a6a901470fa0d02e5df555":[3,0,38,29],
 "oc__ri_8h.html#a1306f12131438c2fe2e7395584528cec":[3,0,38,31],
@@ -239,15 +249,5 @@ var NAVTREEINDEX4 =
 "structoc__client__response__t.html":[2,0,5],
 "structoc__client__response__t.html#a0f0c20001c3f64521f922235b6b602b5":[2,0,5,6],
 "structoc__client__response__t.html#a0f53d287ac7c064d1a49d4bd93ca1cb9":[2,0,5,8],
-"structoc__client__response__t.html#a4e7476f42ae4af489a46e6d05b8e4727":[2,0,5,7],
-"structoc__client__response__t.html#a59cf0d81c2cdfeeb6f9d0d9499e19f9d":[2,0,5,4],
-"structoc__client__response__t.html#a5d991c84650c482bda3a2a020c232953":[2,0,5,5],
-"structoc__client__response__t.html#a65db7354001aae97f74ce1acb5c8a97a":[2,0,5,3],
-"structoc__client__response__t.html#aa792cf0b9f7f7ed0afff5fbe2d9b8d6a":[2,0,5,0],
-"structoc__client__response__t.html#ab37ead9b768f1ee00fd8b655a4309e8c":[2,0,5,1],
-"structoc__client__response__t.html#ac4a3f18156ea9b9a3bf4492e673dc615":[2,0,5,2],
-"structoc__cred__data__t.html":[2,0,6],
-"structoc__cred__data__t.html#a270c8a83a2564fbedc5aa19be79143bd":[2,0,6,0],
-"structoc__cred__data__t.html#a7452b9ae3dd3407188d233990bd00f88":[2,0,6,1],
-"structoc__device__info__t.html":[2,0,7]
+"structoc__client__response__t.html#a4e7476f42ae4af489a46e6d05b8e4727":[2,0,5,7]
 };

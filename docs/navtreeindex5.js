@@ -1,5 +1,15 @@
 var NAVTREEINDEX5 =
 {
+"structoc__client__response__t.html#a59cf0d81c2cdfeeb6f9d0d9499e19f9d":[2,0,5,4],
+"structoc__client__response__t.html#a5d991c84650c482bda3a2a020c232953":[2,0,5,5],
+"structoc__client__response__t.html#a65db7354001aae97f74ce1acb5c8a97a":[2,0,5,3],
+"structoc__client__response__t.html#aa792cf0b9f7f7ed0afff5fbe2d9b8d6a":[2,0,5,0],
+"structoc__client__response__t.html#ab37ead9b768f1ee00fd8b655a4309e8c":[2,0,5,1],
+"structoc__client__response__t.html#ac4a3f18156ea9b9a3bf4492e673dc615":[2,0,5,2],
+"structoc__cred__data__t.html":[2,0,6],
+"structoc__cred__data__t.html#a270c8a83a2564fbedc5aa19be79143bd":[2,0,6,0],
+"structoc__cred__data__t.html#a7452b9ae3dd3407188d233990bd00f88":[2,0,6,1],
+"structoc__device__info__t.html":[2,0,7],
 "structoc__device__info__t.html#a06a0378e8f3fe57a07583564992c34f6":[2,0,7,3],
 "structoc__device__info__t.html#a1a7f5ecb1d5af92b0c88ac9ac4f7b675":[2,0,7,4],
 "structoc__device__info__t.html#a1ab2364042f5d40039fa068b06a92312":[2,0,7,10],
