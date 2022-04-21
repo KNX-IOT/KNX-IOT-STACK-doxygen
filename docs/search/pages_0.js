@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['knx_5fiot_20point_20api_20stack_1974',['KNX_IOT Point API Stack',['../index.html',1,'']]]
+  ['knx_20iot_20point_20api_20stack_1974',['KNX IoT Point API Stack',['../index.html',1,'']]]
 ];

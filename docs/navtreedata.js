@@ -23,7 +23,7 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "KNX IoT", "index.html", [
-    [ "KNX_IOT Point API Stack", "index.html", null ],
+    [ "KNX IoT Point API Stack", "index.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
