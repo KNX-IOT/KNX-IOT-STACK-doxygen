@@ -137,6 +137,9 @@ Functions</h2></td></tr>
 <tr class="memitem:afaf7c65ba5a0900511303629bfe41582"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#afaf7c65ba5a0900511303629bfe41582">oc_delete_at_table</a> (size_t device_index)</td></tr>
 <tr class="memdesc:afaf7c65ba5a0900511303629bfe41582"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete the /auth/at table will be used in reset of the device  <a href="oc__knx__sec_8h.html#afaf7c65ba5a0900511303629bfe41582">More...</a><br /></td></tr>
 <tr class="separator:afaf7c65ba5a0900511303629bfe41582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa129153ff6470692a09dcb6b81350f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__auth__at__t.html">oc_auth_at_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#a0aa129153ff6470692a09dcb6b81350f">oc_get_auth_at_entry</a> (size_t device_index, int index)</td></tr>
+<tr class="memdesc:a0aa129153ff6470692a09dcb6b81350f"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve auth at entry  <a href="oc__knx__sec_8h.html#a0aa129153ff6470692a09dcb6b81350f">More...</a><br /></td></tr>
+<tr class="separator:a0aa129153ff6470692a09dcb6b81350f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabdde0a5c02570eff7eead7719fa28a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#aabdde0a5c02570eff7eead7719fa28a2">oc_if_method_allowed_according_to_mask</a> (<a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask, <a class="el" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26">oc_method_t</a> method)</td></tr>
 <tr class="memdesc:aabdde0a5c02570eff7eead7719fa28a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">is the method allowed according to the interface mask  <a href="oc__knx__sec_8h.html#aabdde0a5c02570eff7eead7719fa28a2">More...</a><br /></td></tr>
 <tr class="separator:aabdde0a5c02570eff7eead7719fa28a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,8 +159,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:abffee6b23a4b6efe2466a6476dd31da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the replay window  <a href="oc__knx__sec_8h.html#abffee6b23a4b6efe2466a6476dd31da3">More...</a><br /></td></tr>
 <tr class="separator:abffee6b23a4b6efe2466a6476dd31da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5c6ab3d5c41303a0758ff0de59d2fe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#ad5c6ab3d5c41303a0758ff0de59d2fe5">oc_oscore_set_auth</a> (char *serial_number, char *context_id, uint8_t *shared_key, int shared_key_size)</td></tr>
-<tr class="memdesc:ad5c6ab3d5c41303a0758ff0de59d2fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">set shared (SPAKE) key  <a href="oc__knx__sec_8h.html#ad5c6ab3d5c41303a0758ff0de59d2fe5">More...</a><br /></td></tr>
+<tr class="memdesc:ad5c6ab3d5c41303a0758ff0de59d2fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">set shared (SPAKE) key to the auth at table.  <a href="oc__knx__sec_8h.html#ad5c6ab3d5c41303a0758ff0de59d2fe5">More...</a><br /></td></tr>
 <tr class="separator:ad5c6ab3d5c41303a0758ff0de59d2fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa314cc4b814d20bfe60564a2aa670667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#aa314cc4b814d20bfe60564a2aa670667">oc_print_auth_at_entry</a> (size_t device_index, int index)</td></tr>
+<tr class="memdesc:aa314cc4b814d20bfe60564a2aa670667"><td class="mdescLeft">&#160;</td><td class="mdescRight">print the auth at entry  <a href="oc__knx__sec_8h.html#aa314cc4b814d20bfe60564a2aa670667">More...</a><br /></td></tr>
+<tr class="separator:aa314cc4b814d20bfe60564a2aa670667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad840b16fdfd76aaafb0abdb20c4488fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413b">oc_at_profile_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#ad840b16fdfd76aaafb0abdb20c4488fa">oc_string_to_at_profile</a> (oc_string_t str)</td></tr>
 <tr class="memdesc:ad840b16fdfd76aaafb0abdb20c4488fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">string to accesst token profile  <a href="oc__knx__sec_8h.html#ad840b16fdfd76aaafb0abdb20c4488fa">More...</a><br /></td></tr>
 <tr class="separator:ad840b16fdfd76aaafb0abdb20c4488fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -480,6 +486,44 @@ int &gt;=0 : entry found </dd></dl>
 
 </div>
 </div>
+<a id="a0aa129153ff6470692a09dcb6b81350f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aa129153ff6470692a09dcb6b81350f">&#9670;&nbsp;</a></span>oc_get_auth_at_entry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structoc__auth__at__t.html">oc_auth_at_t</a>* oc_get_auth_at_entry </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retrieve auth at entry </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device_index</td><td>the device index </td></tr>
+    <tr><td class="paramname">index</td><td>the index in the table </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>oc_auth_at_t* the auth at entry </dd></dl>
+
+</div>
+</div>
 <a id="aabdde0a5c02570eff7eead7719fa28a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aabdde0a5c02570eff7eead7719fa28a2">&#9670;&nbsp;</a></span>oc_if_method_allowed_according_to_mask()</h2>
 
@@ -711,13 +755,50 @@ false does not have access </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>set shared (SPAKE) key </p>
+<p>set shared (SPAKE) key to the auth at table. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">serial_number</td><td>the serial_number of the device that has been negotiated with spake2plus with (e.g. client side) </td></tr>
     <tr><td class="paramname">context_id</td><td>the context_id delivered during the handshake </td></tr>
     <tr><td class="paramname">shared_key</td><td>the master key after SPAKE2 handshake </td></tr>
     <tr><td class="paramname">shared_key_size</td><td>the key size </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa314cc4b814d20bfe60564a2aa670667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa314cc4b814d20bfe60564a2aa670667">&#9670;&nbsp;</a></span>oc_print_auth_at_entry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_print_auth_at_entry </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>print the auth at entry </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device_index</td><td>the device index </td></tr>
+    <tr><td class="paramname">index</td><td>the index in the table to be printed </td></tr>
   </table>
   </dd>
 </dl>
@@ -761,7 +842,7 @@ false does not have access </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__sec_8h.html">oc_knx_sec.h</a></li>
-    <li class="footer">Generated on Thu Apr 21 2022 08:00:37 for KNX IoT by
+    <li class="footer">Generated on Thu Apr 21 2022 14:08:54 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
