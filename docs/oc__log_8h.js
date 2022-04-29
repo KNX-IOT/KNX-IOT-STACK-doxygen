@@ -12,6 +12,7 @@ var oc__log_8h =
     [ "OC_LOGbytes_internal", "oc__log_8h.html#a124e65089607990e37b6baa913bc1f4f", null ],
     [ "OC_LOGbytes_internalxx", "oc__log_8h.html#a1b5915e8b231f6ddb8998e3edda2d028", null ],
     [ "OC_LOGbytes_OSCORE", "oc__log_8h.html#a6a3c6a70b1dce2a57aef6f25fe591fe0", null ],
+    [ "OC_LOGbytes_SPAKE", "oc__log_8h.html#a35841bb0cbda4fed0e9f07ddf1ffa9f6", null ],
     [ "OC_LOGipaddr", "oc__log_8h.html#a4c5fe60da598b67e7f1c3f2041163065", null ],
     [ "OC_WRN", "oc__log_8h.html#ad111c2e3d57fcb638d9a4ba053bd3d3a", null ],
     [ "PRINT", "oc__log_8h.html#a15bb631053a1fce9c5470701900984c7", null ],

@@ -4,7 +4,7 @@ var searchData=
   ['s_2dmode_20server_936',['s-mode server',['../group__doc__module__tag__s__mode__server.html',1,'']]],
   ['server_20side_937',['Server side',['../group__doc__module__tag__server__side.html',1,'']]],
   ['sa_938',['sa',['../structoc__device__info__t.html#a33751b24973c1f5badbdc19c44db4206',1,'oc_device_info_t']]],
-  ['salt_939',['salt',['../structoc__pase__t.html#a6b23f85d2cde801e59952ac889dc592a',1,'oc_pase_t']]],
+  ['salt_939',['salt',['../structoc__pase__t.html#a63d0c90524e04abe336c19c99d1b1f35',1,'oc_pase_t']]],
   ['scope_940',['scope',['../structoc__ipv6__addr__t.html#aad9c61920b7ad19972cb4d83d1180eea',1,'oc_ipv6_addr_t::scope()'],['../structoc__auth__at__t.html#a9756abb686def5c1aed4c7cd7247b161',1,'oc_auth_at_t::scope()']]],
   ['secured_941',['SECURED',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a4233d0336b2b5b9922cc2a448052c137',1,'oc_endpoint.h']]],
   ['separate_942',['separate',['../structoc__client__cb__t.html#a8c910d948d2fec973c324abdf2e8efa2',1,'oc_client_cb_t']]],

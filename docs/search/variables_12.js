@@ -1,7 +1,7 @@
 var searchData=
 [
   ['sa_1578',['sa',['../structoc__device__info__t.html#a33751b24973c1f5badbdc19c44db4206',1,'oc_device_info_t']]],
-  ['salt_1579',['salt',['../structoc__pase__t.html#a6b23f85d2cde801e59952ac889dc592a',1,'oc_pase_t']]],
+  ['salt_1579',['salt',['../structoc__pase__t.html#a63d0c90524e04abe336c19c99d1b1f35',1,'oc_pase_t']]],
   ['scope_1580',['scope',['../structoc__ipv6__addr__t.html#aad9c61920b7ad19972cb4d83d1180eea',1,'oc_ipv6_addr_t::scope()'],['../structoc__auth__at__t.html#a9756abb686def5c1aed4c7cd7247b161',1,'oc_auth_at_t::scope()']]],
   ['separate_1581',['separate',['../structoc__client__cb__t.html#a8c910d948d2fec973c324abdf2e8efa2',1,'oc_client_cb_t']]],
   ['separate_5fresponse_1582',['separate_response',['../structoc__response__t.html#ab00097d13ea4163cb18b264035e7a7c5',1,'oc_response_t']]],
