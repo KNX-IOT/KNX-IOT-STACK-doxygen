@@ -30,11 +30,13 @@ var searchData=
   ['ets_5flinkformat_5fget_109',['ets_linkformat_get',['../group__doc__module__tag__dll.html#gabefc11f3ffe10508de16163136255fb8',1,'oc_python.h']]],
   ['ets_5flinkformat_5fget_5fwith_5fcontext_5fid_110',['ets_linkformat_get_with_context_id',['../group__doc__module__tag__dll.html#ga3a12c289152c4442c57ed4d2cb4b4aa3',1,'oc_python.h']]],
   ['ets_5flisten_5fs_5fmode_111',['ets_listen_s_mode',['../group__doc__module__tag__dll.html#gacbfefc90ee1048a6d87c8970dc7de783',1,'oc_python.h']]],
-  ['ets_5fmain_112',['ets_main',['../group__doc__module__tag__dll.html#gaebcd5dbc03a972b942719459d9037631',1,'oc_python.h']]],
-  ['ets_5fpoll_113',['ets_poll',['../group__doc__module__tag__dll.html#gad9b021409f0222487e959c9dd489cfe1',1,'oc_python.h']]],
-  ['ets_5freset_5fets_114',['ets_reset_ets',['../group__doc__module__tag__dll.html#gadac5cde6e869f3ed995f7fe7e72cd5e7',1,'oc_python.h']]],
-  ['ets_5fset_5fmax_5fapp_5fdata_5fsize_115',['ets_set_max_app_data_size',['../group__doc__module__tag__dll.html#ga151f57f396eb86b871aab7775125e615',1,'oc_python.h']]],
-  ['ets_5fstart_116',['ets_start',['../group__doc__module__tag__dll.html#gab6ecbe3630c9d99de7dd1212cd848c0b',1,'oc_python.h']]],
-  ['ets_5fstop_117',['ets_stop',['../group__doc__module__tag__dll.html#gad707ff1d62967c9447da28e3f1600837',1,'oc_python.h']]],
-  ['exit_5fimpl_118',['exit_impl',['../oc__assert_8h.html#a1bce540d44065a67fd8136c1033bee82',1,'oc_assert.h']]]
+  ['ets_5flisten_5fs_5fmode_5fsingle_112',['ets_listen_s_mode_single',['../group__doc__module__tag__dll.html#ga5d86e0e7cd4f48e2053eac0c22b95ce5',1,'oc_python.h']]],
+  ['ets_5flisten_5fs_5fmode_5fwith_5frange_113',['ets_listen_s_mode_with_range',['../group__doc__module__tag__dll.html#ga418a96b6e9e74aa0c06dd15466bcdfa9',1,'oc_python.h']]],
+  ['ets_5fmain_114',['ets_main',['../group__doc__module__tag__dll.html#gaebcd5dbc03a972b942719459d9037631',1,'oc_python.h']]],
+  ['ets_5fpoll_115',['ets_poll',['../group__doc__module__tag__dll.html#gad9b021409f0222487e959c9dd489cfe1',1,'oc_python.h']]],
+  ['ets_5freset_5fets_116',['ets_reset_ets',['../group__doc__module__tag__dll.html#gadac5cde6e869f3ed995f7fe7e72cd5e7',1,'oc_python.h']]],
+  ['ets_5fset_5fmax_5fapp_5fdata_5fsize_117',['ets_set_max_app_data_size',['../group__doc__module__tag__dll.html#ga151f57f396eb86b871aab7775125e615',1,'oc_python.h']]],
+  ['ets_5fstart_118',['ets_start',['../group__doc__module__tag__dll.html#gab6ecbe3630c9d99de7dd1212cd848c0b',1,'oc_python.h']]],
+  ['ets_5fstop_119',['ets_stop',['../group__doc__module__tag__dll.html#gad707ff1d62967c9447da28e3f1600837',1,'oc_python.h']]],
+  ['exit_5fimpl_120',['exit_impl',['../oc__assert_8h.html#a1bce540d44065a67fd8136c1033bee82',1,'oc_assert.h']]]
 ];

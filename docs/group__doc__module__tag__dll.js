@@ -33,6 +33,8 @@ var group__doc__module__tag__dll =
     [ "ets_linkformat_get", "group__doc__module__tag__dll.html#gabefc11f3ffe10508de16163136255fb8", null ],
     [ "ets_linkformat_get_with_context_id", "group__doc__module__tag__dll.html#ga3a12c289152c4442c57ed4d2cb4b4aa3", null ],
     [ "ets_listen_s_mode", "group__doc__module__tag__dll.html#gacbfefc90ee1048a6d87c8970dc7de783", null ],
+    [ "ets_listen_s_mode_single", "group__doc__module__tag__dll.html#ga5d86e0e7cd4f48e2053eac0c22b95ce5", null ],
+    [ "ets_listen_s_mode_with_range", "group__doc__module__tag__dll.html#ga418a96b6e9e74aa0c06dd15466bcdfa9", null ],
     [ "ets_main", "group__doc__module__tag__dll.html#gaebcd5dbc03a972b942719459d9037631", null ],
     [ "ets_poll", "group__doc__module__tag__dll.html#gad9b021409f0222487e959c9dd489cfe1", null ],
     [ "ets_reset_ets", "group__doc__module__tag__dll.html#gadac5cde6e869f3ed995f7fe7e72cd5e7", null ],
