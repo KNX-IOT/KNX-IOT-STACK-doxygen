@@ -38,5 +38,8 @@ var searchData=
   ['ets_5fset_5fmax_5fapp_5fdata_5fsize_117',['ets_set_max_app_data_size',['../group__doc__module__tag__dll.html#ga151f57f396eb86b871aab7775125e615',1,'oc_python.h']]],
   ['ets_5fstart_118',['ets_start',['../group__doc__module__tag__dll.html#gab6ecbe3630c9d99de7dd1212cd848c0b',1,'oc_python.h']]],
   ['ets_5fstop_119',['ets_stop',['../group__doc__module__tag__dll.html#gad707ff1d62967c9447da28e3f1600837',1,'oc_python.h']]],
-  ['exit_5fimpl_120',['exit_impl',['../oc__assert_8h.html#a1bce540d44065a67fd8136c1033bee82',1,'oc_assert.h']]]
+  ['ets_5funlisten_5fs_5fmode_120',['ets_unlisten_s_mode',['../group__doc__module__tag__dll.html#ga7725f2a06ffd6efc9c90f73088b772b7',1,'oc_python.h']]],
+  ['ets_5funlisten_5fs_5fmode_5fsingle_121',['ets_unlisten_s_mode_single',['../group__doc__module__tag__dll.html#gadc0758cf7024d4d2a88bbc656ab5176c',1,'oc_python.h']]],
+  ['ets_5funlisten_5fs_5fmode_5fwith_5frange_122',['ets_unlisten_s_mode_with_range',['../group__doc__module__tag__dll.html#gad0d040bfdd61dab4353c71d3b17414e9',1,'oc_python.h']]],
+  ['exit_5fimpl_123',['exit_impl',['../oc__assert_8h.html#a1bce540d44065a67fd8136c1033bee82',1,'oc_assert.h']]]
 ];

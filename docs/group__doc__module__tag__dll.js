@@ -40,5 +40,8 @@ var group__doc__module__tag__dll =
     [ "ets_reset_ets", "group__doc__module__tag__dll.html#gadac5cde6e869f3ed995f7fe7e72cd5e7", null ],
     [ "ets_set_max_app_data_size", "group__doc__module__tag__dll.html#ga151f57f396eb86b871aab7775125e615", null ],
     [ "ets_start", "group__doc__module__tag__dll.html#gab6ecbe3630c9d99de7dd1212cd848c0b", null ],
-    [ "ets_stop", "group__doc__module__tag__dll.html#gad707ff1d62967c9447da28e3f1600837", null ]
+    [ "ets_stop", "group__doc__module__tag__dll.html#gad707ff1d62967c9447da28e3f1600837", null ],
+    [ "ets_unlisten_s_mode", "group__doc__module__tag__dll.html#ga7725f2a06ffd6efc9c90f73088b772b7", null ],
+    [ "ets_unlisten_s_mode_single", "group__doc__module__tag__dll.html#gadc0758cf7024d4d2a88bbc656ab5176c", null ],
+    [ "ets_unlisten_s_mode_with_range", "group__doc__module__tag__dll.html#gad0d040bfdd61dab4353c71d3b17414e9", null ]
 ];

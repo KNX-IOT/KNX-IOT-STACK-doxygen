@@ -228,9 +228,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a3bc72047648ad8448a75471899e7bcec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a3bc72047648ad8448a75471899e7bcec">oc_register_group_multicasts</a> ()</td></tr>
 <tr class="memdesc:a3bc72047648ad8448a75471899e7bcec"><td class="mdescLeft">&#160;</td><td class="mdescRight">register the group entries in the Group Object table as multi cast receive addresses  <a href="oc__knx__fp_8h.html#a3bc72047648ad8448a75471899e7bcec">More...</a><br /></td></tr>
 <tr class="separator:a3bc72047648ad8448a75471899e7bcec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e8c55aefb73eecf9793464999ce7405"><td class="memItemLeft" align="right" valign="top"><a id="a5e8c55aefb73eecf9793464999ce7405"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>subscribe_group_to_multicast</b> (int group_nr, int iid, int scope)</td></tr>
+<tr class="memitem:a5e8c55aefb73eecf9793464999ce7405"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a5e8c55aefb73eecf9793464999ce7405">subscribe_group_to_multicast</a> (int group_nr, int iid, int scope)</td></tr>
+<tr class="memdesc:a5e8c55aefb73eecf9793464999ce7405"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscribe to a multicast address, defined by group number and installation id  <a href="oc__knx__fp_8h.html#a5e8c55aefb73eecf9793464999ce7405">More...</a><br /></td></tr>
 <tr class="separator:a5e8c55aefb73eecf9793464999ce7405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f67014bddc720126fb75cb19f83c676"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a4f67014bddc720126fb75cb19f83c676">unsubscribe_group_to_multicast</a> (int group_nr, int iid, int scope)</td></tr>
+<tr class="memdesc:a4f67014bddc720126fb75cb19f83c676"><td class="mdescLeft">&#160;</td><td class="mdescRight">unsubscribe to a multicast address, defined by group number and installation id  <a href="oc__knx__fp_8h.html#a4f67014bddc720126fb75cb19f83c676">More...</a><br /></td></tr>
+<tr class="separator:a4f67014bddc720126fb75cb19f83c676"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a18ba0acc39745546d474e585ee82431b"></a>
@@ -1350,6 +1353,96 @@ false is not part of the recipient entry </dd></dl>
 
 </div>
 </div>
+<a id="a5e8c55aefb73eecf9793464999ce7405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e8c55aefb73eecf9793464999ce7405">&#9670;&nbsp;</a></span>subscribe_group_to_multicast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void subscribe_group_to_multicast </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>group_nr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scope</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>subscribe to a multicast address, defined by group number and installation id </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__knx__fp_8h.html#a4f67014bddc720126fb75cb19f83c676" title="unsubscribe to a multicast address, defined by group number and installation id">unsubscribe_group_to_multicast</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group_nr</td><td>the group number (address) </td></tr>
+    <tr><td class="paramname">iid</td><td>the installation id </td></tr>
+    <tr><td class="paramname">scope</td><td>the address scope </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4f67014bddc720126fb75cb19f83c676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f67014bddc720126fb75cb19f83c676">&#9670;&nbsp;</a></span>unsubscribe_group_to_multicast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unsubscribe_group_to_multicast </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>group_nr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scope</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>unsubscribe to a multicast address, defined by group number and installation id </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__knx__fp_8h.html#a5e8c55aefb73eecf9793464999ce7405" title="subscribe to a multicast address, defined by group number and installation id">subscribe_group_to_multicast</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group_nr</td><td>the group number (address) </td></tr>
+    <tr><td class="paramname">iid</td><td>the installation id </td></tr>
+    <tr><td class="paramname">scope</td><td>the address scope </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5ba"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5ba">oc_cflag_mask_t</a></div><div class="ttdeci">oc_cflag_mask_t</div><div class="ttdoc">cflag masks</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00034">oc_knx_fp.h:34</a></div></div>
@@ -1364,7 +1457,7 @@ false is not part of the recipient entry </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__fp_8h.html">oc_knx_fp.h</a></li>
-    <li class="footer">Generated on Wed May 4 2022 09:40:37 for KNX IoT by
+    <li class="footer">Generated on Wed May 4 2022 11:58:24 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

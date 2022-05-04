@@ -225,6 +225,15 @@ kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><b>ets_link
 <tr class="memitem:gad707ff1d62967c9447da28e3f1600837"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#gad707ff1d62967c9447da28e3f1600837">ets_stop</a> (void)</td></tr>
 <tr class="memdesc:gad707ff1d62967c9447da28e3f1600837"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop the ETS server e.g.  <a href="group__doc__module__tag__dll.html#gad707ff1d62967c9447da28e3f1600837">More...</a><br /></td></tr>
 <tr class="separator:gad707ff1d62967c9447da28e3f1600837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7725f2a06ffd6efc9c90f73088b772b7"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#ga7725f2a06ffd6efc9c90f73088b772b7">ets_unlisten_s_mode</a> (int scope, int ga_max, int iid)</td></tr>
+<tr class="memdesc:ga7725f2a06ffd6efc9c90f73088b772b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">configure the stack to stop listing to group addresses.  <a href="group__doc__module__tag__dll.html#ga7725f2a06ffd6efc9c90f73088b772b7">More...</a><br /></td></tr>
+<tr class="separator:ga7725f2a06ffd6efc9c90f73088b772b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc0758cf7024d4d2a88bbc656ab5176c"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#gadc0758cf7024d4d2a88bbc656ab5176c">ets_unlisten_s_mode_single</a> (int scope, int ga, int iid)</td></tr>
+<tr class="memdesc:gadc0758cf7024d4d2a88bbc656ab5176c"><td class="mdescLeft">&#160;</td><td class="mdescRight">configure the stack to stop listing to a specific group address.  <a href="group__doc__module__tag__dll.html#gadc0758cf7024d4d2a88bbc656ab5176c">More...</a><br /></td></tr>
+<tr class="separator:gadc0758cf7024d4d2a88bbc656ab5176c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0d040bfdd61dab4353c71d3b17414e9"><td class="memItemLeft" align="right" valign="top">kisCS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__dll.html#gad0d040bfdd61dab4353c71d3b17414e9">ets_unlisten_s_mode_with_range</a> (int scope, int ga_min, int ga_max, int iid)</td></tr>
+<tr class="memdesc:gad0d040bfdd61dab4353c71d3b17414e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">configure the stack to stop listing to group addresses.  <a href="group__doc__module__tag__dll.html#gad0d040bfdd61dab4353c71d3b17414e9">More...</a><br /></td></tr>
+<tr class="separator:gad0d040bfdd61dab4353c71d3b17414e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Group of exported functions, so that these functions can be used with a DLL or shared object. </p>
@@ -1593,7 +1602,13 @@ ets_linkformat_get_unsecured </dd>
 </ul>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__dll.html#ga418a96b6e9e74aa0c06dd15466bcdfa9" title="configure the stack to listen to group addresses.">ets_listen_s_mode_with_range</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__dll.html#ga5d86e0e7cd4f48e2053eac0c22b95ce5" title="configure the stack to listen to a specific group address.">ets_listen_s_mode_single</a></dd></dl>
+<a class="el" href="group__doc__module__tag__dll.html#ga5d86e0e7cd4f48e2053eac0c22b95ce5" title="configure the stack to listen to a specific group address.">ets_listen_s_mode_single</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#ga7725f2a06ffd6efc9c90f73088b772b7" title="configure the stack to stop listing to group addresses.">ets_unlisten_s_mode</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#gad0d040bfdd61dab4353c71d3b17414e9" title="configure the stack to stop listing to group addresses.">ets_unlisten_s_mode_with_range</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#gadc0758cf7024d4d2a88bbc656ab5176c" title="configure the stack to stop listing to a specific group address.">ets_unlisten_s_mode_single</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope</td><td>the multicast scope </td></tr>
@@ -1646,7 +1661,13 @@ ets_linkformat_get_unsecured </dd>
 </ul>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__dll.html#ga418a96b6e9e74aa0c06dd15466bcdfa9" title="configure the stack to listen to group addresses.">ets_listen_s_mode_with_range</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__dll.html#gacbfefc90ee1048a6d87c8970dc7de783" title="configure the stack to listen to group addresses.">ets_listen_s_mode</a></dd></dl>
+<a class="el" href="group__doc__module__tag__dll.html#gacbfefc90ee1048a6d87c8970dc7de783" title="configure the stack to listen to group addresses.">ets_listen_s_mode</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#ga7725f2a06ffd6efc9c90f73088b772b7" title="configure the stack to stop listing to group addresses.">ets_unlisten_s_mode</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#gad0d040bfdd61dab4353c71d3b17414e9" title="configure the stack to stop listing to group addresses.">ets_unlisten_s_mode_with_range</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#gadc0758cf7024d4d2a88bbc656ab5176c" title="configure the stack to stop listing to a specific group address.">ets_unlisten_s_mode_single</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope</td><td>the multicast scope </td></tr>
@@ -1705,7 +1726,13 @@ ets_linkformat_get_unsecured </dd>
 </ul>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__dll.html#gacbfefc90ee1048a6d87c8970dc7de783" title="configure the stack to listen to group addresses.">ets_listen_s_mode</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__dll.html#ga5d86e0e7cd4f48e2053eac0c22b95ce5" title="configure the stack to listen to a specific group address.">ets_listen_s_mode_single</a></dd></dl>
+<a class="el" href="group__doc__module__tag__dll.html#ga5d86e0e7cd4f48e2053eac0c22b95ce5" title="configure the stack to listen to a specific group address.">ets_listen_s_mode_single</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#ga7725f2a06ffd6efc9c90f73088b772b7" title="configure the stack to stop listing to group addresses.">ets_unlisten_s_mode</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#gad0d040bfdd61dab4353c71d3b17414e9" title="configure the stack to stop listing to group addresses.">ets_unlisten_s_mode_with_range</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#gadc0758cf7024d4d2a88bbc656ab5176c" title="configure the stack to stop listing to a specific group address.">ets_unlisten_s_mode_single</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope</td><td>the multicast scope </td></tr>
@@ -1870,6 +1897,190 @@ ets_linkformat_get_unsecured </dd>
 
 </div>
 </div>
+<a id="ga7725f2a06ffd6efc9c90f73088b772b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7725f2a06ffd6efc9c90f73088b772b7">&#9670;&nbsp;</a></span>ets_unlisten_s_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kisCS_EXPORT void ets_unlisten_s_mode </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scope</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ga_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>configure the stack to stop listing to group addresses. </p>
+<p>the group addresses for s-mode commands are defined per:</p><ul>
+<li>scope (2 local, 5 site local)</li>
+<li>ga_max, starting from group address 1.</li>
+<li>iid, installation id</li>
+</ul>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__dll.html#gacbfefc90ee1048a6d87c8970dc7de783" title="configure the stack to listen to group addresses.">ets_listen_s_mode</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#ga418a96b6e9e74aa0c06dd15466bcdfa9" title="configure the stack to listen to group addresses.">ets_listen_s_mode_with_range</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#ga5d86e0e7cd4f48e2053eac0c22b95ce5" title="configure the stack to listen to a specific group address.">ets_listen_s_mode_single</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#gad0d040bfdd61dab4353c71d3b17414e9" title="configure the stack to stop listing to group addresses.">ets_unlisten_s_mode_with_range</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#gadc0758cf7024d4d2a88bbc656ab5176c" title="configure the stack to stop listing to a specific group address.">ets_unlisten_s_mode_single</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scope</td><td>the multicast scope </td></tr>
+    <tr><td class="paramname">ga_max</td><td>the group address maximum, e.g. all values between 1 and ga_max will be registered </td></tr>
+    <tr><td class="paramname">iid</td><td>the installation identifier </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>kisCS_EXPORT </dd></dl>
+
+</div>
+</div>
+<a id="gadc0758cf7024d4d2a88bbc656ab5176c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc0758cf7024d4d2a88bbc656ab5176c">&#9670;&nbsp;</a></span>ets_unlisten_s_mode_single()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kisCS_EXPORT void ets_unlisten_s_mode_single </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scope</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ga</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>configure the stack to stop listing to a specific group address. </p>
+<p>the group addresses for s-mode commands are defined per:</p><ul>
+<li>scope (2 local, 5 site local)</li>
+<li>ga, the group address</li>
+<li>iid, installation id</li>
+</ul>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__dll.html#gacbfefc90ee1048a6d87c8970dc7de783" title="configure the stack to listen to group addresses.">ets_listen_s_mode</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#ga418a96b6e9e74aa0c06dd15466bcdfa9" title="configure the stack to listen to group addresses.">ets_listen_s_mode_with_range</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#ga5d86e0e7cd4f48e2053eac0c22b95ce5" title="configure the stack to listen to a specific group address.">ets_listen_s_mode_single</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#ga7725f2a06ffd6efc9c90f73088b772b7" title="configure the stack to stop listing to group addresses.">ets_unlisten_s_mode</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#gad0d040bfdd61dab4353c71d3b17414e9" title="configure the stack to stop listing to group addresses.">ets_unlisten_s_mode_with_range</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scope</td><td>the multicast scope </td></tr>
+    <tr><td class="paramname">ga</td><td>the group address </td></tr>
+    <tr><td class="paramname">iid</td><td>the installation identifier </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>kisCS_EXPORT </dd></dl>
+
+</div>
+</div>
+<a id="gad0d040bfdd61dab4353c71d3b17414e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad0d040bfdd61dab4353c71d3b17414e9">&#9670;&nbsp;</a></span>ets_unlisten_s_mode_with_range()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">kisCS_EXPORT void ets_unlisten_s_mode_with_range </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scope</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ga_min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ga_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>configure the stack to stop listing to group addresses. </p>
+<p>the group addresses for s-mode commands are defined per:</p><ul>
+<li>scope (2 local, 5 site local)</li>
+<li>ga_max, starting from group address ga_min.</li>
+<li>iid, installation id</li>
+</ul>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__dll.html#gacbfefc90ee1048a6d87c8970dc7de783" title="configure the stack to listen to group addresses.">ets_listen_s_mode</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#ga418a96b6e9e74aa0c06dd15466bcdfa9" title="configure the stack to listen to group addresses.">ets_listen_s_mode_with_range</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#ga5d86e0e7cd4f48e2053eac0c22b95ce5" title="configure the stack to listen to a specific group address.">ets_listen_s_mode_single</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#ga7725f2a06ffd6efc9c90f73088b772b7" title="configure the stack to stop listing to group addresses.">ets_unlisten_s_mode</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__dll.html#gadc0758cf7024d4d2a88bbc656ab5176c" title="configure the stack to stop listing to a specific group address.">ets_unlisten_s_mode_single</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scope</td><td>the multicast scope </td></tr>
+    <tr><td class="paramname">ga_min</td><td>the group address minimum </td></tr>
+    <tr><td class="paramname">ga_max</td><td>the group address maximum, e.g. all values between 1 and ga_max will be registered </td></tr>
+    <tr><td class="paramname">iid</td><td>the installation identifier </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>kisCS_EXPORT </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__doc__module__tag__dll_html_gad9b021409f0222487e959c9dd489cfe1"><div class="ttname"><a href="group__doc__module__tag__dll.html#gad9b021409f0222487e959c9dd489cfe1">ets_poll</a></div><div class="ttdeci">kisCS_EXPORT int ets_poll(void)</div><div class="ttdoc">ets poll e.g.</div></div>
@@ -1878,7 +2089,7 @@ ets_linkformat_get_unsecured </dd>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 4 2022 09:40:37 for KNX IoT by
+    <li class="footer">Generated on Wed May 4 2022 11:58:24 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
