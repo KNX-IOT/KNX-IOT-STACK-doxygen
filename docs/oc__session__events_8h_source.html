@@ -118,33 +118,33 @@ $(document).ready(function(){initNavTree('oc__session__events_8h_source.html',''
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367a2e40e6d7ba847f7230352c35ecbc443b">   36</a></span>&#160;  <a class="code" href="oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367a2e40e6d7ba847f7230352c35ecbc443b">OC_SESSION_DISCONNECTED</a> </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <a class="code" href="oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367">oc_session_state_t</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="oc__session__events_8h.html#a8ae3215775705d84e55a1a623c8267c9">   45</a></span>&#160;<span class="keyword">typedef</span> void (*<a class="code" href="oc__session__events_8h.html#a8ae3215775705d84e55a1a623c8267c9">session_event_handler_t</a>)(<span class="keyword">const</span> <a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                        <a class="code" href="oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367">oc_session_state_t</a> state);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structoc__session__event__cb.html">   51</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structoc__session__event__cb.html">oc_session_event_cb</a></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">struct </span><a class="code" href="structoc__session__event__cb.html">oc_session_event_cb</a> *next;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="oc__session__events_8h.html#a8ae3215775705d84e55a1a623c8267c9">session_event_handler_t</a> handler;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} <a class="code" href="oc__session__events_8h.html#aad6ba87630c5a88d464e7adb8666c069">oc_session_event_cb_t</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<a class="code" href="oc__network__events_8h.html#a8301388a834b55d750add3c66f79e7cd">OC_PROCESS_NAME</a>(oc_session_events);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__session__events_8h.html#a2ad3fc10347006bf6ae73a8900510cfe">oc_session_start_event</a>(<a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__session__events_8h.html#a0683f8f6329708f3afa0240670d7d144">oc_session_end_event</a>(<a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__session__events_8h.html#a588463b2d953a3d1820a6f72666ff11d">oc_session_events_set_event_delay</a>(<span class="keywordtype">int</span> secs);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_SESSION_EVENTS_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="oc__session__events_8h.html#a8ae3215775705d84e55a1a623c8267c9">   46</a></span>&#160;<span class="keyword">typedef</span> void (*<a class="code" href="oc__session__events_8h.html#a8ae3215775705d84e55a1a623c8267c9">session_event_handler_t</a>)(<span class="keyword">const</span> <a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                        <a class="code" href="oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367">oc_session_state_t</a> state);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="structoc__session__event__cb.html">   52</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structoc__session__event__cb.html">oc_session_event_cb</a></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">struct </span><a class="code" href="structoc__session__event__cb.html">oc_session_event_cb</a> *next;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="oc__session__events_8h.html#a8ae3215775705d84e55a1a623c8267c9">session_event_handler_t</a> handler;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <a class="code" href="oc__session__events_8h.html#aad6ba87630c5a88d464e7adb8666c069">oc_session_event_cb_t</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<a class="code" href="oc__network__events_8h.html#a8301388a834b55d750add3c66f79e7cd">OC_PROCESS_NAME</a>(oc_session_events);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__session__events_8h.html#a2ad3fc10347006bf6ae73a8900510cfe">oc_session_start_event</a>(<a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__session__events_8h.html#a0683f8f6329708f3afa0240670d7d144">oc_session_end_event</a>(<a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__session__events_8h.html#a588463b2d953a3d1820a6f72666ff11d">oc_session_events_set_event_delay</a>(<span class="keywordtype">int</span> secs);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_SESSION_EVENTS_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aoc__session__events_8h_html_ac8a484b47be856384dd3d86390f04367a2e40e6d7ba847f7230352c35ecbc443b"><div class="ttname"><a href="oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367a2e40e6d7ba847f7230352c35ecbc443b">OC_SESSION_DISCONNECTED</a></div><div class="ttdeci">@ OC_SESSION_DISCONNECTED</div><div class="ttdoc">session disconnected</div><div class="ttdef"><b>Definition:</b> <a href="oc__session__events_8h_source.html#l00036">oc_session_events.h:36</a></div></div>
 <div class="ttc" id="aoc__session__events_8h_html_aad6ba87630c5a88d464e7adb8666c069"><div class="ttname"><a href="oc__session__events_8h.html#aad6ba87630c5a88d464e7adb8666c069">oc_session_event_cb_t</a></div><div class="ttdeci">struct oc_session_event_cb oc_session_event_cb_t</div><div class="ttdoc">Structure to manage session event handler list.</div></div>
-<div class="ttc" id="aoc__session__events_8h_html_a8ae3215775705d84e55a1a623c8267c9"><div class="ttname"><a href="oc__session__events_8h.html#a8ae3215775705d84e55a1a623c8267c9">session_event_handler_t</a></div><div class="ttdeci">void(* session_event_handler_t)(const oc_endpoint_t *endpoint, oc_session_state_t state)</div><div class="ttdoc">Callback function to pass the session event infomation to App.</div><div class="ttdef"><b>Definition:</b> <a href="oc__session__events_8h_source.html#l00045">oc_session_events.h:45</a></div></div>
+<div class="ttc" id="aoc__session__events_8h_html_a8ae3215775705d84e55a1a623c8267c9"><div class="ttname"><a href="oc__session__events_8h.html#a8ae3215775705d84e55a1a623c8267c9">session_event_handler_t</a></div><div class="ttdeci">void(* session_event_handler_t)(const oc_endpoint_t *endpoint, oc_session_state_t state)</div><div class="ttdoc">Callback function to pass the session event information to the Application.</div><div class="ttdef"><b>Definition:</b> <a href="oc__session__events_8h_source.html#l00046">oc_session_events.h:46</a></div></div>
 <div class="ttc" id="aoc__session__events_8h_html_a2ad3fc10347006bf6ae73a8900510cfe"><div class="ttname"><a href="oc__session__events_8h.html#a2ad3fc10347006bf6ae73a8900510cfe">oc_session_start_event</a></div><div class="ttdeci">void oc_session_start_event(oc_endpoint_t *endpoint)</div><div class="ttdoc">session start event</div></div>
 <div class="ttc" id="aoc__session__events_8h_html_a588463b2d953a3d1820a6f72666ff11d"><div class="ttname"><a href="oc__session__events_8h.html#a588463b2d953a3d1820a6f72666ff11d">oc_session_events_set_event_delay</a></div><div class="ttdeci">void oc_session_events_set_event_delay(int secs)</div><div class="ttdoc">set delay for events</div></div>
 <div class="ttc" id="aoc__session__events_8h_html_a0683f8f6329708f3afa0240670d7d144"><div class="ttname"><a href="oc__session__events_8h.html#a0683f8f6329708f3afa0240670d7d144">oc_session_end_event</a></div><div class="ttdeci">void oc_session_end_event(oc_endpoint_t *endpoint)</div><div class="ttdoc">session end event</div></div>
@@ -153,13 +153,13 @@ $(document).ready(function(){initNavTree('oc__session__events_8h_source.html',''
 <div class="ttc" id="aoc__session__events_8h_html_ac8a484b47be856384dd3d86390f04367adabda0024c60381a2685003932beb6eb"><div class="ttname"><a href="oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367adabda0024c60381a2685003932beb6eb">OC_SESSION_CONNECTED</a></div><div class="ttdeci">@ OC_SESSION_CONNECTED</div><div class="ttdoc">session connected</div><div class="ttdef"><b>Definition:</b> <a href="oc__session__events_8h_source.html#l00035">oc_session_events.h:35</a></div></div>
 <div class="ttc" id="aoc__network__events__mutex_8h_html"><div class="ttname"><a href="oc__network__events__mutex_8h.html">oc_network_events_mutex.h</a></div></div>
 <div class="ttc" id="aoc__session__events_8h_html_ac8a484b47be856384dd3d86390f04367"><div class="ttname"><a href="oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367">oc_session_state_t</a></div><div class="ttdeci">oc_session_state_t</div><div class="ttdoc">session states</div><div class="ttdef"><b>Definition:</b> <a href="oc__session__events_8h_source.html#l00034">oc_session_events.h:34</a></div></div>
-<div class="ttc" id="astructoc__session__event__cb_html"><div class="ttname"><a href="structoc__session__event__cb.html">oc_session_event_cb</a></div><div class="ttdoc">Structure to manage session event handler list.</div><div class="ttdef"><b>Definition:</b> <a href="oc__session__events_8h_source.html#l00051">oc_session_events.h:51</a></div></div>
+<div class="ttc" id="astructoc__session__event__cb_html"><div class="ttname"><a href="structoc__session__event__cb.html">oc_session_event_cb</a></div><div class="ttdoc">Structure to manage session event handler list.</div><div class="ttdef"><b>Definition:</b> <a href="oc__session__events_8h_source.html#l00052">oc_session_events.h:52</a></div></div>
 <div class="ttc" id="astructoc__endpoint__t_html"><div class="ttname"><a href="structoc__endpoint__t.html">oc_endpoint_t</a></div><div class="ttdoc">the endpoint information</div><div class="ttdef"><b>Definition:</b> <a href="oc__endpoint_8h_source.html#l00075">oc_endpoint.h:75</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__session__events_8h.html">oc_session_events.h</a></li>
-    <li class="footer">Generated on Wed May 4 2022 11:58:24 for KNX IoT by
+    <li class="footer">Generated on Wed May 4 2022 13:21:35 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
