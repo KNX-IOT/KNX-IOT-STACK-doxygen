@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['changedcb_1620',['changedCB',['../group__doc__module__tag__dll.html#ga3c244fe48d26a6d0f9e9471f9cfd54de',1,'oc_python.h']]],
-  ['clientcb_1621',['clientCB',['../group__doc__module__tag__dll.html#gaa9a336244aeae12263d469ebc7d058ab',1,'oc_python.h']]]
+  ['interface_5fevent_5fhandler_5ft_1535',['interface_event_handler_t',['../oc__network__events_8h.html#acf84b55c3b10e0a5a7cfff4329008b90',1,'oc_network_events.h']]]
 ];
