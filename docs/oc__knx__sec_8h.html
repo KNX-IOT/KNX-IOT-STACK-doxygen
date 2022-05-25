@@ -128,6 +128,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6efbbab99c96f259e24a60847d513cc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#a6efbbab99c96f259e24a60847d513cc8">oc_core_find_at_entry_with_context_id</a> (size_t device_index, char *context_id)</td></tr>
 <tr class="memdesc:a6efbbab99c96f259e24a60847d513cc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">find the entry with context_id as id  <a href="oc__knx__sec_8h.html#a6efbbab99c96f259e24a60847d513cc8">More...</a><br /></td></tr>
 <tr class="separator:a6efbbab99c96f259e24a60847d513cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183a382321a31028a34b6c4ff0791544"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#a183a382321a31028a34b6c4ff0791544">oc_core_get_at_table_size</a> ()</td></tr>
+<tr class="memdesc:a183a382321a31028a34b6c4ff0791544"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the size (amount of total entries) of the auth / at table  <a href="oc__knx__sec_8h.html#a183a382321a31028a34b6c4ff0791544">More...</a><br /></td></tr>
+<tr class="separator:a183a382321a31028a34b6c4ff0791544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa73ce55713251b47ec6ba80abfe1361f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#aa73ce55713251b47ec6ba80abfe1361f">oc_core_set_at_table</a> (size_t device_index, int index, <a class="el" href="structoc__auth__at__t.html">oc_auth_at_t</a> entry)</td></tr>
 <tr class="memdesc:aa73ce55713251b47ec6ba80abfe1361f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set an entry in the auth/at table  <a href="oc__knx__sec_8h.html#aa73ce55713251b47ec6ba80abfe1361f">More...</a><br /></td></tr>
 <tr class="separator:aa73ce55713251b47ec6ba80abfe1361f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -379,6 +382,26 @@ int &gt;=0 : index to place entry </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>int -1 : no entry with that name </dd>
 <dd>
 int &gt;=0 : entry found </dd></dl>
+
+</div>
+</div>
+<a id="a183a382321a31028a34b6c4ff0791544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a183a382321a31028a34b6c4ff0791544">&#9670;&nbsp;</a></span>oc_core_get_at_table_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_core_get_at_table_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns the size (amount of total entries) of the auth / at table </p>
+<dl class="section return"><dt>Returns</dt><dd>the allocated amount of entries of the auth at table </dd></dl>
 
 </div>
 </div>
@@ -842,7 +865,7 @@ false does not have access </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__sec_8h.html">oc_knx_sec.h</a></li>
-    <li class="footer">Generated on Wed May 25 2022 14:56:58 for KNX IoT by
+    <li class="footer">Generated on Wed May 25 2022 15:06:16 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

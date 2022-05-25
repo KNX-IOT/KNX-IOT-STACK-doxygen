@@ -143,48 +143,51 @@ $(document).ready(function(){initNavTree('oc__knx__sec_8h_source.html',''); init
 <div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="structoc__auth__at__t.html#a9316c816d85fb905550b133d9e4bb55b">  143</a></span>&#160;  int64_t *<a class="code" href="structoc__auth__at__t.html#a9316c816d85fb905550b133d9e4bb55b">ga</a>; </div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;} <a class="code" href="oc__knx__sec_8h.html#ac794c3bf74dc9db261273aee5e97d1b6">oc_auth_at_t</a>;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oc__knx__sec_8h.html#aa73ce55713251b47ec6ba80abfe1361f">oc_core_set_at_table</a>(<span class="keywordtype">size_t</span> device_index, <span class="keywordtype">int</span> index, <a class="code" href="structoc__auth__at__t.html">oc_auth_at_t</a> entry);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oc__knx__sec_8h.html#a6efbbab99c96f259e24a60847d513cc8">oc_core_find_at_entry_with_context_id</a>(<span class="keywordtype">size_t</span> device_index,</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                                          <span class="keywordtype">char</span> *context_id);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oc__knx__sec_8h.html#aab01c868cfc9d5a6af84d9308e0debfd">oc_core_find_at_entry_empty_slot</a>(<span class="keywordtype">size_t</span> device_index);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__sec_8h.html#ad5c6ab3d5c41303a0758ff0de59d2fe5">oc_oscore_set_auth</a>(<span class="keywordtype">char</span> *serial_number, <span class="keywordtype">char</span> *context_id,</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                        uint8_t *shared_key, <span class="keywordtype">int</span> shared_key_size);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<a class="code" href="structoc__auth__at__t.html">oc_auth_at_t</a> *<a class="code" href="oc__knx__sec_8h.html#a0aa129153ff6470692a09dcb6b81350f">oc_get_auth_at_entry</a>(<span class="keywordtype">size_t</span> device_index, <span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__sec_8h.html#aa314cc4b814d20bfe60564a2aa670667">oc_print_auth_at_entry</a>(<span class="keywordtype">size_t</span> device_index, <span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__sec_8h.html#afaf7c65ba5a0900511303629bfe41582">oc_delete_at_table</a>(<span class="keywordtype">size_t</span> device_index);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;uint64_t <a class="code" href="oc__knx__sec_8h.html#abffee6b23a4b6efe2466a6476dd31da3">oc_oscore_get_rplwdo</a>();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oc__knx__sec_8h.html#a183a382321a31028a34b6c4ff0791544">oc_core_get_at_table_size</a>();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oc__knx__sec_8h.html#aa73ce55713251b47ec6ba80abfe1361f">oc_core_set_at_table</a>(<span class="keywordtype">size_t</span> device_index, <span class="keywordtype">int</span> index, <a class="code" href="structoc__auth__at__t.html">oc_auth_at_t</a> entry);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oc__knx__sec_8h.html#a6efbbab99c96f259e24a60847d513cc8">oc_core_find_at_entry_with_context_id</a>(<span class="keywordtype">size_t</span> device_index,</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                                          <span class="keywordtype">char</span> *context_id);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oc__knx__sec_8h.html#aab01c868cfc9d5a6af84d9308e0debfd">oc_core_find_at_entry_empty_slot</a>(<span class="keywordtype">size_t</span> device_index);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__sec_8h.html#ad5c6ab3d5c41303a0758ff0de59d2fe5">oc_oscore_set_auth</a>(<span class="keywordtype">char</span> *serial_number, <span class="keywordtype">char</span> *context_id,</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                        uint8_t *shared_key, <span class="keywordtype">int</span> shared_key_size);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<a class="code" href="structoc__auth__at__t.html">oc_auth_at_t</a> *<a class="code" href="oc__knx__sec_8h.html#a0aa129153ff6470692a09dcb6b81350f">oc_get_auth_at_entry</a>(<span class="keywordtype">size_t</span> device_index, <span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__sec_8h.html#aa314cc4b814d20bfe60564a2aa670667">oc_print_auth_at_entry</a>(<span class="keywordtype">size_t</span> device_index, <span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__sec_8h.html#afaf7c65ba5a0900511303629bfe41582">oc_delete_at_table</a>(<span class="keywordtype">size_t</span> device_index);</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;uint64_t <a class="code" href="oc__knx__sec_8h.html#ab0ef8b2933a13d55f75165af73c872a3">oc_oscore_get_osndelay</a>();</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;uint64_t <a class="code" href="oc__knx__sec_8h.html#abffee6b23a4b6efe2466a6476dd31da3">oc_oscore_get_rplwdo</a>();</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__sec_8h.html#a7132b91e1bc8ff48c4c1dbd7d66b84d8">oc_create_knx_sec_resources</a>(<span class="keywordtype">size_t</span> device);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__sec_8h.html#a4e19839b84cf53291f4abd984bc3fdf9">oc_init_oscore</a>(<span class="keywordtype">size_t</span> device_index);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;uint64_t <a class="code" href="oc__knx__sec_8h.html#ab0ef8b2933a13d55f75165af73c872a3">oc_oscore_get_osndelay</a>();</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__sec_8h.html#a7132b91e1bc8ff48c4c1dbd7d66b84d8">oc_create_knx_sec_resources</a>(<span class="keywordtype">size_t</span> device);</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="oc__knx__sec_8h.html#aeae972d64ca47cf68920b40f90ec5821">oc_knx_contains_interface</a>(<a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> at_interface,</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                               <a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> resource_interface);</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="oc__knx__sec_8h.html#aabdde0a5c02570eff7eead7719fa28a2">oc_if_method_allowed_according_to_mask</a>(<a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask,</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                                            <a class="code" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26">oc_method_t</a> method);</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="oc__knx__sec_8h.html#ae9bf9c46721c4b5c90c013e7e85c9491">oc_knx_sec_check_acl</a>(<a class="code" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26">oc_method_t</a> method, <a class="code" href="structoc__resource__s.html">oc_resource_t</a> *resource,</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                          <a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint);</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;}</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_KNX_SEC_INTERNAL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__sec_8h.html#a4e19839b84cf53291f4abd984bc3fdf9">oc_init_oscore</a>(<span class="keywordtype">size_t</span> device_index);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="oc__knx__sec_8h.html#aeae972d64ca47cf68920b40f90ec5821">oc_knx_contains_interface</a>(<a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> at_interface,</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                               <a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> resource_interface);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="oc__knx__sec_8h.html#aabdde0a5c02570eff7eead7719fa28a2">oc_if_method_allowed_according_to_mask</a>(<a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask,</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                                            <a class="code" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26">oc_method_t</a> method);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="oc__knx__sec_8h.html#ae9bf9c46721c4b5c90c013e7e85c9491">oc_knx_sec_check_acl</a>(<a class="code" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26">oc_method_t</a> method, <a class="code" href="structoc__resource__s.html">oc_resource_t</a> *resource,</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                          <a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;}</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_KNX_SEC_INTERNAL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructoc__auth__at__t_html_ad01081782d7edd1769c6ec1b03895865"><div class="ttname"><a href="structoc__auth__at__t.html#ad01081782d7edd1769c6ec1b03895865">oc_auth_at_t::osc_hkdf</a></div><div class="ttdeci">oc_string_t osc_hkdf</div><div class="ttdoc">(18:4:3) oscore cnf:osc:hkdf (optional)</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__sec_8h_source.html#l00134">oc_knx_sec.h:134</a></div></div>
 <div class="ttc" id="aoc__knx__sec_8h_html_ae9bf9c46721c4b5c90c013e7e85c9491"><div class="ttname"><a href="oc__knx__sec_8h.html#ae9bf9c46721c4b5c90c013e7e85c9491">oc_knx_sec_check_acl</a></div><div class="ttdeci">bool oc_knx_sec_check_acl(oc_method_t method, oc_resource_t *resource, oc_endpoint_t *endpoint)</div><div class="ttdoc">check access control based on acl and resource interfaces</div></div>
+<div class="ttc" id="aoc__knx__sec_8h_html_a183a382321a31028a34b6c4ff0791544"><div class="ttname"><a href="oc__knx__sec_8h.html#a183a382321a31028a34b6c4ff0791544">oc_core_get_at_table_size</a></div><div class="ttdeci">int oc_core_get_at_table_size()</div><div class="ttdoc">returns the size (amount of total entries) of the auth / at table</div></div>
 <div class="ttc" id="aoc__knx__sec_8h_html_a59959db4a8e4a2ca73d5fd720259413baa59d809c61c6d5cfab4a805a622401e6"><div class="ttname"><a href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baa59d809c61c6d5cfab4a805a622401e6">OC_PROFILE_COAP_OSCORE</a></div><div class="ttdeci">@ OC_PROFILE_COAP_OSCORE</div><div class="ttdoc">&quot;coap_oscore&quot;</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__sec_8h_source.html#l00036">oc_knx_sec.h:36</a></div></div>
 <div class="ttc" id="astructoc__auth__at__t_html_ab2cb8047f022fecaa55108e80f6190d9"><div class="ttname"><a href="structoc__auth__at__t.html#ab2cb8047f022fecaa55108e80f6190d9">oc_auth_at_t::aud</a></div><div class="ttdeci">oc_string_t aud</div><div class="ttdoc">(13) audience (for out going requests)</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__sec_8h_source.html#l00128">oc_knx_sec.h:128</a></div></div>
 <div class="ttc" id="aoc__knx__sec_8h_html_a6efbbab99c96f259e24a60847d513cc8"><div class="ttname"><a href="oc__knx__sec_8h.html#a6efbbab99c96f259e24a60847d513cc8">oc_core_find_at_entry_with_context_id</a></div><div class="ttdeci">int oc_core_find_at_entry_with_context_id(size_t device_index, char *context_id)</div><div class="ttdoc">find the entry with context_id as id</div></div>
@@ -229,7 +232,7 @@ $(document).ready(function(){initNavTree('oc__knx__sec_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__sec_8h.html">oc_knx_sec.h</a></li>
-    <li class="footer">Generated on Wed May 25 2022 14:56:58 for KNX IoT by
+    <li class="footer">Generated on Wed May 25 2022 15:06:16 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
