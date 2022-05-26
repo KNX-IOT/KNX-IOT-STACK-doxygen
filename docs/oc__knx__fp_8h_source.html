@@ -207,24 +207,25 @@ $(document).ready(function(){initNavTree('oc__knx__fp_8h_source.html',''); initR
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                                                     <span class="keywordtype">size_t</span> *response_length,</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                                                     <span class="keywordtype">int</span> matches);</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="oc__knx__fp_8h.html#a99e219d26c720ffc5e443ff551ae0646">oc_belongs_href_to_resource</a>(oc_string_t href, <span class="keywordtype">size_t</span> device_index);</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__fp_8h.html#aa5a8ff89c0c6a1d6e1a4c19b59b8cef0">oc_create_knx_fp_resources</a>(<span class="keywordtype">size_t</span> device_index);</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160; </div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__fp_8h.html#a7af5081ac4617424c9b4c766f9bb19d6">oc_free_knx_fp_resources</a>(<span class="keywordtype">size_t</span> device_index);</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> <a class="code" href="oc__knx__fp_8h.html#a60e665e1b7ec44a4288d66e026b3cd2e">oc_create_multicast_group_address</a>(<a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> in, <span class="keywordtype">int</span> group_nr,</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                                                <span class="keywordtype">int</span> iid, <span class="keywordtype">int</span> scope);</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__fp_8h.html#a5e8c55aefb73eecf9793464999ce7405">subscribe_group_to_multicast</a>(<span class="keywordtype">int</span> group_nr, <span class="keywordtype">int</span> iid, <span class="keywordtype">int</span> scope);</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160; </div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__fp_8h.html#a4f67014bddc720126fb75cb19f83c676">unsubscribe_group_to_multicast</a>(<span class="keywordtype">int</span> group_nr, <span class="keywordtype">int</span> iid, <span class="keywordtype">int</span> scope);</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160; </div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;}</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160; </div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_KNX_FP_INTERNAL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="oc__knx__fp_8h.html#a3ed6e49562be4e391d379c64939c292d">oc_belongs_href_to_resource</a>(oc_string_t href, <span class="keywordtype">bool</span> discoverable,</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                                 <span class="keywordtype">size_t</span> device_index);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__fp_8h.html#aa5a8ff89c0c6a1d6e1a4c19b59b8cef0">oc_create_knx_fp_resources</a>(<span class="keywordtype">size_t</span> device_index);</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160; </div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__fp_8h.html#a7af5081ac4617424c9b4c766f9bb19d6">oc_free_knx_fp_resources</a>(<span class="keywordtype">size_t</span> device_index);</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> <a class="code" href="oc__knx__fp_8h.html#a60e665e1b7ec44a4288d66e026b3cd2e">oc_create_multicast_group_address</a>(<a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> in, <span class="keywordtype">int</span> group_nr,</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                                                <span class="keywordtype">int</span> iid, <span class="keywordtype">int</span> scope);</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160; </div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__fp_8h.html#a5e8c55aefb73eecf9793464999ce7405">subscribe_group_to_multicast</a>(<span class="keywordtype">int</span> group_nr, <span class="keywordtype">int</span> iid, <span class="keywordtype">int</span> scope);</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160; </div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__fp_8h.html#a4f67014bddc720126fb75cb19f83c676">unsubscribe_group_to_multicast</a>(<span class="keywordtype">int</span> group_nr, <span class="keywordtype">int</span> iid, <span class="keywordtype">int</span> scope);</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160; </div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;}</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160; </div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_KNX_FP_INTERNAL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aoc__knx__fp_8h_html_a2c0e340b6ac53e847bfc34cadd477545"><div class="ttname"><a href="oc__knx__fp_8h.html#a2c0e340b6ac53e847bfc34cadd477545">oc_add_points_in_group_object_table_to_response</a></div><div class="ttdeci">bool oc_add_points_in_group_object_table_to_response(oc_request_t *request, size_t device_index, int group_address, size_t *response_length, int matches)</div><div class="ttdoc">add points to the well-known core discovery response when the request has query option ....</div></div>
@@ -245,9 +246,9 @@ $(document).ready(function(){initNavTree('oc__knx__fp_8h_source.html',''); initR
 <div class="ttc" id="aoc__knx__fp_8h_html_a612792ec31c83205c4d5b4dbce53fb64"><div class="ttname"><a href="oc__knx__fp_8h.html#a612792ec31c83205c4d5b4dbce53fb64">oc_delete_group_object_table_entry</a></div><div class="ttdeci">void oc_delete_group_object_table_entry(int entry)</div><div class="ttdoc">delete entry of the Group Object Table does not make the change persistent</div></div>
 <div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa15e16c19e953930b01bb38c88689dee2"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa15e16c19e953930b01bb38c88689dee2">OC_CFLAG_READ</a></div><div class="ttdeci">@ OC_CFLAG_READ</div><div class="ttdoc">8 false = Group Object value cannot be read.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00038">oc_knx_fp.h:38</a></div></div>
 <div class="ttc" id="astructoc__request__t_html"><div class="ttname"><a href="structoc__request__t.html">oc_request_t</a></div><div class="ttdoc">request information structure</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00299">oc_ri.h:299</a></div></div>
-<div class="ttc" id="aoc__knx__fp_8h_html_a99e219d26c720ffc5e443ff551ae0646"><div class="ttname"><a href="oc__knx__fp_8h.html#a99e219d26c720ffc5e443ff551ae0646">oc_belongs_href_to_resource</a></div><div class="ttdeci">bool oc_belongs_href_to_resource(oc_string_t href, size_t device_index)</div><div class="ttdoc">checks if the href (url) belongs to the device</div></div>
 <div class="ttc" id="aoc__knx__fp_8h_html_aaad90d4df707ff25a3cd0b257b037fa4"><div class="ttname"><a href="oc__knx__fp_8h.html#aaad90d4df707ff25a3cd0b257b037fa4">oc_delete_group_rp_table</a></div><div class="ttdeci">void oc_delete_group_rp_table()</div><div class="ttdoc">delete all entries of the Recipient and Publisher Object Table (from persistent) storage</div></div>
 <div class="ttc" id="aoc__knx__fp_8h_html_a396eebfbbd842fe51e431f3145e0797e"><div class="ttname"><a href="oc__knx__fp_8h.html#a396eebfbbd842fe51e431f3145e0797e">oc_core_find_group_object_table_number_group_entries</a></div><div class="ttdeci">int oc_core_find_group_object_table_number_group_entries(int index)</div><div class="ttdoc">retrieve the number of group address entries for index</div></div>
+<div class="ttc" id="aoc__knx__fp_8h_html_a3ed6e49562be4e391d379c64939c292d"><div class="ttname"><a href="oc__knx__fp_8h.html#a3ed6e49562be4e391d379c64939c292d">oc_belongs_href_to_resource</a></div><div class="ttdeci">bool oc_belongs_href_to_resource(oc_string_t href, bool discoverable, size_t device_index)</div><div class="ttdoc">checks if the href (url) belongs to the device</div></div>
 <div class="ttc" id="aoc__knx__fp_8h_html_a55a051dd915c8e043303dfc5a85303c0"><div class="ttname"><a href="oc__knx__fp_8h.html#a55a051dd915c8e043303dfc5a85303c0">oc_delete_group_object_table</a></div><div class="ttdeci">void oc_delete_group_object_table()</div><div class="ttdoc">delete all entries of the Group Object Table (from persistent) storage</div></div>
 <div class="ttc" id="aoc__knx__fp_8h_html_a6b9862f84a91e2b390b544273d436057"><div class="ttname"><a href="oc__knx__fp_8h.html#a6b9862f84a91e2b390b544273d436057">oc_load_group_object_table</a></div><div class="ttdeci">void oc_load_group_object_table()</div><div class="ttdoc">load all entries of the Group Object Table (from persistent) storage</div></div>
 <div class="ttc" id="aoc__knx__fp_8h_html_a211407a1c5b33b12124fd1990532f3a7"><div class="ttname"><a href="oc__knx__fp_8h.html#a211407a1c5b33b12124fd1990532f3a7">oc_cflags_as_string</a></div><div class="ttdeci">void oc_cflags_as_string(char *buffer, oc_cflag_mask_t cflags)</div><div class="ttdoc">adds the cflags a preallocated buffer</div></div>
@@ -291,7 +292,7 @@ $(document).ready(function(){initNavTree('oc__knx__fp_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__fp_8h.html">oc_knx_fp.h</a></li>
-    <li class="footer">Generated on Thu May 26 2022 13:17:42 for KNX IoT by
+    <li class="footer">Generated on Thu May 26 2022 14:03:12 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

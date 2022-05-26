@@ -14,7 +14,7 @@ var oc__knx__fp_8h =
       [ "OC_CFLAG_UPDATE", "oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baad8f8ce5ac3fe6dc90035d5db4c47a550", null ]
     ] ],
     [ "oc_add_points_in_group_object_table_to_response", "oc__knx__fp_8h.html#a2c0e340b6ac53e847bfc34cadd477545", null ],
-    [ "oc_belongs_href_to_resource", "oc__knx__fp_8h.html#a99e219d26c720ffc5e443ff551ae0646", null ],
+    [ "oc_belongs_href_to_resource", "oc__knx__fp_8h.html#a3ed6e49562be4e391d379c64939c292d", null ],
     [ "oc_cflags_as_string", "oc__knx__fp_8h.html#a211407a1c5b33b12124fd1990532f3a7", null ],
     [ "oc_core_check_recipient_index_on_group_address", "oc__knx__fp_8h.html#ac14ec12e7653f7a807da15c436381262", null ],
     [ "oc_core_find_group_object_table_group_entry", "oc__knx__fp_8h.html#a79be96f64e58ce1c5540f6ce50c7d71f", null ],
