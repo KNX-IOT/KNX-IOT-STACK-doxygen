@@ -1,7 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"oc__ri_8h.html#a83161604a805e3a951254864d16a714fadc660590711150dd66411a306ccd0ee6":[3,0,37,22,3],
-"oc__ri_8h.html#a83161604a805e3a951254864d16a714fae094a78634fbffb0a97213b293c7fa3d":[3,0,37,22,14],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fae57daacf0b164b5e0c959eb664e3421b":[3,0,37,22,5],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fae6e231bc0d40b8fd8bdffe0b0b056026":[3,0,37,22,16],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fae85220b59258b5e200abe5d56979e41e":[3,0,37,22,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX4 =
 "structoc__handler__t.html#a3a1a54a7e7cc1c40235dfb2b6a44b875":[2,0,15,0],
 "structoc__handler__t.html#a701b761aa4dddf3a41d25ddc87e821b0":[2,0,15,3],
 "structoc__handler__t.html#ac979523755d1f597b646bff4a70b08cc":[2,0,15,2],
-"structoc__handler__t.html#af5d55603be647f6281ab5e09ff0dafa0":[2,0,15,1]
+"structoc__handler__t.html#af5d55603be647f6281ab5e09ff0dafa0":[2,0,15,1],
+"structoc__hostname__t.html":[2,0,16],
+"structoc__hostname__t.html#a735984d41155bc1032e09bece8f8d66d":[2,0,16,1]
 };
