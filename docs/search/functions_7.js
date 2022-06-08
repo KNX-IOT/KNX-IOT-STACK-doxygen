@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_1033',['main',['../_l_s_a_b__minimal__all_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;LSAB_minimal_all.c'],['../_l_s_s_b__minimal__all_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;LSSB_minimal_all.c']]]
+  ['knx_5fpublish_5fservice_1036',['knx_publish_service',['../dns-sd_8h.html#a8038fb5b0d088586b94b50589b7ddf46',1,'dns-sd.h']]]
 ];

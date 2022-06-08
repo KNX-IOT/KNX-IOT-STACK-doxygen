@@ -1,5 +1,9 @@
 var NAVTREEINDEX5 =
 {
+"structoc__handler__t.html#ac979523755d1f597b646bff4a70b08cc":[2,0,15,2],
+"structoc__handler__t.html#af5d55603be647f6281ab5e09ff0dafa0":[2,0,15,1],
+"structoc__hostname__t.html":[2,0,16],
+"structoc__hostname__t.html#a735984d41155bc1032e09bece8f8d66d":[2,0,16,1],
 "structoc__hostname__t.html#ac6a9adde453215ff25f82bfce6df9e13":[2,0,16,0],
 "structoc__ipv4__addr__t.html":[2,0,17],
 "structoc__ipv4__addr__t.html#a8e0798404bf2cf5dabb84c5ba9a4f236":[2,0,17,1],
