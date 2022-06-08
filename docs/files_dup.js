@@ -1,8 +1,8 @@
 var files_dup =
 [
     [ "dns-sd.h", "dns-sd_8h.html", "dns-sd_8h" ],
-    [ "LSAB_minimal_all.c", "_l_s_a_b__minimal__all_8c.html", "_l_s_a_b__minimal__all_8c" ],
-    [ "LSSB_minimal_all.c", "_l_s_s_b__minimal__all_8c.html", "_l_s_s_b__minimal__all_8c" ],
+    [ "lsab_minimal_all.c", "lsab__minimal__all_8c.html", "lsab__minimal__all_8c" ],
+    [ "lssb_minimal_all.c", "lssb__minimal__all_8c.html", "lssb__minimal__all_8c" ],
     [ "oc_api.h", "oc__api_8h.html", "oc__api_8h" ],
     [ "oc_assert.h", "oc__assert_8h.html", "oc__assert_8h" ],
     [ "oc_base64.h", "oc__base64_8h.html", "oc__base64_8h" ],
@@ -29,7 +29,7 @@ var files_dup =
     [ "oc_knx_sec.h", "oc__knx__sec_8h.html", "oc__knx__sec_8h" ],
     [ "oc_knx_swu.h", "oc__knx__swu_8h.html", "oc__knx__swu_8h" ],
     [ "oc_log.h", "oc__log_8h.html", "oc__log_8h" ],
-    [ "oc_main.h", "oc__main_8h_source.html", null ],
+    [ "oc_main.h", "oc__main_8h.html", "oc__main_8h" ],
     [ "oc_network_events.h", "oc__network__events_8h.html", "oc__network__events_8h" ],
     [ "oc_network_events_mutex.h", "oc__network__events__mutex_8h.html", "oc__network__events__mutex_8h" ],
     [ "oc_network_monitor.h", "oc__network__monitor_8h.html", "oc__network__monitor_8h" ],
