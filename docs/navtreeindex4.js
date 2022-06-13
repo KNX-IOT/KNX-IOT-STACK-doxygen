@@ -1,5 +1,8 @@
 var NAVTREEINDEX4 =
 {
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa542c384df4dfd5696439f191db7f2cac":[3,0,37,22,15],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa5dd3a1766e3862f35f7a333279d650c1":[3,0,37,22,4],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa633dae7b894e5dec21d3fe5ee889c1de":[3,0,37,22,30],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa6563ce58a5ccb28f4c84c8eaa1bbf110":[3,0,37,22,22],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa75057ddd8df3415419de12a3404d1002":[3,0,37,22,37],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa7962c09c0e9f813b4525357875b5754f":[3,0,37,22,28],
@@ -246,8 +249,5 @@ var NAVTREEINDEX4 =
 "structoc__group__object__notification__t.html#ae20335a9b5c8e36a127e172788928e61":[2,0,12,3],
 "structoc__group__object__notification__t.html#affee04641198fb655ede4e4b77099b2b":[2,0,12,0],
 "structoc__group__object__table__t.html":[2,0,13],
-"structoc__group__object__table__t.html#a22a183c30157b0a15e7f07811feadf79":[2,0,13,0],
-"structoc__group__object__table__t.html#a22b3ba4f6d50d70d36c5107bd0a8050f":[2,0,13,2],
-"structoc__group__object__table__t.html#a38b2e720236d2816ad7d4f7d5d59d7c8":[2,0,13,1],
-"structoc__group__object__table__t.html#a7441ef0865bcb3db9b8064dd7375c1ea":[2,0,13,4]
+"structoc__group__object__table__t.html#a22a183c30157b0a15e7f07811feadf79":[2,0,13,0]
 };

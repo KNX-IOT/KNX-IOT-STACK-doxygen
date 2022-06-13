@@ -11,5 +11,6 @@ var searchData=
   ['get_5finterface_5fstring_96',['get_interface_string',['../oc__ri_8h.html#a12324b7f65a6a901470fa0d02e5df555',1,'oc_ri.h']]],
   ['get_5fmethod_5fname_97',['get_method_name',['../oc__ri_8h.html#a2e13ec2b32452084c1edb7c74a384ccb',1,'oc_ri.h']]],
   ['get_5fproperties_98',['get_properties',['../structoc__resource__s.html#a99698a1070518a1d190b724318f65a8b',1,'oc_resource_s']]],
-  ['group_5fid_99',['group_id',['../structoc__endpoint__t.html#ad803d60c93177bb1ed9133d86d9dc378',1,'oc_endpoint_t']]]
+  ['group_5fid_99',['group_id',['../structoc__endpoint__t.html#ad803d60c93177bb1ed9133d86d9dc378',1,'oc_endpoint_t']]],
+  ['grpid_100',['grpid',['../structoc__group__rp__table__t.html#a649263de6e112a0570e290164b5cf0ba',1,'oc_group_rp_table_t']]]
 ];

@@ -106,6 +106,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a22b3ba4f6d50d70d36c5107bd0a8050f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__group__rp__table__t.html#a22b3ba4f6d50d70d36c5107bd0a8050f">ga_len</a></td></tr>
 <tr class="memdesc:a22b3ba4f6d50d70d36c5107bd0a8050f"><td class="mdescLeft">&#160;</td><td class="mdescRight">length of the array of ga identifiers  <a href="structoc__group__rp__table__t.html#a22b3ba4f6d50d70d36c5107bd0a8050f">More...</a><br /></td></tr>
 <tr class="separator:a22b3ba4f6d50d70d36c5107bd0a8050f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649263de6e112a0570e290164b5cf0ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__group__rp__table__t.html#a649263de6e112a0570e290164b5cf0ba">grpid</a></td></tr>
+<tr class="memdesc:a649263de6e112a0570e290164b5cf0ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">the multicast group id  <a href="structoc__group__rp__table__t.html#a649263de6e112a0570e290164b5cf0ba">More...</a><br /></td></tr>
+<tr class="separator:a649263de6e112a0570e290164b5cf0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c924fc0836c91dc1e9f1c4c443f53a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__group__rp__table__t.html#a2c924fc0836c91dc1e9f1c4c443f53a9">ia</a></td></tr>
 <tr class="memdesc:a2c924fc0836c91dc1e9f1c4c443f53a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">contents of ia (internal address)  <a href="structoc__group__rp__table__t.html#a2c924fc0836c91dc1e9f1c4c443f53a9">More...</a><br /></td></tr>
 <tr class="separator:a2c924fc0836c91dc1e9f1c4c443f53a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,23 +146,27 @@ Data Fields</h2></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">ia </td><td class="markdownTableBodyNone">12  </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">grpid </td><td class="markdownTableBodyNone">13  </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">path </td><td class="markdownTableBodyNone">112  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">url </td><td class="markdownTableBodyNone">10  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ga </td><td class="markdownTableBodyNone">7  </td></tr>
+<td class="markdownTableBodyNone">url </td><td class="markdownTableBodyNone">10  </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ga </td><td class="markdownTableBodyNone">7  </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">con </td><td class="markdownTableBodyNone">-  </td></tr>
 </table>
 <p>The structure stores the information. The structure will be used as an array. There are function to find:</p><ul>
+<li>max amount of entries</li>
 <li>empty index in the array</li>
 <li>find the index with a specific id</li>
 <li>delete an index, e.g. delete the array entry of data</li>
 <li>make the entry persistent</li>
-<li>free up the allocated data </li>
+<li>free up the allocated data</li>
+<li>return the structure at a specific index </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00167">167</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00170">170</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a74d229484bff7a1739d19e69c38b2d02"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74d229484bff7a1739d19e69c38b2d02">&#9670;&nbsp;</a></span>con</h2>
@@ -175,7 +182,7 @@ Data Fields</h2></td></tr>
 
 <p>confirmed message, default = false </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00173">173</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00177">177</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
 
 </div>
 </div>
@@ -193,7 +200,7 @@ Data Fields</h2></td></tr>
 
 <p>array of integers </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00174">174</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00178">178</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
 
 </div>
 </div>
@@ -211,7 +218,25 @@ Data Fields</h2></td></tr>
 
 <p>length of the array of ga identifiers </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00175">175</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00179">179</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+
+</div>
+</div>
+<a id="a649263de6e112a0570e290164b5cf0ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a649263de6e112a0570e290164b5cf0ba">&#9670;&nbsp;</a></span>grpid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int grpid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the multicast group id </p>
+
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00174">174</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
 
 </div>
 </div>
@@ -229,7 +254,7 @@ Data Fields</h2></td></tr>
 
 <p>contents of ia (internal address) </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00170">170</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00173">173</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
 
 </div>
 </div>
@@ -247,7 +272,7 @@ Data Fields</h2></td></tr>
 
 <p>contents of id </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00169">169</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00172">172</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
 
 </div>
 </div>
@@ -265,7 +290,7 @@ Data Fields</h2></td></tr>
 
 <p>contents of path, default path = ".knx" </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00171">171</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00175">175</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
 
 </div>
 </div>
@@ -283,7 +308,7 @@ Data Fields</h2></td></tr>
 
 <p>contents of url </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00172">172</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00176">176</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
 
 </div>
 </div>
@@ -292,15 +317,15 @@ Data Fields</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructoc__group__rp__table__t_html_a38b2e720236d2816ad7d4f7d5d59d7c8"><div class="ttname"><a href="structoc__group__rp__table__t.html#a38b2e720236d2816ad7d4f7d5d59d7c8">oc_group_rp_table_t::ga</a></div><div class="ttdeci">int * ga</div><div class="ttdoc">array of integers</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00174">oc_knx_fp.h:174</a></div></div>
-<div class="ttc" id="astructoc__group__rp__table__t_html_a2c924fc0836c91dc1e9f1c4c443f53a9"><div class="ttname"><a href="structoc__group__rp__table__t.html#a2c924fc0836c91dc1e9f1c4c443f53a9">oc_group_rp_table_t::ia</a></div><div class="ttdeci">int ia</div><div class="ttdoc">contents of ia (internal address)</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00170">oc_knx_fp.h:170</a></div></div>
-<div class="ttc" id="astructoc__group__rp__table__t_html_a2289112fbf6cc1c66e41165d20ae60b5"><div class="ttname"><a href="structoc__group__rp__table__t.html#a2289112fbf6cc1c66e41165d20ae60b5">oc_group_rp_table_t::url</a></div><div class="ttdeci">oc_string_t url</div><div class="ttdoc">contents of url</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00172">oc_knx_fp.h:172</a></div></div>
-<div class="ttc" id="astructoc__group__rp__table__t_html_a8ad46d7f749c3019406d61357741b894"><div class="ttname"><a href="structoc__group__rp__table__t.html#a8ad46d7f749c3019406d61357741b894">oc_group_rp_table_t::path</a></div><div class="ttdeci">oc_string_t path</div><div class="ttdoc">contents of path, default path = &quot;.knx&quot;</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00171">oc_knx_fp.h:171</a></div></div>
+<div class="ttc" id="astructoc__group__rp__table__t_html_a38b2e720236d2816ad7d4f7d5d59d7c8"><div class="ttname"><a href="structoc__group__rp__table__t.html#a38b2e720236d2816ad7d4f7d5d59d7c8">oc_group_rp_table_t::ga</a></div><div class="ttdeci">int * ga</div><div class="ttdoc">array of integers</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00178">oc_knx_fp.h:178</a></div></div>
+<div class="ttc" id="astructoc__group__rp__table__t_html_a2c924fc0836c91dc1e9f1c4c443f53a9"><div class="ttname"><a href="structoc__group__rp__table__t.html#a2c924fc0836c91dc1e9f1c4c443f53a9">oc_group_rp_table_t::ia</a></div><div class="ttdeci">int ia</div><div class="ttdoc">contents of ia (internal address)</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00173">oc_knx_fp.h:173</a></div></div>
+<div class="ttc" id="astructoc__group__rp__table__t_html_a2289112fbf6cc1c66e41165d20ae60b5"><div class="ttname"><a href="structoc__group__rp__table__t.html#a2289112fbf6cc1c66e41165d20ae60b5">oc_group_rp_table_t::url</a></div><div class="ttdeci">oc_string_t url</div><div class="ttdoc">contents of url</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00176">oc_knx_fp.h:176</a></div></div>
+<div class="ttc" id="astructoc__group__rp__table__t_html_a8ad46d7f749c3019406d61357741b894"><div class="ttname"><a href="structoc__group__rp__table__t.html#a8ad46d7f749c3019406d61357741b894">oc_group_rp_table_t::path</a></div><div class="ttdeci">oc_string_t path</div><div class="ttdoc">contents of path, default path = &quot;.knx&quot;</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00175">oc_knx_fp.h:175</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structoc__group__rp__table__t.html">oc_group_rp_table_t</a></li>
-    <li class="footer">Generated on Mon Jun 13 2022 13:24:48 for KNX IoT by
+    <li class="footer">Generated on Mon Jun 13 2022 14:27:35 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
