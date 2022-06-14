@@ -220,7 +220,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a7af5081ac4617424c9b4c766f9bb19d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">free the fp resources e.g.  <a href="oc__knx__fp_8h.html#a7af5081ac4617424c9b4c766f9bb19d6">More...</a><br /></td></tr>
 <tr class="separator:a7af5081ac4617424c9b4c766f9bb19d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6351cde66c0e781f6fa202fa28c8fd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#ae6351cde66c0e781f6fa202fa28c8fd4">oc_init_datapoints_at_initialization</a> ()</td></tr>
-<tr class="memdesc:ae6351cde66c0e781f6fa202fa28c8fd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the data points at initialisation e.g.  <a href="oc__knx__fp_8h.html#ae6351cde66c0e781f6fa202fa28c8fd4">More...</a><br /></td></tr>
+<tr class="memdesc:ae6351cde66c0e781f6fa202fa28c8fd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the data points at initialization e.g.  <a href="oc__knx__fp_8h.html#ae6351cde66c0e781f6fa202fa28c8fd4">More...</a><br /></td></tr>
 <tr class="separator:ae6351cde66c0e781f6fa202fa28c8fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b9862f84a91e2b390b544273d436057"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a6b9862f84a91e2b390b544273d436057">oc_load_group_object_table</a> ()</td></tr>
 <tr class="memdesc:a6b9862f84a91e2b390b544273d436057"><td class="mdescLeft">&#160;</td><td class="mdescRight">load all entries of the Group Object Table (from persistent) storage  <a href="oc__knx__fp_8h.html#a6b9862f84a91e2b390b544273d436057">More...</a><br /></td></tr>
@@ -327,13 +327,13 @@ Functions</h2></td></tr>
 <p>Example (JSON): array of objects </p><div class="fragment"><div class="line">[</div>
 <div class="line">   {</div>
 <div class="line">       <span class="stringliteral">&quot;id&quot;</span>: <span class="stringliteral">&quot;1&quot;</span>,</div>
-<div class="line">        ia<span class="stringliteral">&quot;: 5,</span></div>
-<div class="line"><span class="stringliteral">       &quot;</span>ga<span class="stringliteral">&quot;:[2305, 2401],</span></div>
-<div class="line"><span class="stringliteral">       &quot;</span>path<span class="stringliteral">&quot;: &quot;</span>.knx<span class="stringliteral">&quot;,</span></div>
-<div class="line"><span class="stringliteral">   },</span></div>
-<div class="line"><span class="stringliteral">   {</span></div>
-<div class="line"><span class="stringliteral">       &quot;</span><span class="keywordtype">id</span><span class="stringliteral">&quot;: &quot;</span>2<span class="stringliteral">&quot;,</span></div>
-<div class="line"><span class="stringliteral">       &quot;</span>url<span class="stringliteral">&quot;: &quot;</span>coap:<span class="comment">//&lt;IP multicast, unicast address or fqdn&gt;/&lt;path&gt;&quot;,</span></div>
+<div class="line">       <span class="stringliteral">&quot;ia&quot;</span>: 5,</div>
+<div class="line">       <span class="stringliteral">&quot;ga&quot;</span>:[2305, 2401],</div>
+<div class="line">       <span class="stringliteral">&quot;path&quot;</span>: <span class="stringliteral">&quot;.knx&quot;</span>,</div>
+<div class="line">   },</div>
+<div class="line">   {</div>
+<div class="line">       <span class="stringliteral">&quot;id&quot;</span>: <span class="stringliteral">&quot;2&quot;</span>,</div>
+<div class="line">       <span class="stringliteral">&quot;url&quot;</span>: <span class="stringliteral">&quot;coap://&lt;IP multicast, unicast address or fqdn&gt;/&lt;path&gt;&quot;</span>,</div>
 <div class="line">       <span class="stringliteral">&quot;ga&quot;</span>: [2305, 2306, 2307, 2308]</div>
 <div class="line">    }</div>
 <div class="line">]</div>
@@ -344,6 +344,10 @@ Functions</h2></td></tr>
 <td class="markdownTableBodyNone">id </td><td class="markdownTableBodyNone">0  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">ia </td><td class="markdownTableBodyNone">12  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">iid </td><td class="markdownTableBodyNone">26  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">fid </td><td class="markdownTableBodyNone">25  </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">grpid </td><td class="markdownTableBodyNone">13  </td></tr>
 <tr class="markdownTableRowEven">
@@ -1324,7 +1328,7 @@ false is not part of the recipient entry </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>initializes the data points at initialisation e.g. </p>
+<p>initializes the data points at initialization e.g. </p>
 <p>sends out an read s-mode message when the I flag is set. </p>
 
 </div>
@@ -1551,7 +1555,7 @@ false is not part of the recipient entry </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__fp_8h.html">oc_knx_fp.h</a></li>
-    <li class="footer">Generated on Mon Jun 13 2022 16:57:36 for KNX IoT by
+    <li class="footer">Generated on Tue Jun 14 2022 08:30:14 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
