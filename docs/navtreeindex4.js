@@ -135,8 +135,9 @@ var NAVTREEINDEX4 =
 "oc__signal__event__loop_8h.html#a096c5153f9879560e2823e776b282deb":[3,0,39,0],
 "oc__signal__event__loop_8h_source.html":[3,0,39],
 "oc__storage_8h.html":[3,0,40],
-"oc__storage_8h.html#a641ec586553f7eeb30a79addf4b2607e":[3,0,40,2],
-"oc__storage_8h.html#ac070f1881773fc6bdba8072fd05bfa21":[3,0,40,1],
+"oc__storage_8h.html#a4cf0b7e00e5cc216986d514776c3d42e":[3,0,40,1],
+"oc__storage_8h.html#a641ec586553f7eeb30a79addf4b2607e":[3,0,40,3],
+"oc__storage_8h.html#ac070f1881773fc6bdba8072fd05bfa21":[3,0,40,2],
 "oc__storage_8h.html#ae529493bca3a501922f23e3d7701ff05":[3,0,40,0],
 "oc__storage_8h_source.html":[3,0,40],
 "oc__uuid_8h.html":[3,0,41],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "structoc__group__object__notification__t.html#ac33eb457eb31def51a3c40abcf60f884":[2,0,12,2],
 "structoc__group__object__notification__t.html#ae20335a9b5c8e36a127e172788928e61":[2,0,12,3],
 "structoc__group__object__notification__t.html#affee04641198fb655ede4e4b77099b2b":[2,0,12,0],
-"structoc__group__object__table__t.html":[2,0,13],
-"structoc__group__object__table__t.html#a22a183c30157b0a15e7f07811feadf79":[2,0,13,0]
+"structoc__group__object__table__t.html":[2,0,13]
 };

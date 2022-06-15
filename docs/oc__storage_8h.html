@@ -102,6 +102,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae529493bca3a501922f23e3d7701ff05"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__storage_8h.html#ae529493bca3a501922f23e3d7701ff05">oc_storage_config</a> (const char *store)</td></tr>
 <tr class="memdesc:ae529493bca3a501922f23e3d7701ff05"><td class="mdescLeft">&#160;</td><td class="mdescRight">open the storage  <a href="oc__storage_8h.html#ae529493bca3a501922f23e3d7701ff05">More...</a><br /></td></tr>
 <tr class="separator:ae529493bca3a501922f23e3d7701ff05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf0b7e00e5cc216986d514776c3d42e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__storage_8h.html#a4cf0b7e00e5cc216986d514776c3d42e">oc_storage_erase</a> (const char *store)</td></tr>
+<tr class="memdesc:a4cf0b7e00e5cc216986d514776c3d42e"><td class="mdescLeft">&#160;</td><td class="mdescRight">erase a stored file  <a href="oc__storage_8h.html#a4cf0b7e00e5cc216986d514776c3d42e">More...</a><br /></td></tr>
+<tr class="separator:a4cf0b7e00e5cc216986d514776c3d42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac070f1881773fc6bdba8072fd05bfa21"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__storage_8h.html#ac070f1881773fc6bdba8072fd05bfa21">oc_storage_read</a> (const char *store, uint8_t *buf, size_t size)</td></tr>
 <tr class="memdesc:ac070f1881773fc6bdba8072fd05bfa21"><td class="mdescLeft">&#160;</td><td class="mdescRight">read from the storage  <a href="oc__storage_8h.html#ac070f1881773fc6bdba8072fd05bfa21">More...</a><br /></td></tr>
 <tr class="separator:ac070f1881773fc6bdba8072fd05bfa21"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,6 +142,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="a4cf0b7e00e5cc216986d514776c3d42e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cf0b7e00e5cc216986d514776c3d42e">&#9670;&nbsp;</a></span>oc_storage_erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_storage_erase </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>store</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>erase a stored file </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">store</td><td>the store (file path) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 on success </dd></dl>
 
 </div>
 </div>
@@ -238,7 +268,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="oc__storage_8h.html">oc_storage.h</a></li>
-    <li class="footer">Generated on Wed Jun 15 2022 10:56:18 for KNX IoT by
+    <li class="footer">Generated on Wed Jun 15 2022 13:01:46 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
