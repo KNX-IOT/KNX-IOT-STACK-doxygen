@@ -92,6 +92,9 @@ $(document).ready(function(){initNavTree('oc__blockwise_8h.html',''); initResiza
 <div class="title">oc_blockwise.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>CoAP block wise transfer implementation.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;messaging/coap/coap.h&quot;</code><br />
 <code>#include &quot;messaging/coap/transactions.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>&quot;</code><br />
@@ -180,7 +183,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:ae7bf7a1542104d1fc28e1cd55ccc5815"><td class="mdescLeft">&#160;</td><td class="mdescRight">scrub blocks for client side  <a href="oc__blockwise_8h.html#ae7bf7a1542104d1fc28e1cd55ccc5815">More...</a><br /></td></tr>
 <tr class="separator:ae7bf7a1542104d1fc28e1cd55ccc5815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>CoAP block wise transfer implementation. </p>
+
+<p class="definition">Definition in file <a class="el" href="oc__blockwise_8h_source.html">oc_blockwise.h</a>.</p>
+</div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="a9d686c3e4f6c5fb47f848ca3b82090ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d686c3e4f6c5fb47f848ca3b82090ad">&#9670;&nbsp;</a></span>oc_blockwise_request_state_t</h2>
 
@@ -234,11 +241,11 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="oc__blockwise_8h_source.html#l00036">36</a> of file <a class="el" href="oc__blockwise_8h_source.html">oc_blockwise.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;             {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="oc__blockwise_8h.html#a491a93728548c3c7369dcb0ef612111daf0eaeec56b192ce13ded1cbb1f90d94a">OC_BLOCKWISE_CLIENT</a> = 0, </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="oc__blockwise_8h.html#a491a93728548c3c7369dcb0ef612111da5606599f6a5fe27cc51722d4dedada54">OC_BLOCKWISE_SERVER</a>      </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;} <a class="code" href="oc__blockwise_8h.html#a491a93728548c3c7369dcb0ef612111d">oc_blockwise_role_t</a>;</div>
+<p class="definition">Definition at line <a class="el" href="oc__blockwise_8h_source.html#l00037">37</a> of file <a class="el" href="oc__blockwise_8h_source.html">oc_blockwise.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;             {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="oc__blockwise_8h.html#a491a93728548c3c7369dcb0ef612111daf0eaeec56b192ce13ded1cbb1f90d94a">OC_BLOCKWISE_CLIENT</a> = 0, </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="oc__blockwise_8h.html#a491a93728548c3c7369dcb0ef612111da5606599f6a5fe27cc51722d4dedada54">OC_BLOCKWISE_SERVER</a>      </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} <a class="code" href="oc__blockwise_8h.html#a491a93728548c3c7369dcb0ef612111d">oc_blockwise_role_t</a>;</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -925,14 +932,14 @@ false </dd></dl>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aoc__blockwise_8h_html_a491a93728548c3c7369dcb0ef612111daf0eaeec56b192ce13ded1cbb1f90d94a"><div class="ttname"><a href="oc__blockwise_8h.html#a491a93728548c3c7369dcb0ef612111daf0eaeec56b192ce13ded1cbb1f90d94a">OC_BLOCKWISE_CLIENT</a></div><div class="ttdeci">@ OC_BLOCKWISE_CLIENT</div><div class="ttdoc">client</div><div class="ttdef"><b>Definition:</b> <a href="oc__blockwise_8h_source.html#l00037">oc_blockwise.h:37</a></div></div>
-<div class="ttc" id="aoc__blockwise_8h_html_a491a93728548c3c7369dcb0ef612111da5606599f6a5fe27cc51722d4dedada54"><div class="ttname"><a href="oc__blockwise_8h.html#a491a93728548c3c7369dcb0ef612111da5606599f6a5fe27cc51722d4dedada54">OC_BLOCKWISE_SERVER</a></div><div class="ttdeci">@ OC_BLOCKWISE_SERVER</div><div class="ttdoc">server</div><div class="ttdef"><b>Definition:</b> <a href="oc__blockwise_8h_source.html#l00038">oc_blockwise.h:38</a></div></div>
-<div class="ttc" id="aoc__blockwise_8h_html_a491a93728548c3c7369dcb0ef612111d"><div class="ttname"><a href="oc__blockwise_8h.html#a491a93728548c3c7369dcb0ef612111d">oc_blockwise_role_t</a></div><div class="ttdeci">oc_blockwise_role_t</div><div class="ttdoc">role of the transfer</div><div class="ttdef"><b>Definition:</b> <a href="oc__blockwise_8h_source.html#l00036">oc_blockwise.h:36</a></div></div>
+<div class="ttc" id="aoc__blockwise_8h_html_a491a93728548c3c7369dcb0ef612111daf0eaeec56b192ce13ded1cbb1f90d94a"><div class="ttname"><a href="oc__blockwise_8h.html#a491a93728548c3c7369dcb0ef612111daf0eaeec56b192ce13ded1cbb1f90d94a">OC_BLOCKWISE_CLIENT</a></div><div class="ttdeci">@ OC_BLOCKWISE_CLIENT</div><div class="ttdoc">client</div><div class="ttdef"><b>Definition:</b> <a href="oc__blockwise_8h_source.html#l00038">oc_blockwise.h:38</a></div></div>
+<div class="ttc" id="aoc__blockwise_8h_html_a491a93728548c3c7369dcb0ef612111da5606599f6a5fe27cc51722d4dedada54"><div class="ttname"><a href="oc__blockwise_8h.html#a491a93728548c3c7369dcb0ef612111da5606599f6a5fe27cc51722d4dedada54">OC_BLOCKWISE_SERVER</a></div><div class="ttdeci">@ OC_BLOCKWISE_SERVER</div><div class="ttdoc">server</div><div class="ttdef"><b>Definition:</b> <a href="oc__blockwise_8h_source.html#l00039">oc_blockwise.h:39</a></div></div>
+<div class="ttc" id="aoc__blockwise_8h_html_a491a93728548c3c7369dcb0ef612111d"><div class="ttname"><a href="oc__blockwise_8h.html#a491a93728548c3c7369dcb0ef612111d">oc_blockwise_role_t</a></div><div class="ttdeci">oc_blockwise_role_t</div><div class="ttdoc">role of the transfer</div><div class="ttdef"><b>Definition:</b> <a href="oc__blockwise_8h_source.html#l00037">oc_blockwise.h:37</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__blockwise_8h.html">oc_blockwise.h</a></li>
-    <li class="footer">Generated on Tue Jun 14 2022 16:40:44 for KNX IoT by
+    <li class="footer">Generated on Wed Jun 15 2022 08:44:43 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
