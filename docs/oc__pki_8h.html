@@ -90,6 +90,9 @@ $(document).ready(function(){initNavTree('oc__pki_8h.html',''); initResizable();
 <div class="title">oc_pki.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>public key infrastructure (PKI) functions  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
 </div>
 <p><a href="oc__pki_8h_source.html">Go to the source code of this file.</a></p>
@@ -101,7 +104,7 @@ Enumerations</h2></td></tr>
 <a class="el" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a985dcbb563fec019726de7109d8dbbfb">OC_SP_BLUE</a> = 1 &lt;&lt; 3, 
 <a class="el" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267ad4f4d39c252f8699e475b53747826e47">OC_SP_PURPLE</a> = 1 &lt;&lt; 4
  }</td></tr>
-<tr class="memdesc:aa600b7f9ac50ab33f6501ae156ab9267"><td class="mdescLeft">&#160;</td><td class="mdescRight">OCF defined security profiles.  <a href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">More...</a><br /></td></tr>
+<tr class="memdesc:aa600b7f9ac50ab33f6501ae156ab9267"><td class="mdescLeft">&#160;</td><td class="mdescRight">defined security profiles  <a href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">More...</a><br /></td></tr>
 <tr class="separator:aa600b7f9ac50ab33f6501ae156ab9267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -119,12 +122,14 @@ Functions</h2></td></tr>
 <tr class="memdesc:ada8a6b2b7068f7103e5fa9d761cc6719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add trust anchor CA.  <a href="oc__pki_8h.html#ada8a6b2b7068f7103e5fa9d761cc6719">More...</a><br /></td></tr>
 <tr class="separator:ada8a6b2b7068f7103e5fa9d761cc6719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5025f4ae1f5e2791d2d267f88d984bcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__pki_8h.html#a5025f4ae1f5e2791d2d267f88d984bcb">oc_pki_set_security_profile</a> (size_t device, <a class="el" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a> supported_profiles, <a class="el" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a> current_profile, int mfg_credid)</td></tr>
-<tr class="memdesc:a5025f4ae1f5e2791d2d267f88d984bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the OCF Security Profile.  <a href="oc__pki_8h.html#a5025f4ae1f5e2791d2d267f88d984bcb">More...</a><br /></td></tr>
+<tr class="memdesc:a5025f4ae1f5e2791d2d267f88d984bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Security Profile.  <a href="oc__pki_8h.html#a5025f4ae1f5e2791d2d267f88d984bcb">More...</a><br /></td></tr>
 <tr class="separator:a5025f4ae1f5e2791d2d267f88d984bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>OCF public key infrastructure (PKI) functions</p>
-<p>Collection of functions used to add public key infrastructure (PKI) support to devices. </p>
+<div class="textblock"><p>public key infrastructure (PKI) functions </p>
+<p>public key infrastructure (PKI) functions</p>
+<p>Collection of functions used to add public key infrastructure (PKI) support to devices.</p>
+<p>This is work in progress </p>
 
 <p class="definition">Definition in file <a class="el" href="oc__pki_8h_source.html">oc_pki.h</a>.</p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -140,27 +145,26 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>OCF defined security profiles. </p>
-<p>Security Profiles differentiate devices based on requirements from different verticals such as industrial, health care, or smart home.</p>
-<p>See <a class="el" href="oc__pki_8h.html#a5025f4ae1f5e2791d2d267f88d984bcb" title="Set the OCF Security Profile.">oc_pki_set_security_profile()</a> for a description of the each of the security profiles or reference the security profiles section of the OCF Security Specification. </p>
+<p>defined security profiles </p>
+<p>Security Profiles differentiate devices based on requirements. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa600b7f9ac50ab33f6501ae156ab9267a2752c9d6414f2a2b92321e5a0a0e7b4e"></a>OC_SP_BASELINE&#160;</td><td class="fielddoc"><p>The OCF Baseline Security Profile. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa600b7f9ac50ab33f6501ae156ab9267a2752c9d6414f2a2b92321e5a0a0e7b4e"></a>OC_SP_BASELINE&#160;</td><td class="fielddoc"><p>The Baseline Security Profile. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6"></a>OC_SP_BLACK&#160;</td><td class="fielddoc"><p>The OCF Black Security Profile. </p>
+<tr><td class="fieldname"><a id="aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6"></a>OC_SP_BLACK&#160;</td><td class="fielddoc"><p>The Black Security Profile. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa600b7f9ac50ab33f6501ae156ab9267a985dcbb563fec019726de7109d8dbbfb"></a>OC_SP_BLUE&#160;</td><td class="fielddoc"><p>The OCF Blue Security Profile. </p>
+<tr><td class="fieldname"><a id="aa600b7f9ac50ab33f6501ae156ab9267a985dcbb563fec019726de7109d8dbbfb"></a>OC_SP_BLUE&#160;</td><td class="fielddoc"><p>The Blue Security Profile. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa600b7f9ac50ab33f6501ae156ab9267ad4f4d39c252f8699e475b53747826e47"></a>OC_SP_PURPLE&#160;</td><td class="fielddoc"><p>The OCF Purple Security Profile. </p>
+<tr><td class="fieldname"><a id="aa600b7f9ac50ab33f6501ae156ab9267ad4f4d39c252f8699e475b53747826e47"></a>OC_SP_PURPLE&#160;</td><td class="fielddoc"><p>The Purple Security Profile. </p>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="oc__pki_8h_source.html#l00044">44</a> of file <a class="el" href="oc__pki_8h_source.html">oc_pki.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;             {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a2752c9d6414f2a2b92321e5a0a0e7b4e">OC_SP_BASELINE</a> = 1 &lt;&lt; 1, </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6">OC_SP_BLACK</a> = 1 &lt;&lt; 2,    </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a985dcbb563fec019726de7109d8dbbfb">OC_SP_BLUE</a> = 1 &lt;&lt; 3,     </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267ad4f4d39c252f8699e475b53747826e47">OC_SP_PURPLE</a> = 1 &lt;&lt; 4    </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <a class="code" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a>;</div>
+<p class="definition">Definition at line <a class="el" href="oc__pki_8h_source.html#l00043">43</a> of file <a class="el" href="oc__pki_8h_source.html">oc_pki.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;             {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a2752c9d6414f2a2b92321e5a0a0e7b4e">OC_SP_BASELINE</a> = 1 &lt;&lt; 1, </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6">OC_SP_BLACK</a> = 1 &lt;&lt; 2,    </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a985dcbb563fec019726de7109d8dbbfb">OC_SP_BLUE</a> = 1 &lt;&lt; 3,     </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267ad4f4d39c252f8699e475b53747826e47">OC_SP_PURPLE</a> = 1 &lt;&lt; 4    </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <a class="code" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a>;</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -420,52 +424,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the OCF Security Profile. </p>
-<p>The OCF Security Specification defines several Security Profiles that can be selected based on the security requirements of different verticals such as such as industrial, health care, or smart home.</p>
-<p>There are currently five types of Security Profiles specified by OCF.</p>
-<p>Following, is a non-exhaustive summary of each Security Profile type. For more details see OCF Security Specification section regarding Security Profiles.</p>
-<ol type="1">
-<li>Unspecified or <code>0</code><ul>
-<li>reserved for future use.</li>
-</ul>
-</li>
-<li>OC_SP_BASELINE Baseline: indicates the OCF device satisfies normative security requirements as specified by the OCF Security Specification. Baseline Security Profile is the default security profile if no other profile is provided.</li>
-<li>OC_SP_BLACK Black: healthcare and industrial devices with additional security requirements are the initial target for the Black Security Profile. Black Security Profile is for edge devices with exceptional profiles of trust bestowed upon them. Black Security Profile must support the following<ul>
-<li>The device satisfies all normative security requirements</li>
-<li>Onboarding via OCF Rooted Certificate Chain, including PKI chain validation</li>
-<li>Support for AES 128 encryption for data at rest and in transit</li>
-<li>Manufacturer assertion of secure credential storage</li>
-<li>Resource should contain credential(s) if required by the selected OTM</li>
-<li>The OCF Device shall include an X.509v3 certificate and the extension's 'securityProfile' field shall specify it is an OCF Black Security Profile</li>
-</ul>
-</li>
-<li>OC_SP_BLUE Blue: indicates the OCF device has been issued a certificate authority from OCF. The Blue Security Profile is for an ecosystem where platform vendors may be using devices from a different vendor. The Blue profile gives a way to assure quality devices on a different vendors platform. Blue Security Profile must support the following<ul>
-<li>The device satisfies all normative security requirements</li>
-<li>Vender attestation that the device satisfies platform security and privacy functionality requirements.</li>
-<li>The device is registered with OCF.</li>
-<li>The Security Profile may be digitally signed by an OCF owner signing key.</li>
-<li>The OCF Device shall include an X.509v3 certificate and the extension's 'securityProfile' field shall specify it is an OCF Blue Security Profile</li>
-<li>The OCF Device shall include an X.509v3 OCF CPL Attributes Extension in its certificate.</li>
-<li>The device shall perform a check on the certification status of the device and platform.</li>
-<li>The device shall be hosted on a secure platform.</li>
-<li>The device shall use AES128 equivalent or better protection for transmitted and stored data.</li>
-</ul>
-</li>
-<li>OC_SP_PURPLE Purple: indicates the device shall be able to update its firmware in a secure manner. Purple Security Profile must support the following:<ul>
-<li>Secure credential storage</li>
-<li>Software integrity validation</li>
-<li>Secure update</li>
-<li>If a certificate is used the OCF Device shall include an X.509v3 certificate and the extension's 'securityProfile' field shall specify it is an OCF Purple Security Profile.</li>
-<li>If a certificate is used the OCF Device shall include an X.509v3 OCFCPLAttributes Extension in its End-Entity Certificate when manufacturer certificate is used.</li>
-</ul>
-</li>
-</ol>
+<p>Set the Security Profile. </p>
+<p>The Security Specification defines several Security Profiles that can be selected based on the security requirements of different verticals such as such as industrial, health care, or smart home.</p>
+<p>There are currently five types of Security Profiles.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>index of the logical device the security profile is be set on </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">supported_profiles</td><td>a bitwise OR list of oc_sp_types_t that are supported by the device. The current_profile value may be changed to one of the other supported_profiles during the onboarding process. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">current_profile</td><td>the currently selected security profile </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mfg_credid</td><td>the credential ID of the /oic/sec/cred entry containing the manufactures end-entity certificate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mfg_credid</td><td>the credential ID of the entry containing the manufactures end-entity certificate </td></tr>
   </table>
   </dd>
 </dl>
@@ -474,16 +441,16 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aoc__pki_8h_html_aa600b7f9ac50ab33f6501ae156ab9267"><div class="ttname"><a href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a></div><div class="ttdeci">oc_sp_types_t</div><div class="ttdoc">OCF defined security profiles.</div><div class="ttdef"><b>Definition:</b> <a href="oc__pki_8h_source.html#l00044">oc_pki.h:44</a></div></div>
-<div class="ttc" id="aoc__pki_8h_html_aa600b7f9ac50ab33f6501ae156ab9267ad4f4d39c252f8699e475b53747826e47"><div class="ttname"><a href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267ad4f4d39c252f8699e475b53747826e47">OC_SP_PURPLE</a></div><div class="ttdeci">@ OC_SP_PURPLE</div><div class="ttdoc">The OCF Purple Security Profile.</div><div class="ttdef"><b>Definition:</b> <a href="oc__pki_8h_source.html#l00048">oc_pki.h:48</a></div></div>
-<div class="ttc" id="aoc__pki_8h_html_aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6"><div class="ttname"><a href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6">OC_SP_BLACK</a></div><div class="ttdeci">@ OC_SP_BLACK</div><div class="ttdoc">The OCF Black Security Profile.</div><div class="ttdef"><b>Definition:</b> <a href="oc__pki_8h_source.html#l00046">oc_pki.h:46</a></div></div>
-<div class="ttc" id="aoc__pki_8h_html_aa600b7f9ac50ab33f6501ae156ab9267a985dcbb563fec019726de7109d8dbbfb"><div class="ttname"><a href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a985dcbb563fec019726de7109d8dbbfb">OC_SP_BLUE</a></div><div class="ttdeci">@ OC_SP_BLUE</div><div class="ttdoc">The OCF Blue Security Profile.</div><div class="ttdef"><b>Definition:</b> <a href="oc__pki_8h_source.html#l00047">oc_pki.h:47</a></div></div>
-<div class="ttc" id="aoc__pki_8h_html_aa600b7f9ac50ab33f6501ae156ab9267a2752c9d6414f2a2b92321e5a0a0e7b4e"><div class="ttname"><a href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a2752c9d6414f2a2b92321e5a0a0e7b4e">OC_SP_BASELINE</a></div><div class="ttdeci">@ OC_SP_BASELINE</div><div class="ttdoc">The OCF Baseline Security Profile.</div><div class="ttdef"><b>Definition:</b> <a href="oc__pki_8h_source.html#l00045">oc_pki.h:45</a></div></div>
+<div class="ttc" id="aoc__pki_8h_html_aa600b7f9ac50ab33f6501ae156ab9267"><div class="ttname"><a href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a></div><div class="ttdeci">oc_sp_types_t</div><div class="ttdoc">defined security profiles</div><div class="ttdef"><b>Definition:</b> <a href="oc__pki_8h_source.html#l00043">oc_pki.h:43</a></div></div>
+<div class="ttc" id="aoc__pki_8h_html_aa600b7f9ac50ab33f6501ae156ab9267ad4f4d39c252f8699e475b53747826e47"><div class="ttname"><a href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267ad4f4d39c252f8699e475b53747826e47">OC_SP_PURPLE</a></div><div class="ttdeci">@ OC_SP_PURPLE</div><div class="ttdoc">The Purple Security Profile.</div><div class="ttdef"><b>Definition:</b> <a href="oc__pki_8h_source.html#l00047">oc_pki.h:47</a></div></div>
+<div class="ttc" id="aoc__pki_8h_html_aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6"><div class="ttname"><a href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6">OC_SP_BLACK</a></div><div class="ttdeci">@ OC_SP_BLACK</div><div class="ttdoc">The Black Security Profile.</div><div class="ttdef"><b>Definition:</b> <a href="oc__pki_8h_source.html#l00045">oc_pki.h:45</a></div></div>
+<div class="ttc" id="aoc__pki_8h_html_aa600b7f9ac50ab33f6501ae156ab9267a985dcbb563fec019726de7109d8dbbfb"><div class="ttname"><a href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a985dcbb563fec019726de7109d8dbbfb">OC_SP_BLUE</a></div><div class="ttdeci">@ OC_SP_BLUE</div><div class="ttdoc">The Blue Security Profile.</div><div class="ttdef"><b>Definition:</b> <a href="oc__pki_8h_source.html#l00046">oc_pki.h:46</a></div></div>
+<div class="ttc" id="aoc__pki_8h_html_aa600b7f9ac50ab33f6501ae156ab9267a2752c9d6414f2a2b92321e5a0a0e7b4e"><div class="ttname"><a href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a2752c9d6414f2a2b92321e5a0a0e7b4e">OC_SP_BASELINE</a></div><div class="ttdeci">@ OC_SP_BASELINE</div><div class="ttdoc">The Baseline Security Profile.</div><div class="ttdef"><b>Definition:</b> <a href="oc__pki_8h_source.html#l00044">oc_pki.h:44</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__pki_8h.html">oc_pki.h</a></li>
-    <li class="footer">Generated on Wed Jun 15 2022 10:52:30 for KNX IoT by
+    <li class="footer">Generated on Wed Jun 15 2022 10:56:18 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
