@@ -90,6 +90,9 @@ $(document).ready(function(){initNavTree('oc__events_8h.html',''); initResizable
 <div class="title">oc_events.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>the various events for the different quues  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;oc_config.h&quot;</code><br />
 <code>#include &quot;util/oc_process.h&quot;</code><br />
 </div>
@@ -97,25 +100,25 @@ $(document).ready(function(){initNavTree('oc__events_8h.html',''); initResizable
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:aef8ff800239fda16ac66e3c0c1843cc7"><td class="memItemLeft" align="right" valign="top"><a id="aef8ff800239fda16ac66e3c0c1843cc7"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>oc_events_t</b> { <br />
-&#160;&#160;<b>INBOUND_NETWORK_EVENT</b>, 
+<tr class="memitem:aef8ff800239fda16ac66e3c0c1843cc7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7">oc_events_t</a> { <br />
+&#160;&#160;<a class="el" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7ada7a8b49f173b67c6082c345e7c3d9bb">INBOUND_NETWORK_EVENT</a>, 
 <b>UDP_TO_TLS_EVENT</b>, 
 <b>INIT_TLS_CONN_EVENT</b>, 
 <b>RI_TO_TLS_EVENT</b>, 
 <br />
 &#160;&#160;<b>INBOUND_RI_EVENT</b>, 
-<b>OUTBOUND_NETWORK_EVENT</b>, 
-<b>OUTBOUND_NETWORK_EVENT_ENCRYPTED</b>, 
+<a class="el" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a1f2059fa8e1d55066c9ff11b808af1e3">OUTBOUND_NETWORK_EVENT</a>, 
+<a class="el" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a252e41fbb5ffb17ca3692abfa16b0445">OUTBOUND_NETWORK_EVENT_ENCRYPTED</a>, 
 <b>TLS_READ_DECRYPTED_DATA</b>, 
 <br />
 &#160;&#160;<b>TLS_WRITE_APPLICATION_DATA</b>, 
-<b>INTERFACE_DOWN</b>, 
-<b>INTERFACE_UP</b>, 
+<a class="el" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a48485ed825cea39d3c4735eabbef5e79">INTERFACE_DOWN</a>, 
+<a class="el" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a8c884af62d1e97a98ebd45f14bec6531">INTERFACE_UP</a>, 
 <b>TLS_CLOSE_ALL_SESSIONS</b>, 
 <br />
-&#160;&#160;<b>INBOUND_OSCORE_EVENT</b>, 
-<b>OUTBOUND_OSCORE_EVENT</b>, 
-<b>OUTBOUND_GROUP_OSCORE_EVENT</b>, 
+&#160;&#160;<a class="el" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a0ade29cd6a0157b6d9cf0b44f5c6332d">INBOUND_OSCORE_EVENT</a>, 
+<a class="el" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7ab5494c699e9f789e15b96b6514d884ec">OUTBOUND_OSCORE_EVENT</a>, 
+<a class="el" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7aaa9b172beaeb73117c55a72bed873414">OUTBOUND_GROUP_OSCORE_EVENT</a>, 
 <b>__NUM_OC_EVENT_TYPES__</b>
 <br />
  }</td></tr>
@@ -127,13 +130,79 @@ Variables</h2></td></tr>
 oc_process_event_t&#160;</td><td class="memItemRight" valign="bottom"><b>oc_events</b> []</td></tr>
 <tr class="separator:aa6fba2376082ef7435e344493ff34256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>the various events for the different quues </p>
+
+<p class="definition">Definition in file <a class="el" href="oc__events_8h_source.html">oc_events.h</a>.</p>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="aef8ff800239fda16ac66e3c0c1843cc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef8ff800239fda16ac66e3c0c1843cc7">&#9670;&nbsp;</a></span>oc_events_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7">oc_events_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aef8ff800239fda16ac66e3c0c1843cc7ada7a8b49f173b67c6082c345e7c3d9bb"></a>INBOUND_NETWORK_EVENT&#160;</td><td class="fielddoc"><p>inbound network event </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aef8ff800239fda16ac66e3c0c1843cc7a1f2059fa8e1d55066c9ff11b808af1e3"></a>OUTBOUND_NETWORK_EVENT&#160;</td><td class="fielddoc"><p>outbound network event </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aef8ff800239fda16ac66e3c0c1843cc7a252e41fbb5ffb17ca3692abfa16b0445"></a>OUTBOUND_NETWORK_EVENT_ENCRYPTED&#160;</td><td class="fielddoc"><p>outbound network event, payload is encrypted </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aef8ff800239fda16ac66e3c0c1843cc7a48485ed825cea39d3c4735eabbef5e79"></a>INTERFACE_DOWN&#160;</td><td class="fielddoc"><p>network interface down </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aef8ff800239fda16ac66e3c0c1843cc7a8c884af62d1e97a98ebd45f14bec6531"></a>INTERFACE_UP&#160;</td><td class="fielddoc"><p>network interface up </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aef8ff800239fda16ac66e3c0c1843cc7a0ade29cd6a0157b6d9cf0b44f5c6332d"></a>INBOUND_OSCORE_EVENT&#160;</td><td class="fielddoc"><p>inbound network event, payload is encrypted with oscore </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aef8ff800239fda16ac66e3c0c1843cc7ab5494c699e9f789e15b96b6514d884ec"></a>OUTBOUND_OSCORE_EVENT&#160;</td><td class="fielddoc"><p>outbound network event, payload is encrypted with oscore </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aef8ff800239fda16ac66e3c0c1843cc7aaa9b172beaeb73117c55a72bed873414"></a>OUTBOUND_GROUP_OSCORE_EVENT&#160;</td><td class="fielddoc"><p>outbound multicast network event, payload is encrypted with oscore </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="oc__events_8h_source.html#l00032">32</a> of file <a class="el" href="oc__events_8h_source.html">oc_events.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;             {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7ada7a8b49f173b67c6082c345e7c3d9bb">INBOUND_NETWORK_EVENT</a>, </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  UDP_TO_TLS_EVENT,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  INIT_TLS_CONN_EVENT,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  RI_TO_TLS_EVENT,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  INBOUND_RI_EVENT,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a1f2059fa8e1d55066c9ff11b808af1e3">OUTBOUND_NETWORK_EVENT</a>,           </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a252e41fbb5ffb17ca3692abfa16b0445">OUTBOUND_NETWORK_EVENT_ENCRYPTED</a>, </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  TLS_READ_DECRYPTED_DATA,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  TLS_WRITE_APPLICATION_DATA,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a48485ed825cea39d3c4735eabbef5e79">INTERFACE_DOWN</a>, </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a8c884af62d1e97a98ebd45f14bec6531">INTERFACE_UP</a>,   </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  TLS_CLOSE_ALL_SESSIONS,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a0ade29cd6a0157b6d9cf0b44f5c6332d">INBOUND_OSCORE_EVENT</a>,  </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7ab5494c699e9f789e15b96b6514d884ec">OUTBOUND_OSCORE_EVENT</a>, </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7aaa9b172beaeb73117c55a72bed873414">OUTBOUND_GROUP_OSCORE_EVENT</a>, </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  __NUM_OC_EVENT_TYPES__</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;} <a class="code" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7">oc_events_t</a>;</div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aoc__events_8h_html_aef8ff800239fda16ac66e3c0c1843cc7"><div class="ttname"><a href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7">oc_events_t</a></div><div class="ttdeci">oc_events_t</div><div class="ttdef"><b>Definition:</b> <a href="oc__events_8h_source.html#l00032">oc_events.h:32</a></div></div>
+<div class="ttc" id="aoc__events_8h_html_aef8ff800239fda16ac66e3c0c1843cc7a48485ed825cea39d3c4735eabbef5e79"><div class="ttname"><a href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a48485ed825cea39d3c4735eabbef5e79">INTERFACE_DOWN</a></div><div class="ttdeci">@ INTERFACE_DOWN</div><div class="ttdoc">network interface down</div><div class="ttdef"><b>Definition:</b> <a href="oc__events_8h_source.html#l00043">oc_events.h:43</a></div></div>
+<div class="ttc" id="aoc__events_8h_html_aef8ff800239fda16ac66e3c0c1843cc7a1f2059fa8e1d55066c9ff11b808af1e3"><div class="ttname"><a href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a1f2059fa8e1d55066c9ff11b808af1e3">OUTBOUND_NETWORK_EVENT</a></div><div class="ttdeci">@ OUTBOUND_NETWORK_EVENT</div><div class="ttdoc">outbound network event</div><div class="ttdef"><b>Definition:</b> <a href="oc__events_8h_source.html#l00038">oc_events.h:38</a></div></div>
+<div class="ttc" id="aoc__events_8h_html_aef8ff800239fda16ac66e3c0c1843cc7ada7a8b49f173b67c6082c345e7c3d9bb"><div class="ttname"><a href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7ada7a8b49f173b67c6082c345e7c3d9bb">INBOUND_NETWORK_EVENT</a></div><div class="ttdeci">@ INBOUND_NETWORK_EVENT</div><div class="ttdoc">inbound network event</div><div class="ttdef"><b>Definition:</b> <a href="oc__events_8h_source.html#l00033">oc_events.h:33</a></div></div>
+<div class="ttc" id="aoc__events_8h_html_aef8ff800239fda16ac66e3c0c1843cc7a0ade29cd6a0157b6d9cf0b44f5c6332d"><div class="ttname"><a href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a0ade29cd6a0157b6d9cf0b44f5c6332d">INBOUND_OSCORE_EVENT</a></div><div class="ttdeci">@ INBOUND_OSCORE_EVENT</div><div class="ttdoc">inbound network event, payload is encrypted with oscore</div><div class="ttdef"><b>Definition:</b> <a href="oc__events_8h_source.html#l00046">oc_events.h:46</a></div></div>
+<div class="ttc" id="aoc__events_8h_html_aef8ff800239fda16ac66e3c0c1843cc7a252e41fbb5ffb17ca3692abfa16b0445"><div class="ttname"><a href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a252e41fbb5ffb17ca3692abfa16b0445">OUTBOUND_NETWORK_EVENT_ENCRYPTED</a></div><div class="ttdeci">@ OUTBOUND_NETWORK_EVENT_ENCRYPTED</div><div class="ttdoc">outbound network event, payload is encrypted</div><div class="ttdef"><b>Definition:</b> <a href="oc__events_8h_source.html#l00039">oc_events.h:39</a></div></div>
+<div class="ttc" id="aoc__events_8h_html_aef8ff800239fda16ac66e3c0c1843cc7ab5494c699e9f789e15b96b6514d884ec"><div class="ttname"><a href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7ab5494c699e9f789e15b96b6514d884ec">OUTBOUND_OSCORE_EVENT</a></div><div class="ttdeci">@ OUTBOUND_OSCORE_EVENT</div><div class="ttdoc">outbound network event, payload is encrypted with oscore</div><div class="ttdef"><b>Definition:</b> <a href="oc__events_8h_source.html#l00048">oc_events.h:48</a></div></div>
+<div class="ttc" id="aoc__events_8h_html_aef8ff800239fda16ac66e3c0c1843cc7a8c884af62d1e97a98ebd45f14bec6531"><div class="ttname"><a href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a8c884af62d1e97a98ebd45f14bec6531">INTERFACE_UP</a></div><div class="ttdeci">@ INTERFACE_UP</div><div class="ttdoc">network interface up</div><div class="ttdef"><b>Definition:</b> <a href="oc__events_8h_source.html#l00044">oc_events.h:44</a></div></div>
+<div class="ttc" id="aoc__events_8h_html_aef8ff800239fda16ac66e3c0c1843cc7aaa9b172beaeb73117c55a72bed873414"><div class="ttname"><a href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7aaa9b172beaeb73117c55a72bed873414">OUTBOUND_GROUP_OSCORE_EVENT</a></div><div class="ttdeci">@ OUTBOUND_GROUP_OSCORE_EVENT</div><div class="ttdoc">outbound multicast network event, payload is encrypted with oscore</div><div class="ttdef"><b>Definition:</b> <a href="oc__events_8h_source.html#l00050">oc_events.h:50</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__events_8h.html">oc_events.h</a></li>
-    <li class="footer">Generated on Wed Jun 15 2022 09:03:36 for KNX IoT by
+    <li class="footer">Generated on Wed Jun 15 2022 10:20:51 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

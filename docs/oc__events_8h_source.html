@@ -103,49 +103,58 @@ $(document).ready(function(){initNavTree('oc__events_8h_source.html',''); initRe
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> // See the License for the specific language governing permissions and</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> // limitations under the License.</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef OC_EVENTS_H</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define OC_EVENTS_H</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;oc_config.h&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;util/oc_process.h&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  INBOUND_NETWORK_EVENT,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  UDP_TO_TLS_EVENT,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  INIT_TLS_CONN_EVENT,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  RI_TO_TLS_EVENT,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  INBOUND_RI_EVENT,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  OUTBOUND_NETWORK_EVENT,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  OUTBOUND_NETWORK_EVENT_ENCRYPTED,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  TLS_READ_DECRYPTED_DATA,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  TLS_WRITE_APPLICATION_DATA,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  INTERFACE_DOWN,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  INTERFACE_UP,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  TLS_CLOSE_ALL_SESSIONS,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  INBOUND_OSCORE_EVENT,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  OUTBOUND_OSCORE_EVENT,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  OUTBOUND_GROUP_OSCORE_EVENT,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  __NUM_OC_EVENT_TYPES__</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} oc_events_t;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">extern</span> oc_process_event_t oc_events[];</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef OC_EVENTS_H</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define OC_EVENTS_H</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;oc_config.h&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;util/oc_process.h&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7">   32</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7ada7a8b49f173b67c6082c345e7c3d9bb">   33</a></span>&#160;  <a class="code" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7ada7a8b49f173b67c6082c345e7c3d9bb">INBOUND_NETWORK_EVENT</a>, </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  UDP_TO_TLS_EVENT,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  INIT_TLS_CONN_EVENT,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  RI_TO_TLS_EVENT,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  INBOUND_RI_EVENT,</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a1f2059fa8e1d55066c9ff11b808af1e3">   38</a></span>&#160;  <a class="code" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a1f2059fa8e1d55066c9ff11b808af1e3">OUTBOUND_NETWORK_EVENT</a>,           </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a252e41fbb5ffb17ca3692abfa16b0445">   39</a></span>&#160;  <a class="code" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a252e41fbb5ffb17ca3692abfa16b0445">OUTBOUND_NETWORK_EVENT_ENCRYPTED</a>, </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  TLS_READ_DECRYPTED_DATA,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  TLS_WRITE_APPLICATION_DATA,</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a48485ed825cea39d3c4735eabbef5e79">   43</a></span>&#160;  <a class="code" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a48485ed825cea39d3c4735eabbef5e79">INTERFACE_DOWN</a>, </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a8c884af62d1e97a98ebd45f14bec6531">   44</a></span>&#160;  <a class="code" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a8c884af62d1e97a98ebd45f14bec6531">INTERFACE_UP</a>,   </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  TLS_CLOSE_ALL_SESSIONS,</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a0ade29cd6a0157b6d9cf0b44f5c6332d">   46</a></span>&#160;  <a class="code" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a0ade29cd6a0157b6d9cf0b44f5c6332d">INBOUND_OSCORE_EVENT</a>,  </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7ab5494c699e9f789e15b96b6514d884ec">   48</a></span>&#160;  <a class="code" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7ab5494c699e9f789e15b96b6514d884ec">OUTBOUND_OSCORE_EVENT</a>, </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7aaa9b172beaeb73117c55a72bed873414">   50</a></span>&#160;  <a class="code" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7aaa9b172beaeb73117c55a72bed873414">OUTBOUND_GROUP_OSCORE_EVENT</a>, </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  __NUM_OC_EVENT_TYPES__</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;} <a class="code" href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7">oc_events_t</a>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_EVENTS_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">extern</span> oc_process_event_t oc_events[];</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_EVENTS_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aoc__events_8h_html_aef8ff800239fda16ac66e3c0c1843cc7"><div class="ttname"><a href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7">oc_events_t</a></div><div class="ttdeci">oc_events_t</div><div class="ttdef"><b>Definition:</b> <a href="oc__events_8h_source.html#l00032">oc_events.h:32</a></div></div>
+<div class="ttc" id="aoc__events_8h_html_aef8ff800239fda16ac66e3c0c1843cc7a48485ed825cea39d3c4735eabbef5e79"><div class="ttname"><a href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a48485ed825cea39d3c4735eabbef5e79">INTERFACE_DOWN</a></div><div class="ttdeci">@ INTERFACE_DOWN</div><div class="ttdoc">network interface down</div><div class="ttdef"><b>Definition:</b> <a href="oc__events_8h_source.html#l00043">oc_events.h:43</a></div></div>
+<div class="ttc" id="aoc__events_8h_html_aef8ff800239fda16ac66e3c0c1843cc7a1f2059fa8e1d55066c9ff11b808af1e3"><div class="ttname"><a href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a1f2059fa8e1d55066c9ff11b808af1e3">OUTBOUND_NETWORK_EVENT</a></div><div class="ttdeci">@ OUTBOUND_NETWORK_EVENT</div><div class="ttdoc">outbound network event</div><div class="ttdef"><b>Definition:</b> <a href="oc__events_8h_source.html#l00038">oc_events.h:38</a></div></div>
+<div class="ttc" id="aoc__events_8h_html_aef8ff800239fda16ac66e3c0c1843cc7ada7a8b49f173b67c6082c345e7c3d9bb"><div class="ttname"><a href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7ada7a8b49f173b67c6082c345e7c3d9bb">INBOUND_NETWORK_EVENT</a></div><div class="ttdeci">@ INBOUND_NETWORK_EVENT</div><div class="ttdoc">inbound network event</div><div class="ttdef"><b>Definition:</b> <a href="oc__events_8h_source.html#l00033">oc_events.h:33</a></div></div>
+<div class="ttc" id="aoc__events_8h_html_aef8ff800239fda16ac66e3c0c1843cc7a0ade29cd6a0157b6d9cf0b44f5c6332d"><div class="ttname"><a href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a0ade29cd6a0157b6d9cf0b44f5c6332d">INBOUND_OSCORE_EVENT</a></div><div class="ttdeci">@ INBOUND_OSCORE_EVENT</div><div class="ttdoc">inbound network event, payload is encrypted with oscore</div><div class="ttdef"><b>Definition:</b> <a href="oc__events_8h_source.html#l00046">oc_events.h:46</a></div></div>
+<div class="ttc" id="aoc__events_8h_html_aef8ff800239fda16ac66e3c0c1843cc7a252e41fbb5ffb17ca3692abfa16b0445"><div class="ttname"><a href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a252e41fbb5ffb17ca3692abfa16b0445">OUTBOUND_NETWORK_EVENT_ENCRYPTED</a></div><div class="ttdeci">@ OUTBOUND_NETWORK_EVENT_ENCRYPTED</div><div class="ttdoc">outbound network event, payload is encrypted</div><div class="ttdef"><b>Definition:</b> <a href="oc__events_8h_source.html#l00039">oc_events.h:39</a></div></div>
+<div class="ttc" id="aoc__events_8h_html_aef8ff800239fda16ac66e3c0c1843cc7ab5494c699e9f789e15b96b6514d884ec"><div class="ttname"><a href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7ab5494c699e9f789e15b96b6514d884ec">OUTBOUND_OSCORE_EVENT</a></div><div class="ttdeci">@ OUTBOUND_OSCORE_EVENT</div><div class="ttdoc">outbound network event, payload is encrypted with oscore</div><div class="ttdef"><b>Definition:</b> <a href="oc__events_8h_source.html#l00048">oc_events.h:48</a></div></div>
+<div class="ttc" id="aoc__events_8h_html_aef8ff800239fda16ac66e3c0c1843cc7a8c884af62d1e97a98ebd45f14bec6531"><div class="ttname"><a href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a8c884af62d1e97a98ebd45f14bec6531">INTERFACE_UP</a></div><div class="ttdeci">@ INTERFACE_UP</div><div class="ttdoc">network interface up</div><div class="ttdef"><b>Definition:</b> <a href="oc__events_8h_source.html#l00044">oc_events.h:44</a></div></div>
+<div class="ttc" id="aoc__events_8h_html_aef8ff800239fda16ac66e3c0c1843cc7aaa9b172beaeb73117c55a72bed873414"><div class="ttname"><a href="oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7aaa9b172beaeb73117c55a72bed873414">OUTBOUND_GROUP_OSCORE_EVENT</a></div><div class="ttdeci">@ OUTBOUND_GROUP_OSCORE_EVENT</div><div class="ttdoc">outbound multicast network event, payload is encrypted with oscore</div><div class="ttdef"><b>Definition:</b> <a href="oc__events_8h_source.html#l00050">oc_events.h:50</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__events_8h.html">oc_events.h</a></li>
-    <li class="footer">Generated on Wed Jun 15 2022 09:03:36 for KNX IoT by
+    <li class="footer">Generated on Wed Jun 15 2022 10:20:51 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

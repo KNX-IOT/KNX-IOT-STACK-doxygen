@@ -6,7 +6,7 @@ var lssb__minimal__all_8c =
     [ "STATIC", "lssb__minimal__all_8c.html#a10b2d890d871e1489bb02b7e70d9bdfb", null ],
     [ "app_init", "lssb__minimal__all_8c.html#a2e2efabbeb1c8c68790bb90ce01c4578", null ],
     [ "factory_presets_cb", "lssb__minimal__all_8c.html#af64d0024325ec8b8a8d68f03e6ed0965", null ],
-    [ "get_dpa_421_61", "lssb__minimal__all_8c.html#a462024e08f2ab12d1bcb7551e6f2fb8d", null ],
+    [ "get_o_1_1", "lssb__minimal__all_8c.html#a949dfb335c9df07c7cd6bae3c92df979", null ],
     [ "handle_signal", "lssb__minimal__all_8c.html#adb1a37faa77219e1add3c026597c3dec", null ],
     [ "hostname_cb", "lssb__minimal__all_8c.html#afad3146eb28ba36e69a105b33d70eda0", null ],
     [ "initialize_variables", "lssb__minimal__all_8c.html#a0e5a86f649d1ffc0f49c60204fb78888", null ],
