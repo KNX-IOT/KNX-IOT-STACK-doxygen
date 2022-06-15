@@ -102,30 +102,30 @@ $(document).ready(function(){initNavTree('oc__discovery_8h_source.html',''); ini
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// See the License for the specific language governing permissions and</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// limitations under the License.</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef OC_DISCOVERY_H</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define OC_DISCOVERY_H</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__discovery_8h.html#ab2ac6116f514382d8ef637e2f41911b0">oc_create_discovery_resource</a>(<span class="keywordtype">int</span> resource_idx, <span class="keywordtype">size_t</span> device);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="oc__discovery_8h.html#aea41f8559930c6487093479e23a98802">oc_filter_resource</a>(<a class="code" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="code" href="structoc__request__t.html">oc_request_t</a> *request,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                        <span class="keywordtype">size_t</span> device_index, <span class="keywordtype">size_t</span> *response_length,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                        <span class="keywordtype">int</span> matches);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="oc__discovery_8h.html#a35b2a296a32251f2647820eb8bce0160">oc_add_resource_to_wk</a>(<a class="code" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="code" href="structoc__request__t.html">oc_request_t</a> *request,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                           <span class="keywordtype">size_t</span> device_index, <span class="keywordtype">size_t</span> *response_length,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                           <span class="keywordtype">int</span> matches);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_DISCOVERY_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef OC_DISCOVERY_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define OC_DISCOVERY_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__discovery_8h.html#ab2ac6116f514382d8ef637e2f41911b0">oc_create_discovery_resource</a>(<span class="keywordtype">int</span> resource_idx, <span class="keywordtype">size_t</span> device);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="oc__discovery_8h.html#aea41f8559930c6487093479e23a98802">oc_filter_resource</a>(<a class="code" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="code" href="structoc__request__t.html">oc_request_t</a> *request,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                        <span class="keywordtype">size_t</span> device_index, <span class="keywordtype">size_t</span> *response_length,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                        <span class="keywordtype">int</span> matches);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="oc__discovery_8h.html#a35b2a296a32251f2647820eb8bce0160">oc_add_resource_to_wk</a>(<a class="code" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="code" href="structoc__request__t.html">oc_request_t</a> *request,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                           <span class="keywordtype">size_t</span> device_index, <span class="keywordtype">size_t</span> *response_length,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                           <span class="keywordtype">int</span> matches);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_DISCOVERY_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructoc__request__t_html"><div class="ttname"><a href="structoc__request__t.html">oc_request_t</a></div><div class="ttdoc">request information structure</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00300">oc_ri.h:300</a></div></div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('oc__discovery_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__discovery_8h.html">oc_discovery.h</a></li>
-    <li class="footer">Generated on Wed Jun 15 2022 10:20:51 for KNX IoT by
+    <li class="footer">Generated on Wed Jun 15 2022 10:42:36 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
