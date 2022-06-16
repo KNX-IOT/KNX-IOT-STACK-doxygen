@@ -219,6 +219,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6303fae2cc47700890e54f749275d0ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a6303fae2cc47700890e54f749275d0ba">oc_dump_group_object_table_entry</a> (int entry)</td></tr>
 <tr class="memdesc:a6303fae2cc47700890e54f749275d0ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">dump the entry of the Group Object Table (to persistent) storage  <a href="oc__knx__fp_8h.html#a6303fae2cc47700890e54f749275d0ba">More...</a><br /></td></tr>
 <tr class="separator:a6303fae2cc47700890e54f749275d0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2de30133c971e32d21fcd46cc5043e0f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a2de30133c971e32d21fcd46cc5043e0f">oc_find_grpid_in_publisher_table</a> (int group_address)</td></tr>
+<tr class="memdesc:a2de30133c971e32d21fcd46cc5043e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">find the grpid from the group_address  <a href="oc__knx__fp_8h.html#a2de30133c971e32d21fcd46cc5043e0f">More...</a><br /></td></tr>
+<tr class="separator:a2de30133c971e32d21fcd46cc5043e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7af5081ac4617424c9b4c766f9bb19d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a7af5081ac4617424c9b4c766f9bb19d6">oc_free_knx_fp_resources</a> (size_t device_index)</td></tr>
 <tr class="memdesc:a7af5081ac4617424c9b4c766f9bb19d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">free the fp resources e.g.  <a href="oc__knx__fp_8h.html#a7af5081ac4617424c9b4c766f9bb19d6">More...</a><br /></td></tr>
 <tr class="separator:a7af5081ac4617424c9b4c766f9bb19d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1293,6 +1296,34 @@ false is not part of the recipient entry </dd></dl>
 
 </div>
 </div>
+<a id="a2de30133c971e32d21fcd46cc5043e0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2de30133c971e32d21fcd46cc5043e0f">&#9670;&nbsp;</a></span>oc_find_grpid_in_publisher_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_find_grpid_in_publisher_table </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>group_address</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>find the grpid from the group_address </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__knx__fp_8h.html#a3bc72047648ad8448a75471899e7bcec" title="register the multicast addresses to listen to">oc_register_group_multicasts</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group_address</td><td>The group_address from the group object table </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the grpid matching the group_address the table publisher table or -1 if not found </dd></dl>
+
+</div>
+</div>
 <a id="a7af5081ac4617424c9b4c766f9bb19d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7af5081ac4617424c9b4c766f9bb19d6">&#9670;&nbsp;</a></span>oc_free_knx_fp_resources()</h2>
 
@@ -1591,7 +1622,7 @@ false is not part of the recipient entry </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__fp_8h.html">oc_knx_fp.h</a></li>
-    <li class="footer">Generated on Thu Jun 16 2022 14:02:55 for KNX IoT by
+    <li class="footer">Generated on Thu Jun 16 2022 14:48:07 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
