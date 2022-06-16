@@ -238,7 +238,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ab1f82e781199d5f10d6cedc7ab548d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">print the entry in the Group Object Table  <a href="oc__knx__fp_8h.html#ab1f82e781199d5f10d6cedc7ab548d30">More...</a><br /></td></tr>
 <tr class="separator:ab1f82e781199d5f10d6cedc7ab548d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bc72047648ad8448a75471899e7bcec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a3bc72047648ad8448a75471899e7bcec">oc_register_group_multicasts</a> ()</td></tr>
-<tr class="memdesc:a3bc72047648ad8448a75471899e7bcec"><td class="mdescLeft">&#160;</td><td class="mdescRight">register the group entries in the Group Object table as multi cast receive addresses  <a href="oc__knx__fp_8h.html#a3bc72047648ad8448a75471899e7bcec">More...</a><br /></td></tr>
+<tr class="memdesc:a3bc72047648ad8448a75471899e7bcec"><td class="mdescLeft">&#160;</td><td class="mdescRight">register the multicast addresses to listen to  <a href="oc__knx__fp_8h.html#a3bc72047648ad8448a75471899e7bcec">More...</a><br /></td></tr>
 <tr class="separator:a3bc72047648ad8448a75471899e7bcec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e8c55aefb73eecf9793464999ce7405"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a5e8c55aefb73eecf9793464999ce7405">subscribe_group_to_multicast</a> (int group_nr, int iid, int scope)</td></tr>
 <tr class="memdesc:a5e8c55aefb73eecf9793464999ce7405"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscribe to a multicast address, defined by group number and installation id  <a href="oc__knx__fp_8h.html#a5e8c55aefb73eecf9793464999ce7405">More...</a><br /></td></tr>
@@ -1453,8 +1453,37 @@ false is not part of the recipient entry </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>register the group entries in the Group Object table as multi cast receive addresses </p>
-<p>function to be called when the device is (re)started in run-time mode </p>
+<p>register the multicast addresses to listen to </p>
+<p>The addresses are formed from:</p><ul>
+<li>situation 1) grpid of the publisher entries or if no grpid exist:</li>
+<li>situation 2) group address entries in the Group Object table</li>
+</ul>
+<p>for situation 1):</p><ul>
+<li>loop over the group object table<ul>
+<li>for each group address entry<ul>
+<li>if cflags is "Write" "Update" "Read"<ul>
+<li>find the grpid entry in the publisher table</li>
+<li>register the grpid as part of the address</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>for situation 2):</p><ul>
+<li>loop over the group object table<ul>
+<li>for each group address entry<ul>
+<li>if cflags is "Write" "Update" "Read"<ul>
+<li>register the group address as part of the address</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>function is called when the device is (re)started in run-time mode (e.g. state = "loaded") </p>
 
 </div>
 </div>
@@ -1562,7 +1591,7 @@ false is not part of the recipient entry </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__fp_8h.html">oc_knx_fp.h</a></li>
-    <li class="footer">Generated on Thu Jun 16 2022 13:06:03 for KNX IoT by
+    <li class="footer">Generated on Thu Jun 16 2022 14:02:55 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
