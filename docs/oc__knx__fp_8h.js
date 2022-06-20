@@ -42,6 +42,7 @@ var oc__knx__fp_8h =
     [ "oc_delete_group_rp_table", "oc__knx__fp_8h.html#aaad90d4df707ff25a3cd0b257b037fa4", null ],
     [ "oc_dump_group_object_table_entry", "oc__knx__fp_8h.html#a6303fae2cc47700890e54f749275d0ba", null ],
     [ "oc_find_grpid_in_publisher_table", "oc__knx__fp_8h.html#a2de30133c971e32d21fcd46cc5043e0f", null ],
+    [ "oc_find_grpid_in_recipient_table", "oc__knx__fp_8h.html#af123393da684e0ac37bf73a20f92dade", null ],
     [ "oc_free_knx_fp_resources", "oc__knx__fp_8h.html#a7af5081ac4617424c9b4c766f9bb19d6", null ],
     [ "oc_init_datapoints_at_initialization", "oc__knx__fp_8h.html#ae6351cde66c0e781f6fa202fa28c8fd4", null ],
     [ "oc_load_group_object_table", "oc__knx__fp_8h.html#a6b9862f84a91e2b390b544273d436057", null ],

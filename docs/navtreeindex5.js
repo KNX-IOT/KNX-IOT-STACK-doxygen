@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"structoc__group__object__notification__t.html#affee04641198fb655ede4e4b77099b2b":[2,0,12,0],
 "structoc__group__object__table__t.html":[2,0,13],
 "structoc__group__object__table__t.html#a22a183c30157b0a15e7f07811feadf79":[2,0,13,0],
 "structoc__group__object__table__t.html#a22b3ba4f6d50d70d36c5107bd0a8050f":[2,0,13,2],

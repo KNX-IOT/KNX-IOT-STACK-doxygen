@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa51e4c9c0968dba0df5043a7d25f4e932":[3,0,37,22,25],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa52ca5e0c6552a1c464539824e3047042":[3,0,37,22,38],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa542c384df4dfd5696439f191db7f2cac":[3,0,37,22,15],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa5dd3a1766e3862f35f7a333279d650c1":[3,0,37,22,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "structoc__group__object__notification__t.html":[2,0,12],
 "structoc__group__object__notification__t.html#a61cd41def2fb07634a2fb0049bf5c104":[2,0,12,1],
 "structoc__group__object__notification__t.html#ac33eb457eb31def51a3c40abcf60f884":[2,0,12,2],
-"structoc__group__object__notification__t.html#ae20335a9b5c8e36a127e172788928e61":[2,0,12,3],
-"structoc__group__object__notification__t.html#affee04641198fb655ede4e4b77099b2b":[2,0,12,0]
+"structoc__group__object__notification__t.html#ae20335a9b5c8e36a127e172788928e61":[2,0,12,3]
 };
