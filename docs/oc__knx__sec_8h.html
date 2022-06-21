@@ -176,6 +176,17 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>knx application level security </p>
+<h2>Replay algorithm</h2>
+<p>The Replay window has 2 functions:</p>
+<ul>
+<li>avoid replay attacks on the server side.</li>
+<li>verify the oscore serial number if not yet known.</li>
+</ul>
+<p>Description of the implemented replay window algorithm.</p>
+<p>The KNX servers keep a list endpoints that they have received a 'synchronised' message from. Upon boot, this list endpoints is empty, so servers will respond to requests from all new client endpoints with <code>4.01 UNAUTHORISED</code> message containing an Echo option. The echo option is OSCORE-encrypted, and its actual value is the local time of the server. Upon receiving such a response, the client retransmits the request and includes the Echo value that the server sent. This verifies that:</p>
+<p>a) the client is reachable at the source IP address, preventing attackers from attempting to bypass the deduplication code by changing the source IP address of packets.</p>
+<p>b) the request is fresh - the server drops request where the timestamp contained in the Echo option is older than a given threshold, configurable within engine.c.</p>
+<p>The handling of the replay is transparent to the higher layers. So the return code <code>4.01 UNAUTHORISED</code> does not reach the client callback. The only observable side-effect is that the first request sent to a 'new' server will have a slightly longer latency: twice the round-trip time, as opposed to just once. </p>
 
 <p class="definition">Definition in file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
@@ -286,12 +297,12 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00034">34</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;             {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413ba7560be721e3d248a52d9cd983c9827c6">OC_PROFILE_UNKNOWN</a> = 0, </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baf60eb5fe6cbe2f1184e7a9ccfc485176">OC_PROFILE_COAP_DTLS</a>,   </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baa59d809c61c6d5cfab4a805a622401e6">OC_PROFILE_COAP_OSCORE</a>  </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;} <a class="code" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413b">oc_at_profile_t</a>;</div>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00067">67</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;             {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413ba7560be721e3d248a52d9cd983c9827c6">OC_PROFILE_UNKNOWN</a> = 0, </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baf60eb5fe6cbe2f1184e7a9ccfc485176">OC_PROFILE_COAP_DTLS</a>,   </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baa59d809c61c6d5cfab4a805a622401e6">OC_PROFILE_COAP_OSCORE</a>  </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;} <a class="code" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413b">oc_at_profile_t</a>;</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -864,15 +875,15 @@ false does not have access </dd></dl>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aoc__knx__sec_8h_html_a59959db4a8e4a2ca73d5fd720259413baa59d809c61c6d5cfab4a805a622401e6"><div class="ttname"><a href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baa59d809c61c6d5cfab4a805a622401e6">OC_PROFILE_COAP_OSCORE</a></div><div class="ttdeci">@ OC_PROFILE_COAP_OSCORE</div><div class="ttdoc">&quot;coap_oscore&quot;</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__sec_8h_source.html#l00037">oc_knx_sec.h:37</a></div></div>
-<div class="ttc" id="aoc__knx__sec_8h_html_a59959db4a8e4a2ca73d5fd720259413ba7560be721e3d248a52d9cd983c9827c6"><div class="ttname"><a href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413ba7560be721e3d248a52d9cd983c9827c6">OC_PROFILE_UNKNOWN</a></div><div class="ttdeci">@ OC_PROFILE_UNKNOWN</div><div class="ttdoc">unknown profile</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__sec_8h_source.html#l00035">oc_knx_sec.h:35</a></div></div>
-<div class="ttc" id="aoc__knx__sec_8h_html_a59959db4a8e4a2ca73d5fd720259413baf60eb5fe6cbe2f1184e7a9ccfc485176"><div class="ttname"><a href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baf60eb5fe6cbe2f1184e7a9ccfc485176">OC_PROFILE_COAP_DTLS</a></div><div class="ttdeci">@ OC_PROFILE_COAP_DTLS</div><div class="ttdoc">&quot;coap_dtls&quot;</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__sec_8h_source.html#l00036">oc_knx_sec.h:36</a></div></div>
-<div class="ttc" id="aoc__knx__sec_8h_html_a59959db4a8e4a2ca73d5fd720259413b"><div class="ttname"><a href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413b">oc_at_profile_t</a></div><div class="ttdeci">oc_at_profile_t</div><div class="ttdoc">The token profiles see section 3.5.4.2 Access Token Resource Object.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__sec_8h_source.html#l00034">oc_knx_sec.h:34</a></div></div>
+<div class="ttc" id="aoc__knx__sec_8h_html_a59959db4a8e4a2ca73d5fd720259413baa59d809c61c6d5cfab4a805a622401e6"><div class="ttname"><a href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baa59d809c61c6d5cfab4a805a622401e6">OC_PROFILE_COAP_OSCORE</a></div><div class="ttdeci">@ OC_PROFILE_COAP_OSCORE</div><div class="ttdoc">&quot;coap_oscore&quot;</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__sec_8h_source.html#l00070">oc_knx_sec.h:70</a></div></div>
+<div class="ttc" id="aoc__knx__sec_8h_html_a59959db4a8e4a2ca73d5fd720259413ba7560be721e3d248a52d9cd983c9827c6"><div class="ttname"><a href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413ba7560be721e3d248a52d9cd983c9827c6">OC_PROFILE_UNKNOWN</a></div><div class="ttdeci">@ OC_PROFILE_UNKNOWN</div><div class="ttdoc">unknown profile</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__sec_8h_source.html#l00068">oc_knx_sec.h:68</a></div></div>
+<div class="ttc" id="aoc__knx__sec_8h_html_a59959db4a8e4a2ca73d5fd720259413baf60eb5fe6cbe2f1184e7a9ccfc485176"><div class="ttname"><a href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baf60eb5fe6cbe2f1184e7a9ccfc485176">OC_PROFILE_COAP_DTLS</a></div><div class="ttdeci">@ OC_PROFILE_COAP_DTLS</div><div class="ttdoc">&quot;coap_dtls&quot;</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__sec_8h_source.html#l00069">oc_knx_sec.h:69</a></div></div>
+<div class="ttc" id="aoc__knx__sec_8h_html_a59959db4a8e4a2ca73d5fd720259413b"><div class="ttname"><a href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413b">oc_at_profile_t</a></div><div class="ttdeci">oc_at_profile_t</div><div class="ttdoc">The token profiles see section 3.5.4.2 Access Token Resource Object.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__sec_8h_source.html#l00067">oc_knx_sec.h:67</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__sec_8h.html">oc_knx_sec.h</a></li>
-    <li class="footer">Generated on Mon Jun 20 2022 16:26:10 for KNX IoT by
+    <li class="footer">Generated on Tue Jun 21 2022 10:31:54 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
