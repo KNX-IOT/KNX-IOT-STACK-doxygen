@@ -20,6 +20,7 @@ var annotated_dup =
     [ "oc_ipv4_addr_t", "structoc__ipv4__addr__t.html", "structoc__ipv4__addr__t" ],
     [ "oc_ipv6_addr_t", "structoc__ipv6__addr__t.html", "structoc__ipv6__addr__t" ],
     [ "oc_knx_version_info_t", "structoc__knx__version__info__t.html", "structoc__knx__version__info__t" ],
+    [ "oc_loadstate_t", "structoc__loadstate__t.html", "structoc__loadstate__t" ],
     [ "oc_network_interface_cb", "structoc__network__interface__cb.html", "structoc__network__interface__cb" ],
     [ "oc_pase_t", "structoc__pase__t.html", "structoc__pase__t" ],
     [ "oc_platform_info_t", "structoc__platform__info__t.html", "structoc__platform__info__t" ],
