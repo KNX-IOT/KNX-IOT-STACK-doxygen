@@ -187,7 +187,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a9382247baeb3f915c87373c2b8bbe757"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the ldevid  <a href="oc__knx_8h.html#a9382247baeb3f915c87373c2b8bbe757">More...</a><br /></td></tr>
 <tr class="separator:a9382247baeb3f915c87373c2b8bbe757"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a718a9bcb83e4b1e7d0dfcc6bf24efb9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx_8h.html#a718a9bcb83e4b1e7d0dfcc6bf24efb9e">oc_reset_device</a> (size_t device_index, int reset_value)</td></tr>
-<tr class="memdesc:a718a9bcb83e4b1e7d0dfcc6bf24efb9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset the device the reset value according to the specification  <a href="oc__knx_8h.html#a718a9bcb83e4b1e7d0dfcc6bf24efb9e">More...</a><br /></td></tr>
+<tr class="memdesc:a718a9bcb83e4b1e7d0dfcc6bf24efb9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset the device the reset value according to the specification:  <a href="oc__knx_8h.html#a718a9bcb83e4b1e7d0dfcc6bf24efb9e">More...</a><br /></td></tr>
 <tr class="separator:a718a9bcb83e4b1e7d0dfcc6bf24efb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab43f80f4aa46e8d1e49f4e4c10a6b57e"><td class="memItemLeft" align="right" valign="top"><a id="ab43f80f4aa46e8d1e49f4e4c10a6b57e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>oc_s_mode_notification_to_json</b> (char *buffer, size_t buffer_size, <a class="el" href="structoc__group__object__notification__t.html">oc_group_object_notification_t</a> notification)</td></tr>
@@ -795,10 +795,33 @@ false not in run time </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>reset the device the reset value according to the specification </p>
+<p>reset the device the reset value according to the specification: </p>
 <ul>
-<li>2: reset to the default state (e.g. erase all)</li>
-<li>7: reset all except: addressing (ia) and security (credentials)) <dl class="params"><dt>Parameters</dt><dd>
+<li>reset = 2 (Factory Reset) :<ul>
+<li>internal address (ia)</li>
+<li>host name (hname)</li>
+<li>Installation ID (iid)</li>
+<li>programming mode (pm)</li>
+<li>device address (da)</li>
+<li>sub address (sa)</li>
+<li>group object table</li>
+<li>recipient object table</li>
+<li>publisher object table</li>
+</ul>
+</li>
+<li>reset = 3 (reset ia) :<ul>
+<li>internal address (ia)</li>
+</ul>
+</li>
+<li>reset = 7 (Factory Reset without IA):<ul>
+<li>group object table</li>
+<li>recipient object table</li>
+<li>publisher object table</li>
+</ul>
+</li>
+</ul>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__knx__dev_8h.html#ad5870712fe9b484e2816b4b0fc4dfea5" title="clear the persistent storage reset behavior according to the supplied erase code">oc_knx_device_storage_reset</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device_index</td><td>the device index </td></tr>
     <tr><td class="paramname">reset_value</td><td>the reset value </td></tr>
@@ -806,8 +829,6 @@ false not in run time </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int 0== success </dd></dl>
-</li>
-</ul>
 
 </div>
 </div>
@@ -867,7 +888,7 @@ false not in run time </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__knx_8h.html">oc_knx.h</a></li>
-    <li class="footer">Generated on Mon Jun 27 2022 13:30:51 for KNX IoT by
+    <li class="footer">Generated on Tue Jun 28 2022 09:06:54 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
