@@ -937,6 +937,8 @@ false is not part of the recipient entry </dd></dl>
 </div><div class="memdoc">
 
 <p>retrieve the publisher table entry </p>
+<p>Note that always the group object table is returned. regardless if the data is valid or not.</p>
+<p>To check if the data is valid, please check if ga_len &gt; 0, if ga_len &lt;= 0 then the group object table does not contain an entry.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>the index in the publisher table </td></tr>
@@ -1038,6 +1040,8 @@ false is not part of the recipient entry </dd></dl>
 </div><div class="memdoc">
 
 <p>retrieve the recipient table entry </p>
+<p>Note that always the group object table is returned. regardless if the data is valid or not.</p>
+<p>To check if the data is valid, please check if ga_len &gt; 0, if ga_len &lt;= 0 then the group object table does not contain an entry.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>the index in the recipient table </td></tr>
@@ -1655,7 +1659,7 @@ false is not part of the recipient entry </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__fp_8h.html">oc_knx_fp.h</a></li>
-    <li class="footer">Generated on Tue Jul 5 2022 07:16:01 for KNX IoT by
+    <li class="footer">Generated on Tue Jul 5 2022 07:27:18 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
