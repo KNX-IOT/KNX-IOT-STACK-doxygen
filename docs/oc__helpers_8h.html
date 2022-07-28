@@ -201,8 +201,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a21388fe7ccd9c6b20eea12b9faa3a7d0"><td class="memItemLeft" align="right" valign="top"><a id="a21388fe7ccd9c6b20eea12b9faa3a7d0"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_array_set_item</b>(ocstringarray,  str,  index)&#160;&#160;&#160;(_oc_copy_string_to_array(&amp;(ocstringarray), str, index))</td></tr>
 <tr class="separator:a21388fe7ccd9c6b20eea12b9faa3a7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05a966f693c858bc33d7f2969750a193"><td class="memItemLeft" align="right" valign="top"><a id="a05a966f693c858bc33d7f2969750a193"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_checked</b>(ocstring)&#160;&#160;&#160;(oc_cast(ocstring, char) ? oc_cast(ocstring, char) : &quot;NULL&quot;)</td></tr>
+<tr class="memitem:a05a966f693c858bc33d7f2969750a193"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a05a966f693c858bc33d7f2969750a193">oc_string_checked</a>(ocstring)&#160;&#160;&#160;(oc_cast(ocstring, char) ? oc_cast(ocstring, char) : &quot;NULL&quot;)</td></tr>
+<tr class="memdesc:a05a966f693c858bc33d7f2969750a193"><td class="mdescLeft">&#160;</td><td class="mdescRight">cast oc_string to string, replace null pointer results with a pointer to "NULL"  <a href="oc__helpers_8h.html#a05a966f693c858bc33d7f2969750a193">More...</a><br /></td></tr>
 <tr class="separator:a05a966f693c858bc33d7f2969750a193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7871cb2503f01b029bf4af91ab45e226"><td class="memItemLeft" align="right" valign="top"><a id="a7871cb2503f01b029bf4af91ab45e226"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_len</b>(ocstring)&#160;&#160;&#160;((ocstring).size ? (ocstring).size - 1 : 0)</td></tr>
@@ -334,7 +334,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>allocate oc_string </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00086">86</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00091">91</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -356,7 +356,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>free array of booleans </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00111">111</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00116">116</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -378,7 +378,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>free array of doubles </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00117">117</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00122">122</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -400,7 +400,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>free array of integers </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00105">105</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00110">110</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -422,7 +422,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>free ocstring </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00099">99</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00104">104</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -444,7 +444,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>free oc string array </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00150">150</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00155">155</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -476,7 +476,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>new boolean array </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00129">129</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00134">134</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -508,7 +508,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>new double array </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00136">136</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00141">141</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -540,7 +540,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>new integer array </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00123">123</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00128">128</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -578,7 +578,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>create new string from string (not null terminated) </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00092">92</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00097">97</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -610,7 +610,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>new oc string array </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00143">143</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00148">148</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -633,6 +633,28 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 <p>cast oc_string to string </p>
 
 <p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00043">43</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+
+</div>
+</div>
+<a id="a05a966f693c858bc33d7f2969750a193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05a966f693c858bc33d7f2969750a193">&#9670;&nbsp;</a></span>oc_string_checked</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define oc_string_checked</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ocstring</td><td>)</td>
+          <td>&#160;&#160;&#160;(oc_cast(ocstring, char) ? oc_cast(ocstring, char) : &quot;NULL&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>cast oc_string to string, replace null pointer results with a pointer to "NULL" </p>
+
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00050">50</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -1374,7 +1396,7 @@ false </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Thu Jul 28 2022 15:00:56 for KNX IoT by
+    <li class="footer">Generated on Thu Jul 28 2022 15:02:56 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -407,7 +407,7 @@ false</dd></dl>
 <div class="line">  PRINT(<span class="stringliteral">&quot;GET_light:\n&quot;</span>);</div>
 <div class="line">  <a class="code" href="structoc__rep__s.html">oc_rep_t</a> *rep = data-&gt;<a class="code" href="structoc__client__response__t.html#a4e7476f42ae4af489a46e6d05b8e4727">payload</a>;</div>
 <div class="line">  <span class="keywordflow">while</span> (rep != NULL) {</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;key %s, value &quot;</span>, oc_string_checked(rep-&gt;<a class="code" href="structoc__rep__s.html#a166cce7286659ef193d310d9efd8c1ad">name</a>));</div>
+<div class="line">    PRINT(<span class="stringliteral">&quot;key %s, value &quot;</span>, <a class="code" href="oc__helpers_8h.html#a05a966f693c858bc33d7f2969750a193">oc_string_checked</a>(rep-&gt;<a class="code" href="structoc__rep__s.html#a166cce7286659ef193d310d9efd8c1ad">name</a>));</div>
 <div class="line">    <span class="keywordflow">switch</span> (rep-&gt;<a class="code" href="structoc__rep__s.html#a0b9aa324e5d6b7bff8aec217936f0a38">type</a>) {</div>
 <div class="line">    <span class="keywordflow">case</span> OC_REP_BOOL:</div>
 <div class="line">      PRINT(<span class="stringliteral">&quot;%d\n&quot;</span>, rep-&gt;<a class="code" href="structoc__rep__s.html#a319aa6eb149c104d57fae3b739d59209">value</a>.boolean);</div>
@@ -1275,11 +1275,12 @@ false </dd></dl>
 <div class="ttc" id="astructoc__client__response__t_html_a4e7476f42ae4af489a46e6d05b8e4727"><div class="ttname"><a href="structoc__client__response__t.html#a4e7476f42ae4af489a46e6d05b8e4727">oc_client_response_t::payload</a></div><div class="ttdeci">oc_rep_t * payload</div><div class="ttdoc">response payload, interpreted as cbor</div><div class="ttdef"><b>Definition:</b> <a href="oc__client__state_8h_source.html#l00054">oc_client_state.h:54</a></div></div>
 <div class="ttc" id="agroup__doc__module__tag__client__state_html_ga5982594227fe2fcff33bbecca4a03e4a"><div class="ttname"><a href="group__doc__module__tag__client__state.html#ga5982594227fe2fcff33bbecca4a03e4a">oc_do_put</a></div><div class="ttdeci">bool oc_do_put(void)</div><div class="ttdoc">Dispatch the CoAP PUT request wiht content type and accept type CBOR.</div></div>
 <div class="ttc" id="aoc__ri_8h_html_a83161604a805e3a951254864d16a714fa6563ce58a5ccb28f4c84c8eaa1bbf110"><div class="ttname"><a href="oc__ri_8h.html#a83161604a805e3a951254864d16a714fa6563ce58a5ccb28f4c84c8eaa1bbf110">APPLICATION_CBOR</a></div><div class="ttdeci">@ APPLICATION_CBOR</div><div class="ttdoc">application/cbor</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00120">oc_ri.h:120</a></div></div>
+<div class="ttc" id="aoc__helpers_8h_html_a05a966f693c858bc33d7f2969750a193"><div class="ttname"><a href="oc__helpers_8h.html#a05a966f693c858bc33d7f2969750a193">oc_string_checked</a></div><div class="ttdeci">#define oc_string_checked(ocstring)</div><div class="ttdoc">cast oc_string to string, replace null pointer results with a pointer to &quot;NULL&quot;</div><div class="ttdef"><b>Definition:</b> <a href="oc__helpers_8h_source.html#l00050">oc_helpers.h:50</a></div></div>
 <div class="ttc" id="agroup__doc__module__tag__client__state_html_gab5bea04b5899e9ac014d11fa0fcaf464"><div class="ttname"><a href="group__doc__module__tag__client__state.html#gab5bea04b5899e9ac014d11fa0fcaf464">oc_init_put</a></div><div class="ttdeci">bool oc_init_put(const char *uri, oc_endpoint_t *endpoint, const char *query, oc_response_handler_t handler, oc_qos_t qos, void *user_data)</div><div class="ttdoc">Prepare the stack to issue a PUT request.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jul 28 2022 15:00:56 for KNX IoT by
+    <li class="footer">Generated on Thu Jul 28 2022 15:02:56 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
