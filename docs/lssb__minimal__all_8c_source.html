@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('lssb__minimal__all_8c_source.html','')
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  ret |= <a class="code" href="oc__api_8h.html#a1fc277c86baf3db65614c271bc7cbcf6">oc_add_device</a>(<a class="code" href="lssb__minimal__all_8c.html#a56e0ef88d0d230547f678b84ed8ad00a">MY_NAME</a>, <span class="stringliteral">&quot;1.0.0&quot;</span>, <span class="stringliteral">&quot;//&quot;</span>, <span class="stringliteral">&quot;000003&quot;</span>, NULL, NULL);</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <a class="code" href="structoc__device__info__t.html">oc_device_info_t</a> *device = <a class="code" href="oc__core__res_8h.html#abce7a2d1e8d98a3f4c0b8585121e2771">oc_core_get_device_info</a>(0);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  PRINT(<span class="stringliteral">&quot;Serial Number: %s\n&quot;</span>, <a class="code" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(device-&gt;<a class="code" href="structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09">serialnumber</a>));</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  PRINT(<span class="stringliteral">&quot;Serial Number: %s\n&quot;</span>, oc_string_checked(device-&gt;<a class="code" href="structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09">serialnumber</a>));</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="comment">/* set the hardware version 1.0.0 */</span></div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <a class="code" href="oc__core__res_8h.html#a3a12888f2b9f5d866cf3193e79b5c85a">oc_core_set_device_hwv</a>(0, 1, 0, 0);</div>
@@ -301,7 +301,7 @@ $(document).ready(function(){initNavTree('lssb__minimal__all_8c_source.html','')
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  (void)device_index;</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  (void)data;</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  PRINT(<span class="stringliteral">&quot;-----host name ------- %s\n&quot;</span>, <a class="code" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(host_name));</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  PRINT(<span class="stringliteral">&quot;-----host name ------- %s\n&quot;</span>, oc_string_checked(host_name));</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;}</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="keywordtype">void</span></div>
@@ -474,7 +474,7 @@ $(document).ready(function(){initNavTree('lssb__minimal__all_8c_source.html','')
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_OSCORE */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160; </div>
 <div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;  <a class="code" href="structoc__device__info__t.html">oc_device_info_t</a> *device = <a class="code" href="oc__core__res_8h.html#abce7a2d1e8d98a3f4c0b8585121e2771">oc_core_get_device_info</a>(0);</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;  PRINT(<span class="stringliteral">&quot;serial number: %s\n&quot;</span>, <a class="code" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(device-&gt;<a class="code" href="structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09">serialnumber</a>));</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;  PRINT(<span class="stringliteral">&quot;serial number: %s\n&quot;</span>, oc_string_checked(device-&gt;<a class="code" href="structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09">serialnumber</a>));</div>
 <div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160; </div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;  <a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> *my_ep = <a class="code" href="oc__connectivity_8h.html#a1d559666b450aef41dd704952e4a7e96">oc_connectivity_get_endpoints</a>(0);</div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;  <span class="keywordflow">if</span> (my_ep != NULL) {</div>
@@ -527,7 +527,6 @@ $(document).ready(function(){initNavTree('lssb__minimal__all_8c_source.html','')
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_ga73d7d06b063156e5eb3abb2a202a8976"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga73d7d06b063156e5eb3abb2a202a8976">oc_resource_bind_content_type</a></div><div class="ttdeci">void oc_resource_bind_content_type(oc_resource_t *resource, oc_content_format_t content_type)</div><div class="ttdoc">set the content type on the resource</div></div>
 <div class="ttc" id="aoc__storage_8h_html_ae529493bca3a501922f23e3d7701ff05"><div class="ttname"><a href="oc__storage_8h.html#ae529493bca3a501922f23e3d7701ff05">oc_storage_config</a></div><div class="ttdeci">int oc_storage_config(const char *store)</div><div class="ttdoc">open the storage</div></div>
-<div class="ttc" id="aoc__helpers_8h_html_a5bd70ca9b1f0250da0e76740ce99f7b4"><div class="ttname"><a href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a></div><div class="ttdeci">#define oc_string(ocstring)</div><div class="ttdoc">cast oc_string to string</div><div class="ttdef"><b>Definition:</b> <a href="oc__helpers_8h_source.html#l00043">oc_helpers.h:43</a></div></div>
 <div class="ttc" id="alssb__minimal__all_8c_html_a17a853a5bf8ca8d7285dad963558eb9a"><div class="ttname"><a href="lssb__minimal__all_8c.html#a17a853a5bf8ca8d7285dad963558eb9a">quit</a></div><div class="ttdeci">volatile int quit</div><div class="ttdoc">stop variable, used by handle_signal</div><div class="ttdef"><b>Definition:</b> <a href="lssb__minimal__all_8c_source.html#l00115">lssb_minimal_all.c:115</a></div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_ga64b2ca53e56b0878149faff19c24c21f"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f">oc_send_response</a></div><div class="ttdeci">void oc_send_response(oc_request_t *request, oc_status_t response_code)</div><div class="ttdoc">Called after the response to a GET, PUT, POST or DELETE call has been prepared completed,...</div></div>
 <div class="ttc" id="aoc__api_8h_html_ad146ae2ebe285109e6c3a7fdc193bd6e"><div class="ttname"><a href="oc__api_8h.html#ad146ae2ebe285109e6c3a7fdc193bd6e">oc_main_poll</a></div><div class="ttdeci">oc_clock_time_t oc_main_poll(void)</div><div class="ttdoc">poll to process tasks</div></div>
@@ -601,7 +600,7 @@ $(document).ready(function(){initNavTree('lssb__minimal__all_8c_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_9654b8d08f4bba4e84b362c5fd320bee.html">apps</a></li><li class="navelem"><a class="el" href="lssb__minimal__all_8c.html">lssb_minimal_all.c</a></li>
-    <li class="footer">Generated on Mon Jul 18 2022 10:00:28 for KNX IoT by
+    <li class="footer">Generated on Thu Jul 28 2022 15:00:55 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

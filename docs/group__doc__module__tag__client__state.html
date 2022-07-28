@@ -407,7 +407,7 @@ false</dd></dl>
 <div class="line">  PRINT(<span class="stringliteral">&quot;GET_light:\n&quot;</span>);</div>
 <div class="line">  <a class="code" href="structoc__rep__s.html">oc_rep_t</a> *rep = data-&gt;<a class="code" href="structoc__client__response__t.html#a4e7476f42ae4af489a46e6d05b8e4727">payload</a>;</div>
 <div class="line">  <span class="keywordflow">while</span> (rep != NULL) {</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;key %s, value &quot;</span>, <a class="code" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(rep-&gt;<a class="code" href="structoc__rep__s.html#a166cce7286659ef193d310d9efd8c1ad">name</a>));</div>
+<div class="line">    PRINT(<span class="stringliteral">&quot;key %s, value &quot;</span>, oc_string_checked(rep-&gt;<a class="code" href="structoc__rep__s.html#a166cce7286659ef193d310d9efd8c1ad">name</a>));</div>
 <div class="line">    <span class="keywordflow">switch</span> (rep-&gt;<a class="code" href="structoc__rep__s.html#a0b9aa324e5d6b7bff8aec217936f0a38">type</a>) {</div>
 <div class="line">    <span class="keywordflow">case</span> OC_REP_BOOL:</div>
 <div class="line">      PRINT(<span class="stringliteral">&quot;%d\n&quot;</span>, rep-&gt;<a class="code" href="structoc__rep__s.html#a319aa6eb149c104d57fae3b739d59209">value</a>.boolean);</div>
@@ -1260,7 +1260,6 @@ false </dd></dl>
 </div><!-- doc-content -->
 <div class="ttc" id="astructoc__rep__s_html_a0b9aa324e5d6b7bff8aec217936f0a38"><div class="ttname"><a href="structoc__rep__s.html#a0b9aa324e5d6b7bff8aec217936f0a38">oc_rep_s::type</a></div><div class="ttdeci">oc_rep_value_type_t type</div><div class="ttdoc">type of the data</div><div class="ttdef"><b>Definition:</b> <a href="oc__rep_8h_source.html#l01388">oc_rep.h:1388</a></div></div>
 <div class="ttc" id="astructoc__client__response__t_html"><div class="ttname"><a href="structoc__client__response__t.html">oc_client_response_t</a></div><div class="ttdoc">Client response information.</div><div class="ttdef"><b>Definition:</b> <a href="oc__client__state_8h_source.html#l00052">oc_client_state.h:52</a></div></div>
-<div class="ttc" id="aoc__helpers_8h_html_a5bd70ca9b1f0250da0e76740ce99f7b4"><div class="ttname"><a href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a></div><div class="ttdeci">#define oc_string(ocstring)</div><div class="ttdoc">cast oc_string to string</div><div class="ttdef"><b>Definition:</b> <a href="oc__helpers_8h_source.html#l00043">oc_helpers.h:43</a></div></div>
 <div class="ttc" id="aoc__rep_8h_html_a9fea833e16965d2200342ae3c8deef35"><div class="ttname"><a href="oc__rep_8h.html#a9fea833e16965d2200342ae3c8deef35">oc_rep_set_boolean</a></div><div class="ttdeci">#define oc_rep_set_boolean(object, key, value)</div><div class="ttdoc">Add an boolean value to the cbor object under the key name Example:</div><div class="ttdef"><b>Definition:</b> <a href="oc__rep_8h_source.html#l00305">oc_rep.h:305</a></div></div>
 <div class="ttc" id="astructoc__rep__s_html_a319aa6eb149c104d57fae3b739d59209"><div class="ttname"><a href="structoc__rep__s.html#a319aa6eb149c104d57fae3b739d59209">oc_rep_s::value</a></div><div class="ttdeci">union oc_rep_s::oc_rep_value value</div><div class="ttdoc">the value as union</div></div>
 <div class="ttc" id="aoc__rep_8h_html_ab3a74cd8010eb2b4798b6f38cea3c487"><div class="ttname"><a href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a></div><div class="ttdeci">#define oc_rep_end_root_object()</div><div class="ttdoc">End the root object.</div><div class="ttdef"><b>Definition:</b> <a href="oc__rep_8h_source.html#l00575">oc_rep.h:575</a></div></div>
@@ -1280,7 +1279,7 @@ false </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jul 18 2022 10:00:29 for KNX IoT by
+    <li class="footer">Generated on Thu Jul 28 2022 15:00:56 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
