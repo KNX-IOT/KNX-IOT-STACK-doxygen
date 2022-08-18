@@ -185,11 +185,13 @@ $(document).ready(function(){initNavTree('oc__knx_8h_source.html',''); initResiz
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx_8h.html#a2cb5879a5f4a2a018fce52f68fb566eb">oc_create_knx_resources</a>(<span class="keywordtype">size_t</span> device);</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;}</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_KNX_INTERNAL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oc__knx_8h.html#a6cdfd9a8213bb8f5199c707039aa327b">oc_knx_knx_ignore_smessage_from_self</a>(<span class="keywordtype">bool</span> ignore);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;}</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_KNX_INTERNAL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aoc__knx_8h_html_a34b66388d2480adee8fb0207515b79fcabf35ccc1bef7a591fd04e4a113b52f9e"><div class="ttname"><a href="oc__knx_8h.html#a34b66388d2480adee8fb0207515b79fcabf35ccc1bef7a591fd04e4a113b52f9e">LSM_S_LOADING</a></div><div class="ttdeci">@ LSM_S_LOADING</div><div class="ttdoc">(2) state loading.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00104">oc_knx.h:104</a></div></div>
@@ -233,6 +235,7 @@ $(document).ready(function(){initNavTree('oc__knx_8h_source.html',''); initResiz
 <div class="ttc" id="aoc__knx_8h_html_abc6a279c1e4e2f2313f862de3d7b2c79"><div class="ttname"><a href="oc__knx_8h.html#abc6a279c1e4e2f2313f862de3d7b2c79">oc_group_object_notification_t</a></div><div class="ttdeci">struct oc_group_object_notification_t oc_group_object_notification_t</div><div class="ttdoc">Group Object Notification (s-mode messages) Can be used for receiving messages or sending messages.</div></div>
 <div class="ttc" id="aoc__knx_8h_html_ae624ea1f5239dbe2406e3dab6815573a"><div class="ttname"><a href="oc__knx_8h.html#ae624ea1f5239dbe2406e3dab6815573a">oc_knx_increase_fingerprint</a></div><div class="ttdeci">void oc_knx_increase_fingerprint()</div><div class="ttdoc">increase the finger print value</div></div>
 <div class="ttc" id="astructoc__group__object__notification__t_html_a61cd41def2fb07634a2fb0049bf5c104"><div class="ttname"><a href="structoc__group__object__notification__t.html#a61cd41def2fb07634a2fb0049bf5c104">oc_group_object_notification_t::sia</a></div><div class="ttdeci">int sia</div><div class="ttdoc">(source id) sender individual address</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx_8h_source.html#l00092">oc_knx.h:92</a></div></div>
+<div class="ttc" id="aoc__knx_8h_html_a6cdfd9a8213bb8f5199c707039aa327b"><div class="ttname"><a href="oc__knx_8h.html#a6cdfd9a8213bb8f5199c707039aa327b">oc_knx_knx_ignore_smessage_from_self</a></div><div class="ttdeci">int oc_knx_knx_ignore_smessage_from_self(bool ignore)</div><div class="ttdoc">runtime switch to ignore s-mode messages send by ourselves.</div></div>
 <div class="ttc" id="aoc__knx_8h_html_a05fe9021ca0d46cbbcdf4fdfc9de7e1e"><div class="ttname"><a href="oc__knx_8h.html#a05fe9021ca0d46cbbcdf4fdfc9de7e1e">oc_knx_dump_fingerprint</a></div><div class="ttdeci">void oc_knx_dump_fingerprint()</div><div class="ttdoc">dump the fingerprint value to storage</div></div>
 <div class="ttc" id="aoc__knx_8h_html_acd61823fce932bf563c5cd3da8d135b8"><div class="ttname"><a href="oc__knx_8h.html#acd61823fce932bf563c5cd3da8d135b8">oc_pase_t</a></div><div class="ttdeci">struct oc_pase_t oc_pase_t</div><div class="ttdoc">Pase Resource Object.</div></div>
 <div class="ttc" id="aoc__knx_8h_html_a8d39fd8c9d8c145363c5795285ed016b"><div class="ttname"><a href="oc__knx_8h.html#a8d39fd8c9d8c145363c5795285ed016b">oc_core_get_lsm_state_as_string</a></div><div class="ttdeci">const char * oc_core_get_lsm_state_as_string(oc_lsm_state_t lsm_s)</div><div class="ttdoc">convert the load state machine (lsm) state to string</div></div>
@@ -240,7 +243,7 @@ $(document).ready(function(){initNavTree('oc__knx_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__knx_8h.html">oc_knx.h</a></li>
-    <li class="footer">Generated on Thu Aug 18 2022 12:33:06 for KNX IoT by
+    <li class="footer">Generated on Thu Aug 18 2022 15:23:54 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

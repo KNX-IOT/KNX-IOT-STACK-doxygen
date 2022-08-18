@@ -25,6 +25,7 @@ var oc__knx_8h =
     [ "oc_is_device_in_runtime", "oc__knx_8h.html#a91b656cda6a8062eca36363df0a79e62", null ],
     [ "oc_knx_dump_fingerprint", "oc__knx_8h.html#a05fe9021ca0d46cbbcdf4fdfc9de7e1e", null ],
     [ "oc_knx_increase_fingerprint", "oc__knx_8h.html#ae624ea1f5239dbe2406e3dab6815573a", null ],
+    [ "oc_knx_knx_ignore_smessage_from_self", "oc__knx_8h.html#a6cdfd9a8213bb8f5199c707039aa327b", null ],
     [ "oc_knx_load_fingerprint", "oc__knx_8h.html#abdd6bdb635787f3e105782067bd07020", null ],
     [ "oc_knx_load_state", "oc__knx_8h.html#a52d3d95480667f9c6e3e4b213426991e", null ],
     [ "oc_knx_lsm_set_state", "oc__knx_8h.html#a28e9cdeaf3c18a8b3994925ef77e2382", null ],
