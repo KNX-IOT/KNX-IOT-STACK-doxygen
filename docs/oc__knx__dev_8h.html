@@ -114,6 +114,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8fc3969260aa04b35d75552222c7fd44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__dev_8h.html#a8fc3969260aa04b35d75552222c7fd44">oc_create_knx_device_resources</a> (size_t device)</td></tr>
 <tr class="memdesc:a8fc3969260aa04b35d75552222c7fd44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creation of the KNX device resources.  <a href="oc__knx__dev_8h.html#a8fc3969260aa04b35d75552222c7fd44">More...</a><br /></td></tr>
 <tr class="separator:a8fc3969260aa04b35d75552222c7fd44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28c362cfc4ea1f28899dddab534d96e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__dev_8h.html#a28c362cfc4ea1f28899dddab534d96e3">oc_handle_query_m_dpt</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, char *dpt_value)</td></tr>
+<tr class="memdesc:a28c362cfc4ea1f28899dddab534d96e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">handles the query with dpt e.g.  <a href="oc__knx__dev_8h.html#a28c362cfc4ea1f28899dddab534d96e3">More...</a><br /></td></tr>
+<tr class="separator:a28c362cfc4ea1f28899dddab534d96e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8727713b0c7cf2b6798851987f20e9ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__dev_8h.html#a8727713b0c7cf2b6798851987f20e9ad">oc_knx_device_in_programming_mode</a> (size_t device_index)</td></tr>
 <tr class="memdesc:a8727713b0c7cf2b6798851987f20e9ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">function checks if the device is in programming mode  <a href="oc__knx__dev_8h.html#a8727713b0c7cf2b6798851987f20e9ad">More...</a><br /></td></tr>
 <tr class="separator:a8727713b0c7cf2b6798851987f20e9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,6 +169,47 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a28c362cfc4ea1f28899dddab534d96e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28c362cfc4ea1f28899dddab534d96e3">&#9670;&nbsp;</a></span>oc_handle_query_m_dpt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_handle_query_m_dpt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dpt_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>handles the query with dpt e.g. </p>
+<p>url?m=dpt</p>
+<p>Note: handles only dpt, all other query parameters will be treaded as error </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>the (GET) request </td></tr>
+    <tr><td class="paramname">dpt_value</td><td>the dpt value to be returned </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true query present and handled </dd>
+<dd>
+false query not present, not handled </dd></dl>
 
 </div>
 </div>
@@ -291,7 +335,7 @@ false not in programming mode </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__dev_8h.html">oc_knx_dev.h</a></li>
-    <li class="footer">Generated on Thu Sep 1 2022 10:20:19 for KNX IoT by
+    <li class="footer">Generated on Thu Sep 1 2022 12:17:37 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

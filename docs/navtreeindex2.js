@@ -114,12 +114,13 @@ var NAVTREEINDEX2 =
 "oc__knx__client_8h_source.html":[3,0,20],
 "oc__knx__dev_8h.html":[3,0,21],
 "oc__knx__dev_8h.html#a0992baa76f8585f4c010e83d0767f18f":[3,0,21,0],
-"oc__knx__dev_8h.html#a348e6109ca9903bfe71449ad5920e012":[3,0,21,5],
+"oc__knx__dev_8h.html#a28c362cfc4ea1f28899dddab534d96e3":[3,0,21,4],
+"oc__knx__dev_8h.html#a348e6109ca9903bfe71449ad5920e012":[3,0,21,6],
 "oc__knx__dev_8h.html#a679a7e3ade9b99b65b4ce66540b038c0":[3,0,21,2],
-"oc__knx__dev_8h.html#a8727713b0c7cf2b6798851987f20e9ad":[3,0,21,4],
+"oc__knx__dev_8h.html#a8727713b0c7cf2b6798851987f20e9ad":[3,0,21,5],
 "oc__knx__dev_8h.html#a8fc3969260aa04b35d75552222c7fd44":[3,0,21,3],
 "oc__knx__dev_8h.html#a9db0d83d7aafe4207628f39f4c044512":[3,0,21,1],
-"oc__knx__dev_8h.html#ad5870712fe9b484e2816b4b0fc4dfea5":[3,0,21,6],
+"oc__knx__dev_8h.html#ad5870712fe9b484e2816b4b0fc4dfea5":[3,0,21,7],
 "oc__knx__dev_8h_source.html":[3,0,21],
 "oc__knx__fb_8h.html":[3,0,22],
 "oc__knx__fb_8h.html#a13bde3253014a77fbd698dd333d43967":[3,0,22,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "oc__log_8h.html#a7fea838f4be733a6ee72284a1a090081":[3,0,28,8],
 "oc__log_8h.html#a8616c1a6f794ff9d14b3f5204413a1cc":[3,0,28,19],
 "oc__log_8h.html#a92e7d136e854c384068ed8bf9ebca684":[3,0,28,2],
-"oc__log_8h.html#aa7b46e6f72cb7c2de32ad2e5030d871c":[3,0,28,1],
-"oc__log_8h.html#ab15cf53dbc666b8541a75154ed5653d4":[3,0,28,7]
+"oc__log_8h.html#aa7b46e6f72cb7c2de32ad2e5030d871c":[3,0,28,1]
 };
