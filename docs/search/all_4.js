@@ -6,5 +6,6 @@ var searchData=
   ['device_75',['device',['../structoc__endpoint__t.html#a94c514bd73ebe068bc95f3c0b33dceda',1,'oc_endpoint_t::device()'],['../structoc__resource__s.html#a94c514bd73ebe068bc95f3c0b33dceda',1,'oc_resource_s::device()']]],
   ['discovery_76',['discovery',['../structoc__client__handler__t.html#a5ece4b8c8e58db1221d42a6ebb5ed9ed',1,'oc_client_handler_t::discovery()'],['../structoc__client__cb__t.html#a1f18cb20f318c3205270ae8361ccf5e7',1,'oc_client_cb_t::discovery()'],['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a05eb094889c0adc67ccc19ea72284315',1,'DISCOVERY():&#160;oc_endpoint.h']]],
   ['discovery_5fall_77',['discovery_all',['../structoc__client__handler__t.html#ae13bf5ea66a212e9b085f17d748c7b98',1,'oc_client_handler_t']]],
-  ['dns_2dsd_2eh_78',['dns-sd.h',['../dns-sd_8h.html',1,'']]]
+  ['dns_2dsd_2eh_78',['dns-sd.h',['../dns-sd_8h.html',1,'']]],
+  ['dpt_79',['dpt',['../structoc__resource__s.html#a9fef3fe43013f42bddfc98d60c58817b',1,'oc_resource_s']]]
 ];

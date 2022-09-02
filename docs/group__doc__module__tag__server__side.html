@@ -143,6 +143,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga73d7d06b063156e5eb3abb2a202a8976"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga73d7d06b063156e5eb3abb2a202a8976">oc_resource_bind_content_type</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> content_type)</td></tr>
 <tr class="memdesc:ga73d7d06b063156e5eb3abb2a202a8976"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the content type on the resource  <a href="group__doc__module__tag__server__side.html#ga73d7d06b063156e5eb3abb2a202a8976">More...</a><br /></td></tr>
 <tr class="separator:ga73d7d06b063156e5eb3abb2a202a8976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a71dca91035fef55dd501b9ce751094"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga7a71dca91035fef55dd501b9ce751094">oc_resource_bind_dpt</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, const char *dpt)</td></tr>
+<tr class="memdesc:ga7a71dca91035fef55dd501b9ce751094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a Data Point Type "dpt" property to the resource.  <a href="group__doc__module__tag__server__side.html#ga7a71dca91035fef55dd501b9ce751094">More...</a><br /></td></tr>
+<tr class="separator:ga7a71dca91035fef55dd501b9ce751094"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacc374cc9a8acc977db8f9f27dc3c593c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c">oc_resource_bind_resource_interface</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask)</td></tr>
 <tr class="memdesc:gacc374cc9a8acc977db8f9f27dc3c593c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the supported interface(s) to the resource.  <a href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c">More...</a><br /></td></tr>
 <tr class="separator:gacc374cc9a8acc977db8f9f27dc3c593c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -802,13 +805,13 @@ false </dd></dl>
 <p>Allocate and populate a new oc_resource_t. </p>
 <p>Resources are the primary interface between code and real world devices.</p>
 <p>Each resource has a Uniform Resource Identifier (URI) that identifies it. All resources <b>must</b> specify one or more Resource Types to be considered a valid resource. The number of Resource Types is specified by the <code>num_resource_types</code> the actual Resource Types are added later using the <a class="el" href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a" title="Add a Resource Type &quot;rt&quot; property to the resource.">oc_resource_bind_resource_type()</a> function.</p>
-<p>The resource is populated with a default interface OC_IF_BASELINE.</p>
 <p>Many properties associated with a resource are set or modified after the new resource has been created.</p>
 <p>The resource is not added to the device till <a class="el" href="group__doc__module__tag__server__side.html#ga8cef7c8b4cfdde5cbd79aace72172d41" title="Add a resource to the stack.">oc_add_resource()</a> is called.</p>
 <p>Example: </p><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="lsab__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd">register_resources</a>(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
 <div class="line">  <a class="code" href="structoc__resource__s.html">oc_resource_t</a> *bswitch = <a class="code" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc">oc_new_resource</a>(<span class="stringliteral">&quot;light switch&quot;</span>, <span class="stringliteral">&quot;/switch&quot;</span>, 1, 0);</div>
-<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a">oc_resource_bind_resource_type</a>(bswitch, <span class="stringliteral">&quot;dpt.0.5&quot;</span>);</div>
+<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a">oc_resource_bind_resource_type</a>(bswitch, <span class="stringliteral">&quot;urn:knx:dpa.417.61&quot;</span>);</div>
+<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#ga7a71dca91035fef55dd501b9ce751094">oc_resource_bind_dpt</a>(bswitch, <span class="stringliteral">&quot;urn:knx:dpt.switch&quot;</span>);</div>
 <div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c">oc_resource_bind_resource_interface</a>(bswitch, <a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a5e082b6f36e0a90aa92fcd0c2c1af871">OC_IF_A</a>);</div>
 <div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gad20b61d7925c4ca727476987d8e2fe3d">oc_resource_set_observable</a>(bswitch, <span class="keyword">true</span>);</div>
 <div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#ga4c3f04fa5089c82be3e9eb7339ae8f58">oc_resource_set_discoverable</a>(bswitch, <span class="keyword">true</span>);</div>
@@ -829,6 +832,8 @@ false </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c" title="Add the supported interface(s) to the resource.">oc_resource_bind_resource_interface</a> </dd>
 <dd>
 <a class="el" href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a" title="Add a Resource Type &quot;rt&quot; property to the resource.">oc_resource_bind_resource_type</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__server__side.html#ga7a71dca91035fef55dd501b9ce751094" title="Add a Data Point Type &quot;dpt&quot; property to the resource.">oc_resource_bind_dpt</a> </dd>
 <dd>
 oc_process_baseline_interface </dd>
 <dd>
@@ -951,6 +956,46 @@ oc_process_baseline_interface </dd>
 
 </div>
 </div>
+<a id="ga7a71dca91035fef55dd501b9ce751094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a71dca91035fef55dd501b9ce751094">&#9670;&nbsp;</a></span>oc_resource_bind_dpt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_resource_bind_dpt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
+          <td class="paramname"><em>resource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dpt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a Data Point Type "dpt" property to the resource. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the resource that the Data Point Type will be set on </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dpt</td><td>the Data Point Type to add to the Data Point Type "dpt" property</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc" title="Allocate and populate a new oc_resource_t.">oc_new_resource</a> </dd>
+<dd>
+oc_device_bind_resource_type </dd></dl>
+
+</div>
+</div>
 <a id="gacc374cc9a8acc977db8f9f27dc3c593c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gacc374cc9a8acc977db8f9f27dc3c593c">&#9670;&nbsp;</a></span>oc_resource_bind_resource_interface()</h2>
 
@@ -1019,7 +1064,7 @@ oc_process_baseline_interface </dd>
 
 <p>Add a Resource Type "rt" property to the resource. </p>
 <p>All resources require at least one Resource Type. The number of Resource Types the resource contains is declared when the resource it created using <a class="el" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc" title="Allocate and populate a new oc_resource_t.">oc_new_resource()</a> function.</p>
-<p>Multi-value "rt" Resource means a resource with multiple Resource Types. i.e. <a class="el" href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a" title="Add a Resource Type &quot;rt&quot; property to the resource.">oc_resource_bind_resource_type()</a> is called multiple times for a single resource. When using a Mulit-value Resource the different resources properties must not conflict.</p>
+<p>Multi-value "rt" Resource means a resource with multiple Resource Types. i.e. <a class="el" href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a" title="Add a Resource Type &quot;rt&quot; property to the resource.">oc_resource_bind_resource_type()</a> is called multiple times for a single resource. When using a Multi-value Resource the different resources properties must not conflict.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the resource that the Resource Type will be set on </td></tr>
@@ -1714,15 +1759,16 @@ oc_device_bind_resource_type </dd></dl>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_ga1a6752c73365b6d03a1dcfcf3d3005fc"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga1a6752c73365b6d03a1dcfcf3d3005fc">oc_set_separate_response_buffer</a></div><div class="ttdeci">void oc_set_separate_response_buffer(oc_separate_response_t *handle)</div><div class="ttdoc">Set a response buffer for holding the response payload.</div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_gad7cae396843a07b955e6d588291645c7"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gad7cae396843a07b955e6d588291645c7">oc_indicate_separate_response</a></div><div class="ttdeci">void oc_indicate_separate_response(oc_request_t *request, oc_separate_response_t *response)</div><div class="ttdoc">Respond to an incoming request asynchronously.</div></div>
 <div class="ttc" id="alsab__minimal__all_8c_html_aee7bd515d06c5a767aa6d0f37820b0bd"><div class="ttname"><a href="lsab__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd">register_resources</a></div><div class="ttdeci">void register_resources(void)</div><div class="ttdoc">register all the resources to the stack this function registers all application level resources:</div><div class="ttdef"><b>Definition:</b> <a href="lsab__minimal__all_8c_source.html#l00281">lsab_minimal_all.c:281</a></div></div>
-<div class="ttc" id="aoc__ri_8h_html_a63f96c05b779dfc1ebcfe0722946ceaaa012ebe25609e38f0dfae84a8b66b2562"><div class="ttname"><a href="oc__ri_8h.html#a63f96c05b779dfc1ebcfe0722946ceaaa012ebe25609e38f0dfae84a8b66b2562">OC_EVENT_DONE</a></div><div class="ttdeci">@ OC_EVENT_DONE</div><div class="ttdoc">callback done, e.g.</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00397">oc_ri.h:397</a></div></div>
+<div class="ttc" id="aoc__ri_8h_html_a63f96c05b779dfc1ebcfe0722946ceaaa012ebe25609e38f0dfae84a8b66b2562"><div class="ttname"><a href="oc__ri_8h.html#a63f96c05b779dfc1ebcfe0722946ceaaa012ebe25609e38f0dfae84a8b66b2562">OC_EVENT_DONE</a></div><div class="ttdeci">@ OC_EVENT_DONE</div><div class="ttdoc">callback done, e.g.</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00398">oc_ri.h:398</a></div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_gad20b61d7925c4ca727476987d8e2fe3d"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gad20b61d7925c4ca727476987d8e2fe3d">oc_resource_set_observable</a></div><div class="ttdeci">void oc_resource_set_observable(oc_resource_t *resource, bool state)</div><div class="ttdoc">Specify that a resource should notify clients when a property has been modified.</div></div>
-<div class="ttc" id="aoc__ri_8h_html_a63f96c05b779dfc1ebcfe0722946ceaa"><div class="ttname"><a href="oc__ri_8h.html#a63f96c05b779dfc1ebcfe0722946ceaa">oc_event_callback_retval_t</a></div><div class="ttdeci">oc_event_callback_retval_t</div><div class="ttdoc">callback return values</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00396">oc_ri.h:396</a></div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga7a71dca91035fef55dd501b9ce751094"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga7a71dca91035fef55dd501b9ce751094">oc_resource_bind_dpt</a></div><div class="ttdeci">void oc_resource_bind_dpt(oc_resource_t *resource, const char *dpt)</div><div class="ttdoc">Add a Data Point Type &quot;dpt&quot; property to the resource.</div></div>
+<div class="ttc" id="aoc__ri_8h_html_a63f96c05b779dfc1ebcfe0722946ceaa"><div class="ttname"><a href="oc__ri_8h.html#a63f96c05b779dfc1ebcfe0722946ceaa">oc_event_callback_retval_t</a></div><div class="ttdeci">oc_event_callback_retval_t</div><div class="ttdoc">callback return values</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00397">oc_ri.h:397</a></div></div>
 <div class="ttc" id="astructoc__resource__s_html"><div class="ttname"><a href="structoc__resource__s.html">oc_resource_s</a></div><div class="ttdoc">resource structure</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00368">oc_ri.h:368</a></div></div>
 <div class="ttc" id="aoc__ri_8h_html_a39c56d2b01f08f13d65daaf3354b6b26ab26f49981643265201d4cbdad57a9d88"><div class="ttname"><a href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26ab26f49981643265201d4cbdad57a9d88">OC_PUT</a></div><div class="ttdeci">@ OC_PUT</div><div class="ttdoc">PUT.</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00041">oc_ri.h:41</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Sep 2 2022 11:15:44 for KNX IoT by
+    <li class="footer">Generated on Fri Sep 2 2022 11:29:17 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -3,6 +3,7 @@ var structoc__resource__s =
     [ "content_type", "structoc__resource__s.html#a346935d37428b3e4fa609bd9daac335d", null ],
     [ "delete_handler", "structoc__resource__s.html#a6de252bfbd3fa8e86d21dfeaff4cd18a", null ],
     [ "device", "structoc__resource__s.html#a94c514bd73ebe068bc95f3c0b33dceda", null ],
+    [ "dpt", "structoc__resource__s.html#a9fef3fe43013f42bddfc98d60c58817b", null ],
     [ "fb_instance", "structoc__resource__s.html#a60edc21dbdee38530bb29e0a75eaa052", null ],
     [ "get_handler", "structoc__resource__s.html#a7de9566976d37caea811d188d7ea7ad0", null ],
     [ "get_properties", "structoc__resource__s.html#a99698a1070518a1d190b724318f65a8b", null ],
