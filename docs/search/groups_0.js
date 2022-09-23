@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['clock_20library_1964',['Clock library',['../group__clock.html',1,'']]],
-  ['client_20side_1965',['Client side',['../group__doc__module__tag__client__state.html',1,'']]],
-  ['common_20operations_1966',['Common operations',['../group__doc__module__tag__common__operations.html',1,'']]]
+  ['clock_20library_1966',['Clock library',['../group__clock.html',1,'']]],
+  ['client_20side_1967',['Client side',['../group__doc__module__tag__client__state.html',1,'']]],
+  ['common_20operations_1968',['Common operations',['../group__doc__module__tag__common__operations.html',1,'']]]
 ];
