@@ -133,6 +133,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aa9d4785f29753d5ebbbf9b75b74938ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#aa9d4785f29753d5ebbbf9b75b74938ea">oc_check_uri</a> (const char *uri)</td></tr>
+<tr class="memdesc:aa9d4785f29753d5ebbbf9b75b74938ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure that the given URI starts with a forward slash.  <a href="oc__core__res_8h.html#aa9d4785f29753d5ebbbf9b75b74938ea">More...</a><br /></td></tr>
+<tr class="separator:aa9d4785f29753d5ebbbf9b75b74938ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d2b06130a317287cc9b4097b7f06551"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__device__info__t.html">oc_device_info_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a3d2b06130a317287cc9b4097b7f06551">oc_core_add_device</a> (const char *name, const char *version, const char *base, const char *serial_number, <a class="el" href="oc__core__res_8h.html#aaef8fad58f22d24cd42a6e6b07d22e37">oc_core_add_device_cb_t</a> add_device_cb, void *data)</td></tr>
 <tr class="memdesc:a3d2b06130a317287cc9b4097b7f06551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add device to the platform.  <a href="oc__core__res_8h.html#a3d2b06130a317287cc9b4097b7f06551">More...</a><br /></td></tr>
 <tr class="separator:a3d2b06130a317287cc9b4097b7f06551"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,9 +205,6 @@ Functions</h2></td></tr>
 <tr class="memitem:aa2b277fdad7d7953ce202abee706853f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#aa2b277fdad7d7953ce202abee706853f">oc_frame_interfaces_mask_in_response</a> (<a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask)</td></tr>
 <tr class="memdesc:aa2b277fdad7d7953ce202abee706853f"><td class="mdescLeft">&#160;</td><td class="mdescRight">frame the interface mask in the response, as string in the uri  <a href="oc__core__res_8h.html#aa2b277fdad7d7953ce202abee706853f">More...</a><br /></td></tr>
 <tr class="separator:aa2b277fdad7d7953ce202abee706853f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd7bb7ba0fc48f2cf65610f28db19b18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#afd7bb7ba0fc48f2cf65610f28db19b18">oc_store_uri</a> (const char *s_uri, oc_string_t *d_uri)</td></tr>
-<tr class="memdesc:afd7bb7ba0fc48f2cf65610f28db19b18"><td class="mdescLeft">&#160;</td><td class="mdescRight">store the URI as a string  <a href="oc__core__res_8h.html#afd7bb7ba0fc48f2cf65610f28db19b18">More...</a><br /></td></tr>
-<tr class="separator:afd7bb7ba0fc48f2cf65610f28db19b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>KNX mandatory resources implementation. </p>
@@ -298,6 +298,32 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="aa9d4785f29753d5ebbbf9b75b74938ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9d4785f29753d5ebbbf9b75b74938ea">&#9670;&nbsp;</a></span>oc_check_uri()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_check_uri </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>uri</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ensure that the given URI starts with a forward slash. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uri</td><td>the URI to check </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a3d2b06130a317287cc9b4097b7f06551"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3d2b06130a317287cc9b4097b7f06551">&#9670;&nbsp;</a></span>oc_core_add_device()</h2>
 
@@ -714,7 +740,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">post_cb</td><td>post callback function </td></tr>
     <tr><td class="paramname">delete_cb</td><td>delete callback function </td></tr>
     <tr><td class="paramname">num_resource_types</td><td>amount of resource types, listed as variable arguments after this argument </td></tr>
-    <tr><td class="paramname">...</td><td></td></tr>
+    <tr><td class="paramname">...</td><td>Resource types, passed as zero-terminated strings. In order to save memory, the maximum length of each resource type is 32 bytes. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1218,50 +1244,13 @@ false resource type is not in the request </dd></dl>
 
 </div>
 </div>
-<a id="afd7bb7ba0fc48f2cf65610f28db19b18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd7bb7ba0fc48f2cf65610f28db19b18">&#9670;&nbsp;</a></span>oc_store_uri()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void oc_store_uri </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>s_uri</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">oc_string_t *&#160;</td>
-          <td class="paramname"><em>d_uri</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>store the URI as a string </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">s_uri</td><td>source string </td></tr>
-    <tr><td class="paramname">d_uri</td><td>destination (to be allocated) to store the URI </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__core__res_8h.html">oc_core_res.h</a></li>
-    <li class="footer">Generated on Sun Sep 25 2022 15:42:42 for KNX IoT by
+    <li class="footer">Generated on Tue Sep 27 2022 15:13:20 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

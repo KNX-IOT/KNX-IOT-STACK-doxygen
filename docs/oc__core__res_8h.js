@@ -8,6 +8,7 @@ var oc__core__res_8h =
     [ "oc_device_info_t", "oc__core__res_8h.html#adbcab293f69f9abf2f518d12d43184f4", null ],
     [ "oc_knx_version_info_t", "oc__core__res_8h.html#a198bc641fff02494192fea0ac31504ca", null ],
     [ "oc_platform_info_t", "oc__core__res_8h.html#a7b8a0731c685aac21e221e0ddeba75c0", null ],
+    [ "oc_check_uri", "oc__core__res_8h.html#aa9d4785f29753d5ebbbf9b75b74938ea", null ],
     [ "oc_core_add_device", "oc__core__res_8h.html#a3d2b06130a317287cc9b4097b7f06551", null ],
     [ "oc_core_encode_interfaces_mask", "oc__core__res_8h.html#ae05775044d062a575fc789756f776d27", null ],
     [ "oc_core_get_device_info", "oc__core__res_8h.html#abce7a2d1e8d98a3f4c0b8585121e2771", null ],
@@ -30,6 +31,5 @@ var oc__core__res_8h =
     [ "oc_core_shutdown", "oc__core__res_8h.html#a4f83145f9b94c3e531f7008959dec07b", null ],
     [ "oc_filter_resource_by_if", "oc__core__res_8h.html#a54f086305df0e501d8bcb805037667f5", null ],
     [ "oc_filter_resource_by_rt", "oc__core__res_8h.html#ac90407354ec43f8e8603d86e3dd22698", null ],
-    [ "oc_frame_interfaces_mask_in_response", "oc__core__res_8h.html#aa2b277fdad7d7953ce202abee706853f", null ],
-    [ "oc_store_uri", "oc__core__res_8h.html#afd7bb7ba0fc48f2cf65610f28db19b18", null ]
+    [ "oc_frame_interfaces_mask_in_response", "oc__core__res_8h.html#aa2b277fdad7d7953ce202abee706853f", null ]
 ];
