@@ -19,6 +19,8 @@ var oc__core__res_8h =
     [ "oc_core_init", "oc__core__res_8h.html#ae047207ba3bd0e6109eb5516e2557412", null ],
     [ "oc_core_init_platform", "oc__core__res_8h.html#a20fecb30aeba81ace5a974de61d40c1d", null ],
     [ "oc_core_populate_resource", "oc__core__res_8h.html#ae8d75ae504ef81d109e46c65d0365729", null ],
+    [ "oc_core_set_and_store_device_ia", "oc__core__res_8h.html#a446f1ad180e909467eebffd29d0193b0", null ],
+    [ "oc_core_set_and_store_device_iid", "oc__core__res_8h.html#aa76ba52a754efd96c664350fc5973e74", null ],
     [ "oc_core_set_device_fid", "oc__core__res_8h.html#abfa6f0e8661fd6ed444fd1520c0d2794", null ],
     [ "oc_core_set_device_fwv", "oc__core__res_8h.html#a01721573029f39dc7cbf7a60d7ca6c9f", null ],
     [ "oc_core_set_device_hostname", "oc__core__res_8h.html#ab7e0d912843a8aac5c7c7da62f608971", null ],

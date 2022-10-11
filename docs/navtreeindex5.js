@@ -1,5 +1,15 @@
 var NAVTREEINDEX5 =
 {
+"structoc__endpoint__t.html#a94c514bd73ebe068bc95f3c0b33dceda":[2,0,8,2],
+"structoc__endpoint__t.html#ab649dfd671bd7ffa4accef34548fc893":[2,0,8,6],
+"structoc__endpoint__t.html#ad726260e3c8fa3f12aa8d91258957db0":[2,0,8,8],
+"structoc__endpoint__t.html#ad803d60c93177bb1ed9133d86d9dc378":[2,0,8,4],
+"structoc__endpoint__t.html#ae86afaa4df8c3f253d0f526b9540e1e8":[2,0,8,5],
+"structoc__event__callback__s.html":[2,0,9],
+"structoc__event__callback__s.html#a3815ba1a8133ced2806062ef9c2e422a":[2,0,9,2],
+"structoc__event__callback__s.html#a735984d41155bc1032e09bece8f8d66d":[2,0,9,1],
+"structoc__event__callback__s.html#a809520e8cffa4e0238a226f1fb0cb079":[2,0,9,0],
+"structoc__event__callback__s.html#acfd7db168b82b26393490d4db04538f3":[2,0,9,3],
 "structoc__factory__presets__t.html":[2,0,10],
 "structoc__factory__presets__t.html#a735984d41155bc1032e09bece8f8d66d":[2,0,10,1],
 "structoc__factory__presets__t.html#afdb7764c7b76b460fe7d2c85669ab93d":[2,0,10,0],

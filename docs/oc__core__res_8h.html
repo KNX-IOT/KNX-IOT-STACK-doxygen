@@ -166,6 +166,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ae8d75ae504ef81d109e46c65d0365729"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#ae8d75ae504ef81d109e46c65d0365729">oc_core_populate_resource</a> (int core_resource, size_t device_index, const char *uri, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> content_format, int properties, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> get_cb, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> put_cb, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> post_cb, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> delete_cb, int num_resource_types,...)</td></tr>
 <tr class="memdesc:ae8d75ae504ef81d109e46c65d0365729"><td class="mdescLeft">&#160;</td><td class="mdescRight">populate resource for link-format responses mainly used for creation of core resources  <a href="oc__core__res_8h.html#ae8d75ae504ef81d109e46c65d0365729">More...</a><br /></td></tr>
 <tr class="separator:ae8d75ae504ef81d109e46c65d0365729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a446f1ad180e909467eebffd29d0193b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a446f1ad180e909467eebffd29d0193b0">oc_core_set_and_store_device_ia</a> (size_t device_index, int ia)</td></tr>
+<tr class="memdesc:a446f1ad180e909467eebffd29d0193b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets and stores the internal address  <a href="oc__core__res_8h.html#a446f1ad180e909467eebffd29d0193b0">More...</a><br /></td></tr>
+<tr class="separator:a446f1ad180e909467eebffd29d0193b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa76ba52a754efd96c664350fc5973e74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#aa76ba52a754efd96c664350fc5973e74">oc_core_set_and_store_device_iid</a> (size_t device_index, uint32_t iid)</td></tr>
+<tr class="memdesc:aa76ba52a754efd96c664350fc5973e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the installation identifier (iid) (unsigned int) and store it  <a href="oc__core__res_8h.html#aa76ba52a754efd96c664350fc5973e74">More...</a><br /></td></tr>
+<tr class="separator:aa76ba52a754efd96c664350fc5973e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfa6f0e8661fd6ed444fd1520c0d2794"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#abfa6f0e8661fd6ed444fd1520c0d2794">oc_core_set_device_fid</a> (size_t device_index, uint32_t fid)</td></tr>
 <tr class="memdesc:abfa6f0e8661fd6ed444fd1520c0d2794"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the fabric identifier (fid) (unsigned int)  <a href="oc__core__res_8h.html#abfa6f0e8661fd6ed444fd1520c0d2794">More...</a><br /></td></tr>
 <tr class="separator:abfa6f0e8661fd6ed444fd1520c0d2794"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -747,6 +753,82 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a446f1ad180e909467eebffd29d0193b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a446f1ad180e909467eebffd29d0193b0">&#9670;&nbsp;</a></span>oc_core_set_and_store_device_ia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_core_set_and_store_device_ia </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ia</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets and stores the internal address </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device_index</td><td>the device index </td></tr>
+    <tr><td class="paramname">ia</td><td>the internal address </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int error status, 0 = OK </dd></dl>
+
+</div>
+</div>
+<a id="aa76ba52a754efd96c664350fc5973e74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa76ba52a754efd96c664350fc5973e74">&#9670;&nbsp;</a></span>oc_core_set_and_store_device_iid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_core_set_and_store_device_iid </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets the installation identifier (iid) (unsigned int) and store it </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device_index</td><td>the device index </td></tr>
+    <tr><td class="paramname">iid</td><td>the KNX installation id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int error status, 0 = OK </dd></dl>
+
+</div>
+</div>
 <a id="abfa6f0e8661fd6ed444fd1520c0d2794"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abfa6f0e8661fd6ed444fd1520c0d2794">&#9670;&nbsp;</a></span>oc_core_set_device_fid()</h2>
 
@@ -1250,7 +1332,7 @@ false resource type is not in the request </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__core__res_8h.html">oc_core_res.h</a></li>
-    <li class="footer">Generated on Wed Sep 28 2022 15:18:04 for KNX IoT by
+    <li class="footer">Generated on Tue Oct 11 2022 10:39:25 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -96,8 +96,6 @@ $(document).ready(function(){initNavTree('oc__knx__fp_8h.html',''); initResizabl
 <p>knx /fp resource implementations  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="oc__ri_8h_source.html">oc_ri.h</a>&quot;</code><br />
 </div>
 <p><a href="oc__knx__fp_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -144,11 +142,20 @@ Functions</h2></td></tr>
 <tr class="memdesc:a3ed6e49562be4e391d379c64939c292d"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the href (url) belongs to the device  <a href="oc__knx__fp_8h.html#a3ed6e49562be4e391d379c64939c292d">More...</a><br /></td></tr>
 <tr class="separator:a3ed6e49562be4e391d379c64939c292d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a211407a1c5b33b12124fd1990532f3a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a211407a1c5b33b12124fd1990532f3a7">oc_cflags_as_string</a> (char *buffer, <a class="el" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5ba">oc_cflag_mask_t</a> cflags)</td></tr>
-<tr class="memdesc:a211407a1c5b33b12124fd1990532f3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds the cflags a preallocated buffer  <a href="oc__knx__fp_8h.html#a211407a1c5b33b12124fd1990532f3a7">More...</a><br /></td></tr>
+<tr class="memdesc:a211407a1c5b33b12124fd1990532f3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds the communication flags a preallocated buffer  <a href="oc__knx__fp_8h.html#a211407a1c5b33b12124fd1990532f3a7">More...</a><br /></td></tr>
 <tr class="separator:a211407a1c5b33b12124fd1990532f3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09cc0b3456de0338b56fd1fdc9a7dbc"><td class="memItemLeft" align="right" valign="top"><a id="ac09cc0b3456de0338b56fd1fdc9a7dbc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_core_add_publisher_entry</b> (int index, <a class="el" href="structoc__group__rp__table__t.html">oc_group_rp_table_t</a> entry)</td></tr>
+<tr class="separator:ac09cc0b3456de0338b56fd1fdc9a7dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc32a6bf3ca5ef5dcb74d212e36630f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a9fc32a6bf3ca5ef5dcb74d212e36630f">oc_core_add_recipient_entry</a> (int index, <a class="el" href="structoc__group__rp__table__t.html">oc_group_rp_table_t</a> entry)</td></tr>
+<tr class="memdesc:a9fc32a6bf3ca5ef5dcb74d212e36630f"><td class="mdescLeft">&#160;</td><td class="mdescRight">add recipient entry  <a href="oc__knx__fp_8h.html#a9fc32a6bf3ca5ef5dcb74d212e36630f">More...</a><br /></td></tr>
+<tr class="separator:a9fc32a6bf3ca5ef5dcb74d212e36630f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac14ec12e7653f7a807da15c436381262"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#ac14ec12e7653f7a807da15c436381262">oc_core_check_recipient_index_on_group_address</a> (int index, int group_address)</td></tr>
 <tr class="memdesc:ac14ec12e7653f7a807da15c436381262"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the group address is part of the recipient table at index  <a href="oc__knx__fp_8h.html#ac14ec12e7653f7a807da15c436381262">More...</a><br /></td></tr>
 <tr class="separator:ac14ec12e7653f7a807da15c436381262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c1be49f1adb08a55a59434d9c14023"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a25c1be49f1adb08a55a59434d9c14023">oc_core_find_empty_slot_in_recipient_table</a> (int id)</td></tr>
+<tr class="memdesc:a25c1be49f1adb08a55a59434d9c14023"><td class="mdescLeft">&#160;</td><td class="mdescRight">find empty slot in recipient table  <a href="oc__knx__fp_8h.html#a25c1be49f1adb08a55a59434d9c14023">More...</a><br /></td></tr>
+<tr class="separator:a25c1be49f1adb08a55a59434d9c14023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79be96f64e58ce1c5540f6ce50c7d71f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a79be96f64e58ce1c5540f6ce50c7d71f">oc_core_find_group_object_table_group_entry</a> (int index, int entry)</td></tr>
 <tr class="memdesc:a79be96f64e58ce1c5540f6ce50c7d71f"><td class="mdescLeft">&#160;</td><td class="mdescRight">get group address of index, and entry (e.g.  <a href="oc__knx__fp_8h.html#a79be96f64e58ce1c5540f6ce50c7d71f">More...</a><br /></td></tr>
 <tr class="separator:a79be96f64e58ce1c5540f6ce50c7d71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,6 +174,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab0cb71c069431dd4dbfaff1dd8a1e677"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#ab0cb71c069431dd4dbfaff1dd8a1e677">oc_core_find_index_in_group_object_table_from_id</a> (int id)</td></tr>
 <tr class="memdesc:ab0cb71c069431dd4dbfaff1dd8a1e677"><td class="mdescLeft">&#160;</td><td class="mdescRight">find index belonging to the id  <a href="oc__knx__fp_8h.html#ab0cb71c069431dd4dbfaff1dd8a1e677">More...</a><br /></td></tr>
 <tr class="separator:ab0cb71c069431dd4dbfaff1dd8a1e677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582104415eca23e83c41a3ff6b1cf2c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a582104415eca23e83c41a3ff6b1cf2c4">oc_core_find_index_in_recipient_table_from_id</a> (int id)</td></tr>
+<tr class="memdesc:a582104415eca23e83c41a3ff6b1cf2c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">find index of id in recipient table  <a href="oc__knx__fp_8h.html#a582104415eca23e83c41a3ff6b1cf2c4">More...</a><br /></td></tr>
+<tr class="separator:a582104415eca23e83c41a3ff6b1cf2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a812b086176755a0ffeb431987dc23721"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a812b086176755a0ffeb431987dc23721">oc_core_find_next_group_object_table_index</a> (int group_address, int cur_index)</td></tr>
 <tr class="memdesc:a812b086176755a0ffeb431987dc23721"><td class="mdescLeft">&#160;</td><td class="mdescRight">find next index in the group address table  <a href="oc__knx__fp_8h.html#a812b086176755a0ffeb431987dc23721">More...</a><br /></td></tr>
 <tr class="separator:a812b086176755a0ffeb431987dc23721"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,7 +250,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a23a9afa5ce90c9f5c37b3f3dd7a49b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">load the entry of the Group Object Table (from persistent) storage  <a href="oc__knx__fp_8h.html#a23a9afa5ce90c9f5c37b3f3dd7a49b70">More...</a><br /></td></tr>
 <tr class="separator:a23a9afa5ce90c9f5c37b3f3dd7a49b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdd83fe615142910b69d44b0ae88ccaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#acdd83fe615142910b69d44b0ae88ccaa">oc_print_cflags</a> (<a class="el" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5ba">oc_cflag_mask_t</a> cflags)</td></tr>
-<tr class="memdesc:acdd83fe615142910b69d44b0ae88ccaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">print the cflags to standard output cflags in ASCII e.g.  <a href="oc__knx__fp_8h.html#acdd83fe615142910b69d44b0ae88ccaa">More...</a><br /></td></tr>
+<tr class="memdesc:acdd83fe615142910b69d44b0ae88ccaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">print the communication flags to standard output communication flags in ASCII e.g.  <a href="oc__knx__fp_8h.html#acdd83fe615142910b69d44b0ae88ccaa">More...</a><br /></td></tr>
 <tr class="separator:acdd83fe615142910b69d44b0ae88ccaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1f82e781199d5f10d6cedc7ab548d30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#ab1f82e781199d5f10d6cedc7ab548d30">oc_print_group_object_table_entry</a> (int entry)</td></tr>
 <tr class="memdesc:ab1f82e781199d5f10d6cedc7ab548d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">print the entry in the Group Object Table  <a href="oc__knx__fp_8h.html#ab1f82e781199d5f10d6cedc7ab548d30">More...</a><br /></td></tr>
@@ -418,20 +428,20 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00037">37</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;             {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa9fab0533d481c2222be1d325afb04e4f">OC_CFLAG_NONE</a> = 0, </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa5bf50bd5473e447decfd4fcff23cb246">OC_CFLAG_COMMUNICATION</a> =</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    1 &lt;&lt; 2, </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa15e16c19e953930b01bb38c88689dee2">OC_CFLAG_READ</a> = 1 &lt;&lt; 3, </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa8c00792c8c8b367dd61dc64a8efa62ce">OC_CFLAG_WRITE</a> =</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    1 &lt;&lt; 4, </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa7002cdbf12d6e604152875b234ed74f3">OC_CFLAG_INIT</a> = 1 &lt;&lt; 5, </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baadc97ae269c3fd9181b8631524f4960a6">OC_CFLAG_TRANSMISSION</a> =</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    1 &lt;&lt; 6, </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baad8f8ce5ac3fe6dc90035d5db4c47a550">OC_CFLAG_UPDATE</a> =</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    1 &lt;&lt; 7, </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5ba">oc_cflag_mask_t</a>;</div>
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00035">35</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;             {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa9fab0533d481c2222be1d325afb04e4f">OC_CFLAG_NONE</a> = 0, </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa5bf50bd5473e447decfd4fcff23cb246">OC_CFLAG_COMMUNICATION</a> =</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    1 &lt;&lt; 2, </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa15e16c19e953930b01bb38c88689dee2">OC_CFLAG_READ</a> = 1 &lt;&lt; 3, </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa8c00792c8c8b367dd61dc64a8efa62ce">OC_CFLAG_WRITE</a> =</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    1 &lt;&lt; 4, </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa7002cdbf12d6e604152875b234ed74f3">OC_CFLAG_INIT</a> = 1 &lt;&lt; 5, </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baadc97ae269c3fd9181b8631524f4960a6">OC_CFLAG_TRANSMISSION</a> =</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    1 &lt;&lt; 6, </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baad8f8ce5ac3fe6dc90035d5db4c47a550">OC_CFLAG_UPDATE</a> =</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    1 &lt;&lt; 7, </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5ba">oc_cflag_mask_t</a>;</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -570,15 +580,53 @@ false </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>adds the cflags a preallocated buffer </p>
+<p>adds the communication flags a preallocated buffer </p>
 <p>cflags in ASCII e.g. "w" "r" "i" "t" "u" without quotes if the flag does not exist, then a "." will be added instead</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>the string buffer to add the cflags too </td></tr>
-    <tr><td class="paramname">cflags</td><td>The cflags </td></tr>
+    <tr><td class="paramname">cflags</td><td>The communication flags </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a9fc32a6bf3ca5ef5dcb74d212e36630f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fc32a6bf3ca5ef5dcb74d212e36630f">&#9670;&nbsp;</a></span>oc_core_add_recipient_entry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_core_add_recipient_entry </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structoc__group__rp__table__t.html">oc_group_rp_table_t</a>&#160;</td>
+          <td class="paramname"><em>entry</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>add recipient entry </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>index in the table </td></tr>
+    <tr><td class="paramname">entry</td><td>entry to be added </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 : successfull </dd></dl>
 
 </div>
 </div>
@@ -619,6 +667,33 @@ false </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true is part of the recipient entry </dd>
 <dd>
 false is not part of the recipient entry </dd></dl>
+
+</div>
+</div>
+<a id="a25c1be49f1adb08a55a59434d9c14023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25c1be49f1adb08a55a59434d9c14023">&#9670;&nbsp;</a></span>oc_core_find_empty_slot_in_recipient_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_core_find_empty_slot_in_recipient_table </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>find empty slot in recipient table </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>: supply 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>-1 : no empty slot, otherwise index of emtpy slot </dd></dl>
 
 </div>
 </div>
@@ -793,6 +868,33 @@ false is not part of the recipient entry </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int the index in the table or -1 </dd></dl>
+
+</div>
+</div>
+<a id="a582104415eca23e83c41a3ff6b1cf2c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a582104415eca23e83c41a3ff6b1cf2c4">&#9670;&nbsp;</a></span>oc_core_find_index_in_recipient_table_from_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_core_find_index_in_recipient_table_from_id </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>find index of id in recipient table </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>index to finde </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>-1 not found, otherwise index in recipient table </dd></dl>
 
 </div>
 </div>
@@ -1471,11 +1573,11 @@ false is not part of the recipient entry </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>print the cflags to standard output cflags in ASCII e.g. </p>
+<p>print the communication flags to standard output communication flags in ASCII e.g. </p>
 <p>"w" "r" "i" "t" "u" without quotes</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cflags</td><td>the cflags </td></tr>
+    <tr><td class="paramname">cflags</td><td>the communication flags </td></tr>
   </table>
   </dd>
 </dl>
@@ -1649,19 +1751,19 @@ false is not part of the recipient entry </dd></dl>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5ba"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5ba">oc_cflag_mask_t</a></div><div class="ttdeci">oc_cflag_mask_t</div><div class="ttdoc">cflag masks</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00037">oc_knx_fp.h:37</a></div></div>
-<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa8c00792c8c8b367dd61dc64a8efa62ce"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa8c00792c8c8b367dd61dc64a8efa62ce">OC_CFLAG_WRITE</a></div><div class="ttdeci">@ OC_CFLAG_WRITE</div><div class="ttdoc">16 false = Group Object value cannot be written.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00042">oc_knx_fp.h:42</a></div></div>
-<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa15e16c19e953930b01bb38c88689dee2"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa15e16c19e953930b01bb38c88689dee2">OC_CFLAG_READ</a></div><div class="ttdeci">@ OC_CFLAG_READ</div><div class="ttdoc">8 false = Group Object value cannot be read.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00041">oc_knx_fp.h:41</a></div></div>
-<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa7002cdbf12d6e604152875b234ed74f3"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa7002cdbf12d6e604152875b234ed74f3">OC_CFLAG_INIT</a></div><div class="ttdeci">@ OC_CFLAG_INIT</div><div class="ttdoc">32 false = Disable read after initialization.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00044">oc_knx_fp.h:44</a></div></div>
-<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa5bf50bd5473e447decfd4fcff23cb246"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa5bf50bd5473e447decfd4fcff23cb246">OC_CFLAG_COMMUNICATION</a></div><div class="ttdeci">@ OC_CFLAG_COMMUNICATION</div><div class="ttdoc">false = Group Object value cannot read or written.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00039">oc_knx_fp.h:39</a></div></div>
-<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baad8f8ce5ac3fe6dc90035d5db4c47a550"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baad8f8ce5ac3fe6dc90035d5db4c47a550">OC_CFLAG_UPDATE</a></div><div class="ttdeci">@ OC_CFLAG_UPDATE</div><div class="ttdoc">128 false = Group Object value is not updated.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00047">oc_knx_fp.h:47</a></div></div>
-<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baadc97ae269c3fd9181b8631524f4960a6"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baadc97ae269c3fd9181b8631524f4960a6">OC_CFLAG_TRANSMISSION</a></div><div class="ttdeci">@ OC_CFLAG_TRANSMISSION</div><div class="ttdoc">64 false = Group Object value is not transmitted.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00045">oc_knx_fp.h:45</a></div></div>
-<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa9fab0533d481c2222be1d325afb04e4f"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa9fab0533d481c2222be1d325afb04e4f">OC_CFLAG_NONE</a></div><div class="ttdeci">@ OC_CFLAG_NONE</div><div class="ttdoc">Communication.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00038">oc_knx_fp.h:38</a></div></div>
+<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5ba"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5ba">oc_cflag_mask_t</a></div><div class="ttdeci">oc_cflag_mask_t</div><div class="ttdoc">cflag masks</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00035">oc_knx_fp.h:35</a></div></div>
+<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa8c00792c8c8b367dd61dc64a8efa62ce"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa8c00792c8c8b367dd61dc64a8efa62ce">OC_CFLAG_WRITE</a></div><div class="ttdeci">@ OC_CFLAG_WRITE</div><div class="ttdoc">16 false = Group Object value cannot be written.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00040">oc_knx_fp.h:40</a></div></div>
+<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa15e16c19e953930b01bb38c88689dee2"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa15e16c19e953930b01bb38c88689dee2">OC_CFLAG_READ</a></div><div class="ttdeci">@ OC_CFLAG_READ</div><div class="ttdoc">8 false = Group Object value cannot be read.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00039">oc_knx_fp.h:39</a></div></div>
+<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa7002cdbf12d6e604152875b234ed74f3"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa7002cdbf12d6e604152875b234ed74f3">OC_CFLAG_INIT</a></div><div class="ttdeci">@ OC_CFLAG_INIT</div><div class="ttdoc">32 false = Disable read after initialization.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00042">oc_knx_fp.h:42</a></div></div>
+<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa5bf50bd5473e447decfd4fcff23cb246"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa5bf50bd5473e447decfd4fcff23cb246">OC_CFLAG_COMMUNICATION</a></div><div class="ttdeci">@ OC_CFLAG_COMMUNICATION</div><div class="ttdoc">false = Group Object value cannot read or written.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00037">oc_knx_fp.h:37</a></div></div>
+<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baad8f8ce5ac3fe6dc90035d5db4c47a550"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baad8f8ce5ac3fe6dc90035d5db4c47a550">OC_CFLAG_UPDATE</a></div><div class="ttdeci">@ OC_CFLAG_UPDATE</div><div class="ttdoc">128 false = Group Object value is not updated.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00045">oc_knx_fp.h:45</a></div></div>
+<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baadc97ae269c3fd9181b8631524f4960a6"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baadc97ae269c3fd9181b8631524f4960a6">OC_CFLAG_TRANSMISSION</a></div><div class="ttdeci">@ OC_CFLAG_TRANSMISSION</div><div class="ttdoc">64 false = Group Object value is not transmitted.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00043">oc_knx_fp.h:43</a></div></div>
+<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa9fab0533d481c2222be1d325afb04e4f"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa9fab0533d481c2222be1d325afb04e4f">OC_CFLAG_NONE</a></div><div class="ttdeci">@ OC_CFLAG_NONE</div><div class="ttdoc">Communication.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00036">oc_knx_fp.h:36</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__fp_8h.html">oc_knx_fp.h</a></li>
-    <li class="footer">Generated on Wed Sep 28 2022 15:18:04 for KNX IoT by
+    <li class="footer">Generated on Tue Oct 11 2022 10:39:25 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
