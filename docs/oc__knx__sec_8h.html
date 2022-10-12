@@ -134,9 +134,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a183a382321a31028a34b6c4ff0791544"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#a183a382321a31028a34b6c4ff0791544">oc_core_get_at_table_size</a> ()</td></tr>
 <tr class="memdesc:a183a382321a31028a34b6c4ff0791544"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the size (amount of total entries) of the auth / at table  <a href="oc__knx__sec_8h.html#a183a382321a31028a34b6c4ff0791544">More...</a><br /></td></tr>
 <tr class="separator:a183a382321a31028a34b6c4ff0791544"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa73ce55713251b47ec6ba80abfe1361f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#aa73ce55713251b47ec6ba80abfe1361f">oc_core_set_at_table</a> (size_t device_index, int index, <a class="el" href="structoc__auth__at__t.html">oc_auth_at_t</a> entry)</td></tr>
-<tr class="memdesc:aa73ce55713251b47ec6ba80abfe1361f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set an entry in the auth/at table  <a href="oc__knx__sec_8h.html#aa73ce55713251b47ec6ba80abfe1361f">More...</a><br /></td></tr>
-<tr class="separator:aa73ce55713251b47ec6ba80abfe1361f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9792949855e3ab29f35b1a7b63128b3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#a9792949855e3ab29f35b1a7b63128b3f">oc_core_set_at_table</a> (size_t device_index, int index, <a class="el" href="structoc__auth__at__t.html">oc_auth_at_t</a> entry, bool store)</td></tr>
+<tr class="memdesc:a9792949855e3ab29f35b1a7b63128b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set an entry in the auth/at table  <a href="oc__knx__sec_8h.html#a9792949855e3ab29f35b1a7b63128b3f">More...</a><br /></td></tr>
+<tr class="separator:a9792949855e3ab29f35b1a7b63128b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7132b91e1bc8ff48c4c1dbd7d66b84d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#a7132b91e1bc8ff48c4c1dbd7d66b84d8">oc_create_knx_sec_resources</a> (size_t device)</td></tr>
 <tr class="memdesc:a7132b91e1bc8ff48c4c1dbd7d66b84d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creation of the KNX security resources.  <a href="oc__knx__sec_8h.html#a7132b91e1bc8ff48c4c1dbd7d66b84d8">More...</a><br /></td></tr>
 <tr class="separator:a7132b91e1bc8ff48c4c1dbd7d66b84d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -423,8 +423,8 @@ int &gt;=0 : entry found </dd></dl>
 
 </div>
 </div>
-<a id="aa73ce55713251b47ec6ba80abfe1361f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa73ce55713251b47ec6ba80abfe1361f">&#9670;&nbsp;</a></span>oc_core_set_at_table()</h2>
+<a id="a9792949855e3ab29f35b1a7b63128b3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9792949855e3ab29f35b1a7b63128b3f">&#9670;&nbsp;</a></span>oc_core_set_at_table()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -445,7 +445,13 @@ int &gt;=0 : entry found </dd></dl>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structoc__auth__at__t.html">oc_auth_at_t</a>&#160;</td>
-          <td class="paramname"><em>entry</em>&#160;</td>
+          <td class="paramname"><em>entry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>store</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -461,6 +467,7 @@ int &gt;=0 : entry found </dd></dl>
     <tr><td class="paramname">device_index</td><td>index of the device </td></tr>
     <tr><td class="paramname">index</td><td>the index in the table, will overwrite if something is there </td></tr>
     <tr><td class="paramname">entry</td><td>the auth/at entry </td></tr>
+    <tr><td class="paramname">store</td><td>store the entry to persistent storage </td></tr>
   </table>
   </dd>
 </dl>
@@ -883,7 +890,7 @@ false does not have access </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__sec_8h.html">oc_knx_sec.h</a></li>
-    <li class="footer">Generated on Wed Oct 12 2022 08:40:55 for KNX IoT by
+    <li class="footer">Generated on Wed Oct 12 2022 12:38:01 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
