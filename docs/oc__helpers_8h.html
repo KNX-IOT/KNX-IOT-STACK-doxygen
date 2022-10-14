@@ -282,6 +282,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 <tr class="memitem:a5e503e50a185a449c71ad54c970295dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a5e503e50a185a449c71ad54c970295dd">oc_string_copy_from_char</a> (oc_string_t *string1, const char *string2)</td></tr>
 <tr class="memdesc:a5e503e50a185a449c71ad54c970295dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy string from char*  <a href="oc__helpers_8h.html#a5e503e50a185a449c71ad54c970295dd">More...</a><br /></td></tr>
 <tr class="separator:a5e503e50a185a449c71ad54c970295dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271a68345452de58119aa9a57644c8fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a271a68345452de58119aa9a57644c8fd">oc_string_is_hex_array</a> (oc_string_t hex_string)</td></tr>
+<tr class="memdesc:a271a68345452de58119aa9a57644c8fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the input is an array containing hex values e.g.  <a href="oc__helpers_8h.html#a271a68345452de58119aa9a57644c8fd">More...</a><br /></td></tr>
+<tr class="separator:a271a68345452de58119aa9a57644c8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6915e9a2fe196de3d470336bace809d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a6915e9a2fe196de3d470336bace809d0">oc_uri_contains_wildcard</a> (const char *uri)</td></tr>
 <tr class="memdesc:a6915e9a2fe196de3d470336bace809d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the uri contains a wildcard (e.g.  <a href="oc__helpers_8h.html#a6915e9a2fe196de3d470336bace809d0">More...</a><br /></td></tr>
 <tr class="separator:a6915e9a2fe196de3d470336bace809d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1103,6 +1106,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 </div>
 </div>
+<a id="a271a68345452de58119aa9a57644c8fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a271a68345452de58119aa9a57644c8fd">&#9670;&nbsp;</a></span>oc_string_is_hex_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_string_is_hex_array </td>
+          <td>(</td>
+          <td class="paramtype">oc_string_t&#160;</td>
+          <td class="paramname"><em>hex_string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>checks if the input is an array containing hex values e.g. </p>
+<p>[0-9,A-F,a-f]</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hex_string</td><td>the input string to be checked </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 success </dd></dl>
+
+</div>
+</div>
 <a id="a6915e9a2fe196de3d470336bace809d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6915e9a2fe196de3d470336bace809d0">&#9670;&nbsp;</a></span>oc_uri_contains_wildcard()</h2>
 
@@ -1396,7 +1427,7 @@ false </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Fri Oct 14 2022 09:27:49 for KNX IoT by
+    <li class="footer">Generated on Fri Oct 14 2022 11:24:03 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

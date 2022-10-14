@@ -57,6 +57,7 @@ var oc__helpers_8h =
     [ "oc_string_cmp", "oc__helpers_8h.html#a008ee98555abe100fe9683a71f603e2e", null ],
     [ "oc_string_copy", "oc__helpers_8h.html#aee2b79864fdd3d2477c39589a35314c0", null ],
     [ "oc_string_copy_from_char", "oc__helpers_8h.html#a5e503e50a185a449c71ad54c970295dd", null ],
+    [ "oc_string_is_hex_array", "oc__helpers_8h.html#a271a68345452de58119aa9a57644c8fd", null ],
     [ "oc_uri_contains_wildcard", "oc__helpers_8h.html#a6915e9a2fe196de3d470336bace809d0", null ],
     [ "oc_uri_contains_wildcard_value_underscore", "oc__helpers_8h.html#a1574713df4f59c0ac059f2cc1154ffeb", null ],
     [ "oc_uri_get_wildcard_value_as_int", "oc__helpers_8h.html#a629d63730eb1ad4ac87ef9bd481c0223", null ],
