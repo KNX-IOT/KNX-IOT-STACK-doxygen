@@ -18,6 +18,7 @@ var oc__knx__sec_8h =
     [ "oc_get_auth_at_entry", "oc__knx__sec_8h.html#a0aa129153ff6470692a09dcb6b81350f", null ],
     [ "oc_if_method_allowed_according_to_mask", "oc__knx__sec_8h.html#aabdde0a5c02570eff7eead7719fa28a2", null ],
     [ "oc_init_oscore", "oc__knx__sec_8h.html#a4e19839b84cf53291f4abd984bc3fdf9", null ],
+    [ "oc_init_oscore_from_storage", "oc__knx__sec_8h.html#a80d5b8579a4e26abd2e89bd3aa1497cb", null ],
     [ "oc_knx_contains_interface", "oc__knx__sec_8h.html#aeae972d64ca47cf68920b40f90ec5821", null ],
     [ "oc_knx_sec_check_acl", "oc__knx__sec_8h.html#ae9bf9c46721c4b5c90c013e7e85c9491", null ],
     [ "oc_oscore_get_osndelay", "oc__knx__sec_8h.html#ab0ef8b2933a13d55f75165af73c872a3", null ],

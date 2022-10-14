@@ -155,6 +155,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a4e19839b84cf53291f4abd984bc3fdf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#a4e19839b84cf53291f4abd984bc3fdf9">oc_init_oscore</a> (size_t device_index)</td></tr>
 <tr class="memdesc:a4e19839b84cf53291f4abd984bc3fdf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize OSCORE for the device  <a href="oc__knx__sec_8h.html#a4e19839b84cf53291f4abd984bc3fdf9">More...</a><br /></td></tr>
 <tr class="separator:a4e19839b84cf53291f4abd984bc3fdf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80d5b8579a4e26abd2e89bd3aa1497cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#a80d5b8579a4e26abd2e89bd3aa1497cb">oc_init_oscore_from_storage</a> (size_t device_index, bool from_storage)</td></tr>
+<tr class="memdesc:a80d5b8579a4e26abd2e89bd3aa1497cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize OSCORE for the device  <a href="oc__knx__sec_8h.html#a80d5b8579a4e26abd2e89bd3aa1497cb">More...</a><br /></td></tr>
+<tr class="separator:a80d5b8579a4e26abd2e89bd3aa1497cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeae972d64ca47cf68920b40f90ec5821"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#aeae972d64ca47cf68920b40f90ec5821">oc_knx_contains_interface</a> (<a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> at_interface, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> resource_interface)</td></tr>
 <tr class="memdesc:aeae972d64ca47cf68920b40f90ec5821"><td class="mdescLeft">&#160;</td><td class="mdescRight">function to check if the at_interface is listed in the resource interfaces  <a href="oc__knx__sec_8h.html#aeae972d64ca47cf68920b40f90ec5821">More...</a><br /></td></tr>
 <tr class="separator:aeae972d64ca47cf68920b40f90ec5821"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,9 +189,9 @@ Functions</h2></td></tr>
 <li>verify the oscore serial number if not yet known.</li>
 </ul>
 <p>Description of the implemented replay window algorithm.</p>
-<p>The KNX servers keep a list endpoints that they have received a 'synchronised' message from. Upon boot, this list endpoints is empty, so servers will respond to requests from all new client endpoints with <code>4.01 UNAUTHORISED</code> message containing an Echo option. The echo option is OSCORE-encrypted, and its actual value is the local time of the server. Upon receiving such a response, the client retransmits the request and includes the Echo value that the server sent. This verifies that:</p>
-<p>a) the client is reachable at the source IP address, preventing attackers from attempting to bypass the deduplication code by changing the source IP address of packets.</p>
-<p>b) the request is fresh - the server drops request where the timestamp contained in the Echo option is older than a given threshold, configurable within engine.c.</p>
+<p>The KNX servers keep a list endpoints that they have received a 'synchronized' message from. Upon boot, this list endpoints is empty, so servers will respond to requests from all new client endpoints with <code>4.01 UNAUTHORISED</code> message containing an Echo option. The echo option is OSCORE-encrypted, and its actual value is the local time of the server. Upon receiving such a response, the client retransmits the request and includes the Echo value that the server sent. This verifies that:</p>
+<p>a) the client is reachable at the source IP address, preventing attackers from attempting to bypass the de-duplication code by changing the source IP address of packets.</p>
+<p>b) the request is fresh - the server drops request where the time stamp contained in the Echo option is older than a given threshold, configurable within engine.c.</p>
 <p>The handling of the replay is transparent to the higher layers. So the return code <code>4.01 UNAUTHORISED</code> does not reach the client callback. The only observable side-effect is that the first request sent to a 'new' server will have a slightly longer latency: twice the round-trip time, as opposed to just once. </p>
 
 <p class="definition">Definition in file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
@@ -507,7 +510,7 @@ int &gt;=0 : entry found </dd></dl>
     <tr><td class="paramname">device_index</td><td>index of the device </td></tr>
     <tr><td class="paramname">index</td><td>the index in the table, will overwrite if something is there </td></tr>
     <tr><td class="paramname">entry</td><td>the auth/at entry </td></tr>
-    <tr><td class="paramname">store</td><td>store the entry to persistent storage </td></tr>
+    <tr><td class="paramname">store</td><td>the store the entry to persistent storage </td></tr>
   </table>
   </dd>
 </dl>
@@ -669,9 +672,46 @@ false method not allowed </dd></dl>
 </div><div class="memdoc">
 
 <p>initialize OSCORE for the device </p>
+<p>Note: does not read the context from storage </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device_index</td><td>The device index </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a80d5b8579a4e26abd2e89bd3aa1497cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80d5b8579a4e26abd2e89bd3aa1497cb">&#9670;&nbsp;</a></span>oc_init_oscore_from_storage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_init_oscore_from_storage </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>from_storage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initialize OSCORE for the device </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device_index</td><td>The device index </td></tr>
+    <tr><td class="paramname">from_storage</td><td>contents read from storage </td></tr>
   </table>
   </dd>
 </dl>
@@ -930,7 +970,7 @@ false does not have access </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__sec_8h.html">oc_knx_sec.h</a></li>
-    <li class="footer">Generated on Thu Oct 13 2022 15:15:55 for KNX IoT by
+    <li class="footer">Generated on Fri Oct 14 2022 09:27:49 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
