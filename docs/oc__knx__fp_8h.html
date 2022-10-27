@@ -96,6 +96,8 @@ $(document).ready(function(){initNavTree('oc__knx__fp_8h.html',''); initResizabl
 <p>knx /fp resource implementations  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__ri_8h_source.html">oc_ri.h</a>&quot;</code><br />
 </div>
 <p><a href="oc__knx__fp_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -434,20 +436,20 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00035">35</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;             {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa9fab0533d481c2222be1d325afb04e4f">OC_CFLAG_NONE</a> = 0, </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa5bf50bd5473e447decfd4fcff23cb246">OC_CFLAG_COMMUNICATION</a> =</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    1 &lt;&lt; 2, </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa15e16c19e953930b01bb38c88689dee2">OC_CFLAG_READ</a> = 1 &lt;&lt; 3, </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa8c00792c8c8b367dd61dc64a8efa62ce">OC_CFLAG_WRITE</a> =</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    1 &lt;&lt; 4, </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa7002cdbf12d6e604152875b234ed74f3">OC_CFLAG_INIT</a> = 1 &lt;&lt; 5, </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baadc97ae269c3fd9181b8631524f4960a6">OC_CFLAG_TRANSMISSION</a> =</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    1 &lt;&lt; 6, </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baad8f8ce5ac3fe6dc90035d5db4c47a550">OC_CFLAG_UPDATE</a> =</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    1 &lt;&lt; 7, </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5ba">oc_cflag_mask_t</a>;</div>
+<p class="definition">Definition at line <a class="el" href="oc__knx__fp_8h_source.html#l00037">37</a> of file <a class="el" href="oc__knx__fp_8h_source.html">oc_knx_fp.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;             {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa9fab0533d481c2222be1d325afb04e4f">OC_CFLAG_NONE</a> = 0, </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa5bf50bd5473e447decfd4fcff23cb246">OC_CFLAG_COMMUNICATION</a> =</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    1 &lt;&lt; 2, </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa15e16c19e953930b01bb38c88689dee2">OC_CFLAG_READ</a> = 1 &lt;&lt; 3, </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa8c00792c8c8b367dd61dc64a8efa62ce">OC_CFLAG_WRITE</a> =</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    1 &lt;&lt; 4, </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa7002cdbf12d6e604152875b234ed74f3">OC_CFLAG_INIT</a> = 1 &lt;&lt; 5, </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baadc97ae269c3fd9181b8631524f4960a6">OC_CFLAG_TRANSMISSION</a> =</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    1 &lt;&lt; 6, </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baad8f8ce5ac3fe6dc90035d5db4c47a550">OC_CFLAG_UPDATE</a> =</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    1 &lt;&lt; 7, </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <a class="code" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5ba">oc_cflag_mask_t</a>;</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1849,19 +1851,19 @@ false is not part of the recipient entry </dd></dl>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5ba"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5ba">oc_cflag_mask_t</a></div><div class="ttdeci">oc_cflag_mask_t</div><div class="ttdoc">cflag masks</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00035">oc_knx_fp.h:35</a></div></div>
-<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa8c00792c8c8b367dd61dc64a8efa62ce"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa8c00792c8c8b367dd61dc64a8efa62ce">OC_CFLAG_WRITE</a></div><div class="ttdeci">@ OC_CFLAG_WRITE</div><div class="ttdoc">16 false = Group Object value cannot be written.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00040">oc_knx_fp.h:40</a></div></div>
-<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa15e16c19e953930b01bb38c88689dee2"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa15e16c19e953930b01bb38c88689dee2">OC_CFLAG_READ</a></div><div class="ttdeci">@ OC_CFLAG_READ</div><div class="ttdoc">8 false = Group Object value cannot be read.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00039">oc_knx_fp.h:39</a></div></div>
-<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa7002cdbf12d6e604152875b234ed74f3"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa7002cdbf12d6e604152875b234ed74f3">OC_CFLAG_INIT</a></div><div class="ttdeci">@ OC_CFLAG_INIT</div><div class="ttdoc">32 false = Disable read after initialization.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00042">oc_knx_fp.h:42</a></div></div>
-<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa5bf50bd5473e447decfd4fcff23cb246"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa5bf50bd5473e447decfd4fcff23cb246">OC_CFLAG_COMMUNICATION</a></div><div class="ttdeci">@ OC_CFLAG_COMMUNICATION</div><div class="ttdoc">false = Group Object value cannot read or written.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00037">oc_knx_fp.h:37</a></div></div>
-<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baad8f8ce5ac3fe6dc90035d5db4c47a550"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baad8f8ce5ac3fe6dc90035d5db4c47a550">OC_CFLAG_UPDATE</a></div><div class="ttdeci">@ OC_CFLAG_UPDATE</div><div class="ttdoc">128 false = Group Object value is not updated.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00045">oc_knx_fp.h:45</a></div></div>
-<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baadc97ae269c3fd9181b8631524f4960a6"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baadc97ae269c3fd9181b8631524f4960a6">OC_CFLAG_TRANSMISSION</a></div><div class="ttdeci">@ OC_CFLAG_TRANSMISSION</div><div class="ttdoc">64 false = Group Object value is not transmitted.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00043">oc_knx_fp.h:43</a></div></div>
-<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa9fab0533d481c2222be1d325afb04e4f"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa9fab0533d481c2222be1d325afb04e4f">OC_CFLAG_NONE</a></div><div class="ttdeci">@ OC_CFLAG_NONE</div><div class="ttdoc">Communication.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00036">oc_knx_fp.h:36</a></div></div>
+<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5ba"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5ba">oc_cflag_mask_t</a></div><div class="ttdeci">oc_cflag_mask_t</div><div class="ttdoc">cflag masks</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00037">oc_knx_fp.h:37</a></div></div>
+<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa8c00792c8c8b367dd61dc64a8efa62ce"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa8c00792c8c8b367dd61dc64a8efa62ce">OC_CFLAG_WRITE</a></div><div class="ttdeci">@ OC_CFLAG_WRITE</div><div class="ttdoc">16 false = Group Object value cannot be written.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00042">oc_knx_fp.h:42</a></div></div>
+<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa15e16c19e953930b01bb38c88689dee2"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa15e16c19e953930b01bb38c88689dee2">OC_CFLAG_READ</a></div><div class="ttdeci">@ OC_CFLAG_READ</div><div class="ttdoc">8 false = Group Object value cannot be read.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00041">oc_knx_fp.h:41</a></div></div>
+<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa7002cdbf12d6e604152875b234ed74f3"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa7002cdbf12d6e604152875b234ed74f3">OC_CFLAG_INIT</a></div><div class="ttdeci">@ OC_CFLAG_INIT</div><div class="ttdoc">32 false = Disable read after initialization.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00044">oc_knx_fp.h:44</a></div></div>
+<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa5bf50bd5473e447decfd4fcff23cb246"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa5bf50bd5473e447decfd4fcff23cb246">OC_CFLAG_COMMUNICATION</a></div><div class="ttdeci">@ OC_CFLAG_COMMUNICATION</div><div class="ttdoc">false = Group Object value cannot read or written.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00039">oc_knx_fp.h:39</a></div></div>
+<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baad8f8ce5ac3fe6dc90035d5db4c47a550"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baad8f8ce5ac3fe6dc90035d5db4c47a550">OC_CFLAG_UPDATE</a></div><div class="ttdeci">@ OC_CFLAG_UPDATE</div><div class="ttdoc">128 false = Group Object value is not updated.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00047">oc_knx_fp.h:47</a></div></div>
+<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baadc97ae269c3fd9181b8631524f4960a6"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baadc97ae269c3fd9181b8631524f4960a6">OC_CFLAG_TRANSMISSION</a></div><div class="ttdeci">@ OC_CFLAG_TRANSMISSION</div><div class="ttdoc">64 false = Group Object value is not transmitted.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00045">oc_knx_fp.h:45</a></div></div>
+<div class="ttc" id="aoc__knx__fp_8h_html_a2095cdd976edcfc2f4a02250e3f6e5baa9fab0533d481c2222be1d325afb04e4f"><div class="ttname"><a href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa9fab0533d481c2222be1d325afb04e4f">OC_CFLAG_NONE</a></div><div class="ttdeci">@ OC_CFLAG_NONE</div><div class="ttdoc">Communication.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__fp_8h_source.html#l00038">oc_knx_fp.h:38</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__fp_8h.html">oc_knx_fp.h</a></li>
-    <li class="footer">Generated on Thu Oct 20 2022 16:57:25 for KNX IoT by
+    <li class="footer">Generated on Thu Oct 27 2022 14:47:57 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
