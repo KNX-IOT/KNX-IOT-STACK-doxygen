@@ -93,22 +93,23 @@ $(document).ready(function(){initNavTree('dns-sd_8h.html',''); initResizable(); 
 <p>DNS SD platform abstraction.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
 </div>
 <p><a href="dns-sd_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8038fb5b0d088586b94b50589b7ddf46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dns-sd_8h.html#a8038fb5b0d088586b94b50589b7ddf46">knx_publish_service</a> (char *serial_no, uint32_t iid, uint32_t ia)</td></tr>
-<tr class="memdesc:a8038fb5b0d088586b94b50589b7ddf46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publish the KNX mDNS service in order to enable DNS-SD discovery.  <a href="dns-sd_8h.html#a8038fb5b0d088586b94b50589b7ddf46">More...</a><br /></td></tr>
-<tr class="separator:a8038fb5b0d088586b94b50589b7ddf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f0b72f16145ed021f89425565dda201"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dns-sd_8h.html#a5f0b72f16145ed021f89425565dda201">knx_publish_service</a> (char *serial_no, uint32_t iid, uint32_t ia, bool pm)</td></tr>
+<tr class="memdesc:a5f0b72f16145ed021f89425565dda201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publish the KNX mDNS service in order to enable DNS-SD discovery.  <a href="dns-sd_8h.html#a5f0b72f16145ed021f89425565dda201">More...</a><br /></td></tr>
+<tr class="separator:a5f0b72f16145ed021f89425565dda201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>DNS SD platform abstraction. </p>
 
 <p class="definition">Definition in file <a class="el" href="dns-sd_8h_source.html">dns-sd.h</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a8038fb5b0d088586b94b50589b7ddf46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8038fb5b0d088586b94b50589b7ddf46">&#9670;&nbsp;</a></span>knx_publish_service()</h2>
+<a id="a5f0b72f16145ed021f89425565dda201"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f0b72f16145ed021f89425565dda201">&#9670;&nbsp;</a></span>knx_publish_service()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -129,7 +130,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>ia</em>&#160;</td>
+          <td class="paramname"><em>ia</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pm</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -143,8 +150,9 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">serial_no</td><td>KNX serial number. The advertised service will be "${serial_no}._knx._udp" </td></tr>
-    <tr><td class="paramname">iid</td><td>KNX Installation ID. Set to 0 if the device has not been commissioned yet (in programming mode) </td></tr>
-    <tr><td class="paramname">ia</td><td>KNX Individual Address. Set to 0 if the device has not been commissioned yet (in programming mode) </td></tr>
+    <tr><td class="paramname">iid</td><td>KNX Installation ID. Set to 0 if the device has not been commissioned yet </td></tr>
+    <tr><td class="paramname">ia</td><td>KNX Individual Address. Set to 0 if the device has not been commissioned yet </td></tr>
+    <tr><td class="paramname">pm</td><td>True if the device is in Programming Mode, false otherwise. </td></tr>
   </table>
   </dd>
 </dl>
@@ -158,7 +166,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="dns-sd_8h.html">dns-sd.h</a></li>
-    <li class="footer">Generated on Fri Nov 4 2022 16:44:29 for KNX IoT by
+    <li class="footer">Generated on Mon Nov 7 2022 15:43:04 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
