@@ -19,6 +19,6 @@ var searchData=
   ['stop_5fmulticast_5freceive_962',['stop_multicast_receive',['../structoc__client__cb__t.html#abb6c979f460a5d392ad05aa6ea93a799',1,'oc_client_cb_t']]],
   ['sub_963',['sub',['../structoc__auth__at__t.html#adfd48de1425155e6173986bb307dc1f2',1,'oc_auth_at_t']]],
   ['subjectuuid_964',['subjectuuid',['../structoc__sec__cred__t.html#a992cf7b399b7823c23c871ffecd67225',1,'oc_sec_cred_t']]],
-  ['subscribe_5fgroup_5fto_5fmulticast_965',['subscribe_group_to_multicast',['../oc__knx__fp_8h.html#a5e8c55aefb73eecf9793464999ce7405',1,'oc_knx_fp.h']]],
+  ['subscribe_5fgroup_5fto_5fmulticast_965',['subscribe_group_to_multicast',['../oc__knx__fp_8h.html#a2c3abdeb41bbc9aada051918d316897c',1,'oc_knx_fp.h']]],
   ['swu_5fcb_966',['swu_cb',['../lsab__minimal__all_8c.html#a9597b9475fbb418556b2d89b22ba95c1',1,'swu_cb(size_t device_index, size_t offset, uint8_t *payload, size_t len, void *data):&#160;lsab_minimal_all.c'],['../lssb__minimal__all_8c.html#a9597b9475fbb418556b2d89b22ba95c1',1,'swu_cb(size_t device_index, size_t offset, uint8_t *payload, size_t len, void *data):&#160;lssb_minimal_all.c']]]
 ];
