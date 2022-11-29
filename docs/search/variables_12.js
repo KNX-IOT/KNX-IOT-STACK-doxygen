@@ -8,7 +8,7 @@ var searchData=
   ['serial_5fnumber_1599',['serial_number',['../structoc__endpoint__t.html#ad726260e3c8fa3f12aa8d91258957db0',1,'oc_endpoint_t']]],
   ['serialnumber_1600',['serialnumber',['../structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09',1,'oc_device_info_t']]],
   ['set_5fproperties_1601',['set_properties',['../structoc__resource__s.html#a6d8fb9d13071b21ec29abe9b9eed7556',1,'oc_resource_s']]],
-  ['sia_1602',['sia',['../structoc__group__object__notification__t.html#a61cd41def2fb07634a2fb0049bf5c104',1,'oc_group_object_notification_t']]],
+  ['sia_1602',['sia',['../structoc__group__object__notification__t.html#ad772929b922715e208d7426b744a6cc1',1,'oc_group_object_notification_t']]],
   ['signal_5fevent_5floop_1603',['signal_event_loop',['../structoc__handler__t.html#a701b761aa4dddf3a41d25ddc87e821b0',1,'oc_handler_t']]],
   ['st_1604',['st',['../structoc__group__object__notification__t.html#ac33eb457eb31def51a3c40abcf60f884',1,'oc_group_object_notification_t']]],
   ['stop_5fmulticast_5freceive_1605',['stop_multicast_receive',['../structoc__client__cb__t.html#abb6c979f460a5d392ad05aa6ea93a799',1,'oc_client_cb_t']]],

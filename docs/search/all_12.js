@@ -13,7 +13,7 @@ var searchData=
   ['serialnumber_957',['serialnumber',['../structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09',1,'oc_device_info_t']]],
   ['session_5fevent_5fhandler_5ft_958',['session_event_handler_t',['../oc__session__events_8h.html#a8ae3215775705d84e55a1a623c8267c9',1,'oc_session_events.h']]],
   ['set_5fproperties_959',['set_properties',['../structoc__resource__s.html#a6d8fb9d13071b21ec29abe9b9eed7556',1,'oc_resource_s']]],
-  ['sia_960',['sia',['../structoc__group__object__notification__t.html#a61cd41def2fb07634a2fb0049bf5c104',1,'oc_group_object_notification_t']]],
+  ['sia_960',['sia',['../structoc__group__object__notification__t.html#ad772929b922715e208d7426b744a6cc1',1,'oc_group_object_notification_t']]],
   ['signal_5fevent_5floop_961',['signal_event_loop',['../structoc__handler__t.html#a701b761aa4dddf3a41d25ddc87e821b0',1,'oc_handler_t']]],
   ['st_962',['st',['../structoc__group__object__notification__t.html#ac33eb457eb31def51a3c40abcf60f884',1,'oc_group_object_notification_t']]],
   ['stop_5fmulticast_5freceive_963',['stop_multicast_receive',['../structoc__client__cb__t.html#abb6c979f460a5d392ad05aa6ea93a799',1,'oc_client_cb_t']]],
