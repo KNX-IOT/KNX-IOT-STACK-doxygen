@@ -36,7 +36,7 @@ var oc__knx__fp_8h =
     [ "oc_core_get_group_object_table_total_size", "oc__knx__fp_8h.html#a3b788c616bd089aece271fbf7f6cfefa", null ],
     [ "oc_core_get_publisher_table_entry", "oc__knx__fp_8h.html#ace4e08331f5867fd327b72e35e2d1b63", null ],
     [ "oc_core_get_publisher_table_size", "oc__knx__fp_8h.html#a37b7b48d3ba7c6c9dbfacc808f270517", null ],
-    [ "oc_core_get_recipient_ia", "oc__knx__fp_8h.html#a2f87e78c4f44c3e2f460a5824f6f9d4f", null ],
+    [ "oc_core_get_recipient_ia", "oc__knx__fp_8h.html#a07d64d7c4b2ca280f8c931165c43db1b", null ],
     [ "oc_core_get_recipient_index_url_or_path", "oc__knx__fp_8h.html#aad43d5ddf2012e3b8d88478b72488620", null ],
     [ "oc_core_get_recipient_table_entry", "oc__knx__fp_8h.html#a1de9b98d11c400794c0cfc8d57cc6442", null ],
     [ "oc_core_get_recipient_table_size", "oc__knx__fp_8h.html#ad2e01df841e2a6d8ed3cb278eeb053e8", null ],

@@ -206,9 +206,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a37b7b48d3ba7c6c9dbfacc808f270517"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a37b7b48d3ba7c6c9dbfacc808f270517">oc_core_get_publisher_table_size</a> ()</td></tr>
 <tr class="memdesc:a37b7b48d3ba7c6c9dbfacc808f270517"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the size of the publisher table  <a href="oc__knx__fp_8h.html#a37b7b48d3ba7c6c9dbfacc808f270517">More...</a><br /></td></tr>
 <tr class="separator:a37b7b48d3ba7c6c9dbfacc808f270517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f87e78c4f44c3e2f460a5824f6f9d4f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a2f87e78c4f44c3e2f460a5824f6f9d4f">oc_core_get_recipient_ia</a> (int index)</td></tr>
-<tr class="memdesc:a2f87e78c4f44c3e2f460a5824f6f9d4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the internal address of the recipient in the table  <a href="oc__knx__fp_8h.html#a2f87e78c4f44c3e2f460a5824f6f9d4f">More...</a><br /></td></tr>
-<tr class="separator:a2f87e78c4f44c3e2f460a5824f6f9d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d64d7c4b2ca280f8c931165c43db1b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a07d64d7c4b2ca280f8c931165c43db1b">oc_core_get_recipient_ia</a> (int index)</td></tr>
+<tr class="memdesc:a07d64d7c4b2ca280f8c931165c43db1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the internal address of the recipient in the table  <a href="oc__knx__fp_8h.html#a07d64d7c4b2ca280f8c931165c43db1b">More...</a><br /></td></tr>
+<tr class="separator:a07d64d7c4b2ca280f8c931165c43db1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad43d5ddf2012e3b8d88478b72488620"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#aad43d5ddf2012e3b8d88478b72488620">oc_core_get_recipient_index_url_or_path</a> (int index)</td></tr>
 <tr class="memdesc:aad43d5ddf2012e3b8d88478b72488620"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the destination (path or url) of the recipient table at index  <a href="oc__knx__fp_8h.html#aad43d5ddf2012e3b8d88478b72488620">More...</a><br /></td></tr>
 <tr class="separator:aad43d5ddf2012e3b8d88478b72488620"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1203,14 +1203,14 @@ false is not part of the recipient entry </dd></dl>
 
 </div>
 </div>
-<a id="a2f87e78c4f44c3e2f460a5824f6f9d4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f87e78c4f44c3e2f460a5824f6f9d4f">&#9670;&nbsp;</a></span>oc_core_get_recipient_ia()</h2>
+<a id="a07d64d7c4b2ca280f8c931165c43db1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d64d7c4b2ca280f8c931165c43db1b">&#9670;&nbsp;</a></span>oc_core_get_recipient_ia()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int oc_core_get_recipient_ia </td>
+          <td class="memname">uint32_t oc_core_get_recipient_ia </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
@@ -1226,7 +1226,7 @@ false is not part of the recipient entry </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>int -1 does not exit otherwise the ia </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>uint32_t 0 does not exit otherwise the ia </dd></dl>
 
 </div>
 </div>
@@ -1893,7 +1893,7 @@ false is not part of the recipient entry </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__fp_8h.html">oc_knx_fp.h</a></li>
-    <li class="footer">Generated on Tue Nov 29 2022 12:17:20 for KNX IoT by
+    <li class="footer">Generated on Tue Nov 29 2022 12:38:51 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
