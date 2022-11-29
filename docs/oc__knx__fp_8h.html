@@ -137,6 +137,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a51e52b4656329535e5813b089f705018"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a51e52b4656329535e5813b089f705018">find_empty_slot_in_group_object_table</a> (int id)</td></tr>
+<tr class="memdesc:a51e52b4656329535e5813b089f705018"><td class="mdescLeft">&#160;</td><td class="mdescRight">find empty slot in group object table  <a href="oc__knx__fp_8h.html#a51e52b4656329535e5813b089f705018">More...</a><br /></td></tr>
+<tr class="separator:a51e52b4656329535e5813b089f705018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9272e371df4d638d0c45d04801a8145"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#aa9272e371df4d638d0c45d04801a8145">oc_add_points_in_group_object_table_to_response</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, size_t device_index, uint32_t group_address, size_t *response_length, int matches)</td></tr>
 <tr class="memdesc:aa9272e371df4d638d0c45d04801a8145"><td class="mdescLeft">&#160;</td><td class="mdescRight">add points to the well-known core discovery response when the request has query option .well-known/core?d=urn:knx:g.s.  <a href="oc__knx__fp_8h.html#aa9272e371df4d638d0c45d04801a8145">More...</a><br /></td></tr>
 <tr class="separator:aa9272e371df4d638d0c45d04801a8145"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -454,6 +457,33 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a51e52b4656329535e5813b089f705018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e52b4656329535e5813b089f705018">&#9670;&nbsp;</a></span>find_empty_slot_in_group_object_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int find_empty_slot_in_group_object_table </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>find empty slot in group object table </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>the index </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the free index or -1 when no empty slots are available </dd></dl>
+
+</div>
+</div>
 <a id="aa9272e371df4d638d0c45d04801a8145"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9272e371df4d638d0c45d04801a8145">&#9670;&nbsp;</a></span>oc_add_points_in_group_object_table_to_response()</h2>
 
@@ -1863,7 +1893,7 @@ false is not part of the recipient entry </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__fp_8h.html">oc_knx_fp.h</a></li>
-    <li class="footer">Generated on Mon Nov 28 2022 17:01:32 for KNX IoT by
+    <li class="footer">Generated on Tue Nov 29 2022 08:56:06 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

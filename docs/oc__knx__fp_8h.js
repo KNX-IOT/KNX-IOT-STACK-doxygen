@@ -13,6 +13,7 @@ var oc__knx__fp_8h =
       [ "OC_CFLAG_TRANSMISSION", "oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baadc97ae269c3fd9181b8631524f4960a6", null ],
       [ "OC_CFLAG_UPDATE", "oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baad8f8ce5ac3fe6dc90035d5db4c47a550", null ]
     ] ],
+    [ "find_empty_slot_in_group_object_table", "oc__knx__fp_8h.html#a51e52b4656329535e5813b089f705018", null ],
     [ "oc_add_points_in_group_object_table_to_response", "oc__knx__fp_8h.html#aa9272e371df4d638d0c45d04801a8145", null ],
     [ "oc_belongs_href_to_resource", "oc__knx__fp_8h.html#a3ed6e49562be4e391d379c64939c292d", null ],
     [ "oc_cflags_as_string", "oc__knx__fp_8h.html#a211407a1c5b33b12124fd1990532f3a7", null ],
