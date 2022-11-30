@@ -228,8 +228,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:aa5a8ff89c0c6a1d6e1a4c19b59b8cef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creation of the KNX feature point resources.  <a href="oc__knx__fp_8h.html#aa5a8ff89c0c6a1d6e1a4c19b59b8cef0">More...</a><br /></td></tr>
 <tr class="separator:aa5a8ff89c0c6a1d6e1a4c19b59b8cef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0040811826ea0ba90ecaca67327f6506"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a0040811826ea0ba90ecaca67327f6506">oc_create_multicast_group_address</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> in, uint32_t group_nr, int64_t iid, int scope)</td></tr>
-<tr class="memdesc:a0040811826ea0ba90ecaca67327f6506"><td class="mdescLeft">&#160;</td><td class="mdescRight">create the group multi cast address  <a href="oc__knx__fp_8h.html#a0040811826ea0ba90ecaca67327f6506">More...</a><br /></td></tr>
+<tr class="memdesc:a0040811826ea0ba90ecaca67327f6506"><td class="mdescLeft">&#160;</td><td class="mdescRight">create the group multi cast address using the default port 5683  <a href="oc__knx__fp_8h.html#a0040811826ea0ba90ecaca67327f6506">More...</a><br /></td></tr>
 <tr class="separator:a0040811826ea0ba90ecaca67327f6506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5ad7cc2f9286f251518eb4f3624ff9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#adf5ad7cc2f9286f251518eb4f3624ff9">oc_create_multicast_group_address_with_port</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> in, uint32_t group_nr, int64_t iid, int scope, int port)</td></tr>
+<tr class="memdesc:adf5ad7cc2f9286f251518eb4f3624ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">create the group multi cast address with port  <a href="oc__knx__fp_8h.html#adf5ad7cc2f9286f251518eb4f3624ff9">More...</a><br /></td></tr>
+<tr class="separator:adf5ad7cc2f9286f251518eb4f3624ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55a051dd915c8e043303dfc5a85303c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a55a051dd915c8e043303dfc5a85303c0">oc_delete_group_object_table</a> ()</td></tr>
 <tr class="memdesc:a55a051dd915c8e043303dfc5a85303c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete all entries of the Group Object Table (from persistent) storage  <a href="oc__knx__fp_8h.html#a55a051dd915c8e043303dfc5a85303c0">More...</a><br /></td></tr>
 <tr class="separator:a55a051dd915c8e043303dfc5a85303c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,11 +273,17 @@ Functions</h2></td></tr>
 <tr class="memdesc:a3bc72047648ad8448a75471899e7bcec"><td class="mdescLeft">&#160;</td><td class="mdescRight">register the multicast addresses to listen to  <a href="oc__knx__fp_8h.html#a3bc72047648ad8448a75471899e7bcec">More...</a><br /></td></tr>
 <tr class="separator:a3bc72047648ad8448a75471899e7bcec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c3abdeb41bbc9aada051918d316897c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a2c3abdeb41bbc9aada051918d316897c">subscribe_group_to_multicast</a> (uint32_t group_nr, int64_t iid, int scope)</td></tr>
-<tr class="memdesc:a2c3abdeb41bbc9aada051918d316897c"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscribe to a multicast address, defined by group number and installation id  <a href="oc__knx__fp_8h.html#a2c3abdeb41bbc9aada051918d316897c">More...</a><br /></td></tr>
+<tr class="memdesc:a2c3abdeb41bbc9aada051918d316897c"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscribe to a multicast address, defined by group number and installation id using the default port 5683  <a href="oc__knx__fp_8h.html#a2c3abdeb41bbc9aada051918d316897c">More...</a><br /></td></tr>
 <tr class="separator:a2c3abdeb41bbc9aada051918d316897c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8296ca38838dbbc33fdbce6e08cb44d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a8296ca38838dbbc33fdbce6e08cb44d1">subscribe_group_to_multicast_with_port</a> (uint32_t group_nr, int64_t iid, int scope, int port)</td></tr>
+<tr class="memdesc:a8296ca38838dbbc33fdbce6e08cb44d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscribe to a multicast address, defined by group number and installation id  <a href="oc__knx__fp_8h.html#a8296ca38838dbbc33fdbce6e08cb44d1">More...</a><br /></td></tr>
+<tr class="separator:a8296ca38838dbbc33fdbce6e08cb44d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa504100d5153fffbb534d1363c0495c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#aa504100d5153fffbb534d1363c0495c1">unsubscribe_group_to_multicast</a> (uint32_t group_nr, int64_t iid, int scope)</td></tr>
 <tr class="memdesc:aa504100d5153fffbb534d1363c0495c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">unsubscribe to a multicast address, defined by group number and installation id  <a href="oc__knx__fp_8h.html#aa504100d5153fffbb534d1363c0495c1">More...</a><br /></td></tr>
 <tr class="separator:aa504100d5153fffbb534d1363c0495c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf80e802dd39e8ca9a8a9142be8846f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#abf80e802dd39e8ca9a8a9142be8846f6">unsubscribe_group_to_multicast_with_port</a> (uint32_t group_nr, int64_t iid, int scope, int port)</td></tr>
+<tr class="memdesc:abf80e802dd39e8ca9a8a9142be8846f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">unsubscribe to a multicast address, defined by group number and installation id and port  <a href="oc__knx__fp_8h.html#abf80e802dd39e8ca9a8a9142be8846f6">More...</a><br /></td></tr>
+<tr class="separator:abf80e802dd39e8ca9a8a9142be8846f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>knx /fp resource implementations </p>
@@ -1435,13 +1444,79 @@ false is not part of the recipient entry </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>create the group multi cast address </p>
+<p>create the group multi cast address using the default port 5683 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">in</td><td>the endpoint to adapt </td></tr>
     <tr><td class="paramname">group_nr</td><td>the group number </td></tr>
     <tr><td class="paramname">iid</td><td>the installation id </td></tr>
     <tr><td class="paramname">scope</td><td>the address scope </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structoc__endpoint__t.html" title="the endpoint information">oc_endpoint_t</a> the modified endpoint </dd></dl>
+
+</div>
+</div>
+<a id="adf5ad7cc2f9286f251518eb4f3624ff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf5ad7cc2f9286f251518eb4f3624ff9">&#9670;&nbsp;</a></span>oc_create_multicast_group_address_with_port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> oc_create_multicast_group_address_with_port </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a>&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>group_nr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>iid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scope</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create the group multi cast address with port </p>
+<p>create the multicast address from group and scope with a supplied port number </p><div class="fragment"><div class="line">FF3_:FD__:____:____:(8-f)___:____</div>
+<div class="line">FF35::30:&lt;ULA-routing-prefix&gt;::&lt;group id&gt;</div>
+<div class="line">   | 5 == scope</div>
+<div class="line">   | 3 == scope</div>
+<div class="line">Multicast prefix: FF35:0030:  [4 bytes]</div>
+<div class="line">ULA routing prefix: FD11:2222:3333::  [6 bytes + 2 empty bytes]</div>
+<div class="line">Group Identifier: 8000 : 0068 [4 bytes ]</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in</td><td>the endpoint to adapt </td></tr>
+    <tr><td class="paramname">group_nr</td><td>the group number </td></tr>
+    <tr><td class="paramname">iid</td><td>the installation id </td></tr>
+    <tr><td class="paramname">scope</td><td>the address scope </td></tr>
+    <tr><td class="paramname">port</td><td>the port to be used </td></tr>
   </table>
   </dd>
 </dl>
@@ -1821,13 +1896,65 @@ false is not part of the recipient entry </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>subscribe to a multicast address, defined by group number and installation id </p>
+<p>subscribe to a multicast address, defined by group number and installation id using the default port 5683 </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__knx__fp_8h.html#aa504100d5153fffbb534d1363c0495c1" title="unsubscribe to a multicast address, defined by group number and installation id">unsubscribe_group_to_multicast</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group_nr</td><td>the group number (address) </td></tr>
     <tr><td class="paramname">iid</td><td>the installation id </td></tr>
     <tr><td class="paramname">scope</td><td>the address scope </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8296ca38838dbbc33fdbce6e08cb44d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8296ca38838dbbc33fdbce6e08cb44d1">&#9670;&nbsp;</a></span>subscribe_group_to_multicast_with_port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void subscribe_group_to_multicast_with_port </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>group_nr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>iid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scope</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>subscribe to a multicast address, defined by group number and installation id </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__knx__fp_8h.html#abf80e802dd39e8ca9a8a9142be8846f6" title="unsubscribe to a multicast address, defined by group number and installation id and port">unsubscribe_group_to_multicast_with_port</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group_nr</td><td>the group number (address) </td></tr>
+    <tr><td class="paramname">iid</td><td>the installation id </td></tr>
+    <tr><td class="paramname">scope</td><td>the address scope </td></tr>
+    <tr><td class="paramname">port</td><td>the port </td></tr>
   </table>
   </dd>
 </dl>
@@ -1867,12 +1994,64 @@ false is not part of the recipient entry </dd></dl>
 </div><div class="memdoc">
 
 <p>unsubscribe to a multicast address, defined by group number and installation id </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__knx__fp_8h.html#a2c3abdeb41bbc9aada051918d316897c" title="subscribe to a multicast address, defined by group number and installation id">subscribe_group_to_multicast</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__knx__fp_8h.html#a2c3abdeb41bbc9aada051918d316897c" title="subscribe to a multicast address, defined by group number and installation id using the default port ...">subscribe_group_to_multicast</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group_nr</td><td>the group number (address) </td></tr>
     <tr><td class="paramname">iid</td><td>the installation id </td></tr>
     <tr><td class="paramname">scope</td><td>the address scope </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abf80e802dd39e8ca9a8a9142be8846f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf80e802dd39e8ca9a8a9142be8846f6">&#9670;&nbsp;</a></span>unsubscribe_group_to_multicast_with_port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unsubscribe_group_to_multicast_with_port </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>group_nr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>iid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scope</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>unsubscribe to a multicast address, defined by group number and installation id and port </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__knx__fp_8h.html#a8296ca38838dbbc33fdbce6e08cb44d1" title="subscribe to a multicast address, defined by group number and installation id">subscribe_group_to_multicast_with_port</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group_nr</td><td>the group number (address) </td></tr>
+    <tr><td class="paramname">iid</td><td>the installation id </td></tr>
+    <tr><td class="paramname">scope</td><td>the address scope </td></tr>
+    <tr><td class="paramname">port</td><td>the port </td></tr>
   </table>
   </dd>
 </dl>
@@ -1893,7 +2072,7 @@ false is not part of the recipient entry </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__fp_8h.html">oc_knx_fp.h</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 11:44:07 for KNX IoT by
+    <li class="footer">Generated on Wed Nov 30 2022 14:32:32 for KNX IoT by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -44,6 +44,7 @@ var oc__knx__fp_8h =
     [ "oc_core_set_group_object_table", "oc__knx__fp_8h.html#a6940506dd2fc11553847d7075934bf13", null ],
     [ "oc_create_knx_fp_resources", "oc__knx__fp_8h.html#aa5a8ff89c0c6a1d6e1a4c19b59b8cef0", null ],
     [ "oc_create_multicast_group_address", "oc__knx__fp_8h.html#a0040811826ea0ba90ecaca67327f6506", null ],
+    [ "oc_create_multicast_group_address_with_port", "oc__knx__fp_8h.html#adf5ad7cc2f9286f251518eb4f3624ff9", null ],
     [ "oc_delete_group_object_table", "oc__knx__fp_8h.html#a55a051dd915c8e043303dfc5a85303c0", null ],
     [ "oc_delete_group_object_table_entry", "oc__knx__fp_8h.html#a612792ec31c83205c4d5b4dbce53fb64", null ],
     [ "oc_delete_group_rp_table", "oc__knx__fp_8h.html#aaad90d4df707ff25a3cd0b257b037fa4", null ],
@@ -58,5 +59,7 @@ var oc__knx__fp_8h =
     [ "oc_print_group_object_table_entry", "oc__knx__fp_8h.html#ab1f82e781199d5f10d6cedc7ab548d30", null ],
     [ "oc_register_group_multicasts", "oc__knx__fp_8h.html#a3bc72047648ad8448a75471899e7bcec", null ],
     [ "subscribe_group_to_multicast", "oc__knx__fp_8h.html#a2c3abdeb41bbc9aada051918d316897c", null ],
-    [ "unsubscribe_group_to_multicast", "oc__knx__fp_8h.html#aa504100d5153fffbb534d1363c0495c1", null ]
+    [ "subscribe_group_to_multicast_with_port", "oc__knx__fp_8h.html#a8296ca38838dbbc33fdbce6e08cb44d1", null ],
+    [ "unsubscribe_group_to_multicast", "oc__knx__fp_8h.html#aa504100d5153fffbb534d1363c0495c1", null ],
+    [ "unsubscribe_group_to_multicast_with_port", "oc__knx__fp_8h.html#abf80e802dd39e8ca9a8a9142be8846f6", null ]
 ];
