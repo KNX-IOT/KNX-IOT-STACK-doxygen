@@ -152,8 +152,8 @@ $(document).ready(function(){initNavTree('oc__endpoint_8h_source.html',''); init
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="structoc__ipv6__addr__t.html">oc_ipv6_addr_t</a> ipv6; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="structoc__ipv4__addr__t.html">oc_ipv4_addr_t</a> ipv4; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  } addr, addr_local;</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="structoc__endpoint__t.html#ae86afaa4df8c3f253d0f526b9540e1e8">   88</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structoc__endpoint__t.html#ae86afaa4df8c3f253d0f526b9540e1e8">interface_index</a>; </div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c">   89</a></span>&#160;  uint8_t <a class="code" href="structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c">priority</a>;    </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="structoc__endpoint__t.html#ae86afaa4df8c3f253d0f526b9540e1e8">   88</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structoc__endpoint__t.html#ae86afaa4df8c3f253d0f526b9540e1e8">interface_index</a>;    </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c">   89</a></span>&#160;  uint8_t <a class="code" href="structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c">priority</a>;       </div>
 <div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="structoc__endpoint__t.html#ae870ea9ea50d4de2c20b3c6e7ce09b0e">   90</a></span>&#160;  uint32_t <a class="code" href="structoc__endpoint__t.html#ae870ea9ea50d4de2c20b3c6e7ce09b0e">group_address</a>; </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#ifdef OC_OSCORE</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  uint8_t piv[OSCORE_PIV_LEN]; </div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('oc__endpoint_8h_source.html',''); init
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#define oc_make_ipv6_endpoint(__name__, __flags__, __port__, ...)              \</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">  oc_endpoint_t __name__ = { .flags = __flags__,                               \</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">                             .device = 0,                                      \</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">                             .group_address = 0,                                    \</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">                             .group_address = 0,                               \</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">                             .addr.ipv6 = { .port = __port__,                  \</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">                                            .address = { __VA_ARGS__ } } }</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
@@ -252,7 +252,7 @@ $(document).ready(function(){initNavTree('oc__endpoint_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__endpoint_8h.html">oc_endpoint.h</a></li>
-    <li class="footer">Generated on Wed Dec 7 2022 12:46:12 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Dec 7 2022 12:51:08 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
