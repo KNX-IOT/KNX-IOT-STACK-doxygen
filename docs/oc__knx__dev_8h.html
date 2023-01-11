@@ -117,6 +117,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8727713b0c7cf2b6798851987f20e9ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__dev_8h.html#a8727713b0c7cf2b6798851987f20e9ad">oc_knx_device_in_programming_mode</a> (size_t device_index)</td></tr>
 <tr class="memdesc:a8727713b0c7cf2b6798851987f20e9ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">function checks if the device is in programming mode  <a href="oc__knx__dev_8h.html#a8727713b0c7cf2b6798851987f20e9ad">More...</a><br /></td></tr>
 <tr class="separator:a8727713b0c7cf2b6798851987f20e9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae03d1d7830460752affec4220ab2c215"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__dev_8h.html#ae03d1d7830460752affec4220ab2c215">oc_knx_device_set_programming_mode</a> (size_t device_index, bool programming_mode)</td></tr>
+<tr class="memdesc:ae03d1d7830460752affec4220ab2c215"><td class="mdescLeft">&#160;</td><td class="mdescRight">function set the programming mode of the device to true or false  <a href="oc__knx__dev_8h.html#ae03d1d7830460752affec4220ab2c215">More...</a><br /></td></tr>
+<tr class="separator:ae03d1d7830460752affec4220ab2c215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a348e6109ca9903bfe71449ad5920e012"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__dev_8h.html#a348e6109ca9903bfe71449ad5920e012">oc_knx_device_storage_read</a> (size_t device)</td></tr>
 <tr class="memdesc:a348e6109ca9903bfe71449ad5920e012"><td class="mdescLeft">&#160;</td><td class="mdescRight">read the contents from disk during start up for the resources implemented / dev / *  <a href="oc__knx__dev_8h.html#a348e6109ca9903bfe71449ad5920e012">More...</a><br /></td></tr>
 <tr class="separator:a348e6109ca9903bfe71449ad5920e012"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +198,43 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true in programming mode </dd>
 <dd>
 false not in programming mode </dd></dl>
+
+</div>
+</div>
+<a id="ae03d1d7830460752affec4220ab2c215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae03d1d7830460752affec4220ab2c215">&#9670;&nbsp;</a></span>oc_knx_device_set_programming_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_knx_device_set_programming_mode </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>programming_mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>function set the programming mode of the device to true or false </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device_index</td><td>the device index </td></tr>
+    <tr><td class="paramname">programming_mode</td><td>true to set the device in programming mode, false otherwise </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -291,7 +331,7 @@ false not in programming mode </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__dev_8h.html">oc_knx_dev.h</a></li>
-    <li class="footer">Generated on Tue Jan 10 2023 15:03:57 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jan 11 2023 12:24:18 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

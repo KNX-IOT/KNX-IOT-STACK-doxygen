@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"oc__knx__swu_8h.html#aedf4710066da5d0f20916fc4b7fa1ddbaeb53c3ab5560285bce3cf3f6ce1c99aa":[3,0,27,1,7],
 "oc__knx__swu_8h.html#aedf4710066da5d0f20916fc4b7fa1ddbafca8ea3edbbc433838aacbf9df102fc1":[3,0,27,1,6],
 "oc__knx__swu_8h_source.html":[3,0,27],
 "oc__log_8h.html":[3,0,28],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "oc__ri_8h.html#a3b4074bf09e0eaaf278760f50dfd2126":[3,0,37,6],
 "oc__ri_8h.html#a441e6c2103a50c5fc16933739ff0b6c1":[3,0,37,35],
 "oc__ri_8h.html#a4939e040b70ea8c4ba21504206f3b77a":[3,0,37,21],
-"oc__ri_8h.html#a4e6fe6ae768f87ff05d7d6696da225f8":[3,0,37,8],
-"oc__ri_8h.html#a603151eab6b213a08f796aaa21cc78dc":[3,0,37,14]
+"oc__ri_8h.html#a4e6fe6ae768f87ff05d7d6696da225f8":[3,0,37,8]
 };

@@ -123,22 +123,26 @@ $(document).ready(function(){initNavTree('oc__knx__dev_8h_source.html',''); init
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="oc__knx__dev_8h.html#a8727713b0c7cf2b6798851987f20e9ad">   93</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="oc__knx__dev_8h.html#a8727713b0c7cf2b6798851987f20e9ad">oc_knx_device_in_programming_mode</a>(<span class="keywordtype">size_t</span> device_index);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_KNX_DEV_INTERNAL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="oc__knx__dev_8h.html#ae03d1d7830460752affec4220ab2c215">  102</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__knx__dev_8h.html#ae03d1d7830460752affec4220ab2c215">oc_knx_device_set_programming_mode</a>(<span class="keywordtype">size_t</span> device_index,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                        <span class="keywordtype">bool</span> programming_mode);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_KNX_DEV_INTERNAL_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aoc__knx__dev_8h_html_a348e6109ca9903bfe71449ad5920e012"><div class="ttname"><a href="oc__knx__dev_8h.html#a348e6109ca9903bfe71449ad5920e012">oc_knx_device_storage_read</a></div><div class="ttdeci">void oc_knx_device_storage_read(size_t device)</div><div class="ttdoc">read the contents from disk during start up for the resources implemented / dev / *</div></div>
 <div class="ttc" id="aoc__knx__dev_8h_html_a8727713b0c7cf2b6798851987f20e9ad"><div class="ttname"><a href="oc__knx__dev_8h.html#a8727713b0c7cf2b6798851987f20e9ad">oc_knx_device_in_programming_mode</a></div><div class="ttdeci">bool oc_knx_device_in_programming_mode(size_t device_index)</div><div class="ttdoc">function checks if the device is in programming mode</div></div>
 <div class="ttc" id="aoc__knx__dev_8h_html_a8fc3969260aa04b35d75552222c7fd44"><div class="ttname"><a href="oc__knx__dev_8h.html#a8fc3969260aa04b35d75552222c7fd44">oc_create_knx_device_resources</a></div><div class="ttdeci">void oc_create_knx_device_resources(size_t device)</div><div class="ttdoc">Creation of the KNX device resources.</div></div>
 <div class="ttc" id="aoc__knx__dev_8h_html_ad5870712fe9b484e2816b4b0fc4dfea5"><div class="ttname"><a href="oc__knx__dev_8h.html#ad5870712fe9b484e2816b4b0fc4dfea5">oc_knx_device_storage_reset</a></div><div class="ttdeci">void oc_knx_device_storage_reset(size_t device_index, int reset_mode)</div><div class="ttdoc">clear the persistent storage reset behavior according to the supplied erase code</div></div>
+<div class="ttc" id="aoc__knx__dev_8h_html_ae03d1d7830460752affec4220ab2c215"><div class="ttname"><a href="oc__knx__dev_8h.html#ae03d1d7830460752affec4220ab2c215">oc_knx_device_set_programming_mode</a></div><div class="ttdeci">void oc_knx_device_set_programming_mode(size_t device_index, bool programming_mode)</div><div class="ttdoc">function set the programming mode of the device to true or false</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__dev_8h.html">oc_knx_dev.h</a></li>
-    <li class="footer">Generated on Tue Jan 10 2023 15:03:57 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jan 11 2023 12:24:18 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
