@@ -176,6 +176,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaab81b44a949c8689bf23179d18a626ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaab81b44a949c8689bf23179d18a626ba">oc_send_cbor_response</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code)</td></tr>
 <tr class="memdesc:gaab81b44a949c8689bf23179d18a626ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.  <a href="group__doc__module__tag__server__side.html#gaab81b44a949c8689bf23179d18a626ba">More...</a><br /></td></tr>
 <tr class="separator:gaab81b44a949c8689bf23179d18a626ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85259cc831c511d3c929474ecefaf896"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga85259cc831c511d3c929474ecefaf896">oc_send_cbor_response_no_payload_size</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code)</td></tr>
+<tr class="memdesc:ga85259cc831c511d3c929474ecefaf896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.  <a href="group__doc__module__tag__server__side.html#ga85259cc831c511d3c929474ecefaf896">More...</a><br /></td></tr>
+<tr class="separator:ga85259cc831c511d3c929474ecefaf896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga34f08b138716ced83272f1223ccbae08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga34f08b138716ced83272f1223ccbae08">oc_send_cbor_response_with_payload_size</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code, size_t payload_size)</td></tr>
 <tr class="memdesc:ga34f08b138716ced83272f1223ccbae08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.  <a href="group__doc__module__tag__server__side.html#ga34f08b138716ced83272f1223ccbae08">More...</a><br /></td></tr>
 <tr class="separator:ga34f08b138716ced83272f1223ccbae08"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1443,7 +1446,47 @@ oc_device_bind_resource_type </dd></dl>
 </div><div class="memdoc">
 
 <p>Called after the response to a GET, PUT, POST or DELETE call has been prepared completed. </p>
-<p>will respond with CBOR.</p>
+<p>will respond with CBOR as content type.</p>
+<p>The function oc_send_response is called at the end of a oc_request_callback_t to inform the caller about the status of the requested action.</p>
+<p>Note that OC_STATUS_BAD_REQUEST for multicast will not send a response (e.g. threated as OC_IGNORE)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>the request being responded to </td></tr>
+    <tr><td class="paramname">response_code</td><td>the status of the response </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga85259cc831c511d3c929474ecefaf896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga85259cc831c511d3c929474ecefaf896">&#9670;&nbsp;</a></span>oc_send_cbor_response_no_payload_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_send_cbor_response_no_payload_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a>&#160;</td>
+          <td class="paramname"><em>response_code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called after the response to a GET, PUT, POST or DELETE call has been prepared completed. </p>
+<p>will respond with CBOR, no payload expected.</p>
 <p>The function oc_send_response is called at the end of a oc_request_callback_t to inform the caller about the status of the requested action.</p>
 <p>Note that OC_STATUS_BAD_REQUEST for multicast will not send a response (e.g. threated as OC_IGNORE)</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1866,7 +1909,7 @@ oc_device_bind_resource_type </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jan 12 2023 16:12:00 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jan 13 2023 13:20:06 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

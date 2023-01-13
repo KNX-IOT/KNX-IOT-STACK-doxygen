@@ -27,6 +27,7 @@ var group__doc__module__tag__server__side =
     [ "oc_resource_set_properties_cbs", "group__doc__module__tag__server__side.html#gaf9028094981175854c699f6da4a34131", null ],
     [ "oc_resource_set_request_handler", "group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6", null ],
     [ "oc_send_cbor_response", "group__doc__module__tag__server__side.html#gaab81b44a949c8689bf23179d18a626ba", null ],
+    [ "oc_send_cbor_response_no_payload_size", "group__doc__module__tag__server__side.html#ga85259cc831c511d3c929474ecefaf896", null ],
     [ "oc_send_cbor_response_with_payload_size", "group__doc__module__tag__server__side.html#ga34f08b138716ced83272f1223ccbae08", null ],
     [ "oc_send_diagnostic_message", "group__doc__module__tag__server__side.html#gadcfcce0aa1c740c40c85905b5f1e561a", null ],
     [ "oc_send_empty_separate_response", "group__doc__module__tag__server__side.html#gaf9b618b90fd3259340e313227e102d62", null ],

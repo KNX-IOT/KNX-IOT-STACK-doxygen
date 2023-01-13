@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"lssb__minimal__all_8c.html#a56e0ef88d0d230547f678b84ed8ad00a":[3,0,2,2],
+"lssb__minimal__all_8c.html#a8e0cc947f6c738517f2c341af66bc059":[3,0,2,14],
 "lssb__minimal__all_8c.html#a8f0729e9e8c0e049c59956badd0905a0":[3,0,2,17],
 "lssb__minimal__all_8c.html#a949dfb335c9df07c7cd6bae3c92df979":[3,0,2,6],
 "lssb__minimal__all_8c.html#a9597b9475fbb418556b2d89b22ba95c1":[3,0,2,16],
@@ -18,11 +20,11 @@ var NAVTREEINDEX1 =
 "oc__api_8h.html":[3,0,3],
 "oc__api_8h.html#a07db38d877a6ecbeb92ba881925f09c3":[3,0,3,4],
 "oc__api_8h.html#a1fc277c86baf3db65614c271bc7cbcf6":[3,0,3,13],
-"oc__api_8h.html#a248d5b7e7122aa4a06b77c1bb9f3dbae":[3,0,3,76],
+"oc__api_8h.html#a248d5b7e7122aa4a06b77c1bb9f3dbae":[3,0,3,77],
 "oc__api_8h.html#a4de70c3cf9243e3a672332894e441135":[3,0,3,10],
-"oc__api_8h.html#a51e4f70eb54edfe9e8509367125b662e":[3,0,3,77],
+"oc__api_8h.html#a51e4f70eb54edfe9e8509367125b662e":[3,0,3,78],
 "oc__api_8h.html#a57a741fa2165d561ffc7faf0f084cd69":[3,0,3,7],
-"oc__api_8h.html#a5fabaaadaf2e0dccbb1d906f73f9d953":[3,0,3,74],
+"oc__api_8h.html#a5fabaaadaf2e0dccbb1d906f73f9d953":[3,0,3,75],
 "oc__api_8h.html#a6cf429db1849423722bad55d93f753c6":[3,0,3,47],
 "oc__api_8h.html#a9a4f40914dd68e17b88345bcce756666":[3,0,3,5],
 "oc__api_8h.html#abc05e63942a1093f807213220841c54b":[3,0,3,36],
@@ -33,7 +35,7 @@ var NAVTREEINDEX1 =
 "oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c":[3,0,3,45],
 "oc__api_8h.html#af0942ca6eb6162a2f3761c0cf106ae0b":[3,0,3,11],
 "oc__api_8h.html#af0b944acc98a497365efbc1d1c9aa32e":[3,0,3,8],
-"oc__api_8h.html#af1c16d006192d36caa043957114698ac":[3,0,3,75],
+"oc__api_8h.html#af1c16d006192d36caa043957114698ac":[3,0,3,76],
 "oc__api_8h_source.html":[3,0,3],
 "oc__assert_8h.html":[3,0,4],
 "oc__assert_8h.html#a1bce540d44065a67fd8136c1033bee82":[3,0,4,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "oc__endpoint_8h_source.html":[3,0,16],
 "oc__events_8h.html":[3,0,17],
 "oc__events_8h.html#aa6fba2376082ef7435e344493ff34256":[3,0,17,1],
-"oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7":[3,0,17,0],
-"oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a0ade29cd6a0157b6d9cf0b44f5c6332d":[3,0,17,0,12],
-"oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a0ece76f9205706839843bddf94a48886":[3,0,17,0,2]
+"oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7":[3,0,17,0]
 };
