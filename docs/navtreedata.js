@@ -54,7 +54,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"lssb__minimal__all_8c.html#a4f2aed0b7d54ee82d95b1db911a281b8",
+"lssb__minimal__all_8c.html#a56e0ef88d0d230547f678b84ed8ad00a",
 "oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a0ade29cd6a0157b6d9cf0b44f5c6332d",
 "oc__knx__swu_8h.html#aedf4710066da5d0f20916fc4b7fa1ddbab328ffbdf08afc6ed1ccb9b03f3c4f68",
 "oc__ri_8h.html#a3b4074bf09e0eaaf278760f50dfd2126",

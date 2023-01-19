@@ -16,7 +16,7 @@ var lsab__minimal__all_8c =
     [ "register_resources", "lsab__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd", null ],
     [ "reset_cb", "lsab__minimal__all_8c.html#a8e0cc947f6c738517f2c341af66bc059", null ],
     [ "restart_cb", "lsab__minimal__all_8c.html#af93312bf44b52864350ef193f6245b34", null ],
-    [ "swu_cb", "lsab__minimal__all_8c.html#a4f2aed0b7d54ee82d95b1db911a281b8", null ],
+    [ "swu_cb", "lsab__minimal__all_8c.html#a5e0a63c86dc414782d35e85a6cd2bd4f", null ],
     [ "g_mystate", "lsab__minimal__all_8c.html#a8f0729e9e8c0e049c59956badd0905a0", null ],
     [ "g_reset", "lsab__minimal__all_8c.html#aa85bfb832e03afe53eea89cfa6bb8ec5", null ],
     [ "quit", "lsab__minimal__all_8c.html#a17a853a5bf8ca8d7285dad963558eb9a", null ]
