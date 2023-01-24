@@ -24,6 +24,7 @@ var annotated_dup =
     [ "oc_network_interface_cb", "structoc__network__interface__cb.html", "structoc__network__interface__cb" ],
     [ "oc_pase_t", "structoc__pase__t.html", "structoc__pase__t" ],
     [ "oc_platform_info_t", "structoc__platform__info__t.html", "structoc__platform__info__t" ],
+    [ "oc_programming_mode_t", "structoc__programming__mode__t.html", "structoc__programming__mode__t" ],
     [ "oc_properties_cb_t", "structoc__properties__cb__t.html", "structoc__properties__cb__t" ],
     [ "oc_rep_s", "structoc__rep__s.html", "structoc__rep__s" ],
     [ "oc_request_handler_s", "structoc__request__handler__s.html", "structoc__request__handler__s" ],

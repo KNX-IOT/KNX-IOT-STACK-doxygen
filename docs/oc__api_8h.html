@@ -150,6 +150,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a4de70c3cf9243e3a672332894e441135"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#a4de70c3cf9243e3a672332894e441135">oc_init_platform_cb_t</a>) (void *data)</td></tr>
 <tr class="memdesc:a4de70c3cf9243e3a672332894e441135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked during <a class="el" href="oc__api_8h.html#abc05e63942a1093f807213220841c54b" title="Initialize the platform.">oc_init_platform()</a>.  <a href="oc__api_8h.html#a4de70c3cf9243e3a672332894e441135">More...</a><br /></td></tr>
 <tr class="separator:a4de70c3cf9243e3a672332894e441135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3298f137e6cf4d92da832e58b4951809"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#a3298f137e6cf4d92da832e58b4951809">oc_programming_mode_cb_t</a>) (size_t device, bool programming_mode, void *data)</td></tr>
+<tr class="memdesc:a3298f137e6cf4d92da832e58b4951809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the programming mode callback NOTE: It is the responsibility of this callback (if registered), to set the programming mode of the device via a call to <a class="el" href="oc__knx__dev_8h.html#ae03d1d7830460752affec4220ab2c215" title="function set the programming mode of the device to true or false">oc_knx_device_set_programming_mode()</a>;.  <a href="oc__api_8h.html#a3298f137e6cf4d92da832e58b4951809">More...</a><br /></td></tr>
+<tr class="separator:a3298f137e6cf4d92da832e58b4951809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0942ca6eb6162a2f3761c0cf106ae0b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#af0942ca6eb6162a2f3761c0cf106ae0b">oc_reset_cb_t</a>) (size_t device, int reset_value, void *data)</td></tr>
 <tr class="memdesc:af0942ca6eb6162a2f3761c0cf106ae0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked by the stack initialization to perform any application reset.  <a href="oc__api_8h.html#af0942ca6eb6162a2f3761c0cf106ae0b">More...</a><br /></td></tr>
 <tr class="separator:af0942ca6eb6162a2f3761c0cf106ae0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -351,6 +354,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af1c16d006192d36caa043957114698ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#af1c16d006192d36caa043957114698ac">oc_set_hostname_cb</a> (<a class="el" href="oc__api_8h.html#ad04dc2381b544813b0dc957c403b1ca4">oc_hostname_cb_t</a> cb, void *data)</td></tr>
 <tr class="memdesc:af1c16d006192d36caa043957114698ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the host name callback.  <a href="oc__api_8h.html#af1c16d006192d36caa043957114698ac">More...</a><br /></td></tr>
 <tr class="separator:af1c16d006192d36caa043957114698ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e33b108bb65180b37a55d39115ef6a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#a6e33b108bb65180b37a55d39115ef6a0">oc_set_programming_mode_cb</a> (<a class="el" href="oc__api_8h.html#a3298f137e6cf4d92da832e58b4951809">oc_programming_mode_cb_t</a> cb, void *data)</td></tr>
+<tr class="memdesc:a6e33b108bb65180b37a55d39115ef6a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the programming mode callback.  <a href="oc__api_8h.html#a6e33b108bb65180b37a55d39115ef6a0">More...</a><br /></td></tr>
+<tr class="separator:a6e33b108bb65180b37a55d39115ef6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a248d5b7e7122aa4a06b77c1bb9f3dbae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#a248d5b7e7122aa4a06b77c1bb9f3dbae">oc_set_reset_cb</a> (<a class="el" href="oc__api_8h.html#af0942ca6eb6162a2f3761c0cf106ae0b">oc_reset_cb_t</a> cb, void *data)</td></tr>
 <tr class="memdesc:a248d5b7e7122aa4a06b77c1bb9f3dbae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the reset callback.  <a href="oc__api_8h.html#a248d5b7e7122aa4a06b77c1bb9f3dbae">More...</a><br /></td></tr>
 <tr class="separator:a248d5b7e7122aa4a06b77c1bb9f3dbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -429,7 +435,7 @@ Functions</h2></td></tr>
 <dd>
 <a class="el" href="oc__api_8h.html#a1fc277c86baf3db65614c271bc7cbcf6" title="Add an a device to the stack.">oc_add_device</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l00472">472</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l00502">502</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
 
 </div>
 </div>
@@ -472,7 +478,7 @@ Functions</h2></td></tr>
 <dd>
 <a class="el" href="oc__api_8h.html#abc05e63942a1093f807213220841c54b" title="Initialize the platform.">oc_init_platform</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l00511">511</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l00541">541</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
 
 </div>
 </div>
@@ -504,7 +510,7 @@ Functions</h2></td></tr>
 <div class="line">  <span class="keywordflow">return</span> ret;</div>
 <div class="line">}</div>
 <div class="ttc" id="alsab__minimal__all_8c_html_a2e2efabbeb1c8c68790bb90ce01c4578"><div class="ttname"><a href="lsab__minimal__all_8c.html#a2e2efabbeb1c8c68790bb90ce01c4578">app_init</a></div><div class="ttdeci">int app_init(void)</div><div class="ttdoc">function to set up the device.</div><div class="ttdef"><b>Definition:</b> <a href="lsab__minimal__all_8c_source.html#l00133">lsab_minimal_all.c:133</a></div></div>
-<div class="ttc" id="aoc__api_8h_html_a07db38d877a6ecbeb92ba881925f09c3"><div class="ttname"><a href="oc__api_8h.html#a07db38d877a6ecbeb92ba881925f09c3">oc_set_custom_device_property</a></div><div class="ttdeci">#define oc_set_custom_device_property(prop, value)</div><div class="ttdoc">Set custom device property.</div><div class="ttdef"><b>Definition:</b> <a href="oc__api_8h_source.html#l00472">oc_api.h:472</a></div></div>
+<div class="ttc" id="aoc__api_8h_html_a07db38d877a6ecbeb92ba881925f09c3"><div class="ttname"><a href="oc__api_8h.html#a07db38d877a6ecbeb92ba881925f09c3">oc_set_custom_device_property</a></div><div class="ttdeci">#define oc_set_custom_device_property(prop, value)</div><div class="ttdoc">Set custom device property.</div><div class="ttdef"><b>Definition:</b> <a href="oc__api_8h_source.html#l00502">oc_api.h:502</a></div></div>
 <div class="ttc" id="aoc__api_8h_html_a1fc277c86baf3db65614c271bc7cbcf6"><div class="ttname"><a href="oc__api_8h.html#a1fc277c86baf3db65614c271bc7cbcf6">oc_add_device</a></div><div class="ttdeci">int oc_add_device(const char *name, const char *version, const char *base, const char *serial_number, oc_add_device_cb_t add_device_cb, void *data)</div><div class="ttdoc">Add an a device to the stack.</div></div>
 <div class="ttc" id="aoc__api_8h_html_abc05e63942a1093f807213220841c54b"><div class="ttname"><a href="oc__api_8h.html#abc05e63942a1093f807213220841c54b">oc_init_platform</a></div><div class="ttdeci">int oc_init_platform(const char *mfg_name, oc_init_platform_cb_t init_platform_cb, void *data)</div><div class="ttdoc">Initialize the platform.</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
@@ -596,6 +602,32 @@ Functions</h2></td></tr>
 <a class="el" href="oc__api_8h.html#a07db38d877a6ecbeb92ba881925f09c3" title="Set custom device property.">oc_set_custom_device_property</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l00238">238</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
+
+</div>
+</div>
+<a id="a3298f137e6cf4d92da832e58b4951809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3298f137e6cf4d92da832e58b4951809">&#9670;&nbsp;</a></span>oc_programming_mode_cb_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* oc_programming_mode_cb_t) (size_t device, bool programming_mode, void *data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the programming mode callback NOTE: It is the responsibility of this callback (if registered), to set the programming mode of the device via a call to <a class="el" href="oc__knx__dev_8h.html#ae03d1d7830460752affec4220ab2c215" title="function set the programming mode of the device to true or false">oc_knx_device_set_programming_mode()</a>;. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>the device index </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">programming_mode</td><td>whether to set the programming mode to true or false </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>the user supplied data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l00427">427</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
 
 </div>
 </div>
@@ -959,6 +991,45 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6e33b108bb65180b37a55d39115ef6a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e33b108bb65180b37a55d39115ef6a0">&#9670;&nbsp;</a></span>oc_set_programming_mode_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_set_programming_mode_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="oc__api_8h.html#a3298f137e6cf4d92da832e58b4951809">oc_programming_mode_cb_t</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the programming mode callback. </p>
+<p>The programming mode callback is called by the stack to enable per-device setting of the programming mode on application level.</p>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="oc__api_8h.html#a6e33b108bb65180b37a55d39115ef6a0" title="Set the programming mode callback.">oc_set_programming_mode_cb()</a> must be called before <a class="el" href="oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c" title="Register and call handler functions responsible for controlling the stack.">oc_main_init()</a>.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>oc_programming_mode_cb_t function pointer to be called </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>context pointer that is passed to the oc_programming_mode_cb_t the pointer must be a valid pointer till after <a class="el" href="oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c" title="Register and call handler functions responsible for controlling the stack.">oc_main_init()</a> call completes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a248d5b7e7122aa4a06b77c1bb9f3dbae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a248d5b7e7122aa4a06b77c1bb9f3dbae">&#9670;&nbsp;</a></span>oc_set_reset_cb()</h2>
 
@@ -1048,7 +1119,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__api_8h.html">oc_api.h</a></li>
-    <li class="footer">Generated on Tue Jan 24 2023 10:33:30 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jan 24 2023 16:47:11 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
