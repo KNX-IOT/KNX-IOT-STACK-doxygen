@@ -123,31 +123,37 @@ $(document).ready(function(){initNavTree('oc__random_8h_source.html',''); initRe
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#ifndef OC_RANDOM_H</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#define OC_RANDOM_H</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="oc__random_8h.html#a1c3c669f9dc3479adbf5bebe3c715705">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__random_8h.html#a1c3c669f9dc3479adbf5bebe3c715705">oc_random_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="oc__random_8h.html#ad070cfbf88149abbad5425eecbe99472">   56</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="oc__random_8h.html#ad070cfbf88149abbad5425eecbe99472">oc_random_value</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="oc__random_8h.html#a1f5ab333decb82694f886f9fbbc73953">   62</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__random_8h.html#a1f5ab333decb82694f886f9fbbc73953">oc_random_destroy</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_RANDOM_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;mbedtls/entropy.h&quot;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &quot;mbedtls/ctr_drbg.h&quot;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="oc__random_8h.html#a1c3c669f9dc3479adbf5bebe3c715705">   52</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__random_8h.html#a1c3c669f9dc3479adbf5bebe3c715705">oc_random_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="oc__random_8h.html#ad070cfbf88149abbad5425eecbe99472">   59</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="oc__random_8h.html#ad070cfbf88149abbad5425eecbe99472">oc_random_value</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="oc__random_8h.html#a1f5ab333decb82694f886f9fbbc73953">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__random_8h.html#a1f5ab333decb82694f886f9fbbc73953">oc_random_destroy</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="oc__random_8h.html#ae6d66b480011a75e37d86cb850d2debd">   71</a></span>&#160;mbedtls_ctr_drbg_context *<a class="code" href="oc__random_8h.html#ae6d66b480011a75e37d86cb850d2debd">oc_random_get_ctr_drbg_context</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_RANDOM_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aoc__random_8h_html_a1c3c669f9dc3479adbf5bebe3c715705"><div class="ttname"><a href="oc__random_8h.html#a1c3c669f9dc3479adbf5bebe3c715705">oc_random_init</a></div><div class="ttdeci">void oc_random_init(void)</div><div class="ttdoc">Initialize the pseudo-random generator.</div></div>
 <div class="ttc" id="aoc__random_8h_html_a1f5ab333decb82694f886f9fbbc73953"><div class="ttname"><a href="oc__random_8h.html#a1f5ab333decb82694f886f9fbbc73953">oc_random_destroy</a></div><div class="ttdeci">void oc_random_destroy(void)</div><div class="ttdoc">destroy the pseudo-random generator</div></div>
 <div class="ttc" id="aoc__random_8h_html_ad070cfbf88149abbad5425eecbe99472"><div class="ttname"><a href="oc__random_8h.html#ad070cfbf88149abbad5425eecbe99472">oc_random_value</a></div><div class="ttdeci">unsigned int oc_random_value(void)</div><div class="ttdoc">Calculate a pseudo random number.</div></div>
+<div class="ttc" id="aoc__random_8h_html_ae6d66b480011a75e37d86cb850d2debd"><div class="ttname"><a href="oc__random_8h.html#ae6d66b480011a75e37d86cb850d2debd">oc_random_get_ctr_drbg_context</a></div><div class="ttdeci">mbedtls_ctr_drbg_context * oc_random_get_ctr_drbg_context(void)</div><div class="ttdoc">Get the mbedTLS platform RNG context.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="oc__random_8h.html">oc_random.h</a></li>
-    <li class="footer">Generated on Fri Jan 20 2023 12:10:43 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jan 24 2023 10:33:30 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
