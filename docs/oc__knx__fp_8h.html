@@ -272,6 +272,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a3bc72047648ad8448a75471899e7bcec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a3bc72047648ad8448a75471899e7bcec">oc_register_group_multicasts</a> ()</td></tr>
 <tr class="memdesc:a3bc72047648ad8448a75471899e7bcec"><td class="mdescLeft">&#160;</td><td class="mdescRight">register the multicast addresses to listen to  <a href="oc__knx__fp_8h.html#a3bc72047648ad8448a75471899e7bcec">More...</a><br /></td></tr>
 <tr class="separator:a3bc72047648ad8448a75471899e7bcec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fcba726d4efa913ba351ce4cddc7df5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a1fcba726d4efa913ba351ce4cddc7df5">oc_table_find_id_from_rep</a> (<a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *object)</td></tr>
+<tr class="memdesc:a1fcba726d4efa913ba351ce4cddc7df5"><td class="mdescLeft">&#160;</td><td class="mdescRight">find id (cbor key 0) in the response  <a href="oc__knx__fp_8h.html#a1fcba726d4efa913ba351ce4cddc7df5">More...</a><br /></td></tr>
+<tr class="separator:a1fcba726d4efa913ba351ce4cddc7df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c3abdeb41bbc9aada051918d316897c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fp_8h.html#a2c3abdeb41bbc9aada051918d316897c">subscribe_group_to_multicast</a> (uint32_t group_nr, int64_t iid, int scope)</td></tr>
 <tr class="memdesc:a2c3abdeb41bbc9aada051918d316897c"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscribe to a multicast address, defined by group number and installation id using the default port 5683  <a href="oc__knx__fp_8h.html#a2c3abdeb41bbc9aada051918d316897c">More...</a><br /></td></tr>
 <tr class="separator:a2c3abdeb41bbc9aada051918d316897c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1872,6 +1875,27 @@ false is not part of the recipient entry </dd></dl>
 
 </div>
 </div>
+<a id="a1fcba726d4efa913ba351ce4cddc7df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fcba726d4efa913ba351ce4cddc7df5">&#9670;&nbsp;</a></span>oc_table_find_id_from_rep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_table_find_id_from_rep </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>find id (cbor key 0) in the response </p>
+<dl class="section return"><dt>Returns</dt><dd>int -1 : not found, &gt; -1 : value found </dd></dl>
+
+</div>
+</div>
 <a id="a2c3abdeb41bbc9aada051918d316897c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c3abdeb41bbc9aada051918d316897c">&#9670;&nbsp;</a></span>subscribe_group_to_multicast()</h2>
 
@@ -2072,7 +2096,7 @@ false is not part of the recipient entry </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__fp_8h.html">oc_knx_fp.h</a></li>
-    <li class="footer">Generated on Wed Mar 8 2023 15:46:33 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Mar 13 2023 13:34:41 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

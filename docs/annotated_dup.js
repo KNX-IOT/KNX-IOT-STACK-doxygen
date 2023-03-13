@@ -12,6 +12,7 @@ var annotated_dup =
     [ "oc_event_callback_s", "structoc__event__callback__s.html", "structoc__event__callback__s" ],
     [ "oc_factory_presets_t", "structoc__factory__presets__t.html", "structoc__factory__presets__t" ],
     [ "oc_gateway_t", "structoc__gateway__t.html", "structoc__gateway__t" ],
+    [ "oc_group_mapping_table_t", "structoc__group__mapping__table__t.html", "structoc__group__mapping__table__t" ],
     [ "oc_group_object_notification_t", "structoc__group__object__notification__t.html", "structoc__group__object__notification__t" ],
     [ "oc_group_object_table_t", "structoc__group__object__table__t.html", "structoc__group__object__table__t" ],
     [ "oc_group_rp_table_t", "structoc__group__rp__table__t.html", "structoc__group__rp__table__t" ],

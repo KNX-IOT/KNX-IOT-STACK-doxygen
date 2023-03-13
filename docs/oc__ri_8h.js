@@ -122,10 +122,6 @@ var oc__ri_8h =
       [ "OC_KNX_AUTH_AT_X", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444adeb52eb8c14a7cfe02b3369527c271a1", null ],
       [ "OC_KNX_FP_GM", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a2548c5e6f450f438679c0ea3af0b2b65", null ],
       [ "OC_KNX_FP_GM_X", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a8ffdbd3434c330a921afaac65fde1d58", null ],
-      [ "OC_GM_MCAST", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a53b1c1ea831ecd7234c393cd0aa3f3e9", null ],
-      [ "OC_GM_BKEY", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a8cc90405882fe8bfcd650fcc4cb994d7", null ],
-      [ "OC_GM_MTLL", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a0251bfabede60e23854d12aae0d85a79", null ],
-      [ "OC_GM_IP_LF", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a6c59accff7d6046dee9cf282509f6712", null ],
       [ "WELLKNOWNCORE", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444af4e0544e3c93417d3e085f2fcb8aad0c", null ]
     ] ],
     [ "oc_event_callback_retval_t", "oc__ri_8h.html#a63f96c05b779dfc1ebcfe0722946ceaa", [
