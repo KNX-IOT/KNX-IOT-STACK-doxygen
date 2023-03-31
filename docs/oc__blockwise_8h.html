@@ -182,6 +182,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae7bf7a1542104d1fc28e1cd55ccc5815"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__blockwise_8h.html#ae7bf7a1542104d1fc28e1cd55ccc5815">oc_blockwise_scrub_buffers_for_client_cb</a> (void *cb)</td></tr>
 <tr class="memdesc:ae7bf7a1542104d1fc28e1cd55ccc5815"><td class="mdescLeft">&#160;</td><td class="mdescRight">scrub blocks for client side  <a href="oc__blockwise_8h.html#ae7bf7a1542104d1fc28e1cd55ccc5815">More...</a><br /></td></tr>
 <tr class="separator:ae7bf7a1542104d1fc28e1cd55ccc5815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b07c3e290aaa79901e8c3bb8fe9e755"><td class="memItemLeft" align="right" valign="top">oc_blockwise_state_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__blockwise_8h.html#a1b07c3e290aaa79901e8c3bb8fe9e755">oc_get_request_buffer_with_ptr</a> (uint8_t *data)</td></tr>
+<tr class="memdesc:a1b07c3e290aaa79901e8c3bb8fe9e755"><td class="mdescLeft">&#160;</td><td class="mdescRight">get blockwise buffer that contains data in its payload  <a href="oc__blockwise_8h.html#a1b07c3e290aaa79901e8c3bb8fe9e755">More...</a><br /></td></tr>
+<tr class="separator:a1b07c3e290aaa79901e8c3bb8fe9e755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>CoAP block wise transfer implementation. </p>
@@ -933,13 +936,40 @@ false </dd></dl>
 
 </div>
 </div>
+<a id="a1b07c3e290aaa79901e8c3bb8fe9e755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b07c3e290aaa79901e8c3bb8fe9e755">&#9670;&nbsp;</a></span>oc_get_request_buffer_with_ptr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">oc_blockwise_state_t* oc_get_request_buffer_with_ptr </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get blockwise buffer that contains data in its payload </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>pointer suspected to be inside a blockwise buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>oc_blockwise_request_state_t* the blockwise state that contains the data, or NULL if not found </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__blockwise_8h.html">oc_blockwise.h</a></li>
-    <li class="footer">Generated on Thu Mar 30 2023 15:20:45 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Mar 31 2023 13:52:05 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

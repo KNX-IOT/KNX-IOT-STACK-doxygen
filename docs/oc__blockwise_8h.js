@@ -24,5 +24,6 @@ var oc__blockwise_8h =
     [ "oc_blockwise_free_response_buffer", "oc__blockwise_8h.html#aa1360d4d4fe9658e8b8431a4e314c346", null ],
     [ "oc_blockwise_handle_block", "oc__blockwise_8h.html#a9123474715add3620afa084ef8f8707f", null ],
     [ "oc_blockwise_scrub_buffers", "oc__blockwise_8h.html#adb7a1e06c41f0f9f46dcbbd897e40aec", null ],
-    [ "oc_blockwise_scrub_buffers_for_client_cb", "oc__blockwise_8h.html#ae7bf7a1542104d1fc28e1cd55ccc5815", null ]
+    [ "oc_blockwise_scrub_buffers_for_client_cb", "oc__blockwise_8h.html#ae7bf7a1542104d1fc28e1cd55ccc5815", null ],
+    [ "oc_get_request_buffer_with_ptr", "oc__blockwise_8h.html#a1b07c3e290aaa79901e8c3bb8fe9e755", null ]
 ];

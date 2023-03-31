@@ -214,12 +214,15 @@ $(document).ready(function(){initNavTree('oc__blockwise_8h_source.html',''); ini
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
 <div class="line"><a name="l00267"></a><span class="lineno"><a class="line" href="oc__blockwise_8h.html#ae7bf7a1542104d1fc28e1cd55ccc5815">  267</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="oc__blockwise_8h.html#ae7bf7a1542104d1fc28e1cd55ccc5815">oc_blockwise_scrub_buffers_for_client_cb</a>(<span class="keywordtype">void</span> *cb);</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_BLOCKWISE_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="oc__blockwise_8h.html#a1b07c3e290aaa79901e8c3bb8fe9e755">  276</a></span>&#160;oc_blockwise_state_t *<a class="code" href="oc__blockwise_8h.html#a1b07c3e290aaa79901e8c3bb8fe9e755">oc_get_request_buffer_with_ptr</a>(uint8_t *data);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;}</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_BLOCKWISE_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aoc__blockwise_8h_html_a071dc8a090d9ab81a0c89b5166a88e74"><div class="ttname"><a href="oc__blockwise_8h.html#a071dc8a090d9ab81a0c89b5166a88e74">oc_blockwise_response_state_t</a></div><div class="ttdeci">struct oc_blockwise_response_state_s oc_blockwise_response_state_t</div><div class="ttdoc">the blockwise response state</div></div>
+<div class="ttc" id="aoc__blockwise_8h_html_a1b07c3e290aaa79901e8c3bb8fe9e755"><div class="ttname"><a href="oc__blockwise_8h.html#a1b07c3e290aaa79901e8c3bb8fe9e755">oc_get_request_buffer_with_ptr</a></div><div class="ttdeci">oc_blockwise_state_t * oc_get_request_buffer_with_ptr(uint8_t *data)</div><div class="ttdoc">get blockwise buffer that contains data in its payload</div></div>
 <div class="ttc" id="aoc__blockwise_8h_html_a1b2363a5f96e5c8a2fdd28bd99107970"><div class="ttname"><a href="oc__blockwise_8h.html#a1b2363a5f96e5c8a2fdd28bd99107970">oc_blockwise_find_response_buffer_by_client_cb</a></div><div class="ttdeci">oc_blockwise_state_t * oc_blockwise_find_response_buffer_by_client_cb(oc_endpoint_t *endpoint, void *client_cb)</div><div class="ttdoc">find the response by client callback &amp; endpoint</div></div>
 <div class="ttc" id="aoc__blockwise_8h_html_a220c95591ca306fdef1ec0e79919a21e"><div class="ttname"><a href="oc__blockwise_8h.html#a220c95591ca306fdef1ec0e79919a21e">oc_blockwise_free_request_buffer</a></div><div class="ttdeci">void oc_blockwise_free_request_buffer(oc_blockwise_state_t *buffer)</div><div class="ttdoc">free the request buffer</div></div>
 <div class="ttc" id="aoc__blockwise_8h_html_a458bff167fcb8ecb0a2a442de35630f9"><div class="ttname"><a href="oc__blockwise_8h.html#a458bff167fcb8ecb0a2a442de35630f9">oc_blockwise_find_request_buffer_by_client_cb</a></div><div class="ttdeci">oc_blockwise_state_t * oc_blockwise_find_request_buffer_by_client_cb(oc_endpoint_t *endpoint, void *client_cb)</div><div class="ttdoc">find the request by client callback &amp; endpoint</div></div>
@@ -258,7 +261,7 @@ $(document).ready(function(){initNavTree('oc__blockwise_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__blockwise_8h.html">oc_blockwise.h</a></li>
-    <li class="footer">Generated on Thu Mar 30 2023 15:20:45 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Mar 31 2023 13:52:05 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

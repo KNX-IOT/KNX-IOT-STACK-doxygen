@@ -18,6 +18,7 @@ var oc__connectivity_8h =
     [ "oc_connectivity_subscribe_mcast_ipv6", "oc__connectivity_8h.html#ae9abad7d8d5757ef595f829c4da6586a", null ],
     [ "oc_connectivity_unsubscribe_mcast_ipv6", "oc__connectivity_8h.html#a40a14ea2aa0f20cc6f48cb131fcc3d3b", null ],
     [ "oc_dns_lookup", "oc__connectivity_8h.html#af4ab8e017f16ef084b24d1f8431e4baa", null ],
+    [ "oc_get_incoming_message_with_ptr", "oc__connectivity_8h.html#ad75e5f0e22be0661a334e1a2c23f4ce8", null ],
     [ "oc_send_buffer", "oc__connectivity_8h.html#a42bf2fb6678fc9b9cc162e30cece7beb", null ],
     [ "oc_send_discovery_request", "oc__connectivity_8h.html#ae2a9b061283aa60d8b0b3a3405a42698", null ],
     [ "oc_tcp_get_csm_state", "oc__connectivity_8h.html#a42c4eee0779b0ee32bd7a38929281655", null ],
