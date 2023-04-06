@@ -140,6 +140,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa3a125b0f190fcccc7a294b8429e9a7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaa3a125b0f190fcccc7a294b8429e9a7e">oc_query_value_exists</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char *key)</td></tr>
 <tr class="memdesc:gaa3a125b0f190fcccc7a294b8429e9a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a query parameter 'key' exist in the URL query parameter.  <a href="group__doc__module__tag__server__side.html#gaa3a125b0f190fcccc7a294b8429e9a7e">More...</a><br /></td></tr>
 <tr class="separator:gaa3a125b0f190fcccc7a294b8429e9a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabdcf35ac68c7bc1648a9672dcd0265c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gabdcf35ac68c7bc1648a9672dcd0265c1">oc_query_values_available</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
+<tr class="memdesc:gabdcf35ac68c7bc1648a9672dcd0265c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a query parameter are available.  <a href="group__doc__module__tag__server__side.html#gabdcf35ac68c7bc1648a9672dcd0265c1">More...</a><br /></td></tr>
+<tr class="separator:gabdcf35ac68c7bc1648a9672dcd0265c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga73d7d06b063156e5eb3abb2a202a8976"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga73d7d06b063156e5eb3abb2a202a8976">oc_resource_bind_content_type</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> content_type)</td></tr>
 <tr class="memdesc:ga73d7d06b063156e5eb3abb2a202a8976"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the content type on the resource  <a href="group__doc__module__tag__server__side.html#ga73d7d06b063156e5eb3abb2a202a8976">More...</a><br /></td></tr>
 <tr class="separator:ga73d7d06b063156e5eb3abb2a202a8976"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -954,6 +957,37 @@ oc_process_baseline_interface </dd>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>1 exist</li>
 <li>-1 does not exist </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="gabdcf35ac68c7bc1648a9672dcd0265c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabdcf35ac68c7bc1648a9672dcd0265c1">&#9670;&nbsp;</a></span>oc_query_values_available()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_query_values_available </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
+          <td class="paramname"><em>request</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a query parameter are available. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td>the <a class="el" href="structoc__request__t.html" title="request information structure">oc_request_t</a> that contains the query parameters</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>False no queries available</li>
+<li>True queries available </li>
 </ul>
 </dd></dl>
 
@@ -1909,7 +1943,7 @@ oc_device_bind_resource_type </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 6 2023 13:30:49 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 6 2023 15:29:42 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

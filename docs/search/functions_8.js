@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['main_1118',['main',['../lsab__minimal__all_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;lsab_minimal_all.c'],['../lssb__minimal__all_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;lssb_minimal_all.c']]]
+  ['knx_5fpublish_5fservice_1123',['knx_publish_service',['../dns-sd_8h.html#a5f0b72f16145ed021f89425565dda201',1,'dns-sd.h']]],
+  ['knx_5fservice_5fsleep_5fperiod_1124',['knx_service_sleep_period',['../dns-sd_8h.html#a581571d8b9bcf9b697a6890a7c8a96f6',1,'dns-sd.h']]]
 ];
