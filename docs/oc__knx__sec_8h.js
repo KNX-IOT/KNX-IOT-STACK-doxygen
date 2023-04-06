@@ -25,5 +25,6 @@ var oc__knx__sec_8h =
     [ "oc_oscore_get_rplwdo", "oc__knx__sec_8h.html#abffee6b23a4b6efe2466a6476dd31da3", null ],
     [ "oc_oscore_set_auth", "oc__knx__sec_8h.html#ad5c6ab3d5c41303a0758ff0de59d2fe5", null ],
     [ "oc_print_auth_at_entry", "oc__knx__sec_8h.html#aa314cc4b814d20bfe60564a2aa670667", null ],
+    [ "oc_reset_at_table", "oc__knx__sec_8h.html#ac22087d6e3e3dece6c9938780e152355", null ],
     [ "oc_string_to_at_profile", "oc__knx__sec_8h.html#ad840b16fdfd76aaafb0abdb20c4488fa", null ]
 ];

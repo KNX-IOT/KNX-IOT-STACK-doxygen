@@ -176,6 +176,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa314cc4b814d20bfe60564a2aa670667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#aa314cc4b814d20bfe60564a2aa670667">oc_print_auth_at_entry</a> (size_t device_index, int index)</td></tr>
 <tr class="memdesc:aa314cc4b814d20bfe60564a2aa670667"><td class="mdescLeft">&#160;</td><td class="mdescRight">print the auth at entry  <a href="oc__knx__sec_8h.html#aa314cc4b814d20bfe60564a2aa670667">More...</a><br /></td></tr>
 <tr class="separator:aa314cc4b814d20bfe60564a2aa670667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac22087d6e3e3dece6c9938780e152355"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#ac22087d6e3e3dece6c9938780e152355">oc_reset_at_table</a> (size_t device_index, int erase_code)</td></tr>
+<tr class="memdesc:ac22087d6e3e3dece6c9938780e152355"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset the /auth/at table will be used in reset of the device erase_code:  <a href="oc__knx__sec_8h.html#ac22087d6e3e3dece6c9938780e152355">More...</a><br /></td></tr>
+<tr class="separator:ac22087d6e3e3dece6c9938780e152355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad840b16fdfd76aaafb0abdb20c4488fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413b">oc_at_profile_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#ad840b16fdfd76aaafb0abdb20c4488fa">oc_string_to_at_profile</a> (oc_string_t str)</td></tr>
 <tr class="memdesc:ad840b16fdfd76aaafb0abdb20c4488fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">string to access token profile  <a href="oc__knx__sec_8h.html#ad840b16fdfd76aaafb0abdb20c4488fa">More...</a><br /></td></tr>
 <tr class="separator:ad840b16fdfd76aaafb0abdb20c4488fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -937,6 +940,47 @@ false does not have access </dd></dl>
 
 </div>
 </div>
+<a id="ac22087d6e3e3dece6c9938780e152355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac22087d6e3e3dece6c9938780e152355">&#9670;&nbsp;</a></span>oc_reset_at_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_reset_at_table </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>erase_code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>reset the /auth/at table will be used in reset of the device erase_code: </p>
+<ul>
+<li>2 : reset all entries (using <a class="el" href="oc__knx__sec_8h.html#afaf7c65ba5a0900511303629bfe41582" title="delete the /auth/at table will be used in reset of the device">oc_delete_at_table()</a>)</li>
+<li>7 : reset all entries without scope = "if.sec" <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device_index</td><td>the device index </td></tr>
+    <tr><td class="paramname">erase_code</td><td>the erase code </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
 <a id="ad840b16fdfd76aaafb0abdb20c4488fa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad840b16fdfd76aaafb0abdb20c4488fa">&#9670;&nbsp;</a></span>oc_string_to_at_profile()</h2>
 
@@ -970,7 +1014,7 @@ false does not have access </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__sec_8h.html">oc_knx_sec.h</a></li>
-    <li class="footer">Generated on Wed Apr 5 2023 14:59:39 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 6 2023 08:09:34 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
