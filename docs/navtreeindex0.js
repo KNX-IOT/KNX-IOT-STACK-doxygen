@@ -3,6 +3,7 @@ var NAVTREEINDEX0 =
 "annotated.html":[2,0],
 "classes.html":[2,1],
 "dns-sd_8h.html":[3,0,0],
+"dns-sd_8h.html#a581571d8b9bcf9b697a6890a7c8a96f6":[3,0,0,1],
 "dns-sd_8h.html#a5f0b72f16145ed021f89425565dda201":[3,0,0,0],
 "dns-sd_8h_source.html":[3,0,0],
 "files.html":[3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "group__doc__module__tag__server__side.html#gafffb523de9c9dc8f3a996b48e4ff47ed":[3,0,3,69],
 "index.html":[],
 "index.html":[0],
-"lsab__minimal__all_8c.html":[3,0,1],
-"lsab__minimal__all_8c.html#a01fa98c9e42460c31b6cbcda28165259":[3,0,1,12]
+"lsab__minimal__all_8c.html":[3,0,1]
 };

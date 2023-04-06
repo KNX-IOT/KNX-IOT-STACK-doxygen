@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"lsab__minimal__all_8c.html#a01fa98c9e42460c31b6cbcda28165259":[3,0,1,12],
 "lsab__minimal__all_8c.html#a0ddf1224851353fc92bfbff6f499fa97":[3,0,1,10],
 "lsab__minimal__all_8c.html#a0e5a86f649d1ffc0f49c60204fb78888":[3,0,1,9],
 "lsab__minimal__all_8c.html#a10b2d890d871e1489bb02b7e70d9bdfb":[3,0,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "oc__discovery_8h.html#aea41f8559930c6487093479e23a98802":[3,0,15,2],
 "oc__discovery_8h_source.html":[3,0,15],
 "oc__endpoint_8h.html":[3,0,16],
-"oc__endpoint_8h.html#a076a0100c28c0dd6423c3bb8d9f3d3f6":[3,0,16,5],
-"oc__endpoint_8h.html#a0b37d95d6d4c2ae5b243e8fdba19daa1":[3,0,16,6]
+"oc__endpoint_8h.html#a076a0100c28c0dd6423c3bb8d9f3d3f6":[3,0,16,5]
 };

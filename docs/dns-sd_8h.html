@@ -102,6 +102,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5f0b72f16145ed021f89425565dda201"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dns-sd_8h.html#a5f0b72f16145ed021f89425565dda201">knx_publish_service</a> (char *serial_no, uint32_t iid, uint32_t ia, bool pm)</td></tr>
 <tr class="memdesc:a5f0b72f16145ed021f89425565dda201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publish the KNX mDNS service in order to enable DNS-SD discovery.  <a href="dns-sd_8h.html#a5f0b72f16145ed021f89425565dda201">More...</a><br /></td></tr>
 <tr class="separator:a5f0b72f16145ed021f89425565dda201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581571d8b9bcf9b697a6890a7c8a96f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dns-sd_8h.html#a581571d8b9bcf9b697a6890a7c8a96f6">knx_service_sleep_period</a> (uint32_t sp)</td></tr>
+<tr class="memdesc:a581571d8b9bcf9b697a6890a7c8a96f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the advertised sleep period within the mDNS service.  <a href="dns-sd_8h.html#a581571d8b9bcf9b697a6890a7c8a96f6">More...</a><br /></td></tr>
+<tr class="separator:a581571d8b9bcf9b697a6890a7c8a96f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>DNS SD platform abstraction. </p>
@@ -160,13 +163,39 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a581571d8b9bcf9b697a6890a7c8a96f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581571d8b9bcf9b697a6890a7c8a96f6">&#9670;&nbsp;</a></span>knx_service_sleep_period()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void knx_service_sleep_period </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>sp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the advertised sleep period within the mDNS service. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sp</td><td>The period, in milliseconds. A value of 0 removes the advertisement, signalling that the device is wakeful. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="dns-sd_8h.html">dns-sd.h</a></li>
-    <li class="footer">Generated on Thu Apr 6 2023 08:28:35 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 6 2023 13:30:49 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
