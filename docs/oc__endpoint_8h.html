@@ -166,6 +166,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a508abed5fae364d457008b576ae123d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#a508abed5fae364d457008b576ae123d6">oc_endpoint_print</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *ep)</td></tr>
 <tr class="memdesc:a508abed5fae364d457008b576ae123d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">print the (first) endpoint to std out  <a href="oc__endpoint_8h.html#a508abed5fae364d457008b576ae123d6">More...</a><br /></td></tr>
 <tr class="separator:a508abed5fae364d457008b576ae123d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15adc3e2da1aa579d6fb2cf4359c7025"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#a15adc3e2da1aa579d6fb2cf4359c7025">oc_endpoint_set_auth_at_index</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, int32_t index)</td></tr>
+<tr class="memdesc:a15adc3e2da1aa579d6fb2cf4359c7025"><td class="mdescLeft">&#160;</td><td class="mdescRight">set auth at index for the endpoint, e.g.  <a href="oc__endpoint_8h.html#a15adc3e2da1aa579d6fb2cf4359c7025">More...</a><br /></td></tr>
+<tr class="separator:a15adc3e2da1aa579d6fb2cf4359c7025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af055cc72d372ead0c5b58f60896c064f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#af055cc72d372ead0c5b58f60896c064f">oc_endpoint_set_local_address</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *ep, int interface_index)</td></tr>
 <tr class="memdesc:af055cc72d372ead0c5b58f60896c064f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set interface index on the endpoint  <a href="oc__endpoint_8h.html#af055cc72d372ead0c5b58f60896c064f">More...</a><br /></td></tr>
 <tr class="separator:af055cc72d372ead0c5b58f60896c064f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,7 +243,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="astructoc__endpoint__t_html"><div class="ttname"><a href="structoc__endpoint__t.html">oc_endpoint_t</a></div><div class="ttdoc">the endpoint information</div><div class="ttdef"><b>Definition:</b> <a href="oc__endpoint_8h_source.html#l00077">oc_endpoint.h:78</a></div></div>
 <div class="ttc" id="astructoc__endpoint__t_html_a945038b8b9ca9558905bebfa24b4130e"><div class="ttname"><a href="structoc__endpoint__t.html#a945038b8b9ca9558905bebfa24b4130e">oc_endpoint_t::flags</a></div><div class="ttdeci">enum transport_flags flags</div><div class="ttdoc">the transport flags</div><div class="ttdef"><b>Definition:</b> <a href="oc__endpoint_8h_source.html#l00080">oc_endpoint.h:81</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00100">100</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00101">101</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 
 </div>
 </div>
@@ -287,7 +290,7 @@ Functions</h2></td></tr>
 <div class="line">                             .addr.ipv6 = { .port = __port__,                  \</div>
 <div class="line">                                            .address = { __VA_ARGS__ } } }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00104">104</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00105">105</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 
 </div>
 </div>
@@ -542,6 +545,44 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ep</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a15adc3e2da1aa579d6fb2cf4359c7025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15adc3e2da1aa579d6fb2cf4359c7025">&#9670;&nbsp;</a></span>oc_endpoint_set_auth_at_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_endpoint_set_auth_at_index </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
+          <td class="paramname"><em>endpoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set auth at index for the endpoint, e.g. </p>
+<p>the used security context</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>the end point </td></tr>
+    <tr><td class="paramname">index</td><td>the auth at index </td></tr>
   </table>
   </dd>
 </dl>
@@ -825,7 +866,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__endpoint_8h.html">oc_endpoint.h</a></li>
-    <li class="footer">Generated on Thu Apr 6 2023 16:52:59 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 11 2023 16:36:44 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

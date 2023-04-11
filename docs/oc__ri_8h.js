@@ -187,6 +187,7 @@ var oc__ri_8h =
     [ "get_interface_string", "oc__ri_8h.html#a12324b7f65a6a901470fa0d02e5df555", null ],
     [ "get_method_name", "oc__ri_8h.html#a2e13ec2b32452084c1edb7c74a384ccb", null ],
     [ "oc_get_interface_in_mask_in_string_array", "oc__ri_8h.html#a1306f12131438c2fe2e7395584528cec", null ],
+    [ "oc_print_interface", "oc__ri_8h.html#ab4c5e5b13215845d31bb345c0ee2793b", null ],
     [ "oc_ri_add_resource", "oc__ri_8h.html#a1481c68aff7317781a4af49dd53289ea", null ],
     [ "oc_ri_add_timed_event_callback_ticks", "oc__ri_8h.html#a05de71c3b10d3286e8f6e6b8f784e959", null ],
     [ "oc_ri_alloc_resource", "oc__ri_8h.html#a7147ccded944c339e039abb43e485619", null ],

@@ -24,6 +24,7 @@ var oc__endpoint_8h =
     [ "oc_endpoint_copy", "oc__endpoint_8h.html#ad48737545c72bb476b7f563892063f69", null ],
     [ "oc_endpoint_list_copy", "oc__endpoint_8h.html#a409c05a4d843f01454a5d2bd38303350", null ],
     [ "oc_endpoint_print", "oc__endpoint_8h.html#a508abed5fae364d457008b576ae123d6", null ],
+    [ "oc_endpoint_set_auth_at_index", "oc__endpoint_8h.html#a15adc3e2da1aa579d6fb2cf4359c7025", null ],
     [ "oc_endpoint_set_local_address", "oc__endpoint_8h.html#af055cc72d372ead0c5b58f60896c064f", null ],
     [ "oc_endpoint_set_serial_number", "oc__endpoint_8h.html#a3042654568b8a96e5113f697b52da5e9", null ],
     [ "oc_endpoint_string_parse_path", "oc__endpoint_8h.html#a4b1ba00a5e0834a3bda665259a31e609", null ],
