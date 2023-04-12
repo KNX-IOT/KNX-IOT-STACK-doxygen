@@ -145,6 +145,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab2d899d0971e0b47c21a02b818dc4696"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#ab2d899d0971e0b47c21a02b818dc4696">oc_connectivity_init</a> (size_t device)</td></tr>
 <tr class="memdesc:ab2d899d0971e0b47c21a02b818dc4696"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize the connectivity (e.g.  <a href="oc__connectivity_8h.html#ab2d899d0971e0b47c21a02b818dc4696">More...</a><br /></td></tr>
 <tr class="separator:ab2d899d0971e0b47c21a02b818dc4696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e5fd07d6506b5a410d1b8c37f89f13f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#a1e5fd07d6506b5a410d1b8c37f89f13f">oc_connectivity_set_port</a> (uint32_t port)</td></tr>
+<tr class="memdesc:a1e5fd07d6506b5a410d1b8c37f89f13f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the default (unicast) CoAp port to another value  <a href="oc__connectivity_8h.html#a1e5fd07d6506b5a410d1b8c37f89f13f">More...</a><br /></td></tr>
+<tr class="separator:a1e5fd07d6506b5a410d1b8c37f89f13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa737faed9576af48ccf1ae2fc51f655f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#aa737faed9576af48ccf1ae2fc51f655f">oc_connectivity_shutdown</a> (size_t device)</td></tr>
 <tr class="memdesc:aa737faed9576af48ccf1ae2fc51f655f"><td class="mdescLeft">&#160;</td><td class="mdescRight">shut down the connectivity for device at device index  <a href="oc__connectivity_8h.html#aa737faed9576af48ccf1ae2fc51f655f">More...</a><br /></td></tr>
 <tr class="separator:aa737faed9576af48ccf1ae2fc51f655f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,18 +205,18 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="oc__connectivity_8h_source.html#l00241">241</a> of file <a class="el" href="oc__connectivity_8h_source.html">oc_connectivity.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;             {</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <a class="code" href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a0b45c025e658a8e3dd49bc4f67535b62">CSM_NONE</a>,       </div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <a class="code" href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a1efbb609d4e05555e59897fd9da720d8">CSM_SENT</a>,       </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <a class="code" href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a75ea9fa774c72351779d6a2877384b12">CSM_DONE</a>,       </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <a class="code" href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a784a21056404e8c5f25f959e9926af74">CSM_ERROR</a> = 255 </div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;} <a class="code" href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5">tcp_csm_state_t</a>;</div>
-<div class="ttc" id="aoc__connectivity_8h_html_a9d56c760b9872172c0c76cba052369e5"><div class="ttname"><a href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5">tcp_csm_state_t</a></div><div class="ttdeci">tcp_csm_state_t</div><div class="ttdoc">The CSM states.</div><div class="ttdef"><b>Definition:</b> <a href="oc__connectivity_8h_source.html#l00241">oc_connectivity.h:241</a></div></div>
-<div class="ttc" id="aoc__connectivity_8h_html_a9d56c760b9872172c0c76cba052369e5a0b45c025e658a8e3dd49bc4f67535b62"><div class="ttname"><a href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a0b45c025e658a8e3dd49bc4f67535b62">CSM_NONE</a></div><div class="ttdeci">@ CSM_NONE</div><div class="ttdoc">None.</div><div class="ttdef"><b>Definition:</b> <a href="oc__connectivity_8h_source.html#l00242">oc_connectivity.h:242</a></div></div>
-<div class="ttc" id="aoc__connectivity_8h_html_a9d56c760b9872172c0c76cba052369e5a1efbb609d4e05555e59897fd9da720d8"><div class="ttname"><a href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a1efbb609d4e05555e59897fd9da720d8">CSM_SENT</a></div><div class="ttdeci">@ CSM_SENT</div><div class="ttdoc">Send.</div><div class="ttdef"><b>Definition:</b> <a href="oc__connectivity_8h_source.html#l00243">oc_connectivity.h:243</a></div></div>
-<div class="ttc" id="aoc__connectivity_8h_html_a9d56c760b9872172c0c76cba052369e5a75ea9fa774c72351779d6a2877384b12"><div class="ttname"><a href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a75ea9fa774c72351779d6a2877384b12">CSM_DONE</a></div><div class="ttdeci">@ CSM_DONE</div><div class="ttdoc">Done.</div><div class="ttdef"><b>Definition:</b> <a href="oc__connectivity_8h_source.html#l00244">oc_connectivity.h:244</a></div></div>
-<div class="ttc" id="aoc__connectivity_8h_html_a9d56c760b9872172c0c76cba052369e5a784a21056404e8c5f25f959e9926af74"><div class="ttname"><a href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a784a21056404e8c5f25f959e9926af74">CSM_ERROR</a></div><div class="ttdeci">@ CSM_ERROR</div><div class="ttdoc">Error.</div><div class="ttdef"><b>Definition:</b> <a href="oc__connectivity_8h_source.html#l00246">oc_connectivity.h:245</a></div></div>
+<p class="definition">Definition at line <a class="el" href="oc__connectivity_8h_source.html#l00250">250</a> of file <a class="el" href="oc__connectivity_8h_source.html">oc_connectivity.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;             {</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <a class="code" href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a0b45c025e658a8e3dd49bc4f67535b62">CSM_NONE</a>,       </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <a class="code" href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a1efbb609d4e05555e59897fd9da720d8">CSM_SENT</a>,       </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <a class="code" href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a75ea9fa774c72351779d6a2877384b12">CSM_DONE</a>,       </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <a class="code" href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a784a21056404e8c5f25f959e9926af74">CSM_ERROR</a> = 255 </div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;} <a class="code" href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5">tcp_csm_state_t</a>;</div>
+<div class="ttc" id="aoc__connectivity_8h_html_a9d56c760b9872172c0c76cba052369e5"><div class="ttname"><a href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5">tcp_csm_state_t</a></div><div class="ttdeci">tcp_csm_state_t</div><div class="ttdoc">The CSM states.</div><div class="ttdef"><b>Definition:</b> <a href="oc__connectivity_8h_source.html#l00250">oc_connectivity.h:250</a></div></div>
+<div class="ttc" id="aoc__connectivity_8h_html_a9d56c760b9872172c0c76cba052369e5a0b45c025e658a8e3dd49bc4f67535b62"><div class="ttname"><a href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a0b45c025e658a8e3dd49bc4f67535b62">CSM_NONE</a></div><div class="ttdeci">@ CSM_NONE</div><div class="ttdoc">None.</div><div class="ttdef"><b>Definition:</b> <a href="oc__connectivity_8h_source.html#l00251">oc_connectivity.h:251</a></div></div>
+<div class="ttc" id="aoc__connectivity_8h_html_a9d56c760b9872172c0c76cba052369e5a1efbb609d4e05555e59897fd9da720d8"><div class="ttname"><a href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a1efbb609d4e05555e59897fd9da720d8">CSM_SENT</a></div><div class="ttdeci">@ CSM_SENT</div><div class="ttdoc">Send.</div><div class="ttdef"><b>Definition:</b> <a href="oc__connectivity_8h_source.html#l00252">oc_connectivity.h:252</a></div></div>
+<div class="ttc" id="aoc__connectivity_8h_html_a9d56c760b9872172c0c76cba052369e5a75ea9fa774c72351779d6a2877384b12"><div class="ttname"><a href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a75ea9fa774c72351779d6a2877384b12">CSM_DONE</a></div><div class="ttdeci">@ CSM_DONE</div><div class="ttdoc">Done.</div><div class="ttdef"><b>Definition:</b> <a href="oc__connectivity_8h_source.html#l00253">oc_connectivity.h:253</a></div></div>
+<div class="ttc" id="aoc__connectivity_8h_html_a9d56c760b9872172c0c76cba052369e5a784a21056404e8c5f25f959e9926af74"><div class="ttname"><a href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a784a21056404e8c5f25f959e9926af74">CSM_ERROR</a></div><div class="ttdeci">@ CSM_ERROR</div><div class="ttdoc">Error.</div><div class="ttdef"><b>Definition:</b> <a href="oc__connectivity_8h_source.html#l00255">oc_connectivity.h:254</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -355,6 +358,33 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td>the device index </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 = success </dd></dl>
+
+</div>
+</div>
+<a id="a1e5fd07d6506b5a410d1b8c37f89f13f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e5fd07d6506b5a410d1b8c37f89f13f">&#9670;&nbsp;</a></span>oc_connectivity_set_port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_connectivity_set_port </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set the default (unicast) CoAp port to another value </p>
+<p>Note: must be called before oc_connectivity_init </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>the port number to change </td></tr>
   </table>
   </dd>
 </dl>
@@ -636,7 +666,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="oc__connectivity_8h.html">oc_connectivity.h</a></li>
-    <li class="footer">Generated on Tue Apr 11 2023 16:36:44 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Apr 12 2023 10:37:40 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

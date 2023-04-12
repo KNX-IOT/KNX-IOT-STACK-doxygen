@@ -11,6 +11,7 @@ var structoc__device__info__t =
     [ "iid", "structoc__device__info__t.html#ae1b2b68dcc3e001a5c48dadc670aefe2", null ],
     [ "lsm_s", "structoc__device__info__t.html#a1ab2364042f5d40039fa068b06a92312", null ],
     [ "model", "structoc__device__info__t.html#a9cf2e3b9ba0024e462ec37839d48c0d3", null ],
+    [ "mport", "structoc__device__info__t.html#af326c7bfcc0c87c62aafce6dacb49d5c", null ],
     [ "pm", "structoc__device__info__t.html#af2261d52ec95bfac52b4cdd759575da4", null ],
     [ "port", "structoc__device__info__t.html#a83a04ad582de2b7d36b96f9db429c2c6", null ],
     [ "serialnumber", "structoc__device__info__t.html#accf30e08da6a6d6a1c58b7884bd04b09", null ]
