@@ -139,6 +139,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a3d2b06130a317287cc9b4097b7f06551"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__device__info__t.html">oc_device_info_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a3d2b06130a317287cc9b4097b7f06551">oc_core_add_device</a> (const char *name, const char *version, const char *base, const char *serial_number, <a class="el" href="oc__core__res_8h.html#aaef8fad58f22d24cd42a6e6b07d22e37">oc_core_add_device_cb_t</a> add_device_cb, void *data)</td></tr>
 <tr class="memdesc:a3d2b06130a317287cc9b4097b7f06551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add device to the platform.  <a href="oc__core__res_8h.html#a3d2b06130a317287cc9b4097b7f06551">More...</a><br /></td></tr>
 <tr class="separator:a3d2b06130a317287cc9b4097b7f06551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5118680a8b2afb279450ed6e1b687c4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a5118680a8b2afb279450ed6e1b687c4e">oc_core_bind_dpt_resource</a> (int core_resource, size_t device_index, const char *dpt)</td></tr>
+<tr class="memdesc:a5118680a8b2afb279450ed6e1b687c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">bind dpt to a core resource  <a href="oc__core__res_8h.html#a5118680a8b2afb279450ed6e1b687c4e">More...</a><br /></td></tr>
+<tr class="separator:a5118680a8b2afb279450ed6e1b687c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae05775044d062a575fc789756f776d27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#ae05775044d062a575fc789756f776d27">oc_core_encode_interfaces_mask</a> (CborEncoder *parent, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask)</td></tr>
 <tr class="memdesc:ae05775044d062a575fc789756f776d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">encode the interfaces with the cbor (payload) encoder  <a href="oc__core__res_8h.html#ae05775044d062a575fc789756f776d27">More...</a><br /></td></tr>
 <tr class="separator:ae05775044d062a575fc789756f776d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,7 +167,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a20fecb30aeba81ace5a974de61d40c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize the platform  <a href="oc__core__res_8h.html#a20fecb30aeba81ace5a974de61d40c1d">More...</a><br /></td></tr>
 <tr class="separator:a20fecb30aeba81ace5a974de61d40c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8d75ae504ef81d109e46c65d0365729"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#ae8d75ae504ef81d109e46c65d0365729">oc_core_populate_resource</a> (int core_resource, size_t device_index, const char *uri, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> content_format, int properties, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> get_cb, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> put_cb, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> post_cb, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> delete_cb, int num_resource_types,...)</td></tr>
-<tr class="memdesc:ae8d75ae504ef81d109e46c65d0365729"><td class="mdescLeft">&#160;</td><td class="mdescRight">populate resource for link-format responses mainly used for creation of core resources  <a href="oc__core__res_8h.html#ae8d75ae504ef81d109e46c65d0365729">More...</a><br /></td></tr>
+<tr class="memdesc:ae8d75ae504ef81d109e46c65d0365729"><td class="mdescLeft">&#160;</td><td class="mdescRight">populate core resource mainly used for creation of core resources  <a href="oc__core__res_8h.html#ae8d75ae504ef81d109e46c65d0365729">More...</a><br /></td></tr>
 <tr class="separator:ae8d75ae504ef81d109e46c65d0365729"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a987309557fd523134edddacd57fbdd6c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a987309557fd523134edddacd57fbdd6c">oc_core_set_and_store_device_ia</a> (size_t device_index, uint32_t ia)</td></tr>
 <tr class="memdesc:a987309557fd523134edddacd57fbdd6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets and stores the internal address  <a href="oc__core__res_8h.html#a987309557fd523134edddacd57fbdd6c">More...</a><br /></td></tr>
@@ -393,6 +396,50 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>oc_device_info_t* the device structure </dd></dl>
+
+</div>
+</div>
+<a id="a5118680a8b2afb279450ed6e1b687c4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5118680a8b2afb279450ed6e1b687c4e">&#9670;&nbsp;</a></span>oc_core_bind_dpt_resource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_core_bind_dpt_resource </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>core_resource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dpt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>bind dpt to a core resource </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">core_resource</td><td>the resource index </td></tr>
+    <tr><td class="paramname">device_index</td><td>the device index </td></tr>
+    <tr><td class="paramname">dpt</td><td>the DPT value of the resource </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -732,7 +779,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>populate resource for link-format responses mainly used for creation of core resources </p>
+<p>populate core resource mainly used for creation of core resources </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">core_resource</td><td>the resource index </td></tr>
@@ -1332,7 +1379,7 @@ false resource type is not in the request </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__core__res_8h.html">oc_core_res.h</a></li>
-    <li class="footer">Generated on Wed Apr 12 2023 10:37:40 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Apr 12 2023 14:15:54 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
