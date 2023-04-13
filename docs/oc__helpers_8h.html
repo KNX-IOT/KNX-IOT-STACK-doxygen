@@ -285,6 +285,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 <tr class="memitem:a271a68345452de58119aa9a57644c8fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a271a68345452de58119aa9a57644c8fd">oc_string_is_hex_array</a> (oc_string_t hex_string)</td></tr>
 <tr class="memdesc:a271a68345452de58119aa9a57644c8fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the input is an array containing hex values e.g.  <a href="oc__helpers_8h.html#a271a68345452de58119aa9a57644c8fd">More...</a><br /></td></tr>
 <tr class="separator:a271a68345452de58119aa9a57644c8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c6ef8ff7e51b1e808d39a054ab9f30"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#ae5c6ef8ff7e51b1e808d39a054ab9f30">oc_strnchr</a> (char *string, char p, int size)</td></tr>
+<tr class="memdesc:ae5c6ef8ff7e51b1e808d39a054ab9f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">search a string (non null terminated) for a character  <a href="oc__helpers_8h.html#ae5c6ef8ff7e51b1e808d39a054ab9f30">More...</a><br /></td></tr>
+<tr class="separator:ae5c6ef8ff7e51b1e808d39a054ab9f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6915e9a2fe196de3d470336bace809d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a6915e9a2fe196de3d470336bace809d0">oc_uri_contains_wildcard</a> (const char *uri)</td></tr>
 <tr class="memdesc:a6915e9a2fe196de3d470336bace809d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the uri contains a wildcard (e.g.  <a href="oc__helpers_8h.html#a6915e9a2fe196de3d470336bace809d0">More...</a><br /></td></tr>
 <tr class="separator:a6915e9a2fe196de3d470336bace809d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1134,6 +1137,51 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 </div>
 </div>
+<a id="ae5c6ef8ff7e51b1e808d39a054ab9f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c6ef8ff7e51b1e808d39a054ab9f30">&#9670;&nbsp;</a></span>oc_strnchr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* oc_strnchr </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>search a string (non null terminated) for a character </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>the string to be searched </td></tr>
+    <tr><td class="paramname">p</td><td>the character to be found </td></tr>
+    <tr><td class="paramname">size</td><td>the size of the string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>NULL = not found, other wise position in string string </dd></dl>
+
+</div>
+</div>
 <a id="a6915e9a2fe196de3d470336bace809d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6915e9a2fe196de3d470336bace809d0">&#9670;&nbsp;</a></span>oc_uri_contains_wildcard()</h2>
 
@@ -1427,7 +1475,7 @@ false </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Wed Apr 12 2023 15:20:57 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 13 2023 10:26:05 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
