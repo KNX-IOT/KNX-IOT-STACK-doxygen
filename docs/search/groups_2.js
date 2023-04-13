@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['s_2dmode_20client_2080',['s-mode client',['../group__doc__module__tag__s__mode__client.html',1,'']]],
-  ['s_2dmode_20server_2081',['s-mode server',['../group__doc__module__tag__s__mode__server.html',1,'']]],
-  ['server_20side_2082',['Server side',['../group__doc__module__tag__server__side.html',1,'']]]
+  ['s_2dmode_20client_2082',['s-mode client',['../group__doc__module__tag__s__mode__client.html',1,'']]],
+  ['s_2dmode_20server_2083',['s-mode server',['../group__doc__module__tag__s__mode__server.html',1,'']]],
+  ['server_20side_2084',['Server side',['../group__doc__module__tag__server__side.html',1,'']]]
 ];

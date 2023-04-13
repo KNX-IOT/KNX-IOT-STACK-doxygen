@@ -270,6 +270,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_concat_strings</b>
 <tr class="memitem:a16bbf1dbd390650087470ff8efb79638"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a16bbf1dbd390650087470ff8efb79638">oc_conv_hex_string_to_byte_array</a> (const char *hex_str, size_t hex_str_len, uint8_t *array, size_t *array_len)</td></tr>
 <tr class="memdesc:a16bbf1dbd390650087470ff8efb79638"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert hex string to byte array  <a href="oc__helpers_8h.html#a16bbf1dbd390650087470ff8efb79638">More...</a><br /></td></tr>
 <tr class="separator:a16bbf1dbd390650087470ff8efb79638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec800a3a9e6f677c6b2ab9e77257c03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#aaec800a3a9e6f677c6b2ab9e77257c03">oc_get_sn_from_ep</a> (const char *param, int param_len, char *sn, int sn_len, uint32_t *ia)</td></tr>
+<tr class="memdesc:aaec800a3a9e6f677c6b2ab9e77257c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the serial number and individual address from the ep parameter  <a href="oc__helpers_8h.html#aaec800a3a9e6f677c6b2ab9e77257c03">More...</a><br /></td></tr>
+<tr class="separator:aaec800a3a9e6f677c6b2ab9e77257c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9170160c3afc735c8adf574d00d20c8c"><td class="memItemLeft" align="right" valign="top"><a id="a9170160c3afc735c8adf574d00d20c8c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array</b> (oc_string_array_t *ocstringarray, oc_string_t *ocstring)</td></tr>
 <tr class="separator:a9170160c3afc735c8adf574d00d20c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -285,9 +288,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 <tr class="memitem:a271a68345452de58119aa9a57644c8fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a271a68345452de58119aa9a57644c8fd">oc_string_is_hex_array</a> (oc_string_t hex_string)</td></tr>
 <tr class="memdesc:a271a68345452de58119aa9a57644c8fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the input is an array containing hex values e.g.  <a href="oc__helpers_8h.html#a271a68345452de58119aa9a57644c8fd">More...</a><br /></td></tr>
 <tr class="separator:a271a68345452de58119aa9a57644c8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5c6ef8ff7e51b1e808d39a054ab9f30"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#ae5c6ef8ff7e51b1e808d39a054ab9f30">oc_strnchr</a> (char *string, char p, int size)</td></tr>
-<tr class="memdesc:ae5c6ef8ff7e51b1e808d39a054ab9f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">search a string (non null terminated) for a character  <a href="oc__helpers_8h.html#ae5c6ef8ff7e51b1e808d39a054ab9f30">More...</a><br /></td></tr>
-<tr class="separator:ae5c6ef8ff7e51b1e808d39a054ab9f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a94e55078381bb9ccd0239bf91d826"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a94a94e55078381bb9ccd0239bf91d826">oc_strnchr</a> (const char *string, char p, int size)</td></tr>
+<tr class="memdesc:a94a94e55078381bb9ccd0239bf91d826"><td class="mdescLeft">&#160;</td><td class="mdescRight">search a string (non null terminated) for a character  <a href="oc__helpers_8h.html#a94a94e55078381bb9ccd0239bf91d826">More...</a><br /></td></tr>
+<tr class="separator:a94a94e55078381bb9ccd0239bf91d826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6915e9a2fe196de3d470336bace809d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a6915e9a2fe196de3d470336bace809d0">oc_uri_contains_wildcard</a> (const char *uri)</td></tr>
 <tr class="memdesc:a6915e9a2fe196de3d470336bace809d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the uri contains a wildcard (e.g.  <a href="oc__helpers_8h.html#a6915e9a2fe196de3d470336bace809d0">More...</a><br /></td></tr>
 <tr class="separator:a6915e9a2fe196de3d470336bace809d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -995,6 +998,65 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 </div>
 </div>
+<a id="aaec800a3a9e6f677c6b2ab9e77257c03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaec800a3a9e6f677c6b2ab9e77257c03">&#9670;&nbsp;</a></span>oc_get_sn_from_ep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_get_sn_from_ep </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>param_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>sn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sn_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>ia</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retrieves the serial number and individual address from the ep parameter </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">param</td><td>the string to be searched </td></tr>
+    <tr><td class="paramname">param_len</td><td>the length of the parameter </td></tr>
+    <tr><td class="paramname">sn</td><td>the sn for storage </td></tr>
+    <tr><td class="paramname">sn_len</td><td>the length of the sn for storage </td></tr>
+    <tr><td class="paramname">ia</td><td>the individual address </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 == ok string </dd></dl>
+
+</div>
+</div>
 <a id="a008ee98555abe100fe9683a71f603e2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a008ee98555abe100fe9683a71f603e2e">&#9670;&nbsp;</a></span>oc_string_cmp()</h2>
 
@@ -1137,8 +1199,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 </div>
 </div>
-<a id="ae5c6ef8ff7e51b1e808d39a054ab9f30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5c6ef8ff7e51b1e808d39a054ab9f30">&#9670;&nbsp;</a></span>oc_strnchr()</h2>
+<a id="a94a94e55078381bb9ccd0239bf91d826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a94e55078381bb9ccd0239bf91d826">&#9670;&nbsp;</a></span>oc_strnchr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1146,7 +1208,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
         <tr>
           <td class="memname">char* oc_strnchr </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>string</em>, </td>
         </tr>
         <tr>
@@ -1475,7 +1537,7 @@ false </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Thu Apr 13 2023 10:26:05 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 13 2023 14:24:01 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
