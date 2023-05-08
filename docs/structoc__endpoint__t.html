@@ -118,11 +118,14 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memitem:ab649dfd671bd7ffa4accef34548fc893"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#ab649dfd671bd7ffa4accef34548fc893">next</a></td></tr>
 <tr class="memdesc:ab649dfd671bd7ffa4accef34548fc893"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to the next structure  <a href="structoc__endpoint__t.html#ab649dfd671bd7ffa4accef34548fc893">More...</a><br /></td></tr>
 <tr class="separator:ab649dfd671bd7ffa4accef34548fc893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff60dfbf918fe1e2c2d21c782dfe1083"><td class="memItemLeft" align="right" valign="top">oc_string_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#aff60dfbf918fe1e2c2d21c782dfe1083">oscore_id</a></td></tr>
+<tr class="memdesc:aff60dfbf918fe1e2c2d21c782dfe1083"><td class="mdescLeft">&#160;</td><td class="mdescRight">OSCORE context (binary), e.g.  <a href="structoc__endpoint__t.html#aff60dfbf918fe1e2c2d21c782dfe1083">More...</a><br /></td></tr>
+<tr class="separator:aff60dfbf918fe1e2c2d21c782dfe1083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ad043071ccc7a261d79a759dc9c6f0c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c">priority</a></td></tr>
 <tr class="memdesc:a0ad043071ccc7a261d79a759dc9c6f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">priority  <a href="structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c">More...</a><br /></td></tr>
 <tr class="separator:a0ad043071ccc7a261d79a759dc9c6f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad726260e3c8fa3f12aa8d91258957db0"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#ad726260e3c8fa3f12aa8d91258957db0">serial_number</a> [SERIAL_NUM_SIZE+1]</td></tr>
-<tr class="memdesc:ad726260e3c8fa3f12aa8d91258957db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">serial number of the device to talk to  <a href="structoc__endpoint__t.html#ad726260e3c8fa3f12aa8d91258957db0">More...</a><br /></td></tr>
+<tr class="memitem:ad726260e3c8fa3f12aa8d91258957db0"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#ad726260e3c8fa3f12aa8d91258957db0">serial_number</a> [<a class="el" href="oc__endpoint_8h.html#a076a0100c28c0dd6423c3bb8d9f3d3f6">SERIAL_NUM_SIZE</a>+1]</td></tr>
+<tr class="memdesc:ad726260e3c8fa3f12aa8d91258957db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The serial number (as client) for the device on the other side.  <a href="structoc__endpoint__t.html#ad726260e3c8fa3f12aa8d91258957db0">More...</a><br /></td></tr>
 <tr class="separator:ad726260e3c8fa3f12aa8d91258957db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -181,7 +184,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <p>group address, being used to find back the OSCORE credential to be used for encryption for s-mode messages e.g. </p>
 <p>looping over the list of group addresses of the key </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00090">90</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00092">92</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 
 </div>
 </div>
@@ -199,7 +202,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 
 <p>interface index </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00088">88</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00090">90</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 
 </div>
 </div>
@@ -221,6 +224,25 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 
 </div>
 </div>
+<a id="aff60dfbf918fe1e2c2d21c782dfe1083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff60dfbf918fe1e2c2d21c782dfe1083">&#9670;&nbsp;</a></span>oscore_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">oc_string_t oscore_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OSCORE context (binary), e.g. </p>
+<p>binary serial number </p>
+
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00083">83</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+
+</div>
+</div>
 <a id="a0ad043071ccc7a261d79a759dc9c6f0c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ad043071ccc7a261d79a759dc9c6f0c">&#9670;&nbsp;</a></span>priority</h2>
 
@@ -235,7 +257,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 
 <p>priority </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00089">89</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00091">91</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 
 </div>
 </div>
@@ -246,14 +268,14 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char serial_number[SERIAL_NUM_SIZE+1]</td>
+          <td class="memname">char serial_number[<a class="el" href="oc__endpoint_8h.html#a076a0100c28c0dd6423c3bb8d9f3d3f6">SERIAL_NUM_SIZE</a>+1]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>serial number of the device to talk to </p>
+<p>The serial number (as client) for the device on the other side. </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00082">82</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00084">84</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 
 </div>
 </div>
@@ -266,7 +288,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a></li>
-    <li class="footer">Generated on Mon May 8 2023 10:42:47 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 8 2023 15:10:41 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

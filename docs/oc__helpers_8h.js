@@ -21,6 +21,7 @@ var oc__helpers_8h =
     [ "oc_int_array", "oc__helpers_8h.html#af0e25fdd7b74ead4b9d330f30cf98da8", null ],
     [ "oc_int_array_size", "oc__helpers_8h.html#a727102f5d5715caa4b830333fd736550", null ],
     [ "oc_new_bool_array", "oc__helpers_8h.html#a885d05a580d7abcae59cee72cbd06a63", null ],
+    [ "oc_new_byte_string", "oc__helpers_8h.html#a2d959ee7f65684a2d4858fc8f38f376d", null ],
     [ "oc_new_byte_string_array", "oc__helpers_8h.html#ab9eb2f809ba6162eaed18fffbab0b6b2", null ],
     [ "oc_new_double_array", "oc__helpers_8h.html#ab6b20c7490aad4e32d1d2c8aaf2946ac", null ],
     [ "oc_new_int_array", "oc__helpers_8h.html#af264a8cc459240766e47fd1062f71184", null ],

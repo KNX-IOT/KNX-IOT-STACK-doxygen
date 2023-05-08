@@ -119,8 +119,8 @@ Macros</h2></td></tr>
 <tr class="separator:a6341e17218eff01b49aa2f8ae27e068b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8b9dd8487a08a52bd54676fc297c342"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_make_ipv6_endpoint</b>(__name__,  __flags__,  __port__, ...)</td></tr>
 <tr class="separator:ac8b9dd8487a08a52bd54676fc297c342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a076a0100c28c0dd6423c3bb8d9f3d3f6"><td class="memItemLeft" align="right" valign="top"><a id="a076a0100c28c0dd6423c3bb8d9f3d3f6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SERIAL_NUM_SIZE</b>&#160;&#160;&#160;(20)</td></tr>
+<tr class="memitem:a076a0100c28c0dd6423c3bb8d9f3d3f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#a076a0100c28c0dd6423c3bb8d9f3d3f6">SERIAL_NUM_SIZE</a>&#160;&#160;&#160;(12)</td></tr>
+<tr class="memdesc:a076a0100c28c0dd6423c3bb8d9f3d3f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">binary: 6 bytes: in hex: 12 bytes  <a href="oc__endpoint_8h.html#a076a0100c28c0dd6423c3bb8d9f3d3f6">More...</a><br /></td></tr>
 <tr class="separator:a076a0100c28c0dd6423c3bb8d9f3d3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -172,8 +172,11 @@ Functions</h2></td></tr>
 <tr class="memitem:af055cc72d372ead0c5b58f60896c064f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#af055cc72d372ead0c5b58f60896c064f">oc_endpoint_set_local_address</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *ep, int interface_index)</td></tr>
 <tr class="memdesc:af055cc72d372ead0c5b58f60896c064f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set interface index on the endpoint  <a href="oc__endpoint_8h.html#af055cc72d372ead0c5b58f60896c064f">More...</a><br /></td></tr>
 <tr class="separator:af055cc72d372ead0c5b58f60896c064f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3042654568b8a96e5113f697b52da5e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#a3042654568b8a96e5113f697b52da5e9">oc_endpoint_set_serial_number</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, char *serial_number)</td></tr>
-<tr class="memdesc:a3042654568b8a96e5113f697b52da5e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">set device serial number for the endpoint, e.g.  <a href="oc__endpoint_8h.html#a3042654568b8a96e5113f697b52da5e9">More...</a><br /></td></tr>
+<tr class="memitem:ad9d08df56c7db369bbf0ab0cbbd4bd2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#ad9d08df56c7db369bbf0ab0cbbd4bd2d">oc_endpoint_set_oscore_id_from_str</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, char *oscore_str_id)</td></tr>
+<tr class="memdesc:ad9d08df56c7db369bbf0ab0cbbd4bd2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the OSCORE identifier  <a href="oc__endpoint_8h.html#ad9d08df56c7db369bbf0ab0cbbd4bd2d">More...</a><br /></td></tr>
+<tr class="separator:ad9d08df56c7db369bbf0ab0cbbd4bd2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3042654568b8a96e5113f697b52da5e9"><td class="memItemLeft" align="right" valign="top"><a id="a3042654568b8a96e5113f697b52da5e9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_endpoint_set_serial_number</b> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, char *serial_number)</td></tr>
 <tr class="separator:a3042654568b8a96e5113f697b52da5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b1ba00a5e0834a3bda665259a31e609"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#a4b1ba00a5e0834a3bda665259a31e609">oc_endpoint_string_parse_path</a> (oc_string_t *endpoint_str, oc_string_t *path)</td></tr>
 <tr class="memdesc:a4b1ba00a5e0834a3bda665259a31e609"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse endpoint  <a href="oc__endpoint_8h.html#a4b1ba00a5e0834a3bda665259a31e609">More...</a><br /></td></tr>
@@ -243,7 +246,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="astructoc__endpoint__t_html"><div class="ttname"><a href="structoc__endpoint__t.html">oc_endpoint_t</a></div><div class="ttdoc">the endpoint information</div><div class="ttdef"><b>Definition:</b> <a href="oc__endpoint_8h_source.html#l00077">oc_endpoint.h:78</a></div></div>
 <div class="ttc" id="astructoc__endpoint__t_html_a945038b8b9ca9558905bebfa24b4130e"><div class="ttname"><a href="structoc__endpoint__t.html#a945038b8b9ca9558905bebfa24b4130e">oc_endpoint_t::flags</a></div><div class="ttdeci">enum transport_flags flags</div><div class="ttdoc">the transport flags</div><div class="ttdef"><b>Definition:</b> <a href="oc__endpoint_8h_source.html#l00080">oc_endpoint.h:81</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00101">101</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00103">103</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 
 </div>
 </div>
@@ -290,7 +293,25 @@ Functions</h2></td></tr>
 <div class="line">                             .addr.ipv6 = { .port = __port__,                  \</div>
 <div class="line">                                            .address = { __VA_ARGS__ } } }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00105">105</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00107">107</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+
+</div>
+</div>
+<a id="a076a0100c28c0dd6423c3bb8d9f3d3f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a076a0100c28c0dd6423c3bb8d9f3d3f6">&#9670;&nbsp;</a></span>SERIAL_NUM_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERIAL_NUM_SIZE&#160;&#160;&#160;(12)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>binary: 6 bytes: in hex: 12 bytes </p>
+
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00072">72</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 
 </div>
 </div>
@@ -626,14 +647,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3042654568b8a96e5113f697b52da5e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3042654568b8a96e5113f697b52da5e9">&#9670;&nbsp;</a></span>oc_endpoint_set_serial_number()</h2>
+<a id="ad9d08df56c7db369bbf0ab0cbbd4bd2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9d08df56c7db369bbf0ab0cbbd4bd2d">&#9670;&nbsp;</a></span>oc_endpoint_set_oscore_id_from_str()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_endpoint_set_serial_number </td>
+          <td class="memname">void oc_endpoint_set_oscore_id_from_str </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
           <td class="paramname"><em>endpoint</em>, </td>
@@ -642,7 +663,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>serial_number</em>&#160;</td>
+          <td class="paramname"><em>oscore_str_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -652,12 +673,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>set device serial number for the endpoint, e.g. </p>
-<p>the one to talk too</p>
+<p>set the OSCORE identifier </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">endpoint</td><td>the end point </td></tr>
-    <tr><td class="paramname">serial_number</td><td>the device serial number </td></tr>
+    <tr><td class="paramname">oscore_str_id</td><td>the OSCORE id (as string in hex) to use for encryption/decryption </td></tr>
   </table>
   </dd>
 </dl>
@@ -866,7 +886,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__endpoint_8h.html">oc_endpoint.h</a></li>
-    <li class="footer">Generated on Mon May 8 2023 10:42:47 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 8 2023 15:10:41 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
