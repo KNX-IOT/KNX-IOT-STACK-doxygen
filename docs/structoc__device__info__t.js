@@ -1,6 +1,7 @@
 var structoc__device__info__t =
 [
     [ "add_device_cb", "structoc__device__info__t.html#aa7e71d0ef5bb9848723bd81d7414ceaa", null ],
+    [ "ap", "structoc__device__info__t.html#a56267b3da7cadb72aeecb6d7ae084a1c", null ],
     [ "data", "structoc__device__info__t.html#a735984d41155bc1032e09bece8f8d66d", null ],
     [ "fid", "structoc__device__info__t.html#a7daff82f6c2c49f40fdac06d4bb35d5c", null ],
     [ "fwv", "structoc__device__info__t.html#a1a7f5ecb1d5af92b0c88ac9ac4f7b675", null ],
@@ -10,6 +11,7 @@ var structoc__device__info__t =
     [ "ia", "structoc__device__info__t.html#a3d679621f60aa0336a4776af18511167", null ],
     [ "iid", "structoc__device__info__t.html#ae1b2b68dcc3e001a5c48dadc670aefe2", null ],
     [ "lsm_s", "structoc__device__info__t.html#a1ab2364042f5d40039fa068b06a92312", null ],
+    [ "mid", "structoc__device__info__t.html#acd4f5afe5c7c65cbd1d03f161199ef7d", null ],
     [ "model", "structoc__device__info__t.html#a9cf2e3b9ba0024e462ec37839d48c0d3", null ],
     [ "mport", "structoc__device__info__t.html#af326c7bfcc0c87c62aafce6dacb49d5c", null ],
     [ "pm", "structoc__device__info__t.html#af2261d52ec95bfac52b4cdd759575da4", null ],

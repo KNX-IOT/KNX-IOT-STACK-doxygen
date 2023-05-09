@@ -125,6 +125,12 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 <li>oc_allocate_message_from_pool()
 : <a class="el" href="oc__buffer_8h.html#a25c34e4e33b154eff1c96692862ec982">oc_buffer.h</a>
 </li>
+<li>OC_APP
+: <a class="el" href="oc__ri_8h.html#a9785665049cc191e499e6afb40088444a9ad1d22c2bc93975f5fcbd63980123ec">oc_ri.h</a>
+</li>
+<li>OC_APP_X
+: <a class="el" href="oc__ri_8h.html#a9785665049cc191e499e6afb40088444a7d006e02af1382b2b46ac19dc836075d">oc_ri.h</a>
+</li>
 <li>oc_assert
 : <a class="el" href="oc__assert_8h.html#acdd692a1ad9eeca2f137906e97e756f7">oc_assert.h</a>
 </li>
@@ -452,6 +458,9 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 <li>oc_core_set_at_table()
 : <a class="el" href="oc__knx__sec_8h.html#a9792949855e3ab29f35b1a7b63128b3f">oc_knx_sec.h</a>
 </li>
+<li>oc_core_set_device_ap()
+: <a class="el" href="oc__core__res_8h.html#a7d50b9a3e75df4ca3103eb2a6e0da63b">oc_core_res.h</a>
+</li>
 <li>oc_core_set_device_fid()
 : <a class="el" href="oc__core__res_8h.html#a26e118e36f120e2912a8d5b82695cb4c">oc_core_res.h</a>
 </li>
@@ -473,6 +482,9 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 <li>oc_core_set_device_iid()
 : <a class="el" href="oc__core__res_8h.html#a7bdf33e29daee5d0548c2bc5f1740e91">oc_core_res.h</a>
 </li>
+<li>oc_core_set_device_mid()
+: <a class="el" href="oc__core__res_8h.html#a2597b5ad89c07e522a9a0d44eb5a0014">oc_core_res.h</a>
+</li>
 <li>oc_core_set_device_model()
 : <a class="el" href="oc__core__res_8h.html#a208356e6cc65d92ce5b5a11e0f365fe6">oc_core_res.h</a>
 </li>
@@ -484,6 +496,9 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 </li>
 <li>oc_core_set_group_object_table()
 : <a class="el" href="oc__knx__fp_8h.html#a6940506dd2fc11553847d7075934bf13">oc_knx_fp.h</a>
+</li>
+<li>oc_core_set_mid()
+: <a class="el" href="oc__core__res_8h.html#abe5fcb43afbd57583e5d22c430d36293">oc_core_res.h</a>
 </li>
 <li>oc_core_shutdown()
 : <a class="el" href="oc__core__res_8h.html#a4f83145f9b94c3e531f7008959dec07b">oc_core_res.h</a>
@@ -616,6 +631,9 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 </li>
 <li>OC_DEV_IPV6
 : <a class="el" href="oc__ri_8h.html#a9785665049cc191e499e6afb40088444a32a2404f7f966aedeb8d9f73c824f042">oc_ri.h</a>
+</li>
+<li>OC_DEV_MID
+: <a class="el" href="oc__ri_8h.html#a9785665049cc191e499e6afb40088444aa0ab06dbb8ab3bb57ca3c856dfd548ae">oc_ri.h</a>
 </li>
 <li>OC_DEV_MODEL
 : <a class="el" href="oc__ri_8h.html#a9785665049cc191e499e6afb40088444a9ced5595d03e41739d15b28bbaaede9b">oc_ri.h</a>
@@ -1845,10 +1863,10 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 : <a class="el" href="oc__cred_8h.html#aebc02f0c03921cf173fe374f12b15c9e">oc_cred.h</a>
 </li>
 <li>oc_sec_credtype_t
-: <a class="el" href="oc__cred_8h.html#a323a3e3e2357812cc618ef5a2fa40908">oc_cred.h</a>
+: <a class="el" href="oc__cred_8h.html#ace54e80ac00bcb841f7fc5c7d802737f">oc_cred.h</a>
 </li>
 <li>oc_sec_credusage_t
-: <a class="el" href="oc__cred_8h.html#ab62dc87b328cd84951e98f3a42334754">oc_cred.h</a>
+: <a class="el" href="oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29e">oc_cred.h</a>
 </li>
 <li>oc_sec_encoding_t
 : <a class="el" href="oc__cred_8h.html#a4bf6d443c0cedb2c9ac90cc866cb28b3">oc_cred.h</a>
@@ -2249,7 +2267,7 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 9 2023 13:04:26 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 9 2023 14:42:50 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
