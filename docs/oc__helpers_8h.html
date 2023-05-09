@@ -273,6 +273,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_concat_strings</b>
 <tr class="memitem:a16bbf1dbd390650087470ff8efb79638"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a16bbf1dbd390650087470ff8efb79638">oc_conv_hex_string_to_byte_array</a> (const char *hex_str, size_t hex_str_len, uint8_t *array, size_t *array_len)</td></tr>
 <tr class="memdesc:a16bbf1dbd390650087470ff8efb79638"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert hex string to byte array  <a href="oc__helpers_8h.html#a16bbf1dbd390650087470ff8efb79638">More...</a><br /></td></tr>
 <tr class="separator:a16bbf1dbd390650087470ff8efb79638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1325ccb711fe05a31dee1007bb4dde8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a1325ccb711fe05a31dee1007bb4dde8a">oc_conv_hex_string_to_oc_string</a> (const char *hex_str, size_t hex_str_len, oc_string_t *out)</td></tr>
+<tr class="memdesc:a1325ccb711fe05a31dee1007bb4dde8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert hex string to oc_string  <a href="oc__helpers_8h.html#a1325ccb711fe05a31dee1007bb4dde8a">More...</a><br /></td></tr>
+<tr class="separator:a1325ccb711fe05a31dee1007bb4dde8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaec800a3a9e6f677c6b2ab9e77257c03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#aaec800a3a9e6f677c6b2ab9e77257c03">oc_get_sn_from_ep</a> (const char *param, int param_len, char *sn, int sn_len, uint32_t *ia)</td></tr>
 <tr class="memdesc:aaec800a3a9e6f677c6b2ab9e77257c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the serial number and individual address from the ep parameter  <a href="oc__helpers_8h.html#aaec800a3a9e6f677c6b2ab9e77257c03">More...</a><br /></td></tr>
 <tr class="separator:aaec800a3a9e6f677c6b2ab9e77257c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,6 +294,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 <tr class="memitem:a271a68345452de58119aa9a57644c8fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a271a68345452de58119aa9a57644c8fd">oc_string_is_hex_array</a> (oc_string_t hex_string)</td></tr>
 <tr class="memdesc:a271a68345452de58119aa9a57644c8fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the input is an array containing hex values e.g.  <a href="oc__helpers_8h.html#a271a68345452de58119aa9a57644c8fd">More...</a><br /></td></tr>
 <tr class="separator:a271a68345452de58119aa9a57644c8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e9588d27c57ee70e2a27c9e6a9d175a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a5e9588d27c57ee70e2a27c9e6a9d175a">oc_string_print_hex</a> (oc_string_t hex_string)</td></tr>
+<tr class="memdesc:a5e9588d27c57ee70e2a27c9e6a9d175a"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints the string as hex  <a href="oc__helpers_8h.html#a5e9588d27c57ee70e2a27c9e6a9d175a">More...</a><br /></td></tr>
+<tr class="separator:a5e9588d27c57ee70e2a27c9e6a9d175a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a195169cc0cea0e471222a3aa56fb38a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a195169cc0cea0e471222a3aa56fb38a5">oc_string_println_hex</a> (oc_string_t hex_string)</td></tr>
+<tr class="memdesc:a195169cc0cea0e471222a3aa56fb38a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints the string as hex, with new line at the end  <a href="oc__helpers_8h.html#a195169cc0cea0e471222a3aa56fb38a5">More...</a><br /></td></tr>
+<tr class="separator:a195169cc0cea0e471222a3aa56fb38a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94a94e55078381bb9ccd0239bf91d826"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a94a94e55078381bb9ccd0239bf91d826">oc_strnchr</a> (const char *string, char p, int size)</td></tr>
 <tr class="memdesc:a94a94e55078381bb9ccd0239bf91d826"><td class="mdescLeft">&#160;</td><td class="mdescRight">search a string (non null terminated) for a character  <a href="oc__helpers_8h.html#a94a94e55078381bb9ccd0239bf91d826">More...</a><br /></td></tr>
 <tr class="separator:a94a94e55078381bb9ccd0239bf91d826"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1039,6 +1048,51 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 </div>
 </div>
+<a id="a1325ccb711fe05a31dee1007bb4dde8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1325ccb711fe05a31dee1007bb4dde8a">&#9670;&nbsp;</a></span>oc_conv_hex_string_to_oc_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_conv_hex_string_to_oc_string </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>hex_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>hex_str_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_string_t *&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>convert hex string to oc_string </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hex_str</td><td>hex string input </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hex_str_len</td><td>size of the hex string </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">out</td><td>the allocated oc_string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 success </dd></dl>
+
+</div>
+</div>
 <a id="aaec800a3a9e6f677c6b2ab9e77257c03"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaec800a3a9e6f677c6b2ab9e77257c03">&#9670;&nbsp;</a></span>oc_get_sn_from_ep()</h2>
 
@@ -1230,6 +1284,60 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>checks if the input is an array containing hex values e.g. </p>
 <p>[0-9,A-F,a-f]</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hex_string</td><td>the input string to be checked </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 success </dd></dl>
+
+</div>
+</div>
+<a id="a5e9588d27c57ee70e2a27c9e6a9d175a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e9588d27c57ee70e2a27c9e6a9d175a">&#9670;&nbsp;</a></span>oc_string_print_hex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_string_print_hex </td>
+          <td>(</td>
+          <td class="paramtype">oc_string_t&#160;</td>
+          <td class="paramname"><em>hex_string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>prints the string as hex </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hex_string</td><td>the input string to be checked </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 success </dd></dl>
+
+</div>
+</div>
+<a id="a195169cc0cea0e471222a3aa56fb38a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a195169cc0cea0e471222a3aa56fb38a5">&#9670;&nbsp;</a></span>oc_string_println_hex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_string_println_hex </td>
+          <td>(</td>
+          <td class="paramtype">oc_string_t&#160;</td>
+          <td class="paramname"><em>hex_string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>prints the string as hex, with new line at the end </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hex_string</td><td>the input string to be checked </td></tr>
@@ -1578,7 +1686,7 @@ false </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Tue May 9 2023 14:42:50 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 9 2023 15:25:38 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
