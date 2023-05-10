@@ -168,7 +168,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a885d05a580d7abcae59cee72cbd06a63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a885d05a580d7abcae59cee72cbd06a63">oc_new_bool_array</a>(ocarray,  size)&#160;&#160;&#160;  (<a class="el" href="oc__helpers_8h.html#a0943d88282589224213101261fc12025">_oc_new_array</a>(ocarray, size, BYTE_POOL))</td></tr>
 <tr class="memdesc:a885d05a580d7abcae59cee72cbd06a63"><td class="mdescLeft">&#160;</td><td class="mdescRight">new boolean array  <a href="oc__helpers_8h.html#a885d05a580d7abcae59cee72cbd06a63">More...</a><br /></td></tr>
 <tr class="separator:a885d05a580d7abcae59cee72cbd06a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d959ee7f65684a2d4858fc8f38f376d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a2d959ee7f65684a2d4858fc8f38f376d">oc_new_byte_string</a>(ocstring,  str,  str_len)&#160;&#160;&#160;  _oc_new_byte_string(ocstring, str, str_len)</td></tr>
+<tr class="memitem:a2d959ee7f65684a2d4858fc8f38f376d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a2d959ee7f65684a2d4858fc8f38f376d">oc_new_byte_string</a>(ocstring,  str,  str_len)&#160;&#160;&#160;  <a class="el" href="oc__helpers_8h.html#a331bbd84c6d3910beafda15b61ee5047">_oc_new_byte_string</a>(ocstring, str, str_len)</td></tr>
 <tr class="memdesc:a2d959ee7f65684a2d4858fc8f38f376d"><td class="mdescLeft">&#160;</td><td class="mdescRight">create new (byte) string from string (not null terminated)  <a href="oc__helpers_8h.html#a2d959ee7f65684a2d4858fc8f38f376d">More...</a><br /></td></tr>
 <tr class="separator:a2d959ee7f65684a2d4858fc8f38f376d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9eb2f809ba6162eaed18fffbab0b6b2"><td class="memItemLeft" align="right" valign="top"><a id="ab9eb2f809ba6162eaed18fffbab0b6b2"></a>
@@ -258,6 +258,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_oc_copy_string_to_ar
 <tr class="memitem:a0943d88282589224213101261fc12025"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a0943d88282589224213101261fc12025">_oc_new_array</a> (oc_array_t *ocarray, size_t size, pool type)</td></tr>
 <tr class="memdesc:a0943d88282589224213101261fc12025"><td class="mdescLeft">&#160;</td><td class="mdescRight">new array  <a href="oc__helpers_8h.html#a0943d88282589224213101261fc12025">More...</a><br /></td></tr>
 <tr class="separator:a0943d88282589224213101261fc12025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a331bbd84c6d3910beafda15b61ee5047"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a331bbd84c6d3910beafda15b61ee5047">_oc_new_byte_string</a> (oc_string_t *ocstring, const char *str, size_t str_len)</td></tr>
+<tr class="memdesc:a331bbd84c6d3910beafda15b61ee5047"><td class="mdescLeft">&#160;</td><td class="mdescRight">new oc_string from string  <a href="oc__helpers_8h.html#a331bbd84c6d3910beafda15b61ee5047">More...</a><br /></td></tr>
+<tr class="separator:a331bbd84c6d3910beafda15b61ee5047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6f4842dfa2cf7629690abff5054f3a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#ad6f4842dfa2cf7629690abff5054f3a9">_oc_new_string</a> (oc_string_t *ocstring, const char *str, size_t str_len)</td></tr>
 <tr class="memdesc:ad6f4842dfa2cf7629690abff5054f3a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">new oc_string from string  <a href="oc__helpers_8h.html#ad6f4842dfa2cf7629690abff5054f3a9">More...</a><br /></td></tr>
 <tr class="separator:ad6f4842dfa2cf7629690abff5054f3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -528,7 +531,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;  _oc_new_byte_string(ocstring, str, str_len)</td>
+          <td></td><td>&#160;&#160;&#160;  <a class="el" href="oc__helpers_8h.html#a331bbd84c6d3910beafda15b61ee5047">_oc_new_byte_string</a>(ocstring, str, str_len)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -899,6 +902,50 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 </div>
 </div>
+<a id="a331bbd84c6d3910beafda15b61ee5047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a331bbd84c6d3910beafda15b61ee5047">&#9670;&nbsp;</a></span>_oc_new_byte_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _oc_new_byte_string </td>
+          <td>(</td>
+          <td class="paramtype">oc_string_t *&#160;</td>
+          <td class="paramname"><em>ocstring</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>str_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>new oc_string from string </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ocstring</td><td>the ocstring to be allocated </td></tr>
+    <tr><td class="paramname">str</td><td>not terminated string </td></tr>
+    <tr><td class="paramname">str_len</td><td>size of the string to be copied </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad6f4842dfa2cf7629690abff5054f3a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6f4842dfa2cf7629690abff5054f3a9">&#9670;&nbsp;</a></span>_oc_new_string()</h2>
 
@@ -935,7 +982,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ocstring</td><td>the ocstring to be allocated </td></tr>
-    <tr><td class="paramname">str</td><td>not terminated string </td></tr>
+    <tr><td class="paramname">str</td><td>terminated string </td></tr>
     <tr><td class="paramname">str_len</td><td>size of the string to be copied </td></tr>
   </table>
   </dd>
@@ -1686,7 +1733,7 @@ false </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Tue May 9 2023 15:25:38 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 10 2023 07:26:07 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
