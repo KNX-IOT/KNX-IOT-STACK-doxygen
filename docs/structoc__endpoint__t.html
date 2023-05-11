@@ -103,6 +103,9 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memitem:a7b41eb7427f5ee6375dfbddf8e699acb"><td class="memItemLeft" align="right" valign="top"><a id="a7b41eb7427f5ee6375dfbddf8e699acb"></a>
 union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"><b>addr_local</b></td></tr>
 <tr class="separator:a7b41eb7427f5ee6375dfbddf8e699acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fabd0d1320ca45da7dd030bd52e6260"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#a0fabd0d1320ca45da7dd030bd52e6260">aut_at_index</a></td></tr>
+<tr class="memdesc:a0fabd0d1320ca45da7dd030bd52e6260"><td class="mdescLeft">&#160;</td><td class="mdescRight">auth at index +1 [1-max_indexes], 0 == error  <a href="structoc__endpoint__t.html#a0fabd0d1320ca45da7dd030bd52e6260">More...</a><br /></td></tr>
+<tr class="separator:a0fabd0d1320ca45da7dd030bd52e6260"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94c514bd73ebe068bc95f3c0b33dceda"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#a94c514bd73ebe068bc95f3c0b33dceda">device</a></td></tr>
 <tr class="memdesc:a94c514bd73ebe068bc95f3c0b33dceda"><td class="mdescLeft">&#160;</td><td class="mdescRight">device index  <a href="structoc__endpoint__t.html#a94c514bd73ebe068bc95f3c0b33dceda">More...</a><br /></td></tr>
 <tr class="separator:a94c514bd73ebe068bc95f3c0b33dceda"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,6 +124,12 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memitem:aff60dfbf918fe1e2c2d21c782dfe1083"><td class="memItemLeft" align="right" valign="top">oc_string_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#aff60dfbf918fe1e2c2d21c782dfe1083">oscore_id</a></td></tr>
 <tr class="memdesc:aff60dfbf918fe1e2c2d21c782dfe1083"><td class="mdescLeft">&#160;</td><td class="mdescRight">OSCORE context (binary), e.g.  <a href="structoc__endpoint__t.html#aff60dfbf918fe1e2c2d21c782dfe1083">More...</a><br /></td></tr>
 <tr class="separator:aff60dfbf918fe1e2c2d21c782dfe1083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c4c04e3ad28ae5847db4e85059dcd2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#ae1c4c04e3ad28ae5847db4e85059dcd2">piv</a> [OSCORE_PIV_LEN]</td></tr>
+<tr class="memdesc:ae1c4c04e3ad28ae5847db4e85059dcd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">OSCORE partial iv.  <a href="structoc__endpoint__t.html#ae1c4c04e3ad28ae5847db4e85059dcd2">More...</a><br /></td></tr>
+<tr class="separator:ae1c4c04e3ad28ae5847db4e85059dcd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae45acc4bed4d85d25bf4190257359908"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#ae45acc4bed4d85d25bf4190257359908">piv_len</a></td></tr>
+<tr class="memdesc:ae45acc4bed4d85d25bf4190257359908"><td class="mdescLeft">&#160;</td><td class="mdescRight">OSCORE partial iv length.  <a href="structoc__endpoint__t.html#ae45acc4bed4d85d25bf4190257359908">More...</a><br /></td></tr>
+<tr class="separator:ae45acc4bed4d85d25bf4190257359908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ad043071ccc7a261d79a759dc9c6f0c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c">priority</a></td></tr>
 <tr class="memdesc:a0ad043071ccc7a261d79a759dc9c6f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">priority  <a href="structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c">More...</a><br /></td></tr>
 <tr class="separator:a0ad043071ccc7a261d79a759dc9c6f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,8 +140,26 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>the endpoint information </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00077">77</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00076">76</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="a0fabd0d1320ca45da7dd030bd52e6260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fabd0d1320ca45da7dd030bd52e6260">&#9670;&nbsp;</a></span>aut_at_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t aut_at_index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>auth at index +1 [1-max_indexes], 0 == error </p>
+
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00095">95</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+
+</div>
+</div>
 <a id="a94c514bd73ebe068bc95f3c0b33dceda"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a94c514bd73ebe068bc95f3c0b33dceda">&#9670;&nbsp;</a></span>device</h2>
 
@@ -147,7 +174,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 
 <p>device index </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00080">80</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00079">79</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 
 </div>
 </div>
@@ -165,7 +192,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 
 <p>the transport flags </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00080">80</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00079">79</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 
 </div>
 </div>
@@ -184,7 +211,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <p>group address, being used to find back the OSCORE credential to be used for encryption for s-mode messages e.g. </p>
 <p>looping over the list of group addresses of the key </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00092">92</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00091">91</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 
 </div>
 </div>
@@ -202,7 +229,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 
 <p>interface index </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00090">90</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00089">89</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 
 </div>
 </div>
@@ -220,7 +247,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 
 <p>pointer to the next structure </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00079">79</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00078">78</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 
 </div>
 </div>
@@ -239,7 +266,43 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <p>OSCORE context (binary), e.g. </p>
 <p>binary serial number </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00083">83</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00082">82</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+
+</div>
+</div>
+<a id="ae1c4c04e3ad28ae5847db4e85059dcd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1c4c04e3ad28ae5847db4e85059dcd2">&#9670;&nbsp;</a></span>piv</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t piv[OSCORE_PIV_LEN]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OSCORE partial iv. </p>
+
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00096">96</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+
+</div>
+</div>
+<a id="ae45acc4bed4d85d25bf4190257359908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae45acc4bed4d85d25bf4190257359908">&#9670;&nbsp;</a></span>piv_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t piv_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OSCORE partial iv length. </p>
+
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00097">97</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 
 </div>
 </div>
@@ -257,7 +320,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 
 <p>priority </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00091">91</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00090">90</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 
 </div>
 </div>
@@ -275,7 +338,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 
 <p>The serial number (as client) for the device on the other side. </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00084">84</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00083">83</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 
 </div>
 </div>
@@ -288,7 +351,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a></li>
-    <li class="footer">Generated on Thu May 11 2023 09:34:31 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu May 11 2023 10:27:12 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
