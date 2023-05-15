@@ -64,7 +64,8 @@ var oc__ri_8h =
       [ "APPLICATION_OSCORE", "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa52ca5e0c6552a1c464539824e3047042", null ],
       [ "APPLICATION_VND_OMA_LWM2M_TLV", "oc__ri_8h.html#a83161604a805e3a951254864d16a714fab3a190d045b9feeac85d1c98eb99110b", null ],
       [ "APPLICATION_VND_OMA_LWM2M_JSON", "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa055593d7ec51c4b91b7c9c000d56b76e", null ],
-      [ "APPLICATION_VND_OMA_LWM2M_CBOR", "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa2bad92425c2ebbccd9821c76dcc0681e", null ]
+      [ "APPLICATION_VND_OMA_LWM2M_CBOR", "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa2bad92425c2ebbccd9821c76dcc0681e", null ],
+      [ "CONTENT_NONE", "oc__ri_8h.html#a83161604a805e3a951254864d16a714faa7cf82bf4e8a011a0cafa44718c1673d", null ]
     ] ],
     [ "oc_core_resource_t", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444", [
       [ "OC_DEV_SN", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a86b0b65f792917fa386c951b3a001f0c", null ],
@@ -190,6 +191,7 @@ var oc__ri_8h =
     ] ],
     [ "get_interface_string", "oc__ri_8h.html#a12324b7f65a6a901470fa0d02e5df555", null ],
     [ "get_method_name", "oc__ri_8h.html#a2e13ec2b32452084c1edb7c74a384ccb", null ],
+    [ "oc_check_accept_header", "oc__ri_8h.html#a0b966c6bdd2454afcb1a0c812d806cd6", null ],
     [ "oc_get_interface_in_mask_in_string_array", "oc__ri_8h.html#a1306f12131438c2fe2e7395584528cec", null ],
     [ "oc_print_interface", "oc__ri_8h.html#ab4c5e5b13215845d31bb345c0ee2793b", null ],
     [ "oc_ri_add_resource", "oc__ri_8h.html#a1481c68aff7317781a4af49dd53289ea", null ],

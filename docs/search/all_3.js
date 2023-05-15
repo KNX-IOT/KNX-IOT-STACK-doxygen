@@ -15,13 +15,14 @@ var searchData=
   ['con_66',['con',['../structoc__group__rp__table__t.html#a74d229484bff7a1739d19e69c38b2d02',1,'oc_group_rp_table_t']]],
   ['confidentiality_67',['confidentiality',['../structoc__group__mapping__table__t.html#a21eda8adcb0f141cfdaca63237d8227a',1,'oc_group_mapping_table_t']]],
   ['content_5fformat_68',['content_format',['../structoc__request__t.html#a59cf0d81c2cdfeeb6f9d0d9499e19f9d',1,'oc_request_t::content_format()'],['../structoc__client__response__t.html#a59cf0d81c2cdfeeb6f9d0d9499e19f9d',1,'oc_client_response_t::content_format()']]],
-  ['content_5ftype_69',['content_type',['../structoc__resource__s.html#a346935d37428b3e4fa609bd9daac335d',1,'oc_resource_s']]],
-  ['credid_70',['credid',['../structoc__sec__cred__t.html#a70ebee5e4eb92d66ae5833e9fa2e80e7',1,'oc_sec_cred_t']]],
-  ['credtype_71',['credtype',['../structoc__sec__cred__t.html#ab2f1b35b285dcf157dc346c52d7c1bde',1,'oc_sec_cred_t']]],
-  ['credusage_72',['credusage',['../structoc__sec__cred__t.html#aea9d02abe6750e57616d6472e56114f6',1,'oc_sec_cred_t']]],
-  ['csm_5fdone_73',['CSM_DONE',['../oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a75ea9fa774c72351779d6a2877384b12',1,'oc_connectivity.h']]],
-  ['csm_5ferror_74',['CSM_ERROR',['../oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a784a21056404e8c5f25f959e9926af74',1,'oc_connectivity.h']]],
-  ['csm_5fnone_75',['CSM_NONE',['../oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a0b45c025e658a8e3dd49bc4f67535b62',1,'oc_connectivity.h']]],
-  ['csm_5fsent_76',['CSM_SENT',['../oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a1efbb609d4e05555e59897fd9da720d8',1,'oc_connectivity.h']]],
-  ['ctx_77',['ctx',['../structoc__sec__cred__t.html#a1f6d09b30c54854dfca659b7463ac207',1,'oc_sec_cred_t']]]
+  ['content_5fnone_69',['CONTENT_NONE',['../oc__ri_8h.html#a83161604a805e3a951254864d16a714faa7cf82bf4e8a011a0cafa44718c1673d',1,'oc_ri.h']]],
+  ['content_5ftype_70',['content_type',['../structoc__resource__s.html#a346935d37428b3e4fa609bd9daac335d',1,'oc_resource_s']]],
+  ['credid_71',['credid',['../structoc__sec__cred__t.html#a70ebee5e4eb92d66ae5833e9fa2e80e7',1,'oc_sec_cred_t']]],
+  ['credtype_72',['credtype',['../structoc__sec__cred__t.html#ab2f1b35b285dcf157dc346c52d7c1bde',1,'oc_sec_cred_t']]],
+  ['credusage_73',['credusage',['../structoc__sec__cred__t.html#aea9d02abe6750e57616d6472e56114f6',1,'oc_sec_cred_t']]],
+  ['csm_5fdone_74',['CSM_DONE',['../oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a75ea9fa774c72351779d6a2877384b12',1,'oc_connectivity.h']]],
+  ['csm_5ferror_75',['CSM_ERROR',['../oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a784a21056404e8c5f25f959e9926af74',1,'oc_connectivity.h']]],
+  ['csm_5fnone_76',['CSM_NONE',['../oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a0b45c025e658a8e3dd49bc4f67535b62',1,'oc_connectivity.h']]],
+  ['csm_5fsent_77',['CSM_SENT',['../oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a1efbb609d4e05555e59897fd9da720d8',1,'oc_connectivity.h']]],
+  ['ctx_78',['ctx',['../structoc__sec__cred__t.html#a1f6d09b30c54854dfca659b7463ac207',1,'oc_sec_cred_t']]]
 ];
