@@ -52,6 +52,7 @@ var oc__helpers_8h =
     [ "_oc_new_byte_string", "oc__helpers_8h.html#a331bbd84c6d3910beafda15b61ee5047", null ],
     [ "_oc_new_string", "oc__helpers_8h.html#ad6f4842dfa2cf7629690abff5054f3a9", null ],
     [ "_oc_string_array_add_item", "oc__helpers_8h.html#a7df71d9866aab7d0d437a99cb766104b", null ],
+    [ "oc_char_convert_to_lower", "oc__helpers_8h.html#a9effb3fa553b041b1e8507ce8ab8d72d", null ],
     [ "oc_concat_strings", "oc__helpers_8h.html#abea070fa12fb10b3d8ad0f15405413bc", null ],
     [ "oc_conv_byte_array_to_hex_string", "oc__helpers_8h.html#af96ddf66b54df49a985fdb6c52d9bf31", null ],
     [ "oc_conv_hex_string_to_byte_array", "oc__helpers_8h.html#a16bbf1dbd390650087470ff8efb79638", null ],
