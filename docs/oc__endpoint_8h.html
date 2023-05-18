@@ -173,8 +173,11 @@ Functions</h2></td></tr>
 <tr class="memitem:af055cc72d372ead0c5b58f60896c064f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#af055cc72d372ead0c5b58f60896c064f">oc_endpoint_set_local_address</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *ep, int interface_index)</td></tr>
 <tr class="memdesc:af055cc72d372ead0c5b58f60896c064f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set interface index on the endpoint  <a href="oc__endpoint_8h.html#af055cc72d372ead0c5b58f60896c064f">More...</a><br /></td></tr>
 <tr class="separator:af055cc72d372ead0c5b58f60896c064f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a827e7199a7335c7693226f67fbc3dea8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#a827e7199a7335c7693226f67fbc3dea8">oc_endpoint_set_oscore_id</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, char *oscore_id, int oscore_id_len)</td></tr>
+<tr class="memdesc:a827e7199a7335c7693226f67fbc3dea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the OSCORE identifier (SID)  <a href="oc__endpoint_8h.html#a827e7199a7335c7693226f67fbc3dea8">More...</a><br /></td></tr>
+<tr class="separator:a827e7199a7335c7693226f67fbc3dea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9d08df56c7db369bbf0ab0cbbd4bd2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#ad9d08df56c7db369bbf0ab0cbbd4bd2d">oc_endpoint_set_oscore_id_from_str</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, char *oscore_str_id)</td></tr>
-<tr class="memdesc:ad9d08df56c7db369bbf0ab0cbbd4bd2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the OSCORE identifier  <a href="oc__endpoint_8h.html#ad9d08df56c7db369bbf0ab0cbbd4bd2d">More...</a><br /></td></tr>
+<tr class="memdesc:ad9d08df56c7db369bbf0ab0cbbd4bd2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the OSCORE identifier (SID)  <a href="oc__endpoint_8h.html#ad9d08df56c7db369bbf0ab0cbbd4bd2d">More...</a><br /></td></tr>
 <tr class="separator:ad9d08df56c7db369bbf0ab0cbbd4bd2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3042654568b8a96e5113f697b52da5e9"><td class="memItemLeft" align="right" valign="top"><a id="a3042654568b8a96e5113f697b52da5e9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_endpoint_set_serial_number</b> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, char *serial_number)</td></tr>
@@ -648,6 +651,50 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_endpoint_set_seria
 
 </div>
 </div>
+<a id="a827e7199a7335c7693226f67fbc3dea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a827e7199a7335c7693226f67fbc3dea8">&#9670;&nbsp;</a></span>oc_endpoint_set_oscore_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_endpoint_set_oscore_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
+          <td class="paramname"><em>endpoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>oscore_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>oscore_id_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set the OSCORE identifier (SID) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>the end point </td></tr>
+    <tr><td class="paramname">oscore_id</td><td>the OSCORE id (SID) to use for encryption/decryption </td></tr>
+    <tr><td class="paramname">oscore_id_len</td><td>the length of the oscore_id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad9d08df56c7db369bbf0ab0cbbd4bd2d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9d08df56c7db369bbf0ab0cbbd4bd2d">&#9670;&nbsp;</a></span>oc_endpoint_set_oscore_id_from_str()</h2>
 
@@ -674,7 +721,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_endpoint_set_seria
       </table>
 </div><div class="memdoc">
 
-<p>set the OSCORE identifier </p>
+<p>set the OSCORE identifier (SID) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">endpoint</td><td>the end point </td></tr>
@@ -887,7 +934,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_endpoint_set_seria
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__endpoint_8h.html">oc_endpoint.h</a></li>
-    <li class="footer">Generated on Thu May 18 2023 10:29:29 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu May 18 2023 16:53:43 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
