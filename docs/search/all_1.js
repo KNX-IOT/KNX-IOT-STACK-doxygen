@@ -40,7 +40,7 @@ var searchData=
   ['application_5fxmpp_5fxml_47',['APPLICATION_XMPP_XML',['../oc__ri_8h.html#a83161604a805e3a951254864d16a714fae6e231bc0d40b8fd8bdffe0b0b056026',1,'oc_ri.h']]],
   ['aud_48',['aud',['../structoc__auth__at__t.html#ab2cb8047f022fecaa55108e80f6190d9',1,'oc_auth_at_t']]],
   ['audio_5fraw_49',['AUDIO_RAW',['../oc__ri_8h.html#a83161604a805e3a951254864d16a714fa34e0444167037fcb8635e251881d11dc',1,'oc_ri.h']]],
-  ['aut_5fat_5findex_50',['aut_at_index',['../structoc__endpoint__t.html#a0fabd0d1320ca45da7dd030bd52e6260',1,'oc_endpoint_t']]],
+  ['auth_5fat_5findex_50',['auth_at_index',['../structoc__endpoint__t.html#a5e96691354a14a2469bb1c5d54fa4b02',1,'oc_endpoint_t']]],
   ['authentication_51',['authentication',['../structoc__group__mapping__table__t.html#aed070068a99e56c516df3d67f2203d49',1,'oc_group_mapping_table_t']]],
   ['authority_52',['authority',['../structoc__sec__cred__t.html#a1b7c342edf3e1a962ab14ba62f41f666',1,'oc_sec_cred_t']]]
 ];

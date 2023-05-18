@@ -170,9 +170,12 @@ Functions</h2></td></tr>
 <tr class="memitem:abffee6b23a4b6efe2466a6476dd31da3"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#abffee6b23a4b6efe2466a6476dd31da3">oc_oscore_get_rplwdo</a> ()</td></tr>
 <tr class="memdesc:abffee6b23a4b6efe2466a6476dd31da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the replay window  <a href="oc__knx__sec_8h.html#abffee6b23a4b6efe2466a6476dd31da3">More...</a><br /></td></tr>
 <tr class="separator:abffee6b23a4b6efe2466a6476dd31da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5c6ab3d5c41303a0758ff0de59d2fe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#ad5c6ab3d5c41303a0758ff0de59d2fe5">oc_oscore_set_auth</a> (char *serial_number, char *context_id, uint8_t *shared_key, int shared_key_size)</td></tr>
-<tr class="memdesc:ad5c6ab3d5c41303a0758ff0de59d2fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">set shared (SPAKE) key to the auth at table.  <a href="oc__knx__sec_8h.html#ad5c6ab3d5c41303a0758ff0de59d2fe5">More...</a><br /></td></tr>
-<tr class="separator:ad5c6ab3d5c41303a0758ff0de59d2fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95e32dc82a2bb741cabfcc568396842"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#aa95e32dc82a2bb741cabfcc568396842">oc_oscore_set_auth_device</a> (char *serial_number, int serial_number_size, char *clientrecipient_id, int clientrecipient_id_size, uint8_t *shared_key, int shared_key_size)</td></tr>
+<tr class="memdesc:aa95e32dc82a2bb741cabfcc568396842"><td class="mdescLeft">&#160;</td><td class="mdescRight">set shared (SPAKE) key to the auth at table, on the Device side  <a href="oc__knx__sec_8h.html#aa95e32dc82a2bb741cabfcc568396842">More...</a><br /></td></tr>
+<tr class="separator:aa95e32dc82a2bb741cabfcc568396842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8970fd79ac56732ff5083ffa5408af1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#af8970fd79ac56732ff5083ffa5408af1">oc_oscore_set_auth_mac</a> (char *serial_number, int serial_number_size, char *clientrecipient_id, int clientrecipient_id_size, uint8_t *shared_key, int shared_key_size)</td></tr>
+<tr class="memdesc:af8970fd79ac56732ff5083ffa5408af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">set shared (SPAKE) key to the auth at table, on the Management Client side  <a href="oc__knx__sec_8h.html#af8970fd79ac56732ff5083ffa5408af1">More...</a><br /></td></tr>
+<tr class="separator:af8970fd79ac56732ff5083ffa5408af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa314cc4b814d20bfe60564a2aa670667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#aa314cc4b814d20bfe60564a2aa670667">oc_print_auth_at_entry</a> (size_t device_index, int index)</td></tr>
 <tr class="memdesc:aa314cc4b814d20bfe60564a2aa670667"><td class="mdescLeft">&#160;</td><td class="mdescRight">print the auth at entry  <a href="oc__knx__sec_8h.html#aa314cc4b814d20bfe60564a2aa670667">More...</a><br /></td></tr>
 <tr class="separator:aa314cc4b814d20bfe60564a2aa670667"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,8 +222,9 @@ Functions</h2></td></tr>
 <div class="line">  <span class="stringliteral">&quot;scope&quot;</span>: [<span class="stringliteral">&quot;if.sec&quot;</span>, <span class="stringliteral">&quot;if.b&quot;</span>],</div>
 <div class="line">  <span class="stringliteral">&quot;cnf&quot;</span>: {</div>
 <div class="line">  <span class="stringliteral">&quot;osc&quot;</span>: {</div>
-<div class="line">  <span class="stringliteral">&quot;alg&quot;</span>: <span class="stringliteral">&quot;AES-CCM-16-64-128&quot;</span>,</div>
-<div class="line">  <span class="stringliteral">&quot;id&quot;</span>: <span class="stringliteral">&quot;&lt;kid&gt;&quot;</span>,</div>
+<div class="line">  <span class="stringliteral">&quot;alg&quot;</span>: <span class="stringliteral">&quot;AES-CCM-16-64-128&quot;</span>, (decimal 10)</div>
+<div class="line">  <span class="stringliteral">&quot;id&quot;</span>: <span class="stringliteral">&quot;&lt;kid&gt;/&lt;sid&gt;&quot;</span>,</div>
+<div class="line">  <span class="stringliteral">&quot;rid&quot;</span>: <span class="stringliteral">&quot;SID for response&quot;</span>,</div>
 <div class="line">  <span class="stringliteral">&quot;ms&quot;</span>: <span class="stringliteral">&quot;f9af8s.6bd94e6f&quot;</span></div>
 <div class="line">  }}}</div>
 </div><!-- fragment --><p> second example of (JSON) payload for a group address: </p><div class="fragment"><div class="line">*{</div>
@@ -230,7 +234,7 @@ Functions</h2></td></tr>
 <div class="line">  <span class="stringliteral">&quot;cnf&quot;</span>: {</div>
 <div class="line">  <span class="stringliteral">&quot;osc&quot;</span>: {</div>
 <div class="line">  <span class="stringliteral">&quot;alg&quot;</span>: <span class="stringliteral">&quot;AES-CCM-16-64-128&quot;</span>,</div>
-<div class="line">  <span class="stringliteral">&quot;id&quot;</span>: <span class="stringliteral">&quot;&lt;kid&gt;&quot;</span>,</div>
+<div class="line">  <span class="stringliteral">&quot;id&quot;</span>: <span class="stringliteral">&quot;&lt;kid&gt;/&lt;sid&gt;&quot;</span>,</div>
 <div class="line">  <span class="stringliteral">&quot;ms&quot;</span>: <span class="stringliteral">&quot;f9af8s.6bd94e6f&quot;</span></div>
 <div class="line">  }}}</div>
 </div><!-- fragment --><p> scope : "coap_oscore" [OSCORE] or "coap_dtls"</p>
@@ -242,7 +246,7 @@ Functions</h2></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">profile   </td><td class="markdownTableBodyNone">38   </td><td class="markdownTableBodyNone">unsigned   </td><td class="markdownTableBodyNone">yes    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">scope   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">string/int   </td><td class="markdownTableBodyNone">yes    </td></tr>
+<td class="markdownTableBodyNone">scope   </td><td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">string/int array   </td><td class="markdownTableBodyNone">yes    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">cnf   </td><td class="markdownTableBodyNone">8   </td><td class="markdownTableBodyNone">map   </td><td class="markdownTableBodyNone">yes    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -252,28 +256,29 @@ Functions</h2></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">nbf   </td><td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">integer   </td><td class="markdownTableBodyNone">optional    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">sub   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">conditional   </td></tr>
+<td class="markdownTableBodyNone">sub   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">conditional    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">aud   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">conditional   </td></tr>
 </table>
-<p>Specific Oscore values</p>
+<p>Specific oscore values (ACE):</p>
 <p><a href="https://datatracker.ietf.org/doc/html/draft-ietf-ace-oscore-profile-19#section-3.2.1">https://datatracker.ietf.org/doc/html/draft-ietf-ace-oscore-profile-19#section-3.2.1</a></p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">name   </th><th class="markdownTableHeadNone">CBOR label   </th><th class="markdownTableHeadNone">CBOR type   </th><th class="markdownTableHeadNone">description   </th><th class="markdownTableHeadNone">default value    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">id   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">byte string   </td><td class="markdownTableBodyNone">OSCORE Input Material Identifier   </td><td class="markdownTableBodyNone">-    </td></tr>
+<td class="markdownTableBodyNone">id   </td><td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">full ctx identifier   </td><td class="markdownTableBodyNone">-    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">version   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">unsigned integer   </td><td class="markdownTableBodyNone">OSCORE Version   </td><td class="markdownTableBodyNone">1    </td></tr>
+<td class="markdownTableBodyNone">ms   </td><td class="markdownTableBodyNone">18:4:2   </td><td class="markdownTableBodyNone">byte string   </td><td class="markdownTableBodyNone">Master Secret value (shall be PSK)   </td><td class="markdownTableBodyNone">-    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ms   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">byte string   </td><td class="markdownTableBodyNone">OSCORE Master Secret value (shall be PSK)   </td><td class="markdownTableBodyNone">-    </td></tr>
+<td class="markdownTableBodyNone">version   </td><td class="markdownTableBodyNone">18:4:1   </td><td class="markdownTableBodyNone">uint   </td><td class="markdownTableBodyNone">OSCORE Version   </td><td class="markdownTableBodyNone">1    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">hkdf   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">text string / integer   </td><td class="markdownTableBodyNone">HKDF value   </td><td class="markdownTableBodyNone">HKDF SHA-256    </td></tr>
+<td class="markdownTableBodyNone">hkdf   </td><td class="markdownTableBodyNone">18:4:3   </td><td class="markdownTableBodyNone">integer   </td><td class="markdownTableBodyNone">HKDF value   </td><td class="markdownTableBodyNone">HKDF SHA-256 (-10)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">alg   </td><td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">text string / integer   </td><td class="markdownTableBodyNone">AEAD Algorithm   </td><td class="markdownTableBodyNone">AES-CCM-16-64-128 (10)    </td></tr>
+<td class="markdownTableBodyNone">alg   </td><td class="markdownTableBodyNone">18:4:4   </td><td class="markdownTableBodyNone">integer   </td><td class="markdownTableBodyNone">AEAD Algorithm   </td><td class="markdownTableBodyNone">AES-CCM-16-64-128 (10)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">salt   </td><td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">byte string   </td><td class="markdownTableBodyNone">Master Salt   </td><td class="markdownTableBodyNone">Default empty byte string    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">contextId   </td><td class="markdownTableBodyNone">6   </td><td class="markdownTableBodyNone">byte string   </td><td class="markdownTableBodyNone">OSCORE ID Context value   </td><td class="markdownTableBodyNone">omit   </td></tr>
+<td class="markdownTableBodyNone">salt   </td><td class="markdownTableBodyNone">18:4:5   </td><td class="markdownTableBodyNone">byte string   </td><td class="markdownTableBodyNone">Master Salt   </td><td class="markdownTableBodyNone">Default empty byte   </td></tr>
 </table>
+<p>string | | contextId | 18:4:6 | byte string | OSCORE ID Context value | omit | | osc_rid | 18:4:7 | byte string | OSCORE RID | - | | osc_id | 18:4:0 | byte string | OSCORE SID | - |</p>
 <p>Example payload: </p><div class="fragment"><div class="line">{</div>
 <div class="line">  <span class="stringliteral">&quot;alg&quot;</span> : <span class="stringliteral">&quot;AES-CCM-16-64-128&quot;</span>,</div>
 <div class="line">  <span class="stringliteral">&quot;id&quot;</span> : b64<span class="stringliteral">&#39;AQ==&#39;</span></div>
@@ -852,14 +857,14 @@ false does not have access </dd></dl>
 
 </div>
 </div>
-<a id="ad5c6ab3d5c41303a0758ff0de59d2fe5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5c6ab3d5c41303a0758ff0de59d2fe5">&#9670;&nbsp;</a></span>oc_oscore_set_auth()</h2>
+<a id="aa95e32dc82a2bb741cabfcc568396842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa95e32dc82a2bb741cabfcc568396842">&#9670;&nbsp;</a></span>oc_oscore_set_auth_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_oscore_set_auth </td>
+          <td class="memname">void oc_oscore_set_auth_device </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>serial_number</em>, </td>
@@ -867,8 +872,20 @@ false does not have access </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>serial_number_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>context_id</em>, </td>
+          <td class="paramname"><em>clientrecipient_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>clientrecipient_id_size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -890,11 +907,78 @@ false does not have access </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>set shared (SPAKE) key to the auth at table. </p>
+<p>set shared (SPAKE) key to the auth at table, on the Device side </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">serial_number</td><td>the serial_number of the device that has been negotiated with spake2plus with (e.g. client side) </td></tr>
-    <tr><td class="paramname">context_id</td><td>the context_id delivered during the handshake </td></tr>
+    <tr><td class="paramname">serial_number</td><td>the serial_number of the device that has been negotiated with spake2plus. This will become the Sender ID within the OSCORE context. This value is an ASCII-encoded string representing the hexadecimal serial number </td></tr>
+    <tr><td class="paramname">serial_number_size</td><td>the size of the serial number </td></tr>
+    <tr><td class="paramname">clientrecipient_id</td><td>the clientrecipient_id (delivered during the handshake). This will become the Receiver ID. This value is in HEX </td></tr>
+    <tr><td class="paramname">clientrecipient_id_size</td><td>the size of the clientrecipient_id </td></tr>
+    <tr><td class="paramname">shared_key</td><td>the master key after SPAKE2 handshake </td></tr>
+    <tr><td class="paramname">shared_key_size</td><td>the key size </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af8970fd79ac56732ff5083ffa5408af1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8970fd79ac56732ff5083ffa5408af1">&#9670;&nbsp;</a></span>oc_oscore_set_auth_mac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_oscore_set_auth_mac </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>serial_number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>serial_number_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>clientrecipient_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>clientrecipient_id_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>shared_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>shared_key_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set shared (SPAKE) key to the auth at table, on the Management Client side </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serial_number</td><td>the serial_number of the device that has been negotiated with spake2plus. This will become the Receiver ID within the OSCORE context. This value is an ASCII-encoded string representing the hexadecimal serial number </td></tr>
+    <tr><td class="paramname">serial_number_size</td><td>the size of the serial number </td></tr>
+    <tr><td class="paramname">clientrecipient_id</td><td>the clientrecipient_id (delivered during the handshake). This will become the Sender ID. This value is in HEX </td></tr>
+    <tr><td class="paramname">clientrecipient_id_size</td><td>the size of the clientrecipient_id </td></tr>
     <tr><td class="paramname">shared_key</td><td>the master key after SPAKE2 handshake </td></tr>
     <tr><td class="paramname">shared_key_size</td><td>the key size </td></tr>
   </table>
@@ -1014,7 +1098,7 @@ false does not have access </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__sec_8h.html">oc_knx_sec.h</a></li>
-    <li class="footer">Generated on Thu May 18 2023 08:20:02 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu May 18 2023 09:03:54 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

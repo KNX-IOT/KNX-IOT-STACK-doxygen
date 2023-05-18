@@ -102,9 +102,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a5279b21aca5fa82ec32fcd07b1c6bfe6"><td class="memItemLeft" align="right" valign="top"><a id="a5279b21aca5fa82ec32fcd07b1c6bfe6"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>oc_s_mode_response_cb_t</b>) (char *url, <a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *rep, <a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *rep_value)</td></tr>
 <tr class="separator:a5279b21aca5fa82ec32fcd07b1c6bfe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d9dd70011b34fb9627c7b2355da0cf1"><td class="memItemLeft" align="right" valign="top"><a id="a0d9dd70011b34fb9627c7b2355da0cf1"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>oc_spake_cb_t</b>) (int error, char *serial_number, char *oscore_id, uint8_t *secret, int secret_size)</td></tr>
-<tr class="separator:a0d9dd70011b34fb9627c7b2355da0cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3ad00ae36358126216670e952203221"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__client_8h.html#ae3ad00ae36358126216670e952203221">oc_spake_cb_t</a>) (int error, char *serial_number, char *oscore_id, int oscore_id_size, uint8_t *secret, int secret_size)</td></tr>
+<tr class="memdesc:ae3ad00ae36358126216670e952203221"><td class="mdescLeft">&#160;</td><td class="mdescRight">the spake response callback type e.g.  <a href="oc__knx__client_8h.html#ae3ad00ae36358126216670e952203221">More...</a><br /></td></tr>
+<tr class="separator:ae3ad00ae36358126216670e952203221"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -120,9 +120,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga36b03e4719edd7bc3ea330c995caaff0"><td class="memItemLeft" align="right" valign="top">oc_s_mode_response_cb_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga36b03e4719edd7bc3ea330c995caaff0">oc_get_s_mode_response_cb</a> ()</td></tr>
 <tr class="memdesc:ga36b03e4719edd7bc3ea330c995caaff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the callback function  <a href="group__doc__module__tag__s__mode__server.html#ga36b03e4719edd7bc3ea330c995caaff0">More...</a><br /></td></tr>
 <tr class="separator:ga36b03e4719edd7bc3ea330c995caaff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf789b4717d5d7d66cc666ab849c9aa8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__client_8h.html#adf789b4717d5d7d66cc666ab849c9aa8">oc_initiate_spake</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, char *password, char *oscore_id)</td></tr>
-<tr class="memdesc:adf789b4717d5d7d66cc666ab849c9aa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">initiate the spake handshake  <a href="oc__knx__client_8h.html#adf789b4717d5d7d66cc666ab849c9aa8">More...</a><br /></td></tr>
-<tr class="separator:adf789b4717d5d7d66cc666ab849c9aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8eb474080b81db33aff7ab17b4d48c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__client_8h.html#ad8eb474080b81db33aff7ab17b4d48c5">oc_initiate_spake</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, char *password, char *recipient_id)</td></tr>
+<tr class="memdesc:ad8eb474080b81db33aff7ab17b4d48c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">initiate the spake handshake  <a href="oc__knx__client_8h.html#ad8eb474080b81db33aff7ab17b4d48c5">More...</a><br /></td></tr>
+<tr class="separator:ad8eb474080b81db33aff7ab17b4d48c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618331f09010160d11265086a466fb86"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__client_8h.html#a618331f09010160d11265086a466fb86">oc_initiate_spake_parameter_request</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, char *serial_number, char *password, char *recipient_id, size_t recipient_id_len)</td></tr>
+<tr class="memdesc:a618331f09010160d11265086a466fb86"><td class="mdescLeft">&#160;</td><td class="mdescRight">initiate the spake handshake  <a href="oc__knx__client_8h.html#a618331f09010160d11265086a466fb86">More...</a><br /></td></tr>
+<tr class="separator:a618331f09010160d11265086a466fb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4fc3569049c381a19a80022ac1439675"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675">oc_is_redirected_request</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
 <tr class="memdesc:ga4fc3569049c381a19a80022ac1439675"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the request is a redirected request from /.knx or /p when that happened, extra information can be in the CBOR object  <a href="group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675">More...</a><br /></td></tr>
 <tr class="separator:ga4fc3569049c381a19a80022ac1439675"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,7 +135,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa7f0b28c63b1b539dab013e7b1095cc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#gaa7f0b28c63b1b539dab013e7b1095cc1">oc_set_s_mode_response_cb</a> (oc_s_mode_response_cb_t my_func)</td></tr>
 <tr class="memdesc:gaa7f0b28c63b1b539dab013e7b1095cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the s-mode response callback e.g.  <a href="group__doc__module__tag__s__mode__server.html#gaa7f0b28c63b1b539dab013e7b1095cc1">More...</a><br /></td></tr>
 <tr class="separator:gaa7f0b28c63b1b539dab013e7b1095cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ababd1ddd7462ba619c18dec946c26af1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__client_8h.html#ababd1ddd7462ba619c18dec946c26af1">oc_set_spake_response_cb</a> (oc_spake_cb_t my_func)</td></tr>
+<tr class="memitem:ababd1ddd7462ba619c18dec946c26af1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__client_8h.html#ababd1ddd7462ba619c18dec946c26af1">oc_set_spake_response_cb</a> (<a class="el" href="oc__knx__client_8h.html#ae3ad00ae36358126216670e952203221">oc_spake_cb_t</a> my_func)</td></tr>
 <tr class="memdesc:ababd1ddd7462ba619c18dec946c26af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the spake response callback e.g.  <a href="oc__knx__client_8h.html#ababd1ddd7462ba619c18dec946c26af1">More...</a><br /></td></tr>
 <tr class="separator:ababd1ddd7462ba619c18dec946c26af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -143,9 +146,40 @@ Functions</h2></td></tr>
 </ul>
 
 <p class="definition">Definition in file <a class="el" href="oc__knx__client_8h_source.html">oc_knx_client.h</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="adf789b4717d5d7d66cc666ab849c9aa8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf789b4717d5d7d66cc666ab849c9aa8">&#9670;&nbsp;</a></span>oc_initiate_spake()</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="ae3ad00ae36358126216670e952203221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3ad00ae36358126216670e952203221">&#9670;&nbsp;</a></span>oc_spake_cb_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* oc_spake_cb_t) (int error, char *serial_number, char *oscore_id, int oscore_id_size, uint8_t *secret, int secret_size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the spake response callback type e.g. </p>
+<p>function prototype that is called when the spake handshake is finished</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">error</td><td>0 = ok </td></tr>
+    <tr><td class="paramname">serial_number</td><td>the serial number of the device on the other side </td></tr>
+    <tr><td class="paramname">oscore_id</td><td>the oscore identifier (bytes) </td></tr>
+    <tr><td class="paramname">oscore_id_size</td><td>the size in bytes of the oscore identifier </td></tr>
+    <tr><td class="paramname">secret</td><td>the negotiated secret (bytes) </td></tr>
+    <tr><td class="paramname">secret_size</td><td>the size in bytes of the secret </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="oc__knx__client_8h_source.html#l00045">45</a> of file <a class="el" href="oc__knx__client_8h_source.html">oc_knx_client.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ad8eb474080b81db33aff7ab17b4d48c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8eb474080b81db33aff7ab17b4d48c5">&#9670;&nbsp;</a></span>oc_initiate_spake()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,7 +200,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>oscore_id</em>&#160;</td>
+          <td class="paramname"><em>recipient_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -177,11 +211,75 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>initiate the spake handshake </p>
+<p>NOTE: recipient id in HEX string</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">endpoint</td><td>the endpoint of the device to be used </td></tr>
     <tr><td class="paramname">password</td><td>the spake password to be used </td></tr>
-    <tr><td class="paramname">oscore_id</td><td>optional OSCORE id for the handshake. Set to NULL if unused </td></tr>
+    <tr><td class="paramname">recipient_id</td><td>the recipient id (HEX string) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int success full start up of the handshake </dd></dl>
+
+</div>
+</div>
+<a id="a618331f09010160d11265086a466fb86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a618331f09010160d11265086a466fb86">&#9670;&nbsp;</a></span>oc_initiate_spake_parameter_request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_initiate_spake_parameter_request </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
+          <td class="paramname"><em>endpoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>serial_number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>password</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>recipient_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>recipient_id_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initiate the spake handshake </p>
+<p>NOTE: After the success full handshake the OSCORE context should have:</p><ul>
+<li>SID : serial number as byte array</li>
+<li>RID : the recipient ID as given input</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>the endpoint of the device to be used </td></tr>
+    <tr><td class="paramname">serial_number</td><td>the serial number of the device, to put back in the callback </td></tr>
+    <tr><td class="paramname">password</td><td>the spake password to be used </td></tr>
+    <tr><td class="paramname">recipient_id</td><td>the recipient ID id for the resulting OSCORE context (byte string) </td></tr>
+    <tr><td class="paramname">recipient_id_len</td><td>length of the recipient ID byte string </td></tr>
   </table>
   </dd>
 </dl>
@@ -198,7 +296,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool oc_set_spake_response_cb </td>
           <td>(</td>
-          <td class="paramtype">oc_spake_cb_t&#160;</td>
+          <td class="paramtype"><a class="el" href="oc__knx__client_8h.html#ae3ad00ae36358126216670e952203221">oc_spake_cb_t</a>&#160;</td>
           <td class="paramname"><em>my_func</em></td><td>)</td>
           <td></td>
         </tr>
@@ -225,7 +323,7 @@ false function set failed </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__client_8h.html">oc_knx_client.h</a></li>
-    <li class="footer">Generated on Thu May 18 2023 08:20:02 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu May 18 2023 09:03:54 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

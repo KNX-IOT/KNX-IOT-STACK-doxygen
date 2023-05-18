@@ -103,9 +103,9 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memitem:a7b41eb7427f5ee6375dfbddf8e699acb"><td class="memItemLeft" align="right" valign="top"><a id="a7b41eb7427f5ee6375dfbddf8e699acb"></a>
 union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"><b>addr_local</b></td></tr>
 <tr class="separator:a7b41eb7427f5ee6375dfbddf8e699acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fabd0d1320ca45da7dd030bd52e6260"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#a0fabd0d1320ca45da7dd030bd52e6260">aut_at_index</a></td></tr>
-<tr class="memdesc:a0fabd0d1320ca45da7dd030bd52e6260"><td class="mdescLeft">&#160;</td><td class="mdescRight">auth at index +1 [1-max_indexes], 0 == error  <a href="structoc__endpoint__t.html#a0fabd0d1320ca45da7dd030bd52e6260">More...</a><br /></td></tr>
-<tr class="separator:a0fabd0d1320ca45da7dd030bd52e6260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e96691354a14a2469bb1c5d54fa4b02"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#a5e96691354a14a2469bb1c5d54fa4b02">auth_at_index</a></td></tr>
+<tr class="memdesc:a5e96691354a14a2469bb1c5d54fa4b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">auth at index +1 [1-max_indexes], 0 == error  <a href="structoc__endpoint__t.html#a5e96691354a14a2469bb1c5d54fa4b02">More...</a><br /></td></tr>
+<tr class="separator:a5e96691354a14a2469bb1c5d54fa4b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94c514bd73ebe068bc95f3c0b33dceda"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#a94c514bd73ebe068bc95f3c0b33dceda">device</a></td></tr>
 <tr class="memdesc:a94c514bd73ebe068bc95f3c0b33dceda"><td class="mdescLeft">&#160;</td><td class="mdescRight">device index  <a href="structoc__endpoint__t.html#a94c514bd73ebe068bc95f3c0b33dceda">More...</a><br /></td></tr>
 <tr class="separator:a94c514bd73ebe068bc95f3c0b33dceda"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,23 +133,23 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memitem:a0ad043071ccc7a261d79a759dc9c6f0c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c">priority</a></td></tr>
 <tr class="memdesc:a0ad043071ccc7a261d79a759dc9c6f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">priority  <a href="structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c">More...</a><br /></td></tr>
 <tr class="separator:a0ad043071ccc7a261d79a759dc9c6f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad726260e3c8fa3f12aa8d91258957db0"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#ad726260e3c8fa3f12aa8d91258957db0">serial_number</a> [<a class="el" href="oc__endpoint_8h.html#a076a0100c28c0dd6423c3bb8d9f3d3f6">SERIAL_NUM_SIZE</a>+1]</td></tr>
-<tr class="memdesc:ad726260e3c8fa3f12aa8d91258957db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The serial number (as client) for the device on the other side.  <a href="structoc__endpoint__t.html#ad726260e3c8fa3f12aa8d91258957db0">More...</a><br /></td></tr>
-<tr class="separator:ad726260e3c8fa3f12aa8d91258957db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0abddc15d0b216cd6ed9dcdefff8aa10"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#a0abddc15d0b216cd6ed9dcdefff8aa10">serial_number</a> [<a class="el" href="oc__endpoint_8h.html#a076a0100c28c0dd6423c3bb8d9f3d3f6">SERIAL_NUM_SIZE</a>+1]</td></tr>
+<tr class="memdesc:a0abddc15d0b216cd6ed9dcdefff8aa10"><td class="mdescLeft">&#160;</td><td class="mdescRight">The serial number (as client) for the device on the other side.  <a href="structoc__endpoint__t.html#a0abddc15d0b216cd6ed9dcdefff8aa10">More...</a><br /></td></tr>
+<tr class="separator:a0abddc15d0b216cd6ed9dcdefff8aa10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>the endpoint information </p>
 
 <p class="definition">Definition at line <a class="el" href="oc__endpoint_8h_source.html#l00076">76</a> of file <a class="el" href="oc__endpoint_8h_source.html">oc_endpoint.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a0fabd0d1320ca45da7dd030bd52e6260"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fabd0d1320ca45da7dd030bd52e6260">&#9670;&nbsp;</a></span>aut_at_index</h2>
+<a id="a5e96691354a14a2469bb1c5d54fa4b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e96691354a14a2469bb1c5d54fa4b02">&#9670;&nbsp;</a></span>auth_at_index</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t aut_at_index</td>
+          <td class="memname">int32_t auth_at_index</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -324,14 +324,14 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 
 </div>
 </div>
-<a id="ad726260e3c8fa3f12aa8d91258957db0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad726260e3c8fa3f12aa8d91258957db0">&#9670;&nbsp;</a></span>serial_number</h2>
+<a id="a0abddc15d0b216cd6ed9dcdefff8aa10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0abddc15d0b216cd6ed9dcdefff8aa10">&#9670;&nbsp;</a></span>serial_number</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char serial_number[<a class="el" href="oc__endpoint_8h.html#a076a0100c28c0dd6423c3bb8d9f3d3f6">SERIAL_NUM_SIZE</a>+1]</td>
+          <td class="memname">char* serial_number[<a class="el" href="oc__endpoint_8h.html#a076a0100c28c0dd6423c3bb8d9f3d3f6">SERIAL_NUM_SIZE</a>+1]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -351,7 +351,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a></li>
-    <li class="footer">Generated on Thu May 18 2023 08:20:02 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu May 18 2023 09:03:54 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

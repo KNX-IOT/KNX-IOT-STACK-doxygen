@@ -218,6 +218,9 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 <li>OC_BLOCKWISE_SERVER
 : <a class="el" href="oc__blockwise_8h.html#a491a93728548c3c7369dcb0ef612111da5606599f6a5fe27cc51722d4dedada54">oc_blockwise.h</a>
 </li>
+<li>oc_byte_string_copy_from_char_with_size()
+: <a class="el" href="oc__helpers_8h.html#abffe9bdbbb9dd34a354d344b8522002b">oc_helpers.h</a>
+</li>
 <li>OC_CFLAG_COMMUNICATION
 : <a class="el" href="oc__knx__fp_8h.html#a2095cdd976edcfc2f4a02250e3f6e5baa5bf50bd5473e447decfd4fcff23cb246">oc_knx_fp.h</a>
 </li>
@@ -247,6 +250,12 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 </li>
 <li>oc_char_convert_to_lower()
 : <a class="el" href="oc__helpers_8h.html#a9effb3fa553b041b1e8507ce8ab8d72d">oc_helpers.h</a>
+</li>
+<li>oc_char_print_hex()
+: <a class="el" href="oc__helpers_8h.html#ac01a0b05634330c096913d1fa4f6cf53">oc_helpers.h</a>
+</li>
+<li>oc_char_println_hex()
+: <a class="el" href="oc__helpers_8h.html#a21e1e73105338aeb20d0f30cfc323a5c">oc_helpers.h</a>
 </li>
 <li>oc_check_accept_header()
 : <a class="el" href="oc__ri_8h.html#a0b966c6bdd2454afcb1a0c812d806cd6">oc_ri.h</a>
@@ -1038,7 +1047,10 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 : <a class="el" href="group__doc__module__tag__server__side.html#ga5f33d43ecb0adf38a04d499ecf6b8ea3">oc_api.h</a>
 </li>
 <li>oc_initiate_spake()
-: <a class="el" href="oc__knx__client_8h.html#adf789b4717d5d7d66cc666ab849c9aa8">oc_knx_client.h</a>
+: <a class="el" href="oc__knx__client_8h.html#ad8eb474080b81db33aff7ab17b4d48c5">oc_knx_client.h</a>
+</li>
+<li>oc_initiate_spake_parameter_request()
+: <a class="el" href="oc__knx__client_8h.html#a618331f09010160d11265086a466fb86">oc_knx_client.h</a>
 </li>
 <li>oc_interface_event_t
 : <a class="el" href="oc__network__events_8h.html#abdd165be6caa5026d18f49473b31aa2d">oc_network_events.h</a>
@@ -1355,8 +1367,11 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 <li>oc_oscore_get_rplwdo()
 : <a class="el" href="oc__knx__sec_8h.html#abffee6b23a4b6efe2466a6476dd31da3">oc_knx_sec.h</a>
 </li>
-<li>oc_oscore_set_auth()
-: <a class="el" href="oc__knx__sec_8h.html#ad5c6ab3d5c41303a0758ff0de59d2fe5">oc_knx_sec.h</a>
+<li>oc_oscore_set_auth_device()
+: <a class="el" href="oc__knx__sec_8h.html#aa95e32dc82a2bb741cabfcc568396842">oc_knx_sec.h</a>
+</li>
+<li>oc_oscore_set_auth_mac()
+: <a class="el" href="oc__knx__sec_8h.html#af8970fd79ac56732ff5083ffa5408af1">oc_knx_sec.h</a>
 </li>
 <li>oc_pase_t
 : <a class="el" href="oc__knx_8h.html#acd61823fce932bf563c5cd3da8d135b8">oc_knx.h</a>
@@ -2027,6 +2042,9 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 <li>oc_sp_types_t
 : <a class="el" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_pki.h</a>
 </li>
+<li>oc_spake_cb_t
+: <a class="el" href="oc__knx__client_8h.html#ae3ad00ae36358126216670e952203221">oc_knx_client.h</a>
+</li>
 <li>OC_STATUS_BAD_GATEWAY
 : <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38ae7b616f240b564c8608b57e006f0bc23">oc_ri.h</a>
 </li>
@@ -2131,6 +2149,9 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 </li>
 <li>oc_string_copy_from_char()
 : <a class="el" href="oc__helpers_8h.html#a5e503e50a185a449c71ad54c970295dd">oc_helpers.h</a>
+</li>
+<li>oc_string_copy_from_char_with_size()
+: <a class="el" href="oc__helpers_8h.html#ae79c7af643d861c1ab205089c37f485d">oc_helpers.h</a>
 </li>
 <li>oc_string_is_hex_array()
 : <a class="el" href="oc__helpers_8h.html#a271a68345452de58119aa9a57644c8fd">oc_helpers.h</a>
@@ -2282,7 +2303,7 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu May 18 2023 08:20:02 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu May 18 2023 09:03:54 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
