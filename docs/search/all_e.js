@@ -799,7 +799,7 @@ var searchData=
   ['oscore_971',['OSCORE',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78ab0f4a07a137af05e4eb5d3a6874cfe88',1,'oc_endpoint.h']]],
   ['oscore_5fdecrypted_972',['OSCORE_DECRYPTED',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a9c408493a1300b98eee738385aa6859a',1,'oc_endpoint.h']]],
   ['oscore_5fencrypted_973',['OSCORE_ENCRYPTED',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a9fa9c68d72c81a94822b948e9b6385b9',1,'oc_endpoint.h']]],
-  ['oscore_5fid_974',['oscore_id',['../structoc__endpoint__t.html#aff60dfbf918fe1e2c2d21c782dfe1083',1,'oc_endpoint_t']]],
+  ['oscore_5fid_974',['oscore_id',['../structoc__endpoint__t.html#a16af166268213efbf501a5da998e1d51',1,'oc_endpoint_t']]],
   ['outbound_5fgroup_5foscore_5fevent_975',['OUTBOUND_GROUP_OSCORE_EVENT',['../oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7aaa9b172beaeb73117c55a72bed873414',1,'oc_events.h']]],
   ['outbound_5fnetwork_5fevent_976',['OUTBOUND_NETWORK_EVENT',['../oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a1f2059fa8e1d55066c9ff11b808af1e3',1,'oc_events.h']]],
   ['outbound_5fnetwork_5fevent_5fencrypted_977',['OUTBOUND_NETWORK_EVENT_ENCRYPTED',['../oc__events_8h.html#aef8ff800239fda16ac66e3c0c1843cc7a252e41fbb5ffb17ca3692abfa16b0445',1,'oc_events.h']]],

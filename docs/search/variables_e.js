@@ -12,6 +12,6 @@ var searchData=
   ['osc_5frid_1691',['osc_rid',['../structoc__auth__at__t.html#a5c7408599aac5ee1e931fa484245f209',1,'oc_auth_at_t']]],
   ['osc_5fsalt_1692',['osc_salt',['../structoc__auth__at__t.html#a10f5e8996f4c66166e13ce6c63757c1d',1,'oc_auth_at_t']]],
   ['osc_5fversion_1693',['osc_version',['../structoc__auth__at__t.html#ac872e1ca92bd925c0ce19800a9e59cac',1,'oc_auth_at_t']]],
-  ['oscore_5fid_1694',['oscore_id',['../structoc__endpoint__t.html#aff60dfbf918fe1e2c2d21c782dfe1083',1,'oc_endpoint_t']]],
+  ['oscore_5fid_1694',['oscore_id',['../structoc__endpoint__t.html#a16af166268213efbf501a5da998e1d51',1,'oc_endpoint_t']]],
   ['owner_5fcred_1695',['owner_cred',['../structoc__sec__cred__t.html#a5eeec0a7ccd94fc7c7f1f929685ba463',1,'oc_sec_cred_t']]]
 ];
