@@ -12,6 +12,5 @@ var structoc__endpoint__t =
     [ "oscore_id_len", "structoc__endpoint__t.html#adc362229ee48487c8220bfd462142371", null ],
     [ "piv", "structoc__endpoint__t.html#ae1c4c04e3ad28ae5847db4e85059dcd2", null ],
     [ "piv_len", "structoc__endpoint__t.html#ae45acc4bed4d85d25bf4190257359908", null ],
-    [ "priority", "structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c", null ],
-    [ "serial_number", "structoc__endpoint__t.html#a0abddc15d0b216cd6ed9dcdefff8aa10", null ]
+    [ "priority", "structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c", null ]
 ];
