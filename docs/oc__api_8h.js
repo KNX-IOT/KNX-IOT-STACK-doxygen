@@ -77,6 +77,7 @@ var oc__api_8h =
     [ "oc_send_response_raw", "group__doc__module__tag__server__side.html#gab8b2f6fcf1ccbe750079af98f167a834", null ],
     [ "oc_send_separate_response", "group__doc__module__tag__server__side.html#gab8e08bb0d0476a29ecd562f02e7ec61e", null ],
     [ "oc_set_delayed_callback", "group__doc__module__tag__common__operations.html#ga976b85e9312419b62f4ed0993bf548f6", null ],
+    [ "oc_set_delayed_callback_ms", "group__doc__module__tag__common__operations.html#ga98c79be5c8205413afae7704b615c287", null ],
     [ "oc_set_factory_presets_cb", "oc__api_8h.html#a5fabaaadaf2e0dccbb1d906f73f9d953", null ],
     [ "oc_set_hostname_cb", "oc__api_8h.html#af1c16d006192d36caa043957114698ac", null ],
     [ "oc_set_programming_mode_cb", "oc__api_8h.html#a6e33b108bb65180b37a55d39115ef6a0", null ],

@@ -114,6 +114,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga976b85e9312419b62f4ed0993bf548f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga976b85e9312419b62f4ed0993bf548f6">oc_set_delayed_callback</a> (void *cb_data, oc_trigger_t callback, uint16_t seconds)</td></tr>
 <tr class="memdesc:ga976b85e9312419b62f4ed0993bf548f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a callback to be invoked after a set number of seconds.  <a href="group__doc__module__tag__common__operations.html#ga976b85e9312419b62f4ed0993bf548f6">More...</a><br /></td></tr>
 <tr class="separator:ga976b85e9312419b62f4ed0993bf548f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98c79be5c8205413afae7704b615c287"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga98c79be5c8205413afae7704b615c287">oc_set_delayed_callback_ms</a> (void *cb_data, oc_trigger_t callback, uint16_t miliseconds)</td></tr>
+<tr class="memdesc:ga98c79be5c8205413afae7704b615c287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a callback to be invoked after a set number of miliseconds.  <a href="group__doc__module__tag__common__operations.html#ga98c79be5c8205413afae7704b615c287">More...</a><br /></td></tr>
+<tr class="separator:ga98c79be5c8205413afae7704b615c287"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>This section contains common operations that can be used to schedule callbacks. </p>
@@ -136,7 +139,7 @@ Functions</h2></td></tr>
 
 <p>activate the interrupt handler </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l01711">1711</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l01723">1723</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
 
 </div>
 </div>
@@ -171,7 +174,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p>define the interrupt handler </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l01715">1715</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l01727">1727</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
 
 </div>
 </div>
@@ -197,7 +200,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p>API for setting handlers for interrupts. </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l01704">1704</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__api_8h_source.html#l01716">1716</a> of file <a class="el" href="oc__api_8h_source.html">oc_api.h</a>.</p>
 
 </div>
 </div>
@@ -283,12 +286,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga98c79be5c8205413afae7704b615c287"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga98c79be5c8205413afae7704b615c287">&#9670;&nbsp;</a></span>oc_set_delayed_callback_ms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_set_delayed_callback_ms </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_trigger_t&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>miliseconds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Schedule a callback to be invoked after a set number of miliseconds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb_data</td><td>user defined context pointer that is passed to the oc_trigger_t callback </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>the callback invoked after the set number of seconds </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">miliseconds</td><td>the number of miliseconds to wait till the callback is invoked </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 23 2023 09:39:20 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 24 2023 11:20:33 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
