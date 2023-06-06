@@ -118,32 +118,33 @@ $(document).ready(function(){initNavTree('oc__assert_8h_source.html',''); initRe
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;oc_abort(<span class="keyword">const</span> <span class="keywordtype">char</span> *msg)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#if OC_LOG_TO_FILE</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  (void)msg;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  PRINT(<span class="stringliteral">&quot;\n%s\nAbort.\n&quot;</span>, msg);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="oc__assert_8h.html#a7e2346d59d7240c309157eb00ad4a543">abort_impl</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="oc__assert_8h.html#acdd692a1ad9eeca2f137906e97e756f7">   62</a></span>&#160;<span class="preprocessor">#define oc_assert(cond)                                                        \</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">  do {                                                                         \</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">    if (!(cond)) {                                                             \</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">      oc_abort(&quot;Assertion (&quot;</span> #cond &quot;) failed.&quot;);                               \</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }                                                                          \</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  } while (0)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;oc_exit(<span class="keywordtype">int</span> status)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="oc__assert_8h.html#a1bce540d44065a67fd8136c1033bee82">exit_impl</a>(status);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_ASSERT_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  (void)msg;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#if OC_LOG_TO_FILE</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  (void)msg;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  PRINT(<span class="stringliteral">&quot;\n%s\nAbort.\n&quot;</span>, msg);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="oc__assert_8h.html#a7e2346d59d7240c309157eb00ad4a543">abort_impl</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="oc__assert_8h.html#acdd692a1ad9eeca2f137906e97e756f7">   63</a></span>&#160;<span class="preprocessor">#define oc_assert(cond)                                                        \</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">  do {                                                                         \</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">    if (!(cond)) {                                                             \</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">      oc_abort(&quot;Assertion (&quot;</span> #cond &quot;) failed.&quot;);                               \</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }                                                                          \</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  } while (0)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;oc_exit(<span class="keywordtype">int</span> status)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="oc__assert_8h.html#a1bce540d44065a67fd8136c1033bee82">exit_impl</a>(status);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_ASSERT_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aoc__assert_8h_html_a1bce540d44065a67fd8136c1033bee82"><div class="ttname"><a href="oc__assert_8h.html#a1bce540d44065a67fd8136c1033bee82">exit_impl</a></div><div class="ttdeci">void exit_impl(int status)</div><div class="ttdoc">exit the application</div></div>
 <div class="ttc" id="aoc__assert_8h_html_a7e2346d59d7240c309157eb00ad4a543"><div class="ttname"><a href="oc__assert_8h.html#a7e2346d59d7240c309157eb00ad4a543">abort_impl</a></div><div class="ttdeci">void abort_impl(void)</div><div class="ttdoc">abort application</div></div>
 <div class="ttc" id="aoc__log_8h_html"><div class="ttname"><a href="oc__log_8h.html">oc_log.h</a></div><div class="ttdoc">platform abstraction of logging</div></div>
@@ -153,7 +154,7 @@ $(document).ready(function(){initNavTree('oc__assert_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="oc__assert_8h.html">oc_assert.h</a></li>
-    <li class="footer">Generated on Tue Jun 6 2023 10:50:07 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jun 6 2023 12:38:55 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
