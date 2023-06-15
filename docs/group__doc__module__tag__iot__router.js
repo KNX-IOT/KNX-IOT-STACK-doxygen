@@ -22,7 +22,7 @@ var group__doc__module__tag__iot__router =
     [ "oc_delete_group_mapping_table", "group__doc__module__tag__iot__router.html#gab9a865ab554dfbf6136a6f1be39d319a", null ],
     [ "oc_get_f_netip_fra", "group__doc__module__tag__iot__router.html#ga50293f6566a1eec908709ef8a79aadd9", null ],
     [ "oc_get_f_netip_key", "group__doc__module__tag__iot__router.html#ga5b6cd599f56d2258188b57029c9cff3b", null ],
-    [ "oc_get_f_netip_mcast", "group__doc__module__tag__iot__router.html#ga2cfeae12e883cef12ca4c4566cf8c9ba", null ],
+    [ "oc_get_f_netip_mcast", "group__doc__module__tag__iot__router.html#gaaedaf685db877ce52c320b4f2e21217a", null ],
     [ "oc_get_f_netip_tol", "group__doc__module__tag__iot__router.html#gad64fc5011465b6fc9f1697daf845705b", null ],
     [ "oc_get_f_netip_ttl", "group__doc__module__tag__iot__router.html#gaf9925c2e7551fb50e3c5be0f5cb5a0c9", null ],
     [ "oc_get_gateway_cb", "group__doc__module__tag__iot__router.html#gaa764be41483ebbd7200f80077ae5ae30", null ],
