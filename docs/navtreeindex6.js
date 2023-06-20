@@ -1,5 +1,8 @@
 var NAVTREEINDEX6 =
 {
+"structoc__sec__cred__t.html#aea9d02abe6750e57616d6472e56114f6":[2,0,34,5],
+"structoc__sec__cred__t.html#aeef71cef968a0fc16368983243b2b037":[2,0,34,2],
+"structoc__sec__creds__t.html":[2,0,35],
 "structoc__sec__creds__t.html#aabd5d818698847fe3cf584eb3d287ca7":[2,0,35,0],
 "structoc__sec__creds__t.html#af0de68e95004851d0c429f7d528a218c":[2,0,35,1],
 "structoc__session__event__cb.html":[2,0,36],

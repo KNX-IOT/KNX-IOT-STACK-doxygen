@@ -145,6 +145,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae05775044d062a575fc789756f776d27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#ae05775044d062a575fc789756f776d27">oc_core_encode_interfaces_mask</a> (CborEncoder *parent, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask)</td></tr>
 <tr class="memdesc:ae05775044d062a575fc789756f776d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">encode the interfaces with the cbor (payload) encoder  <a href="oc__core__res_8h.html#ae05775044d062a575fc789756f776d27">More...</a><br /></td></tr>
 <tr class="separator:ae05775044d062a575fc789756f776d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a431fed92c6f212fbf90531d083b67bc3"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a431fed92c6f212fbf90531d083b67bc3">oc_core_get_device_iid</a> (size_t device_index)</td></tr>
+<tr class="memdesc:a431fed92c6f212fbf90531d083b67bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the installation identifier (iid) (unsigned int)  <a href="oc__core__res_8h.html#a431fed92c6f212fbf90531d083b67bc3">More...</a><br /></td></tr>
+<tr class="separator:a431fed92c6f212fbf90531d083b67bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abce7a2d1e8d98a3f4c0b8585121e2771"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__device__info__t.html">oc_device_info_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#abce7a2d1e8d98a3f4c0b8585121e2771">oc_core_get_device_info</a> (size_t device)</td></tr>
 <tr class="memdesc:abce7a2d1e8d98a3f4c0b8585121e2771"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the device info from the device index  <a href="oc__core__res_8h.html#abce7a2d1e8d98a3f4c0b8585121e2771">More...</a><br /></td></tr>
 <tr class="separator:abce7a2d1e8d98a3f4c0b8585121e2771"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -486,6 +489,33 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a431fed92c6f212fbf90531d083b67bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a431fed92c6f212fbf90531d083b67bc3">&#9670;&nbsp;</a></span>oc_core_get_device_iid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t oc_core_get_device_iid </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device_index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets the installation identifier (iid) (unsigned int) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device_index</td><td>the device index </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The KNX installation id </dd></dl>
 
 </div>
 </div>
@@ -1516,7 +1546,7 @@ false resource type is not in the request </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__core__res_8h.html">oc_core_res.h</a></li>
-    <li class="footer">Generated on Thu Jun 15 2023 15:01:44 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jun 20 2023 13:43:12 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
