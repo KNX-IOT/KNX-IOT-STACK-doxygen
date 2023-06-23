@@ -63,6 +63,7 @@ var oc__helpers_8h =
     [ "oc_get_sn_from_ep", "oc__helpers_8h.html#aaec800a3a9e6f677c6b2ab9e77257c03", null ],
     [ "oc_get_sn_ia_iid_from_ep", "oc__helpers_8h.html#aaccbdba96769e835e5b4fb0f5b44928a", null ],
     [ "oc_join_string_array", "oc__helpers_8h.html#a9170160c3afc735c8adf574d00d20c8c", null ],
+    [ "oc_print_uint64_t", "oc__helpers_8h.html#aae5ac826accbac00606c8894d003c918", null ],
     [ "oc_string_cmp", "oc__helpers_8h.html#a008ee98555abe100fe9683a71f603e2e", null ],
     [ "oc_string_copy", "oc__helpers_8h.html#aee2b79864fdd3d2477c39589a35314c0", null ],
     [ "oc_string_copy_from_char", "oc__helpers_8h.html#a5e503e50a185a449c71ad54c970295dd", null ],
