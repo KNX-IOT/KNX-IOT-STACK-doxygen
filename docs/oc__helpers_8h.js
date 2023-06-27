@@ -60,6 +60,7 @@ var oc__helpers_8h =
     [ "oc_conv_byte_array_to_hex_string", "oc__helpers_8h.html#af96ddf66b54df49a985fdb6c52d9bf31", null ],
     [ "oc_conv_hex_string_to_byte_array", "oc__helpers_8h.html#a16bbf1dbd390650087470ff8efb79638", null ],
     [ "oc_conv_hex_string_to_oc_string", "oc__helpers_8h.html#a1325ccb711fe05a31dee1007bb4dde8a", null ],
+    [ "oc_conv_uint64_to_string", "oc__helpers_8h.html#a35aab53176a00ff0c3a3428a15f661dc", null ],
     [ "oc_get_sn_from_ep", "oc__helpers_8h.html#aaec800a3a9e6f677c6b2ab9e77257c03", null ],
     [ "oc_get_sn_ia_iid_from_ep", "oc__helpers_8h.html#aaccbdba96769e835e5b4fb0f5b44928a", null ],
     [ "oc_join_string_array", "oc__helpers_8h.html#a9170160c3afc735c8adf574d00d20c8c", null ],

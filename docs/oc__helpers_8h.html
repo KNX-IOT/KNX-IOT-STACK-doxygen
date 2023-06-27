@@ -292,6 +292,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_concat_strings</b>
 <tr class="memitem:a1325ccb711fe05a31dee1007bb4dde8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a1325ccb711fe05a31dee1007bb4dde8a">oc_conv_hex_string_to_oc_string</a> (const char *hex_str, size_t hex_str_len, oc_string_t *out)</td></tr>
 <tr class="memdesc:a1325ccb711fe05a31dee1007bb4dde8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert hex string to oc_string  <a href="oc__helpers_8h.html#a1325ccb711fe05a31dee1007bb4dde8a">More...</a><br /></td></tr>
 <tr class="separator:a1325ccb711fe05a31dee1007bb4dde8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35aab53176a00ff0c3a3428a15f661dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a35aab53176a00ff0c3a3428a15f661dc">oc_conv_uint64_to_string</a> (char *str, uint64_t number)</td></tr>
+<tr class="memdesc:a35aab53176a00ff0c3a3428a15f661dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a uint64_t to a string.  <a href="oc__helpers_8h.html#a35aab53176a00ff0c3a3428a15f661dc">More...</a><br /></td></tr>
+<tr class="separator:a35aab53176a00ff0c3a3428a15f661dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaec800a3a9e6f677c6b2ab9e77257c03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#aaec800a3a9e6f677c6b2ab9e77257c03">oc_get_sn_from_ep</a> (const char *param, int param_len, char *sn, int sn_len, uint32_t *ia)</td></tr>
 <tr class="memdesc:aaec800a3a9e6f677c6b2ab9e77257c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the serial number and individual address from the ep parameter  <a href="oc__helpers_8h.html#aaec800a3a9e6f677c6b2ab9e77257c03">More...</a><br /></td></tr>
 <tr class="separator:aaec800a3a9e6f677c6b2ab9e77257c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1313,6 +1316,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 </div>
 </div>
+<a id="a35aab53176a00ff0c3a3428a15f661dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35aab53176a00ff0c3a3428a15f661dc">&#9670;&nbsp;</a></span>oc_conv_uint64_to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_conv_uint64_to_string </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>number</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts a uint64_t to a string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">number</td><td>number to be converted to string </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">str</td><td>Resulting string after conversion </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int always returns 0 </dd></dl>
+
+</div>
+</div>
 <a id="aaec800a3a9e6f677c6b2ab9e77257c03"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaec800a3a9e6f677c6b2ab9e77257c03">&#9670;&nbsp;</a></span>oc_get_sn_from_ep()</h2>
 
@@ -2046,7 +2087,7 @@ false </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Fri Jun 23 2023 16:34:25 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jun 27 2023 15:31:16 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
