@@ -102,11 +102,14 @@ Functions</h2></td></tr>
 <tr class="memitem:afd3e2f557a7f0fe740b7a634e434ca6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__helpers_8h.html#afd3e2f557a7f0fe740b7a634e434ca6d">check_if_query_l_exist</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, bool *ps_exists, bool *total_exists)</td></tr>
 <tr class="memdesc:afd3e2f557a7f0fe740b7a634e434ca6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to check if query parameter l exists  <a href="oc__knx__helpers_8h.html#afd3e2f557a7f0fe740b7a634e434ca6d">More...</a><br /></td></tr>
 <tr class="separator:afd3e2f557a7f0fe740b7a634e434ca6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c494590810f7d7580f1164359a1892"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__helpers_8h.html#ae1c494590810f7d7580f1164359a1892">check_if_query_pn_exist</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, int *pn_value, int *ps_value)</td></tr>
+<tr class="memdesc:ae1c494590810f7d7580f1164359a1892"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to check if query parameter pn or ps exists  <a href="oc__knx__helpers_8h.html#ae1c494590810f7d7580f1164359a1892">More...</a><br /></td></tr>
+<tr class="separator:ae1c494590810f7d7580f1164359a1892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f219af21b2f1f62d1dc384fb6c0dc2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__helpers_8h.html#a5f219af21b2f1f62d1dc384fb6c0dc2f">oc_frame_integer</a> (int value)</td></tr>
 <tr class="memdesc:a5f219af21b2f1f62d1dc384fb6c0dc2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to frame an integer in the response:  <a href="oc__knx__helpers_8h.html#a5f219af21b2f1f62d1dc384fb6c0dc2f">More...</a><br /></td></tr>
 <tr class="separator:a5f219af21b2f1f62d1dc384fb6c0dc2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad75b1e09a6eaa753d618ab40d4679a38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__helpers_8h.html#ad75b1e09a6eaa753d618ab40d4679a38">oc_frame_query_l</a> (char *url, bool ps_exists, bool total_exists)</td></tr>
-<tr class="memdesc:ad75b1e09a6eaa753d618ab40d4679a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to frame url part of query response: spec 1.0: &lt;url?l=ps&gt; &lt;url?l=total&gt; &lt;url?l=ps;ps=total&gt; spec 1.1: url  <a href="oc__knx__helpers_8h.html#ad75b1e09a6eaa753d618ab40d4679a38">More...</a><br /></td></tr>
+<tr class="memdesc:ad75b1e09a6eaa753d618ab40d4679a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to frame url part of query response: spec 1.0:  <a href="oc__knx__helpers_8h.html#ad75b1e09a6eaa753d618ab40d4679a38">More...</a><br /></td></tr>
 <tr class="separator:ad75b1e09a6eaa753d618ab40d4679a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -147,7 +150,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>helper function to check if query parameter l exists </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>example: /fp/r?l=total&amp;l=ps </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">request</td><td>the request </td></tr>
     <tr><td class="paramname">ps_exists</td><td>return value if l=ps exists </td></tr>
@@ -156,6 +159,51 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int 1 == l exists (with either ps or total or both) </dd></dl>
+
+</div>
+</div>
+<a id="ae1c494590810f7d7580f1164359a1892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1c494590810f7d7580f1164359a1892">&#9670;&nbsp;</a></span>check_if_query_pn_exist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">check_if_query_pn_exist </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>pn_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>ps_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>helper function to check if query parameter pn or ps exists </p>
+<p>example: /dev/ipv6?pn=0&amp;ps=3 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>the request </td></tr>
+    <tr><td class="paramname">pn_value</td><td>return -1 if not exist otherwise value </td></tr>
+    <tr><td class="paramname">ps_value</td><td>return -1 if not exist otherwise value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 1 == pn or ps exists </dd></dl>
 
 </div>
 </div>
@@ -218,7 +266,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>helper function to frame url part of query response: spec 1.0: &lt;url?l=ps&gt; &lt;url?l=total&gt; &lt;url?l=ps;ps=total&gt; spec 1.1: url </p>
+<p>helper function to frame url part of query response: spec 1.0: </p>
+<ul>
+<li>&lt;url?l=ps&gt;</li>
+<li>&lt;url?l=total&gt;</li>
+<li>&lt;url?l=ps;ps=total&gt; spec 1.1:</li>
+<li>url</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">url</td><td>the url to be framed </td></tr>
@@ -237,7 +291,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__helpers_8h.html">oc_knx_helpers.h</a></li>
-    <li class="footer">Generated on Fri Jun 30 2023 13:56:20 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jun 30 2023 14:00:08 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
