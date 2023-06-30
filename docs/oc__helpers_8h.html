@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('oc__helpers_8h.html',''); initResizabl
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">oc_helpers.h File Reference</div>  </div>
@@ -232,6 +233,13 @@ typedef struct oc_mmem&#160;</td><td class="memItemRight" valign="bottom"><b>oc_
 typedef struct oc_mmem&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_t</b></td></tr>
 <tr class="separator:a3512eb4e43ec1723a4c0104ac72c8116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:adb60ad97ce2a7e6bd232db56f2a4aafc"><td class="memItemLeft" align="right" valign="top"><a id="adb60ad97ce2a7e6bd232db56f2a4aafc"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>StringRepresentation</b> { <b>DEC_REPRESENTATION</b> = 0
+, <b>HEX_REPRESENTATION</b>
+ }</td></tr>
+<tr class="separator:adb60ad97ce2a7e6bd232db56f2a4aafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9d4cd17d4100263b9f2be309d0bee2a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a9d4cd17d4100263b9f2be309d0bee2a3">_oc_alloc_string</a> (oc_string_t *ocstring, size_t size)</td></tr>
@@ -292,9 +300,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_concat_strings</b>
 <tr class="memitem:a1325ccb711fe05a31dee1007bb4dde8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a1325ccb711fe05a31dee1007bb4dde8a">oc_conv_hex_string_to_oc_string</a> (const char *hex_str, size_t hex_str_len, oc_string_t *out)</td></tr>
 <tr class="memdesc:a1325ccb711fe05a31dee1007bb4dde8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert hex string to oc_string  <a href="oc__helpers_8h.html#a1325ccb711fe05a31dee1007bb4dde8a">More...</a><br /></td></tr>
 <tr class="separator:a1325ccb711fe05a31dee1007bb4dde8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35aab53176a00ff0c3a3428a15f661dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a35aab53176a00ff0c3a3428a15f661dc">oc_conv_uint64_to_string</a> (char *str, uint64_t number)</td></tr>
-<tr class="memdesc:a35aab53176a00ff0c3a3428a15f661dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a uint64_t to a string.  <a href="oc__helpers_8h.html#a35aab53176a00ff0c3a3428a15f661dc">More...</a><br /></td></tr>
-<tr class="separator:a35aab53176a00ff0c3a3428a15f661dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ce3ab7b97b32c4c4bb916320a07ce7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a50ce3ab7b97b32c4c4bb916320a07ce7">oc_conv_uint64_to_dec_string</a> (char *str, uint64_t number)</td></tr>
+<tr class="memdesc:a50ce3ab7b97b32c4c4bb916320a07ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a uint64_t to a decimal string representation.  <a href="oc__helpers_8h.html#a50ce3ab7b97b32c4c4bb916320a07ce7">More...</a><br /></td></tr>
+<tr class="separator:a50ce3ab7b97b32c4c4bb916320a07ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7449e6f7942885b80973eaa4107a0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#abe7449e6f7942885b80973eaa4107a0c">oc_conv_uint64_to_hex_string</a> (char *str, uint64_t number)</td></tr>
+<tr class="memdesc:abe7449e6f7942885b80973eaa4107a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a uint64_t to a hex string representation.  <a href="oc__helpers_8h.html#abe7449e6f7942885b80973eaa4107a0c">More...</a><br /></td></tr>
+<tr class="separator:abe7449e6f7942885b80973eaa4107a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaec800a3a9e6f677c6b2ab9e77257c03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#aaec800a3a9e6f677c6b2ab9e77257c03">oc_get_sn_from_ep</a> (const char *param, int param_len, char *sn, int sn_len, uint32_t *ia)</td></tr>
 <tr class="memdesc:aaec800a3a9e6f677c6b2ab9e77257c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the serial number and individual address from the ep parameter  <a href="oc__helpers_8h.html#aaec800a3a9e6f677c6b2ab9e77257c03">More...</a><br /></td></tr>
 <tr class="separator:aaec800a3a9e6f677c6b2ab9e77257c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -304,9 +315,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_concat_strings</b>
 <tr class="memitem:a9170160c3afc735c8adf574d00d20c8c"><td class="memItemLeft" align="right" valign="top"><a id="a9170160c3afc735c8adf574d00d20c8c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array</b> (oc_string_array_t *ocstringarray, oc_string_t *ocstring)</td></tr>
 <tr class="separator:a9170160c3afc735c8adf574d00d20c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae5ac826accbac00606c8894d003c918"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#aae5ac826accbac00606c8894d003c918">oc_print_uint64_t</a> (uint64_t number)</td></tr>
-<tr class="memdesc:aae5ac826accbac00606c8894d003c918"><td class="mdescLeft">&#160;</td><td class="mdescRight">print a uint64_t  <a href="oc__helpers_8h.html#aae5ac826accbac00606c8894d003c918">More...</a><br /></td></tr>
-<tr class="separator:aae5ac826accbac00606c8894d003c918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a3f77c16db00589b88b481f25dcac18"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a1a3f77c16db00589b88b481f25dcac18">oc_print_uint64_t</a> (uint64_t number, enum StringRepresentation rep)</td></tr>
+<tr class="memdesc:a1a3f77c16db00589b88b481f25dcac18"><td class="mdescLeft">&#160;</td><td class="mdescRight">print a uint64_t, in either decimal or hex representation  <a href="oc__helpers_8h.html#a1a3f77c16db00589b88b481f25dcac18">More...</a><br /></td></tr>
+<tr class="separator:a1a3f77c16db00589b88b481f25dcac18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a008ee98555abe100fe9683a71f603e2e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a008ee98555abe100fe9683a71f603e2e">oc_string_cmp</a> (oc_string_t string1, oc_string_t string2)</td></tr>
 <tr class="memdesc:a008ee98555abe100fe9683a71f603e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">oc_string compare  <a href="oc__helpers_8h.html#a008ee98555abe100fe9683a71f603e2e">More...</a><br /></td></tr>
 <tr class="separator:a008ee98555abe100fe9683a71f603e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -384,7 +395,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>allocate oc_string </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00092">92</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00097">97</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -406,7 +417,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>free array of booleans </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00124">124</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00129">129</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -428,7 +439,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>free array of doubles </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00130">130</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00135">135</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -450,7 +461,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>free array of integers </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00118">118</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00123">123</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -472,7 +483,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>free ocstring </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00112">112</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00117">117</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -494,7 +505,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>free oc string array </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00163">163</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00168">168</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -526,7 +537,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>new boolean array </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00142">142</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00147">147</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -564,7 +575,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>create new (byte) string from string (not null terminated) </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00105">105</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00110">110</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -596,7 +607,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>new double array </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00149">149</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00154">154</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -628,7 +639,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>new integer array </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00136">136</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00141">141</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -666,7 +677,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>create new string from string (null terminated) </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00098">98</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00103">103</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -698,7 +709,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>new oc string array </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00156">156</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00161">161</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -720,7 +731,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>cast oc_string to string </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00044">44</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00049">49</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -742,7 +753,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>cast oc_string to string, replace null pointer results with a pointer to "NULL" </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00051">51</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00056">56</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -1316,14 +1327,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 </div>
 </div>
-<a id="a35aab53176a00ff0c3a3428a15f661dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35aab53176a00ff0c3a3428a15f661dc">&#9670;&nbsp;</a></span>oc_conv_uint64_to_string()</h2>
+<a id="a50ce3ab7b97b32c4c4bb916320a07ce7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50ce3ab7b97b32c4c4bb916320a07ce7">&#9670;&nbsp;</a></span>oc_conv_uint64_to_dec_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int oc_conv_uint64_to_string </td>
+          <td class="memname">int oc_conv_uint64_to_dec_string </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>str</em>, </td>
@@ -1342,11 +1353,49 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
       </table>
 </div><div class="memdoc">
 
-<p>Converts a uint64_t to a string. </p>
+<p>Converts a uint64_t to a decimal string representation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">number</td><td>number to be converted to string </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">str</td><td>Resulting string after conversion </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">str</td><td>Resulting string after conversion. IMPORTANT: Should have a size of at least 22 bytes (21 + null terminator) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int always returns 0 </dd></dl>
+
+</div>
+</div>
+<a id="abe7449e6f7942885b80973eaa4107a0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe7449e6f7942885b80973eaa4107a0c">&#9670;&nbsp;</a></span>oc_conv_uint64_to_hex_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_conv_uint64_to_hex_string </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>number</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts a uint64_t to a hex string representation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">number</td><td>number to be converted to hexadecimal string </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">str</td><td>Resulting string after conversion. IMPORTANT: Should have a size of at least 17 bytes (16 + null terminator) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1480,8 +1529,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 </div>
 </div>
-<a id="aae5ac826accbac00606c8894d003c918"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae5ac826accbac00606c8894d003c918">&#9670;&nbsp;</a></span>oc_print_uint64_t()</h2>
+<a id="a1a3f77c16db00589b88b481f25dcac18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a3f77c16db00589b88b481f25dcac18">&#9670;&nbsp;</a></span>oc_print_uint64_t()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1490,16 +1539,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
           <td class="memname">int oc_print_uint64_t </td>
           <td>(</td>
           <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>number</em></td><td>)</td>
+          <td class="paramname"><em>number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">enum StringRepresentation&#160;</td>
+          <td class="paramname"><em>rep</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>print a uint64_t </p>
+<p>print a uint64_t, in either decimal or hex representation </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">number</td><td></td></tr>
+    <tr><td class="paramname">rep</td><td>- string representation chosen (decimal or hex) </td></tr>
   </table>
   </dd>
 </dl>
@@ -2087,7 +2147,7 @@ false </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Fri Jun 30 2023 12:11:53 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jun 30 2023 13:56:20 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
