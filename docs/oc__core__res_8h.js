@@ -38,5 +38,5 @@ var oc__core__res_8h =
     [ "oc_core_shutdown", "oc__core__res_8h.html#a4f83145f9b94c3e531f7008959dec07b", null ],
     [ "oc_filter_resource_by_if", "oc__core__res_8h.html#a54f086305df0e501d8bcb805037667f5", null ],
     [ "oc_filter_resource_by_rt", "oc__core__res_8h.html#ac90407354ec43f8e8603d86e3dd22698", null ],
-    [ "oc_frame_interfaces_mask_in_response", "oc__core__res_8h.html#aa2b277fdad7d7953ce202abee706853f", null ]
+    [ "oc_frame_interfaces_mask_in_response", "oc__core__res_8h.html#a58cf0654b6fc6f53beaac42fbe15bea6", null ]
 ];
