@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367adabda0024c60381a2685003932beb6eb":[3,0,39,3,0],
+"oc__session__events_8h_source.html":[3,0,39],
 "oc__signal__event__loop_8h.html":[3,0,40],
 "oc__signal__event__loop_8h.html#a096c5153f9879560e2823e776b282deb":[3,0,40,0],
 "oc__signal__event__loop_8h_source.html":[3,0,40],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "structoc__restart__t.html#af8e6af01a16460e1d03ee6e0de346907":[2,0,33,0],
 "structoc__sec__cred__t.html":[2,0,34],
 "structoc__sec__cred__t.html#a1b7c342edf3e1a962ab14ba62f41f666":[2,0,34,0],
-"structoc__sec__cred__t.html#a1f6d09b30c54854dfca659b7463ac207":[2,0,34,6],
-"structoc__sec__cred__t.html#a30e7e74b551dbcb6cc31bafc4659d245":[2,0,34,11],
-"structoc__sec__cred__t.html#a39f4c436515763be1c728e9237f3447f":[2,0,34,9]
+"structoc__sec__cred__t.html#a1f6d09b30c54854dfca659b7463ac207":[2,0,34,6]
 };

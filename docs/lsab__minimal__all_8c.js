@@ -1,5 +1,6 @@
 var lsab__minimal__all_8c =
 [
+    [ "_WIN32_WINNT", "lsab__minimal__all_8c.html#ac50762666aa00bd3a4308158510f1748", null ],
     [ "btoa", "lsab__minimal__all_8c.html#abca65cfd5453ab170ffa6c7db9a2f687", null ],
     [ "GetCurrentDir", "lsab__minimal__all_8c.html#af0c0d1034a71f8aa3a08cda83c9d4e7a", null ],
     [ "MY_NAME", "lsab__minimal__all_8c.html#a56e0ef88d0d230547f678b84ed8ad00a", null ],
