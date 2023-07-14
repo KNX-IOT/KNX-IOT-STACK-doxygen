@@ -73,7 +73,8 @@ var oc__rep_8h =
       [ "OC_REP_BOOL_ARRAY", "oc__rep_8h.html#a514288f5ab16855778b0f2845362b590aa680bc3241f219fb237dd035b9da9763", null ],
       [ "OC_REP_BYTE_STRING_ARRAY", "oc__rep_8h.html#a514288f5ab16855778b0f2845362b590a645fe5f04d8a68928b49b1dba7f584c9", null ],
       [ "OC_REP_STRING_ARRAY", "oc__rep_8h.html#a514288f5ab16855778b0f2845362b590ad6a7b933c73bbb8f5906ed01bbf7995e", null ],
-      [ "OC_REP_OBJECT_ARRAY", "oc__rep_8h.html#a514288f5ab16855778b0f2845362b590a3c604aab9a87822f65874acc2719989a", null ]
+      [ "OC_REP_OBJECT_ARRAY", "oc__rep_8h.html#a514288f5ab16855778b0f2845362b590a3c604aab9a87822f65874acc2719989a", null ],
+      [ "OC_REP_MIXED_ARRAY", "oc__rep_8h.html#a514288f5ab16855778b0f2845362b590a4f9f2362a6f014ffcfa43b7f4be332be", null ]
     ] ],
     [ "oc_free_rep", "oc__rep_8h.html#ac436f2afde99d2f44f14e666fd318b39", null ],
     [ "oc_parse_rep", "oc__rep_8h.html#a163396b11297bd4956e1cfbc4e0ea88e", null ],
@@ -93,6 +94,7 @@ var oc__rep_8h =
     [ "oc_rep_get_encoder_buf", "oc__rep_8h.html#a701d638e52f93819f35a57d798abe54b", null ],
     [ "oc_rep_get_int", "oc__rep_8h.html#abb19f462967f4751638228526ee72668", null ],
     [ "oc_rep_get_int_array", "oc__rep_8h.html#a9043245aa5981b86f4c371ecfb1755da", null ],
+    [ "oc_rep_get_mixed_array", "oc__rep_8h.html#a912d6545a262edfc42b78988fb6abb8d", null ],
     [ "oc_rep_get_object", "oc__rep_8h.html#a33423ce92e2bed568f2bb1941b9fd474", null ],
     [ "oc_rep_get_object_array", "oc__rep_8h.html#aa5184a1dadf0001d0108a6a1416a7c40", null ],
     [ "oc_rep_get_string", "oc__rep_8h.html#a03f038c3d8296518eb193d1e80d745f7", null ],
@@ -105,6 +107,7 @@ var oc__rep_8h =
     [ "oc_rep_i_get_double_array", "oc__rep_8h.html#a365c817bf31955adfcb5eb7555ef25b6", null ],
     [ "oc_rep_i_get_int", "oc__rep_8h.html#aab1b6ea9c17ac58b78954bfd1e8bb3b7", null ],
     [ "oc_rep_i_get_int_array", "oc__rep_8h.html#a9cf799b31e7b071403f865a391ba58ca", null ],
+    [ "oc_rep_i_get_mixed_array", "oc__rep_8h.html#a72b66fda5a3d164cf15ead96cbef4216", null ],
     [ "oc_rep_i_get_object", "oc__rep_8h.html#af7b58edb0d58903145b270a86b3053f3", null ],
     [ "oc_rep_i_get_object_array", "oc__rep_8h.html#a7b4c989bf60412bf7dd2ab857b714eaa", null ],
     [ "oc_rep_i_get_string", "oc__rep_8h.html#a1a59c961275a13974703cfa9f1ea4ed9", null ],

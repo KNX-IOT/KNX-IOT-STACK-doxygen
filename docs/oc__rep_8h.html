@@ -309,6 +309,7 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<b>OC_REP_STRING_ARRAY</b> = 0x0D
 , <b>OC_REP_OBJECT_ARRAY</b> = 0x0E
+, <b>OC_REP_MIXED_ARRAY</b> = 0x0F
 <br />
  }</td></tr>
 <tr class="separator:a514288f5ab16855778b0f2845362b590"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -369,6 +370,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_parse_rep</b> (cons
 <tr class="memitem:a9043245aa5981b86f4c371ecfb1755da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a9043245aa5981b86f4c371ecfb1755da">oc_rep_get_int_array</a> (<a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *rep, const char *key, int64_t **value, size_t *size)</td></tr>
 <tr class="memdesc:a9043245aa5981b86f4c371ecfb1755da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an integer array value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a9043245aa5981b86f4c371ecfb1755da">More...</a><br /></td></tr>
 <tr class="separator:a9043245aa5981b86f4c371ecfb1755da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912d6545a262edfc42b78988fb6abb8d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a912d6545a262edfc42b78988fb6abb8d">oc_rep_get_mixed_array</a> (<a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *rep, const char *key, <a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> **value)</td></tr>
+<tr class="memdesc:a912d6545a262edfc42b78988fb6abb8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a mixed array value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a912d6545a262edfc42b78988fb6abb8d">More...</a><br /></td></tr>
+<tr class="separator:a912d6545a262edfc42b78988fb6abb8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33423ce92e2bed568f2bb1941b9fd474"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a33423ce92e2bed568f2bb1941b9fd474">oc_rep_get_object</a> (<a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *rep, const char *key, <a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> **value)</td></tr>
 <tr class="memdesc:a33423ce92e2bed568f2bb1941b9fd474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a object value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a33423ce92e2bed568f2bb1941b9fd474">More...</a><br /></td></tr>
 <tr class="separator:a33423ce92e2bed568f2bb1941b9fd474"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -405,6 +409,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_parse_rep</b> (cons
 <tr class="memitem:a9cf799b31e7b071403f865a391ba58ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a9cf799b31e7b071403f865a391ba58ca">oc_rep_i_get_int_array</a> (<a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *rep, int key, int64_t **value, size_t *size)</td></tr>
 <tr class="memdesc:a9cf799b31e7b071403f865a391ba58ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an integer array value from an <code>oc_rep_t</code> with an integer key.  <a href="oc__rep_8h.html#a9cf799b31e7b071403f865a391ba58ca">More...</a><br /></td></tr>
 <tr class="separator:a9cf799b31e7b071403f865a391ba58ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b66fda5a3d164cf15ead96cbef4216"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a72b66fda5a3d164cf15ead96cbef4216">oc_rep_i_get_mixed_array</a> (<a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *rep, int key, <a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> **value)</td></tr>
+<tr class="memdesc:a72b66fda5a3d164cf15ead96cbef4216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a mixed array value from an <code>oc_rep_t</code> with integer key.  <a href="oc__rep_8h.html#a72b66fda5a3d164cf15ead96cbef4216">More...</a><br /></td></tr>
+<tr class="separator:a72b66fda5a3d164cf15ead96cbef4216"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7b58edb0d58903145b270a86b3053f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#af7b58edb0d58903145b270a86b3053f3">oc_rep_i_get_object</a> (<a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *rep, int key, <a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> **value)</td></tr>
 <tr class="memdesc:af7b58edb0d58903145b270a86b3053f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a object value from an <code>oc_rep_t</code> with integer key.  <a href="oc__rep_8h.html#af7b58edb0d58903145b270a86b3053f3">More...</a><br /></td></tr>
 <tr class="separator:af7b58edb0d58903145b270a86b3053f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -464,7 +471,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 
 <p>Tab character(s) used for oc_rep_to_json function when doing pretty_print. </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__rep_8h_source.html#l02071">2071</a> of file <a class="el" href="oc__rep_8h_source.html">oc_rep.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__rep_8h_source.html#l02139">2139</a> of file <a class="el" href="oc__rep_8h_source.html">oc_rep.h</a>.</p>
 
 </div>
 </div>
@@ -3602,6 +3609,71 @@ oc_byte_string_array_get_item_size </dd></dl>
 
 </div>
 </div>
+<a id="a912d6545a262edfc42b78988fb6abb8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a912d6545a262edfc42b78988fb6abb8d">&#9670;&nbsp;</a></span>oc_rep_get_mixed_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_rep_get_mixed_array </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *&#160;</td>
+          <td class="paramname"><em>rep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> **&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a mixed array value from an <code>oc_rep_t</code> </p>
+<p>Calling the returned value an array is a misnomer. The value actually returned is a linked list of oc_rep_t objects. The linked list must be walked to see each item in the mixed array.</p>
+<p>Example: </p><div class="fragment"><div class="line">    <a class="code" href="structoc__rep__s.html">oc_rep_t</a> * space_2001_out = NULL;</div>
+<div class="line">    <span class="keywordflow">if</span> ( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a912d6545a262edfc42b78988fb6abb8d">oc_rep_get_mixed_array</a>(rep, <span class="stringliteral">&quot;space_2001&quot;</span>, &amp;space_2001_out))</div>
+<div class="line">{</div>
+<div class="line">        <span class="keywordflow">while</span> (space_2001_out != NULL) {</div>
+<div class="line">            <span class="keywordtype">char</span> * str_out = NULL;</div>
+<div class="line">            <span class="keywordtype">size_t</span> str_out_size = 0;</div>
+<div class="line">            <span class="keywordflow">if</span> (space_2001_out-&gt;<a class="code" href="structoc__rep__s.html#a0b9aa324e5d6b7bff8aec217936f0a38">type</a> == OC_REP_STRING)</div>
+<div class="line">                printf(<span class="stringliteral">&quot;Character Name: %s&quot;</span>,</div>
+<div class="line"><a class="code" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(space_2001_out-&gt;<a class="code" href="structoc__rep__s.html#a319aa6eb149c104d57fae3b739d59209">value</a>.string)); space_2001_out =</div>
+<div class="line">space_2001_out-&gt;<a class="code" href="structoc__rep__s.html#aab699da307b1549136301bafbfe8da4e">next</a>;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="ttc" id="aoc__helpers_8h_html_a5bd70ca9b1f0250da0e76740ce99f7b4"><div class="ttname"><a href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a></div><div class="ttdeci">#define oc_string(ocstring)</div><div class="ttdoc">cast oc_string to string</div><div class="ttdef"><b>Definition:</b> <a href="oc__helpers_8h_source.html#l00049">oc_helpers.h:49</a></div></div>
+<div class="ttc" id="aoc__rep_8h_html_a912d6545a262edfc42b78988fb6abb8d"><div class="ttname"><a href="oc__rep_8h.html#a912d6545a262edfc42b78988fb6abb8d">oc_rep_get_mixed_array</a></div><div class="ttdeci">bool oc_rep_get_mixed_array(oc_rep_t *rep, const char *key, oc_rep_t **value)</div><div class="ttdoc">Read a mixed array value from an oc_rep_t</div></div>
+<div class="ttc" id="astructoc__rep__s_html"><div class="ttname"><a href="structoc__rep__s.html">oc_rep_s</a></div><div class="ttdoc">parsed entry of a cbor object This represents a link list of response values one can iterate over the...</div><div class="ttdef"><b>Definition:</b> <a href="oc__rep_8h_source.html#l01387">oc_rep.h:1388</a></div></div>
+<div class="ttc" id="astructoc__rep__s_html_a0b9aa324e5d6b7bff8aec217936f0a38"><div class="ttname"><a href="structoc__rep__s.html#a0b9aa324e5d6b7bff8aec217936f0a38">oc_rep_s::type</a></div><div class="ttdeci">oc_rep_value_type_t type</div><div class="ttdoc">type of the data</div><div class="ttdef"><b>Definition:</b> <a href="oc__rep_8h_source.html#l01389">oc_rep.h:1389</a></div></div>
+<div class="ttc" id="astructoc__rep__s_html_a319aa6eb149c104d57fae3b739d59209"><div class="ttname"><a href="structoc__rep__s.html#a319aa6eb149c104d57fae3b739d59209">oc_rep_s::value</a></div><div class="ttdeci">union oc_rep_s::oc_rep_value value</div><div class="ttdoc">the value as union</div></div>
+<div class="ttc" id="astructoc__rep__s_html_aab699da307b1549136301bafbfe8da4e"><div class="ttname"><a href="structoc__rep__s.html#aab699da307b1549136301bafbfe8da4e">oc_rep_s::next</a></div><div class="ttdeci">struct oc_rep_s * next</div><div class="ttdoc">next in list</div><div class="ttdef"><b>Definition:</b> <a href="oc__rep_8h_source.html#l01390">oc_rep.h:1390</a></div></div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rep</td><td>oc_rep_t to read mixed array value from </td></tr>
+    <tr><td class="paramname">key</td><td>the key name for the mixed array value </td></tr>
+    <tr><td class="paramname">value</td><td>the return mixed array value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if key and value are found and returned.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>oc_rep_set_{type} </dd></dl>
+
+</div>
+</div>
 <a id="a33423ce92e2bed568f2bb1941b9fd474"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33423ce92e2bed568f2bb1941b9fd474">&#9670;&nbsp;</a></span>oc_rep_get_object()</h2>
 
@@ -3650,7 +3722,6 @@ oc_byte_string_array_get_item_size </dd></dl>
 <div class="line">}</div>
 <div class="ttc" id="aoc__rep_8h_html_a03f038c3d8296518eb193d1e80d745f7"><div class="ttname"><a href="oc__rep_8h.html#a03f038c3d8296518eb193d1e80d745f7">oc_rep_get_string</a></div><div class="ttdeci">bool oc_rep_get_string(oc_rep_t *rep, const char *key, char **value, size_t *size)</div><div class="ttdoc">Read a text string value from an oc_rep_t</div></div>
 <div class="ttc" id="aoc__rep_8h_html_a33423ce92e2bed568f2bb1941b9fd474"><div class="ttname"><a href="oc__rep_8h.html#a33423ce92e2bed568f2bb1941b9fd474">oc_rep_get_object</a></div><div class="ttdeci">bool oc_rep_get_object(oc_rep_t *rep, const char *key, oc_rep_t **value)</div><div class="ttdoc">Read a object value from an oc_rep_t</div></div>
-<div class="ttc" id="astructoc__rep__s_html"><div class="ttname"><a href="structoc__rep__s.html">oc_rep_s</a></div><div class="ttdoc">parsed entry of a cbor object This represents a link list of response values one can iterate over the...</div><div class="ttdef"><b>Definition:</b> <a href="oc__rep_8h_source.html#l01386">oc_rep.h:1387</a></div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rep</td><td>oc_rep_t to read object value from </td></tr>
@@ -3717,8 +3788,6 @@ oc_byte_string_array_get_item_size </dd></dl>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="ttc" id="aoc__rep_8h_html_aa5184a1dadf0001d0108a6a1416a7c40"><div class="ttname"><a href="oc__rep_8h.html#aa5184a1dadf0001d0108a6a1416a7c40">oc_rep_get_object_array</a></div><div class="ttdeci">bool oc_rep_get_object_array(oc_rep_t *rep, const char *key, oc_rep_t **value)</div><div class="ttdoc">Read a object array value from an oc_rep_t</div></div>
-<div class="ttc" id="astructoc__rep__s_html_a319aa6eb149c104d57fae3b739d59209"><div class="ttname"><a href="structoc__rep__s.html#a319aa6eb149c104d57fae3b739d59209">oc_rep_s::value</a></div><div class="ttdeci">union oc_rep_s::oc_rep_value value</div><div class="ttdoc">the value as union</div></div>
-<div class="ttc" id="astructoc__rep__s_html_aab699da307b1549136301bafbfe8da4e"><div class="ttname"><a href="structoc__rep__s.html#aab699da307b1549136301bafbfe8da4e">oc_rep_s::next</a></div><div class="ttdeci">struct oc_rep_s * next</div><div class="ttdoc">next in list</div><div class="ttdef"><b>Definition:</b> <a href="oc__rep_8h_source.html#l01389">oc_rep.h:1389</a></div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rep</td><td>oc_rep_t to read object array value from </td></tr>
@@ -4330,6 +4399,66 @@ oc_byte_string_array_get_item_size </dd></dl>
 
 </div>
 </div>
+<a id="a72b66fda5a3d164cf15ead96cbef4216"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72b66fda5a3d164cf15ead96cbef4216">&#9670;&nbsp;</a></span>oc_rep_i_get_mixed_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_rep_i_get_mixed_array </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> *&#160;</td>
+          <td class="paramname"><em>rep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96">oc_rep_t</a> **&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a mixed array value from an <code>oc_rep_t</code> with integer key. </p>
+<p>Calling the returned value an array is a misnomer. The value actually returned is a linked list of oc_rep_t objects. The linked list must be walked to see each item in the mixed array.</p>
+<p>Example: </p><div class="fragment"><div class="line">    <a class="code" href="structoc__rep__s.html">oc_rep_t</a> * space_2001_out = NULL;</div>
+<div class="line">    <span class="keywordflow">if</span> ( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a72b66fda5a3d164cf15ead96cbef4216">oc_rep_i_get_mixed_array</a>(rep, 5, &amp;space_2001_out))</div>
+<div class="line">{</div>
+<div class="line">        <span class="keywordflow">while</span> (space_2001_out != NULL) {</div>
+<div class="line">            <span class="keywordtype">char</span> * str_out = NULL;</div>
+<div class="line">            <span class="keywordtype">size_t</span> str_out_size = 0;</div>
+<div class="line">            <span class="keywordflow">if</span> (space_2001_out-&gt;<a class="code" href="structoc__rep__s.html#a0b9aa324e5d6b7bff8aec217936f0a38">type</a> == OC_REP_STRING)</div>
+<div class="line">                printf(<span class="stringliteral">&quot;Character Name: %s&quot;</span>,</div>
+<div class="line"><a class="code" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(space_2001_out-&gt;<a class="code" href="structoc__rep__s.html#a319aa6eb149c104d57fae3b739d59209">value</a>.string)); space_2001_out =</div>
+<div class="line">space_2001_out-&gt;<a class="code" href="structoc__rep__s.html#aab699da307b1549136301bafbfe8da4e">next</a>;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="ttc" id="aoc__rep_8h_html_a72b66fda5a3d164cf15ead96cbef4216"><div class="ttname"><a href="oc__rep_8h.html#a72b66fda5a3d164cf15ead96cbef4216">oc_rep_i_get_mixed_array</a></div><div class="ttdeci">bool oc_rep_i_get_mixed_array(oc_rep_t *rep, int key, oc_rep_t **value)</div><div class="ttdoc">Read a mixed array value from an oc_rep_t with integer key.</div></div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rep</td><td>oc_rep_t to read mixed array value from </td></tr>
+    <tr><td class="paramname">key</td><td>the key name for the mixed array value </td></tr>
+    <tr><td class="paramname">value</td><td>the return mixed array value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if key and value are found and returned.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>oc_rep_set_{type} </dd></dl>
+
+</div>
+</div>
 <a id="af7b58edb0d58903145b270a86b3053f3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af7b58edb0d58903145b270a86b3053f3">&#9670;&nbsp;</a></span>oc_rep_i_get_object()</h2>
 
@@ -4699,7 +4828,7 @@ oc_string_array_get_item_size </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__rep_8h.html">oc_rep.h</a></li>
-    <li class="footer">Generated on Fri Jul 7 2023 10:00:50 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jul 14 2023 08:08:00 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
