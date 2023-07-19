@@ -91,6 +91,7 @@ var oc__ri_8h =
       [ "OC_KNX_LDEVID", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444ace9e77f67f3492630a5974f5cd5d2b82", null ],
       [ "OC_KNX_LSM", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444adfd94f251fdcf9f33a7ba375d649e5d7", null ],
       [ "OC_KNX_DOT_KNX", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a9413f1de9a55a764e8e1f014d5b96a30", null ],
+      [ "OC_KNX_G", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444aded8bafa3b380df87f164c5c06bcc441", null ],
       [ "OC_KNX_FINGERPRINT", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444af8db635593b6e8d3aaa1b54f1d5452f7", null ],
       [ "OC_KNX_IA", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a9e24387cef184aa508165c06b7a5bbc9", null ],
       [ "OC_KNX_OSN", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444ad9f96836c0d45887ba019d37432ef7ed", null ],
