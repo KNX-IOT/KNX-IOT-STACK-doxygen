@@ -142,6 +142,12 @@ Macros</h2></td></tr>
 <tr class="memitem:a877004310f723b439d13e3c3d1b4c901"><td class="memItemLeft" align="right" valign="top"><a id="a877004310f723b439d13e3c3d1b4c901"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_double_array_size</b>(ocdoublearray)&#160;&#160;&#160;((ocdoublearray).size)</td></tr>
 <tr class="separator:a877004310f723b439d13e3c3d1b4c901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c5ad9106edd699d27876d208b8d5a77"><td class="memItemLeft" align="right" valign="top"><a id="a0c5ad9106edd699d27876d208b8d5a77"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_float_array</b>(ocfloatarray)&#160;&#160;&#160;(oc_cast(ocfloatarray, float))</td></tr>
+<tr class="separator:a0c5ad9106edd699d27876d208b8d5a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35dedd206bb9abe81e528acf68b546b6"><td class="memItemLeft" align="right" valign="top"><a id="a35dedd206bb9abe81e528acf68b546b6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_float_array_size</b>(ocfloatarray)&#160;&#160;&#160;((ocfloatarray).size)</td></tr>
+<tr class="separator:a35dedd206bb9abe81e528acf68b546b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6f18caeccb6d1d823f637bf43254889"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#ae6f18caeccb6d1d823f637bf43254889">oc_free_bool_array</a>(ocarray)&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#aa5f521249e3d1f1731e1babe64b75148">_oc_free_array</a>(ocarray, BYTE_POOL))</td></tr>
 <tr class="memdesc:ae6f18caeccb6d1d823f637bf43254889"><td class="mdescLeft">&#160;</td><td class="mdescRight">free array of booleans  <a href="oc__helpers_8h.html#ae6f18caeccb6d1d823f637bf43254889">More...</a><br /></td></tr>
 <tr class="separator:ae6f18caeccb6d1d823f637bf43254889"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +157,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a4c22b4de420e3f649835616d377788ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a4c22b4de420e3f649835616d377788ad">oc_free_double_array</a>(ocarray)&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#aa5f521249e3d1f1731e1babe64b75148">_oc_free_array</a>(ocarray, DOUBLE_POOL))</td></tr>
 <tr class="memdesc:a4c22b4de420e3f649835616d377788ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">free array of doubles  <a href="oc__helpers_8h.html#a4c22b4de420e3f649835616d377788ad">More...</a><br /></td></tr>
 <tr class="separator:a4c22b4de420e3f649835616d377788ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af470ee6257148a68d122ba00052d4f05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#af470ee6257148a68d122ba00052d4f05">oc_free_float_array</a>(ocarray)&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#aa5f521249e3d1f1731e1babe64b75148">_oc_free_array</a>(ocarray, FLOAT_POOL))</td></tr>
+<tr class="memdesc:af470ee6257148a68d122ba00052d4f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">free array of floats  <a href="oc__helpers_8h.html#af470ee6257148a68d122ba00052d4f05">More...</a><br /></td></tr>
+<tr class="separator:af470ee6257148a68d122ba00052d4f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4345508db708829ef62c6ee792654d94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a4345508db708829ef62c6ee792654d94">oc_free_int_array</a>(ocarray)&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#aa5f521249e3d1f1731e1babe64b75148">_oc_free_array</a>(ocarray, INT_POOL))</td></tr>
 <tr class="memdesc:a4345508db708829ef62c6ee792654d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">free array of integers  <a href="oc__helpers_8h.html#a4345508db708829ef62c6ee792654d94">More...</a><br /></td></tr>
 <tr class="separator:a4345508db708829ef62c6ee792654d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,6 +187,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ab6b20c7490aad4e32d1d2c8aaf2946ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#ab6b20c7490aad4e32d1d2c8aaf2946ac">oc_new_double_array</a>(ocarray,  size)&#160;&#160;&#160;  (<a class="el" href="oc__helpers_8h.html#a0943d88282589224213101261fc12025">_oc_new_array</a>(ocarray, size, DOUBLE_POOL))</td></tr>
 <tr class="memdesc:ab6b20c7490aad4e32d1d2c8aaf2946ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">new double array  <a href="oc__helpers_8h.html#ab6b20c7490aad4e32d1d2c8aaf2946ac">More...</a><br /></td></tr>
 <tr class="separator:ab6b20c7490aad4e32d1d2c8aaf2946ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5aa929a0e4f8d4a14893ae3082d27ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#ad5aa929a0e4f8d4a14893ae3082d27ca">oc_new_float_array</a>(ocarray,  size)&#160;&#160;&#160;  (<a class="el" href="oc__helpers_8h.html#a0943d88282589224213101261fc12025">_oc_new_array</a>(ocarray, size, FLOAT_POOL))</td></tr>
+<tr class="memdesc:ad5aa929a0e4f8d4a14893ae3082d27ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">new float array  <a href="oc__helpers_8h.html#ad5aa929a0e4f8d4a14893ae3082d27ca">More...</a><br /></td></tr>
+<tr class="separator:ad5aa929a0e4f8d4a14893ae3082d27ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af264a8cc459240766e47fd1062f71184"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#af264a8cc459240766e47fd1062f71184">oc_new_int_array</a>(ocarray,  size)&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#a0943d88282589224213101261fc12025">_oc_new_array</a>(ocarray, size, INT_POOL))</td></tr>
 <tr class="memdesc:af264a8cc459240766e47fd1062f71184"><td class="mdescLeft">&#160;</td><td class="mdescRight">new integer array  <a href="oc__helpers_8h.html#af264a8cc459240766e47fd1062f71184">More...</a><br /></td></tr>
 <tr class="separator:af264a8cc459240766e47fd1062f71184"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -395,7 +407,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>allocate oc_string </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00097">97</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00101">101</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -417,7 +429,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>free array of booleans </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00129">129</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00133">133</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -439,7 +451,29 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>free array of doubles </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00135">135</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00145">145</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+
+</div>
+</div>
+<a id="af470ee6257148a68d122ba00052d4f05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af470ee6257148a68d122ba00052d4f05">&#9670;&nbsp;</a></span>oc_free_float_array</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define oc_free_float_array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ocarray</td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#aa5f521249e3d1f1731e1babe64b75148">_oc_free_array</a>(ocarray, FLOAT_POOL))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>free array of floats </p>
+
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00139">139</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -461,7 +495,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>free array of integers </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00123">123</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00127">127</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -483,7 +517,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>free ocstring </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00117">117</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00121">121</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -505,7 +539,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>free oc string array </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00168">168</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00185">185</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -537,7 +571,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>new boolean array </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00147">147</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00157">157</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -575,7 +609,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>create new (byte) string from string (not null terminated) </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00110">110</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00114">114</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -607,7 +641,39 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>new double array </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00154">154</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00171">171</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+
+</div>
+</div>
+<a id="ad5aa929a0e4f8d4a14893ae3082d27ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5aa929a0e4f8d4a14893ae3082d27ca">&#9670;&nbsp;</a></span>oc_new_float_array</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define oc_new_float_array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ocarray, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;  (<a class="el" href="oc__helpers_8h.html#a0943d88282589224213101261fc12025">_oc_new_array</a>(ocarray, size, FLOAT_POOL))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>new float array </p>
+
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00164">164</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -639,7 +705,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>new integer array </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00141">141</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00151">151</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -677,7 +743,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>create new string from string (null terminated) </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00103">103</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00107">107</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -709,7 +775,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 
 <p>new oc string array </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00161">161</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00178">178</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -2147,7 +2213,7 @@ false </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Mon Jul 24 2023 13:19:05 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jul 24 2023 14:57:52 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
