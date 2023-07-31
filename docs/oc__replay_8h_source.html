@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>KNX IoT: Globals</title>
+<title>KNX IoT: oc_replay.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,7 +64,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('globals_t.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('oc__replay_8h_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -82,37 +82,40 @@ $(document).ready(function(){initNavTree('globals_t.html',''); initResizable(); 
 </iframe>
 </div>
 
+<div class="header">
+  <div class="headertitle">
+<div class="title">oc_replay.h</div>  </div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all documented functions, variables, defines, enums, and typedefs with links to the documentation:</div>
-
-<h3><a id="index_t"></a>- t -</h3><ul>
-<li>TCP
-: <a class="el" href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78aa040cd7feeb588104634cdadf35abf1c">oc_endpoint.h</a>
-</li>
-<li>tcp_csm_state_t
-: <a class="el" href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5">oc_connectivity.h</a>
-</li>
-<li>TEXT_CSV
-: <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714fad38e8b48c749c8e181c4121542569996">oc_ri.h</a>
-</li>
-<li>TEXT_HTML
-: <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714fadc660590711150dd66411a306ccd0ee6">oc_ri.h</a>
-</li>
-<li>TEXT_PLAIN
-: <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714fa01abe8b1134f6dcd8a242afa0522ed20">oc_ri.h</a>
-</li>
-<li>TEXT_XML
-: <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714fae85220b59258b5e200abe5d56979e41e">oc_ri.h</a>
-</li>
-<li>transport_flags
-: <a class="el" href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78">oc_endpoint.h</a>
-</li>
-</ul>
-</div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef OC_REPLAY_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define OC_REPLAY_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="oc__helpers_8h.html">oc_helpers.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> oc_replay_add_client(uint64_t rx_ssn, oc_string_t rx_kid,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                          oc_string_t rx_kid_ctx);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">bool</span> oc_replay_check_client(uint64_t rx_ssn, oc_string_t rx_kid,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                            oc_string_t rx_kid_ctx);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> oc_replay_free_client(oc_string_t rx_kid);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// OC_REPLAY_H</span></div>
+<div class="ttc" id="aoc__helpers_8h_html"><div class="ttname"><a href="oc__helpers_8h.html">oc_helpers.h</a></div><div class="ttdoc">generic helpers</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><b>oc_replay.h</b></li>
     <li class="footer">Generated on Mon Jul 31 2023 10:20:48 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

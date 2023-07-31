@@ -38,6 +38,7 @@ var files_dup =
     [ "oc_programming_mode.h", "oc__programming__mode_8h.html", "oc__programming__mode_8h" ],
     [ "oc_random.h", "oc__random_8h.html", "oc__random_8h" ],
     [ "oc_rep.h", "oc__rep_8h.html", "oc__rep_8h" ],
+    [ "oc_replay.h", "oc__replay_8h_source.html", null ],
     [ "oc_ri.h", "oc__ri_8h.html", "oc__ri_8h" ],
     [ "oc_session_events.h", "oc__session__events_8h.html", "oc__session__events_8h" ],
     [ "oc_signal_event_loop.h", "oc__signal__event__loop_8h.html", "oc__signal__event__loop_8h" ],

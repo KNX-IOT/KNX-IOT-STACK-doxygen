@@ -287,6 +287,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_oc_copy_string_to_ar
 <tr class="memitem:a7df71d9866aab7d0d437a99cb766104b"><td class="memItemLeft" align="right" valign="top"><a id="a7df71d9866aab7d0d437a99cb766104b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>_oc_string_array_add_item</b> (oc_string_array_t *ocstringarray, const char str[])</td></tr>
 <tr class="separator:a7df71d9866aab7d0d437a99cb766104b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a374e6fbfb07db7a436bd33ba15511549"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a374e6fbfb07db7a436bd33ba15511549">oc_byte_string_cmp</a> (oc_string_t string1, oc_string_t string2)</td></tr>
+<tr class="memdesc:a374e6fbfb07db7a436bd33ba15511549"><td class="mdescLeft">&#160;</td><td class="mdescRight">oc_string compare for byte strings (no null terminator)  <a href="oc__helpers_8h.html#a374e6fbfb07db7a436bd33ba15511549">More...</a><br /></td></tr>
+<tr class="separator:a374e6fbfb07db7a436bd33ba15511549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a477c7e4951fd2241cdaf61682441d3e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a477c7e4951fd2241cdaf61682441d3e3">oc_byte_string_copy</a> (oc_string_t *string1, oc_string_t string2)</td></tr>
+<tr class="memdesc:a477c7e4951fd2241cdaf61682441d3e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy oc_string used as a byte string  <a href="oc__helpers_8h.html#a477c7e4951fd2241cdaf61682441d3e3">More...</a><br /></td></tr>
+<tr class="separator:a477c7e4951fd2241cdaf61682441d3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abffe9bdbbb9dd34a354d344b8522002b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#abffe9bdbbb9dd34a354d344b8522002b">oc_byte_string_copy_from_char_with_size</a> (oc_string_t *string1, const char *string2, size_t string2_len)</td></tr>
 <tr class="memdesc:abffe9bdbbb9dd34a354d344b8522002b"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy byte string from char*  <a href="oc__helpers_8h.html#abffe9bdbbb9dd34a354d344b8522002b">More...</a><br /></td></tr>
 <tr class="separator:abffe9bdbbb9dd34a354d344b8522002b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1090,6 +1096,82 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a374e6fbfb07db7a436bd33ba15511549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a374e6fbfb07db7a436bd33ba15511549">&#9670;&nbsp;</a></span>oc_byte_string_cmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_byte_string_cmp </td>
+          <td>(</td>
+          <td class="paramtype">oc_string_t&#160;</td>
+          <td class="paramname"><em>string1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_string_t&#160;</td>
+          <td class="paramname"><em>string2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>oc_string compare for byte strings (no null terminator) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string1</td><td>byte string 1 to be compared </td></tr>
+    <tr><td class="paramname">string2</td><td>byte string 2 to be compared </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 == equal </dd></dl>
+
+</div>
+</div>
+<a id="a477c7e4951fd2241cdaf61682441d3e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a477c7e4951fd2241cdaf61682441d3e3">&#9670;&nbsp;</a></span>oc_byte_string_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_byte_string_copy </td>
+          <td>(</td>
+          <td class="paramtype">oc_string_t *&#160;</td>
+          <td class="paramname"><em>string1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_string_t&#160;</td>
+          <td class="paramname"><em>string2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>copy oc_string used as a byte string </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string1</td><td>the oc_string to copy to </td></tr>
+    <tr><td class="paramname">string2</td><td>the oc_string to copy from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 == success </dd></dl>
 
 </div>
 </div>
@@ -2213,7 +2295,7 @@ false </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Mon Jul 24 2023 16:15:58 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jul 31 2023 10:20:48 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
