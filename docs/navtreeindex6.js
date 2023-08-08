@@ -1,5 +1,12 @@
 var NAVTREEINDEX6 =
 {
+"structoc__reset__t.html#a9586b26cec1ec8c19c811bf5fe5187e0":[2,0,30,0],
+"structoc__resource__s.html":[2,0,31],
+"structoc__resource__s.html#a13c431b95bb7fd7f66fec2f69a7025a3":[2,0,31,9],
+"structoc__resource__s.html#a166cce7286659ef193d310d9efd8c1ad":[2,0,31,8],
+"structoc__resource__s.html#a346935d37428b3e4fa609bd9daac335d":[2,0,31,0],
+"structoc__resource__s.html#a4a50f30a0d108a675e81ead08cca2b0d":[2,0,31,12],
+"structoc__resource__s.html#a60edc21dbdee38530bb29e0a75eaa052":[2,0,31,4],
 "structoc__resource__s.html#a68c97e7ff73ecf882e2b4a126a5c6faa":[2,0,31,7],
 "structoc__resource__s.html#a68d2105369153e6e6dc4b3bbef15e556":[2,0,31,13],
 "structoc__resource__s.html#a6d8fb9d13071b21ec29abe9b9eed7556":[2,0,31,15],
