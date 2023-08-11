@@ -8,7 +8,7 @@ var structoc__request__t =
     [ "query", "structoc__request__t.html#aaecae8680f3cbda9cce2259c965be214", null ],
     [ "query_len", "structoc__request__t.html#a0872855f82eafc3f135c6aee3cf75b8e", null ],
     [ "request_payload", "structoc__request__t.html#ac4751776b29000ba3603ef3392bc64d8", null ],
-    [ "resource", "structoc__request__t.html#ac51d2fe369d26905a4c6c3f409aa014c", null ],
+    [ "resource", "structoc__request__t.html#afc43e71c91ff845b660f028ebcae483f", null ],
     [ "response", "structoc__request__t.html#a26fe19251a9e8be9067a3e0cd6a09270", null ],
     [ "uri_path", "structoc__request__t.html#a672b6e197310d5dcbcc01c926899b16c", null ],
     [ "uri_path_len", "structoc__request__t.html#a004860d033a9373e5dbdd330b077370e", null ]

@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('oc__core__res_8h.html',''); initResiza
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -112,6 +113,24 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__platform__info__t.html">oc_platform_info_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">platform information  <a href="structoc__platform__info__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a57e2d18b17f58a5ca16a8aac5ef93e12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a57e2d18b17f58a5ca16a8aac5ef93e12">OC_CORE_CREATE_CONST_RESOURCE_FINAL</a>(resource_name, ...)</td></tr>
+<tr class="memdesc:a57e2d18b17f58a5ca16a8aac5ef93e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create const CORE linked to a final, non-const dummy.  <a href="oc__core__res_8h.html#a57e2d18b17f58a5ca16a8aac5ef93e12">More...</a><br /></td></tr>
+<tr class="separator:a57e2d18b17f58a5ca16a8aac5ef93e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a8f802fdccc401ee10a141faea7bfe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a43a8f802fdccc401ee10a141faea7bfe">OC_CORE_CREATE_CONST_RESOURCE_INTERNAL</a>( resource_name,  next_resource,  device_index,  uri,  iface_mask,  content_format,  properties,  get_cb,  put_cb,  post_cb,  delete_cb,  dpt,  num_resource_types,  ...)</td></tr>
+<tr class="memdesc:a43a8f802fdccc401ee10a141faea7bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create const CORE resource Should only be used internally!  <a href="oc__core__res_8h.html#a43a8f802fdccc401ee10a141faea7bfe">More...</a><br /></td></tr>
+<tr class="separator:a43a8f802fdccc401ee10a141faea7bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add84799be13f0d595f6de5a740aa8867"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#add84799be13f0d595f6de5a740aa8867">OC_CORE_CREATE_CONST_RESOURCE_LINKED</a>(resource_name,  next_resource,  ...)</td></tr>
+<tr class="memdesc:add84799be13f0d595f6de5a740aa8867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create const CORE linked to the next one.  <a href="oc__core__res_8h.html#add84799be13f0d595f6de5a740aa8867">More...</a><br /></td></tr>
+<tr class="separator:add84799be13f0d595f6de5a740aa8867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d70d1f6a53601305b5d7b95af7d4ab4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a6d70d1f6a53601305b5d7b95af7d4ab4">OC_CORE_EXTERN_CONST_RESOURCE</a>(resource_name)&#160;&#160;&#160;  extern const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> core_resource_##resource_name;</td></tr>
+<tr class="memdesc:a6d70d1f6a53601305b5d7b95af7d4ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">generate an <code>extern</code> declaration of a core const resource  <a href="oc__core__res_8h.html#a6d70d1f6a53601305b5d7b95af7d4ab4">More...</a><br /></td></tr>
+<tr class="separator:a6d70d1f6a53601305b5d7b95af7d4ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c5c868402234e8251c5f4e926ff6b12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a2c5c868402234e8251c5f4e926ff6b12">OC_CORE_RESOURCE_NAME</a>(name)&#160;&#160;&#160;core_resource_##name</td></tr>
+<tr class="memdesc:a2c5c868402234e8251c5f4e926ff6b12"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the internal name of a core const resource  <a href="oc__core__res_8h.html#a2c5c868402234e8251c5f4e926ff6b12">More...</a><br /></td></tr>
+<tr class="separator:a2c5c868402234e8251c5f4e926ff6b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -157,12 +176,12 @@ Functions</h2></td></tr>
 <tr class="memitem:adaf7f631c7ddea5e0e6e8bd50495a160"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__platform__info__t.html">oc_platform_info_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#adaf7f631c7ddea5e0e6e8bd50495a160">oc_core_get_platform_info</a> (void)</td></tr>
 <tr class="memdesc:adaf7f631c7ddea5e0e6e8bd50495a160"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the platform information  <a href="oc__core__res_8h.html#adaf7f631c7ddea5e0e6e8bd50495a160">More...</a><br /></td></tr>
 <tr class="separator:adaf7f631c7ddea5e0e6e8bd50495a160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdf03e702cf42d39a4cf97fe0139a073"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#afdf03e702cf42d39a4cf97fe0139a073">oc_core_get_resource_by_index</a> (int type, size_t device)</td></tr>
-<tr class="memdesc:afdf03e702cf42d39a4cf97fe0139a073"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the resource by type (e.g.  <a href="oc__core__res_8h.html#afdf03e702cf42d39a4cf97fe0139a073">More...</a><br /></td></tr>
-<tr class="separator:afdf03e702cf42d39a4cf97fe0139a073"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f16b93c49240e6e11224b6a92a29fb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a0f16b93c49240e6e11224b6a92a29fb5">oc_core_get_resource_by_uri</a> (const char *uri, size_t device)</td></tr>
-<tr class="memdesc:a0f16b93c49240e6e11224b6a92a29fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the resource by uri  <a href="oc__core__res_8h.html#a0f16b93c49240e6e11224b6a92a29fb5">More...</a><br /></td></tr>
-<tr class="separator:a0f16b93c49240e6e11224b6a92a29fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a764d6177f6edd5eda701405c3d99cb0b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a764d6177f6edd5eda701405c3d99cb0b">oc_core_get_resource_by_index</a> (int type, size_t device)</td></tr>
+<tr class="memdesc:a764d6177f6edd5eda701405c3d99cb0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the resource by type (e.g.  <a href="oc__core__res_8h.html#a764d6177f6edd5eda701405c3d99cb0b">More...</a><br /></td></tr>
+<tr class="separator:a764d6177f6edd5eda701405c3d99cb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ef7245289661ccd70e1fcb6d329fb14"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a5ef7245289661ccd70e1fcb6d329fb14">oc_core_get_resource_by_uri</a> (const char *uri, size_t device)</td></tr>
+<tr class="memdesc:a5ef7245289661ccd70e1fcb6d329fb14"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the resource by uri  <a href="oc__core__res_8h.html#a5ef7245289661ccd70e1fcb6d329fb14">More...</a><br /></td></tr>
+<tr class="separator:a5ef7245289661ccd70e1fcb6d329fb14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae047207ba3bd0e6109eb5516e2557412"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#ae047207ba3bd0e6109eb5516e2557412">oc_core_init</a> (void)</td></tr>
 <tr class="memdesc:ae047207ba3bd0e6109eb5516e2557412"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize the core functionality  <a href="oc__core__res_8h.html#ae047207ba3bd0e6109eb5516e2557412">More...</a><br /></td></tr>
 <tr class="separator:ae047207ba3bd0e6109eb5516e2557412"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,12 +236,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a4f83145f9b94c3e531f7008959dec07b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a4f83145f9b94c3e531f7008959dec07b">oc_core_shutdown</a> (void)</td></tr>
 <tr class="memdesc:a4f83145f9b94c3e531f7008959dec07b"><td class="mdescLeft">&#160;</td><td class="mdescRight">shutdown the core functionality  <a href="oc__core__res_8h.html#a4f83145f9b94c3e531f7008959dec07b">More...</a><br /></td></tr>
 <tr class="separator:a4f83145f9b94c3e531f7008959dec07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54f086305df0e501d8bcb805037667f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a54f086305df0e501d8bcb805037667f5">oc_filter_resource_by_if</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
-<tr class="memdesc:a54f086305df0e501d8bcb805037667f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">filter if the query parameters of the request contains the resource (determined by resource type "if") including wild carts  <a href="oc__core__res_8h.html#a54f086305df0e501d8bcb805037667f5">More...</a><br /></td></tr>
-<tr class="separator:a54f086305df0e501d8bcb805037667f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac90407354ec43f8e8603d86e3dd22698"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#ac90407354ec43f8e8603d86e3dd22698">oc_filter_resource_by_rt</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
-<tr class="memdesc:ac90407354ec43f8e8603d86e3dd22698"><td class="mdescLeft">&#160;</td><td class="mdescRight">filter if the query parameters of the request contains the resource (determined by resource type "rt") including wild carts  <a href="oc__core__res_8h.html#ac90407354ec43f8e8603d86e3dd22698">More...</a><br /></td></tr>
-<tr class="separator:ac90407354ec43f8e8603d86e3dd22698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462cf976b5fc4f10cbcc9ef1ea7e8a3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a462cf976b5fc4f10cbcc9ef1ea7e8a3a">oc_filter_resource_by_if</a> (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
+<tr class="memdesc:a462cf976b5fc4f10cbcc9ef1ea7e8a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">filter if the query parameters of the request contains the resource (determined by resource type "if") including wild carts  <a href="oc__core__res_8h.html#a462cf976b5fc4f10cbcc9ef1ea7e8a3a">More...</a><br /></td></tr>
+<tr class="separator:a462cf976b5fc4f10cbcc9ef1ea7e8a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a638e348d07bc902a445c4d27be41913f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a638e348d07bc902a445c4d27be41913f">oc_filter_resource_by_rt</a> (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
+<tr class="memdesc:a638e348d07bc902a445c4d27be41913f"><td class="mdescLeft">&#160;</td><td class="mdescRight">filter if the query parameters of the request contains the resource (determined by resource type "rt") including wild carts  <a href="oc__core__res_8h.html#a638e348d07bc902a445c4d27be41913f">More...</a><br /></td></tr>
+<tr class="separator:a638e348d07bc902a445c4d27be41913f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58cf0654b6fc6f53beaac42fbe15bea6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a58cf0654b6fc6f53beaac42fbe15bea6">oc_frame_interfaces_mask_in_response</a> (<a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask, int truncated)</td></tr>
 <tr class="memdesc:a58cf0654b6fc6f53beaac42fbe15bea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">frame the interface mask in the response, as string in the uri example: full tag if= ":if.i" this function frames ":if.i" (truncated) or "urn:knx:if.i"  <a href="oc__core__res_8h.html#a58cf0654b6fc6f53beaac42fbe15bea6">More...</a><br /></td></tr>
 <tr class="separator:a58cf0654b6fc6f53beaac42fbe15bea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,7 +250,263 @@ Functions</h2></td></tr>
 <div class="textblock"><p>KNX mandatory resources implementation. </p>
 
 <p class="definition">Definition in file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
-</div><h2 class="groupheader">Typedef Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a57e2d18b17f58a5ca16a8aac5ef93e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57e2d18b17f58a5ca16a8aac5ef93e12">&#9670;&nbsp;</a></span>OC_CORE_CREATE_CONST_RESOURCE_FINAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OC_CORE_CREATE_CONST_RESOURCE_FINAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">resource_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  oc_resource_dummy_t core_resource_##resource_name##_final = { NULL, -1 };    \</div>
+<div class="line">  OC_CORE_CREATE_CONST_RESOURCE_INTERNAL(resource_name, resource_name##_final, \</div>
+<div class="line">                                         __VA_ARGS__)</div>
+</div><!-- fragment -->
+<p>Create const CORE linked to a final, non-const dummy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resource_name</td><td>name of this resource </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00108">108</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
+
+</div>
+</div>
+<a id="a43a8f802fdccc401ee10a141faea7bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43a8f802fdccc401ee10a141faea7bfe">&#9670;&nbsp;</a></span>OC_CORE_CREATE_CONST_RESOURCE_INTERNAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OC_CORE_CREATE_CONST_RESOURCE_INTERNAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">resource_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">next_resource, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">device_index, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">uri, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">iface_mask, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">content_format, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">properties, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">get_cb, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">put_cb, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">post_cb, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">delete_cb, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dpt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">num_resource_types, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  oc_ri_create_const_resource_internal(                                        \</div>
+<div class="line">    core_resource_##next_resource, core_resource_##resource_name,              \</div>
+<div class="line">    device_index, NULL, uri, dpt, iface_mask, content_format, properties,      \</div>
+<div class="line">    get_cb, put_cb, post_cb, delete_cb, NULL, 0, 0, num_resource_types,        \</div>
+<div class="line">    __VA_ARGS__)</div>
+</div><!-- fragment -->
+<p>Create const CORE resource Should only be used internally! </p>
+
+<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00062">62</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
+
+</div>
+</div>
+<a id="add84799be13f0d595f6de5a740aa8867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add84799be13f0d595f6de5a740aa8867">&#9670;&nbsp;</a></span>OC_CORE_CREATE_CONST_RESOURCE_LINKED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OC_CORE_CREATE_CONST_RESOURCE_LINKED</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">resource_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">next_resource, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">extern</span> <span class="keyword">const</span> <a class="code" href="structoc__resource__s.html">oc_resource_t</a> core_resource_##next_resource;                    \</div>
+<div class="line">  OC_CORE_CREATE_CONST_RESOURCE_INTERNAL(resource_name, next_resource,         \</div>
+<div class="line">                                         __VA_ARGS__)</div>
+<div class="ttc" id="astructoc__resource__s_html"><div class="ttname"><a href="structoc__resource__s.html">oc_resource_s</a></div><div class="ttdoc">resource structure</div><div class="ttdef"><b>Definition:</b> <a href="oc__ri_8h_source.html#l00480">oc_ri.h:481</a></div></div>
+</div><!-- fragment -->
+<p>Create const CORE linked to the next one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resource_name</td><td>name of this resource </td></tr>
+    <tr><td class="paramname">next_resource</td><td>name of next resource </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00087">87</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
+
+</div>
+</div>
+<a id="a6d70d1f6a53601305b5d7b95af7d4ab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d70d1f6a53601305b5d7b95af7d4ab4">&#9670;&nbsp;</a></span>OC_CORE_EXTERN_CONST_RESOURCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OC_CORE_EXTERN_CONST_RESOURCE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">resource_name</td><td>)</td>
+          <td>&#160;&#160;&#160;  extern const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> core_resource_##resource_name;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>generate an <code>extern</code> declaration of a core const resource </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resource_name</td><td>name of resource to create decl for </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00038">38</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
+
+</div>
+</div>
+<a id="a2c5c868402234e8251c5f4e926ff6b12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c5c868402234e8251c5f4e926ff6b12">&#9670;&nbsp;</a></span>OC_CORE_RESOURCE_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OC_CORE_RESOURCE_NAME</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name</td><td>)</td>
+          <td>&#160;&#160;&#160;core_resource_##name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the internal name of a core const resource </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>name of resource </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00045">45</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
 <a id="aaef8fad58f22d24cd42a6e6b07d22e37"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaef8fad58f22d24cd42a6e6b07d22e37">&#9670;&nbsp;</a></span>oc_core_add_device_cb_t</h2>
 
@@ -246,7 +521,7 @@ Functions</h2></td></tr>
 
 <p>callback for adding a device </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00043">43</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00124">124</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
 
 </div>
 </div>
@@ -264,7 +539,7 @@ Functions</h2></td></tr>
 
 <p>callback for initializing the platform </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00037">37</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00118">118</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
 
 </div>
 </div>
@@ -590,14 +865,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afdf03e702cf42d39a4cf97fe0139a073"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdf03e702cf42d39a4cf97fe0139a073">&#9670;&nbsp;</a></span>oc_core_get_resource_by_index()</h2>
+<a id="a764d6177f6edd5eda701405c3d99cb0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a764d6177f6edd5eda701405c3d99cb0b">&#9670;&nbsp;</a></span>oc_core_get_resource_by_index()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structoc__resource__s.html">oc_resource_t</a>* oc_core_get_resource_by_index </td>
+          <td class="memname">const <a class="el" href="structoc__resource__s.html">oc_resource_t</a>* oc_core_get_resource_by_index </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>type</em>, </td>
@@ -629,14 +904,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0f16b93c49240e6e11224b6a92a29fb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f16b93c49240e6e11224b6a92a29fb5">&#9670;&nbsp;</a></span>oc_core_get_resource_by_uri()</h2>
+<a id="a5ef7245289661ccd70e1fcb6d329fb14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ef7245289661ccd70e1fcb6d329fb14">&#9670;&nbsp;</a></span>oc_core_get_resource_by_uri()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structoc__resource__s.html">oc_resource_t</a>* oc_core_get_resource_by_uri </td>
+          <td class="memname">const <a class="el" href="structoc__resource__s.html">oc_resource_t</a>* oc_core_get_resource_by_uri </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>uri</em>, </td>
@@ -1433,8 +1708,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a54f086305df0e501d8bcb805037667f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54f086305df0e501d8bcb805037667f5">&#9670;&nbsp;</a></span>oc_filter_resource_by_if()</h2>
+<a id="a462cf976b5fc4f10cbcc9ef1ea7e8a3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a462cf976b5fc4f10cbcc9ef1ea7e8a3a">&#9670;&nbsp;</a></span>oc_filter_resource_by_if()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1442,7 +1717,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool oc_filter_resource_by_if </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
         </tr>
         <tr>
@@ -1473,8 +1748,8 @@ false interface type of the resource is not in the request </dd></dl>
 
 </div>
 </div>
-<a id="ac90407354ec43f8e8603d86e3dd22698"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac90407354ec43f8e8603d86e3dd22698">&#9670;&nbsp;</a></span>oc_filter_resource_by_rt()</h2>
+<a id="a638e348d07bc902a445c4d27be41913f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a638e348d07bc902a445c4d27be41913f">&#9670;&nbsp;</a></span>oc_filter_resource_by_rt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1482,7 +1757,7 @@ false interface type of the resource is not in the request </dd></dl>
         <tr>
           <td class="memname">bool oc_filter_resource_by_rt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
         </tr>
         <tr>
@@ -1557,7 +1832,7 @@ false resource type is not in the request </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__core__res_8h.html">oc_core_res.h</a></li>
-    <li class="footer">Generated on Wed Aug 9 2023 10:05:46 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 11 2023 15:58:56 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

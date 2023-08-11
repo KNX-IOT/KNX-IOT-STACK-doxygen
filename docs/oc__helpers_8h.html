@@ -106,15 +106,30 @@ $(document).ready(function(){initNavTree('oc__helpers_8h.html',''); initResizabl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a6eeac44afbfbfca516c728de27b6d118"><td class="memItemLeft" align="right" valign="top"><a id="a6eeac44afbfbfca516c728de27b6d118"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>_ECHO</b></td></tr>
+<tr class="separator:a6eeac44afbfbfca516c728de27b6d118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab704c2d4f8cfaec327ad8791e7f3ed35"><td class="memItemLeft" align="right" valign="top"><a id="ab704c2d4f8cfaec327ad8791e7f3ed35"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>_MAKE_NULL</b>(...)&#160;&#160;&#160;NULL</td></tr>
+<tr class="separator:ab704c2d4f8cfaec327ad8791e7f3ed35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5ab461e92a3e8f7ea5c8bec61a00776"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#aa5ab461e92a3e8f7ea5c8bec61a00776">oc_alloc_string</a>(ocstring,  size)&#160;&#160;&#160;<a class="el" href="oc__helpers_8h.html#a9d4cd17d4100263b9f2be309d0bee2a3">_oc_alloc_string</a>((ocstring), (size))</td></tr>
 <tr class="memdesc:aa5ab461e92a3e8f7ea5c8bec61a00776"><td class="mdescLeft">&#160;</td><td class="mdescRight">allocate oc_string  <a href="oc__helpers_8h.html#aa5ab461e92a3e8f7ea5c8bec61a00776">More...</a><br /></td></tr>
 <tr class="separator:aa5ab461e92a3e8f7ea5c8bec61a00776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd29169560ba0d10d5ab527ff6fe50e3"><td class="memItemLeft" align="right" valign="top"><a id="afd29169560ba0d10d5ab527ff6fe50e3"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_bool_array</b>(ocboolarray)&#160;&#160;&#160;(oc_cast(ocboolarray, bool))</td></tr>
 <tr class="separator:afd29169560ba0d10d5ab527ff6fe50e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23e01028db9f91ff003ca27413b17c9"><td class="memItemLeft" align="right" valign="top"><a id="ae23e01028db9f91ff003ca27413b17c9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_bool_array_create_const</b>(f,  n, ...)&#160;&#160;&#160;  <a class="el" href="oc__helpers_8h.html#ab3e56c77c6030065c9c3fc99184bd5d4">oc_mmem_create_const</a>(n, f((bool[n]){ __VA_ARGS__ }))</td></tr>
+<tr class="separator:ae23e01028db9f91ff003ca27413b17c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad21e5416f99bf6a7afa720c9d6ec627b"><td class="memItemLeft" align="right" valign="top"><a id="ad21e5416f99bf6a7afa720c9d6ec627b"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_bool_array_size</b>(ocboolarray)&#160;&#160;&#160;((ocboolarray).size)</td></tr>
 <tr class="separator:ad21e5416f99bf6a7afa720c9d6ec627b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3283f2204188dab9c2953ef3cd0e2d"><td class="memItemLeft" align="right" valign="top"><a id="a1d3283f2204188dab9c2953ef3cd0e2d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_bool_double_create_const</b>(f,  n, ...)&#160;&#160;&#160;  <a class="el" href="oc__helpers_8h.html#ab3e56c77c6030065c9c3fc99184bd5d4">oc_mmem_create_const</a>(n, f((double[n]){ __VA_ARGS__ }))</td></tr>
+<tr class="separator:a1d3283f2204188dab9c2953ef3cd0e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab61ec0e736458103e859b3e0fea64085"><td class="memItemLeft" align="right" valign="top"><a id="ab61ec0e736458103e859b3e0fea64085"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_bool_float_create_const</b>(f,  n, ...)&#160;&#160;&#160;  <a class="el" href="oc__helpers_8h.html#ab3e56c77c6030065c9c3fc99184bd5d4">oc_mmem_create_const</a>(n, f((float[n]){ __VA_ARGS__ }))</td></tr>
+<tr class="separator:ab61ec0e736458103e859b3e0fea64085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0346af958858647cbebf991f9be1b33c"><td class="memItemLeft" align="right" valign="top"><a id="a0346af958858647cbebf991f9be1b33c"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_byte_string_array_add_item</b>(ocstringarray,  str,  str_len)&#160;&#160;&#160;  (_oc_byte_string_array_add_item(&amp;(ocstringarray), str, str_len))</td></tr>
 <tr class="separator:a0346af958858647cbebf991f9be1b33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,9 +187,15 @@ Macros</h2></td></tr>
 <tr class="memitem:af0e25fdd7b74ead4b9d330f30cf98da8"><td class="memItemLeft" align="right" valign="top"><a id="af0e25fdd7b74ead4b9d330f30cf98da8"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_int_array</b>(ocintarray)&#160;&#160;&#160;(oc_cast(ocintarray, int64_t))</td></tr>
 <tr class="separator:af0e25fdd7b74ead4b9d330f30cf98da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae6ee7f90c2b1175027208f6c80cbb4"><td class="memItemLeft" align="right" valign="top"><a id="aeae6ee7f90c2b1175027208f6c80cbb4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_int_array_create_const</b>(f,  n, ...)&#160;&#160;&#160;  <a class="el" href="oc__helpers_8h.html#ab3e56c77c6030065c9c3fc99184bd5d4">oc_mmem_create_const</a>(n, f((int64_t[n]){ __VA_ARGS__ }))</td></tr>
+<tr class="separator:aeae6ee7f90c2b1175027208f6c80cbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a727102f5d5715caa4b830333fd736550"><td class="memItemLeft" align="right" valign="top"><a id="a727102f5d5715caa4b830333fd736550"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_int_array_size</b>(ocintarray)&#160;&#160;&#160;((ocintarray).size)</td></tr>
 <tr class="separator:a727102f5d5715caa4b830333fd736550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e56c77c6030065c9c3fc99184bd5d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#ab3e56c77c6030065c9c3fc99184bd5d4">oc_mmem_create_const</a>(count,  ptr)</td></tr>
+<tr class="memdesc:ab3e56c77c6030065c9c3fc99184bd5d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper macros to create const versions of oc types These are special and need some help to understand things correctly.  <a href="oc__helpers_8h.html#ab3e56c77c6030065c9c3fc99184bd5d4">More...</a><br /></td></tr>
+<tr class="separator:ab3e56c77c6030065c9c3fc99184bd5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a885d05a580d7abcae59cee72cbd06a63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a885d05a580d7abcae59cee72cbd06a63">oc_new_bool_array</a>(ocarray,  size)&#160;&#160;&#160;  (<a class="el" href="oc__helpers_8h.html#a0943d88282589224213101261fc12025">_oc_new_array</a>(ocarray, size, BYTE_POOL))</td></tr>
 <tr class="memdesc:a885d05a580d7abcae59cee72cbd06a63"><td class="mdescLeft">&#160;</td><td class="mdescRight">new boolean array  <a href="oc__helpers_8h.html#a885d05a580d7abcae59cee72cbd06a63">More...</a><br /></td></tr>
 <tr class="separator:a885d05a580d7abcae59cee72cbd06a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,12 +220,21 @@ Macros</h2></td></tr>
 <tr class="memitem:a41251afd98b8794639301a9ef99e67be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a41251afd98b8794639301a9ef99e67be">oc_new_string_array</a>(ocstringarray,  size)&#160;&#160;&#160;  (<a class="el" href="oc__helpers_8h.html#a79bd60028e1af917dc8f05239e2f23bc">_oc_alloc_string_array</a>(ocstringarray, size))</td></tr>
 <tr class="memdesc:a41251afd98b8794639301a9ef99e67be"><td class="mdescLeft">&#160;</td><td class="mdescRight">new oc string array  <a href="oc__helpers_8h.html#a41251afd98b8794639301a9ef99e67be">More...</a><br /></td></tr>
 <tr class="separator:a41251afd98b8794639301a9ef99e67be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd8d40c288e15364ba1c1ce6864dde63"><td class="memItemLeft" align="right" valign="top"><a id="afd8d40c288e15364ba1c1ce6864dde63"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_SIZE_MANY</b>(x)&#160;&#160;&#160;_ECHO, x</td></tr>
+<tr class="separator:afd8d40c288e15364ba1c1ce6864dde63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c2bc692a2e3870c24ab663910bfe51"><td class="memItemLeft" align="right" valign="top"><a id="ac4c2bc692a2e3870c24ab663910bfe51"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_SIZE_ZERO</b>()&#160;&#160;&#160;_MAKE_NULL, 0</td></tr>
+<tr class="separator:ac4c2bc692a2e3870c24ab663910bfe51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bd70ca9b1f0250da0e76740ce99f7b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(ocstring)&#160;&#160;&#160;(oc_cast(ocstring, char))</td></tr>
 <tr class="memdesc:a5bd70ca9b1f0250da0e76740ce99f7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">cast oc_string to string  <a href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">More...</a><br /></td></tr>
 <tr class="separator:a5bd70ca9b1f0250da0e76740ce99f7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69d33d24dca94f49cf13d757c9934402"><td class="memItemLeft" align="right" valign="top"><a id="a69d33d24dca94f49cf13d757c9934402"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_array_add_item</b>(ocstringarray,  str)&#160;&#160;&#160;  (_oc_string_array_add_item(&amp;(ocstringarray), str))</td></tr>
 <tr class="separator:a69d33d24dca94f49cf13d757c9934402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c711e89eca2d2d06c57da8ac9bd062c"><td class="memItemLeft" align="right" valign="top"><a id="a2c711e89eca2d2d06c57da8ac9bd062c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_array_create_const</b>(f,  n, ...)&#160;&#160;&#160;  <a class="el" href="oc__helpers_8h.html#ab3e56c77c6030065c9c3fc99184bd5d4">oc_mmem_create_const</a>(n, f((char[n][32]){ __VA_ARGS__ }))</td></tr>
+<tr class="separator:a2c711e89eca2d2d06c57da8ac9bd062c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d4225a6ded52a4fa9b85445a1f2cc38"><td class="memItemLeft" align="right" valign="top"><a id="a8d4225a6ded52a4fa9b85445a1f2cc38"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_array_get_allocated_size</b>(ocstringarray)&#160;&#160;&#160;  ((ocstringarray).size / STRING_ARRAY_ITEM_MAX_LEN)</td></tr>
 <tr class="separator:a8d4225a6ded52a4fa9b85445a1f2cc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,6 +250,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a05a966f693c858bc33d7f2969750a193"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a05a966f693c858bc33d7f2969750a193">oc_string_checked</a>(ocstring)&#160;&#160;&#160;  (oc_cast(ocstring, char) ? oc_cast(ocstring, char) : &quot;NULL&quot;)</td></tr>
 <tr class="memdesc:a05a966f693c858bc33d7f2969750a193"><td class="mdescLeft">&#160;</td><td class="mdescRight">cast oc_string to string, replace null pointer results with a pointer to "NULL"  <a href="oc__helpers_8h.html#a05a966f693c858bc33d7f2969750a193">More...</a><br /></td></tr>
 <tr class="separator:a05a966f693c858bc33d7f2969750a193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50acf18cf152e0264ef593efceef84f"><td class="memItemLeft" align="right" valign="top"><a id="ad50acf18cf152e0264ef593efceef84f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_create_const</b>(s)&#160;&#160;&#160;<a class="el" href="oc__helpers_8h.html#ab3e56c77c6030065c9c3fc99184bd5d4">oc_mmem_create_const</a>(sizeof(s), s)</td></tr>
+<tr class="separator:ad50acf18cf152e0264ef593efceef84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7871cb2503f01b029bf4af91ab45e226"><td class="memItemLeft" align="right" valign="top"><a id="a7871cb2503f01b029bf4af91ab45e226"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_len</b>(ocstring)&#160;&#160;&#160;((ocstring).size ? (ocstring).size - 1 : 0)</td></tr>
 <tr class="separator:a7871cb2503f01b029bf4af91ab45e226"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -546,6 +579,48 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 <p>free oc string array </p>
 
 <p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00185">185</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
+
+</div>
+</div>
+<a id="ab3e56c77c6030065c9c3fc99184bd5d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3e56c77c6030065c9c3fc99184bd5d4">&#9670;&nbsp;</a></span>oc_mmem_create_const</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define oc_mmem_create_const</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">count, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptr&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  {                                                                            \</div>
+<div class="line">    NULL, count, ptr                                                           \</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+<p>Helper macros to create const versions of oc types These are special and need some help to understand things correctly. </p>
+<p>creates a const oc_mmem struct unlikely to be used outside of the library </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>number of elements </td></tr>
+    <tr><td class="paramname">ptr</td><td>pointer to const data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="oc__helpers_8h_source.html#l00208">208</a> of file <a class="el" href="oc__helpers_8h_source.html">oc_helpers.h</a>.</p>
 
 </div>
 </div>
@@ -2295,7 +2370,7 @@ false </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Wed Aug 9 2023 10:05:46 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 11 2023 15:58:56 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

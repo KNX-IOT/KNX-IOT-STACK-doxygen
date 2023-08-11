@@ -20,5 +20,6 @@ var searchData=
   ['interfaces_138',['interfaces',['../structoc__resource__s.html#a68c97e7ff73ecf882e2b4a126a5c6faa',1,'oc_resource_s']]],
   ['iot_5frouter_139',['IOT_ROUTER',['../group__doc__module__tag__iot__router.html',1,'']]],
   ['ipv4_140',['IPV4',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78acfc4c1053c60b6cc2a7776c60969f31f',1,'oc_endpoint.h']]],
-  ['ipv6_141',['IPV6',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78aff712168361fe68b2bb6193df4977d3c',1,'oc_endpoint.h']]]
+  ['ipv6_141',['IPV6',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78aff712168361fe68b2bb6193df4977d3c',1,'oc_endpoint.h']]],
+  ['is_5fconst_142',['is_const',['../structoc__resource__s.html#a57ab451ce4d708dfcb67ad35ac5eb165',1,'oc_resource_s']]]
 ];
