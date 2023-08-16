@@ -33,7 +33,7 @@ var NAVTREE =
       [ "Data Fields", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ]
+        [ "Variables", "functions_vars.html", "functions_vars" ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -54,12 +54,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"group__doc__module__tag__server__side.html#gabdcf35ac68c7bc1648a9672dcd0265c1",
-"oc__cred_8h.html",
-"oc__knx__fp_8h.html#a032acd24cbbf972be50c33e90c838cd5",
-"oc__rep_8h.html#a4682d25ed7cef4a2831e1eadaef18e2e",
-"oc__ri_8h.html#a9785665049cc191e499e6afb40088444a7d006e02af1382b2b46ac19dc836075d",
-"structoc__pase__t.html#a1e43177548638f487d7faae8f9b8e86c"
+"group__doc__module__tag__server__side.html#gaa3a125b0f190fcccc7a294b8429e9a7e",
+"oc__core__res_8h.html#a6d70d1f6a53601305b5d7b95af7d4ab4",
+"oc__knx__client_8h.html#a618331f09010160d11265086a466fb86",
+"oc__rep_8h.html#a0a7215aa69b5832cdc374778eee302d1",
+"oc__ri_8h.html#a9785665049cc191e499e6afb40088444a0cf6942e8d95f625cce1a9623c0129e0",
+"structoc__handler__t.html#a919d218b198dc7286a98d486aab5d91b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

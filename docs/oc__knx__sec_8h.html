@@ -114,9 +114,14 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a59959db4a8e4a2ca73d5fd720259413b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413b">oc_at_profile_t</a> { <a class="el" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413ba7560be721e3d248a52d9cd983c9827c6">OC_PROFILE_UNKNOWN</a> = 0
-, <a class="el" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baf60eb5fe6cbe2f1184e7a9ccfc485176">OC_PROFILE_COAP_DTLS</a>
-, <a class="el" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baa59d809c61c6d5cfab4a805a622401e6">OC_PROFILE_COAP_OSCORE</a>
+<tr class="memitem:a59959db4a8e4a2ca73d5fd720259413b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413b">oc_at_profile_t</a> { <br />
+&#160;&#160;<a class="el" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413ba7560be721e3d248a52d9cd983c9827c6">OC_PROFILE_UNKNOWN</a> = 0
+, <a class="el" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baf60eb5fe6cbe2f1184e7a9ccfc485176">OC_PROFILE_COAP_DTLS</a> = 1
+, <a class="el" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baa59d809c61c6d5cfab4a805a622401e6">OC_PROFILE_COAP_OSCORE</a> = 2
+, <a class="el" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413ba981374afb88244c0d9a3ddc83cb35e13">OC_PROFILE_COAP_TLS</a>
+, <br />
+&#160;&#160;<a class="el" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413ba52bbae874c2721c91630195b6c6071ea">OC_PROFILE_COAP_PASE</a> = 255
+<br />
  }</td></tr>
 <tr class="memdesc:a59959db4a8e4a2ca73d5fd720259413b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The token profiles see section 3.5.4.2 Access Token Resource Object.  <a href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413b">More...</a><br /></td></tr>
 <tr class="separator:a59959db4a8e4a2ca73d5fd720259413b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,7 +141,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a6efbbab99c96f259e24a60847d513cc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">find the entry with context_id as id  <a href="oc__knx__sec_8h.html#a6efbbab99c96f259e24a60847d513cc8">More...</a><br /></td></tr>
 <tr class="separator:a6efbbab99c96f259e24a60847d513cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a183a382321a31028a34b6c4ff0791544"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#a183a382321a31028a34b6c4ff0791544">oc_core_get_at_table_size</a> ()</td></tr>
-<tr class="memdesc:a183a382321a31028a34b6c4ff0791544"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the size (amount of total entries) of the auth / at table  <a href="oc__knx__sec_8h.html#a183a382321a31028a34b6c4ff0791544">More...</a><br /></td></tr>
+<tr class="memdesc:a183a382321a31028a34b6c4ff0791544"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the size (amount of total entries) of the auth/at table  <a href="oc__knx__sec_8h.html#a183a382321a31028a34b6c4ff0791544">More...</a><br /></td></tr>
 <tr class="separator:a183a382321a31028a34b6c4ff0791544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9792949855e3ab29f35b1a7b63128b3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#a9792949855e3ab29f35b1a7b63128b3f">oc_core_set_at_table</a> (size_t device_index, int index, <a class="el" href="structoc__auth__at__t.html">oc_auth_at_t</a> entry, bool store)</td></tr>
 <tr class="memdesc:a9792949855e3ab29f35b1a7b63128b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set an entry in the auth/at table  <a href="oc__knx__sec_8h.html#a9792949855e3ab29f35b1a7b63128b3f">More...</a><br /></td></tr>
@@ -148,7 +153,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:afaf7c65ba5a0900511303629bfe41582"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete the /auth/at table will be used in reset of the device  <a href="oc__knx__sec_8h.html#afaf7c65ba5a0900511303629bfe41582">More...</a><br /></td></tr>
 <tr class="separator:afaf7c65ba5a0900511303629bfe41582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0aa129153ff6470692a09dcb6b81350f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__auth__at__t.html">oc_auth_at_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#a0aa129153ff6470692a09dcb6b81350f">oc_get_auth_at_entry</a> (size_t device_index, int index)</td></tr>
-<tr class="memdesc:a0aa129153ff6470692a09dcb6b81350f"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve auth at entry  <a href="oc__knx__sec_8h.html#a0aa129153ff6470692a09dcb6b81350f">More...</a><br /></td></tr>
+<tr class="memdesc:a0aa129153ff6470692a09dcb6b81350f"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve auth/at entry  <a href="oc__knx__sec_8h.html#a0aa129153ff6470692a09dcb6b81350f">More...</a><br /></td></tr>
 <tr class="separator:a0aa129153ff6470692a09dcb6b81350f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabdde0a5c02570eff7eead7719fa28a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#aabdde0a5c02570eff7eead7719fa28a2">oc_if_method_allowed_according_to_mask</a> (<a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask, <a class="el" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26">oc_method_t</a> method)</td></tr>
 <tr class="memdesc:aabdde0a5c02570eff7eead7719fa28a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">is the method allowed according to the interface mask  <a href="oc__knx__sec_8h.html#aabdde0a5c02570eff7eead7719fa28a2">More...</a><br /></td></tr>
@@ -171,14 +176,14 @@ Functions</h2></td></tr>
 <tr class="memitem:abffee6b23a4b6efe2466a6476dd31da3"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#abffee6b23a4b6efe2466a6476dd31da3">oc_oscore_get_rplwdo</a> ()</td></tr>
 <tr class="memdesc:abffee6b23a4b6efe2466a6476dd31da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the replay window  <a href="oc__knx__sec_8h.html#abffee6b23a4b6efe2466a6476dd31da3">More...</a><br /></td></tr>
 <tr class="separator:abffee6b23a4b6efe2466a6476dd31da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa95e32dc82a2bb741cabfcc568396842"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#aa95e32dc82a2bb741cabfcc568396842">oc_oscore_set_auth_device</a> (char *serial_number, int serial_number_size, char *clientrecipient_id, int clientrecipient_id_size, uint8_t *shared_key, int shared_key_size)</td></tr>
-<tr class="memdesc:aa95e32dc82a2bb741cabfcc568396842"><td class="mdescLeft">&#160;</td><td class="mdescRight">set shared (SPAKE) key to the auth at table, on the Device side  <a href="oc__knx__sec_8h.html#aa95e32dc82a2bb741cabfcc568396842">More...</a><br /></td></tr>
-<tr class="separator:aa95e32dc82a2bb741cabfcc568396842"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8970fd79ac56732ff5083ffa5408af1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#af8970fd79ac56732ff5083ffa5408af1">oc_oscore_set_auth_mac</a> (char *serial_number, int serial_number_size, char *clientrecipient_id, int clientrecipient_id_size, uint8_t *shared_key, int shared_key_size)</td></tr>
-<tr class="memdesc:af8970fd79ac56732ff5083ffa5408af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">set shared (SPAKE) key to the auth at table, on the Management Client side  <a href="oc__knx__sec_8h.html#af8970fd79ac56732ff5083ffa5408af1">More...</a><br /></td></tr>
-<tr class="separator:af8970fd79ac56732ff5083ffa5408af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7139c68a420eb5cf47e833760f15cd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#ae7139c68a420eb5cf47e833760f15cd5">oc_oscore_set_auth_device</a> (char *client_senderid, int client_senderid_size, char *clientrecipient_id, int clientrecipient_id_size, uint8_t *shared_key, int shared_key_size)</td></tr>
+<tr class="memdesc:ae7139c68a420eb5cf47e833760f15cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">set shared (SPAKE) key to the auth at table, on the Device side  <a href="oc__knx__sec_8h.html#ae7139c68a420eb5cf47e833760f15cd5">More...</a><br /></td></tr>
+<tr class="separator:ae7139c68a420eb5cf47e833760f15cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a273e3071166cf6be9bc6f14d73034528"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#a273e3071166cf6be9bc6f14d73034528">oc_oscore_set_auth_mac</a> (char *client_senderid, int client_senderid_size, char *clientrecipient_id, int clientrecipient_id_size, uint8_t *shared_key, int shared_key_size)</td></tr>
+<tr class="memdesc:a273e3071166cf6be9bc6f14d73034528"><td class="mdescLeft">&#160;</td><td class="mdescRight">set shared (SPAKE) key to the auth at table, on the Management Client side  <a href="oc__knx__sec_8h.html#a273e3071166cf6be9bc6f14d73034528">More...</a><br /></td></tr>
+<tr class="separator:a273e3071166cf6be9bc6f14d73034528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa314cc4b814d20bfe60564a2aa670667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#aa314cc4b814d20bfe60564a2aa670667">oc_print_auth_at_entry</a> (size_t device_index, int index)</td></tr>
-<tr class="memdesc:aa314cc4b814d20bfe60564a2aa670667"><td class="mdescLeft">&#160;</td><td class="mdescRight">print the auth at entry  <a href="oc__knx__sec_8h.html#aa314cc4b814d20bfe60564a2aa670667">More...</a><br /></td></tr>
+<tr class="memdesc:aa314cc4b814d20bfe60564a2aa670667"><td class="mdescLeft">&#160;</td><td class="mdescRight">print the auth/at entry  <a href="oc__knx__sec_8h.html#aa314cc4b814d20bfe60564a2aa670667">More...</a><br /></td></tr>
 <tr class="separator:aa314cc4b814d20bfe60564a2aa670667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac22087d6e3e3dece6c9938780e152355"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#ac22087d6e3e3dece6c9938780e152355">oc_reset_at_table</a> (size_t device_index, int erase_code)</td></tr>
 <tr class="memdesc:ac22087d6e3e3dece6c9938780e152355"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset the /auth/at table will be used in reset of the device erase_code:  <a href="oc__knx__sec_8h.html#ac22087d6e3e3dece6c9938780e152355">More...</a><br /></td></tr>
@@ -257,9 +262,7 @@ Functions</h2></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">nbf   </td><td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">integer   </td><td class="markdownTableBodyNone">optional    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">sub   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">conditional    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">aud   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">conditional   </td></tr>
+<td class="markdownTableBodyNone">sub   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">conditional   </td></tr>
 </table>
 <p>Specific oscore values (ACE):</p>
 <p><a href="https://datatracker.ietf.org/doc/html/draft-ietf-ace-oscore-profile-19#section-3.2.1">https://datatracker.ietf.org/doc/html/draft-ietf-ace-oscore-profile-19#section-3.2.1</a></p>
@@ -279,7 +282,7 @@ Functions</h2></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">salt   </td><td class="markdownTableBodyNone">18:4:5   </td><td class="markdownTableBodyNone">byte string   </td><td class="markdownTableBodyNone">Master Salt   </td><td class="markdownTableBodyNone">Default empty byte   </td></tr>
 </table>
-<p>string | | contextId | 18:4:6 | byte string | OSCORE ID Context value | omit | | osc_rid | 18:4:7 | byte string | OSCORE RID | - | | osc_id | 18:4:0 | byte string | OSCORE SID | - |</p>
+<p>string | | contextId | 18:4:6 | byte string | OSCORE ID Context value | omit | | osc_id | 18:4:0 | byte string | OSCORE SID | - |</p>
 <p>Example payload: </p><div class="fragment"><div class="line">{</div>
 <div class="line">  <span class="stringliteral">&quot;alg&quot;</span> : <span class="stringliteral">&quot;AES-CCM-16-64-128&quot;</span>,</div>
 <div class="line">  <span class="stringliteral">&quot;id&quot;</span> : b64<span class="stringliteral">&#39;AQ==&#39;</span></div>
@@ -310,17 +313,26 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a59959db4a8e4a2ca73d5fd720259413baa59d809c61c6d5cfab4a805a622401e6"></a>OC_PROFILE_COAP_OSCORE&#160;</td><td class="fielddoc"><p>"coap_oscore" </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a59959db4a8e4a2ca73d5fd720259413ba981374afb88244c0d9a3ddc83cb35e13"></a>OC_PROFILE_COAP_TLS&#160;</td><td class="fielddoc"><p>coap_tls" [OSCORE] for [X.509] certificates with TLS </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a59959db4a8e4a2ca73d5fd720259413ba52bbae874c2721c91630195b6c6071ea"></a>OC_PROFILE_COAP_PASE&#160;</td><td class="fielddoc"><p>"coap_pase" [OSCORE] with PASE credentials </p>
+</td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00069">69</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;             {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413ba7560be721e3d248a52d9cd983c9827c6">OC_PROFILE_UNKNOWN</a> = 0, </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baf60eb5fe6cbe2f1184e7a9ccfc485176">OC_PROFILE_COAP_DTLS</a>,   </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baa59d809c61c6d5cfab4a805a622401e6">OC_PROFILE_COAP_OSCORE</a>  </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;} <a class="code" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413b">oc_at_profile_t</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413ba7560be721e3d248a52d9cd983c9827c6">OC_PROFILE_UNKNOWN</a> = 0,     </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baf60eb5fe6cbe2f1184e7a9ccfc485176">OC_PROFILE_COAP_DTLS</a> = 1,   </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baa59d809c61c6d5cfab4a805a622401e6">OC_PROFILE_COAP_OSCORE</a> = 2, </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413ba981374afb88244c0d9a3ddc83cb35e13">OC_PROFILE_COAP_TLS</a> =</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    254, </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413ba52bbae874c2721c91630195b6c6071ea">OC_PROFILE_COAP_PASE</a> = 255 </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <a class="code" href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413b">oc_at_profile_t</a>;</div>
 <div class="ttc" id="aoc__knx__sec_8h_html_a59959db4a8e4a2ca73d5fd720259413b"><div class="ttname"><a href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413b">oc_at_profile_t</a></div><div class="ttdeci">oc_at_profile_t</div><div class="ttdoc">The token profiles see section 3.5.4.2 Access Token Resource Object.</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__sec_8h_source.html#l00069">oc_knx_sec.h:69</a></div></div>
+<div class="ttc" id="aoc__knx__sec_8h_html_a59959db4a8e4a2ca73d5fd720259413ba52bbae874c2721c91630195b6c6071ea"><div class="ttname"><a href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413ba52bbae874c2721c91630195b6c6071ea">OC_PROFILE_COAP_PASE</a></div><div class="ttdeci">@ OC_PROFILE_COAP_PASE</div><div class="ttdoc">&quot;coap_pase&quot; [OSCORE] with PASE credentials</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__sec_8h_source.html#l00076">oc_knx_sec.h:75</a></div></div>
 <div class="ttc" id="aoc__knx__sec_8h_html_a59959db4a8e4a2ca73d5fd720259413ba7560be721e3d248a52d9cd983c9827c6"><div class="ttname"><a href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413ba7560be721e3d248a52d9cd983c9827c6">OC_PROFILE_UNKNOWN</a></div><div class="ttdeci">@ OC_PROFILE_UNKNOWN</div><div class="ttdoc">unknown profile</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__sec_8h_source.html#l00070">oc_knx_sec.h:70</a></div></div>
-<div class="ttc" id="aoc__knx__sec_8h_html_a59959db4a8e4a2ca73d5fd720259413baa59d809c61c6d5cfab4a805a622401e6"><div class="ttname"><a href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baa59d809c61c6d5cfab4a805a622401e6">OC_PROFILE_COAP_OSCORE</a></div><div class="ttdeci">@ OC_PROFILE_COAP_OSCORE</div><div class="ttdoc">&quot;coap_oscore&quot;</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__sec_8h_source.html#l00073">oc_knx_sec.h:72</a></div></div>
+<div class="ttc" id="aoc__knx__sec_8h_html_a59959db4a8e4a2ca73d5fd720259413ba981374afb88244c0d9a3ddc83cb35e13"><div class="ttname"><a href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413ba981374afb88244c0d9a3ddc83cb35e13">OC_PROFILE_COAP_TLS</a></div><div class="ttdeci">@ OC_PROFILE_COAP_TLS</div><div class="ttdoc">coap_tls&quot; [OSCORE] for [X.509] certificates with TLS</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__sec_8h_source.html#l00074">oc_knx_sec.h:73</a></div></div>
+<div class="ttc" id="aoc__knx__sec_8h_html_a59959db4a8e4a2ca73d5fd720259413baa59d809c61c6d5cfab4a805a622401e6"><div class="ttname"><a href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baa59d809c61c6d5cfab4a805a622401e6">OC_PROFILE_COAP_OSCORE</a></div><div class="ttdeci">@ OC_PROFILE_COAP_OSCORE</div><div class="ttdoc">&quot;coap_oscore&quot;</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__sec_8h_source.html#l00072">oc_knx_sec.h:72</a></div></div>
 <div class="ttc" id="aoc__knx__sec_8h_html_a59959db4a8e4a2ca73d5fd720259413baf60eb5fe6cbe2f1184e7a9ccfc485176"><div class="ttname"><a href="oc__knx__sec_8h.html#a59959db4a8e4a2ca73d5fd720259413baf60eb5fe6cbe2f1184e7a9ccfc485176">OC_PROFILE_COAP_DTLS</a></div><div class="ttdeci">@ OC_PROFILE_COAP_DTLS</div><div class="ttdoc">&quot;coap_dtls&quot;</div><div class="ttdef"><b>Definition:</b> <a href="oc__knx__sec_8h_source.html#l00071">oc_knx_sec.h:71</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -474,8 +486,8 @@ int &gt;=0 : entry found </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>returns the size (amount of total entries) of the auth / at table </p>
-<dl class="section return"><dt>Returns</dt><dd>the allocated amount of entries of the auth at table </dd></dl>
+<p>returns the size (amount of total entries) of the auth/at table </p>
+<dl class="section return"><dt>Returns</dt><dd>the allocated amount of entries of the auth/at table </dd></dl>
 
 </div>
 </div>
@@ -616,7 +628,7 @@ int &gt;=0 : entry found </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>retrieve auth at entry </p>
+<p>retrieve auth/at entry </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device_index</td><td>the device index </td></tr>
@@ -858,8 +870,8 @@ false does not have access </dd></dl>
 
 </div>
 </div>
-<a id="aa95e32dc82a2bb741cabfcc568396842"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa95e32dc82a2bb741cabfcc568396842">&#9670;&nbsp;</a></span>oc_oscore_set_auth_device()</h2>
+<a id="ae7139c68a420eb5cf47e833760f15cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7139c68a420eb5cf47e833760f15cd5">&#9670;&nbsp;</a></span>oc_oscore_set_auth_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -868,13 +880,13 @@ false does not have access </dd></dl>
           <td class="memname">void oc_oscore_set_auth_device </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>serial_number</em>, </td>
+          <td class="paramname"><em>client_senderid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>serial_number_size</em>, </td>
+          <td class="paramname"><em>client_senderid_size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -911,8 +923,8 @@ false does not have access </dd></dl>
 <p>set shared (SPAKE) key to the auth at table, on the Device side </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">serial_number</td><td>the serial_number of the device that has been negotiated with spake2plus. This will become the Sender ID within the OSCORE context. This value is an ASCII-encoded string representing the hexadecimal serial number </td></tr>
-    <tr><td class="paramname">serial_number_size</td><td>the size of the serial number </td></tr>
+    <tr><td class="paramname">client_senderid</td><td>the client_senderid of the device that has been negotiated with spake2plus. This will become the Sender ID within the OSCORE context. This value is an ASCII-encoded string representing the hexadecimal serial number </td></tr>
+    <tr><td class="paramname">client_senderid_size</td><td>the size of the serial number </td></tr>
     <tr><td class="paramname">clientrecipient_id</td><td>the clientrecipient_id (delivered during the handshake). This will become the Receiver ID. This value is in HEX </td></tr>
     <tr><td class="paramname">clientrecipient_id_size</td><td>the size of the clientrecipient_id </td></tr>
     <tr><td class="paramname">shared_key</td><td>the master key after SPAKE2 handshake </td></tr>
@@ -923,8 +935,8 @@ false does not have access </dd></dl>
 
 </div>
 </div>
-<a id="af8970fd79ac56732ff5083ffa5408af1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8970fd79ac56732ff5083ffa5408af1">&#9670;&nbsp;</a></span>oc_oscore_set_auth_mac()</h2>
+<a id="a273e3071166cf6be9bc6f14d73034528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a273e3071166cf6be9bc6f14d73034528">&#9670;&nbsp;</a></span>oc_oscore_set_auth_mac()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -933,13 +945,13 @@ false does not have access </dd></dl>
           <td class="memname">void oc_oscore_set_auth_mac </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>serial_number</em>, </td>
+          <td class="paramname"><em>client_senderid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>serial_number_size</em>, </td>
+          <td class="paramname"><em>client_senderid_size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -976,8 +988,8 @@ false does not have access </dd></dl>
 <p>set shared (SPAKE) key to the auth at table, on the Management Client side </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">serial_number</td><td>the serial_number of the device that has been negotiated with spake2plus. This will become the Receiver ID within the OSCORE context. This value is an ASCII-encoded string representing the hexadecimal serial number </td></tr>
-    <tr><td class="paramname">serial_number_size</td><td>the size of the serial number </td></tr>
+    <tr><td class="paramname">client_senderid</td><td>the client_senderid of the device that has been negotiated with spake2plus. This will become the Receiver ID within the OSCORE context. This value is an ASCII-encoded string representing the hexadecimal serial number </td></tr>
+    <tr><td class="paramname">client_senderid_size</td><td>the size of the serial number </td></tr>
     <tr><td class="paramname">clientrecipient_id</td><td>the clientrecipient_id (delivered during the handshake). This will become the Sender ID. This value is in HEX </td></tr>
     <tr><td class="paramname">clientrecipient_id_size</td><td>the size of the clientrecipient_id </td></tr>
     <tr><td class="paramname">shared_key</td><td>the master key after SPAKE2 handshake </td></tr>
@@ -1014,7 +1026,7 @@ false does not have access </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>print the auth at entry </p>
+<p>print the auth/at entry </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device_index</td><td>the device index </td></tr>
@@ -1099,7 +1111,7 @@ false does not have access </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__sec_8h.html">oc_knx_sec.h</a></li>
-    <li class="footer">Generated on Tue Aug 15 2023 13:50:01 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Aug 16 2023 12:31:48 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

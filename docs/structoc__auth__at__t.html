@@ -98,7 +98,8 @@ $(document).ready(function(){initNavTree('structoc__auth__at__t.html',''); initR
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:ab2cb8047f022fecaa55108e80f6190d9"><td class="memItemLeft" align="right" valign="top">oc_string_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__auth__at__t.html#ab2cb8047f022fecaa55108e80f6190d9">aud</a></td></tr>
-<tr class="memdesc:ab2cb8047f022fecaa55108e80f6190d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">(13) audience (for out going requests)  <a href="structoc__auth__at__t.html#ab2cb8047f022fecaa55108e80f6190d9">More...</a><br /></td></tr>
+<tr class="memdesc:ab2cb8047f022fecaa55108e80f6190d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">not used anymore, references <br  />
+  <a href="structoc__auth__at__t.html#ab2cb8047f022fecaa55108e80f6190d9">More...</a><br /></td></tr>
 <tr class="separator:ab2cb8047f022fecaa55108e80f6190d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9316c816d85fb905550b133d9e4bb55b"><td class="memItemLeft" align="right" valign="top">int64_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__auth__at__t.html#a9316c816d85fb905550b133d9e4bb55b">ga</a></td></tr>
 <tr class="memdesc:a9316c816d85fb905550b133d9e4bb55b"><td class="mdescLeft">&#160;</td><td class="mdescRight">(scope) array of group addresses, for the group objects in the scope, int64_t for framing arrays  <a href="structoc__auth__at__t.html#a9316c816d85fb905550b133d9e4bb55b">More...</a><br /></td></tr>
@@ -119,13 +120,13 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a025e6848bd4b6ceac12dc9f990845ce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">(18:4:4) OSCORE cnf:osc:alg (optional- not used) default: decimal value 10  <a href="structoc__auth__at__t.html#a025e6848bd4b6ceac12dc9f990845ce8">More...</a><br /></td></tr>
 <tr class="separator:a025e6848bd4b6ceac12dc9f990845ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec9b6fc4f2a7fb4b84f321236ad826fd"><td class="memItemLeft" align="right" valign="top">oc_string_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__auth__at__t.html#aec9b6fc4f2a7fb4b84f321236ad826fd">osc_contextid</a></td></tr>
-<tr class="memdesc:aec9b6fc4f2a7fb4b84f321236ad826fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">(18:4:6) OSCORE cnf:osc:contextid (optional) (byte string)  <a href="structoc__auth__at__t.html#aec9b6fc4f2a7fb4b84f321236ad826fd">More...</a><br /></td></tr>
+<tr class="memdesc:aec9b6fc4f2a7fb4b84f321236ad826fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">(18:4:6) OSCORE cnf:osc:contextid used as "kid_context" (byte string, 6 bytes)  <a href="structoc__auth__at__t.html#aec9b6fc4f2a7fb4b84f321236ad826fd">More...</a><br /></td></tr>
 <tr class="separator:aec9b6fc4f2a7fb4b84f321236ad826fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3432a940b2c0b3bad4ca7a85d2ffe3f5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__auth__at__t.html#a3432a940b2c0b3bad4ca7a85d2ffe3f5">osc_hkdf</a></td></tr>
 <tr class="memdesc:a3432a940b2c0b3bad4ca7a85d2ffe3f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">(18:4:3) OSCORE cnf:osc:hkdf (optional-not used) (decimal value)  <a href="structoc__auth__at__t.html#a3432a940b2c0b3bad4ca7a85d2ffe3f5">More...</a><br /></td></tr>
 <tr class="separator:a3432a940b2c0b3bad4ca7a85d2ffe3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a42eef5b06af3c2d6955c1d6894f2dc"><td class="memItemLeft" align="right" valign="top">oc_string_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__auth__at__t.html#a3a42eef5b06af3c2d6955c1d6894f2dc">osc_id</a></td></tr>
-<tr class="memdesc:a3a42eef5b06af3c2d6955c1d6894f2dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">(18:4:0) OSCORE cnf:osc:id (used as SID &amp; KID) (byte string)  <a href="structoc__auth__at__t.html#a3a42eef5b06af3c2d6955c1d6894f2dc">More...</a><br /></td></tr>
+<tr class="memdesc:a3a42eef5b06af3c2d6955c1d6894f2dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">(18:4:0) OSCORE cnf:osc:id (used as SID &amp; KID) (byte string), max 7 bytes  <a href="structoc__auth__at__t.html#a3a42eef5b06af3c2d6955c1d6894f2dc">More...</a><br /></td></tr>
 <tr class="separator:a3a42eef5b06af3c2d6955c1d6894f2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8366545dfadadceb9f2000a046332fd8"><td class="memItemLeft" align="right" valign="top">oc_string_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__auth__at__t.html#a8366545dfadadceb9f2000a046332fd8">osc_ms</a></td></tr>
 <tr class="memdesc:a8366545dfadadceb9f2000a046332fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">(18:4:2) OSCORE cnf:osc:ms (byte string)  <a href="structoc__auth__at__t.html#a8366545dfadadceb9f2000a046332fd8">More...</a><br /></td></tr>
@@ -192,9 +193,7 @@ Data Fields</h2></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">nbf   </td><td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">integer   </td><td class="markdownTableBodyNone">optional    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">sub   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">conditional    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">aud   </td><td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">conditional   </td></tr>
+<td class="markdownTableBodyNone">sub   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">string   </td><td class="markdownTableBodyNone">conditional   </td></tr>
 </table>
 <p>Specific oscore values (ACE):</p>
 <p><a href="https://datatracker.ietf.org/doc/html/draft-ietf-ace-oscore-profile-19#section-3.2.1">https://datatracker.ietf.org/doc/html/draft-ietf-ace-oscore-profile-19#section-3.2.1</a></p>
@@ -214,7 +213,7 @@ Data Fields</h2></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">salt   </td><td class="markdownTableBodyNone">18:4:5   </td><td class="markdownTableBodyNone">byte string   </td><td class="markdownTableBodyNone">Master Salt   </td><td class="markdownTableBodyNone">Default empty byte   </td></tr>
 </table>
-<p>string | | contextId | 18:4:6 | byte string | OSCORE ID Context value | omit | | osc_rid | 18:4:7 | byte string | OSCORE RID | - | | osc_id | 18:4:0 | byte string | OSCORE SID | - |</p>
+<p>string | | contextId | 18:4:6 | byte string | OSCORE ID Context value | omit | | osc_id | 18:4:0 | byte string | OSCORE SID | - |</p>
 <p>Example payload: </p><div class="fragment"><div class="line">{</div>
 <div class="line">  <span class="stringliteral">&quot;alg&quot;</span> : <span class="stringliteral">&quot;AES-CCM-16-64-128&quot;</span>,</div>
 <div class="line">  <span class="stringliteral">&quot;id&quot;</span> : b64<span class="stringliteral">&#39;AQ==&#39;</span></div>
@@ -222,7 +221,7 @@ Data Fields</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><p> Note: maps are not stored. </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00163">163</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00164">164</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="ab2cb8047f022fecaa55108e80f6190d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab2cb8047f022fecaa55108e80f6190d9">&#9670;&nbsp;</a></span>aud</h2>
@@ -236,9 +235,10 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>(13) audience (for out going requests) </p>
+<p>not used anymore, references <br  />
+ </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00169">169</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00170">170</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 
 </div>
 </div>
@@ -256,7 +256,7 @@ Data Fields</h2></td></tr>
 
 <p>(scope) array of group addresses, for the group objects in the scope, int64_t for framing arrays </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00188">188</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00190">190</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 
 </div>
 </div>
@@ -274,7 +274,7 @@ Data Fields</h2></td></tr>
 
 <p>length of the group addresses (ga) in the scope </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00187">187</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00189">189</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 
 </div>
 </div>
@@ -292,7 +292,7 @@ Data Fields</h2></td></tr>
 
 <p>(0) auth/at/{id}, encoding: HEX </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00165">165</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00166">166</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 
 </div>
 </div>
@@ -310,7 +310,7 @@ Data Fields</h2></td></tr>
 
 <p>(8:2) DTLS (not used) cnf:kid </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00171">171</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00172">172</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 
 </div>
 </div>
@@ -328,7 +328,7 @@ Data Fields</h2></td></tr>
 
 <p>token not valid before (optional) </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00186">186</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00188">188</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 
 </div>
 </div>
@@ -346,7 +346,7 @@ Data Fields</h2></td></tr>
 
 <p>(18:4:4) OSCORE cnf:osc:alg (optional- not used) default: decimal value 10 </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00176">176</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00177">177</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 
 </div>
 </div>
@@ -362,9 +362,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>(18:4:6) OSCORE cnf:osc:contextid (optional) (byte string) </p>
+<p>(18:4:6) OSCORE cnf:osc:contextid used as "kid_context" (byte string, 6 bytes) </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00180">180</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00181">181</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 
 </div>
 </div>
@@ -382,7 +382,7 @@ Data Fields</h2></td></tr>
 
 <p>(18:4:3) OSCORE cnf:osc:hkdf (optional-not used) (decimal value) </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00174">174</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00175">175</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 
 </div>
 </div>
@@ -398,9 +398,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>(18:4:0) OSCORE cnf:osc:id (used as SID &amp; KID) (byte string) </p>
+<p>(18:4:0) OSCORE cnf:osc:id (used as SID &amp; KID) (byte string), max 7 bytes </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00182">182</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00184">184</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 
 </div>
 </div>
@@ -418,7 +418,7 @@ Data Fields</h2></td></tr>
 
 <p>(18:4:2) OSCORE cnf:osc:ms (byte string) </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00173">173</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00174">174</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 
 </div>
 </div>
@@ -436,7 +436,7 @@ Data Fields</h2></td></tr>
 
 <p>(18:4:7) OSCORE cnf:osc:rid (recipient ID) (byte string) </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00185">185</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00187">187</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 
 </div>
 </div>
@@ -454,7 +454,7 @@ Data Fields</h2></td></tr>
 
 <p>(18:4:5) OSCORE cnf:osc:salt (optional) empty string </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00179">179</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00180">180</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 
 </div>
 </div>
@@ -472,7 +472,7 @@ Data Fields</h2></td></tr>
 
 <p>(18:4:1) OSCORE cnf:osc:version (optional) </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00172">172</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00173">173</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 
 </div>
 </div>
@@ -490,7 +490,7 @@ Data Fields</h2></td></tr>
 
 <p>(38) "coap_oscore" or "coap_dtls", only oscore implemented </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00168">168</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00169">169</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 
 </div>
 </div>
@@ -508,7 +508,7 @@ Data Fields</h2></td></tr>
 
 <p>(9) the scope (interfaces) </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00166">166</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00167">167</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 
 </div>
 </div>
@@ -526,7 +526,7 @@ Data Fields</h2></td></tr>
 
 <p>(2) DTLS (not used) 2 sub </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00170">170</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__knx__sec_8h_source.html#l00171">171</a> of file <a class="el" href="oc__knx__sec_8h_source.html">oc_knx_sec.h</a>.</p>
 
 </div>
 </div>
@@ -539,7 +539,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structoc__auth__at__t.html">oc_auth_at_t</a></li>
-    <li class="footer">Generated on Tue Aug 15 2023 13:50:01 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Aug 16 2023 12:31:48 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
