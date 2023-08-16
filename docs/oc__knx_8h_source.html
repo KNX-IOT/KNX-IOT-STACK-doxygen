@@ -187,11 +187,15 @@ $(document).ready(function(){initNavTree('oc__knx_8h_source.html',''); initResiz
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
 <div class="line"><a name="l00304"></a><span class="lineno"><a class="line" href="oc__knx_8h.html#a6cdfd9a8213bb8f5199c707039aa327b">  304</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="oc__knx_8h.html#a6cdfd9a8213bb8f5199c707039aa327b">oc_knx_knx_ignore_smessage_from_self</a>(<span class="keywordtype">bool</span> ignore);</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;}</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_KNX_INTERNAL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor">#ifdef OC_SPAKE</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="keywordtype">void</span> oc_initialise_spake_data(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;}</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OC_KNX_INTERNAL_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aoc__api_8h_html"><div class="ttname"><a href="oc__api_8h.html">oc_api.h</a></div><div class="ttdoc">Main API of the stack for client and server.</div></div>
 <div class="ttc" id="aoc__knx_8h_html_a05fe9021ca0d46cbbcdf4fdfc9de7e1e"><div class="ttname"><a href="oc__knx_8h.html#a05fe9021ca0d46cbbcdf4fdfc9de7e1e">oc_knx_dump_fingerprint</a></div><div class="ttdeci">void oc_knx_dump_fingerprint()</div><div class="ttdoc">dump the fingerprint value to storage</div></div>
 <div class="ttc" id="aoc__knx_8h_html_a0b6035c708c8b35d010d0d069d57ed75"><div class="ttname"><a href="oc__knx_8h.html#a0b6035c708c8b35d010d0d069d57ed75">oc_core_get_lsm_event_as_string</a></div><div class="ttdeci">const char * oc_core_get_lsm_event_as_string(oc_lsm_event_t lsm_e)</div><div class="ttdoc">convert the load state machine (lsm) event to string</div></div>
@@ -243,7 +247,7 @@ $(document).ready(function(){initNavTree('oc__knx_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__knx_8h.html">oc_knx.h</a></li>
-    <li class="footer">Generated on Wed Aug 16 2023 12:31:48 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Aug 16 2023 15:08:22 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
