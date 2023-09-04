@@ -140,6 +140,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6efbbab99c96f259e24a60847d513cc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#a6efbbab99c96f259e24a60847d513cc8">oc_core_find_at_entry_with_context_id</a> (size_t device_index, char *context_id)</td></tr>
 <tr class="memdesc:a6efbbab99c96f259e24a60847d513cc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">find the entry with context_id as id  <a href="oc__knx__sec_8h.html#a6efbbab99c96f259e24a60847d513cc8">More...</a><br /></td></tr>
 <tr class="separator:a6efbbab99c96f259e24a60847d513cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4430ea26cc0427d46d3558604536d20f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#a4430ea26cc0427d46d3558604536d20f">oc_core_find_at_entry_with_osc_id</a> (size_t device_index, uint8_t *osc_id, size_t osc_id_len)</td></tr>
+<tr class="memdesc:a4430ea26cc0427d46d3558604536d20f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find an entry with a given OSCORE ID.  <a href="oc__knx__sec_8h.html#a4430ea26cc0427d46d3558604536d20f">More...</a><br /></td></tr>
+<tr class="separator:a4430ea26cc0427d46d3558604536d20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a183a382321a31028a34b6c4ff0791544"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__sec_8h.html#a183a382321a31028a34b6c4ff0791544">oc_core_get_at_table_size</a> ()</td></tr>
 <tr class="memdesc:a183a382321a31028a34b6c4ff0791544"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the size (amount of total entries) of the auth/at table  <a href="oc__knx__sec_8h.html#a183a382321a31028a34b6c4ff0791544">More...</a><br /></td></tr>
 <tr class="separator:a183a382321a31028a34b6c4ff0791544"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -456,7 +459,54 @@ int &gt;=0 : index to place entry </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int -1 : no entry with that name </dd>
 <dd>
-int &gt;=0 : entry found </dd></dl>
+int &gt;=0 : index of found entry </dd></dl>
+
+</div>
+</div>
+<a id="a4430ea26cc0427d46d3558604536d20f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4430ea26cc0427d46d3558604536d20f">&#9670;&nbsp;</a></span>oc_core_find_at_entry_with_osc_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_core_find_at_entry_with_osc_id </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>osc_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>osc_id_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find an entry with a given OSCORE ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device_index</td><td>The device index </td></tr>
+    <tr><td class="paramname">osc_id</td><td>the oscore ID to search for </td></tr>
+    <tr><td class="paramname">osc_id_len</td><td>length of the context </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int -1 : no entry with that oscore id </dd>
+<dd>
+int &gt;= index of found entry </dd></dl>
 
 </div>
 </div>
@@ -1100,7 +1150,7 @@ false does not have access </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__sec_8h.html">oc_knx_sec.h</a></li>
-    <li class="footer">Generated on Wed Aug 30 2023 16:01:24 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 4 2023 14:25:29 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

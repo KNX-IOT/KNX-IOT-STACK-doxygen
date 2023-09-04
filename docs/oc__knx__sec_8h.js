@@ -13,6 +13,7 @@ var oc__knx__sec_8h =
     [ "oc_at_profile_to_string", "oc__knx__sec_8h.html#a6f653943da2ac07d749b2d1a76e6da37", null ],
     [ "oc_core_find_at_entry_empty_slot", "oc__knx__sec_8h.html#aab01c868cfc9d5a6af84d9308e0debfd", null ],
     [ "oc_core_find_at_entry_with_context_id", "oc__knx__sec_8h.html#a6efbbab99c96f259e24a60847d513cc8", null ],
+    [ "oc_core_find_at_entry_with_osc_id", "oc__knx__sec_8h.html#a4430ea26cc0427d46d3558604536d20f", null ],
     [ "oc_core_get_at_table_size", "oc__knx__sec_8h.html#a183a382321a31028a34b6c4ff0791544", null ],
     [ "oc_core_set_at_table", "oc__knx__sec_8h.html#a9792949855e3ab29f35b1a7b63128b3f", null ],
     [ "oc_create_knx_sec_resources", "oc__knx__sec_8h.html#a7132b91e1bc8ff48c4c1dbd7d66b84d8", null ],
