@@ -14,7 +14,7 @@ var structoc__endpoint__t =
     [ "next", "structoc__endpoint__t.html#ab649dfd671bd7ffa4accef34548fc893", null ],
     [ "oscore_id", "structoc__endpoint__t.html#a16af166268213efbf501a5da998e1d51", null ],
     [ "oscore_id_len", "structoc__endpoint__t.html#adc362229ee48487c8220bfd462142371", null ],
-    [ "piv", "structoc__endpoint__t.html#ae1c4c04e3ad28ae5847db4e85059dcd2", null ],
-    [ "piv_len", "structoc__endpoint__t.html#ae45acc4bed4d85d25bf4190257359908", null ],
-    [ "priority", "structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c", null ]
+    [ "priority", "structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c", null ],
+    [ "request_piv", "structoc__endpoint__t.html#a4d91cd694a8666478ea30d712f1223c4", null ],
+    [ "request_piv_len", "structoc__endpoint__t.html#abc1b70c5181b611e2736718b8dd07730", null ]
 ];

@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['ref_5fcount_1037',['ref_count',['../structoc__client__cb__t.html#a8d212098cbfe18fbd9bec648cc0eebb7',1,'oc_client_cb_t']]],
-  ['register_5fresources_1038',['register_resources',['../structoc__handler__t.html#a30a0125aaf993cd9975c700c3a86d5fb',1,'oc_handler_t::register_resources()'],['../lsab__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd',1,'register_resources(void):&#160;lsab_minimal_all.c'],['../lssb__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd',1,'register_resources(void):&#160;lssb_minimal_all.c']]],
-  ['request_5fpayload_1039',['request_payload',['../structoc__request__t.html#ac4751776b29000ba3603ef3392bc64d8',1,'oc_request_t']]],
+  ['ref_5fcount_1035',['ref_count',['../structoc__client__cb__t.html#a8d212098cbfe18fbd9bec648cc0eebb7',1,'oc_client_cb_t']]],
+  ['register_5fresources_1036',['register_resources',['../structoc__handler__t.html#a30a0125aaf993cd9975c700c3a86d5fb',1,'oc_handler_t::register_resources()'],['../lsab__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd',1,'register_resources(void):&#160;lsab_minimal_all.c'],['../lssb__minimal__all_8c.html#aee7bd515d06c5a767aa6d0f37820b0bd',1,'register_resources(void):&#160;lssb_minimal_all.c']]],
+  ['request_5fpayload_1037',['request_payload',['../structoc__request__t.html#ac4751776b29000ba3603ef3392bc64d8',1,'oc_request_t']]],
+  ['request_5fpiv_1038',['request_piv',['../structoc__endpoint__t.html#a4d91cd694a8666478ea30d712f1223c4',1,'oc_endpoint_t']]],
+  ['request_5fpiv_5flen_1039',['request_piv_len',['../structoc__endpoint__t.html#abc1b70c5181b611e2736718b8dd07730',1,'oc_endpoint_t']]],
   ['requests_5fentry_1040',['requests_entry',['../structoc__handler__t.html#a919d218b198dc7286a98d486aab5d91b',1,'oc_handler_t']]],
   ['reset_5fcb_1041',['reset_cb',['../lssb__minimal__all_8c.html#a8e0cc947f6c738517f2c341af66bc059',1,'reset_cb(size_t device_index, int reset_value, void *data):&#160;lssb_minimal_all.c'],['../lsab__minimal__all_8c.html#a8e0cc947f6c738517f2c341af66bc059',1,'reset_cb(size_t device_index, int reset_value, void *data):&#160;lsab_minimal_all.c']]],
   ['resource_1042',['resource',['../structoc__request__t.html#afc43e71c91ff845b660f028ebcae483f',1,'oc_request_t']]],
