@@ -242,6 +242,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a638e348d07bc902a445c4d27be41913f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a638e348d07bc902a445c4d27be41913f">oc_filter_resource_by_rt</a> (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
 <tr class="memdesc:a638e348d07bc902a445c4d27be41913f"><td class="mdescLeft">&#160;</td><td class="mdescRight">filter if the query parameters of the request contains the resource (determined by resource type "rt") including wild carts  <a href="oc__core__res_8h.html#a638e348d07bc902a445c4d27be41913f">More...</a><br /></td></tr>
 <tr class="separator:a638e348d07bc902a445c4d27be41913f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4422cedfcd273860c3e7dadc63616163"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a4422cedfcd273860c3e7dadc63616163">oc_filter_resource_by_urn</a> (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
+<tr class="memdesc:a4422cedfcd273860c3e7dadc63616163"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove "urn:knx" from response when already provided in query  <a href="oc__core__res_8h.html#a4422cedfcd273860c3e7dadc63616163">More...</a><br /></td></tr>
+<tr class="separator:a4422cedfcd273860c3e7dadc63616163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58cf0654b6fc6f53beaac42fbe15bea6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a58cf0654b6fc6f53beaac42fbe15bea6">oc_frame_interfaces_mask_in_response</a> (<a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask, int truncated)</td></tr>
 <tr class="memdesc:a58cf0654b6fc6f53beaac42fbe15bea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">frame the interface mask in the response, as string in the uri example: full tag if= ":if.i" this function frames ":if.i" (truncated) or "urn:knx:if.i"  <a href="oc__core__res_8h.html#a58cf0654b6fc6f53beaac42fbe15bea6">More...</a><br /></td></tr>
 <tr class="separator:a58cf0654b6fc6f53beaac42fbe15bea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1788,6 +1791,44 @@ false resource type is not in the request </dd></dl>
 
 </div>
 </div>
+<a id="a4422cedfcd273860c3e7dadc63616163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4422cedfcd273860c3e7dadc63616163">&#9670;&nbsp;</a></span>oc_filter_resource_by_urn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_filter_resource_by_urn </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
+          <td class="paramname"><em>resource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
+          <td class="paramname"><em>request</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>remove "urn:knx" from response when already provided in query </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resource</td><td>the resource to look for </td></tr>
+    <tr><td class="paramname">request</td><td>the request to scan </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if truncated, 0 otherwise </dd></dl>
+
+</div>
+</div>
 <a id="a58cf0654b6fc6f53beaac42fbe15bea6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58cf0654b6fc6f53beaac42fbe15bea6">&#9670;&nbsp;</a></span>oc_frame_interfaces_mask_in_response()</h2>
 
@@ -1832,7 +1873,7 @@ false resource type is not in the request </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__core__res_8h.html">oc_core_res.h</a></li>
-    <li class="footer">Generated on Fri Oct 6 2023 08:14:21 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Oct 6 2023 13:34:59 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

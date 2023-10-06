@@ -43,5 +43,6 @@ var oc__core__res_8h =
     [ "oc_core_shutdown", "oc__core__res_8h.html#a4f83145f9b94c3e531f7008959dec07b", null ],
     [ "oc_filter_resource_by_if", "oc__core__res_8h.html#a462cf976b5fc4f10cbcc9ef1ea7e8a3a", null ],
     [ "oc_filter_resource_by_rt", "oc__core__res_8h.html#a638e348d07bc902a445c4d27be41913f", null ],
+    [ "oc_filter_resource_by_urn", "oc__core__res_8h.html#a4422cedfcd273860c3e7dadc63616163", null ],
     [ "oc_frame_interfaces_mask_in_response", "oc__core__res_8h.html#a58cf0654b6fc6f53beaac42fbe15bea6", null ]
 ];

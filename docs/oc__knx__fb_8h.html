@@ -107,6 +107,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa0ec671bd2e888845b3d96e486f18ab6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fb_8h.html#aa0ec671bd2e888845b3d96e486f18ab6">oc_create_knx_fb_resources</a> (size_t device)</td></tr>
 <tr class="memdesc:aa0ec671bd2e888845b3d96e486f18ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creation of the KNX function block resources.  <a href="oc__knx__fb_8h.html#aa0ec671bd2e888845b3d96e486f18ab6">More...</a><br /></td></tr>
 <tr class="separator:aa0ec671bd2e888845b3d96e486f18ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0690965df1cd1431532aa68b4c85fe10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fb_8h.html#a0690965df1cd1431532aa68b4c85fe10">oc_filter_functional_blocks</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
+<tr class="memdesc:a0690965df1cd1431532aa68b4c85fe10"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if functional blocks should be added to the response  <a href="oc__knx__fb_8h.html#a0690965df1cd1431532aa68b4c85fe10">More...</a><br /></td></tr>
+<tr class="separator:a0690965df1cd1431532aa68b4c85fe10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>knx /f resource implementation </p>
@@ -225,13 +228,42 @@ false </dd></dl>
 
 </div>
 </div>
+<a id="a0690965df1cd1431532aa68b4c85fe10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0690965df1cd1431532aa68b4c85fe10">&#9670;&nbsp;</a></span>oc_filter_functional_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_filter_functional_blocks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
+          <td class="paramname"><em>request</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>check if functional blocks should be added to the response </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>the request </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__fb_8h.html">oc_knx_fb.h</a></li>
-    <li class="footer">Generated on Fri Oct 6 2023 08:14:21 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Oct 6 2023 13:34:59 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
