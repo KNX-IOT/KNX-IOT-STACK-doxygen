@@ -106,16 +106,16 @@ Functions</h2></td></tr>
 <tr class="memdesc:gaf9413b71bc87528a1a07c3a48b03155c"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends out an s-mode read request.  <a href="group__doc__module__tag__s__mode__server.html#gaf9413b71bc87528a1a07c3a48b03155c">More...</a><br /></td></tr>
 <tr class="separator:gaf9413b71bc87528a1a07c3a48b03155c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa56ebec494c6618ccd36f7d85c52be1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#gaa56ebec494c6618ccd36f7d85c52be1c">oc_do_s_mode_with_scope</a> (int scope, const char *resource_url, char *rp)</td></tr>
-<tr class="memdesc:gaa56ebec494c6618ccd36f7d85c52be1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends (transmits) an s-mode message the value comes from the GET of the resource indicated by the resource_url the path is ".knx" the sia (sender individual address) is taken from the device the ga is coming from the group address table that is listing the resource url (path) the url of the resource to obtain the value from.  <a href="group__doc__module__tag__s__mode__server.html#gaa56ebec494c6618ccd36f7d85c52be1c">More...</a><br /></td></tr>
+<tr class="memdesc:gaa56ebec494c6618ccd36f7d85c52be1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends (transmits) an s-mode message the value comes from the GET of the resource indicated by the resource_url the path is "k" the sia (sender individual address) is taken from the device the ga is coming from the group address table that is listing the resource url (path) the url of the resource to obtain the value from.  <a href="group__doc__module__tag__s__mode__server.html#gaa56ebec494c6618ccd36f7d85c52be1c">More...</a><br /></td></tr>
 <tr class="separator:gaa56ebec494c6618ccd36f7d85c52be1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad2881d2445dd79650829a22825d76520"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#gad2881d2445dd79650829a22825d76520">oc_do_s_mode_with_scope_no_check</a> (int scope, const char *resource_url, char *rp)</td></tr>
-<tr class="memdesc:gad2881d2445dd79650829a22825d76520"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends (transmits) an s-mode message the value comes from the GET of the resource indicated by the resource_url the path is ".knx" the sia (sender individual address) is taken from the device the ga is coming from the group address table that is listing the resource url (path) the url of the resource to obtain the value from.  <a href="group__doc__module__tag__s__mode__server.html#gad2881d2445dd79650829a22825d76520">More...</a><br /></td></tr>
+<tr class="memdesc:gad2881d2445dd79650829a22825d76520"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends (transmits) an s-mode message the value comes from the GET of the resource indicated by the resource_url the path is "k" the sia (sender individual address) is taken from the device the ga is coming from the group address table that is listing the resource url (path) the url of the resource to obtain the value from.  <a href="group__doc__module__tag__s__mode__server.html#gad2881d2445dd79650829a22825d76520">More...</a><br /></td></tr>
 <tr class="separator:gad2881d2445dd79650829a22825d76520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga36b03e4719edd7bc3ea330c995caaff0"><td class="memItemLeft" align="right" valign="top">oc_s_mode_response_cb_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga36b03e4719edd7bc3ea330c995caaff0">oc_get_s_mode_response_cb</a> ()</td></tr>
 <tr class="memdesc:ga36b03e4719edd7bc3ea330c995caaff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the callback function  <a href="group__doc__module__tag__s__mode__server.html#ga36b03e4719edd7bc3ea330c995caaff0">More...</a><br /></td></tr>
 <tr class="separator:ga36b03e4719edd7bc3ea330c995caaff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4fc3569049c381a19a80022ac1439675"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675">oc_is_redirected_request</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
-<tr class="memdesc:ga4fc3569049c381a19a80022ac1439675"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the request is a redirected request from /.knx or /p when that happened, extra information can be in the CBOR object  <a href="group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675">More...</a><br /></td></tr>
+<tr class="memdesc:ga4fc3569049c381a19a80022ac1439675"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the request is a redirected request from /k or /p when that happened, extra information can be in the CBOR object  <a href="group__doc__module__tag__s__mode__server.html#ga4fc3569049c381a19a80022ac1439675">More...</a><br /></td></tr>
 <tr class="separator:ga4fc3569049c381a19a80022ac1439675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa7f0b28c63b1b539dab013e7b1095cc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__s__mode__server.html#gaa7f0b28c63b1b539dab013e7b1095cc1">oc_set_s_mode_response_cb</a> (oc_s_mode_response_cb_t my_func)</td></tr>
 <tr class="memdesc:gaa7f0b28c63b1b539dab013e7b1095cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the s-mode response callback e.g.  <a href="group__doc__module__tag__s__mode__server.html#gaa7f0b28c63b1b539dab013e7b1095cc1">More...</a><br /></td></tr>
@@ -186,7 +186,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>sends (transmits) an s-mode message the value comes from the GET of the resource indicated by the resource_url the path is ".knx" the sia (sender individual address) is taken from the device the ga is coming from the group address table that is listing the resource url (path) the url of the resource to obtain the value from. </p>
+<p>sends (transmits) an s-mode message the value comes from the GET of the resource indicated by the resource_url the path is "k" the sia (sender individual address) is taken from the device the ga is coming from the group address table that is listing the resource url (path) the url of the resource to obtain the value from. </p>
 <p>only the first group address is used to send the s-mode message for the recipient table all entries are used to send the unicast communication.</p>
 <p>Note: function does check the T flag on the resource if the T flag is not set, then the message is NOT send.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -232,7 +232,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>sends (transmits) an s-mode message the value comes from the GET of the resource indicated by the resource_url the path is ".knx" the sia (sender individual address) is taken from the device the ga is coming from the group address table that is listing the resource url (path) the url of the resource to obtain the value from. </p>
+<p>sends (transmits) an s-mode message the value comes from the GET of the resource indicated by the resource_url the path is "k" the sia (sender individual address) is taken from the device the ga is coming from the group address table that is listing the resource url (path) the url of the resource to obtain the value from. </p>
 <p>only the first group address is used to send the s-mode message for the recipient table all entries are used to send the unicast communication.</p>
 <p>Note: function does NOT check the T flag on the resource e.g. always send the s-mode message used in case the rp value = "rp", e.g.sending a response on read ("r")</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -282,7 +282,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>checks if the request is a redirected request from /.knx or /p when that happened, extra information can be in the CBOR object </p>
+<p>checks if the request is a redirected request from /k or /p when that happened, extra information can be in the CBOR object </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">request</td><td>the request to be checked </td></tr>
@@ -330,7 +330,7 @@ false function set failed </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 12 2023 07:41:15 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Oct 12 2023 07:41:34 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
