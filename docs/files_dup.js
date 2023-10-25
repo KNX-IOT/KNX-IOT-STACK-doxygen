@@ -28,6 +28,7 @@ var files_dup =
     [ "oc_knx_helpers.h", "oc__knx__helpers_8h.html", "oc__knx__helpers_8h" ],
     [ "oc_knx_p.h", "oc__knx__p_8h.html", "oc__knx__p_8h" ],
     [ "oc_knx_sec.h", "oc__knx__sec_8h.html", "oc__knx__sec_8h" ],
+    [ "oc_knx_sub.h", "oc__knx__sub_8h.html", "oc__knx__sub_8h" ],
     [ "oc_knx_swu.h", "oc__knx__swu_8h.html", "oc__knx__swu_8h" ],
     [ "oc_log.h", "oc__log_8h.html", "oc__log_8h" ],
     [ "oc_main.h", "oc__main_8h.html", "oc__main_8h" ],
