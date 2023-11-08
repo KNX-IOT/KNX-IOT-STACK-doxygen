@@ -291,7 +291,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00108">108</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00112">112</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
 
 </div>
 </div>
@@ -392,15 +392,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  oc_ri_create_const_resource_internal(                                        \</div>
+<b>Value:</b><div class="fragment"><div class="line">  _Pragma(<span class="stringliteral">&quot;GCC diagnostic push&quot;</span>);                                              \</div>
+<div class="line">  _Pragma(<span class="stringliteral">&quot;GCC diagnostic ignored \&quot;-Wdiscarded-array-qualifiers\&quot;&quot;</span>);          \</div>
+<div class="line">  oc_ri_create_const_resource_internal(                                        \</div>
 <div class="line">    core_resource_##next_resource, core_resource_##resource_name,              \</div>
 <div class="line">    device_index, NULL, uri, dpt, iface_mask, content_format, properties,      \</div>
 <div class="line">    get_cb, put_cb, post_cb, delete_cb, NULL, 0, 0, num_resource_types,        \</div>
-<div class="line">    __VA_ARGS__)</div>
+<div class="line">    __VA_ARGS__);                                                              \</div>
+<div class="line">  _Pragma(<span class="stringliteral">&quot;GCC diagnostic pop&quot;</span>)</div>
 </div><!-- fragment -->
 <p>Create const CORE resource Should only be used internally! </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00062">62</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00063">63</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
 
 </div>
 </div>
@@ -449,7 +452,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00087">87</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00091">91</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
 
 </div>
 </div>
@@ -524,7 +527,7 @@ Functions</h2></td></tr>
 
 <p>callback for adding a device </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00124">124</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00128">128</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
 
 </div>
 </div>
@@ -542,7 +545,7 @@ Functions</h2></td></tr>
 
 <p>callback for initializing the platform </p>
 
-<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00118">118</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc__core__res_8h_source.html#l00122">122</a> of file <a class="el" href="oc__core__res_8h_source.html">oc_core_res.h</a>.</p>
 
 </div>
 </div>
@@ -1873,7 +1876,7 @@ false resource type is not in the request </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__core__res_8h.html">oc_core_res.h</a></li>
-    <li class="footer">Generated on Sat Nov 4 2023 11:23:41 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Nov 8 2023 10:55:56 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
