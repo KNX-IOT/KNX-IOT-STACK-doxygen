@@ -161,6 +161,7 @@ var oc__ri_8h =
       [ "OC_FETCH", "oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26af48dbf543c8bb3581c65919bd6c0d8f9", null ]
     ] ],
     [ "oc_resource_properties_t", "oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4b", [
+      [ "OC_UNDISCOVERABLE", "oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4ba87fecd85054008415e21fc037c83fb1d", null ],
       [ "OC_DISCOVERABLE", "oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bab360b38f69a2f8b6374bff0398642c9d", null ],
       [ "OC_OBSERVABLE", "oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4ba8d5c243825d19b745cc4920d1acc1708", null ],
       [ "OC_SECURE", "oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bafe4f5b880274c5b36a88b0e38d18ea73", null ],
