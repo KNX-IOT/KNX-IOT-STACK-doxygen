@@ -213,7 +213,7 @@ var oc__ri_8h =
     [ "oc_ri_get_query_value", "oc__ri_8h.html#a7c4f56d09ca6f568fd08497b3f8e1162", null ],
     [ "oc_ri_init", "oc__ri_8h.html#a8703351e3156d5419ff7cc485400c9eb", null ],
     [ "oc_ri_is_app_resource_valid", "oc__ri_8h.html#ad62d3a3655a9333595b44337bfef7f3a", null ],
-    [ "oc_ri_new_request_from_request", "oc__ri_8h.html#a112d2b700398a487ef806346ea4673d7", null ],
+    [ "oc_ri_new_request_from_request", "oc__ri_8h.html#a64cefc9408f115923edcda8177b9e02a", null ],
     [ "oc_ri_query_exists", "oc__ri_8h.html#a0d6859298de1d6033ec3d91f5d6e9be9", null ],
     [ "oc_ri_query_nth_key_exists", "oc__ri_8h.html#ad7e211eb65d2962771b99cbdf9ea0413", null ],
     [ "oc_ri_remove_timed_event_callback", "oc__ri_8h.html#a627c6dfde78e2276611bae0a57646a78", null ],

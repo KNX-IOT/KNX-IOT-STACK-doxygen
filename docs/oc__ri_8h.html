@@ -478,9 +478,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad62d3a3655a9333595b44337bfef7f3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ad62d3a3655a9333595b44337bfef7f3a">oc_ri_is_app_resource_valid</a> (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
 <tr class="memdesc:ad62d3a3655a9333595b44337bfef7f3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the resource is valid  <a href="oc__ri_8h.html#ad62d3a3655a9333595b44337bfef7f3a">More...</a><br /></td></tr>
 <tr class="separator:ad62d3a3655a9333595b44337bfef7f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a112d2b700398a487ef806346ea4673d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a112d2b700398a487ef806346ea4673d7">oc_ri_new_request_from_request</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> new_request, <a class="el" href="structoc__request__t.html">oc_request_t</a> request, <a class="el" href="oc__ri_8h.html#a1381ff2ccb2f2212c438a31414dbe5be">oc_response_buffer_t</a> response_buffer, <a class="el" href="structoc__response__t.html">oc_response_t</a> response_obj)</td></tr>
-<tr class="memdesc:a112d2b700398a487ef806346ea4673d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a new request from the old request is used internally only for redirection of:  <a href="oc__ri_8h.html#a112d2b700398a487ef806346ea4673d7">More...</a><br /></td></tr>
-<tr class="separator:a112d2b700398a487ef806346ea4673d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64cefc9408f115923edcda8177b9e02a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a64cefc9408f115923edcda8177b9e02a">oc_ri_new_request_from_request</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *new_request, <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, <a class="el" href="oc__ri_8h.html#a1381ff2ccb2f2212c438a31414dbe5be">oc_response_buffer_t</a> *response_buffer, <a class="el" href="structoc__response__t.html">oc_response_t</a> *response_obj)</td></tr>
+<tr class="memdesc:a64cefc9408f115923edcda8177b9e02a"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a new request from the old request is used internally only for redirection of:  <a href="oc__ri_8h.html#a64cefc9408f115923edcda8177b9e02a">More...</a><br /></td></tr>
+<tr class="separator:a64cefc9408f115923edcda8177b9e02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d6859298de1d6033ec3d91f5d6e9be9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a0d6859298de1d6033ec3d91f5d6e9be9">oc_ri_query_exists</a> (const char *query, size_t query_len, const char *key)</td></tr>
 <tr class="memdesc:a0d6859298de1d6033ec3d91f5d6e9be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if key exist in query  <a href="oc__ri_8h.html#a0d6859298de1d6033ec3d91f5d6e9be9">More...</a><br /></td></tr>
 <tr class="separator:a0d6859298de1d6033ec3d91f5d6e9be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2400,8 +2400,8 @@ false not valid </dd></dl>
 
 </div>
 </div>
-<a id="a112d2b700398a487ef806346ea4673d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a112d2b700398a487ef806346ea4673d7">&#9670;&nbsp;</a></span>oc_ri_new_request_from_request()</h2>
+<a id="a64cefc9408f115923edcda8177b9e02a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64cefc9408f115923edcda8177b9e02a">&#9670;&nbsp;</a></span>oc_ri_new_request_from_request()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2409,25 +2409,25 @@ false not valid </dd></dl>
         <tr>
           <td class="memname">bool oc_ri_new_request_from_request </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
           <td class="paramname"><em>new_request</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
           <td class="paramname"><em>request</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="oc__ri_8h.html#a1381ff2ccb2f2212c438a31414dbe5be">oc_response_buffer_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="oc__ri_8h.html#a1381ff2ccb2f2212c438a31414dbe5be">oc_response_buffer_t</a> *&#160;</td>
           <td class="paramname"><em>response_buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structoc__response__t.html">oc_response_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="structoc__response__t.html">oc_response_t</a> *&#160;</td>
           <td class="paramname"><em>response_obj</em>&#160;</td>
         </tr>
         <tr>
@@ -2708,7 +2708,7 @@ false new request invalid </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__ri_8h.html">oc_ri.h</a></li>
-    <li class="footer">Generated on Tue Nov 21 2023 11:57:13 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Nov 21 2023 16:30:51 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

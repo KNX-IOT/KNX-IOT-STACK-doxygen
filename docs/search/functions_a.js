@@ -380,7 +380,7 @@ var searchData=
   ['oc_5fri_5finvoke_5fclient_5fcb_1587',['oc_ri_invoke_client_cb',['../oc__client__state_8h.html#a72b5c4671ceac7ba12d1966ab8ab0482',1,'oc_client_state.h']]],
   ['oc_5fri_5fis_5fapp_5fresource_5fvalid_1588',['oc_ri_is_app_resource_valid',['../oc__ri_8h.html#ad62d3a3655a9333595b44337bfef7f3a',1,'oc_ri.h']]],
   ['oc_5fri_5fis_5fclient_5fcb_5fvalid_1589',['oc_ri_is_client_cb_valid',['../oc__client__state_8h.html#a47f318c6ad81d4fd19414e7767e81567',1,'oc_client_state.h']]],
-  ['oc_5fri_5fnew_5frequest_5ffrom_5frequest_1590',['oc_ri_new_request_from_request',['../oc__ri_8h.html#a112d2b700398a487ef806346ea4673d7',1,'oc_ri.h']]],
+  ['oc_5fri_5fnew_5frequest_5ffrom_5frequest_1590',['oc_ri_new_request_from_request',['../oc__ri_8h.html#a64cefc9408f115923edcda8177b9e02a',1,'oc_ri.h']]],
   ['oc_5fri_5fprocess_5fdiscovery_5fpayload_1591',['oc_ri_process_discovery_payload',['../oc__client__state_8h.html#a2e48b4142bfd3539462a3a3cc9d95494',1,'oc_client_state.h']]],
   ['oc_5fri_5fquery_5fexists_1592',['oc_ri_query_exists',['../oc__ri_8h.html#a0d6859298de1d6033ec3d91f5d6e9be9',1,'oc_ri.h']]],
   ['oc_5fri_5fquery_5fnth_5fkey_5fexists_1593',['oc_ri_query_nth_key_exists',['../oc__ri_8h.html#ad7e211eb65d2962771b99cbdf9ea0413',1,'oc_ri.h']]],
