@@ -98,9 +98,9 @@ $(document).ready(function(){initNavTree('oc__knx__fb_8h.html',''); initResizabl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a13bde3253014a77fbd698dd333d43967"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fb_8h.html#a13bde3253014a77fbd698dd333d43967">oc_add_function_blocks_to_response</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, size_t device_index, size_t *response_length, int matches)</td></tr>
-<tr class="memdesc:a13bde3253014a77fbd698dd333d43967"><td class="mdescLeft">&#160;</td><td class="mdescRight">add functional blocks to the response  <a href="oc__knx__fb_8h.html#a13bde3253014a77fbd698dd333d43967">More...</a><br /></td></tr>
-<tr class="separator:a13bde3253014a77fbd698dd333d43967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc878ab7cbca4fab7d1d134c30083d08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fb_8h.html#adc878ab7cbca4fab7d1d134c30083d08">oc_add_function_blocks_to_response</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, size_t device_index, size_t *response_length, int *matches, int *skipped, int first_entry, int last_entry)</td></tr>
+<tr class="memdesc:adc878ab7cbca4fab7d1d134c30083d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">add functional blocks to the response  <a href="oc__knx__fb_8h.html#adc878ab7cbca4fab7d1d134c30083d08">More...</a><br /></td></tr>
+<tr class="separator:adc878ab7cbca4fab7d1d134c30083d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3310092e03303ccb8608abeafc113a98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__fb_8h.html#a3310092e03303ccb8608abeafc113a98">oc_count_functional_blocks</a> (size_t device_index)</td></tr>
 <tr class="memdesc:a3310092e03303ccb8608abeafc113a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">count functional blocks in a device  <a href="oc__knx__fb_8h.html#a3310092e03303ccb8608abeafc113a98">More...</a><br /></td></tr>
 <tr class="separator:a3310092e03303ccb8608abeafc113a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,8 +117,8 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="oc__knx__fb_8h_source.html">oc_knx_fb.h</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a13bde3253014a77fbd698dd333d43967"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13bde3253014a77fbd698dd333d43967">&#9670;&nbsp;</a></span>oc_add_function_blocks_to_response()</h2>
+<a id="adc878ab7cbca4fab7d1d134c30083d08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc878ab7cbca4fab7d1d134c30083d08">&#9670;&nbsp;</a></span>oc_add_function_blocks_to_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,8 +144,26 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>matches</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>skipped</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>matches</em>&#160;</td>
+          <td class="paramname"><em>first_entry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>last_entry</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -163,6 +181,9 @@ Functions</h2></td></tr>
     <tr><td class="paramname">device_index</td><td>the device index </td></tr>
     <tr><td class="paramname">response_length</td><td>the current response length </td></tr>
     <tr><td class="paramname">matches</td><td>number of matches (so far) </td></tr>
+    <tr><td class="paramname">skipped</td><td>number of entries already skipped </td></tr>
+    <tr><td class="paramname">first_entry</td><td>first entry to be included </td></tr>
+    <tr><td class="paramname">last_entry</td><td>last entry to be included (exclusive) </td></tr>
   </table>
   </dd>
 </dl>
@@ -263,7 +284,7 @@ false </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__fb_8h.html">oc_knx_fb.h</a></li>
-    <li class="footer">Generated on Wed Nov 29 2023 14:05:22 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Nov 30 2023 09:51:08 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
