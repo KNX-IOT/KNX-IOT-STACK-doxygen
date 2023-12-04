@@ -109,11 +109,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a86b27491f167d9aa44da0e7cba169ab7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__helpers_8h.html#a86b27491f167d9aa44da0e7cba169ab7">add_next_page_indicator</a> (char *url, int next_page_num)</td></tr>
 <tr class="memdesc:a86b27491f167d9aa44da0e7cba169ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to frame next page indicator, if more requests (pages) are needed to get the full list  <a href="oc__knx__helpers_8h.html#a86b27491f167d9aa44da0e7cba169ab7">More...</a><br /></td></tr>
 <tr class="separator:a86b27491f167d9aa44da0e7cba169ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4cbaaf91b4f99e022514ccf2f36730a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__helpers_8h.html#aa4cbaaf91b4f99e022514ccf2f36730a">check_if_query_l_exist</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, bool *ps_exists, bool *total_exists)</td></tr>
-<tr class="memdesc:aa4cbaaf91b4f99e022514ccf2f36730a"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to check if query parameter l exists  <a href="oc__knx__helpers_8h.html#aa4cbaaf91b4f99e022514ccf2f36730a">More...</a><br /></td></tr>
-<tr class="separator:aa4cbaaf91b4f99e022514ccf2f36730a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd3e2f557a7f0fe740b7a634e434ca6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__helpers_8h.html#afd3e2f557a7f0fe740b7a634e434ca6d">check_if_query_l_exist</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, bool *ps_exists, bool *total_exists)</td></tr>
+<tr class="memdesc:afd3e2f557a7f0fe740b7a634e434ca6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to check if query parameter l exists  <a href="oc__knx__helpers_8h.html#afd3e2f557a7f0fe740b7a634e434ca6d">More...</a><br /></td></tr>
+<tr class="separator:afd3e2f557a7f0fe740b7a634e434ca6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d6d863df807f0f1cd05cdd5f1db915b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__helpers_8h.html#a2d6d863df807f0f1cd05cdd5f1db915b">check_if_query_pn_exist</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, int *pn_value, int *ps_value)</td></tr>
-<tr class="memdesc:a2d6d863df807f0f1cd05cdd5f1db915b"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to check if query parameter pn or ps exists  <a href="oc__knx__helpers_8h.html#a2d6d863df807f0f1cd05cdd5f1db915b">More...</a><br /></td></tr>
+<tr class="memdesc:a2d6d863df807f0f1cd05cdd5f1db915b"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to check if query parameter pn exists  <a href="oc__knx__helpers_8h.html#a2d6d863df807f0f1cd05cdd5f1db915b">More...</a><br /></td></tr>
 <tr class="separator:a2d6d863df807f0f1cd05cdd5f1db915b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f219af21b2f1f62d1dc384fb6c0dc2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__knx__helpers_8h.html#a5f219af21b2f1f62d1dc384fb6c0dc2f">oc_frame_integer</a> (int value)</td></tr>
 <tr class="memdesc:a5f219af21b2f1f62d1dc384fb6c0dc2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function to frame an integer in the response:  <a href="oc__knx__helpers_8h.html#a5f219af21b2f1f62d1dc384fb6c0dc2f">More...</a><br /></td></tr>
@@ -165,14 +165,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa4cbaaf91b4f99e022514ccf2f36730a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4cbaaf91b4f99e022514ccf2f36730a">&#9670;&nbsp;</a></span>check_if_query_l_exist()</h2>
+<a id="afd3e2f557a7f0fe740b7a634e434ca6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd3e2f557a7f0fe740b7a634e434ca6d">&#9670;&nbsp;</a></span>check_if_query_l_exist()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool check_if_query_l_exist </td>
+          <td class="memname">int check_if_query_l_exist </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
           <td class="paramname"><em>request</em>, </td>
@@ -206,7 +206,11 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true == l exists (with either ps or total or both) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>1 == l exists (with either ps or total or both) </dd>
+<dd>
+-1 == invalid l parameters </dd>
+<dd>
+0 == l doesn't exist </dd></dl>
 
 </div>
 </div>
@@ -242,7 +246,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>helper function to check if query parameter pn or ps exists </p>
+<p>helper function to check if query parameter pn exists </p>
 <p>example: /dev/ipv6?pn=0&amp;ps=3 </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">request</td><td>the request </td></tr>
@@ -251,7 +255,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true == pn or ps exists </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true == pn exists </dd></dl>
 
 </div>
 </div>
@@ -353,7 +357,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="oc__knx__helpers_8h.html">oc_knx_helpers.h</a></li>
-    <li class="footer">Generated on Mon Dec 4 2023 12:22:49 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Dec 4 2023 13:21:49 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
