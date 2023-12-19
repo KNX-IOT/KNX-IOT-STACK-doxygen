@@ -78,7 +78,6 @@ var oc__ri_8h =
       [ "OC_DEV_FWV", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a2d626ad5a47d2f78bea140be9008f241", null ],
       [ "OC_DEV_HWT", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a8b33b10e170b05231411227e76c2acf8", null ],
       [ "OC_DEV_MODEL", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a9ced5595d03e41739d15b28bbaaede9b", null ],
-      [ "OC_DEV_IA", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a63d9c02c1d517aff1cab51c435053f6e", null ],
       [ "OC_DEV_HOSTNAME", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a1a15fb908bcb76bfa89487fb21e7f49c", null ],
       [ "OC_DEV_IID", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a12bdaeb796e5658bcc87727d9f8b6c75", null ],
       [ "OC_DEV_PM", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444ad7f0b71db4fb6e3509723dc9a4d921e4", null ],
