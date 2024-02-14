@@ -275,7 +275,7 @@ var searchData=
   ['oc_5fnetwork_5finterface_5fevent_1482',['oc_network_interface_event',['../oc__network__events_8h.html#ac1bf144d565ebc81b01e2317b7296fc4',1,'oc_network_events.h']]],
   ['oc_5fnew_5fendpoint_1483',['oc_new_endpoint',['../oc__endpoint_8h.html#a88dae151cb9ce2e28cf32a63e0e5a803',1,'oc_endpoint.h']]],
   ['oc_5fnew_5fresource_1484',['oc_new_resource',['../group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc',1,'oc_api.h']]],
-  ['oc_5fnotify_5fobservers_1485',['oc_notify_observers',['../group__doc__module__tag__server__side.html#ga43ac6a6fc039b94df00768d69577a9ed',1,'oc_api.h']]],
+  ['oc_5fnotify_5fobservers_1485',['oc_notify_observers',['../group__doc__module__tag__server__side.html#ga1620c531afd53fb441eb44c2a741f5f0',1,'oc_api.h']]],
   ['oc_5foscore_5fget_5fosndelay_1486',['oc_oscore_get_osndelay',['../oc__knx__sec_8h.html#ab0ef8b2933a13d55f75165af73c872a3',1,'oc_knx_sec.h']]],
   ['oc_5foscore_5fget_5frplwdo_1487',['oc_oscore_get_rplwdo',['../oc__knx__sec_8h.html#abffee6b23a4b6efe2466a6476dd31da3',1,'oc_knx_sec.h']]],
   ['oc_5foscore_5fset_5fauth_5fdevice_1488',['oc_oscore_set_auth_device',['../oc__knx__sec_8h.html#ae7139c68a420eb5cf47e833760f15cd5',1,'oc_knx_sec.h']]],

@@ -50,7 +50,7 @@ var oc__api_8h =
     [ "oc_main_poll", "oc__api_8h.html#ad146ae2ebe285109e6c3a7fdc193bd6e", null ],
     [ "oc_main_shutdown", "oc__api_8h.html#a6cf429db1849423722bad55d93f753c6", null ],
     [ "oc_new_resource", "group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc", null ],
-    [ "oc_notify_observers", "group__doc__module__tag__server__side.html#ga43ac6a6fc039b94df00768d69577a9ed", null ],
+    [ "oc_notify_observers", "group__doc__module__tag__server__side.html#ga1620c531afd53fb441eb44c2a741f5f0", null ],
     [ "oc_query_value_exists", "group__doc__module__tag__server__side.html#gaa3a125b0f190fcccc7a294b8429e9a7e", null ],
     [ "oc_query_values_available", "group__doc__module__tag__server__side.html#gabdcf35ac68c7bc1648a9672dcd0265c1", null ],
     [ "oc_remove_delayed_callback", "group__doc__module__tag__common__operations.html#gaf8cac4f44a0020db72b7b9800191a430", null ],

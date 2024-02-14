@@ -485,7 +485,7 @@ var searchData=
   ['oc_5fnew_5fresource_660',['oc_new_resource',['../group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc',1,'oc_api.h']]],
   ['oc_5fnew_5fstring_661',['oc_new_string',['../oc__helpers_8h.html#a687f4e969156f2ee1348e03c3afe6a27',1,'oc_helpers.h']]],
   ['oc_5fnew_5fstring_5farray_662',['oc_new_string_array',['../oc__helpers_8h.html#a41251afd98b8794639301a9ef99e67be',1,'oc_helpers.h']]],
-  ['oc_5fnotify_5fobservers_663',['oc_notify_observers',['../group__doc__module__tag__server__side.html#ga43ac6a6fc039b94df00768d69577a9ed',1,'oc_api.h']]],
+  ['oc_5fnotify_5fobservers_663',['oc_notify_observers',['../group__doc__module__tag__server__side.html#ga1620c531afd53fb441eb44c2a741f5f0',1,'oc_api.h']]],
   ['oc_5fobservable_664',['OC_OBSERVABLE',['../oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4ba8d5c243825d19b745cc4920d1acc1708',1,'oc_ri.h']]],
   ['oc_5foscore_5fget_5fosndelay_665',['oc_oscore_get_osndelay',['../oc__knx__sec_8h.html#ab0ef8b2933a13d55f75165af73c872a3',1,'oc_knx_sec.h']]],
   ['oc_5foscore_5fget_5frplwdo_666',['oc_oscore_get_rplwdo',['../oc__knx__sec_8h.html#abffee6b23a4b6efe2466a6476dd31da3',1,'oc_knx_sec.h']]],
