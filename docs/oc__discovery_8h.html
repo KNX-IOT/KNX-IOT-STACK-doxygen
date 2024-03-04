@@ -104,9 +104,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab2ac6116f514382d8ef637e2f41911b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__discovery_8h.html#ab2ac6116f514382d8ef637e2f41911b0">oc_create_discovery_resource</a> (int resource_idx, size_t device)</td></tr>
 <tr class="memdesc:ab2ac6116f514382d8ef637e2f41911b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a resource that is discoverable.  <a href="oc__discovery_8h.html#ab2ac6116f514382d8ef637e2f41911b0">More...</a><br /></td></tr>
 <tr class="separator:ab2ac6116f514382d8ef637e2f41911b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19c136ac63b27c39655a54ca91de1ac4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__discovery_8h.html#a19c136ac63b27c39655a54ca91de1ac4">oc_filter_resource</a> (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, size_t device_index, size_t *response_length, int *skipped, int first_entry)</td></tr>
-<tr class="memdesc:a19c136ac63b27c39655a54ca91de1ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">filter resource if it needs to be included in the response of a link-format response  <a href="oc__discovery_8h.html#a19c136ac63b27c39655a54ca91de1ac4">More...</a><br /></td></tr>
-<tr class="separator:a19c136ac63b27c39655a54ca91de1ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4f04adb3ec6f08f61407a3b7135298"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__discovery_8h.html#a7b4f04adb3ec6f08f61407a3b7135298">oc_filter_resource</a> (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, size_t device_index, size_t *response_length, int *skipped, int first_entry, int truncate)</td></tr>
+<tr class="memdesc:a7b4f04adb3ec6f08f61407a3b7135298"><td class="mdescLeft">&#160;</td><td class="mdescRight">filter resource if it needs to be included in the response of a link-format response  <a href="oc__discovery_8h.html#a7b4f04adb3ec6f08f61407a3b7135298">More...</a><br /></td></tr>
+<tr class="separator:a7b4f04adb3ec6f08f61407a3b7135298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>CoAP Discovery. </p>
@@ -211,8 +211,8 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="a19c136ac63b27c39655a54ca91de1ac4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19c136ac63b27c39655a54ca91de1ac4">&#9670;&nbsp;</a></span>oc_filter_resource()</h2>
+<a id="a7b4f04adb3ec6f08f61407a3b7135298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b4f04adb3ec6f08f61407a3b7135298">&#9670;&nbsp;</a></span>oc_filter_resource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,7 +251,13 @@ false </dd></dl>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>first_entry</em>&#160;</td>
+          <td class="paramname"><em>first_entry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>truncate</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -270,6 +276,7 @@ false </dd></dl>
     <tr><td class="paramname">response_length</td><td>the current response length </td></tr>
     <tr><td class="paramname">skipped</td><td>number of entries already skipped </td></tr>
     <tr><td class="paramname">first_entry</td><td>first entry to be included </td></tr>
+    <tr><td class="paramname">truncate</td><td>whether to truncate the response payload </td></tr>
   </table>
   </dd>
 </dl>
@@ -285,7 +292,7 @@ false resource not added to the response </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__discovery_8h.html">oc_discovery.h</a></li>
-    <li class="footer">Generated on Thu Feb 29 2024 15:42:26 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Mar 4 2024 10:34:50 for KNX IoT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
